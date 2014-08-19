@@ -1,0 +1,20 @@
+procedure isqrt (in u32 x_2, out u32 outp_3)
+{
+localvar u32 m_5;
+localvar u32 y_6;
+localvar u32 b_7;
+localvar u32 x0_8;
+localvar s32 t1;
+localvar s32 t2;
+localvar u32 t3;
+localvar u32 t4;
+localvar u32 t5;
+localvar s32 t6;
+localvar s32 t14;
+localvar u32 t7;
+localvar u32 t8;
+localvar s32 t9;
+localvar s32 t12;
+localvar u32 t13;
+localvar u32 t10;
+localvar u32 t11;

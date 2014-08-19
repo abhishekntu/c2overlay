@@ -1,0 +1,44 @@
+procedure gmp_fact (
+in u32 n, out s32 D_2846)
+{
+  localvar mpz prod;
+  localvar s32 i;
+  localvar s32 k;
+  localvar s32 m$11;
+  localvar mpz prod$11;
+  localvar u32 m_0$11;
+  localvar mpz prod$12;
+  localvar s32 i$11;
+  localvar u32 i_1$21;
+  localvar mpz prod$21;
+  localvar s32 i$21;
+  localvar u32 i_2$31;
+
+L0005:
+  m$11 <= ldc 1;
+  prod$11 <= mpz_init;
+  m_0$11 <= zxt m$11;
+  prod$12 <= mpz_set_ui prod$11, m_0$11;
+  i$11 <= ldc 2;
+  prod <= mov prod$12;
+  i <= mov i$11;
+  D_2840 <= jmpun;
+D_2839:
+  i_1$21 <= zxt i;
+  prod$21 <= mpz_mul_ui prod, i_1$21;
+  mpz_printh prod$21;
+  i$21 <= add i, 1;
+  prod <= mov prod$21;
+  i <= mov i$21;
+  D_2840 <= jmpun;
+D_2840:
+  i_2$31 <= zxt i;
+  D_2839, D_2841 <= jmple i_2$31, n;
+D_2841:
+  D_2846 <= ldc 0;
+  L_EXIT <= jmpun;
+SC_00000:
+  L_EXIT <= jmpun;
+L_EXIT:
+  nop;
+}

@@ -1,0 +1,26 @@
+
+
+procedure fibo (  in u32 x,   out u32 D_1369)
+{
+  localvar u32 f0;
+  localvar u32 f1;
+  localvar u32 k;
+  localvar u32 f;
+
+L0005:
+  f0 <= ldc 0;
+  f1 <= ldc 1;
+  k <= ldc 2;
+  D_1366 <= jmpun;
+D_1366:
+  k <= add k, 1;
+  f <= add f1, f0;
+  f0 <= mov f1;
+  f1 <= mov f;
+  D_1366, D_1367 <= jmple k, x;
+D_1367:
+  D_1369 <= mov f;
+  L_EXIT <= jmpun;
+L_EXIT:
+  nop;
+}

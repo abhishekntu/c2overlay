@@ -1,0 +1,38 @@
+gmp_fact (unsigned int n)
+gimple_bind <
+  long unsigned int m.0;
+  long unsigned int i.1;
+  unsigned int i.2;
+  int D.2846;
+  struct MP_INT prod;
+  int i;
+  int k;
+  int m;
+
+  gimple_try <GIMPLE_TRY_FINALLY,
+    EVAL <
+      gimple_assign <integer_cst, m, 1, NULL>
+      gimple_call <mpz_init, NULL, &prod>
+      gimple_assign <nop_expr, m.0, m, NULL>
+      gimple_call <mpz_set_ui, NULL, &prod, m.0>
+      gimple_assign <integer_cst, i, 2, NULL>
+      gimple_goto <<D.2840>>
+      gimple_label <<D.2839>>
+      gimple_assign <nop_expr, i.1, i, NULL>
+      gimple_call <mpz_mul_ui, NULL, &prod, &prod, i.1>
+      gimple_call <mpz_printh, NULL, &prod>
+      gimple_assign <plus_expr, i, i, 1>
+      gimple_label <<D.2840>>
+      gimple_assign <nop_expr, i.2, i, NULL>
+      gimple_cond <le_expr, i.2, n, <D.2839>, <D.2841>>
+      gimple_label <<D.2841>>
+      gimple_assign <integer_cst, D.2846, 0, NULL>
+      gimple_return <D.2846>
+    >
+    CLEANUP <
+      gimple_assign <constructor, prod, {CLOBBER}, NULL>
+    >
+  >
+>
+
+

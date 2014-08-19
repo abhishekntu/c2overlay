@@ -1,0 +1,24 @@
+#
+# Makefile for Free MP
+#
+#HLSTOP=/cygdrive/g/hercules
+ifndef CC
+CC = $(CC)
+endif
+#CC = gcc
+CFLAGS=-Wall -O2 -DALGO -DTEST
+INCLUDES= -I$(HLSTOP)/cdfg2hdl/contrib/fgmp/
+LFLAGS= -L$(HLSTOP)/cdfg2hdl/contrib/fgmp/
+CC = gcc
+EXE = .exe 
+
+all: gmp_fact.orig$(EXE)
+
+gmp_fact.orig$(EXE): gmp_fact.orig.o
+	$(CC) gmp_fact.orig.o $(HLSTOP)/cdfg2hdl/contrib/fgmp/libfgmp.a $(LFLAGS) -o gmp_fact.orig$(EXE)
+
+gmp_fact.orig.o: gmp_fact.orig.c $(HLSTOP)/cdfg2hdl/contrib/fgmp/fgmp.h
+	$(CC) $(CFLAGS) $(INCLUDES) -c gmp_fact.orig.c
+
+clean:
+	rm -f gmp_fact.orig$(EXE) *.o core *~

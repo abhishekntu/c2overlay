@@ -1,0 +1,58 @@
+procedure icbrt (
+in u32 x, out s32 res)
+{
+  localvar s32 s;
+  localvar u32 y;
+  localvar u32 b;
+  localvar u32 x0;
+  localvar s32 s$11;
+  localvar u32 y$11;
+  localvar u32 x0$11;
+  localvar u32 y$21;
+  localvar u32 D_1371$21;
+  localvar u32 D_1372$21;
+  localvar u32 D_1373$21;
+  localvar u32 D_1374$21;
+  localvar u32 b$21;
+  localvar s32 s$21;
+  localvar u32 x0$31;
+  localvar u32 y$31;
+  localvar s32 y_0$61;
+
+L0005:
+  s$11 <= ldc 30;
+  y$11 <= ldc 0;
+  x0$11 <= mov x;
+  s <= mov s$11;
+  y <= mov y$11;
+  x0 <= mov x0$11;
+  D_1368 <= jmpun;
+D_1367:
+  y$21 <= mul y, 2;
+  D_1371$21 <= add y$21, 1;
+  D_1372$21 <= mul D_1371$21, y$21;
+  D_1373$21 <= mul D_1372$21, 3;
+  D_1374$21 <= add D_1373$21, 1;
+  b$21 <= shl D_1374$21, s;
+  s$21 <= sub s, 3;
+  s <= mov s$21;
+  y <= mov y$21;
+  b <= mov b$21;
+  D_1375, D_1376 <= jmpge x0, b$21;
+D_1375:
+  x0$31 <= sub x0, b;
+  y$31 <= add y, 1;
+  y <= mov y$31;
+  x0 <= mov x0$31;
+  D_1376 <= jmpun;
+D_1376:
+  D_1368 <= jmpun;
+D_1368:
+  D_1367, D_1369 <= jmpge s, 0;
+D_1369:
+  y_0$61 <= sxt y;
+  res <= mov y_0$61;
+  L_EXIT <= jmpun;
+L_EXIT:
+  nop;
+}

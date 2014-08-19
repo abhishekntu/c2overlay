@@ -1,0 +1,38 @@
+procedure gmp_fibo (
+in u32 n, out s32 D_2746)
+{
+  localvar mpz f0;
+  localvar mpz f1;
+  localvar mpz f;
+  localvar s32 i;
+  localvar u32 k;
+  localvar u32 t;
+  localvar u32 u;
+
+L0005:
+  t <= ldc 0;
+  u <= ldc 1;
+  f0 <= mpz_init;
+  f1 <= mpz_init;
+  f <= mpz_init;
+  f0 <= mpz_set_ui t;
+  mpz_printh f0;
+  f1 <= mpz_set_ui u;
+  mpz_printh f1;
+  k <= ldc 2;
+  D_2743 <= jmpun;
+D_2743:
+  k <= add k, 1;
+  f <= mpz_add f1, f0;
+  f0 <= mpz_set f1;
+  f1 <= mpz_set f;
+  mpz_printh f;
+  D_2743, D_2744 <= jmple k, n;
+D_2744:
+  D_2746 <= ldc 0;
+  L_EXIT <= jmpun;
+SC_00000:
+  L_EXIT <= jmpun;
+L_EXIT:
+  nop;
+}

@@ -1,0 +1,18 @@
+v 3
+file "/home/uop/hercules/tests/ansic/eda/" "eda_tb.vhd" "20131024145351.000" "20131024175351.839":
+  entity eda_tb at 6( 172) + 0 on 16;
+  architecture tb_arch of eda_tb at 17( 397) + 0 on 17;
+file "/home/uop/hercules/tests/ansic/eda/" "eda_cdt_pkg.vhd" "20131024145351.000" "20131024175351.770":
+  package eda_cdt_pkg at 6( 177) + 0 on 13;
+file "/home/uop/hercules/tests/ansic/eda/" "../../../cdfg2hdl/contrib/vhdl/std_logic_textio.vhd" "20100529072230.000" "20131024175351.672":
+  package std_logic_textio at 37( 1804) + 0 on 11 body;
+  package body std_logic_textio at 96( 4270) + 0 on 12;
+file "/home/uop/hercules/tests/ansic/eda/" "../../../cdfg2hdl/contrib/vhdl/std_logic_1164_tinyadditions.vhd" "20110819222524.000" "20131024175351.781":
+  package std_logic_1164_tinyadditions at 14( 769) + 0 on 14 body;
+  package body std_logic_1164_tinyadditions at 64( 2816) + 0 on 15;
+file "/home/uop/hercules/tests/ansic/eda/" "../../../cdfg2hdl/contrib/vhdl/operpack_ieee.vhd" "20120720113526.000" "20131024175351.885":
+  package operpack at 33( 1424) + 0 on 18 body;
+  package body operpack at 79( 4198) + 0 on 19;
+file "/home/uop/hercules/tests/ansic/eda/" "eda.vhd" "20131024145351.000" "20131024175352.150":
+  entity eda at 6( 169) + 0 on 20;
+  architecture fsmd of eda at 27( 632) + 0 on 21;

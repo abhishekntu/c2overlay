@@ -1,0 +1,21 @@
+ in1=00000000 out1=00000000 out1_ref=00000000
+ARRAYSUM OK: Number of cycles=4
+ in1=00000001 out1=00000002 out1_ref=00000002
+ARRAYSUM OK: Number of cycles=6
+ in1=00000002 out1=00000005 out1_ref=00000005
+ARRAYSUM OK: Number of cycles=8
+ in1=00000003 out1=0000000A out1_ref=0000000A
+ARRAYSUM OK: Number of cycles=10
+ in1=00000004 out1=00000011 out1_ref=00000011
+ARRAYSUM OK: Number of cycles=12
+ in1=00000005 out1=0000001C out1_ref=0000001C
+ARRAYSUM OK: Number of cycles=14
+ in1=00000006 out1=00000029 out1_ref=00000029
+ARRAYSUM OK: Number of cycles=16
+ in1=00000007 out1=0000003A out1_ref=0000003A
+ARRAYSUM OK: Number of cycles=18
+ in1=00000008 out1=0000004D out1_ref=0000004D
+ARRAYSUM OK: Number of cycles=20
+ in1=00000009 out1=00000064 out1_ref=00000064
+ARRAYSUM OK: Number of cycles=22
+ARRAYSUM algorithm test has passed

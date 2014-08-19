@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<asmv1:assembly xmlns="urn:schemas-microsoft-com:asm.v1" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" manifestVersion="1.0">
+  <assemblyIdentity
+    version="6.0.0.0"
+    processorArchitecture="*"
+    name="cdfg2hdl.exe"
+    type="win32"
+  />	
+  <description>CDFG to HDL code generator</description>
+  <trustInfo xmlns="urn:schemas-microsoft-com:asm.v2"> 
+    <security> 
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3"> 
+        <requestedExecutionLevel level="asInvoker" uiAccess="false"/> 
+      </requestedPrivileges> 
+    </security> 
+  </trustInfo> 
+</asmv1:assembly>

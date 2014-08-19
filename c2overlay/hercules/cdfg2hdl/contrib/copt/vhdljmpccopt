@@ -1,0 +1,5 @@
+next_state <= %0;
+when %0 =>
+next_state <= %1;
+=
+next_state <= %1;

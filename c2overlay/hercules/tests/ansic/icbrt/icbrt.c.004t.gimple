@@ -1,0 +1,37 @@
+icbrt (unsigned int x, int * res)
+gimple_bind <
+  unsigned int D.1371;
+  unsigned int D.1372;
+  unsigned int D.1373;
+  unsigned int D.1374;
+  int y.0;
+  int s;
+  unsigned int y;
+  unsigned int b;
+  unsigned int x0;
+
+  gimple_assign <integer_cst, s, 30, NULL>
+  gimple_assign <integer_cst, y, 0, NULL>
+  gimple_assign <parm_decl, x0, x, NULL>
+  gimple_goto <<D.1368>>
+  gimple_label <<D.1367>>
+  gimple_assign <mult_expr, y, y, 2>
+  gimple_assign <plus_expr, D.1371, y, 1>
+  gimple_assign <mult_expr, D.1372, D.1371, y>
+  gimple_assign <mult_expr, D.1373, D.1372, 3>
+  gimple_assign <plus_expr, D.1374, D.1373, 1>
+  gimple_assign <lshift_expr, b, D.1374, s>
+  gimple_assign <plus_expr, s, s, -3>
+  gimple_cond <ge_expr, x0, b, <D.1375>, <D.1376>>
+  gimple_label <<D.1375>>
+  gimple_assign <minus_expr, x0, x0, b>
+  gimple_assign <plus_expr, y, y, 1>
+  gimple_label <<D.1376>>
+  gimple_label <<D.1368>>
+  gimple_cond <ge_expr, s, 0, <D.1367>, <D.1369>>
+  gimple_label <<D.1369>>
+  gimple_assign <nop_expr, y.0, y, NULL>
+  gimple_assign <var_decl, *res, y.0, NULL>
+>
+
+

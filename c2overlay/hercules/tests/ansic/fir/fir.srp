@@ -1,0 +1,564 @@
+Release 14.6 - xst P.68d (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "fir.work"
+Input Format                       : mixed
+
+---- Target Parameters
+Output File Name                   : "fir.ngc"
+Output Format                      : NGC
+Target Device                      : xc6vlx75t-ff484-1
+
+---- Source Options
+Top Module Name                    : fir
+
+---- Target Options
+Add IO Buffers                     : no
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "c:/hercules/cdfg2hdl/contrib/vhdl/std_logic_1164_tinyadditions.vhd" into library work
+Parsing package <std_logic_1164_tinyadditions>.
+Parsing package body <std_logic_1164_tinyadditions>.
+Parsing VHDL file "c:/hercules/cdfg2hdl/contrib/vhdl/operpack_ieee.vhd" into library work
+Parsing package <operpack>.
+Parsing package body <operpack>.
+Parsing VHDL file "C:\hercules\tests\ansic\fir\fir_cdt_pkg.vhd" into library work
+Parsing package <fir_cdt_pkg>.
+Parsing VHDL file "C:\hercules\tests\ansic\fir\fir.vhd" into library work
+Parsing entity <fir>.
+Parsing architecture <fsmd> of entity <fir>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <fir> (architecture <fsmd>) from library <work>.
+WARNING:HDLCompiler:92 - "C:\hercules\tests\ansic\fir\fir.vhd" Line 202: a should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\hercules\tests\ansic\fir\fir.vhd" Line 206: v should be on the sensitivity list of the process
+INFO:HDLCompiler:679 - "C:\hercules\tests\ansic\fir\fir.vhd" Line 257. Case statement is complete. others clause is never selected
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <fir>.
+    Related source file is "C:\hercules\tests\ansic\fir\fir.vhd".
+WARNING:Xst:2999 - Signal 'a', unconnected in block 'fir', is tied to its initial value.
+WARNING:Xst:2999 - Signal 'v', unconnected in block 'fir', is tied to its initial value.
+    Found 8x32-bit single-port Read Only RAM <Mram_a> for signal <a>.
+WARNING:Xst:3035 - Index value(s) does not match array range for signal <v>, simulation mismatch.
+    Found 10x32-bit single-port Read Only RAM <Mram_v> for signal <v>.
+    Found 32-bit register for signal <acc_41_reg>.
+    Found 32-bit register for signal <acc_11_reg>.
+    Found 32-bit register for signal <i_11_reg>.
+    Found 32-bit register for signal <j_21_reg>.
+    Found 32-bit register for signal <D_1377_41_reg>.
+    Found 32-bit register for signal <D_1378_41_reg>.
+    Found 32-bit register for signal <acc_reg>.
+    Found 32-bit register for signal <j_reg>.
+    Found 32-bit register for signal <i_reg>.
+    Found 32-bit register for signal <D_1379_41_reg>.
+    Found 32-bit register for signal <j_51_reg>.
+    Found 32-bit register for signal <i_71_reg>.
+    Found 32-bit register for signal <D_1376_41_reg>.
+    Found 32-bit register for signal <out1>.
+    Found 5-bit register for signal <current_state>.
+    Found finite state machine <FSM_0> for signal <current_state>.
+    -----------------------------------------------------------------------
+    | States             | 26                                             |
+    | Transitions        | 30                                             |
+    | Inputs             | 4                                              |
+    | Outputs            | 7                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | reset (positive)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | s_entry                                        |
+    | Power Up State     | s_entry                                        |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 31-bit adder for signal <D_1377_41_reg[30]_GND_8_o_add_22_OUT[30:0]> created at line 490.
+    Found 31-bit adder for signal <D_1378_41_reg[30]_GND_8_o_add_24_OUT[30:0]> created at line 494.
+    Found 62-bit adder for signal <D_1377_41_reg[30]_GND_8_o_add_27_OUT> created at line 499.
+    Found 32-bit adder for signal <D_1379_41_reg[31]_acc_reg[31]_add_29_OUT> created at line 212.
+    Found 32-bit subtractor for signal <i_reg[31]_j_reg[31]_sub_20_OUT<31:0>> created at line 203.
+    Found 32-bit subtractor for signal <j_reg[31]_GND_8_o_sub_31_OUT<31:0>> created at line 220.
+    Found 32-bit subtractor for signal <i_reg[31]_GND_8_o_sub_34_OUT<31:0>> created at line 234.
+    Found 31x31-bit multiplier for signal <D_1377_41_reg[30]_D_1378_41_reg[30]_MuLt_25_OUT> created at line 496.
+    Found 32-bit comparator greater for signal <n0015> created at line 196
+    Found 32-bit comparator greater for signal <n0094> created at line 228
+    Found 32-bit comparator greater for signal <n0098> created at line 242
+    Summary:
+	inferred   2 RAM(s).
+	inferred   1 Multiplier(s).
+	inferred   7 Adder/Subtractor(s).
+	inferred 416 D-type flip-flop(s).
+	inferred   3 Comparator(s).
+	inferred   6 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <fir> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 10x32-bit single-port Read Only RAM                   : 1
+ 8x32-bit single-port Read Only RAM                    : 1
+# Multipliers                                          : 1
+ 31x31-bit multiplier                                  : 1
+# Adders/Subtractors                                   : 7
+ 31-bit adder                                          : 2
+ 32-bit adder                                          : 1
+ 32-bit subtractor                                     : 3
+ 62-bit adder                                          : 1
+# Registers                                            : 13
+ 32-bit register                                       : 13
+# Comparators                                          : 3
+ 32-bit comparator greater                             : 3
+# Multiplexers                                         : 6
+ 31-bit 2-to-1 multiplexer                             : 2
+ 32-bit 2-to-1 multiplexer                             : 3
+ 64-bit 2-to-1 multiplexer                             : 1
+# FSMs                                                 : 1
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:2404 -  FFs/Latches <i_11_reg<31:4>> (without init value) have a constant value of 0 in block <fir>.
+WARNING:Xst:2404 -  FFs/Latches <j_21_reg<31:3>> (without init value) have a constant value of 0 in block <fir>.
+
+Synthesizing (advanced) Unit <fir>.
+INFO:Xst:3217 - HDL ADVISOR - Register <D_1377_41_reg> currently described with an asynchronous reset, could be combined with distributed RAM <Mram_v> for implementation on block RAM resources if you made this reset synchronous instead.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 10-word x 32-bit                    |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <D_1376_41_reg> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3217 - HDL ADVISOR - Register <D_1378_41_reg> currently described with an asynchronous reset, could be combined with distributed RAM <Mram_a> for implementation on block RAM resources if you made this reset synchronous instead.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8-word x 32-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <j_reg<2:0>>    |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <fir> synthesized (advanced).
+WARNING:Xst:2677 - Node <D_1376_41_reg_4> of sequential type is unconnected in block <fir>.
+WARNING:Xst:2677 - Node <D_1376_41_reg_5> of sequential type is unconnected in block <fir>.
+WARNING:Xst:2677 - Node <D_1376_41_reg_6> of sequential type is unconnected in block <fir>.
+WARNING:Xst:2677 - Node <D_1376_41_reg_7> of sequential type is unconnected in block <fir>.
+WARNING:Xst:2677 - Node <D_1376_41_reg_8> of sequential type is unconnected in block <fir>.
+WARNING:Xst:2677 - Node <D_1376_41_reg_9> of sequential type is unconnected in block <fir>.
+WARNING:Xst:2677 - Node <D_1376_41_reg_10> of sequential type is unconnected in block <fir>.
+WARNING:Xst:2677 - Node <D_1376_41_reg_11> of sequential type is unconnected in block <fir>.
+WARNING:Xst:2677 - Node <D_1376_41_reg_12> of sequential type is unconnected in block <fir>.
+WARNING:Xst:2677 - Node <D_1376_41_reg_13> of sequential type is unconnected in block <fir>.
+WARNING:Xst:2677 - Node <D_1376_41_reg_14> of sequential type is unconnected in block <fir>.
+WARNING:Xst:2677 - Node <D_1376_41_reg_15> of sequential type is unconnected in block <fir>.
+WARNING:Xst:2677 - Node <D_1376_41_reg_16> of sequential type is unconnected in block <fir>.
+WARNING:Xst:2677 - Node <D_1376_41_reg_17> of sequential type is unconnected in block <fir>.
+WARNING:Xst:2677 - Node <D_1376_41_reg_18> of sequential type is unconnected in block <fir>.
+WARNING:Xst:2677 - Node <D_1376_41_reg_19> of sequential type is unconnected in block <fir>.
+WARNING:Xst:2677 - Node <D_1376_41_reg_20> of sequential type is unconnected in block <fir>.
+WARNING:Xst:2677 - Node <D_1376_41_reg_21> of sequential type is unconnected in block <fir>.
+WARNING:Xst:2677 - Node <D_1376_41_reg_22> of sequential type is unconnected in block <fir>.
+WARNING:Xst:2677 - Node <D_1376_41_reg_23> of sequential type is unconnected in block <fir>.
+WARNING:Xst:2677 - Node <D_1376_41_reg_24> of sequential type is unconnected in block <fir>.
+WARNING:Xst:2677 - Node <D_1376_41_reg_25> of sequential type is unconnected in block <fir>.
+WARNING:Xst:2677 - Node <D_1376_41_reg_26> of sequential type is unconnected in block <fir>.
+WARNING:Xst:2677 - Node <D_1376_41_reg_27> of sequential type is unconnected in block <fir>.
+WARNING:Xst:2677 - Node <D_1376_41_reg_28> of sequential type is unconnected in block <fir>.
+WARNING:Xst:2677 - Node <D_1376_41_reg_29> of sequential type is unconnected in block <fir>.
+WARNING:Xst:2677 - Node <D_1376_41_reg_30> of sequential type is unconnected in block <fir>.
+WARNING:Xst:2677 - Node <D_1376_41_reg_31> of sequential type is unconnected in block <fir>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 10x32-bit single-port distributed Read Only RAM       : 1
+ 8x32-bit single-port distributed Read Only RAM        : 1
+# Multipliers                                          : 1
+ 31x31-bit multiplier                                  : 1
+# Adders/Subtractors                                   : 7
+ 31-bit adder                                          : 2
+ 32-bit adder                                          : 1
+ 32-bit subtractor                                     : 3
+ 62-bit adder                                          : 1
+# Registers                                            : 331
+ Flip-Flops                                            : 331
+# Comparators                                          : 3
+ 32-bit comparator greater                             : 3
+# Multiplexers                                         : 66
+ 1-bit 2-to-1 multiplexer                              : 62
+ 32-bit 2-to-1 multiplexer                             : 3
+ 64-bit 2-to-1 multiplexer                             : 1
+# FSMs                                                 : 1
+# Xors                                                 : 1
+ 1-bit xor2                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <i_11_reg_1> (without init value) has a constant value of 0 in block <fir>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_11_reg_2> (without init value) has a constant value of 0 in block <fir>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <i_11_reg_0> in Unit <fir> is equivalent to the following FF/Latch, which will be removed : <i_11_reg_3> 
+INFO:Xst:2261 - The FF/Latch <j_21_reg_0> in Unit <fir> is equivalent to the following 2 FFs/Latches, which will be removed : <j_21_reg_1> <j_21_reg_2> 
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <current_state[1:5]> with user encoding.
+-----------------------
+ State     | Encoding
+-----------------------
+ s_entry   | 00000
+ s_exit    | 00001
+ s_001_001 | 00010
+ s_001_002 | 00011
+ s_001_003 | 00100
+ s_002_001 | 00101
+ s_002_002 | 00110
+ s_002_003 | 00111
+ s_003_001 | 01000
+ s_004_001 | 01001
+ s_004_002 | 01010
+ s_004_003 | 01011
+ s_004_004 | 01100
+ s_004_005 | 01101
+ s_004_006 | 01110
+ s_005_001 | 01111
+ s_005_002 | 10000
+ s_005_003 | 10001
+ s_006_001 | 10010
+ s_007_001 | 10011
+ s_007_002 | 10100
+ s_007_003 | 10101
+ s_008_001 | 10110
+ s_009_001 | 10111
+ s_009_002 | 11000
+ s_010_001 | 11001
+-----------------------
+WARNING:Xst:1710 - FF/Latch <D_1377_41_reg_2> (without init value) has a constant value of 0 in block <fir>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <D_1377_41_reg_3> (without init value) has a constant value of 0 in block <fir>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <D_1377_41_reg_4> (without init value) has a constant value of 0 in block <fir>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <D_1377_41_reg_5> (without init value) has a constant value of 0 in block <fir>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <D_1377_41_reg_6> (without init value) has a constant value of 0 in block <fir>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <D_1377_41_reg_7> (without init value) has a constant value of 0 in block <fir>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <D_1377_41_reg_8> (without init value) has a constant value of 0 in block <fir>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <D_1377_41_reg_9> (without init value) has a constant value of 0 in block <fir>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <D_1377_41_reg_10> (without init value) has a constant value of 0 in block <fir>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <D_1377_41_reg_11> (without init value) has a constant value of 0 in block <fir>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <D_1377_41_reg_12> (without init value) has a constant value of 0 in block <fir>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <D_1377_41_reg_13> (without init value) has a constant value of 0 in block <fir>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <D_1377_41_reg_14> (without init value) has a constant value of 0 in block <fir>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <D_1377_41_reg_15> (without init value) has a constant value of 0 in block <fir>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <D_1377_41_reg_16> (without init value) has a constant value of 0 in block <fir>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <D_1377_41_reg_17> (without init value) has a constant value of 0 in block <fir>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <D_1377_41_reg_18> (without init value) has a constant value of 0 in block <fir>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <D_1377_41_reg_19> (without init value) has a constant value of 0 in block <fir>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <D_1377_41_reg_20> (without init value) has a constant value of 0 in block <fir>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <D_1377_41_reg_21> (without init value) has a constant value of 0 in block <fir>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <D_1377_41_reg_22> (without init value) has a constant value of 0 in block <fir>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <D_1377_41_reg_23> (without init value) has a constant value of 0 in block <fir>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <D_1377_41_reg_24> (without init value) has a constant value of 0 in block <fir>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <D_1377_41_reg_25> (without init value) has a constant value of 0 in block <fir>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <D_1377_41_reg_26> (without init value) has a constant value of 0 in block <fir>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <D_1377_41_reg_27> (without init value) has a constant value of 0 in block <fir>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <D_1377_41_reg_28> (without init value) has a constant value of 0 in block <fir>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <D_1377_41_reg_29> (without init value) has a constant value of 0 in block <fir>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <D_1377_41_reg_30> (without init value) has a constant value of 0 in block <fir>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <D_1377_41_reg_31> (without init value) has a constant value of 0 in block <fir>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <D_1378_41_reg_2> (without init value) has a constant value of 0 in block <fir>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <D_1378_41_reg_3> (without init value) has a constant value of 0 in block <fir>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <D_1378_41_reg_4> (without init value) has a constant value of 0 in block <fir>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <D_1378_41_reg_5> (without init value) has a constant value of 0 in block <fir>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <D_1378_41_reg_6> (without init value) has a constant value of 0 in block <fir>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <D_1378_41_reg_7> (without init value) has a constant value of 0 in block <fir>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <D_1378_41_reg_8> (without init value) has a constant value of 0 in block <fir>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <D_1378_41_reg_9> (without init value) has a constant value of 0 in block <fir>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <D_1378_41_reg_10> (without init value) has a constant value of 0 in block <fir>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <D_1378_41_reg_11> (without init value) has a constant value of 0 in block <fir>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <D_1378_41_reg_12> (without init value) has a constant value of 0 in block <fir>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <D_1378_41_reg_13> (without init value) has a constant value of 0 in block <fir>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <D_1378_41_reg_14> (without init value) has a constant value of 0 in block <fir>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <D_1378_41_reg_15> (without init value) has a constant value of 0 in block <fir>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <D_1378_41_reg_16> (without init value) has a constant value of 0 in block <fir>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <D_1378_41_reg_17> (without init value) has a constant value of 0 in block <fir>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <D_1378_41_reg_18> (without init value) has a constant value of 0 in block <fir>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <D_1378_41_reg_19> (without init value) has a constant value of 0 in block <fir>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <D_1378_41_reg_20> (without init value) has a constant value of 0 in block <fir>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <D_1378_41_reg_21> (without init value) has a constant value of 0 in block <fir>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <D_1378_41_reg_22> (without init value) has a constant value of 0 in block <fir>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <D_1378_41_reg_23> (without init value) has a constant value of 0 in block <fir>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <D_1378_41_reg_24> (without init value) has a constant value of 0 in block <fir>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <D_1378_41_reg_25> (without init value) has a constant value of 0 in block <fir>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <D_1378_41_reg_26> (without init value) has a constant value of 0 in block <fir>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <D_1378_41_reg_27> (without init value) has a constant value of 0 in block <fir>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <D_1378_41_reg_28> (without init value) has a constant value of 0 in block <fir>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <D_1378_41_reg_29> (without init value) has a constant value of 0 in block <fir>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <D_1378_41_reg_30> (without init value) has a constant value of 0 in block <fir>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <D_1378_41_reg_31> (without init value) has a constant value of 0 in block <fir>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <Mmult_D_1377_41_reg[30]_D_1378_41_reg[30]_MuLt_25_OUT3> of sequential type is unconnected in block <fir>.
+
+Optimizing unit <fir> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 0) on block fir, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 271
+ Flip-Flops                                            : 271
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : fir.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 467
+#      GND                         : 1
+#      INV                         : 62
+#      LUT1                        : 2
+#      LUT2                        : 128
+#      LUT3                        : 6
+#      LUT4                        : 33
+#      LUT5                        : 13
+#      LUT6                        : 9
+#      MUXCY                       : 111
+#      MUXF7                       : 1
+#      VCC                         : 1
+#      XORCY                       : 100
+# FlipFlops/Latches                : 271
+#      FDC                         : 7
+#      FDCE                        : 264
+# DSPs                             : 3
+#      DSP48E1                     : 3
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6vlx75tff484-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             271  out of  93120     0%  
+ Number of Slice LUTs:                  253  out of  46560     0%  
+    Number used as Logic:               253  out of  46560     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    311
+   Number with an unused Flip Flop:      40  out of    311    12%  
+   Number with an unused LUT:            58  out of    311    18%  
+   Number of fully used LUT-FF pairs:   213  out of    311    68%  
+   Number of unique control sets:        11
+
+IO Utilization: 
+ Number of IOs:                          37
+ Number of bonded IOBs:                   0  out of    240     0%  
+
+Specific Feature Utilization:
+ Number of DSP48E1s:                      3  out of    288     1%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | NONE(j_51_reg_0)       | 271   |
+-----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 8.379ns (Maximum Frequency: 119.346MHz)
+   Minimum input arrival time before clock: 0.506ns
+   Maximum output required time after clock: 1.348ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 8.379ns (frequency: 119.346MHz)
+  Total number of paths / destination ports: 144279 / 535
+-------------------------------------------------------------------------
+Delay:               8.379ns (Levels of Logic = 3)
+  Source:            D_1378_41_reg_1 (FF)
+  Destination:       D_1379_41_reg_17 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: D_1378_41_reg_1 to D_1379_41_reg_17
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             1   0.375   0.399  D_1378_41_reg_1 (D_1378_41_reg_1)
+     DSP48E1:A1->PCOUT47    1   3.920   0.000  Mmult_D_1377_41_reg[30]_D_1378_41_reg[30]_MuLt_25_OUT (Mmult_D_1377_41_reg[30]_D_1378_41_reg[30]_MuLt_25_OUT_PCOUT_to_Mmult_D_1377_41_reg[30]_D_1378_41_reg[30]_MuLt_25_OUT1_PCIN_47)
+     DSP48E1:PCIN47->PCOUT47    1   1.684   0.000  Mmult_D_1377_41_reg[30]_D_1378_41_reg[30]_MuLt_25_OUT1 (Mmult_D_1377_41_reg[30]_D_1378_41_reg[30]_MuLt_25_OUT1_PCOUT_to_Mmult_D_1377_41_reg[30]_D_1378_41_reg[30]_MuLt_25_OUT2_PCIN_47)
+     DSP48E1:PCIN47->P14    1   1.591   0.399  Mmult_D_1377_41_reg[30]_D_1378_41_reg[30]_MuLt_25_OUT2 (D_1377_41_reg[30]_D_1378_41_reg[30]_MuLt_25_OUT<31>)
+     FDCE:D                    0.011          D_1379_41_reg_31
+    ----------------------------------------
+    Total                      8.379ns (7.581ns logic, 0.798ns route)
+                                       (90.5% logic, 9.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 272 / 272
+-------------------------------------------------------------------------
+Offset:              0.506ns (Levels of Logic = 2)
+  Source:            start (PAD)
+  Destination:       current_state_FSM_FFd4 (FF)
+  Destination Clock: clk rising
+
+  Data Path: start to current_state_FSM_FFd4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LUT6:I3->O            1   0.068   0.000  current_state_FSM_FFd4-In4_F (N9)
+     MUXF7:I0->O           1   0.245   0.000  current_state_FSM_FFd4-In4 (current_state_FSM_FFd4-In)
+     FDC:D                     0.011          current_state_FSM_FFd4
+    ----------------------------------------
+    Total                      0.506ns (0.506ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 42 / 34
+-------------------------------------------------------------------------
+Offset:              1.348ns (Levels of Logic = 1)
+  Source:            current_state_FSM_FFd4 (FF)
+  Destination:       done (PAD)
+  Source Clock:      clk rising
+
+  Data Path: current_state_FSM_FFd4 to done
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             21   0.375   0.905  current_state_FSM_FFd4 (current_state_FSM_FFd4)
+     LUT5:I0->O            0   0.068   0.000  current_state__n0539<1>1 (done)
+    ----------------------------------------
+    Total                      1.348ns (0.443ns logic, 0.905ns route)
+                                       (32.9% logic, 67.1% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    8.379|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 13.00 secs
+Total CPU time to Xst completion: 13.37 secs
+ 
+--> 
+
+Total memory usage is 233104 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   98 (   0 filtered)
+Number of infos    :    5 (   0 filtered)
+

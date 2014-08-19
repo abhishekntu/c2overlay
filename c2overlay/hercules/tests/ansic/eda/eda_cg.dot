@@ -1,0 +1,10 @@
+digraph eda_cg
+{
+  graph [rankdir="TB", nodesep = "0.175"];
+  node [fontname="Courier", fontsize="12", style="filled"];
+  edge [fontname="Courier", fontsize="12"];
+
+  eda  [label="eda", ntype="node", argix="-1", dataspec="na", bb="-1", shape="parallelogram", fillcolor="orange"];
+
+
+}

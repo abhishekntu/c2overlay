@@ -1,0 +1,80 @@
+2005-11-10  Andreas Kupries  <andreas_kupries@users.sourceforge.net>
+
+	*
+	* Released and tagged Tklib 0.4.1 ========================
+	* 
+
+2005-11-04 Arjen Markus  <arjenmarkus@users.sourceforge.net>
+
+        * Changed file permissions: no execute anymore
+
+2005-11-02  Andreas Kupries  <andreas_kupries@users.sourceforge.net>
+
+	*
+	* Released and tagged Tklib 0.4 ========================
+	* 
+
+2005-10-24  Andreas Kupries <andreask@activestate.com>
+
+	* plotchart.test: Added check for Tcl 8.3, minimum version of Tcl
+	  required by the charts.
+
+	* pkgIndex.tcl: Sync'd the package version with implementation and
+	  documentation.
+
+2005-06-14 Arjen Markus  <arjenmarkus@users.sourceforge.net>
+
+        * plotgantt.tcl: Expanded Gantt charts with one more
+          procedure - drawing "summary" items
+        * Added documentation on Gantt charts
+        * Moved the example to the examples directory
+
+2005-06-13 Arjen Markus  <arjenmarkus@users.sourceforge.net>
+
+        * plotchart.tcl: Added new chart type, Gantt charts
+        * plotgantt.tcl: Procedures for Gantt charts (new file) 
+        * No documentation yet
+
+2005-05-10  Andreas Kupries  <andreas_kupries@users.sourceforge.net>
+
+	* plotchart.man: Fixed trivial syntax error in update.
+
+2005-05-10  Arjen Markus  <arjenmarkus@users.sourceforge.net>
+
+        * plotchart.man: Added documentation of plotfuncont method.
+        * Corrected description for "cool" colour map
+
+2005-04-15  Arjen Markus  <arjenmarkus@users.sourceforge.net>
+
+        * Updated the documentation, changed name (colourmap
+          has become colorMap).
+        * Mark Stucky provided the latest updates of the
+          main procedures
+
+2005-03-11  Arjen Markus  <arjenmarkus@users.sourceforge.net>
+
+        * Solved problem with plotcontour.test (works correctly
+          from sak.tcl now - still requires formalisation)
+
+2005-03-04  Arjen Markus  <arjenmarkus@users.sourceforge.net>
+
+        * Added the contour plotting routines by Mark Stucky
+          (Documentation for 3D contour plot still missing)
+
+2004-09-29  Arjen Markus  <arjenmarkus@users.sourceforge.net>
+
+        * Fixed bug 1035281 - wrong scaling for -1.7 -- 26.8
+          (new test case)
+        * Fixed dependency on -nocomplain flag for unset (plotpriv.tcl)
+          Plotchart should work with Tcl 8.3 now
+
+2004-08-19  Arjen Markus  <arjenmarkus@users.sourceforge.net>
+
+	* Added modifications by Stefan Finzel.
+	* One public procedure added: pixelToIndex (by Stefan Finzel)
+	* Added export of several described (public) procedures that were missing
+
+2004-04-15  Andreas Kupries  <andreas_kupries@users.sourceforge.net>
+
+	* New module 'plotchart', by Arjen Markus.
+

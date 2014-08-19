@@ -1,0 +1,107 @@
+misc.lo misc.o: misc.c ./include/private/gc_pmark.h \
+  ./include/private/config.h ./include/private/../gc_mark.h \
+  ./include/private/../gc.h ./include/private/../gc_version.h \
+  ./include/private/../gc_config_macros.h \
+  C:/MinGW/bin/../lib/gcc/mingw32/3.4.5/include/stddef.h \
+  C:/MinGW/bin/../lib/gcc/mingw32/3.4.5/../../../../include/stdint.h \
+  ./include/private/gc_priv.h \
+  C:/MinGW/bin/../lib/gcc/mingw32/3.4.5/../../../../include/stdlib.h \
+  C:/MinGW/bin/../lib/gcc/mingw32/3.4.5/../../../../include/_mingw.h \
+  ./include/private/../gc_tiny_fl.h ./include/private/gcconfig.h \
+  ./include/private/gc_hdrs.h ./include/private/gc_locks.h \
+  C:/MinGW/bin/../lib/gcc/mingw32/3.4.5/../../../../include/windows.h \
+  C:/MinGW/bin/../lib/gcc/mingw32/3.4.5/include/stdarg.h \
+  C:/MinGW/bin/../lib/gcc/mingw32/3.4.5/../../../../include/windef.h \
+  C:/MinGW/bin/../lib/gcc/mingw32/3.4.5/../../../../include/winnt.h \
+  C:/MinGW/bin/../lib/gcc/mingw32/3.4.5/../../../../include/winerror.h \
+  C:/MinGW/bin/../lib/gcc/mingw32/3.4.5/../../../../include/string.h \
+  C:/MinGW/bin/../lib/gcc/mingw32/3.4.5/../../../../include/basetsd.h \
+  C:/MinGW/bin/../lib/gcc/mingw32/3.4.5/../../../../include/pshpack4.h \
+  C:/MinGW/bin/../lib/gcc/mingw32/3.4.5/../../../../include/poppack.h \
+  C:/MinGW/bin/../lib/gcc/mingw32/3.4.5/../../../../include/wincon.h \
+  C:/MinGW/bin/../lib/gcc/mingw32/3.4.5/../../../../include/winbase.h \
+  C:/MinGW/bin/../lib/gcc/mingw32/3.4.5/../../../../include/wingdi.h \
+  C:/MinGW/bin/../lib/gcc/mingw32/3.4.5/../../../../include/winuser.h \
+  C:/MinGW/bin/../lib/gcc/mingw32/3.4.5/../../../../include/winnls.h \
+  C:/MinGW/bin/../lib/gcc/mingw32/3.4.5/../../../../include/winver.h \
+  C:/MinGW/bin/../lib/gcc/mingw32/3.4.5/../../../../include/winnetwk.h \
+  C:/MinGW/bin/../lib/gcc/mingw32/3.4.5/../../../../include/winreg.h \
+  C:/MinGW/bin/../lib/gcc/mingw32/3.4.5/../../../../include/winsvc.h \
+  C:/MinGW/bin/../lib/gcc/mingw32/3.4.5/../../../../include/stdio.h \
+  C:/MinGW/bin/../lib/gcc/mingw32/3.4.5/../../../../include/sys/types.h \
+  C:/MinGW/bin/../lib/gcc/mingw32/3.4.5/../../../../include/limits.h \
+  C:/MinGW/bin/../lib/gcc/mingw32/3.4.5/../../../../include/signal.h
+
+./include/private/gc_pmark.h:
+
+./include/private/config.h:
+
+./include/private/../gc_mark.h:
+
+./include/private/../gc.h:
+
+./include/private/../gc_version.h:
+
+./include/private/../gc_config_macros.h:
+
+C:/MinGW/bin/../lib/gcc/mingw32/3.4.5/include/stddef.h:
+
+C:/MinGW/bin/../lib/gcc/mingw32/3.4.5/../../../../include/stdint.h:
+
+./include/private/gc_priv.h:
+
+C:/MinGW/bin/../lib/gcc/mingw32/3.4.5/../../../../include/stdlib.h:
+
+C:/MinGW/bin/../lib/gcc/mingw32/3.4.5/../../../../include/_mingw.h:
+
+./include/private/../gc_tiny_fl.h:
+
+./include/private/gcconfig.h:
+
+./include/private/gc_hdrs.h:
+
+./include/private/gc_locks.h:
+
+C:/MinGW/bin/../lib/gcc/mingw32/3.4.5/../../../../include/windows.h:
+
+C:/MinGW/bin/../lib/gcc/mingw32/3.4.5/include/stdarg.h:
+
+C:/MinGW/bin/../lib/gcc/mingw32/3.4.5/../../../../include/windef.h:
+
+C:/MinGW/bin/../lib/gcc/mingw32/3.4.5/../../../../include/winnt.h:
+
+C:/MinGW/bin/../lib/gcc/mingw32/3.4.5/../../../../include/winerror.h:
+
+C:/MinGW/bin/../lib/gcc/mingw32/3.4.5/../../../../include/string.h:
+
+C:/MinGW/bin/../lib/gcc/mingw32/3.4.5/../../../../include/basetsd.h:
+
+C:/MinGW/bin/../lib/gcc/mingw32/3.4.5/../../../../include/pshpack4.h:
+
+C:/MinGW/bin/../lib/gcc/mingw32/3.4.5/../../../../include/poppack.h:
+
+C:/MinGW/bin/../lib/gcc/mingw32/3.4.5/../../../../include/wincon.h:
+
+C:/MinGW/bin/../lib/gcc/mingw32/3.4.5/../../../../include/winbase.h:
+
+C:/MinGW/bin/../lib/gcc/mingw32/3.4.5/../../../../include/wingdi.h:
+
+C:/MinGW/bin/../lib/gcc/mingw32/3.4.5/../../../../include/winuser.h:
+
+C:/MinGW/bin/../lib/gcc/mingw32/3.4.5/../../../../include/winnls.h:
+
+C:/MinGW/bin/../lib/gcc/mingw32/3.4.5/../../../../include/winver.h:
+
+C:/MinGW/bin/../lib/gcc/mingw32/3.4.5/../../../../include/winnetwk.h:
+
+C:/MinGW/bin/../lib/gcc/mingw32/3.4.5/../../../../include/winreg.h:
+
+C:/MinGW/bin/../lib/gcc/mingw32/3.4.5/../../../../include/winsvc.h:
+
+C:/MinGW/bin/../lib/gcc/mingw32/3.4.5/../../../../include/stdio.h:
+
+C:/MinGW/bin/../lib/gcc/mingw32/3.4.5/../../../../include/sys/types.h:
+
+C:/MinGW/bin/../lib/gcc/mingw32/3.4.5/../../../../include/limits.h:
+
+C:/MinGW/bin/../lib/gcc/mingw32/3.4.5/../../../../include/signal.h:

@@ -1,0 +1,50 @@
+globalvar u32 input[16]={1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16} ; 
+globalvar u32 output[16] ; 
+procedure c2vwavelet ( in u32 length , out u32 y ) 
+{ 
+localvar u32 D_1376 ; 
+localvar u32 D_1377 ; 
+localvar u32 D_1378 ; 
+localvar u32 D_1379 ; 
+localvar u32 D_1380 ; 
+localvar u32 len ; 
+localvar u32 i ; 
+localvar u32 sum ; 
+localvar u32 difference ; 
+L0005 : 
+len <= shr length , 1 ; 
+D_1373 <= jmpun ; 
+D_1372 : 
+i <= ldc 0 ; 
+D_1370 <= jmpun ; 
+D_1369 : 
+D_1376 <= mul i , 2 ; 
+D_1377 <= load input , D_1376 ; 
+D_1376 <= mul i , 2 ; 
+D_1378 <= add D_1376 , 1 ; 
+D_1379 <= load input , D_1378 ; 
+sum <= add D_1377 , D_1379 ; 
+D_1376 <= mul i , 2 ; 
+D_1377 <= load input , D_1376 ; 
+D_1376 <= mul i , 2 ; 
+D_1378 <= add D_1376 , 1 ; 
+D_1379 <= load input , D_1378 ; 
+difference <= sub D_1377 , D_1379 ; 
+output <= store sum , i ; 
+D_1380 <= add len , i ; 
+output <= store difference , D_1380 ; 
+i <= add i , 1 ; 
+D_1370 <= jmpun ; 
+D_1370 : 
+D_1369 , D_1371 <= jmplt i , len ; 
+D_1371 : 
+len <= shr len , 1 ; 
+D_1373 <= jmpun ; 
+D_1373 : 
+D_1372 , D_1374 <= jmpgt len , 1 ; 
+D_1374 : 
+y <= ldc 1 ; 
+L_EXIT <= jmpun ;
+L_EXIT : 
+nop ; 
+} 

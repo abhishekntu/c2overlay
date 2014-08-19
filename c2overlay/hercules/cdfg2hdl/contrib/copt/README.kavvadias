@@ -1,0 +1,73 @@
+------------------------------------------------------------------------------
+-- Title            : copt                                                  --
+-- Author           : Christopher W. Fraser                                 --
+-- Modifications by : Nikolaos Kavvadias                                    --
+-- Contact          : nkavv@uop.gr                                          -- 
+--                    nikolaos.kavvadias@gmail.com                          --
+--                  : http://www.nkavvadias.co.cc                           --
+-- Release Date     : 05 December 2010                                      --
+-- Version          : 0.0.1                                                 --
+--------------------:---------------------------------------------------------
+-- Revision history :                                                       --
+--           v0.0.1 : 2010-12-05                                            --
+--                  : Initial release.                                      --
+------------------------------------------------------------------------------
+
+1. INTRODUCTION
+---------------
+
+"copt" is a simple-to-use retargetable peephole optimizer.
+
+
+2. FILE LISTING
+---------------
+
+  The "copt" distribution includes the following files:
+
+  /copt
+    Makefile              Makefile for copt and fixasm.
+    README.nkavvadias     This file.
+    cmul.s                A test for constant multiplications.
+    copt.1                Man page for copt.
+    copt.c                The source code for copt.
+    copt.pdf              PDF file generated from the man page.
+    factorial.s           Factorial algorithm for the DLX processor.
+    fixasm.c              Converts tabs to spaces.
+    rules                 Example rule file for copt.
+    test.s                Example assembly file for a hypothetical architecture 
+                          to use with "rules".
+    test.sh               A bash shell script for running tests.
+
+
+3. USAGE
+--------
+
+  1. Run make from the Cygwin command line
+  $ make clean
+  $ make
+
+  2. Run a test 
+  $ ./copt -D <test.s rules >test.peep.s
+  The optimized file is stored in test.peep.s.
+
+  3. Or use the test.sh bash script on your files. Assuming your assembly file 
+  is "myasmfile.s" and the corresponding rule file is "myrules", do the following:
+  $ ./test.sh myasmfile myrules
+  Then, myasmfile.peep.s is generated with the optimized assembly code.
+
+
+4. PREREQUISITIES
+-----------------
+
+- Standard UNIX-based tools
+  make, gcc, bash, gawk
+
+
+5. CONTACT
+----------
+
+You may contact me at:
+
+  Nikolaos Kavvadias <nkavv@uop.gr>
+                     <nikolaos.kavvadias@gmail.com>
+  http://www.nkavvadias.co.cc

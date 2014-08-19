@@ -1,0 +1,25 @@
+
+
+procedure popcount (  in s32 inp,   out s32 D_1236)
+{
+  localvar s32 D_1235;
+  localvar s32 data;
+  localvar s32 count;
+
+L0005:
+  data <= mov inp;
+  count <= ldc 0;
+  D_1232 <= jmpun;
+D_1231:
+  D_1235 <= and data, 1;
+  count <= add D_1235, count;
+  data <= shr data, 1;
+  D_1232 <= jmpun;
+D_1232:
+  D_1231, D_1233 <= jmpne data, 0;
+D_1233:
+  D_1236 <= mov count;
+  L_EXIT <= jmpun;
+L_EXIT:
+  nop;
+}

@@ -1,0 +1,35 @@
+### HERCULES RUN: STARTED ###
+NAC file: arraysum.nac
+Generating VHDL package file: arraysum_pkg.vhd
+Generating VHDL compound data types package file: arraysum_cdt_pkg.vhd
+Generating NAC export file for procedure arraysum: arraysum_ssa.nac
+Generating dot file for the CDFG of procedure arraysum: arraysum.dot
+Generating the dot representation of the CFG for procedure arraysum: arraysum_cfg.dot
+Generating dot file for call-graph: arraysum_cg.dot
+Generating a plain graph for the CDFG of the current procedure: arraysum_cdfg.txt
+Generating the dot representation of the current procedure CFG: arraysum_cfg.dot
+Generating RTL VHDL for the current procedure: arraysum.vhd
+Generating the VHDL testbench for the root procedure: arraysum_tb.vhd
+Generating the Makefile for GHDL simulation: arraysum.mk
+Generating the shell script for VHDL simulation: arraysum.sh
+Generating the shell script for XST synthesis: arraysum-syn.sh
+rm -rf *.o *.ghdl work
+mkdir work
+ghdl -i --ieee=standard -fexplicit --workdir=work ../../../cdfg2hdl/contrib/vhdl/std_logic_1164_tinyadditions.vhd
+ghdl -i --ieee=standard -fexplicit --workdir=work ../../../cdfg2hdl/contrib/vhdl/std_logic_textio.vhd
+ghdl -i --ieee=standard -fexplicit --workdir=work ../../../cdfg2hdl/contrib/vhdl/operpack_ieee.vhd
+ghdl -i --ieee=standard -fexplicit --workdir=work arraysum_cdt_pkg.vhd
+ghdl -i --ieee=standard -fexplicit --workdir=work arraysum.vhd
+ghdl -i --ieee=standard -fexplicit --workdir=work arraysum_tb.vhd
+ghdl -m --ieee=standard -fexplicit --workdir=work -o arraysum.ghdl arraysum_tb
+analyze ../../../cdfg2hdl/contrib/vhdl/std_logic_textio.vhd
+analyze arraysum_cdt_pkg.vhd
+analyze ../../../cdfg2hdl/contrib/vhdl/std_logic_1164_tinyadditions.vhd
+analyze arraysum_tb.vhd
+analyze ../../../cdfg2hdl/contrib/vhdl/operpack_ieee.vhd
+analyze arraysum.vhd
+elaborate arraysum_tb
+./arraysum.ghdl --stop-time=2147483647ns
+This script has been running for 0 seconds.
+### HERCULES RUN: ENDED ###
+

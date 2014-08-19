@@ -1,0 +1,21 @@
+arraysum (int in1, int * out1)
+gimple_bind <
+  int D.1370;
+  int i;
+  int sum;
+  static int arr[10] = {2, 3, 5, 7, 11, 13, 17, 19, 23, 27};
+
+  gimple_assign <integer_cst, sum, 0, NULL>
+  gimple_assign <integer_cst, i, 0, NULL>
+  gimple_goto <<D.1367>>
+  gimple_label <<D.1366>>
+  gimple_assign <array_ref, D.1370, arr[i], NULL>
+  gimple_assign <plus_expr, sum, D.1370, sum>
+  gimple_assign <plus_expr, i, i, 1>
+  gimple_label <<D.1367>>
+  gimple_cond <lt_expr, i, in1, <D.1366>, <D.1368>>
+  gimple_label <<D.1368>>
+  gimple_assign <var_decl, *out1, sum, NULL>
+>
+
+

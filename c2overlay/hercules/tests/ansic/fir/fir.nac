@@ -1,0 +1,43 @@
+globalvar s32 v[10]={0,1,0,1,2,1,0,0,1,1};
+globalvar s32 a[8]={1,2,0,1,0,2,1,1};
+procedure fir(out s32 out1)
+{
+  localvar s32 D_1376;
+  localvar s32 D_1377;
+  localvar s32 D_1378;
+  localvar s32 D_1379;
+  localvar s32 i;
+  localvar s32 j;
+  localvar s32 acc;
+L0005:
+  acc <= ldc 0;
+  i <= ldc 9;
+  D_1371 <= jmpun;
+D_1370:
+  j <= ldc 7;
+  D_1368 <= jmpun;
+D_1367:
+  D_1374,D_1375 <= jmple j,i;
+D_1374:
+  D_1376 <= sub i,j;
+  D_1377 <= load v,D_1376;
+  D_1378 <= load a,j;
+  D_1379 <= mul D_1377,D_1378;
+  acc <= add D_1379,acc;
+  D_1375 <= jmpun;
+D_1375:
+  j <= sub j,1;
+  D_1368 <= jmpun;
+D_1368:
+  D_1367,D_1369 <= jmpge j,0;
+D_1369:
+  i <= sub i,1;
+  D_1371 <= jmpun;
+D_1371:
+  D_1370,D_1372 <= jmpge i,0;
+D_1372:
+  out1 <= mov acc;
+  L_EXIT <= jmpun;
+L_EXIT:
+  nop;
+}

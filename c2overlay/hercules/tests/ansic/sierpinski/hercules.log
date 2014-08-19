@@ -1,0 +1,823 @@
+### HERCULES RUN: STARTED ###
+NAC file: sierpinski.nac
+Generating VHDL package file: sierpinski_pkg.vhd
+Generating VHDL compound data types package file: sierpinski_cdt_pkg.vhd
+Generating main.c
+Generating main.h
+Generating ansic.mk Makefile
+Generating NAC export file for procedure sierpinski: sierpinski_ssa.nac
+Generating ANSI C file for procedure sierpinski: sierpinski_nac.c
+Generating dot file for the CDFG of procedure sierpinski: sierpinski.dot
+Generating the dot representation of the CFG for procedure sierpinski: sierpinski_cfg.dot
+Generating dot file for call-graph: sierpinski_cg.dot
+Generating a plain graph for the CDFG of the current procedure: sierpinski_cdfg.txt
+Generating the dot representation of the current procedure CFG: sierpinski_cfg.dot
+Generating RTL VHDL for the current procedure: sierpinski.vhd
+Generating the VHDL testbench for the root procedure: sierpinski_tb.vhd
+Generating the Makefile for Modelsim simulation: sierpinski.do
+Generating the shell script for VHDL simulation: sierpinski.sh
+Generating the shell script for XST synthesis: sierpinski-syn.sh
+rm -rf *.o main main.exe
+gcc -O2 -o main main.c sierpinski_nac.c 
+Running main() for benchmark sierpinski
+Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+
+# 10.1d
+
+# do sierpinski.do 
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package std_logic_1164_tinyadditions
+# -- Compiling package body std_logic_1164_tinyadditions
+# -- Loading package std_logic_1164_tinyadditions
+# ** Warning: [3] c:/hercules/cdfg2hdl/contrib/vhdl/std_logic_1164_tinyadditions.vhd(117): (vcom-1246) Range 2 to 1 is null.
+# 
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package STD_LOGIC_TEXTIO
+# -- Compiling package body STD_LOGIC_TEXTIO
+# -- Loading package STD_LOGIC_TEXTIO
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package operpack
+# -- Compiling package body operpack
+# -- Loading package operpack
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package sierpinski_cdt_pkg
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package operpack
+# -- Loading package sierpinski_cdt_pkg
+# -- Loading package std_logic_1164_tinyadditions
+# -- Compiling entity sierpinski
+# -- Compiling architecture fsmd of sierpinski
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package STD_LOGIC_TEXTIO
+# -- Loading package NUMERIC_STD
+# -- Loading package sierpinski_cdt_pkg
+# -- Loading package std_logic_1164_tinyadditions
+# -- Compiling entity sierpinski_tb
+# -- Compiling architecture tb_arch of sierpinski_tb
+# vsim sierpinski_tb 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.std_logic_textio(body)
+# Loading ieee.numeric_std(body)
+# Loading work.sierpinski_cdt_pkg
+# Loading work.std_logic_1164_tinyadditions(body)
+# Loading work.sierpinski_tb(tb_arch)
+# Loading work.operpack(body)
+# Loading work.sierpinski(fsmd)
+# ** Failure: NONE. End simulation time reached
+#    Time: 46930 ns  Iteration: 2  Process: /sierpinski_tb/SIERPINSKI_BENCH File: sierpinski_tb.vhd
+# Break in Process SIERPINSKI_BENCH at sierpinski_tb.vhd line 127
+This script has been running for 6 seconds.
+rm -f *.work *.xst
+rm -f *.ngc *.ngd *.bld *.srp *.lso *.prj
+rm -f *.map.mrp *.map.ncd *.map.ngm *.mcs *.par.ncd *.par.pad
+rm -f *.pcf *.prm *.bgn *.drc
+rm -f *.par_pad.csv *.par_pad.txt *.par.par *.par.xpi
+rm -f *.bit
+rm -f *.vcd *.vvp
+rm -f verilog.dump verilog.log
+rm -rf _ngo/
+rm -rf xst/
+> sierpinski.work
+for a in c:/hercules/cdfg2hdl/contrib/vhdl/std_logic_1164_tinyadditions.vhd c:/hercules/cdfg2hdl/contrib/vhdl/operpack_ieee.vhd sierpinski_cdt_pkg.vhd sierpinski.vhd; do echo "vhdl work $a" >> sierpinski.work; done
+> sierpinski.xst
+echo -n "run -ifn sierpinski.work -ifmt mixed -top sierpinski -ofn sierpinski.ngc" >> sierpinski.xst
+echo " -ofmt NGC -p xc6vlx75t-ff484-1 -iobuf no -opt_mode Speed -opt_level 1" >> sierpinski.xst
+c:/XilinxISE/14.6/ISE_DS/ISE/bin/nt/xst -ifn sierpinski.xst
+Release 14.6 - xst P.68d (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "sierpinski.work"
+Input Format                       : mixed
+
+---- Target Parameters
+Output File Name                   : "sierpinski.ngc"
+Output Format                      : NGC
+Target Device                      : xc6vlx75t-ff484-1
+
+---- Source Options
+Top Module Name                    : sierpinski
+
+---- Target Options
+Add IO Buffers                     : no
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "c:/hercules/cdfg2hdl/contrib/vhdl/std_logic_1164_tinyadditions.vhd" into library work
+Parsing package <std_logic_1164_tinyadditions>.
+Parsing package body <std_logic_1164_tinyadditions>.
+Parsing VHDL file "c:/hercules/cdfg2hdl/contrib/vhdl/operpack_ieee.vhd" into library work
+Parsing package <operpack>.
+Parsing package body <operpack>.
+Parsing VHDL file "C:\hercules\tests\ansic\sierpinski\sierpinski_cdt_pkg.vhd" into library work
+Parsing package <sierpinski_cdt_pkg>.
+Parsing VHDL file "C:\hercules\tests\ansic\sierpinski\sierpinski.vhd" into library work
+Parsing entity <sierpinski>.
+Parsing architecture <fsmd> of entity <sierpinski>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <sierpinski> (architecture <fsmd>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <sierpinski>.
+    Related source file is "C:\hercules\tests\ansic\sierpinski\sierpinski.vhd".
+    Found 32-bit register for signal <sum_61_reg>.
+    Found 32-bit register for signal <col_71_reg>.
+    Found 32-bit register for signal <row_81_reg>.
+    Found 32-bit register for signal <D_1374_31_reg>.
+    Found 32-bit register for signal <sum_11_reg>.
+    Found 32-bit register for signal <iftmp_0_41_reg>.
+    Found 32-bit register for signal <iftmp_0_51_reg>.
+    Found 32-bit register for signal <col_11_reg>.
+    Found 32-bit register for signal <col_81_reg>.
+    Found 32-bit register for signal <row_11_reg>.
+    Found 32-bit register for signal <iftmp_0_reg>.
+    Found 32-bit register for signal <temp_61_reg>.
+    Found 32-bit register for signal <sum_reg>.
+    Found 32-bit register for signal <col_reg>.
+    Found 32-bit register for signal <row_reg>.
+    Found 32-bit register for signal <D_1373_31_reg>.
+    Found 32-bit register for signal <tot>.
+    Found 5-bit register for signal <current_state>.
+INFO:Xst:1799 - State s_001_002 is never reached in FSM <current_state>.
+INFO:Xst:1799 - State s_001_003 is never reached in FSM <current_state>.
+INFO:Xst:1799 - State s_003_002 is never reached in FSM <current_state>.
+INFO:Xst:1799 - State s_003_003 is never reached in FSM <current_state>.
+INFO:Xst:1799 - State s_004_002 is never reached in FSM <current_state>.
+INFO:Xst:1799 - State s_004_003 is never reached in FSM <current_state>.
+INFO:Xst:1799 - State s_005_002 is never reached in FSM <current_state>.
+INFO:Xst:1799 - State s_005_003 is never reached in FSM <current_state>.
+INFO:Xst:1799 - State s_006_002 is never reached in FSM <current_state>.
+INFO:Xst:1799 - State s_006_003 is never reached in FSM <current_state>.
+INFO:Xst:1799 - State s_006_004 is never reached in FSM <current_state>.
+INFO:Xst:1799 - State s_007_002 is never reached in FSM <current_state>.
+INFO:Xst:1799 - State s_007_003 is never reached in FSM <current_state>.
+INFO:Xst:1799 - State s_008_002 is never reached in FSM <current_state>.
+INFO:Xst:1799 - State s_008_003 is never reached in FSM <current_state>.
+INFO:Xst:1799 - State s_010_002 is never reached in FSM <current_state>.
+    Found finite state machine <FSM_0> for signal <current_state>.
+    -----------------------------------------------------------------------
+    | States             | 29                                             |
+    | Transitions        | 18                                             |
+    | Inputs             | 5                                              |
+    | Outputs            | 7                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | reset (positive)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | s_entry                                        |
+    | Power Up State     | s_entry                                        |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 32-bit adder for signal <sum_reg[31]_temp_61_next[31]_add_1057_OUT> created at line 233.
+    Found 32-bit adder for signal <col_reg[31]_GND_8_o_add_2083_OUT> created at line 238.
+    Found 32-bit adder for signal <row_reg[31]_GND_8_o_add_2086_OUT> created at line 246.
+    Found 32-bit comparator greater for signal <n0018> created at line 208
+    Found 32-bit comparator greater for signal <col_71_next[31]_GND_8_o_LessThan_2085_o> created at line 240
+    Summary:
+	inferred   3 Adder/Subtractor(s).
+	inferred 544 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred  17 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <sierpinski> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 3
+ 32-bit adder                                          : 3
+# Registers                                            : 17
+ 32-bit register                                       : 17
+# Comparators                                          : 2
+ 32-bit comparator greater                             : 2
+# Multiplexers                                         : 17
+ 32-bit 2-to-1 multiplexer                             : 17
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 3
+ 32-bit adder                                          : 3
+# Registers                                            : 544
+ Flip-Flops                                            : 544
+# Comparators                                          : 2
+ 32-bit comparator greater                             : 2
+# Multiplexers                                         : 17
+ 32-bit 2-to-1 multiplexer                             : 17
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <current_state[1:13]> with one-hot encoding.
+----------------------------
+ State     | Encoding
+----------------------------
+ s_entry   | 0000000000001
+ s_exit    | 1000000000000
+ s_001_001 | 0000000000010
+ s_001_002 | unreached
+ s_001_003 | unreached
+ s_002_001 | 0000000000100
+ s_003_001 | 0000000010000
+ s_003_002 | unreached
+ s_003_003 | unreached
+ s_004_001 | 0000001000000
+ s_004_002 | unreached
+ s_004_003 | unreached
+ s_005_001 | 0000000100000
+ s_005_002 | unreached
+ s_005_003 | unreached
+ s_006_001 | 0000010000000
+ s_006_002 | unreached
+ s_006_003 | unreached
+ s_006_004 | unreached
+ s_007_001 | 0000000001000
+ s_007_002 | unreached
+ s_007_003 | unreached
+ s_008_001 | 0001000000000
+ s_008_002 | unreached
+ s_008_003 | unreached
+ s_009_001 | 0000100000000
+ s_010_001 | 0010000000000
+ s_010_002 | unreached
+ s_011_001 | 0100000000000
+----------------------------
+WARNING:Xst:1710 - FF/Latch <col_81_reg_11> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <col_81_reg_12> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <col_81_reg_13> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <col_81_reg_14> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <col_81_reg_15> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <col_81_reg_16> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <col_81_reg_17> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <col_81_reg_18> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <col_81_reg_19> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <col_81_reg_20> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <col_81_reg_21> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <col_81_reg_22> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <col_81_reg_23> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <col_81_reg_24> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <col_81_reg_25> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <col_81_reg_26> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <col_81_reg_27> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <col_81_reg_28> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <col_81_reg_29> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <col_81_reg_30> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <col_81_reg_31> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <row_11_reg_0> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <row_11_reg_1> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <row_11_reg_2> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <row_11_reg_3> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <row_11_reg_4> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <iftmp_0_51_reg_16> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <iftmp_0_51_reg_17> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <iftmp_0_51_reg_18> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <iftmp_0_51_reg_19> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <iftmp_0_51_reg_20> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <iftmp_0_51_reg_21> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <iftmp_0_51_reg_22> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <iftmp_0_51_reg_23> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <iftmp_0_51_reg_24> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <iftmp_0_51_reg_25> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <iftmp_0_51_reg_26> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <iftmp_0_51_reg_27> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <iftmp_0_51_reg_28> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <iftmp_0_51_reg_29> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <iftmp_0_51_reg_30> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <iftmp_0_51_reg_31> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <col_81_reg_0> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <col_81_reg_1> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <col_81_reg_2> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <col_81_reg_3> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <col_81_reg_4> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <col_81_reg_5> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <col_81_reg_6> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <col_81_reg_7> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <col_81_reg_8> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <col_81_reg_9> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <col_81_reg_10> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <iftmp_0_reg_0> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <iftmp_0_reg_4> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <iftmp_0_reg_7> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <iftmp_0_reg_8> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <iftmp_0_reg_9> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <iftmp_0_reg_10> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <iftmp_0_reg_11> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <iftmp_0_reg_12> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <iftmp_0_reg_13> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <iftmp_0_reg_14> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <iftmp_0_reg_15> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <iftmp_0_reg_16> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <iftmp_0_reg_17> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <iftmp_0_reg_18> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <iftmp_0_reg_19> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <iftmp_0_reg_20> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <iftmp_0_reg_21> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <iftmp_0_reg_22> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <iftmp_0_reg_23> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <iftmp_0_reg_24> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <iftmp_0_reg_25> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <iftmp_0_reg_26> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <iftmp_0_reg_27> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <iftmp_0_reg_28> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <iftmp_0_reg_29> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <iftmp_0_reg_30> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <iftmp_0_reg_31> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <row_11_reg_5> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <row_11_reg_6> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <row_11_reg_7> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <row_11_reg_8> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <row_11_reg_9> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <row_11_reg_10> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <row_11_reg_11> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <row_11_reg_12> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <row_11_reg_13> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <row_11_reg_14> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <row_11_reg_15> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <row_11_reg_16> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <row_11_reg_17> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <row_11_reg_18> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <row_11_reg_19> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <row_11_reg_20> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <row_11_reg_21> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <row_11_reg_22> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <row_11_reg_23> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <row_11_reg_24> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <row_11_reg_25> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <row_11_reg_26> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <row_11_reg_27> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <row_11_reg_28> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <row_11_reg_29> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <row_11_reg_30> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <row_11_reg_31> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sum_11_reg_27> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sum_11_reg_28> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sum_11_reg_29> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sum_11_reg_30> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sum_11_reg_31> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <col_11_reg_0> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <col_11_reg_1> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <col_11_reg_2> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <col_11_reg_3> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <col_11_reg_4> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <col_11_reg_5> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <col_11_reg_6> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <col_11_reg_7> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <col_11_reg_8> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <col_11_reg_9> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <col_11_reg_10> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <col_11_reg_11> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <col_11_reg_12> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <col_11_reg_13> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <col_11_reg_14> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <col_11_reg_15> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <col_11_reg_16> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <col_11_reg_17> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <col_11_reg_18> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <col_11_reg_19> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <col_11_reg_20> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sum_11_reg_0> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sum_11_reg_1> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sum_11_reg_2> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sum_11_reg_3> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sum_11_reg_4> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sum_11_reg_5> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sum_11_reg_6> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sum_11_reg_7> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sum_11_reg_8> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sum_11_reg_9> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sum_11_reg_10> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sum_11_reg_11> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sum_11_reg_12> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sum_11_reg_13> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sum_11_reg_14> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sum_11_reg_15> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sum_11_reg_16> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sum_11_reg_17> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sum_11_reg_18> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sum_11_reg_19> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sum_11_reg_20> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sum_11_reg_21> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sum_11_reg_22> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sum_11_reg_23> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sum_11_reg_24> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sum_11_reg_25> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sum_11_reg_26> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <iftmp_0_41_reg_20> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <iftmp_0_41_reg_21> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <iftmp_0_41_reg_22> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <iftmp_0_41_reg_23> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <iftmp_0_41_reg_24> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <iftmp_0_41_reg_25> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <iftmp_0_41_reg_26> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <iftmp_0_41_reg_27> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <iftmp_0_41_reg_28> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <iftmp_0_41_reg_29> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <iftmp_0_41_reg_30> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <iftmp_0_41_reg_31> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <iftmp_0_51_reg_0> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <iftmp_0_51_reg_1> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <iftmp_0_51_reg_2> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <iftmp_0_51_reg_3> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <iftmp_0_51_reg_4> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <iftmp_0_51_reg_5> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <iftmp_0_51_reg_7> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <iftmp_0_51_reg_8> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <iftmp_0_51_reg_9> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <iftmp_0_51_reg_10> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <iftmp_0_51_reg_11> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <iftmp_0_51_reg_12> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <iftmp_0_51_reg_13> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <iftmp_0_51_reg_14> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <iftmp_0_51_reg_15> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <col_11_reg_21> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <col_11_reg_22> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <col_11_reg_23> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <col_11_reg_24> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <col_11_reg_25> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <col_11_reg_26> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <col_11_reg_27> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <col_11_reg_28> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <col_11_reg_29> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <col_11_reg_30> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <col_11_reg_31> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <iftmp_0_41_reg_0> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <iftmp_0_41_reg_4> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <iftmp_0_41_reg_6> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <iftmp_0_41_reg_7> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <iftmp_0_41_reg_8> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <iftmp_0_41_reg_9> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <iftmp_0_41_reg_10> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <iftmp_0_41_reg_11> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <iftmp_0_41_reg_12> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <iftmp_0_41_reg_13> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <iftmp_0_41_reg_14> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <iftmp_0_41_reg_15> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <iftmp_0_41_reg_16> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <iftmp_0_41_reg_17> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <iftmp_0_41_reg_18> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <iftmp_0_41_reg_19> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <temp_61_reg_31> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <temp_61_reg_30> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <temp_61_reg_29> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <temp_61_reg_28> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <temp_61_reg_27> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <temp_61_reg_26> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <temp_61_reg_25> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <temp_61_reg_24> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <temp_61_reg_23> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <temp_61_reg_22> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <temp_61_reg_21> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <temp_61_reg_20> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <temp_61_reg_19> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <temp_61_reg_18> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <temp_61_reg_17> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <temp_61_reg_16> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <temp_61_reg_15> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <temp_61_reg_14> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <temp_61_reg_13> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <temp_61_reg_12> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <temp_61_reg_11> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <temp_61_reg_10> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <temp_61_reg_9> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <temp_61_reg_8> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <temp_61_reg_7> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <temp_61_reg_4> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <temp_61_reg_0> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <sierpinski> ...
+WARNING:Xst:2677 - Node <D_1373_31_reg_0> of sequential type is unconnected in block <sierpinski>.
+WARNING:Xst:2677 - Node <D_1373_31_reg_1> of sequential type is unconnected in block <sierpinski>.
+WARNING:Xst:2677 - Node <D_1373_31_reg_2> of sequential type is unconnected in block <sierpinski>.
+WARNING:Xst:2677 - Node <D_1373_31_reg_3> of sequential type is unconnected in block <sierpinski>.
+WARNING:Xst:2677 - Node <D_1373_31_reg_4> of sequential type is unconnected in block <sierpinski>.
+WARNING:Xst:2677 - Node <D_1373_31_reg_5> of sequential type is unconnected in block <sierpinski>.
+WARNING:Xst:2677 - Node <D_1373_31_reg_6> of sequential type is unconnected in block <sierpinski>.
+WARNING:Xst:2677 - Node <D_1373_31_reg_7> of sequential type is unconnected in block <sierpinski>.
+WARNING:Xst:2677 - Node <D_1373_31_reg_8> of sequential type is unconnected in block <sierpinski>.
+WARNING:Xst:2677 - Node <D_1373_31_reg_9> of sequential type is unconnected in block <sierpinski>.
+WARNING:Xst:2677 - Node <D_1373_31_reg_10> of sequential type is unconnected in block <sierpinski>.
+WARNING:Xst:2677 - Node <D_1373_31_reg_11> of sequential type is unconnected in block <sierpinski>.
+WARNING:Xst:2677 - Node <D_1373_31_reg_12> of sequential type is unconnected in block <sierpinski>.
+WARNING:Xst:2677 - Node <D_1373_31_reg_13> of sequential type is unconnected in block <sierpinski>.
+WARNING:Xst:2677 - Node <D_1373_31_reg_14> of sequential type is unconnected in block <sierpinski>.
+WARNING:Xst:2677 - Node <D_1373_31_reg_15> of sequential type is unconnected in block <sierpinski>.
+WARNING:Xst:2677 - Node <D_1373_31_reg_16> of sequential type is unconnected in block <sierpinski>.
+WARNING:Xst:2677 - Node <D_1373_31_reg_17> of sequential type is unconnected in block <sierpinski>.
+WARNING:Xst:2677 - Node <D_1373_31_reg_18> of sequential type is unconnected in block <sierpinski>.
+WARNING:Xst:2677 - Node <D_1373_31_reg_19> of sequential type is unconnected in block <sierpinski>.
+WARNING:Xst:2677 - Node <D_1373_31_reg_20> of sequential type is unconnected in block <sierpinski>.
+WARNING:Xst:2677 - Node <D_1373_31_reg_21> of sequential type is unconnected in block <sierpinski>.
+WARNING:Xst:2677 - Node <D_1373_31_reg_22> of sequential type is unconnected in block <sierpinski>.
+WARNING:Xst:2677 - Node <D_1373_31_reg_23> of sequential type is unconnected in block <sierpinski>.
+WARNING:Xst:2677 - Node <D_1373_31_reg_24> of sequential type is unconnected in block <sierpinski>.
+WARNING:Xst:2677 - Node <D_1373_31_reg_25> of sequential type is unconnected in block <sierpinski>.
+WARNING:Xst:2677 - Node <D_1373_31_reg_26> of sequential type is unconnected in block <sierpinski>.
+WARNING:Xst:2677 - Node <D_1373_31_reg_27> of sequential type is unconnected in block <sierpinski>.
+WARNING:Xst:2677 - Node <D_1373_31_reg_28> of sequential type is unconnected in block <sierpinski>.
+WARNING:Xst:2677 - Node <D_1373_31_reg_29> of sequential type is unconnected in block <sierpinski>.
+WARNING:Xst:2677 - Node <D_1373_31_reg_30> of sequential type is unconnected in block <sierpinski>.
+WARNING:Xst:2677 - Node <D_1373_31_reg_31> of sequential type is unconnected in block <sierpinski>.
+WARNING:Xst:1710 - FF/Latch <sum_reg_0> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <sum_61_reg_0> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <tot_reg_0> (without init value) has a constant value of 0 in block <sierpinski>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <iftmp_0_41_reg_1> in Unit <sierpinski> is equivalent to the following 3 FFs/Latches, which will be removed : <iftmp_0_41_reg_2> <iftmp_0_41_reg_3> <iftmp_0_41_reg_5> 
+INFO:Xst:2261 - The FF/Latch <iftmp_0_reg_1> in Unit <sierpinski> is equivalent to the following 3 FFs/Latches, which will be removed : <iftmp_0_reg_2> <iftmp_0_reg_3> <iftmp_0_reg_5> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 0) on block sierpinski, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 275
+ Flip-Flops                                            : 275
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : sierpinski.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 618
+#      GND                         : 1
+#      INV                         : 3
+#      LUT1                        : 89
+#      LUT2                        : 12
+#      LUT3                        : 109
+#      LUT4                        : 130
+#      LUT5                        : 41
+#      LUT6                        : 22
+#      MUXCY                       : 115
+#      VCC                         : 1
+#      XORCY                       : 95
+# FlipFlops/Latches                : 275
+#      FDC                         : 146
+#      FDCE                        : 128
+#      FDP                         : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6vlx75tff484-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             275  out of  93120     0%  
+ Number of Slice LUTs:                  406  out of  46560     0%  
+    Number used as Logic:               406  out of  46560     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    437
+   Number with an unused Flip Flop:     162  out of    437    37%  
+   Number with an unused LUT:            31  out of    437     7%  
+   Number of fully used LUT-FF pairs:   244  out of    437    55%  
+   Number of unique control sets:         6
+
+IO Utilization: 
+ Number of IOs:                          37
+ Number of bonded IOBs:                   0  out of    240     0%  
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | NONE(row_81_reg_0)     | 275   |
+-----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 3.717ns (Maximum Frequency: 269.070MHz)
+   Minimum input arrival time before clock: 0.434ns
+   Maximum output required time after clock: 0.375ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 3.717ns (frequency: 269.070MHz)
+  Total number of paths / destination ports: 7269 / 403
+-------------------------------------------------------------------------
+Delay:               3.717ns (Levels of Logic = 16)
+  Source:            col_reg_0 (FF)
+  Destination:       current_state_FSM_FFd4 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: col_reg_0 to current_state_FSM_FFd4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             4   0.375   0.419  col_reg_0 (col_reg_0)
+     INV:I->O              1   0.086   0.000  Madd_col_reg[31]_GND_8_o_add_2083_OUT_lut<0>_INV_0 (Madd_col_reg[31]_GND_8_o_add_2083_OUT_lut<0>)
+     MUXCY:S->O            1   0.290   0.000  Madd_col_reg[31]_GND_8_o_add_2083_OUT_cy<0> (Madd_col_reg[31]_GND_8_o_add_2083_OUT_cy<0>)
+     MUXCY:CI->O           1   0.020   0.000  Madd_col_reg[31]_GND_8_o_add_2083_OUT_cy<1> (Madd_col_reg[31]_GND_8_o_add_2083_OUT_cy<1>)
+     MUXCY:CI->O           1   0.020   0.000  Madd_col_reg[31]_GND_8_o_add_2083_OUT_cy<2> (Madd_col_reg[31]_GND_8_o_add_2083_OUT_cy<2>)
+     MUXCY:CI->O           1   0.020   0.000  Madd_col_reg[31]_GND_8_o_add_2083_OUT_cy<3> (Madd_col_reg[31]_GND_8_o_add_2083_OUT_cy<3>)
+     MUXCY:CI->O           1   0.020   0.000  Madd_col_reg[31]_GND_8_o_add_2083_OUT_cy<4> (Madd_col_reg[31]_GND_8_o_add_2083_OUT_cy<4>)
+     XORCY:CI->O           2   0.239   0.423  Madd_col_reg[31]_GND_8_o_add_2083_OUT_xor<5> (col_reg[31]_GND_8_o_add_2083_OUT<5>)
+     LUT3:I2->O            2   0.068   0.781  Mmux_col_71_next271 (col_71_next<5>)
+     LUT5:I0->O            1   0.068   0.000  Mcompar_col_71_next[31]_GND_8_o_LessThan_2085_o_lut<0> (Mcompar_col_71_next[31]_GND_8_o_LessThan_2085_o_lut<0>)
+     MUXCY:S->O            1   0.290   0.000  Mcompar_col_71_next[31]_GND_8_o_LessThan_2085_o_cy<0> (Mcompar_col_71_next[31]_GND_8_o_LessThan_2085_o_cy<0>)
+     MUXCY:CI->O           1   0.020   0.000  Mcompar_col_71_next[31]_GND_8_o_LessThan_2085_o_cy<1> (Mcompar_col_71_next[31]_GND_8_o_LessThan_2085_o_cy<1>)
+     MUXCY:CI->O           1   0.020   0.000  Mcompar_col_71_next[31]_GND_8_o_LessThan_2085_o_cy<2> (Mcompar_col_71_next[31]_GND_8_o_LessThan_2085_o_cy<2>)
+     MUXCY:CI->O           1   0.020   0.000  Mcompar_col_71_next[31]_GND_8_o_LessThan_2085_o_cy<3> (Mcompar_col_71_next[31]_GND_8_o_LessThan_2085_o_cy<3>)
+     MUXCY:CI->O           1   0.020   0.000  Mcompar_col_71_next[31]_GND_8_o_LessThan_2085_o_cy<4> (Mcompar_col_71_next[31]_GND_8_o_LessThan_2085_o_cy<4>)
+     MUXCY:CI->O           2   0.020   0.423  Mcompar_col_71_next[31]_GND_8_o_LessThan_2085_o_cy<5> (Mcompar_col_71_next[31]_GND_8_o_LessThan_2085_o_cy<5>)
+     LUT2:I1->O            1   0.068   0.000  current_state_FSM_FFd4-In1 (current_state_FSM_FFd4-In)
+     FDC:D                     0.011          current_state_FSM_FFd4
+    ----------------------------------------
+    Total                      3.717ns (1.671ns logic, 2.046ns route)
+                                       (44.9% logic, 55.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 277 / 277
+-------------------------------------------------------------------------
+Offset:              0.434ns (Levels of Logic = 0)
+  Source:            reset (PAD)
+  Destination:       row_81_reg_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: reset to row_81_reg_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:CLR                   0.434          row_81_reg_0
+    ----------------------------------------
+    Total                      0.434ns (0.434ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 33 / 33
+-------------------------------------------------------------------------
+Offset:              0.375ns (Levels of Logic = 0)
+  Source:            tot_reg_31 (FF)
+  Destination:       tot<31> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: tot_reg_31 to tot<31>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             0   0.375   0.000  tot_reg_31 (tot_reg_31)
+    ----------------------------------------
+    Total                      0.375ns (0.375ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    3.717|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 11.00 secs
+Total CPU time to Xst completion: 10.42 secs
+ 
+--> 
+
+Total memory usage is 326736 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  276 (   0 filtered)
+Number of infos    :   19 (   0 filtered)
+
+The XST synthesis script has been running for 14 seconds.
+### HERCULES RUN: ENDED ###
+

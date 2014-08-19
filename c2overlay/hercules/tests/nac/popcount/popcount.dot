@@ -1,0 +1,48 @@
+digraph popcount
+{
+  graph [rankdir="TB", nodesep = "0.175"];
+  node [fontname="Courier", fontsize="12", style="filled"];
+  edge [fontname="Courier", fontsize="12"];
+
+  add_6  [label="add", ntype="operation", argix="-1", dataspec="na", bb="2", shape="ellipse", fillcolor="yellow"];
+  and_5  [label="and", ntype="operation", argix="-1", dataspec="na", bb="2", shape="ellipse", fillcolor="yellow"];
+  cnst0  [label="0", ntype="constant", argix="-1", dataspec="u32", bb="-1", shape="diamond", fillcolor="magenta"];
+  cnst1  [label="1", ntype="constant", argix="-1", dataspec="u32", bb="-1", shape="diamond", fillcolor="magenta"];
+  inp  [label="inp", ntype="invar", argix="0", dataspec="u32", bb="-1", shape="invtriangle", fillcolor="green"];
+  jmpeq_10  [label="jmpeq", ntype="operation", argix="-1", dataspec="na", bb="2", shape="ellipse", fillcolor="yellow"];
+  jmpun_4  [label="jmpun", ntype="operation", argix="-1", dataspec="na", bb="1", shape="ellipse", fillcolor="yellow"];
+  ldc_1  [label="ldc", ntype="operation", argix="-1", dataspec="na", bb="1", shape="ellipse", fillcolor="yellow"];
+  mov_0  [label="mov", ntype="operation", argix="-1", dataspec="na", bb="1", shape="ellipse", fillcolor="yellow"];
+  mov_11  [label="mov", ntype="operation", argix="-1", dataspec="na", bb="3", shape="ellipse", fillcolor="yellow"];
+  mov_2  [label="mov", ntype="operation", argix="-1", dataspec="na", bb="1", shape="ellipse", fillcolor="yellow"];
+  mov_3  [label="mov", ntype="operation", argix="-1", dataspec="na", bb="1", shape="ellipse", fillcolor="yellow"];
+  mov_8  [label="mov", ntype="operation", argix="-1", dataspec="na", bb="2", shape="ellipse", fillcolor="yellow"];
+  mov_9  [label="mov", ntype="operation", argix="-1", dataspec="na", bb="2", shape="ellipse", fillcolor="yellow"];
+  outp  [label="outp", ntype="outvar", argix="0", dataspec="u32", bb="-1", shape="triangle", fillcolor="cyan"];
+  shr_7  [label="shr", ntype="operation", argix="-1", dataspec="na", bb="2", shape="ellipse", fillcolor="yellow"];
+
+  add_6 -> mov_9  [label="count$21", etype="D", vtype="localvar", order="1", argix="-1", dataspec="u32"];
+  and_5 -> add_6  [label="temp$21", etype="D", vtype="localvar", order="2", argix="-1", dataspec="u32"];
+  cnst0 -> jmpeq_10  [label="0", etype="D", vtype="globalvar", order="2", argix="-1", dataspec="u32"];
+  cnst0 -> ldc_1  [label="0", etype="D", vtype="globalvar", order="1", argix="-1", dataspec="u32"];
+  cnst1 -> and_5  [label="1", etype="D", vtype="globalvar", order="2", argix="-1", dataspec="u32"];
+  cnst1 -> shr_7  [label="1", etype="D", vtype="globalvar", order="2", argix="-1", dataspec="u32"];
+  inp -> mov_0  [label="inp", etype="D", vtype="inarg", order="1", argix="-1", dataspec="u32"];
+  jmpeq_10 -> and_5  [label="F", etype="F", order="2", argix="-1", dataspec="u1"];
+  jmpeq_10 -> mov_11  [label="T", etype="T", order="1", argix="-1", dataspec="u1"];
+  jmpun_4 -> and_5  [label="U", etype="U", order="1", argix="-1", dataspec="u1"];
+  ldc_1 -> mov_3  [label="count$11", etype="D", vtype="localvar", order="1", argix="-1", dataspec="u32"];
+  mov_0 -> mov_2  [label="data$11", etype="D", vtype="localvar", order="1", argix="-1", dataspec="u32"];
+  mov_11 -> outp  [label="outp", etype="D", vtype="outarg", order="1", argix="-1", dataspec="u32"];
+  mov_2 -> and_5  [label="data", etype="D", vtype="localvar", order="1", argix="-1", dataspec="u32"];
+  mov_2 -> shr_7  [label="data", etype="D", vtype="localvar", order="1", argix="-1", dataspec="u32"];
+  mov_3 -> add_6  [label="count", etype="D", vtype="localvar", order="1", argix="-1", dataspec="u32"];
+  mov_3 -> mov_11  [label="count", etype="D", vtype="localvar", order="1", argix="-1", dataspec="u32"];
+  mov_8 -> and_5  [label="data", etype="D", vtype="localvar", order="1", argix="-1", dataspec="u32"];
+  mov_8 -> shr_7  [label="data", etype="D", vtype="localvar", order="1", argix="-1", dataspec="u32"];
+  mov_9 -> add_6  [label="count", etype="D", vtype="localvar", order="1", argix="-1", dataspec="u32"];
+  mov_9 -> mov_11  [label="count", etype="D", vtype="localvar", order="1", argix="-1", dataspec="u32"];
+  shr_7 -> jmpeq_10  [label="data$21", etype="D", vtype="localvar", order="1", argix="-1", dataspec="u32"];
+  shr_7 -> mov_8  [label="data$21", etype="D", vtype="localvar", order="1", argix="-1", dataspec="u32"];
+
+}

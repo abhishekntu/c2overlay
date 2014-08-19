@@ -1,0 +1,51 @@
+procedure sierpinski ( out s32 tot ) 
+{ 
+localvar s32 iftmp_0 ; 
+localvar s32 D_1373 ; 
+localvar s32 D_1374 ; 
+localvar s32 D_1378 ; 
+localvar s32 D_1379 ; 
+localvar s32 col ; 
+localvar s32 row ; 
+localvar s32 table[1024] ; 
+localvar s32 temp ; 
+localvar s32 sum ; 
+L0005 : 
+sum <= ldc 0 ; 
+col <= ldc 0 ; 
+row <= ldc 0 ; 
+D_1367 <= jmpun ; 
+D_1367 : 
+D_1370 , D_1371 <= jmpge col , row ; 
+D_1370 : 
+D_1373 <= not col ; 
+D_1374 <= and D_1373 , row ; 
+D_1375 , D_1376 <= jmpne D_1374 , 0 ; 
+D_1375 : 
+iftmp_0 <= ldc 46 ; 
+D_1377 <= jmpun ; 
+D_1376 : 
+iftmp_0 <= ldc 64 ; 
+D_1377 <= jmpun ; 
+D_1377 : 
+temp <= mov iftmp_0 ; 
+D_1378 <= mul row , 32 ; 
+D_1379 <= add D_1378 , col ; 
+table <= store temp , D_1379 ; 
+sum <= add sum , temp ; 
+D_1371 <= jmpun ; 
+D_1371 : 
+col <= add col , 1 ; 
+D_1380 , D_1381 <= jmpgt col , 31 ; 
+D_1380 : 
+col <= ldc 0 ; 
+row <= add row , 1 ; 
+D_1381 <= jmpun ; 
+D_1381 : 
+D_1367 , D_1368 <= jmpne row , 32 ; 
+D_1368 : 
+tot <= mov sum ; 
+L_EXIT <= jmpun ;
+L_EXIT : 
+nop ; 
+} 

@@ -1,0 +1,52 @@
+//
+// Filename: perfect.0.nac
+// Purpose : N-address code (NAC) implementation for the naive algorithm for 
+//           detecting perfect numbers. A perfect (positive integer) number is 
+//           equal to the sum of its divisors. The first members of this 
+//           sequence are: 6, 28, 496, 8128.
+// Author  : Nikolaos Kavvadias (C) 2010, 2011, 2012, 2013
+// Date    : 17-Apr-2010
+// Revision: 0.3.0 (17/04/10)
+//           Initial version.
+// 
+
+procedure perfect (in u16 value, out u16 isperfect)
+{
+  localvar u16 factorsum, n, temp, t1, t2, i, ifinal;
+
+S_1:
+  factorsum <= ldc 1;
+  n <= mov value;
+  S_2 <= jmpun;
+  
+S_2:
+  i <= ldc 2;
+  ifinal <= shr n, 1;
+  S_3 <= jmpun;
+  
+S_3:
+  t1 <= rem n, i;
+  S_4, S_5 <= jmpeq t1, 0;
+  
+S_4:
+  factorsum <= add factorsum, i;  
+  S_5 <= jmpun;
+  
+S_5:
+  i <= add i, 1;
+  S_3, S_6 <= jmple i, ifinal;  
+
+S_6:
+  S_7, S_8 <= jmpeq factorsum, n;
+  
+S_7:
+  temp <= ldc 1;
+  S_EXIT <= jmpun;
+
+S_8:
+  temp <= ldc 0;
+  S_EXIT <= jmpun;
+  
+S_EXIT:
+  isperfect <= mov temp;
+}

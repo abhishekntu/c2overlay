@@ -1,0 +1,66 @@
+# do fir.do 
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package std_logic_1164_tinyadditions
+# -- Compiling package body std_logic_1164_tinyadditions
+# -- Loading package std_logic_1164_tinyadditions
+# ** Warning: [3] c:/hercules/cdfg2hdl/contrib/vhdl/std_logic_1164_tinyadditions.vhd(117): (vcom-1246) Range 2 to 1 is null.
+# 
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package STD_LOGIC_TEXTIO
+# -- Compiling package body STD_LOGIC_TEXTIO
+# -- Loading package STD_LOGIC_TEXTIO
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package operpack
+# -- Compiling package body operpack
+# -- Loading package operpack
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package fir_cdt_pkg
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package operpack
+# -- Loading package fir_cdt_pkg
+# -- Loading package std_logic_1164_tinyadditions
+# -- Compiling entity fir
+# -- Compiling architecture fsmd of fir
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package STD_LOGIC_TEXTIO
+# -- Loading package NUMERIC_STD
+# -- Loading package fir_cdt_pkg
+# -- Loading package std_logic_1164_tinyadditions
+# -- Compiling entity fir_tb
+# -- Compiling architecture tb_arch of fir_tb
+# vsim fir_tb 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.std_logic_textio(body)
+# Loading ieee.numeric_std(body)
+# Loading work.fir_cdt_pkg
+# Loading work.std_logic_1164_tinyadditions(body)
+# Loading work.fir_tb(tb_arch)
+# Loading work.operpack(body)
+# Loading work.fir(fsmd)
+# ** Failure: NONE. End simulation time reached
+#    Time: 8010 ns  Iteration: 2  Process: /fir_tb/FIR_BENCH File: fir_tb.vhd
+# Break in Process FIR_BENCH at fir_tb.vhd line 127

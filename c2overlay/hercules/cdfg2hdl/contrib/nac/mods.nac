@@ -1,0 +1,32 @@
+//
+// Filename: mods.nac
+// Purpose : N-address code (NAC) implementation for testing modulus 
+//           (conservative version).
+// Author  : Nikolaos Kavvadias (C) 2011
+// Date    : 07-May-2011
+// Revision: 0.3.0 (18/04/11)
+//           Initial version.
+//           0.3.1 (07/05/11)
+//           Adapted from "modremtest".
+// 
+
+procedure mods_test (in s32 x, in s32 y, out s32 res)
+{
+  localvar s32 r, t1, t2, t3;
+S_1: 
+  r <= rem x, y;
+//  if ((r > 0 && d < 0) || (r < 0 && d > 0)) 
+  t1 <= setgt r, 0;
+  t2 <= setlt y, 0;
+  t1 <= and t1, t2;
+  t2 <= setlt r, 0;
+  t3 <= setgt y, 0;
+  t2 <= and t2, t3;
+  t3 <= ior t1, t2;
+  S_2, S_3 <= jmpne t3, 0;
+S_2:
+  r <= add r, y;
+  S_3 <= jmpun;
+S_3:
+  res <= mov r;  
+}

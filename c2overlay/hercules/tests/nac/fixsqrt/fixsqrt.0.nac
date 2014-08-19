@@ -1,0 +1,58 @@
+//
+// Filename: fixsqrt.0.nac
+// Purpose : N-address code (NAC) implementation for a fixed-point square root 
+//           accurate algorithm proposed by Ken Turkowski. A technical report 
+//           detailing the algorithm can be found here: 
+//           http://www.worldserver.com/turk/computergraphics/FixedSqrt.pdf
+// Author  : Nikolaos Kavvadias (C) 2010, 2011, 2012, 2013
+// Date    : 31-Oct-2010
+// Revision: 0.3.0 (31/10/10)
+//           Initial version.
+// 
+
+procedure fixsqrt (in u32 x, in u32 fracbits, out u32 root)
+{
+  localvar u32 troot, remHi, remLo, testDiv, count;
+  localvar u32 t0, t1, t2, t3, t4, t5;
+  
+S_1:
+  troot <= ldc 0;
+  remHi <= ldc 0;
+  remLo <= mov x;
+  t0 <= shr fracbits, 1;
+  count <= add t0, 15;
+  S_2 <= jmpun;
+
+S_2:
+//  remHi = (remHi << 2) | (remLo >> fracbits); 
+  t1 <= shr remLo, fracbits;
+  t2 <= shl remHi, 2;
+  remHi <= ior t1, t2;
+//  remLo <<= 2;  /* get 2 bits of arg */
+  remLo <= shl remLo, 2;
+//    troot <<= 1;   /* Get ready for the next bit in the root */
+  troot <= shl troot, 1;
+//    testDiv = (troot << 1) + 1;    /* Test radical */
+  t3 <= shl troot, 1;
+  testDiv <= add t3, 1;
+//    if (remHi >= testDiv) {
+  t4 <= setge remHi, testDiv;
+  S_3, S_4 <= jmpeq t4, 1;
+  
+S_3:
+//      remHi -= testDiv;
+  remHi <= sub remHi, testDiv;
+//      troot += 1;
+  troot <= add troot, 1;
+  S_4 <= jmpun;
+//    }
+
+S_4:
+//  } while (count-- != 0);
+  t5 <= setne count, 0;
+  count <= sub count, 1;
+  S_2, S_EXIT <= jmpeq t5, 1;
+ 
+S_EXIT:
+  root <= mov troot;
+}

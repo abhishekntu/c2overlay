@@ -1,0 +1,49 @@
+digraph eda
+{
+  graph [rankdir="TB", nodesep = "0.175"];
+  node [fontname="Courier", fontsize="12", style="filled"];
+  edge [fontname="Courier", fontsize="12"];
+
+  abs_2  [label="abs", ntype="operation", argix="-1", dataspec="na", bb="1", shape="ellipse", fillcolor="yellow"];
+  abs_3  [label="abs", ntype="operation", argix="-1", dataspec="na", bb="1", shape="ellipse", fillcolor="yellow"];
+  add_9  [label="add", ntype="operation", argix="-1", dataspec="na", bb="1", shape="ellipse", fillcolor="yellow"];
+  cnst1  [label="1", ntype="constant", argix="-1", dataspec="s32", bb="-1", shape="diamond", fillcolor="magenta"];
+  cnst3  [label="3", ntype="constant", argix="-1", dataspec="s32", bb="-1", shape="diamond", fillcolor="magenta"];
+  in1  [label="in1", ntype="invar", argix="0", dataspec="s32", bb="-1", shape="invtriangle", fillcolor="green"];
+  in2  [label="in2", ntype="invar", argix="1", dataspec="s32", bb="-1", shape="invtriangle", fillcolor="green"];
+  jmpun_12  [label="jmpun", ntype="operation", argix="-1", dataspec="na", bb="1", shape="ellipse", fillcolor="yellow"];
+  max_10  [label="max", ntype="operation", argix="-1", dataspec="na", bb="1", shape="ellipse", fillcolor="yellow"];
+  max_4  [label="max", ntype="operation", argix="-1", dataspec="na", bb="1", shape="ellipse", fillcolor="yellow"];
+  min_5  [label="min", ntype="operation", argix="-1", dataspec="na", bb="1", shape="ellipse", fillcolor="yellow"];
+  mov_0  [label="mov", ntype="operation", argix="-1", dataspec="na", bb="1", shape="ellipse", fillcolor="yellow"];
+  mov_1  [label="mov", ntype="operation", argix="-1", dataspec="na", bb="1", shape="ellipse", fillcolor="yellow"];
+  mov_11  [label="mov", ntype="operation", argix="-1", dataspec="na", bb="1", shape="ellipse", fillcolor="yellow"];
+  nop_13  [label="nop", ntype="operation", argix="-1", dataspec="na", bb="2", shape="ellipse", fillcolor="yellow"];
+  out1  [label="out1", ntype="outvar", argix="0", dataspec="s32", bb="-1", shape="triangle", fillcolor="cyan"];
+  shr_6  [label="shr", ntype="operation", argix="-1", dataspec="na", bb="1", shape="ellipse", fillcolor="yellow"];
+  shr_7  [label="shr", ntype="operation", argix="-1", dataspec="na", bb="1", shape="ellipse", fillcolor="yellow"];
+  sub_8  [label="sub", ntype="operation", argix="-1", dataspec="na", bb="1", shape="ellipse", fillcolor="yellow"];
+
+  abs_2 -> max_4  [label="t1$1", etype="D", vtype="localvar", order="2", argix="-1", dataspec="s32"];
+  abs_2 -> min_5  [label="t1$1", etype="D", vtype="localvar", order="2", argix="-1", dataspec="s32"];
+  abs_3 -> max_4  [label="t2$1", etype="D", vtype="localvar", order="1", argix="-1", dataspec="s32"];
+  abs_3 -> min_5  [label="t2$1", etype="D", vtype="localvar", order="1", argix="-1", dataspec="s32"];
+  add_9 -> max_10  [label="t6$1", etype="D", vtype="localvar", order="2", argix="-1", dataspec="s32"];
+  cnst1 -> shr_7  [label="1", etype="D", vtype="globalvar", order="2", argix="-1", dataspec="s32"];
+  cnst3 -> shr_6  [label="3", etype="D", vtype="globalvar", order="2", argix="-1", dataspec="s32"];
+  in1 -> mov_0  [label="in1", etype="D", vtype="inarg", order="1", argix="-1", dataspec="s32"];
+  in2 -> mov_1  [label="in2", etype="D", vtype="inarg", order="1", argix="-1", dataspec="s32"];
+  jmpun_12 -> nop_13  [label="U", etype="U", order="1", argix="-1", dataspec="u1"];
+  max_10 -> mov_11  [label="t7$1", etype="D", vtype="localvar", order="1", argix="-1", dataspec="s32"];
+  max_4 -> max_10  [label="x$1", etype="D", vtype="localvar", order="1", argix="-1", dataspec="s32"];
+  max_4 -> shr_6  [label="x$1", etype="D", vtype="localvar", order="1", argix="-1", dataspec="s32"];
+  max_4 -> sub_8  [label="x$1", etype="D", vtype="localvar", order="1", argix="-1", dataspec="s32"];
+  min_5 -> shr_7  [label="y$1", etype="D", vtype="localvar", order="1", argix="-1", dataspec="s32"];
+  mov_0 -> abs_2  [label="a$1", etype="D", vtype="localvar", order="1", argix="-1", dataspec="s32"];
+  mov_11 -> out1  [label="out1", etype="D", vtype="outarg", order="1", argix="-1", dataspec="s32"];
+  mov_1 -> abs_3  [label="b$1", etype="D", vtype="localvar", order="1", argix="-1", dataspec="s32"];
+  shr_6 -> sub_8  [label="t3$1", etype="D", vtype="localvar", order="2", argix="-1", dataspec="s32"];
+  shr_7 -> add_9  [label="t4$1", etype="D", vtype="localvar", order="1", argix="-1", dataspec="s32"];
+  sub_8 -> add_9  [label="t5$1", etype="D", vtype="localvar", order="2", argix="-1", dataspec="s32"];
+
+}

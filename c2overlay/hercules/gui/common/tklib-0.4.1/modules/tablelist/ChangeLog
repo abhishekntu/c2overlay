@@ -1,0 +1,52 @@
+2005-11-10  Andreas Kupries  <andreas_kupries@users.sourceforge.net>
+
+	*
+	* Released and tagged Tklib 0.4.1 ========================
+	* 
+
+2005-11-10  Andreas Kupries <andreask@activestate.com>
+
+	* pkgIndex.tcl (::tablelist::Load): Fixed bugs in my hack of
+	  pkgIndex.tcl, reported by Csaba. The loaded code is scope
+	  sensitive, pcausing the move into the proc to estblish the
+	  commands in the wrong namespace. Applied fix by Csaba.
+
+2005-11-02  Andreas Kupries  <andreas_kupries@users.sourceforge.net>
+
+	*
+	* Released and tagged Tklib 0.4 ========================
+	* 
+
+2005-11-02  Andreas Kupries <andreask@activestate.com>
+
+	* Hack: Replaced access to $tableist::version with hardwired
+	  version numbers until I figure out how to make this properly
+	  accessible to sak.tcl's code scanner. Needed to have tablelist
+	  in the generated .tap file.
+
+2005-10-24  Andreas Kupries <andreask@activestate.com>
+
+	* pkgIndex.tcl: Reorganized things a bit. Procedures to remove
+	  quoting issues and make code more readable. Unrolled the loops
+	  to make code accessible to extraction of name/version
+	  information by sak tool.
+
+2005-10-23 Csaba Nemethi <csaba.nemethi@t-online.de>
+
+	* Unknown changes -- This entry is a placeholder
+	  Please, always update the ChangeLog before a commit !!
+
+2005-10-05  Andreas Kupries <andreask@activestate.com>
+
+	* doc/tablelist.html: Applied changes made by Csaba reflecting the
+	* README.txt:         fact that tablelist is now in tklib, and
+	  that the demos are in a different location.
+
+	* ../../examples/tablelist/: Applied changes made by Csaba
+	  reflecting the changed location of the demos in the scripts
+	  themselves.
+
+2005-10-03  Andreas Kupries <andreask@activestate.com>
+
+	* Added tablelist to tklib, moved demos to canonical location for
+	  examples of tklib modules.

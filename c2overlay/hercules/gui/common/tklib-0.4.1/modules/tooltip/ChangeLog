@@ -1,0 +1,27 @@
+2005-11-10  Andreas Kupries  <andreas_kupries@users.sourceforge.net>
+
+	*
+	* Released and tagged Tklib 0.4.1 ========================
+	* 
+
+2005-11-02  Andreas Kupries  <andreas_kupries@users.sourceforge.net>
+
+	*
+	* Released and tagged Tklib 0.4 ========================
+	* 
+
+2005-08-12  Andreas Kupries <andreask@activestate.com>
+
+	* tooltip.man: Added module/title descriptions to the manpage.
+
+2005-08-11  Jeff Hobbs  <jeffh@ActiveState.com>
+
+	* tooltip.tcl (::tooltip::show): prevent aqua help focus theft
+
+2005-04-29  Andreas Kupries <andreask@activestate.com>
+
+	* tooltip.man: Fixed syntax errors in the documentation.
+
+2005-04-02 Aaron Faupell <afaupell@users.sourceforge.net>
+
+	* initial import

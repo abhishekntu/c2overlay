@@ -1,0 +1,184 @@
+m255
+K3
+13
+cModel Technology
+Z0 dG:\hercules\tests\nac\eda
+Eeda
+Z1 w1370030929
+Z2 DP std textio K]Z^fghZ6B=BjnK5NomDT3
+Z3 DP work std_logic_1164_tinyadditions FZPJjgBVbdEk^^mkQAo>Z2
+Z4 DP work eda_cdt_pkg ?nT<>Ml4:1:Pfmm481lU41
+Z5 DP ieee numeric_std =NSdli^?T5OD8;4F<blj<3
+Z6 DP ieee std_logic_1164 GH1=`jDDBJ=`LM;:Ak`kf2
+Z7 DP work operpack g<1Bz0^`=TTThG_IECU<M1
+Z8 8eda.vhd
+Z9 Feda.vhd
+l0
+L14
+Vd8HeSKT^3T8kIK<]OS^<b3
+Z10 OX;C;6.3c;37
+32
+o-O0
+Z11 tExplicit 1
+Afsmd
+R2
+R3
+R4
+R5
+R6
+R7
+DE work eda d8HeSKT^3T8kIK<]OS^<b3
+l62
+L27
+VWJ_?TihG@b9J@Ng9lb:8<3
+R10
+32
+M6 work operpack
+M5 ieee std_logic_1164
+M4 ieee numeric_std
+M3 work eda_cdt_pkg
+M2 work std_logic_1164_tinyadditions
+Z12 M1 std textio
+o-O0
+R11
+Peda_cdt_pkg
+R6
+Z13 w1370030927
+8eda_cdt_pkg.vhd
+Feda_cdt_pkg.vhd
+l0
+L9
+V?nT<>Ml4:1:Pfmm481lU41
+R10
+32
+Z14 M1 ieee std_logic_1164
+o-O0
+R11
+Eeda_tb
+R13
+R3
+R4
+R5
+R6
+Z15 DP work std_logic_textio D;g8F7Z4JFKd2h^M_T1j01
+R2
+Z16 8eda_tb.vhd
+Z17 Feda_tb.vhd
+l0
+L14
+VBW?9LTES3SoIW8LKRfi@>2
+R10
+32
+o-O0
+R11
+Atb_arch
+R3
+R4
+R5
+R6
+R15
+R2
+DE work eda_tb BW?9LTES3SoIW8LKRfi@>2
+l45
+L17
+VRdE=`TRLQ>PIVL2mPn5LO3
+R10
+32
+M6 std textio
+M5 work std_logic_textio
+M4 ieee std_logic_1164
+M3 ieee numeric_std
+M2 work eda_cdt_pkg
+M1 work std_logic_1164_tinyadditions
+o-O0
+R11
+Poperpack
+R5
+R6
+Z18 w1342784125
+Z19 8g:/hercules/cdfg2hdl/contrib/vhdl/operpack_ieee.vhd
+Z20 Fg:/hercules/cdfg2hdl/contrib/vhdl/operpack_ieee.vhd
+l0
+L38
+Vg<1Bz0^`=TTThG_IECU<M1
+R10
+32
+b1
+Z21 M2 ieee std_logic_1164
+Z22 M1 ieee numeric_std
+o-O0
+R11
+Bbody
+DB work operpack g<1Bz0^`=TTThG_IECU<M1
+R5
+R6
+l0
+L79
+VjO1=O6WPH9oaZ[mb<5mWX1
+R10
+32
+R21
+R22
+o-O0
+R11
+nbody
+Pstd_logic_1164_tinyadditions
+R2
+R6
+Z23 w1313792723
+Z24 8g:/hercules/cdfg2hdl/contrib/vhdl/std_logic_1164_tinyadditions.vhd
+Z25 Fg:/hercules/cdfg2hdl/contrib/vhdl/std_logic_1164_tinyadditions.vhd
+l0
+L18
+VFZPJjgBVbdEk^^mkQAo>Z2
+R10
+32
+b1
+R21
+R12
+o-O0
+R11
+Bbody
+DB work std_logic_1164_tinyadditions FZPJjgBVbdEk^^mkQAo>Z2
+R2
+R6
+l0
+L64
+Vl7f9Z?h6mFm>2dnERca^o2
+R10
+32
+R21
+R12
+o-O0
+R11
+nbody
+Pstd_logic_textio
+R6
+R2
+Z26 w1275117750
+Z27 8g:/hercules/cdfg2hdl/contrib/vhdl/std_logic_textio.vhd
+Z28 Fg:/hercules/cdfg2hdl/contrib/vhdl/std_logic_textio.vhd
+l0
+L41
+VD;g8F7Z4JFKd2h^M_T1j01
+R10
+32
+b1
+Z29 M2 std textio
+R14
+o-O0
+R11
+Bbody
+DB work std_logic_textio D;g8F7Z4JFKd2h^M_T1j01
+R6
+R2
+l0
+L96
+V;SJFEM0T>[<U2FWa221hj3
+R10
+32
+R29
+R14
+o-O0
+R11
+nbody

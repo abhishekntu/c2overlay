@@ -1,0 +1,642 @@
+Release 14.6 - xst P.68d (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "icbrt.work"
+Input Format                       : mixed
+
+---- Target Parameters
+Output File Name                   : "icbrt.ngc"
+Output Format                      : NGC
+Target Device                      : xc6vlx75t-ff484-1
+
+---- Source Options
+Top Module Name                    : icbrt
+
+---- Target Options
+Add IO Buffers                     : no
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "c:/hercules/cdfg2hdl/contrib/vhdl/std_logic_1164_tinyadditions.vhd" into library work
+Parsing package <std_logic_1164_tinyadditions>.
+Parsing package body <std_logic_1164_tinyadditions>.
+Parsing VHDL file "c:/hercules/cdfg2hdl/contrib/vhdl/operpack_ieee.vhd" into library work
+Parsing package <operpack>.
+Parsing package body <operpack>.
+Parsing VHDL file "C:\hercules\tests\ansic\icbrt\icbrt_cdt_pkg.vhd" into library work
+Parsing package <icbrt_cdt_pkg>.
+Parsing VHDL file "C:\hercules\tests\ansic\icbrt\icbrt.vhd" into library work
+Parsing entity <icbrt>.
+Parsing architecture <fsmd> of entity <icbrt>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <icbrt> (architecture <fsmd>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <icbrt>.
+    Related source file is "C:\hercules\tests\ansic\icbrt\icbrt.vhd".
+    Found 32-bit register for signal <D_1374_21_reg>.
+    Found 32-bit register for signal <y_31_reg>.
+    Found 32-bit register for signal <D_1371_21_reg>.
+    Found 32-bit register for signal <s_11_reg>.
+    Found 32-bit register for signal <y_11_reg>.
+    Found 32-bit register for signal <s_reg>.
+    Found 32-bit register for signal <y_reg>.
+    Found 32-bit register for signal <b_reg>.
+    Found 32-bit register for signal <x0_reg>.
+    Found 32-bit register for signal <x0_11_reg>.
+    Found 32-bit register for signal <D_1373_21_reg>.
+    Found 32-bit register for signal <y_21_reg>.
+    Found 32-bit register for signal <D_1372_21_reg>.
+    Found 32-bit register for signal <b_21_reg>.
+    Found 32-bit register for signal <s_21_reg>.
+    Found 32-bit register for signal <x0_31_reg>.
+    Found 32-bit register for signal <y_0_61_reg>.
+    Found 32-bit register for signal <res>.
+    Found 5-bit register for signal <current_state>.
+INFO:Xst:1799 - State s_001_002 is never reached in FSM <current_state>.
+INFO:Xst:1799 - State s_001_003 is never reached in FSM <current_state>.
+INFO:Xst:1799 - State s_002_002 is never reached in FSM <current_state>.
+INFO:Xst:1799 - State s_002_003 is never reached in FSM <current_state>.
+INFO:Xst:1799 - State s_002_004 is never reached in FSM <current_state>.
+INFO:Xst:1799 - State s_002_005 is never reached in FSM <current_state>.
+INFO:Xst:1799 - State s_002_006 is never reached in FSM <current_state>.
+INFO:Xst:1799 - State s_002_007 is never reached in FSM <current_state>.
+INFO:Xst:1799 - State s_002_008 is never reached in FSM <current_state>.
+INFO:Xst:1799 - State s_003_002 is never reached in FSM <current_state>.
+INFO:Xst:1799 - State s_003_003 is never reached in FSM <current_state>.
+INFO:Xst:1799 - State s_006_002 is never reached in FSM <current_state>.
+INFO:Xst:1799 - State s_006_003 is never reached in FSM <current_state>.
+    Found finite state machine <FSM_0> for signal <current_state>.
+    -----------------------------------------------------------------------
+    | States             | 22                                             |
+    | Transitions        | 12                                             |
+    | Inputs             | 3                                              |
+    | Outputs            | 7                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | reset (positive)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | s_entry                                        |
+    | Power Up State     | s_entry                                        |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 32-bit adder for signal <y_21_next[31]_GND_8_o_add_21_OUT> created at line 197.
+    Found 32-bit adder for signal <D_1373_21_next[31]_GND_8_o_add_24_OUT> created at line 201.
+    Found 32-bit adder for signal <y_reg[31]_GND_8_o_add_32_OUT> created at line 211.
+    Found 32-bit subtractor for signal <s_reg[31]_GND_8_o_sub_21_OUT<31:0>> created at line 196.
+    Found 32-bit subtractor for signal <GND_8_o_GND_8_o_sub_34_OUT<31:0>> created at line 212.
+    Found 32x32-bit multiplier for signal <n0103> created at line 481.
+    Found 32x2-bit multiplier for signal <n0104> created at line 481.
+    Found 32-bit comparator greater for signal <n0029> created at line 205
+    Found 32-bit comparator greater for signal <n0034> created at line 219
+    Summary:
+	inferred   2 Multiplier(s).
+	inferred   5 Adder/Subtractor(s).
+	inferred 576 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred  22 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <icbrt> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 2
+ 32x2-bit multiplier                                   : 1
+ 32x32-bit multiplier                                  : 1
+# Adders/Subtractors                                   : 5
+ 32-bit adder                                          : 3
+ 32-bit subtractor                                     : 2
+# Registers                                            : 18
+ 32-bit register                                       : 18
+# Comparators                                          : 2
+ 32-bit comparator greater                             : 2
+# Multiplexers                                         : 22
+ 32-bit 2-to-1 multiplexer                             : 22
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Multipliers                                          : 2
+ 32x2-bit multiplier                                   : 1
+ 32x32-bit multiplier                                  : 1
+# Adders/Subtractors                                   : 5
+ 32-bit adder                                          : 3
+ 32-bit subtractor                                     : 2
+# Registers                                            : 576
+ Flip-Flops                                            : 576
+# Comparators                                          : 2
+ 32-bit comparator greater                             : 2
+# Multiplexers                                         : 53
+ 1-bit 2-to-1 multiplexer                              : 32
+ 32-bit 2-to-1 multiplexer                             : 21
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <current_state[1:5]> with user encoding.
+-----------------------
+ State     | Encoding
+-----------------------
+ s_entry   | 00000
+ s_exit    | 00001
+ s_001_001 | 00010
+ s_001_002 | unreached
+ s_001_003 | unreached
+ s_002_001 | 00101
+ s_002_002 | unreached
+ s_002_003 | unreached
+ s_002_004 | unreached
+ s_002_005 | unreached
+ s_002_006 | unreached
+ s_002_007 | unreached
+ s_002_008 | unreached
+ s_003_001 | 01101
+ s_003_002 | unreached
+ s_003_003 | unreached
+ s_004_001 | 10000
+ s_005_001 | 10001
+ s_006_001 | 10010
+ s_006_002 | unreached
+ s_006_003 | unreached
+ s_007_001 | 10101
+-----------------------
+WARNING:Xst:2677 - Node <Mmult_n01033> of sequential type is unconnected in block <icbrt>.
+WARNING:Xst:1710 - FF/Latch <y_11_reg_3> (without init value) has a constant value of 0 in block <icbrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <y_11_reg_4> (without init value) has a constant value of 0 in block <icbrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <y_11_reg_5> (without init value) has a constant value of 0 in block <icbrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <y_11_reg_6> (without init value) has a constant value of 0 in block <icbrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <y_11_reg_7> (without init value) has a constant value of 0 in block <icbrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <y_11_reg_8> (without init value) has a constant value of 0 in block <icbrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <y_11_reg_9> (without init value) has a constant value of 0 in block <icbrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <y_11_reg_10> (without init value) has a constant value of 0 in block <icbrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <y_11_reg_11> (without init value) has a constant value of 0 in block <icbrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <y_11_reg_12> (without init value) has a constant value of 0 in block <icbrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <y_11_reg_13> (without init value) has a constant value of 0 in block <icbrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <y_11_reg_14> (without init value) has a constant value of 0 in block <icbrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <y_11_reg_15> (without init value) has a constant value of 0 in block <icbrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <y_11_reg_16> (without init value) has a constant value of 0 in block <icbrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <y_11_reg_17> (without init value) has a constant value of 0 in block <icbrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <y_11_reg_18> (without init value) has a constant value of 0 in block <icbrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <y_11_reg_19> (without init value) has a constant value of 0 in block <icbrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <y_11_reg_20> (without init value) has a constant value of 0 in block <icbrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <y_11_reg_21> (without init value) has a constant value of 0 in block <icbrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <y_11_reg_22> (without init value) has a constant value of 0 in block <icbrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <y_11_reg_23> (without init value) has a constant value of 0 in block <icbrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <y_11_reg_24> (without init value) has a constant value of 0 in block <icbrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <y_11_reg_25> (without init value) has a constant value of 0 in block <icbrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <y_11_reg_26> (without init value) has a constant value of 0 in block <icbrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <y_11_reg_27> (without init value) has a constant value of 0 in block <icbrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <y_11_reg_28> (without init value) has a constant value of 0 in block <icbrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <y_11_reg_29> (without init value) has a constant value of 0 in block <icbrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <y_11_reg_30> (without init value) has a constant value of 0 in block <icbrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <y_11_reg_31> (without init value) has a constant value of 0 in block <icbrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <y_21_reg_0> (without init value) has a constant value of 0 in block <icbrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s_11_reg_0> (without init value) has a constant value of 0 in block <icbrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s_11_reg_5> (without init value) has a constant value of 0 in block <icbrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s_11_reg_6> (without init value) has a constant value of 0 in block <icbrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s_11_reg_7> (without init value) has a constant value of 0 in block <icbrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s_11_reg_8> (without init value) has a constant value of 0 in block <icbrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s_11_reg_9> (without init value) has a constant value of 0 in block <icbrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s_11_reg_10> (without init value) has a constant value of 0 in block <icbrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s_11_reg_11> (without init value) has a constant value of 0 in block <icbrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s_11_reg_12> (without init value) has a constant value of 0 in block <icbrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s_11_reg_13> (without init value) has a constant value of 0 in block <icbrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s_11_reg_14> (without init value) has a constant value of 0 in block <icbrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s_11_reg_15> (without init value) has a constant value of 0 in block <icbrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s_11_reg_16> (without init value) has a constant value of 0 in block <icbrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s_11_reg_17> (without init value) has a constant value of 0 in block <icbrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s_11_reg_18> (without init value) has a constant value of 0 in block <icbrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s_11_reg_19> (without init value) has a constant value of 0 in block <icbrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s_11_reg_20> (without init value) has a constant value of 0 in block <icbrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s_11_reg_21> (without init value) has a constant value of 0 in block <icbrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s_11_reg_22> (without init value) has a constant value of 0 in block <icbrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s_11_reg_23> (without init value) has a constant value of 0 in block <icbrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s_11_reg_24> (without init value) has a constant value of 0 in block <icbrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s_11_reg_25> (without init value) has a constant value of 0 in block <icbrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s_11_reg_26> (without init value) has a constant value of 0 in block <icbrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s_11_reg_27> (without init value) has a constant value of 0 in block <icbrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s_11_reg_28> (without init value) has a constant value of 0 in block <icbrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s_11_reg_29> (without init value) has a constant value of 0 in block <icbrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s_11_reg_30> (without init value) has a constant value of 0 in block <icbrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <s_11_reg_31> (without init value) has a constant value of 0 in block <icbrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <y_11_reg_0> (without init value) has a constant value of 0 in block <icbrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <y_11_reg_1> (without init value) has a constant value of 0 in block <icbrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <y_11_reg_2> (without init value) has a constant value of 0 in block <icbrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <D_1374_21_reg_0> of sequential type is unconnected in block <icbrt>.
+WARNING:Xst:2677 - Node <D_1374_21_reg_1> of sequential type is unconnected in block <icbrt>.
+WARNING:Xst:2677 - Node <D_1374_21_reg_2> of sequential type is unconnected in block <icbrt>.
+WARNING:Xst:2677 - Node <D_1374_21_reg_3> of sequential type is unconnected in block <icbrt>.
+WARNING:Xst:2677 - Node <D_1374_21_reg_4> of sequential type is unconnected in block <icbrt>.
+WARNING:Xst:2677 - Node <D_1374_21_reg_5> of sequential type is unconnected in block <icbrt>.
+WARNING:Xst:2677 - Node <D_1374_21_reg_6> of sequential type is unconnected in block <icbrt>.
+WARNING:Xst:2677 - Node <D_1374_21_reg_7> of sequential type is unconnected in block <icbrt>.
+WARNING:Xst:2677 - Node <D_1374_21_reg_8> of sequential type is unconnected in block <icbrt>.
+WARNING:Xst:2677 - Node <D_1374_21_reg_9> of sequential type is unconnected in block <icbrt>.
+WARNING:Xst:2677 - Node <D_1374_21_reg_10> of sequential type is unconnected in block <icbrt>.
+WARNING:Xst:2677 - Node <D_1374_21_reg_11> of sequential type is unconnected in block <icbrt>.
+WARNING:Xst:2677 - Node <D_1374_21_reg_12> of sequential type is unconnected in block <icbrt>.
+WARNING:Xst:2677 - Node <D_1374_21_reg_13> of sequential type is unconnected in block <icbrt>.
+WARNING:Xst:2677 - Node <D_1374_21_reg_14> of sequential type is unconnected in block <icbrt>.
+WARNING:Xst:2677 - Node <D_1374_21_reg_15> of sequential type is unconnected in block <icbrt>.
+WARNING:Xst:2677 - Node <D_1374_21_reg_16> of sequential type is unconnected in block <icbrt>.
+WARNING:Xst:2677 - Node <D_1374_21_reg_17> of sequential type is unconnected in block <icbrt>.
+WARNING:Xst:2677 - Node <D_1374_21_reg_18> of sequential type is unconnected in block <icbrt>.
+WARNING:Xst:2677 - Node <D_1374_21_reg_19> of sequential type is unconnected in block <icbrt>.
+WARNING:Xst:2677 - Node <D_1374_21_reg_20> of sequential type is unconnected in block <icbrt>.
+WARNING:Xst:2677 - Node <D_1374_21_reg_21> of sequential type is unconnected in block <icbrt>.
+WARNING:Xst:2677 - Node <D_1374_21_reg_22> of sequential type is unconnected in block <icbrt>.
+WARNING:Xst:2677 - Node <D_1374_21_reg_23> of sequential type is unconnected in block <icbrt>.
+WARNING:Xst:2677 - Node <D_1374_21_reg_24> of sequential type is unconnected in block <icbrt>.
+WARNING:Xst:2677 - Node <D_1374_21_reg_25> of sequential type is unconnected in block <icbrt>.
+WARNING:Xst:2677 - Node <D_1374_21_reg_26> of sequential type is unconnected in block <icbrt>.
+WARNING:Xst:2677 - Node <D_1374_21_reg_27> of sequential type is unconnected in block <icbrt>.
+WARNING:Xst:2677 - Node <D_1374_21_reg_28> of sequential type is unconnected in block <icbrt>.
+WARNING:Xst:2677 - Node <D_1374_21_reg_29> of sequential type is unconnected in block <icbrt>.
+WARNING:Xst:2677 - Node <D_1374_21_reg_30> of sequential type is unconnected in block <icbrt>.
+WARNING:Xst:2677 - Node <D_1374_21_reg_31> of sequential type is unconnected in block <icbrt>.
+
+Optimizing unit <icbrt> ...
+INFO:Xst:2261 - The FF/Latch <D_1371_21_reg_7> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <y_21_reg_7> 
+INFO:Xst:2261 - The FF/Latch <D_1371_21_reg_8> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <y_21_reg_8> 
+INFO:Xst:2261 - The FF/Latch <D_1371_21_reg_9> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <y_21_reg_9> 
+INFO:Xst:2261 - The FF/Latch <D_1371_21_reg_10> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <y_21_reg_10> 
+INFO:Xst:2261 - The FF/Latch <D_1371_21_reg_11> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <y_21_reg_11> 
+INFO:Xst:2261 - The FF/Latch <D_1371_21_reg_12> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <y_21_reg_12> 
+INFO:Xst:2261 - The FF/Latch <D_1371_21_reg_13> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <y_21_reg_13> 
+INFO:Xst:2261 - The FF/Latch <D_1371_21_reg_14> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <y_21_reg_14> 
+INFO:Xst:2261 - The FF/Latch <D_1371_21_reg_15> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <y_21_reg_15> 
+INFO:Xst:2261 - The FF/Latch <D_1371_21_reg_20> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <y_21_reg_20> 
+INFO:Xst:2261 - The FF/Latch <D_1371_21_reg_16> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <y_21_reg_16> 
+INFO:Xst:2261 - The FF/Latch <D_1371_21_reg_21> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <y_21_reg_21> 
+INFO:Xst:2261 - The FF/Latch <D_1371_21_reg_17> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <y_21_reg_17> 
+INFO:Xst:2261 - The FF/Latch <D_1371_21_reg_22> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <y_21_reg_22> 
+INFO:Xst:2261 - The FF/Latch <D_1371_21_reg_18> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <y_21_reg_18> 
+INFO:Xst:2261 - The FF/Latch <D_1371_21_reg_23> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <y_21_reg_23> 
+INFO:Xst:2261 - The FF/Latch <D_1371_21_reg_19> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <y_21_reg_19> 
+INFO:Xst:2261 - The FF/Latch <D_1371_21_reg_24> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <y_21_reg_24> 
+INFO:Xst:2261 - The FF/Latch <D_1371_21_reg_25> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <y_21_reg_25> 
+INFO:Xst:2261 - The FF/Latch <D_1371_21_reg_30> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <y_21_reg_30> 
+INFO:Xst:2261 - The FF/Latch <D_1371_21_reg_26> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <y_21_reg_26> 
+INFO:Xst:2261 - The FF/Latch <D_1371_21_reg_31> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <y_21_reg_31> 
+INFO:Xst:2261 - The FF/Latch <D_1371_21_reg_27> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <y_21_reg_27> 
+INFO:Xst:2261 - The FF/Latch <D_1371_21_reg_28> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <y_21_reg_28> 
+INFO:Xst:2261 - The FF/Latch <D_1371_21_reg_29> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <y_21_reg_29> 
+INFO:Xst:2261 - The FF/Latch <b_reg_10> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <b_21_reg_10> 
+INFO:Xst:2261 - The FF/Latch <b_reg_11> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <b_21_reg_11> 
+INFO:Xst:2261 - The FF/Latch <b_reg_12> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <b_21_reg_12> 
+INFO:Xst:2261 - The FF/Latch <b_reg_13> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <b_21_reg_13> 
+INFO:Xst:2261 - The FF/Latch <b_reg_14> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <b_21_reg_14> 
+INFO:Xst:2261 - The FF/Latch <b_reg_15> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <b_21_reg_15> 
+INFO:Xst:2261 - The FF/Latch <b_reg_20> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <b_21_reg_20> 
+INFO:Xst:2261 - The FF/Latch <b_reg_16> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <b_21_reg_16> 
+INFO:Xst:2261 - The FF/Latch <b_reg_21> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <b_21_reg_21> 
+INFO:Xst:2261 - The FF/Latch <b_reg_17> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <b_21_reg_17> 
+INFO:Xst:2261 - The FF/Latch <b_reg_22> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <b_21_reg_22> 
+INFO:Xst:2261 - The FF/Latch <b_reg_18> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <b_21_reg_18> 
+INFO:Xst:2261 - The FF/Latch <b_reg_23> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <b_21_reg_23> 
+INFO:Xst:2261 - The FF/Latch <b_reg_19> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <b_21_reg_19> 
+INFO:Xst:2261 - The FF/Latch <b_reg_24> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <b_21_reg_24> 
+INFO:Xst:2261 - The FF/Latch <b_reg_25> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <b_21_reg_25> 
+INFO:Xst:2261 - The FF/Latch <b_reg_30> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <b_21_reg_30> 
+INFO:Xst:2261 - The FF/Latch <b_reg_26> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <b_21_reg_26> 
+INFO:Xst:2261 - The FF/Latch <b_reg_31> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <b_21_reg_31> 
+INFO:Xst:2261 - The FF/Latch <b_reg_27> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <b_21_reg_27> 
+INFO:Xst:2261 - The FF/Latch <b_reg_28> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <b_21_reg_28> 
+INFO:Xst:2261 - The FF/Latch <b_reg_29> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <b_21_reg_29> 
+INFO:Xst:2261 - The FF/Latch <s_21_reg_5> in Unit <icbrt> is equivalent to the following 26 FFs/Latches, which will be removed : <s_21_reg_6> <s_21_reg_7> <s_21_reg_8> <s_21_reg_9> <s_21_reg_10> <s_21_reg_11> <s_21_reg_12> <s_21_reg_13> <s_21_reg_14> <s_21_reg_15> <s_21_reg_16> <s_21_reg_17> <s_21_reg_18> <s_21_reg_19> <s_21_reg_20> <s_21_reg_21> <s_21_reg_22> <s_21_reg_23> <s_21_reg_24> <s_21_reg_25> <s_21_reg_26> <s_21_reg_27> <s_21_reg_28> <s_21_reg_29> <s_21_reg_30> <s_21_reg_31> 
+INFO:Xst:2261 - The FF/Latch <b_reg_0> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <b_21_reg_0> 
+INFO:Xst:2261 - The FF/Latch <b_reg_1> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <b_21_reg_1> 
+INFO:Xst:2261 - The FF/Latch <b_reg_2> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <b_21_reg_2> 
+INFO:Xst:2261 - The FF/Latch <y_0_61_reg_10> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <res_reg_10> 
+INFO:Xst:2261 - The FF/Latch <b_reg_3> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <b_21_reg_3> 
+INFO:Xst:2261 - The FF/Latch <y_0_61_reg_11> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <res_reg_11> 
+INFO:Xst:2261 - The FF/Latch <b_reg_4> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <b_21_reg_4> 
+INFO:Xst:2261 - The FF/Latch <y_0_61_reg_12> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <res_reg_12> 
+INFO:Xst:2261 - The FF/Latch <b_reg_5> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <b_21_reg_5> 
+INFO:Xst:2261 - The FF/Latch <y_0_61_reg_13> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <res_reg_13> 
+INFO:Xst:2261 - The FF/Latch <b_reg_6> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <b_21_reg_6> 
+INFO:Xst:2261 - The FF/Latch <y_0_61_reg_14> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <res_reg_14> 
+INFO:Xst:2261 - The FF/Latch <b_reg_7> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <b_21_reg_7> 
+INFO:Xst:2261 - The FF/Latch <y_0_61_reg_20> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <res_reg_20> 
+INFO:Xst:2261 - The FF/Latch <y_0_61_reg_15> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <res_reg_15> 
+INFO:Xst:2261 - The FF/Latch <b_reg_8> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <b_21_reg_8> 
+INFO:Xst:2261 - The FF/Latch <y_0_61_reg_21> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <res_reg_21> 
+INFO:Xst:2261 - The FF/Latch <y_0_61_reg_16> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <res_reg_16> 
+INFO:Xst:2261 - The FF/Latch <b_reg_9> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <b_21_reg_9> 
+INFO:Xst:2261 - The FF/Latch <y_0_61_reg_22> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <res_reg_22> 
+INFO:Xst:2261 - The FF/Latch <y_0_61_reg_17> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <res_reg_17> 
+INFO:Xst:2261 - The FF/Latch <y_0_61_reg_18> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <res_reg_18> 
+INFO:Xst:2261 - The FF/Latch <y_0_61_reg_23> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <res_reg_23> 
+INFO:Xst:2261 - The FF/Latch <s_11_reg_1> in Unit <icbrt> is equivalent to the following 3 FFs/Latches, which will be removed : <s_11_reg_2> <s_11_reg_3> <s_11_reg_4> 
+INFO:Xst:2261 - The FF/Latch <y_0_61_reg_24> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <res_reg_24> 
+INFO:Xst:2261 - The FF/Latch <y_0_61_reg_19> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <res_reg_19> 
+INFO:Xst:2261 - The FF/Latch <y_0_61_reg_25> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <res_reg_25> 
+INFO:Xst:2261 - The FF/Latch <y_0_61_reg_30> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <res_reg_30> 
+INFO:Xst:2261 - The FF/Latch <y_0_61_reg_26> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <res_reg_26> 
+INFO:Xst:2261 - The FF/Latch <y_0_61_reg_31> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <res_reg_31> 
+INFO:Xst:2261 - The FF/Latch <y_0_61_reg_27> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <res_reg_27> 
+INFO:Xst:2261 - The FF/Latch <y_0_61_reg_28> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <res_reg_28> 
+INFO:Xst:2261 - The FF/Latch <y_0_61_reg_29> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <res_reg_29> 
+INFO:Xst:2261 - The FF/Latch <D_1372_21_reg_0> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <D_1373_21_reg_0> 
+INFO:Xst:2261 - The FF/Latch <y_0_61_reg_0> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <res_reg_0> 
+INFO:Xst:2261 - The FF/Latch <y_0_61_reg_1> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <res_reg_1> 
+INFO:Xst:2261 - The FF/Latch <y_0_61_reg_2> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <res_reg_2> 
+INFO:Xst:2261 - The FF/Latch <y_0_61_reg_3> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <res_reg_3> 
+INFO:Xst:2261 - The FF/Latch <y_0_61_reg_4> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <res_reg_4> 
+INFO:Xst:2261 - The FF/Latch <y_0_61_reg_5> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <res_reg_5> 
+INFO:Xst:2261 - The FF/Latch <y_0_61_reg_6> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <res_reg_6> 
+INFO:Xst:2261 - The FF/Latch <y_0_61_reg_7> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <res_reg_7> 
+INFO:Xst:2261 - The FF/Latch <y_0_61_reg_8> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <res_reg_8> 
+INFO:Xst:2261 - The FF/Latch <y_0_61_reg_9> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <res_reg_9> 
+INFO:Xst:2261 - The FF/Latch <s_reg_5> in Unit <icbrt> is equivalent to the following 26 FFs/Latches, which will be removed : <s_reg_6> <s_reg_7> <s_reg_8> <s_reg_9> <s_reg_10> <s_reg_11> <s_reg_12> <s_reg_13> <s_reg_14> <s_reg_15> <s_reg_16> <s_reg_17> <s_reg_18> <s_reg_19> <s_reg_20> <s_reg_21> <s_reg_22> <s_reg_23> <s_reg_24> <s_reg_25> <s_reg_26> <s_reg_27> <s_reg_28> <s_reg_29> <s_reg_30> <s_reg_31> 
+INFO:Xst:2261 - The FF/Latch <D_1371_21_reg_1> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <y_21_reg_1> 
+INFO:Xst:2261 - The FF/Latch <D_1371_21_reg_2> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <y_21_reg_2> 
+INFO:Xst:2261 - The FF/Latch <D_1371_21_reg_3> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <y_21_reg_3> 
+INFO:Xst:2261 - The FF/Latch <D_1371_21_reg_4> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <y_21_reg_4> 
+INFO:Xst:2261 - The FF/Latch <D_1371_21_reg_5> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <y_21_reg_5> 
+INFO:Xst:2261 - The FF/Latch <D_1371_21_reg_6> in Unit <icbrt> is equivalent to the following FF/Latch, which will be removed : <y_21_reg_6> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 0) on block icbrt, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 337
+ Flip-Flops                                            : 337
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : icbrt.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 989
+#      GND                         : 1
+#      INV                         : 5
+#      LUT1                        : 33
+#      LUT2                        : 35
+#      LUT3                        : 332
+#      LUT4                        : 40
+#      LUT5                        : 94
+#      LUT6                        : 128
+#      MUXCY                       : 146
+#      MUXF7                       : 10
+#      VCC                         : 1
+#      XORCY                       : 164
+# FlipFlops/Latches                : 337
+#      FDC                         : 235
+#      FDCE                        : 102
+# DSPs                             : 3
+#      DSP48E1                     : 3
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6vlx75tff484-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             337  out of  93120     0%  
+ Number of Slice LUTs:                  667  out of  46560     1%  
+    Number used as Logic:               667  out of  46560     1%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    757
+   Number with an unused Flip Flop:     420  out of    757    55%  
+   Number with an unused LUT:            90  out of    757    11%  
+   Number of fully used LUT-FF pairs:   247  out of    757    32%  
+   Number of unique control sets:         5
+
+IO Utilization: 
+ Number of IOs:                          69
+ Number of bonded IOBs:                   0  out of    240     0%  
+
+Specific Feature Utilization:
+ Number of DSP48E1s:                      3  out of    288     1%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | NONE(y_31_reg_0)       | 337   |
+-----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 15.609ns (Maximum Frequency: 64.066MHz)
+   Minimum input arrival time before clock: 0.588ns
+   Maximum output required time after clock: 1.143ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 15.609ns (frequency: 64.066MHz)
+  Total number of paths / destination ports: 56868327562 / 439
+-------------------------------------------------------------------------
+Delay:               15.609ns (Levels of Logic = 21)
+  Source:            current_state_FSM_FFd4 (FF)
+  Destination:       current_state_FSM_FFd5 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: current_state_FSM_FFd4 to current_state_FSM_FFd5
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             16   0.375   0.873  current_state_FSM_FFd4 (current_state_FSM_FFd4)
+     LUT5:I0->O            9   0.068   0.470  _n0171<4>1_1 (_n0171<4>1)
+     LUT3:I2->O            0   0.068   0.000  Mmux_y_21_next1211 (Mmux_y_21_next121)
+     XORCY:LI->O           1   0.156   0.417  Madd_y_21_next[31]_GND_8_o_add_21_OUT_xor<1> (y_21_next[31]_GND_8_o_add_21_OUT<1>)
+     LUT3:I2->O            3   0.068   0.413  Mmux_D_1371_21_next121 (D_1371_21_next<1>)
+     DSP48E1:B1->PCOUT47    1   3.691   0.000  Mmult_n0103 (Mmult_n0103_PCOUT_to_Mmult_n01031_PCIN_47)
+     DSP48E1:PCIN47->PCOUT47    1   1.684   0.000  Mmult_n01031 (Mmult_n01031_PCOUT_to_Mmult_n01032_PCIN_47)
+     DSP48E1:PCIN47->P0    3   1.591   0.431  Mmult_n01032 (n0103<17>)
+     LUT3:I2->O            1   0.068   0.399  Mmux_D_1372_21_next91 (D_1372_21_next<17>)
+     MUXCY:DI->O           1   0.223   0.000  Mmult_n0104_Madd_cy<17> (Mmult_n0104_Madd_cy<17>)
+     XORCY:CI->O           2   0.239   0.423  Mmult_n0104_Madd_xor<18> (n0104<18>)
+     LUT3:I2->O            1   0.068   0.000  Mmux_D_1373_21_next1011 (Mmux_D_1373_21_next101)
+     MUXCY:S->O            1   0.290   0.000  Madd_D_1373_21_next[31]_GND_8_o_add_24_OUT_cy<18> (Madd_D_1373_21_next[31]_GND_8_o_add_24_OUT_cy<18>)
+     XORCY:CI->O           4   0.239   0.658  Madd_D_1373_21_next[31]_GND_8_o_add_24_OUT_xor<19> (D_1373_21_next[31]_GND_8_o_add_24_OUT<19>)
+     LUT6:I2->O            4   0.068   0.437  s_reg<1>151 (s_reg<1>_mmx_out22)
+     LUT6:I5->O            1   0.068   0.491  Mmux_D_1374_21_next1313_SW1 (N68)
+     LUT6:I4->O            3   0.068   0.652  Mmux_D_1374_21_next1313 (b_21_next<26>)
+     LUT4:I0->O            1   0.068   0.000  Mcompar_n0029_lut<13> (Mcompar_n0029_lut<13>)
+     MUXCY:S->O            1   0.290   0.000  Mcompar_n0029_cy<13> (Mcompar_n0029_cy<13>)
+     MUXCY:CI->O           1   0.020   0.000  Mcompar_n0029_cy<14> (Mcompar_n0029_cy<14>)
+     MUXCY:CI->O           4   0.020   0.437  Mcompar_n0029_cy<15> (Mcompar_n0029_cy<15>)
+     LUT4:I3->O            1   0.068   0.000  current_state_FSM_FFd2-In1 (current_state_FSM_FFd2-In)
+     FDC:D                     0.011          current_state_FSM_FFd2
+    ----------------------------------------
+    Total                     15.609ns (9.508ns logic, 6.101ns route)
+                                       (60.9% logic, 39.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 402 / 402
+-------------------------------------------------------------------------
+Offset:              0.588ns (Levels of Logic = 2)
+  Source:            x<0> (PAD)
+  Destination:       x0_reg_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: x<0> to x0_reg_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LUT3:I2->O            2   0.068   0.423  Mmux_x0_11_next11 (x0_11_next<0>)
+     LUT5:I4->O            1   0.068   0.000  Mmux__n029711 (_n0297<0>)
+     FDCE:D                    0.011          x0_reg_0
+    ----------------------------------------
+    Total                      0.588ns (0.165ns logic, 0.423ns route)
+                                       (28.1% logic, 71.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 38 / 34
+-------------------------------------------------------------------------
+Offset:              1.143ns (Levels of Logic = 1)
+  Source:            current_state_FSM_FFd1 (FF)
+  Destination:       ready (PAD)
+  Source Clock:      clk rising
+
+  Data Path: current_state_FSM_FFd1 to ready
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             19   0.375   0.700  current_state_FSM_FFd1 (current_state_FSM_FFd1)
+     LUT3:I0->O            0   0.068   0.000  current_state_FSM_FFd4-In21 (ready)
+    ----------------------------------------
+    Total                      1.143ns (0.443ns logic, 0.700ns route)
+                                       (38.8% logic, 61.2% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |   15.609|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 17.00 secs
+Total CPU time to Xst completion: 16.20 secs
+ 
+--> 
+
+Total memory usage is 231760 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   94 (   0 filtered)
+Number of infos    :  113 (   0 filtered)
+

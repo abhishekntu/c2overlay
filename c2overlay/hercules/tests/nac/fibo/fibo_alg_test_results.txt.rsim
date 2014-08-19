@@ -1,0 +1,67 @@
+ n=00000000 outp=00000000 outp_ref=00000000
+FIBO OK: Number of cycles=3
+ n=00000001 outp=00000001 outp_ref=00000001
+FIBO OK: Number of cycles=4
+ n=00000002 outp=00000001 outp_ref=00000001
+FIBO OK: Number of cycles=6
+ n=00000003 outp=00000002 outp_ref=00000002
+FIBO OK: Number of cycles=7
+ n=00000004 outp=00000003 outp_ref=00000003
+FIBO OK: Number of cycles=8
+ n=00000005 outp=00000005 outp_ref=00000005
+FIBO OK: Number of cycles=9
+ n=00000006 outp=00000008 outp_ref=00000008
+FIBO OK: Number of cycles=10
+ n=00000007 outp=0000000D outp_ref=0000000D
+FIBO OK: Number of cycles=11
+ n=00000008 outp=00000015 outp_ref=00000015
+FIBO OK: Number of cycles=12
+ n=00000009 outp=00000022 outp_ref=00000022
+FIBO OK: Number of cycles=13
+ n=0000000A outp=00000037 outp_ref=00000037
+FIBO OK: Number of cycles=14
+ n=0000000B outp=00000059 outp_ref=00000059
+FIBO OK: Number of cycles=15
+ n=0000000C outp=00000090 outp_ref=00000090
+FIBO OK: Number of cycles=16
+ n=0000000D outp=000000E9 outp_ref=000000E9
+FIBO OK: Number of cycles=17
+ n=0000000E outp=00000179 outp_ref=00000179
+FIBO OK: Number of cycles=18
+ n=0000000F outp=00000262 outp_ref=00000262
+FIBO OK: Number of cycles=19
+ n=00000010 outp=000003DB outp_ref=000003DB
+FIBO OK: Number of cycles=20
+ n=00000011 outp=0000063D outp_ref=0000063D
+FIBO OK: Number of cycles=21
+ n=00000012 outp=00000A18 outp_ref=00000A18
+FIBO OK: Number of cycles=22
+ n=00000013 outp=00001055 outp_ref=00001055
+FIBO OK: Number of cycles=23
+ n=00000014 outp=00001A6D outp_ref=00001A6D
+FIBO OK: Number of cycles=24
+ n=00000015 outp=00002AC2 outp_ref=00002AC2
+FIBO OK: Number of cycles=25
+ n=00000016 outp=0000452F outp_ref=0000452F
+FIBO OK: Number of cycles=26
+ n=00000017 outp=00006FF1 outp_ref=00006FF1
+FIBO OK: Number of cycles=27
+ n=00000018 outp=0000B520 outp_ref=0000B520
+FIBO OK: Number of cycles=28
+ n=00000019 outp=00012511 outp_ref=00012511
+FIBO OK: Number of cycles=29
+ n=0000001A outp=0001DA31 outp_ref=0001DA31
+FIBO OK: Number of cycles=30
+ n=0000001B outp=0002FF42 outp_ref=0002FF42
+FIBO OK: Number of cycles=31
+ n=0000001C outp=0004D973 outp_ref=0004D973
+FIBO OK: Number of cycles=32
+ n=0000001D outp=0007D8B5 outp_ref=0007D8B5
+FIBO OK: Number of cycles=33
+ n=0000001E outp=000CB228 outp_ref=000CB228
+FIBO OK: Number of cycles=34
+ n=0000001F outp=00148ADD outp_ref=00148ADD
+FIBO OK: Number of cycles=35
+ n=00000020 outp=00213D05 outp_ref=00213D05
+FIBO OK: Number of cycles=36
+FIBO algorithm test has passed

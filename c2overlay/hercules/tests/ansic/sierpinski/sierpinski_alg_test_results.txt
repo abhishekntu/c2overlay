@@ -1,0 +1,3 @@
+ tot=00006FF6 tot_ref=00006FF6
+SIERPINSKI OK: Number of cycles=4692
+SIERPINSKI algorithm test has passed

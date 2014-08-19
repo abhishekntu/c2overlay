@@ -1,0 +1,59 @@
+procedure mandel (
+out s32 out1)
+{
+  localvar s32 x;
+  localvar s32 y;
+  localvar s32 on;
+  localvar s32 cnt;
+  localvar s32 cnt$11;
+  localvar s32 y$11;
+  localvar s32 x$21;
+  localvar s32 on$31;
+  localvar s32 on_0$31;
+  localvar s32 cnt$41;
+  localvar s32 on_0$51;
+  localvar s32 x$71;
+  localvar s32 y$91;
+
+L0005:
+  cnt$11 <= ldc 0;
+  y$11 <= ldc 950;
+  y <= mov y$11;
+  cnt <= mov cnt$11;
+  D_1383 <= jmpun;
+D_1382:
+  x$21 <= ldc -2100;
+  x <= mov x$21;
+  D_1380 <= jmpun;
+D_1379:
+  (on$31) <= checkpixel ( x, y);
+  on_0$31 <= mov on$31;
+  on <= mov on$31;
+  D_1387, D_1388 <= jmpeq on_0$31, 1;
+D_1387:
+  cnt$41 <= add cnt, 1;
+  cnt <= mov cnt$41;
+  D_1388 <= jmpun;
+D_1388:
+  on_0$51 <= mov on;
+  D_1389, D_1390 <= jmpeq on_0$51, 0;
+D_1389:
+  D_1390 <= jmpun;
+D_1390:
+  x$71 <= add x, 40;
+  x <= mov x$71;
+  D_1380 <= jmpun;
+D_1380:
+  D_1379, D_1381 <= jmple x, 999;
+D_1381:
+  y$91 <= sub y, 50;
+  y <= mov y$91;
+  D_1383 <= jmpun;
+D_1383:
+  D_1382, D_1384 <= jmpge y, -949;
+D_1384:
+  out1 <= mov cnt;
+  L_EXIT <= jmpun;
+L_EXIT:
+  nop;
+}

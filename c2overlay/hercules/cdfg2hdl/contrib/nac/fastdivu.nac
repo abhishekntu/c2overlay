@@ -1,0 +1,47 @@
+//
+// Filename: fastdivu.nac
+// Purpose : N-address code (NAC) implementation for unsigned integer division 
+//           based on a modified version of unsigned long division as found in 
+//           "Hacker's Delight".
+// Author  : Nikolaos Kavvadias (C) 2011
+// Date    : 21-Aug-2011
+// Revision: 0.3.0 (21/08/11)
+//           Initial version.
+
+procedure fastdivu (in u32 x, in u32 y, out u32 q, out u32 r)
+{
+  localvar u32 x0, y0, z, t1, t2, x1, y2, x3, y3, t;
+  localvar s32 i, t, t0;
+S_1: 
+  x0 <= ldc 0;
+  y0 <= mov x;
+  z <= mov y;
+  i <= ldc 0;
+  S_2 <= jmpun;  
+S_2:
+  t0 <= sxt x0;
+  t <= shr t0, 31;
+  x1 <= shl x0, 1;
+  y2 <= shr y0, 31;
+  x0 <= ior x1, y2;
+  y0 <= shl y0, 1;
+  x3 <= sub x0, z;
+  y3 <= add y0, 1;
+  t1 <= zxt t;
+  t2 <= ior x0, t1;
+  x0 <= muxge t2, z, x3, x0;
+  y0 <= muxge t2, z, y3, y0;
+  i <= add i, 1;
+  S_2, S_3 <= jmplt i, 32;
+S_3:  
+  q <= mov y0;
+  r <= mov x0;
+}
+//    t = (int)x0 >> 31;           // All 1's if x(31) = 1. 
+//    x0 = (x0 << 1) | (y0 >> 31); // Shift x || y left 
+//    y0 = y0 << 1;                // one bit. 
+//    if ((x0 | t) >= z) 
+//    {
+//       x0 = x0 - z; 
+//       y0 = y0 + 1; 
+//    } 

@@ -1,0 +1,39 @@
+bitrev (unsigned char inp)
+gimple_bind <
+  int D.1368;
+  int D.1369;
+  int D.1370;
+  int D.1371;
+  int D.1372;
+  int D.1373;
+  signed char D.1374;
+  signed char temp.0;
+  signed char D.1376;
+  unsigned char D.1377;
+  unsigned char i;
+  unsigned char temp;
+
+  gimple_assign <integer_cst, temp, 0, NULL>
+  gimple_assign <integer_cst, i, 0, NULL>
+  gimple_goto <<D.1365>>
+  gimple_label <<D.1364>>
+  gimple_assign <nop_expr, D.1368, inp, NULL>
+  gimple_assign <nop_expr, D.1369, i, NULL>
+  gimple_assign <rshift_expr, D.1370, D.1368, D.1369>
+  gimple_assign <bit_and_expr, D.1371, D.1370, 1>
+  gimple_assign <nop_expr, D.1369, i, NULL>
+  gimple_assign <minus_expr, D.1372, 7, D.1369>
+  gimple_assign <lshift_expr, D.1373, D.1371, D.1372>
+  gimple_assign <convert_expr, D.1374, D.1373, NULL>
+  gimple_assign <nop_expr, temp.0, temp, NULL>
+  gimple_assign <bit_ior_expr, D.1376, D.1374, temp.0>
+  gimple_assign <nop_expr, temp, D.1376, NULL>
+  gimple_assign <plus_expr, i, i, 1>
+  gimple_label <<D.1365>>
+  gimple_cond <le_expr, i, 7, <D.1364>, <D.1366>>
+  gimple_label <<D.1366>>
+  gimple_assign <var_decl, D.1377, temp, NULL>
+  gimple_return <D.1377>
+>
+
+

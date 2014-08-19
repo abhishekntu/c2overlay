@@ -1,0 +1,4 @@
+vhdl work g:/hercules/cdfg2hdl/contrib/vhdl/std_logic_1164_tinyadditions.vhd
+vhdl work g:/hercules/cdfg2hdl/contrib/vhdl/operpack_ieee.vhd
+vhdl work fibo_cdt_pkg.vhd
+vhdl work fibo.vhd

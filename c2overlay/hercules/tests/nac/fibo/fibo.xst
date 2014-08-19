@@ -1,0 +1,1 @@
+run -ifn fibo.work -ifmt mixed -top fibo -ofn fibo.ngc -ofmt NGC -p xc6vlx75t-ff484-1 -iobuf no -opt_mode Speed -opt_level 1

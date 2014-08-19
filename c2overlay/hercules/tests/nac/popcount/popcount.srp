@@ -1,0 +1,501 @@
+Release 12.3 - xst M.70d (nt)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+--> 
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "popcount.work"
+Input Format                       : mixed
+
+---- Target Parameters
+Output File Name                   : "popcount.ngc"
+Output Format                      : NGC
+Target Device                      : xc6vlx75t-ff484-1
+
+---- Source Options
+Top Module Name                    : popcount
+
+---- Target Options
+Add IO Buffers                     : no
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "g:/hercules/cdfg2hdl/contrib/vhdl/std_logic_1164_tinyadditions.vhd" into library work
+Parsing package <std_logic_1164_tinyadditions>.
+Parsing package body <std_logic_1164_tinyadditions>.
+Parsing VHDL file "g:/hercules/cdfg2hdl/contrib/vhdl/operpack_ieee.vhd" into library work
+Parsing package <operpack>.
+Parsing package body <operpack>.
+Parsing VHDL file "\hercules\tests\nac\popcount\popcount_cdt_pkg.vhd" into library work
+Parsing package <popcount_cdt_pkg>.
+Parsing VHDL file "\hercules\tests\nac\popcount\popcount.vhd" into library work
+Parsing entity <popcount>.
+Parsing architecture <fsmd> of entity <popcount>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <popcount> (architecture <fsmd>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <popcount>.
+    Related source file is "/hercules/tests/nac/popcount/popcount.vhd".
+    Found 32-bit register for signal <count_21_reg>.
+    Found 32-bit register for signal <temp_21_reg>.
+    Found 32-bit register for signal <count_11_reg>.
+    Found 32-bit register for signal <data_11_reg>.
+    Found 32-bit register for signal <data_reg>.
+    Found 32-bit register for signal <count_reg>.
+    Found 32-bit register for signal <data_21_reg>.
+    Found 32-bit register for signal <outp>.
+    Found 4-bit register for signal <current_state>.
+INFO:Xst:1799 - State s_001_002 is never reached in FSM <current_state>.
+INFO:Xst:1799 - State s_001_003 is never reached in FSM <current_state>.
+INFO:Xst:1799 - State s_002_002 is never reached in FSM <current_state>.
+INFO:Xst:1799 - State s_002_003 is never reached in FSM <current_state>.
+INFO:Xst:1799 - State s_002_004 is never reached in FSM <current_state>.
+    Found finite state machine <FSM_0> for signal <current_state>.
+    -----------------------------------------------------------------------
+    | States             | 10                                             |
+    | Transitions        | 7                                              |
+    | Inputs             | 2                                              |
+    | Outputs            | 6                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | reset (positive)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | s_entry                                        |
+    | Power Up State     | s_entry                                        |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 32-bit adder for signal <count_reg[31]_temp_21_next[31]_add_11_OUT> created at line 122.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred 256 D-type flip-flop(s).
+	inferred   7 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <popcount> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 32-bit adder                                          : 1
+# Registers                                            : 8
+ 32-bit register                                       : 8
+# Multiplexers                                         : 7
+ 32-bit 2-to-1 multiplexer                             : 7
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 32-bit adder                                          : 1
+# Registers                                            : 256
+ Flip-Flops                                            : 256
+# Multiplexers                                         : 7
+ 32-bit 2-to-1 multiplexer                             : 7
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <current_state[1:3]> with gray encoding.
+-----------------------
+ State     | Encoding
+-----------------------
+ s_entry   | 000
+ s_exit    | 110
+ s_001_001 | 001
+ s_001_002 | unreached
+ s_001_003 | unreached
+ s_002_001 | 011
+ s_002_002 | unreached
+ s_002_003 | unreached
+ s_002_004 | unreached
+ s_003_001 | 010
+-----------------------
+WARNING:Xst:1710 - FF/Latch <count_11_reg_1> (without init value) has a constant value of 0 in block <popcount>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <count_11_reg_2> (without init value) has a constant value of 0 in block <popcount>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <count_11_reg_3> (without init value) has a constant value of 0 in block <popcount>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <count_11_reg_4> (without init value) has a constant value of 0 in block <popcount>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <count_11_reg_5> (without init value) has a constant value of 0 in block <popcount>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <count_11_reg_6> (without init value) has a constant value of 0 in block <popcount>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <count_11_reg_7> (without init value) has a constant value of 0 in block <popcount>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <count_11_reg_8> (without init value) has a constant value of 0 in block <popcount>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <count_11_reg_9> (without init value) has a constant value of 0 in block <popcount>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <count_11_reg_10> (without init value) has a constant value of 0 in block <popcount>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <count_11_reg_11> (without init value) has a constant value of 0 in block <popcount>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <count_11_reg_12> (without init value) has a constant value of 0 in block <popcount>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <count_11_reg_13> (without init value) has a constant value of 0 in block <popcount>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <count_11_reg_14> (without init value) has a constant value of 0 in block <popcount>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <count_11_reg_15> (without init value) has a constant value of 0 in block <popcount>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <count_11_reg_16> (without init value) has a constant value of 0 in block <popcount>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <count_11_reg_17> (without init value) has a constant value of 0 in block <popcount>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <count_11_reg_18> (without init value) has a constant value of 0 in block <popcount>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <count_11_reg_19> (without init value) has a constant value of 0 in block <popcount>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <count_11_reg_20> (without init value) has a constant value of 0 in block <popcount>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <count_11_reg_21> (without init value) has a constant value of 0 in block <popcount>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <count_11_reg_22> (without init value) has a constant value of 0 in block <popcount>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <count_11_reg_23> (without init value) has a constant value of 0 in block <popcount>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <count_11_reg_24> (without init value) has a constant value of 0 in block <popcount>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <count_11_reg_25> (without init value) has a constant value of 0 in block <popcount>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <count_11_reg_26> (without init value) has a constant value of 0 in block <popcount>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <count_11_reg_27> (without init value) has a constant value of 0 in block <popcount>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <count_11_reg_28> (without init value) has a constant value of 0 in block <popcount>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <count_11_reg_29> (without init value) has a constant value of 0 in block <popcount>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <count_11_reg_30> (without init value) has a constant value of 0 in block <popcount>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <count_11_reg_31> (without init value) has a constant value of 0 in block <popcount>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <data_21_reg_31> (without init value) has a constant value of 0 in block <popcount>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <temp_21_reg_1> (without init value) has a constant value of 0 in block <popcount>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <temp_21_reg_2> (without init value) has a constant value of 0 in block <popcount>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <temp_21_reg_3> (without init value) has a constant value of 0 in block <popcount>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <temp_21_reg_4> (without init value) has a constant value of 0 in block <popcount>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <temp_21_reg_5> (without init value) has a constant value of 0 in block <popcount>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <temp_21_reg_6> (without init value) has a constant value of 0 in block <popcount>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <temp_21_reg_7> (without init value) has a constant value of 0 in block <popcount>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <temp_21_reg_8> (without init value) has a constant value of 0 in block <popcount>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <temp_21_reg_9> (without init value) has a constant value of 0 in block <popcount>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <temp_21_reg_10> (without init value) has a constant value of 0 in block <popcount>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <temp_21_reg_11> (without init value) has a constant value of 0 in block <popcount>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <temp_21_reg_12> (without init value) has a constant value of 0 in block <popcount>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <temp_21_reg_13> (without init value) has a constant value of 0 in block <popcount>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <temp_21_reg_14> (without init value) has a constant value of 0 in block <popcount>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <temp_21_reg_15> (without init value) has a constant value of 0 in block <popcount>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <temp_21_reg_16> (without init value) has a constant value of 0 in block <popcount>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <temp_21_reg_17> (without init value) has a constant value of 0 in block <popcount>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <temp_21_reg_18> (without init value) has a constant value of 0 in block <popcount>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <temp_21_reg_19> (without init value) has a constant value of 0 in block <popcount>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <temp_21_reg_20> (without init value) has a constant value of 0 in block <popcount>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <temp_21_reg_21> (without init value) has a constant value of 0 in block <popcount>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <temp_21_reg_22> (without init value) has a constant value of 0 in block <popcount>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <temp_21_reg_23> (without init value) has a constant value of 0 in block <popcount>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <temp_21_reg_24> (without init value) has a constant value of 0 in block <popcount>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <temp_21_reg_25> (without init value) has a constant value of 0 in block <popcount>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <temp_21_reg_26> (without init value) has a constant value of 0 in block <popcount>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <temp_21_reg_27> (without init value) has a constant value of 0 in block <popcount>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <temp_21_reg_28> (without init value) has a constant value of 0 in block <popcount>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <temp_21_reg_29> (without init value) has a constant value of 0 in block <popcount>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <temp_21_reg_30> (without init value) has a constant value of 0 in block <popcount>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <temp_21_reg_31> (without init value) has a constant value of 0 in block <popcount>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <count_11_reg_0> (without init value) has a constant value of 0 in block <popcount>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <popcount> ...
+WARNING:Xst:2677 - Node <count_21_reg_0> of sequential type is unconnected in block <popcount>.
+WARNING:Xst:2677 - Node <count_21_reg_1> of sequential type is unconnected in block <popcount>.
+WARNING:Xst:2677 - Node <count_21_reg_2> of sequential type is unconnected in block <popcount>.
+WARNING:Xst:2677 - Node <count_21_reg_3> of sequential type is unconnected in block <popcount>.
+WARNING:Xst:2677 - Node <count_21_reg_4> of sequential type is unconnected in block <popcount>.
+WARNING:Xst:2677 - Node <count_21_reg_5> of sequential type is unconnected in block <popcount>.
+WARNING:Xst:2677 - Node <count_21_reg_6> of sequential type is unconnected in block <popcount>.
+WARNING:Xst:2677 - Node <count_21_reg_7> of sequential type is unconnected in block <popcount>.
+WARNING:Xst:2677 - Node <count_21_reg_8> of sequential type is unconnected in block <popcount>.
+WARNING:Xst:2677 - Node <count_21_reg_9> of sequential type is unconnected in block <popcount>.
+WARNING:Xst:2677 - Node <count_21_reg_10> of sequential type is unconnected in block <popcount>.
+WARNING:Xst:2677 - Node <count_21_reg_11> of sequential type is unconnected in block <popcount>.
+WARNING:Xst:2677 - Node <count_21_reg_12> of sequential type is unconnected in block <popcount>.
+WARNING:Xst:2677 - Node <count_21_reg_13> of sequential type is unconnected in block <popcount>.
+WARNING:Xst:2677 - Node <count_21_reg_14> of sequential type is unconnected in block <popcount>.
+WARNING:Xst:2677 - Node <count_21_reg_15> of sequential type is unconnected in block <popcount>.
+WARNING:Xst:2677 - Node <count_21_reg_16> of sequential type is unconnected in block <popcount>.
+WARNING:Xst:2677 - Node <count_21_reg_17> of sequential type is unconnected in block <popcount>.
+WARNING:Xst:2677 - Node <count_21_reg_18> of sequential type is unconnected in block <popcount>.
+WARNING:Xst:2677 - Node <count_21_reg_19> of sequential type is unconnected in block <popcount>.
+WARNING:Xst:2677 - Node <count_21_reg_20> of sequential type is unconnected in block <popcount>.
+WARNING:Xst:2677 - Node <count_21_reg_21> of sequential type is unconnected in block <popcount>.
+WARNING:Xst:2677 - Node <count_21_reg_22> of sequential type is unconnected in block <popcount>.
+WARNING:Xst:2677 - Node <count_21_reg_23> of sequential type is unconnected in block <popcount>.
+WARNING:Xst:2677 - Node <count_21_reg_24> of sequential type is unconnected in block <popcount>.
+WARNING:Xst:2677 - Node <count_21_reg_25> of sequential type is unconnected in block <popcount>.
+WARNING:Xst:2677 - Node <count_21_reg_26> of sequential type is unconnected in block <popcount>.
+WARNING:Xst:2677 - Node <count_21_reg_27> of sequential type is unconnected in block <popcount>.
+WARNING:Xst:2677 - Node <count_21_reg_28> of sequential type is unconnected in block <popcount>.
+WARNING:Xst:2677 - Node <count_21_reg_29> of sequential type is unconnected in block <popcount>.
+WARNING:Xst:2677 - Node <count_21_reg_30> of sequential type is unconnected in block <popcount>.
+WARNING:Xst:2677 - Node <count_21_reg_31> of sequential type is unconnected in block <popcount>.
+WARNING:Xst:2677 - Node <count_21_reg_0> of sequential type is unconnected in block <popcount>.
+WARNING:Xst:2677 - Node <count_21_reg_1> of sequential type is unconnected in block <popcount>.
+WARNING:Xst:2677 - Node <count_21_reg_2> of sequential type is unconnected in block <popcount>.
+WARNING:Xst:2677 - Node <count_21_reg_3> of sequential type is unconnected in block <popcount>.
+WARNING:Xst:2677 - Node <count_21_reg_4> of sequential type is unconnected in block <popcount>.
+WARNING:Xst:2677 - Node <count_21_reg_5> of sequential type is unconnected in block <popcount>.
+WARNING:Xst:2677 - Node <count_21_reg_6> of sequential type is unconnected in block <popcount>.
+WARNING:Xst:2677 - Node <count_21_reg_7> of sequential type is unconnected in block <popcount>.
+WARNING:Xst:2677 - Node <count_21_reg_8> of sequential type is unconnected in block <popcount>.
+WARNING:Xst:2677 - Node <count_21_reg_9> of sequential type is unconnected in block <popcount>.
+WARNING:Xst:2677 - Node <count_21_reg_10> of sequential type is unconnected in block <popcount>.
+WARNING:Xst:2677 - Node <count_21_reg_11> of sequential type is unconnected in block <popcount>.
+WARNING:Xst:2677 - Node <count_21_reg_12> of sequential type is unconnected in block <popcount>.
+WARNING:Xst:2677 - Node <count_21_reg_13> of sequential type is unconnected in block <popcount>.
+WARNING:Xst:2677 - Node <count_21_reg_14> of sequential type is unconnected in block <popcount>.
+WARNING:Xst:2677 - Node <count_21_reg_15> of sequential type is unconnected in block <popcount>.
+WARNING:Xst:2677 - Node <count_21_reg_16> of sequential type is unconnected in block <popcount>.
+WARNING:Xst:2677 - Node <count_21_reg_17> of sequential type is unconnected in block <popcount>.
+WARNING:Xst:2677 - Node <count_21_reg_18> of sequential type is unconnected in block <popcount>.
+WARNING:Xst:2677 - Node <count_21_reg_19> of sequential type is unconnected in block <popcount>.
+WARNING:Xst:2677 - Node <count_21_reg_20> of sequential type is unconnected in block <popcount>.
+WARNING:Xst:2677 - Node <count_21_reg_21> of sequential type is unconnected in block <popcount>.
+WARNING:Xst:2677 - Node <count_21_reg_22> of sequential type is unconnected in block <popcount>.
+WARNING:Xst:2677 - Node <count_21_reg_23> of sequential type is unconnected in block <popcount>.
+WARNING:Xst:2677 - Node <count_21_reg_24> of sequential type is unconnected in block <popcount>.
+WARNING:Xst:2677 - Node <count_21_reg_25> of sequential type is unconnected in block <popcount>.
+WARNING:Xst:2677 - Node <count_21_reg_26> of sequential type is unconnected in block <popcount>.
+WARNING:Xst:2677 - Node <count_21_reg_27> of sequential type is unconnected in block <popcount>.
+WARNING:Xst:2677 - Node <count_21_reg_28> of sequential type is unconnected in block <popcount>.
+WARNING:Xst:2677 - Node <count_21_reg_29> of sequential type is unconnected in block <popcount>.
+WARNING:Xst:2677 - Node <count_21_reg_30> of sequential type is unconnected in block <popcount>.
+WARNING:Xst:2677 - Node <count_21_reg_31> of sequential type is unconnected in block <popcount>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 0) on block popcount, actual ratio is 0.
+FlipFlop current_state_FSM_FFd2 has been replicated 2 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 165
+ Flip-Flops                                            : 165
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : popcount.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 234
+#      GND                         : 1
+#      LUT1                        : 31
+#      LUT2                        : 1
+#      LUT3                        : 34
+#      LUT4                        : 66
+#      LUT5                        : 32
+#      LUT6                        : 6
+#      MUXCY                       : 31
+#      XORCY                       : 32
+# FlipFlops/Latches                : 165
+#      FDC                         : 69
+#      FDCE                        : 96
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6vlx75tff484-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             165  out of  93120     0%  
+ Number of Slice LUTs:                  170  out of  46560     0%  
+    Number used as Logic:               170  out of  46560     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    204
+   Number with an unused Flip Flop:      39  out of    204    19%  
+   Number with an unused LUT:            34  out of    204    16%  
+   Number of fully used LUT-FF pairs:   131  out of    204    64%  
+   Number of unique control sets:         3
+
+IO Utilization: 
+ Number of IOs:                          69
+ Number of bonded IOBs:                   0  out of    240     0%  
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | NONE(temp_21_reg_0)    | 165   |
+-----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 3.135ns (Maximum Frequency: 318.979MHz)
+   Minimum input arrival time before clock: 0.458ns
+   Maximum output required time after clock: 1.123ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 3.135ns (frequency: 318.979MHz)
+  Total number of paths / destination ports: 1897 / 261
+-------------------------------------------------------------------------
+Delay:               3.135ns (Levels of Logic = 4)
+  Source:            data_21_reg_24 (FF)
+  Destination:       current_state_FSM_FFd3 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: data_21_reg_24 to current_state_FSM_FFd3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              1   0.375   0.638  data_21_reg_24 (data_21_reg_24)
+     LUT4:I0->O            2   0.068   0.784  Mmux_data_21_next171 (data_21_next<24>)
+     LUT6:I0->O            1   0.068   0.638  current_state_FSM_FFd3-In1 (current_state_FSM_FFd3-In1)
+     LUT4:I0->O            1   0.068   0.417  current_state_FSM_FFd3-In5 (current_state_FSM_FFd3-In5)
+     LUT6:I5->O            1   0.068   0.000  current_state_FSM_FFd3-In7 (current_state_FSM_FFd3-In)
+     FDC:D                     0.011          current_state_FSM_FFd3
+    ----------------------------------------
+    Total                      3.135ns (0.658ns logic, 2.477ns route)
+                                       (21.0% logic, 79.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 230 / 230
+-------------------------------------------------------------------------
+Offset:              0.458ns (Levels of Logic = 1)
+  Source:            start (PAD)
+  Destination:       current_state_FSM_FFd3 (FF)
+  Destination Clock: clk rising
+
+  Data Path: start to current_state_FSM_FFd3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LUT6:I0->O            1   0.068   0.000  current_state_FSM_FFd3-In7 (current_state_FSM_FFd3-In)
+     FDC:D                     0.011          current_state_FSM_FFd3
+    ----------------------------------------
+    Total                      0.458ns (0.458ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 35 / 34
+-------------------------------------------------------------------------
+Offset:              1.123ns (Levels of Logic = 1)
+  Source:            current_state_FSM_FFd3 (FF)
+  Destination:       ready (PAD)
+  Source Clock:      clk rising
+
+  Data Path: current_state_FSM_FFd3 to ready
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q            197   0.375   0.680  current_state_FSM_FFd3 (current_state_FSM_FFd3)
+     LUT2:I0->O            0   0.068   0.000  current_state__n0154<0>1 (ready)
+    ----------------------------------------
+    Total                      1.123ns (0.443ns logic, 0.680ns route)
+                                       (39.5% logic, 60.5% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    3.135|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 22.00 secs
+Total CPU time to Xst completion: 21.67 secs
+ 
+--> 
+
+Total memory usage is 148708 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  128 (   0 filtered)
+Number of infos    :    6 (   0 filtered)
+

@@ -1,0 +1,12 @@
+digraph mandel_cg
+{
+  graph [rankdir="TB", nodesep = "0.175"];
+  node [fontname="Courier", fontsize="12", style="filled"];
+  edge [fontname="Courier", fontsize="12"];
+
+  checkpixel  [label="checkpixel", ntype="node", argix="-1", dataspec="na", bb="-1", shape="parallelogram", fillcolor="orange"];
+  mandel  [label="mandel", ntype="node", argix="-1", dataspec="na", bb="-1", shape="parallelogram", fillcolor="orange"];
+
+  mandel -> checkpixel  [label="mandel:checkpixel", etype="D", order="0", argix="-1", dataspec="u1"];
+
+}

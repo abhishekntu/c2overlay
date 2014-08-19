@@ -1,0 +1,3 @@
+ length=00000010 y=00000001 y_ref=00000001
+C2VWAVELET OK: Number of cycles=45
+C2VWAVELET algorithm test has passed

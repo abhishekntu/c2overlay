@@ -1,0 +1,42 @@
+
+
+procedure icbrt (  in u32 x,   out s32 res)
+{
+  localvar u32 D_1371;
+  localvar u32 D_1372;
+  localvar u32 D_1373;
+  localvar u32 D_1374;
+  localvar s32 y_0;
+  localvar s32 s;
+  localvar u32 y;
+  localvar u32 b;
+  localvar u32 x0;
+
+L0005:
+  s <= ldc 30;
+  y <= ldc 0;
+  x0 <= mov x;
+  D_1368 <= jmpun;
+D_1367:
+  y <= mul y, 2;
+  D_1371 <= add y, 1;
+  D_1372 <= mul D_1371, y;
+  D_1373 <= mul D_1372, 3;
+  D_1374 <= add D_1373, 1;
+  b <= shl D_1374, s;
+  s <= sub s, 3;
+  D_1375, D_1376 <= jmpge x0, b;
+D_1375:
+  x0 <= sub x0, b;
+  y <= add y, 1;
+  D_1376 <= jmpun;
+D_1376:
+  D_1368 <= jmpun;
+D_1368:
+  D_1367, D_1369 <= jmpge s, 0;
+D_1369:
+  y_0 <= sxt y;
+  res <= mov y_0;
+L_EXIT:
+  nop;
+}

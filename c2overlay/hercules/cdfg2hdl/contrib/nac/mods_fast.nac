@@ -1,0 +1,29 @@
+//
+// Filename: mods_fast.nac
+// Purpose : N-address code (NAC) implementation for testing modulus 
+//           (conservative version).
+// Author  : Nikolaos Kavvadias (C) 2011
+// Date    : 07-May-2011
+// Revision: 0.3.0 (18/04/11)
+//           Initial version.
+//           0.3.1 (07/05/11)
+//           Adapted from "modremtest".
+// 
+
+procedure mods_fast_test (in s32 x, in s32 y, in s32 n, out s32 res)
+{
+  localvar s32 r, s, t1, t2, t3;
+S_1: 
+  s <= sub n, 1;
+  r <= rem x, y;
+//  if (((r >> 31) ^ (d >> 31)) != 0) 
+  t1 <= shr r, s;
+  t2 <= shr y, s;
+  t3 <= xor t1, t2;
+  S_2, S_3 <= jmpne t3, 0;
+S_2:
+  r <= add r, y;
+  S_3 <= jmpun;
+S_3:
+  res <= mov r;  
+}

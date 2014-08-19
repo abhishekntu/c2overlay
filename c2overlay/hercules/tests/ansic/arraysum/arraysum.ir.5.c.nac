@@ -1,0 +1,36 @@
+globalvar s32 lance_static_arr_7[10] = {
+  2,
+  3,
+  5,
+  7,
+  11,
+  13,
+  17,
+  19,
+  23,
+  27
+};
+procedure arraysum (in s32 in1_2, out s32 out1_3)
+{
+localvar s32 i_5;
+localvar s32 sum_6;
+localvar s32 t1;
+localvar s32 t2;
+localvar s32 t3;
+localvar s32 t9;
+localvar s8 t4;
+localvar s32 t5;
+localvar s8 t6;
+localvar s32 t7;
+localvar s32 t8;
+sum_6 <= ldc 0;
+i_5 <= ldc 0;
+t1 <= setlt i_5, in1_2;
+t9 <= seteq t1, 0;
+LL1 <= jmpne t9, 0;
+LL3:
+t7 <= load lance_static_arr_7, i_5;
+t8 <= add sum_6, t7;
+sum_6 <= mov t8;
+LL2:
+t2 <= mov i_5;

@@ -1,0 +1,92 @@
+### HERCULES RUN: STARTED ###
+NAC file: c2vwalsh.nac
+Generating VHDL package file: c2vwalsh_pkg.vhd
+Generating VHDL compound data types package file: c2vwalsh_cdt_pkg.vhd
+Generating main.c
+Generating main.h
+Generating ansic.mk Makefile
+Generating NAC export file for procedure c2vwalsh: c2vwalsh_ssa.nac
+Generating ANSI C file for procedure c2vwalsh: c2vwalsh_nac.c
+Generating dot file for the CDFG of procedure c2vwalsh: c2vwalsh.dot
+Generating the dot representation of the CFG for procedure c2vwalsh: c2vwalsh_cfg.dot
+Generating dot file for call-graph: c2vwalsh_cg.dot
+Generating a plain graph for the CDFG of the current procedure: c2vwalsh_cdfg.txt
+Generating the dot representation of the current procedure CFG: c2vwalsh_cfg.dot
+Generating RTL VHDL for the current procedure: c2vwalsh.vhd
+Generating the VHDL testbench for the root procedure: c2vwalsh_tb.vhd
+Generating the Makefile for Modelsim simulation: c2vwalsh.do
+Generating the shell script for VHDL simulation: c2vwalsh.sh
+Generating the shell script for XST synthesis: c2vwalsh-syn.sh
+Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+
+# 10.1d
+
+# do c2vwalsh.do 
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package std_logic_1164_tinyadditions
+# -- Compiling package body std_logic_1164_tinyadditions
+# -- Loading package std_logic_1164_tinyadditions
+# ** Warning: [3] c:/hercules/cdfg2hdl/contrib/vhdl/std_logic_1164_tinyadditions.vhd(117): (vcom-1246) Range 2 to 1 is null.
+# 
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package STD_LOGIC_TEXTIO
+# -- Compiling package body STD_LOGIC_TEXTIO
+# -- Loading package STD_LOGIC_TEXTIO
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package operpack
+# -- Compiling package body operpack
+# -- Loading package operpack
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package c2vwalsh_cdt_pkg
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package operpack
+# -- Loading package c2vwalsh_cdt_pkg
+# -- Loading package std_logic_1164_tinyadditions
+# -- Compiling entity c2vwalsh
+# -- Compiling architecture fsmd of c2vwalsh
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package STD_LOGIC_TEXTIO
+# -- Loading package NUMERIC_STD
+# -- Loading package c2vwalsh_cdt_pkg
+# -- Loading package std_logic_1164_tinyadditions
+# -- Compiling entity c2vwalsh_tb
+# -- Compiling architecture tb_arch of c2vwalsh_tb
+# vsim c2vwalsh_tb 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.std_logic_textio(body)
+# Loading ieee.numeric_std(body)
+# Loading work.c2vwalsh_cdt_pkg
+# Loading work.std_logic_1164_tinyadditions(body)
+# Loading work.c2vwalsh_tb(tb_arch)
+# Loading work.operpack(body)
+# Loading work.c2vwalsh(fsmd)
+# ** Failure: NONE. End simulation time reached
+#    Time: 4850 ns  Iteration: 2  Process: /c2vwalsh_tb/C2VWALSH_BENCH File: c2vwalsh_tb.vhd
+# Break in Process C2VWALSH_BENCH at c2vwalsh_tb.vhd line 138
+This script has been running for 6 seconds.
+### HERCULES RUN: ENDED ###
+

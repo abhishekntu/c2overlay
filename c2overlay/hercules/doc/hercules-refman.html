@@ -1,0 +1,3153 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Docutils 0.10: http://docutils.sourceforge.net/" />
+<title>HercuLeS 1.0 reference manual</title>
+<meta name="date" content="2013-06-29" />
+<meta name="author" content="Nikolaos Kavvadias &lt;nkavvadias&#64;ajaxcompilers.com&gt;" />
+<meta name="copyright" content="Nikolaos Kavvadias (C) 2009, 2010, 2011, 2012, 2013" />
+<style type="text/css">
+
+/*
+:Author: David Goodger (goodger@python.org)
+:Id: $Id: html4css1.css 7514 2012-09-14 14:27:12Z milde $
+:Copyright: This stylesheet has been placed in the public domain.
+
+Default cascading style sheet for the HTML output of Docutils.
+
+See http://docutils.sf.net/docs/howto/html-stylesheets.html for how to
+customize this style sheet.
+*/
+
+/* used to remove borders from tables and images */
+.borderless, table.borderless td, table.borderless th {
+  border: 0 }
+
+table.borderless td, table.borderless th {
+  /* Override padding for "table.docutils td" with "! important".
+     The right padding separates the table cells. */
+  padding: 0 0.5em 0 0 ! important }
+
+.first {
+  /* Override more specific margin styles with "! important". */
+  margin-top: 0 ! important }
+
+.last, .with-subtitle {
+  margin-bottom: 0 ! important }
+
+.hidden {
+  display: none }
+
+a.toc-backref {
+  text-decoration: none ;
+  color: black }
+
+blockquote.epigraph {
+  margin: 2em 5em ; }
+
+dl.docutils dd {
+  margin-bottom: 0.5em }
+
+object[type="image/svg+xml"], object[type="application/x-shockwave-flash"] {
+  overflow: hidden;
+}
+
+/* Uncomment (and remove this text!) to get bold-faced definition list terms
+dl.docutils dt {
+  font-weight: bold }
+*/
+
+div.abstract {
+  margin: 2em 5em }
+
+div.abstract p.topic-title {
+  font-weight: bold ;
+  text-align: center }
+
+div.admonition, div.attention, div.caution, div.danger, div.error,
+div.hint, div.important, div.note, div.tip, div.warning {
+  margin: 2em ;
+  border: medium outset ;
+  padding: 1em }
+
+div.admonition p.admonition-title, div.hint p.admonition-title,
+div.important p.admonition-title, div.note p.admonition-title,
+div.tip p.admonition-title {
+  font-weight: bold ;
+  font-family: sans-serif }
+
+div.attention p.admonition-title, div.caution p.admonition-title,
+div.danger p.admonition-title, div.error p.admonition-title,
+div.warning p.admonition-title, .code .error {
+  color: red ;
+  font-weight: bold ;
+  font-family: sans-serif }
+
+/* Uncomment (and remove this text!) to get reduced vertical space in
+   compound paragraphs.
+div.compound .compound-first, div.compound .compound-middle {
+  margin-bottom: 0.5em }
+
+div.compound .compound-last, div.compound .compound-middle {
+  margin-top: 0.5em }
+*/
+
+div.dedication {
+  margin: 2em 5em ;
+  text-align: center ;
+  font-style: italic }
+
+div.dedication p.topic-title {
+  font-weight: bold ;
+  font-style: normal }
+
+div.figure {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+div.footer, div.header {
+  clear: both;
+  font-size: smaller }
+
+div.line-block {
+  display: block ;
+  margin-top: 1em ;
+  margin-bottom: 1em }
+
+div.line-block div.line-block {
+  margin-top: 0 ;
+  margin-bottom: 0 ;
+  margin-left: 1.5em }
+
+div.sidebar {
+  margin: 0 0 0.5em 1em ;
+  border: medium outset ;
+  padding: 1em ;
+  background-color: #ffffee ;
+  width: 40% ;
+  float: right ;
+  clear: right }
+
+div.sidebar p.rubric {
+  font-family: sans-serif ;
+  font-size: medium }
+
+div.system-messages {
+  margin: 5em }
+
+div.system-messages h1 {
+  color: red }
+
+div.system-message {
+  border: medium outset ;
+  padding: 1em }
+
+div.system-message p.system-message-title {
+  color: red ;
+  font-weight: bold }
+
+div.topic {
+  margin: 2em }
+
+h1.section-subtitle, h2.section-subtitle, h3.section-subtitle,
+h4.section-subtitle, h5.section-subtitle, h6.section-subtitle {
+  margin-top: 0.4em }
+
+h1.title {
+  text-align: center }
+
+h2.subtitle {
+  text-align: center }
+
+hr.docutils {
+  width: 75% }
+
+img.align-left, .figure.align-left, object.align-left {
+  clear: left ;
+  float: left ;
+  margin-right: 1em }
+
+img.align-right, .figure.align-right, object.align-right {
+  clear: right ;
+  float: right ;
+  margin-left: 1em }
+
+img.align-center, .figure.align-center, object.align-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.align-left {
+  text-align: left }
+
+.align-center {
+  clear: both ;
+  text-align: center }
+
+.align-right {
+  text-align: right }
+
+/* reset inner alignment in figures */
+div.align-right {
+  text-align: inherit }
+
+/* div.align-center * { */
+/*   text-align: left } */
+
+ol.simple, ul.simple {
+  margin-bottom: 1em }
+
+ol.arabic {
+  list-style: decimal }
+
+ol.loweralpha {
+  list-style: lower-alpha }
+
+ol.upperalpha {
+  list-style: upper-alpha }
+
+ol.lowerroman {
+  list-style: lower-roman }
+
+ol.upperroman {
+  list-style: upper-roman }
+
+p.attribution {
+  text-align: right ;
+  margin-left: 50% }
+
+p.caption {
+  font-style: italic }
+
+p.credits {
+  font-style: italic ;
+  font-size: smaller }
+
+p.label {
+  white-space: nowrap }
+
+p.rubric {
+  font-weight: bold ;
+  font-size: larger ;
+  color: maroon ;
+  text-align: center }
+
+p.sidebar-title {
+  font-family: sans-serif ;
+  font-weight: bold ;
+  font-size: larger }
+
+p.sidebar-subtitle {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+p.topic-title {
+  font-weight: bold }
+
+pre.address {
+  margin-bottom: 0 ;
+  margin-top: 0 ;
+  font: inherit }
+
+pre.literal-block, pre.doctest-block, pre.math, pre.code {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+pre.code .ln { color: grey; } /* line numbers */
+pre.code, code { background-color: #eeeeee }
+pre.code .comment, code .comment { color: #5C6576 }
+pre.code .keyword, code .keyword { color: #3B0D06; font-weight: bold }
+pre.code .literal.string, code .literal.string { color: #0C5404 }
+pre.code .name.builtin, code .name.builtin { color: #352B84 }
+pre.code .deleted, code .deleted { background-color: #DEB0A1}
+pre.code .inserted, code .inserted { background-color: #A3D289}
+
+span.classifier {
+  font-family: sans-serif ;
+  font-style: oblique }
+
+span.classifier-delimiter {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+span.interpreted {
+  font-family: sans-serif }
+
+span.option {
+  white-space: nowrap }
+
+span.pre {
+  white-space: pre }
+
+span.problematic {
+  color: red }
+
+span.section-subtitle {
+  /* font-size relative to parent (h1..h6 element) */
+  font-size: 80% }
+
+table.citation {
+  border-left: solid 1px gray;
+  margin-left: 1px }
+
+table.docinfo {
+  margin: 2em 4em }
+
+table.docutils {
+  margin-top: 0.5em ;
+  margin-bottom: 0.5em }
+
+table.footnote {
+  border-left: solid 1px black;
+  margin-left: 1px }
+
+table.docutils td, table.docutils th,
+table.docinfo td, table.docinfo th {
+  padding-left: 0.5em ;
+  padding-right: 0.5em ;
+  vertical-align: top }
+
+table.docutils th.field-name, table.docinfo th.docinfo-name {
+  font-weight: bold ;
+  text-align: left ;
+  white-space: nowrap ;
+  padding-left: 0 }
+
+h1 tt.docutils, h2 tt.docutils, h3 tt.docutils,
+h4 tt.docutils, h5 tt.docutils, h6 tt.docutils {
+  font-size: 100% }
+
+ul.auto-toc {
+  list-style-type: none }
+
+</style>
+</head>
+<body>
+<div class="document" id="hercules-1-0-reference-manual">
+<h1 class="title">HercuLeS 1.0 reference manual</h1>
+<table class="docinfo" frame="void" rules="none">
+<col class="docinfo-name" />
+<col class="docinfo-content" />
+<tbody valign="top">
+<tr><th class="docinfo-name">Date:</th>
+<td>2013-06-29</td></tr>
+<tr><th class="docinfo-name">Author:</th>
+<td>Nikolaos Kavvadias &lt;<a class="reference external" href="mailto:nkavvadias&#64;ajaxcompilers.com">nkavvadias&#64;ajaxcompilers.com</a>&gt;</td></tr>
+<tr class="field"><th class="docinfo-name">Email:</th><td class="field-body"><a class="reference external" href="mailto:info&#64;ajaxcompilers.com">info&#64;ajaxcompilers.com</a></td>
+</tr>
+<tr><th class="docinfo-name">Revision:</th>
+<td>0.0.1 (2012-05-10), 0.0.2 (2013-05-29)</td></tr>
+<tr class="field"><th class="docinfo-name">Web site:</th><td class="field-body"><a class="reference external" href="http://www.ajaxcompilers.com">http://www.ajaxcompilers.com</a></td>
+</tr>
+<tr><th class="docinfo-name">Copyright:</th>
+<td>Nikolaos Kavvadias (C) 2009, 2010, 2011, 2012, 2013</td></tr>
+</tbody>
+</table>
+<!-- -*- coding: utf-8 -*- -->
+<!-- NOTE TO MAINTAINERS: Please add new questions to the end of their
+sections, so section/question numbers remain stable. -->
+<div class="figure">
+<img alt="hercules-logo.png" src="hercules-logo.png" />
+<p class="caption">HercuLeS, the constellation.</p>
+</div>
+<div class="contents topic" id="contents">
+<p class="topic-title first">Contents</p>
+<ul class="auto-toc simple">
+<li><a class="reference internal" href="#hercules-basics" id="id5">1&nbsp;&nbsp;&nbsp;HercuLeS basics</a><ul class="auto-toc">
+<li><a class="reference internal" href="#introduction" id="id6">1.1&nbsp;&nbsp;&nbsp;Introduction</a></li>
+<li><a class="reference internal" href="#conceptual-flow" id="id7">1.2&nbsp;&nbsp;&nbsp;Conceptual flow</a></li>
+<li><a class="reference internal" href="#overview" id="id8">1.3&nbsp;&nbsp;&nbsp;Overview</a></li>
+<li><a class="reference internal" href="#quick-start-guide-to-the-hercules-web-interface" id="id9">1.4&nbsp;&nbsp;&nbsp;Quick-start guide to the HercuLeS web interface</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#more-on-hercules" id="id10">2&nbsp;&nbsp;&nbsp;More on HercuLeS</a><ul class="auto-toc">
+<li><a class="reference internal" href="#how-it-works" id="id11">2.1&nbsp;&nbsp;&nbsp;How it works</a></li>
+<li><a class="reference internal" href="#nac2cdfg" id="id12">2.2&nbsp;&nbsp;&nbsp;nac2cdfg</a></li>
+<li><a class="reference internal" href="#cdfg2hdl" id="id13">2.3&nbsp;&nbsp;&nbsp;cdfg2hdl</a><ul class="auto-toc">
+<li><a class="reference internal" href="#cdfg-construction" id="id14">2.3.1&nbsp;&nbsp;&nbsp;CDFG construction</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#gimple2nac" id="id15">3&nbsp;&nbsp;&nbsp;gimple2nac</a><ul class="auto-toc">
+<li><a class="reference internal" href="#id1" id="id16">3.1&nbsp;&nbsp;&nbsp;Introduction</a></li>
+<li><a class="reference internal" href="#target-audience" id="id17">3.2&nbsp;&nbsp;&nbsp;Target audience</a></li>
+<li><a class="reference internal" href="#issues-with-tagged-gimple" id="id18">3.3&nbsp;&nbsp;&nbsp;Issues with tagged GIMPLE</a><ul class="auto-toc">
+<li><a class="reference internal" href="#losing-the-original-semantics-of-the-source-program" id="id19">3.3.1&nbsp;&nbsp;&nbsp;Losing the original semantics of the source program</a></li>
+<li><a class="reference internal" href="#inconsistency-in-handling-labels" id="id20">3.3.2&nbsp;&nbsp;&nbsp;Inconsistency in handling labels</a></li>
+<li><a class="reference internal" href="#destroyed-interfaces" id="id21">3.3.3&nbsp;&nbsp;&nbsp;Destroyed interfaces</a></li>
+<li><a class="reference internal" href="#pointer-expressions" id="id22">3.3.4&nbsp;&nbsp;&nbsp;Pointer expressions</a></li>
+<li><a class="reference internal" href="#function-calls" id="id23">3.3.5&nbsp;&nbsp;&nbsp;Function calls</a></li>
+<li><a class="reference internal" href="#inconsistency-in-array-initialization-sequences" id="id24">3.3.6&nbsp;&nbsp;&nbsp;Inconsistency in array initialization sequences</a></li>
+<li><a class="reference internal" href="#inconsistency-of-the-tagged-gimple-format" id="id25">3.3.7&nbsp;&nbsp;&nbsp;Inconsistency of the tagged GIMPLE format</a></li>
+<li><a class="reference internal" href="#lack-of-bit-accurate-semantics" id="id26">3.3.8&nbsp;&nbsp;&nbsp;Lack of bit-accurate semantics</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#final-notes-on-gimple" id="id27">3.4&nbsp;&nbsp;&nbsp;Final notes on GIMPLE</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#the-nac-programming-language" id="id28">4&nbsp;&nbsp;&nbsp;The NAC programming language</a><ul class="auto-toc">
+<li><a class="reference internal" href="#id2" id="id29">4.1&nbsp;&nbsp;&nbsp;Introduction</a></li>
+<li><a class="reference internal" href="#nac-instructions" id="id30">4.2&nbsp;&nbsp;&nbsp;NAC instructions</a><ul class="auto-toc">
+<li><a class="reference internal" href="#fixed-point-operators" id="id31">4.2.1&nbsp;&nbsp;&nbsp;Fixed-point operators</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#macroinsructions" id="id32">4.3&nbsp;&nbsp;&nbsp;Macroinsructions</a></li>
+<li><a class="reference internal" href="#structure-of-a-nac-program" id="id33">4.4&nbsp;&nbsp;&nbsp;Structure of a NAC program</a></li>
+<li><a class="reference internal" href="#data-type-inference-rules" id="id34">4.5&nbsp;&nbsp;&nbsp;Data type inference rules</a></li>
+<li><a class="reference internal" href="#nac-grammar" id="id35">4.6&nbsp;&nbsp;&nbsp;NAC grammar</a><ul class="auto-toc">
+<li><a class="reference internal" href="#yacc-bison-grammar" id="id36">4.6.1&nbsp;&nbsp;&nbsp;YACC/bison grammar</a></li>
+<li><a class="reference internal" href="#ebnf-grammar" id="id37">4.6.2&nbsp;&nbsp;&nbsp;EBNF grammar</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#examples" id="id38">4.7&nbsp;&nbsp;&nbsp;Examples</a><ul class="auto-toc">
+<li><a class="reference internal" href="#d-euclidean-distance-approximation-eda-nac" id="id39">4.7.1&nbsp;&nbsp;&nbsp;2D Euclidean distance approximation (eda.nac)</a></li>
+<li><a class="reference internal" href="#iterative-algorithm-for-the-fibonacci-sequence-fibo-nac" id="id40">4.7.2&nbsp;&nbsp;&nbsp;Iterative algorithm for the Fibonacci sequence (fibo.nac)</a></li>
+<li><a class="reference internal" href="#sum-of-array-elements-arraysum-nac" id="id41">4.7.3&nbsp;&nbsp;&nbsp;Sum of array elements (arraysum.nac)</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#suggested-coding-style-limitations" id="id42">4.8&nbsp;&nbsp;&nbsp;Suggested coding style - Limitations</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#c-coding-style" id="id43">5&nbsp;&nbsp;&nbsp;C coding style</a></li>
+<li><a class="reference internal" href="#limitations-of-the-free-web-interface" id="id44">6&nbsp;&nbsp;&nbsp;Limitations of the free web interface</a></li>
+<li><a class="reference internal" href="#fsmds" id="id45">7&nbsp;&nbsp;&nbsp;FSMDs</a><ul class="auto-toc">
+<li><a class="reference internal" href="#fsmd-overview" id="id46">7.1&nbsp;&nbsp;&nbsp;FSMD overview</a><ul class="auto-toc">
+<li><a class="reference internal" href="#extended-fsmds" id="id47">7.1.1&nbsp;&nbsp;&nbsp;Extended FSMDs</a></li>
+<li><a class="reference internal" href="#interface" id="id48">7.1.2&nbsp;&nbsp;&nbsp;Interface</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#architecture-and-organization" id="id49">7.2&nbsp;&nbsp;&nbsp;Architecture and organization</a><ul class="auto-toc">
+<li><a class="reference internal" href="#communication-with-embedded-memories" id="id50">7.2.1&nbsp;&nbsp;&nbsp;Communication with embedded memories</a></li>
+<li><a class="reference internal" href="#hierarchical-fsmds" id="id51">7.2.2&nbsp;&nbsp;&nbsp;Hierarchical FSMDs</a></li>
+<li><a class="reference internal" href="#steaming-ports" id="id52">7.2.3&nbsp;&nbsp;&nbsp;Steaming ports</a></li>
+<li><a class="reference internal" href="#operation-chaining" id="id53">7.2.4&nbsp;&nbsp;&nbsp;Operation chaining</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#the-hercules-gui" id="id54">8&nbsp;&nbsp;&nbsp;The HercuLeS GUI</a><ul class="auto-toc">
+<li><a class="reference internal" href="#id3" id="id55">8.1&nbsp;&nbsp;&nbsp;Introduction</a></li>
+<li><a class="reference internal" href="#id4" id="id56">8.2&nbsp;&nbsp;&nbsp;Overview</a></li>
+<li><a class="reference internal" href="#quick-start-guide" id="id57">8.3&nbsp;&nbsp;&nbsp;Quick-start guide</a></li>
+<li><a class="reference internal" href="#the-gui-in-detail" id="id58">8.4&nbsp;&nbsp;&nbsp;The GUI in detail</a><ul class="auto-toc">
+<li><a class="reference internal" href="#dropdown-menus" id="id59">8.4.1&nbsp;&nbsp;&nbsp;Dropdown menus</a><ul class="auto-toc">
+<li><a class="reference internal" href="#file-submenu" id="id60">8.4.1.1&nbsp;&nbsp;&nbsp;File submenu</a></li>
+<li><a class="reference internal" href="#general-submenu" id="id61">8.4.1.2&nbsp;&nbsp;&nbsp;General submenu</a></li>
+<li><a class="reference internal" href="#action-submenu" id="id62">8.4.1.3&nbsp;&nbsp;&nbsp;Action submenu</a></li>
+<li><a class="reference internal" href="#configuration-submenu" id="id63">8.4.1.4&nbsp;&nbsp;&nbsp;Configuration submenu</a></li>
+<li><a class="reference internal" href="#theme-submenu" id="id64">8.4.1.5&nbsp;&nbsp;&nbsp;Theme submenu</a></li>
+<li><a class="reference internal" href="#help-submenu" id="id65">8.4.1.6&nbsp;&nbsp;&nbsp;Help submenu</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#framed-controls" id="id66">8.4.2&nbsp;&nbsp;&nbsp;Framed controls</a><ul class="auto-toc">
+<li><a class="reference internal" href="#simulator-control" id="id67">8.4.2.1&nbsp;&nbsp;&nbsp;Simulator control</a></li>
+<li><a class="reference internal" href="#output-waveform-format-control" id="id68">8.4.2.2&nbsp;&nbsp;&nbsp;Output waveform format control</a></li>
+<li><a class="reference internal" href="#simulation-and-synthesis-options-control" id="id69">8.4.2.3&nbsp;&nbsp;&nbsp;Simulation and synthesis options control</a></li>
+<li><a class="reference internal" href="#miscellaneous-options" id="id70">8.4.2.4&nbsp;&nbsp;&nbsp;Miscellaneous options</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#notebook-controls" id="id71">8.4.3&nbsp;&nbsp;&nbsp;Notebook controls</a><ul class="auto-toc">
+<li><a class="reference internal" href="#general-tab" id="id72">8.4.3.1&nbsp;&nbsp;&nbsp;General tab</a></li>
+<li><a class="reference internal" href="#optimizations-tab" id="id73">8.4.3.2&nbsp;&nbsp;&nbsp;Optimizations tab</a></li>
+<li><a class="reference internal" href="#operation-scheduling-tab" id="id74">8.4.3.3&nbsp;&nbsp;&nbsp;Operation scheduling tab</a></li>
+<li><a class="reference internal" href="#code-generation-tab" id="id75">8.4.3.4&nbsp;&nbsp;&nbsp;Code generation tab</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#action-buttons" id="id76">8.4.4&nbsp;&nbsp;&nbsp;Action buttons</a></li>
+<li><a class="reference internal" href="#results-browser" id="id77">8.4.5&nbsp;&nbsp;&nbsp;Results browser</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#configuration-files" id="id78">8.5&nbsp;&nbsp;&nbsp;Configuration files</a></li>
+<li><a class="reference internal" href="#initialization-file" id="id79">8.6&nbsp;&nbsp;&nbsp;Initialization file</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="hercules-basics">
+<h1><a class="toc-backref" href="#id5">1&nbsp;&nbsp;&nbsp;HercuLeS basics</a></h1>
+<div class="section" id="introduction">
+<h2><a class="toc-backref" href="#id6">1.1&nbsp;&nbsp;&nbsp;Introduction</a></h2>
+<p>HercuLeS is a <a class="reference external" href="http://en.wikipedia.org/wiki/High-level_synthesis">High-level synthesis</a> tool that automatically generates RTL VHDL
+for non-programmable hardware. HercuLeS translates programs in NAC (a
+bit-accurate typed-assembly language) to extended FSMDs (Finite-State Machines
+with Datapath) in VHDL. HercuLeS can also be used for direct synthesis of ANSI C
+code to VHDL with the help of a prototype translator from <a class="reference external" href="http://gcc.gnu.org/wiki/GIMPLE">GIMPLE</a> which is <a class="reference external" href="http://gcc.gnu.org">GCC</a>'s
+new intermediate representation to NAC.</p>
+<p>Internally, HercuLeS comprises of two main components: a frontend (nac2cdfg) and
+a graph-based backend (cdfg2hdl):</p>
+<dl class="docutils">
+<dt>nac2cdfg</dt>
+<dd>translator from NAC (N-Address Code) IR, to flat CDFGs represented in <a class="reference external" href="http://www.graphviz.org">Graphviz</a></dd>
+<dt>cdfg2hdl</dt>
+<dd>the actual HLS tool for automatic FSMD hardware and self-checking testbench
+generation from Graphviz files to VHDL</dd>
+</dl>
+<p>HercuLeS also has an additional ANSI C backend, allowing comparison of NAC
+programs to reference ANSI C application code and the rapid prototyping of
+applications (VHDL simulation can be slow depending on design complexity, input
+data and the simulator used).</p>
+<p>VHDL code generated by HercuLeS can be simulated with <a class="reference external" href="http://ghdl.free.fr">GHDL</a> and the industry-
+standard <a class="reference external" href="http://www.model.com">Modelsim</a>. It is possible to generate VHDL using either the Synopsys
+packages (the &quot;old&quot; de-facto standard) or the official IEEE library packages.
+HercuLeS supports fixed-point arithmetic via <tt class="docutils literal">sfixed</tt> and <tt class="docutils literal">ufixed</tt>
+vectors as defined by the <cite>VHDL-2008 fixed-point arithmetic packages</cite>.
+For this option, HercuLeS should be notified (via command-line option) to use
+the IEEE packages.</p>
+</div>
+<div class="section" id="conceptual-flow">
+<h2><a class="toc-backref" href="#id7">1.2&nbsp;&nbsp;&nbsp;Conceptual flow</a></h2>
+<p>The basic steps in the HercuLeS flow are shown in Fig. <a class="reference internal" href="#hercules-overview">hercules-overview</a>.
+C code is passed to GCC for GIMPLE dump generation, optionally following an
+external source-level optimizer. Textual GIMPLE is then processed by
+<em>gimple2nac</em>; alternatively the user could directly supply a NAC translation
+unit (TU).</p>
+<div class="figure" id="hercules-overview">
+<img alt="hercules-overview.png" src="hercules-overview.png" />
+<p class="caption">The HercuLeS flow.</p>
+</div>
+<p>Various optimizations have been applied at the NAC level; peephole
+transformations, if-conversion, and function call insertion to enable IP
+integration. Heuristic basic block partitioning avoids the introduction of
+excessive critical paths due to operation chaining.</p>
+<p>The core of HercuLeS comprises of a frontend (<em>nac2cdfg</em>) and a graph-based
+backend (<em>cdfg2hdl</em>). nac2cdfg is a translator from NAC to flat CDFGs
+represented in <a class="reference external" href="http://www.graphviz.org">Graphviz</a>. cdfg2hdl is the actual synthesis kernel for
+automatic FSMD hardware and self-checking testbench generation from Graphviz
+CDFGs to VHDL.</p>
+<p>nac2cdfg is used for parsing, analysis and CDFG extraction from NAC programs.
+SSA form is supported based on minimal generation algorithms. Data flow
+analysis uses on-demand graph reachability checking.</p>
+<p>cdfg2hdl maps CDFGs to an extended FSMD MoC (Model of Computation).
+For scheduling operations to specific states, either sequential or control-
+aware ASAP scheduling can be used. ASAP can be combined with fast operation
+chaining for better state workload balancing.</p>
+<p>The generated FSMDs are generalized FSMs introducing embedded actions, with:
+a) support of array input, output and streaming I/O ports,
+b) communication with embedded block and distributed LUT memories,
+c) latency-insensitive local interface between caller and callee FSMDs,
+and d) interfacing to external IP blocks.</p>
+<p>An additional ANSI C backend allows for rapid algorithm prototyping and NAC
+verification. VHDL code can be simulated with <a class="reference external" href="http://ghdl.free.fr">GHDL</a> and <a class="reference external" href="http://www.model.com">Modelsim</a>.</p>
+</div>
+<div class="section" id="overview">
+<h2><a class="toc-backref" href="#id8">1.3&nbsp;&nbsp;&nbsp;Overview</a></h2>
+<p>The current features of HercuLeS include:</p>
+<ul class="simple">
+<li>Multiple subprograms (procedures) and procedure calls</li>
+<li>GIMPLE-to-NAC prototype frontend</li>
+<li>NAC (N-address code) parsing and semantic analysis</li>
+<li>Support for SSA form IR (in-to-SSA and out-of-SSA translations) based on
+Appel's &quot;really-crude&quot; method and Aycock-Horspool's iteratively eliminating
+algorithms for minimal SSA</li>
+<li>Translation of NAC input programs to Graphviz CDFGs</li>
+<li>CDFG (organized as Graphviz graphs) parsing and semantic analysis</li>
+<li>Support of:<ul>
+<li>multi-precision integer (std_logic_vector) and fixed-point (sfixed, ufixed)
+arithmetic</li>
+<li>basic low-level IR operators</li>
+<li>extended FSMD model of computation</li>
+<li>&quot;scalar&quot; and &quot;streamed&quot; (emitting a series of result values over time) outputs</li>
+<li>single-dimensional arrays (Multidimensional arrays can always be reduced to
+single-dimensional ones via matrix flattening)</li>
+<li>parameter passing through array procedure arguments</li>
+<li>automatic inference of block-RAM storage (for FPGAs)</li>
+</ul>
+</li>
+<li>Scheduling engines<ul>
+<li>Sequential scheduling</li>
+<li>Control-aware ASAP scheduling</li>
+<li>Control-aware ASAP scheduling with operation chaining (2x-4x better
+performance)</li>
+</ul>
+</li>
+<li>Optimizations<ul>
+<li>Source-to-source C code optimizer (preliminary)</li>
+<li>Integration of constant multiplication and division (<a class="reference external" href="http://sourceforge.net/projects/kdiv">kdiv</a>) optimizations</li>
+<li>Integration of peephole-based optimizer</li>
+<li>Data flow analysis (conservative custom method using on-demand graph
+reachability checks)</li>
+<li>Interface to a graph matching (graph and subgraph isomorphism) engine</li>
+</ul>
+</li>
+<li>Various APIs:<ul>
+<li>Common abstract data types</li>
+<li>Combinatorial objects generator</li>
+<li>Interval arithmetic</li>
+<li>Data flow analysis</li>
+<li>Simple graphs (undirected and directed)</li>
+<li>Attributed graphs (undirected and directed)</li>
+</ul>
+</li>
+<li>Generators<ul>
+<li>VHDL design code (FSMD datapath and control)</li>
+<li>Self-checking VHDL testbench</li>
+<li>Various script files (Makefiles, shell scripts) for GHDL/Modelsim
+simulations</li>
+<li>Generation of Makefiles and scripts for running logic synthesis tools</li>
+</ul>
+</li>
+<li>Hardware operator library<ul>
+<li>Configurable multipliers</li>
+<li>Logarithm functions</li>
+<li>Variable shifters</li>
+<li>Dividers and modulo extractors</li>
+</ul>
+</li>
+<li>TODO list<ul>
+<li>Multi-port memory synthesis</li>
+<li>Access to global data from any procedure. Currently only the &quot;root&quot;
+procedure can access globals</li>
+<li>Support of dynamically allocated data</li>
+<li>Support of record data types (e.g. ANSI C structs)</li>
+<li>Register optimization</li>
+<li>List scheduling with operation chaining optimizations</li>
+<li>Graph-based optimization engine</li>
+<li>Enhanced data flow analysis</li>
+<li>Recursive procedure support [<em>Currently supported in the C backend</em>]</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="quick-start-guide-to-the-hercules-web-interface">
+<h2><a class="toc-backref" href="#id9">1.4&nbsp;&nbsp;&nbsp;Quick-start guide to the HercuLeS web interface</a></h2>
+<p>The purpose of this text is to provide a quick-start guide to using the HercuLeS
+high-level synthesis tool through a web interface.
+This version of HercuLeS does not provide access to certain features such as
+arithmetic and loop-oriented optimizers.</p>
+<p>Minimal requirements:</p>
+<ul class="simple">
+<li>Linux or Windows XP/Cygwin (a POSIX environment offering bash and common UNIX
+utilities).</li>
+<li><a class="reference external" href="http://ghdl.free.fr">GHDL</a> or <a class="reference external" href="http://www.model.com">Modelsim</a>.</li>
+</ul>
+<ol class="arabic" start="0">
+<li><p class="first">Visit the <a class="reference external" href="http://www.nkavvadias.com/cgi-bin/herc.cgi">HercuLeS web interface</a>.</p>
+</li>
+<li><p class="first">Unzip <a class="reference external" href="http://www.nkavvadias.com/hercules/hercules-contrib-vhdl.zip">http://www.nkavvadias.com/hercules/hercules-contrib-vhdl.zip</a> to a local
+directory, e.g. <tt class="docutils literal"><span class="pre">C:\hercules\contrib</span></tt></p>
+</li>
+<li><p class="first">Create an empty directory, e.g. <tt class="docutils literal"><span class="pre">C:\hercules\tests</span></tt></p>
+</li>
+<li><p class="first">Either select the supplied (already pasted) example of the &quot;fact&quot; (factorial)
+function or copy and paste your own. Download <a class="reference external" href="http://www.nkavvadias.com/hercules/small-examples.zip">http://www.nkavvadias.com/hercules/small-examples.zip</a>
+for a few ANSI C and NAC (generic assembly) code samples.</p>
+<p>NOTES:</p>
+<ol class="loweralpha simple">
+<li>In order to use the automatically-generated testbench, add a main() function
+to your code, enclosed by the preprocessor directive:</li>
+</ol>
+</li>
+</ol>
+<pre class="literal-block">
+#ifdef TEST
+#endif
+</pre>
+<blockquote>
+<ol class="loweralpha simple" start="2">
+<li>In addition, it is expected that the main() function generates input and
+reference output samples in hexadecimal format and in separate columns. A proper
+main() would generate such samples in a file named fact_test_data.txt (for the
+fact example).</li>
+<li>Standard C library includes should be also enclosed by the aforementioned
+directive.</li>
+<li>Read Section 5 of <a class="reference external" href="http://www.nkavvadias.com/hercules/hercules-web-guide.html">http://www.nkavvadias.com/hercules/hercules-web-guide.html</a>
+for a short guide on ANSI C code style and limitations (WIP).</li>
+</ol>
+</blockquote>
+<ol class="arabic simple" start="4">
+<li>On the web interface page, give the name of the top-level function/procedure
+in your test code in the corresponding box. For instance, in the supplied
+example this is:  <tt class="docutils literal">fact</tt></li>
+<li>In the following box, give your personal email, e.g.
+<a class="reference external" href="mailto:nikolaos.kavvadias&#64;gmail.com">nikolaos.kavvadias&#64;gmail.com</a>
+Unless you provide an email address, it is not possible to receive generated
+files from HercuLeS.</li>
+<li>Choose implementation options from the menu or keep the defaults (where
+multiple options exist, the first option is the default):<ol class="loweralpha">
+<li>Input in &quot;C&quot; or &quot;NAC&quot; language.</li>
+<li>Scheduling policy: sequential, ASAP or ASAP with chaining (could result in
+faster hardware).</li>
+<li>[Optional] Select visualization options, in case you want to receive the CDFG
+and CFG visualizations of all processed functions/procedures.</li>
+<li>Select the generation of simulation scripts for either &quot;GHDL&quot; or &quot;Modelsim&quot;.</li>
+<li>[Optional] Force the usage of block RAMs for ROM/RAM memory, when applicable.</li>
+</ol>
+</li>
+<li>Hit &quot;Submit&quot;.</li>
+<li>In a few minutes (depending on your input), you will receive the generated
+files in your mailbox, archived in .tar.gz format.
+Extract these files accordingly to a new subdirectory inside
+<tt class="docutils literal"><span class="pre">C:\hercules\tests</span></tt>
+For the case of the <tt class="docutils literal">fact</tt> example this would be: <tt class="docutils literal"><span class="pre">C:\hercules\tests\fact</span></tt></li>
+<li>From the command line (e.g. cygwin bash), change directory to
+<tt class="docutils literal"><span class="pre">C:\hercules\tests\fact</span></tt> and run the generated script that invokes the simulation:
+<tt class="docutils literal">./fact.sh</tt></li>
+<li>A successful simulation ends with an assertion reporting: &quot;Failure: NONE&quot;.
+Examine the diagnostic output in <cite>fact_alg_test_results.txt</cite> to obtain the number
+of target hardware cycles needed to process each sample.
+A simulation waveform is generated in file <cite>fact_fsmd.vcd</cite>.
+Your design files are generated in VHDL (.vhd) using the IEEE libraries; for
+the <tt class="docutils literal">fact</tt> example this is: <tt class="docutils literal">fact.vhd</tt>.
+The automatically-generated testbench is named after the top-level function,
+e.g. <tt class="docutils literal">fact_tb.vhd</tt></li>
+</ol>
+</div>
+</div>
+<div class="section" id="more-on-hercules">
+<h1><a class="toc-backref" href="#id10">2&nbsp;&nbsp;&nbsp;More on HercuLeS</a></h1>
+<div class="section" id="how-it-works">
+<h2><a class="toc-backref" href="#id11">2.1&nbsp;&nbsp;&nbsp;How it works</a></h2>
+<p>The following figure gives an internal view to the process flow of HercuLeS.</p>
+<div class="figure">
+<img alt="hlsflow.png" src="hlsflow.png" />
+<p class="caption">How HercuLeS works.</p>
+</div>
+<p>The user of HercuLeS must provide two input files:</p>
+<ul class="simple">
+<li><cite>design.nac</cite>: A NAC program translation unit providing the entire application.
+The root procedure must be named &quot;design&quot;.</li>
+<li><cite>design_test_data.txt</cite>: Input/output reference values for use by the
+automatically-generated testbench</li>
+</ul>
+<p>Then, <em>nac2cdfg</em> generates several files:</p>
+<ul class="simple">
+<li><cite>design.dot, subdes1.dot, ..., subdesn.dot</cite>: The Graphviz CDFGs for the root
+procedure and all other procedures in the NAC program.</li>
+<li><cite>main.c, main.h, ansic.mk:</cite> Files generated for running an ANSI C simulation.
+<cite>ansic.mk</cite> is an automatically-generated Makefile.</li>
+<li><cite>design_nac.c, subdes1_nac.c, ..., subdesn_nac.c</cite>: ANSI C backend files
+providing C implementations of all procedures in the translation unit, generated
+directly from NAC. They are used in the C simulations.</li>
+<li><cite>design_pkg.vhd</cite>: VHDL package incorporating the components for all NAC
+procedures.</li>
+<li><cite>design_cdt_pkg.vhd</cite>: VHDL package incorporating definitions of compound data
+types (arrays).</li>
+</ul>
+<p>Following this, there exist two possible flows; one for the generation and
+simulation of synthesizable RTL VHDL for the NAC program, and one for a C
+simulation.</p>
+<p>The C simulation flow proceeds by invoking the <cite>ansic.mk</cite> makefile by running:</p>
+<blockquote>
+<tt class="docutils literal">make <span class="pre">-f</span> ansic.mk</tt></blockquote>
+<p>from the command line. This produces a <cite>main.exe</cite> executable specification
+(e.g. on Windows/Cygwin). Then, the executable is run:</p>
+<blockquote>
+<tt class="docutils literal">./main</tt></blockquote>
+<p>and output is produced at the command prompt.</p>
+<p>The VHDL flow involves processing all CDFG (.dot) files by <em>cdfg2hdl</em>, the
+actual backend tool of HercuLeS. cdfg2hdl generates several files:</p>
+<ul class="simple">
+<li><cite>design.vhd, subdes1.vhd, ..., subdesn.vhd</cite>: Synthesizable RTL VHDL for the
+root procedure and all other procedures in the NAC program.</li>
+<li><cite>ram.vhd</cite>: VHDL model of a dual-port synchronous read RAM for block RAM
+inference. It is only used if block RAM mapping is enabled.</li>
+<li><cite>design_tb.vhd</cite>: The automatically-generated self-checking testbench.</li>
+<li><cite>design.mk</cite>: Makefile for running a GHDL simulation.</li>
+<li><cite>design.do</cite>: Modelsim do macro file for running a Modelsim simulation.</li>
+<li><cite>design.sh</cite>: Bash shell script initiating either a GHDL or Modelsim
+simulation.</li>
+</ul>
+<p>Finally, the <cite>design.sh</cite> script is run from the command line:</p>
+<blockquote>
+<tt class="docutils literal">./design.sh</tt></blockquote>
+<p>This produces a text file (<cite>design_alg_test_results.txt</cite>) providing diagnostic
+output from a simulation run. Output to the command prompt for any internal
+program variable, procedure argument, etc can be produced by using the &quot;print&quot;
+NAC operation. A &quot;print&quot; is mapped to a VHDL &quot;assert&quot; construct or a C standard
+library &quot;printf&quot;.</p>
+<p>Also, a VCD (<cite>design_fsmd.vcd</cite>) or GHW (<cite>design_fsmd.ghw</cite>) waveform file can be
+generated for viewing with <a class="reference external" href="http://sourceforge.net/projects/gtkwave">GTKwave</a>. Windows binaries for GTKwave can be found
+at <a class="reference external" href="http://www.dspia.com/gtkwave.html">http://www.dspia.com/gtkwave.html</a>.</p>
+</div>
+<div class="section" id="nac2cdfg">
+<h2><a class="toc-backref" href="#id12">2.2&nbsp;&nbsp;&nbsp;nac2cdfg</a></h2>
+<p>The usage of the <cite>nac2cdfg</cite> is as follows:</p>
+<blockquote>
+<tt class="docutils literal">nac2cdfg [options] input.nac</tt></blockquote>
+<p>where <tt class="docutils literal">options</tt> is one or more of the following:</p>
+<dl class="docutils">
+<dt>-d:</dt>
+<dd>Enable debug output.</dd>
+<dt>-force-data-types:</dt>
+<dd>Force predefined data types as given in NAC code. Essentially
+disables the effect both interval analysis and the alternative
+of using the unknown data type <tt class="docutils literal">na</tt>.</dd>
+<dt>-permissive:</dt>
+<dd>Allows non-strict forms and macrostatements of the NAC programming
+language.</dd>
+<dt>-ssa:</dt>
+<dd>Internal construction of SSA (Static Single Assignment) form.</dd>
+<dt>-pseudo-ssa:</dt>
+<dd>Internal construction of local SSA-like form.</dd>
+<dt>-use-appel:</dt>
+<dd>Enables SSA construction using Appel's algorithm.</dd>
+<dt>-use-aycockhorspool:</dt>
+<dd>Enables SSA construction using the Aycock-Horspool algorithm (default).</dd>
+<dt>-opt-spbb:</dt>
+<dd>Enables optimization 3 as discussed in the Aycock-Horspool paper,
+which omits generating phi statements for single-predecessor BBs.
+Supported only with -use-appel and -keep-ssa.</dd>
+<dt>-keep-ssa:</dt>
+<dd>Does not perform out-of-SSA conversion and thus keeps PHI statements
+in the generated CDFGs.</dd>
+<dt>-limit-nacs:</dt>
+<dd>Limits the number of NACs in a translation unit to NAC_LIMIT (about 25).</dd>
+<dt>-emit-nac:</dt>
+<dd>Emit the equivalent NAC program after processing (including SSA
+conversion, if enabled).</dd>
+<dt>-emit-ansic:</dt>
+<dd>Emit the equivalent ANSI C program after processing (including SSA
+conversion, if enabled).</dd>
+<dt>-emit-cfg:</dt>
+<dd>Generate the Graphviz representations for all procedure CFGs.</dd>
+<dt>-dump-varnum-nac:</dt>
+<dd>Dump the equivalent NAC program after SSA variable numbering.</dd>
+<dt>-dump-phiins-nac:</dt>
+<dd>Dump the equivalent NAC program after SSA PHI insertion.</dd>
+<dt>-dump-phimin-nac:</dt>
+<dd>Dump the equivalent NAC program after SSA PHI minimization.</dd>
+<dt>-dump-phielm-nac:</dt>
+<dd>Dump the equivalent NAC program after SSA PHI elimination.</dd>
+<dt>-dump-simdce-nac:</dt>
+<dd>Dump the equivalent NAC program after post-SSA dead code elimination.</dd>
+<dt>-dump-tgf:</dt>
+<dd>Dump TGF (Trivial Graph Format) representations of program information.</dd>
+<dt>-dump-arg:</dt>
+<dd>Dump ARG (attributed relational graph) representations of program information.</dd>
+<dt>-dump-grh:</dt>
+<dd>Dump simple edge-list representations of program information.</dd>
+<dt>-dump-poset:</dt>
+<dd>Dump poset (.p) file representations of program information.</dd>
+</dl>
+</div>
+<div class="section" id="cdfg2hdl">
+<h2><a class="toc-backref" href="#id13">2.3&nbsp;&nbsp;&nbsp;cdfg2hdl</a></h2>
+<p>The usage of the <cite>cdfg2hdl</cite> is as follows:</p>
+<blockquote>
+<tt class="docutils literal">cdfg2hdl [options] input.dot</tt></blockquote>
+<p>where <tt class="docutils literal">options</tt> is one or more of the following:</p>
+<dl class="docutils">
+<dt>-d:</dt>
+<dd>Enable debug output (nothing yet).</dd>
+<dt>-sched-&lt;mode&gt;:</dt>
+<dd>Perform scheduling on predefined acyclic regions.
+Valid options for &lt;mode&gt;: {sequential, asap, naive}.</dd>
+<dt>-mpint:</dt>
+<dd>Use multiple-precision arithmetic as implemented
+by the public domain <a class="reference external" href="http://stuff.mit.edu/afs/sipb/project/stk/src/STk-2.2.0/Mp/fgmp-1.0b5/">fgmp</a> library.</dd>
+<dt>-streaming:</dt>
+<dd>Generate code for hardware units with streaming
+output(s), generating a sequence of values.</dd>
+<dt>-vhd2vl:</dt>
+<dd>Generate code more friendly to the &quot;<a class="reference external" href="http://doolittle.icarus.com/~larry/vhd2vl/">vhd2vl</a>&quot; tool.</dd>
+<dt>-use-rising-edge:</dt>
+<dd>Use calls to rising_edge for clock event detection.</dd>
+<dt>-use-component-pkg:</dt>
+<dd>Generate a package &quot;use&quot; for system-wide components.</dd>
+<dt>-ghw:</dt>
+<dd>Generate a GHDL Waveform file (.ghw) after simulation.</dd>
+<dt>-vcd:</dt>
+<dd>Generate a VCD waveform file (.vcd) after simulation.</dd>
+<dt>-read-through, -read-first:</dt>
+<dd>Specify the mode for block RAM synchronous reads (default:
+read-first).</dd>
+<dt>-blockmem:</dt>
+<dd>Generate embedded block memories via inference.</dd>
+<dt>-synopsys:</dt>
+<dd>Use the de-facto Synopsys IEEE library in the
+generated design code (default).</dd>
+<dt>-ieee:</dt>
+<dd>Use the normative IEEE library in the generated design code.</dd>
+<dt>-hw-phis:</dt>
+<dd>Generate hardware for direct support of phi statements.</dd>
+<dt>-fxp-trn-wrap:</dt>
+<dd>Support for fixed-point arithmetic with truncation
+(quantization mode) and wrapping (overflow mode). This is
+the default option.</dd>
+<dt>-fxp-trn-sat:</dt>
+<dd>Support for fixed-point arithmetic with truncation
+(quantization mode) and saturation (overflow mode).</dd>
+<dt>-fxp-rnd-wrap:</dt>
+<dd>Support for fixed-point arithmetic with rounding
+(quantization mode) and wrapping (overflow mode).</dd>
+<dt>-fxp-rnd-sat:</dt>
+<dd>Support for fixed-point arithmetic with rounding
+(quantization mode) and saturation (overflow mode).</dd>
+<dt>-ghdl:</dt>
+<dd>Generate support files for GHDL simulation (default).</dd>
+<dt>-mti:</dt>
+<dd>Generate support files for Modelsim simulation.</dd>
+<dt>-quick-abort:</dt>
+<dd>Abort simulation immediately following the first error.</dd>
+</dl>
+<div class="section" id="cdfg-construction">
+<h3><a class="toc-backref" href="#id14">2.3.1&nbsp;&nbsp;&nbsp;CDFG construction</a></h3>
+<p>A novel, fast CDFG construction algorithm has been devised for both SSA and
+non-SSA NAC forms producing flat CDFGs as Graphviz files. A CDFG symbol table
+item is a node (operation, procedure call, globalvar, or constant) or edge
+(localvar) with user-defined attributes: the unique name, label and data type
+specification; node and edge type enumeration; respective order of incoming or
+outgoing edges; input/output argument order of a node and basic block index.
+Further attributes can be defined, e.g. for scheduling bookkeeping.</p>
+<p>This approach is unique since it focuses on building the CDFG symbol table (st)
+from which the associated graph (cdfg) is constructed as one possible of many facets.
+It naturally supports loop-carried dependencies and array accesses.</p>
+<pre class="literal-block">
+// CDFG construction algorithm accepting BASIL input.
+NACtoCDFG()
+  input List BASILs, List variables, List labels, Graph cfg;
+  output SymbolTable st, Graph cdfg;
+begin
+  Insert constant, input/output arguments and globalvar
+  operand nodes to st;
+  Insert operation nodes;
+  Insert incoming {global/constant/input, operation} and
+  outgoing {operation, global/output} edges;
+  Add control-dependence edges among operation nodes;
+  Add data-dependence edges among operation nodes,
+  extract loop-carried dependencies via cfg-reachability;
+  Generate cdfg from st;
+end
+</pre>
+</div>
+</div>
+</div>
+<div class="section" id="gimple2nac">
+<h1><a class="toc-backref" href="#id15">3&nbsp;&nbsp;&nbsp;gimple2nac</a></h1>
+<p><em>gimple2nac</em> translates GIMPLE dumps to NAC TUs, which presents challenges.
+Currently, GIMPLE loses source semantics such as global scope variables.
+A workaround for some cases is the definition of static variables in the
+original source. Other issues involve: format inconsistencies following
+different optimization passes, handling labels and array initialization
+sequences, destroyed interfaces and lack of bit-accuracy. Some of these
+problems are targeted by a GCC rewrite [<a class="reference external" href="http://gcc.gnu.org/wiki/gimplebackend">GIMPLEbe</a>] that will allow emitting
+GIMPLE as a target language.</p>
+<div class="section" id="id1">
+<h2><a class="toc-backref" href="#id16">3.1&nbsp;&nbsp;&nbsp;Introduction</a></h2>
+<p><em>GIMPLE</em> is the machine-independent intermediate representation used in modern
+GCC releases (post version 4.0). While the GIMPLE API for code generation and
+manipulation has matured over time, the corresponding textual representation
+is yet to be in a stable form. This issue hampers many serious efforts for
+code generation from and to GIMPLE.</p>
+<p>Good candidates for the textual representation seem to have been in play for
+some time. The wiki site <a class="reference external" href="http://gcc.gnu.org/wiki/GIMPLE">http://gcc.gnu.org/wiki/GIMPLE</a> sketches the textual
+IR that is expected to be implemented by the GIMPLE frontend and backend
+(both under development). Another case of a textual GIMPLE are the formats
+generated as a <em>GIMPLE dumps</em>. We distinguish here two formats: the format
+in *.t004.gimple files (<em>tagged</em> GIMPLE) and the one e.g. in *.t140.optimized
+files (<em>GIMPLE-C</em>). Both formats express the low-level GIMPLE representation,
+which is closer to classic three-address code than high-level GIMPLE; the latter
+is closer to the GENERIC AST representation. An extended form of GIMPLE dumps
+are expected to be established as the GIMPLE language semantics.</p>
+<p>For reference tagged GIMPLE is generated by the command-line option:</p>
+<blockquote>
+<tt class="docutils literal"><span class="pre">-fdump-tree-all-raw</span></tt></blockquote>
+<p>while GIMPLE-C is generated by:</p>
+<blockquote>
+<tt class="docutils literal"><span class="pre">-fdump-tree-all</span></tt> and <tt class="docutils literal"><span class="pre">-fdump-tree-gimple</span></tt></blockquote>
+<p>the latter only emitting the *.t004.gimple file.</p>
+<p>The rest of this document discusses open issues with the textual GIMPLE IRs,
+focusing on the tagged GIMPLE format. It will not cover extended semantics
+issues that are covered much better at <a class="reference external" href="http://gcc.gnu.org/wiki/GIMPLEFrontEnd">http://gcc.gnu.org/wiki/GIMPLEFrontEnd</a></p>
+</div>
+<div class="section" id="target-audience">
+<h2><a class="toc-backref" href="#id17">3.2&nbsp;&nbsp;&nbsp;Target audience</a></h2>
+<p>This section is expected to be of interest to compiler/translator implementors
+using GIMPLE as either a source or target language.</p>
+</div>
+<div class="section" id="issues-with-tagged-gimple">
+<h2><a class="toc-backref" href="#id18">3.3&nbsp;&nbsp;&nbsp;Issues with tagged GIMPLE</a></h2>
+<p>Here follows a listing of some issues that can be identified with using tagged
+GIMPLE. Most of them apply to the GIMPLE-C format as well.</p>
+<div class="section" id="losing-the-original-semantics-of-the-source-program">
+<h3><a class="toc-backref" href="#id19">3.3.1&nbsp;&nbsp;&nbsp;Losing the original semantics of the source program</a></h3>
+<p>One such example is the omission of emitting global variables. A workaround
+for some cases is the definition of static variables in the original source.
+This approach provides only specific file/translation unit scope to globals
+but it is not certain whether the extern specifier is handled properly for
+referencing these globals from external scope.</p>
+</div>
+<div class="section" id="inconsistency-in-handling-labels">
+<h3><a class="toc-backref" href="#id20">3.3.2&nbsp;&nbsp;&nbsp;Inconsistency in handling labels</a></h3>
+<p>Automatically generated labels (by the gimplifier) and labels defined in the
+source program are represented differently. The first category are enclosed
+in single wedges <tt class="docutils literal">&lt; &gt;</tt> while the later are explicitly defined and are
+used without wedges.</p>
+<p>For example, this is the definition of an automatically generated label:</p>
+<blockquote>
+<tt class="docutils literal">gimple_label &lt;&lt;D.1983&gt;&gt;</tt></blockquote>
+<p>while the following is the (redundant) definition:</p>
+<blockquote>
+<tt class="docutils literal">void V1 = &lt;&lt;&lt; error <span class="pre">&gt;&gt;&gt;;</span>
+...
+``gimple_label &lt;V1&gt;</tt></blockquote>
+<p>and the use of a source label:</p>
+<blockquote>
+<tt class="docutils literal">gimple_cond &lt;eq_expr, D.1985, 1, V5, &lt;D.1986&gt;&gt;</tt></blockquote>
+</div>
+<div class="section" id="destroyed-interfaces">
+<h3><a class="toc-backref" href="#id21">3.3.3&nbsp;&nbsp;&nbsp;Destroyed interfaces</a></h3>
+<p>Function interfaces are not maintained appropriately since the original
+argument types in a function definition may be replaced. This is the case
+with array arguments (with static sizes) in the definition of non-root
+procedures.</p>
+<p>Here follows an example. This is the a partial view of the source program:</p>
+<pre class="literal-block">
+void evalcoins(int n, int amount, int C[], int *ncoins, int D[])
+{
+  ...
+}
+
+void coins(int n_eurocents, int *n_coins_used)
+{
+  int C_euro[15], D_euro[15];
+  ...
+  evalcoins(15, n_eurocents, C_euro, &amp;n_items, D_euro);
+  ...
+}
+
+However, this is the tagged GIMPLE form of the same program:
+</pre>
+<pre class="literal-block">
+evalcoins (int n, int amount, int * C, int * ncoins, int * D)
+gimple_bind &lt;
+  ...
+&gt;
+
+coins (int n_eurocents, int * n_coins_used)
+gimple_bind &lt;
+  int C_euro[15];
+  int D_euro[15];
+  ...
+  gimple_call &lt;evalcoins, NULL, 15, n_eurocents,
+               &amp;C_euro[0], &amp;n_items, &amp;D_euro[0]&gt;
+  ...
+&gt;
+</pre>
+</div>
+<div class="section" id="pointer-expressions">
+<h3><a class="toc-backref" href="#id22">3.3.4&nbsp;&nbsp;&nbsp;Pointer expressions</a></h3>
+<p>Low-level GIMPLE (tagged and GIMPLE-C) use two basic specific operations for
+dealing with pointer expressions and indirect references, the
+<tt class="docutils literal">pointer_plus_expr</tt> and <tt class="docutils literal">indirect_ref</tt>.</p>
+<p>A <tt class="docutils literal">pointer_plus_expr</tt> in tagged GIMPLE appears as follows:</p>
+<blockquote>
+<tt class="docutils literal">gimple_assign&lt;pointer_plus_expr, D.1986, D, D.1985&gt;</tt></blockquote>
+<p>where D is an array, D.1985 a temporary int variable and D.1986 a temporary
+variable defined as pointer to int.</p>
+<p>The same in GIMPLE-C is the following:</p>
+<blockquote>
+<tt class="docutils literal">D.1986 = D + D.1985</tt></blockquote>
+<p>This operation adds the offset determined by D.1985 to the base address of array
+D, expressed as D. Pointer D.1986 then can be used for intexing the array.</p>
+<p>A typical idiom in generated GIMPLE suggests that <tt class="docutils literal">pointer_plus_expr</tt> is
+followed by an <tt class="docutils literal">indirect_ref</tt>. The indirect reference is used to access
+the array and loading the contents of a memory position to a variable.</p>
+<p>An <tt class="docutils literal">indirect_ref</tt> in tagged GIMPLE appears as follows:</p>
+<blockquote>
+<tt class="docutils literal">gimple_assign&lt;indirect_ref, D.1987, *D.1986, NULL&gt;</tt></blockquote>
+<p>and the same in GIMPLE-C is:</p>
+<blockquote>
+<tt class="docutils literal">D.1987 = *D.1986;</tt></blockquote>
+<p>In order to avoid a thorough pointer analysis for establishing that
+D.1986 points to the contents of array D, typical data-dependence
+analysis can be used to trace that D is the referenced entity by D.1986.</p>
+</div>
+<div class="section" id="function-calls">
+<h3><a class="toc-backref" href="#id23">3.3.5&nbsp;&nbsp;&nbsp;Function calls</a></h3>
+<p>Function calls are represented by <tt class="docutils literal">gimple_call</tt> in tagged GIMPLE. Due to
+the issue 3 (Destroyed interfaces), in some cases calls-by-reference
+appear when not really needed. This refers to the simulated call-by-reference
+available in the C programming language, and not the actual kind that can
+be found, e.g. in Perl.</p>
+<p>For example the following call is by-reference:</p>
+<blockquote>
+<tt class="docutils literal">gimple_call <span class="pre">&lt;...,</span> <span class="pre">&amp;C_euro[0],...&gt;</span></tt></blockquote>
+<p>making use of the address of the first element of C_euro (the base address).</p>
+<p>With interfaces kept unchanged, the following would suffice:</p>
+<blockquote>
+<tt class="docutils literal">gimple_call <span class="pre">&lt;...,</span> C_euro, <span class="pre">...&gt;</span></tt></blockquote>
+</div>
+<div class="section" id="inconsistency-in-array-initialization-sequences">
+<h3><a class="toc-backref" href="#id24">3.3.6&nbsp;&nbsp;&nbsp;Inconsistency in array initialization sequences</a></h3>
+<p>An array can be initialized either by a literal initialization list or
+by emitting a sequence of operations for initializing its contents.
+From a black-box point of view, it seems that the gimplifier arbitrarily
+chooses which approach to follow.</p>
+<p>For example, in our example, the C_euro is initialized via explicit
+operations:</p>
+<pre class="literal-block">
+gimple_assign &lt;integer_cst, C_euro[0], 1, NULL&gt;
+gimple_assign &lt;integer_cst, C_euro[1], 2, NULL&gt;
+gimple_assign &lt;integer_cst, C_euro[2], 5, NULL&gt;
+gimple_assign &lt;integer_cst, C_euro[3], 10, NULL&gt;
+gimple_assign &lt;integer_cst, C_euro[4], 20, NULL&gt;
+gimple_assign &lt;integer_cst, C_euro[5], 50, NULL&gt;
+gimple_assign &lt;integer_cst, C_euro[6], 100, NULL&gt;
+gimple_assign &lt;integer_cst, C_euro[7], 200, NULL&gt;
+gimple_assign &lt;integer_cst, C_euro[8], 500, NULL&gt;
+gimple_assign &lt;integer_cst, C_euro[9], 1000, NULL&gt;
+gimple_assign &lt;integer_cst, C_euro[10], 2000, NULL&gt;
+gimple_assign &lt;integer_cst, C_euro[11], 5000, NULL&gt;
+gimple_assign &lt;integer_cst, C_euro[12], 10000, NULL&gt;
+gimple_assign &lt;integer_cst, C_euro[13], 20000, NULL&gt;
+gimple_assign &lt;integer_cst, C_euro[14], 50000, NULL&gt;
+
+It is not clear why an initialization list is not used:
+</pre>
+<pre class="literal-block">
+int C_euro[15] = {1, 2, 5, 10, 20, 50,
+                  100, 200, 500, 1000, 2000, 5000,
+                  10000, 20000, 50000};
+</pre>
+<p>Automatically generated labels (by the gimplifier) and labels defined in the
+source program are represented differently. The first category are enclosed
+in single wedges <tt class="docutils literal">&lt; &gt;</tt> while the later are explicitly defined and are
+used without wedges.</p>
+<p>For example, this is the definition of an automatically generated label:</p>
+<blockquote>
+<tt class="docutils literal">gimple_label &lt;&lt;D.1983&gt;&gt;</tt></blockquote>
+<p>while the following is the (redundant) definition:</p>
+<blockquote>
+<tt class="docutils literal">void V1 = &lt;&lt;&lt; error <span class="pre">&gt;&gt;&gt;;</span>
+...
+``gimple_label &lt;V1&gt;</tt></blockquote>
+<p>and the use of a source label:</p>
+<blockquote>
+<tt class="docutils literal">gimple_cond &lt;eq_expr, D.1985, 1, V5, &lt;D.1986&gt;&gt;</tt></blockquote>
+</div>
+<div class="section" id="inconsistency-of-the-tagged-gimple-format">
+<h3><a class="toc-backref" href="#id25">3.3.7&nbsp;&nbsp;&nbsp;Inconsistency of the tagged GIMPLE format</a></h3>
+<p>As discussed in the introduction, the tagged GIMPLE format uses alternate
+syntax for the unoptimized (*.t004.gimple) and certain optimized (e.g.
+*.t140.gimple) intermediate code dumps. It would be clearer if a single
+convention throughout all GIMPLE dumps.</p>
+</div>
+<div class="section" id="lack-of-bit-accurate-semantics">
+<h3><a class="toc-backref" href="#id26">3.3.8&nbsp;&nbsp;&nbsp;Lack of bit-accurate semantics</a></h3>
+<p>The availability of bit-accurate data types is an interesting asset of
+modern compiler infrastructures such as LLVM: <a class="reference external" href="http://www.llvm.org">http://www.llvm.org</a>. LLVM
+uses the LLVM bitcode IR which adheres to such semantics. On the other
+side, GCC GIMPLE might be too closely coupled with C-like semantics.
+Especially, implementors of non-conventional backend architectures
+(e.g. developers of hardware compilers) would be interested in a form of
+GIMPLE with bit-accurate types.</p>
+<p>For example, the following would denote a 14-bit unsigned integer
+and a 8.16 signed fixed-point representation, respectively.</p>
+<blockquote>
+<ul class="simple">
+<li><tt class="docutils literal">u14</tt></li>
+<li><tt class="docutils literal">q8.16s</tt></li>
+</ul>
+</blockquote>
+</div>
+</div>
+<div class="section" id="final-notes-on-gimple">
+<h2><a class="toc-backref" href="#id27">3.4&nbsp;&nbsp;&nbsp;Final notes on GIMPLE</a></h2>
+<p>This section is a work-in-progress. Several aspects of programming language
+translation to low-level GIMPLE are not covered:</p>
+<ol class="arabic simple">
+<li>Support for recursion.</li>
+<li>OMP semantics.</li>
+<li><tt class="docutils literal">_Bool</tt> data types.</li>
+<li>Explicit return types (other than void).</li>
+<li>Semantics expected to be integrated as part of GCC mainline. These reflect
+the current status of the <tt class="docutils literal"><span class="pre">gimple-front-end</span></tt> branch, which adds important
+capabilities to the GIMPLE infrastructure such as consistently-styled
+declarations for pointers, arrays, and compound types (structs, unions).</li>
+</ol>
+</div>
+</div>
+<div class="section" id="the-nac-programming-language">
+<h1><a class="toc-backref" href="#id28">4&nbsp;&nbsp;&nbsp;The NAC programming language</a></h1>
+<div class="section" id="id2">
+<h2><a class="toc-backref" href="#id29">4.1&nbsp;&nbsp;&nbsp;Introduction</a></h2>
+<p>NAC (N-Address Code) is the name of a simplistic imperative programming language
+with light semantics devised by Nikolaos Kavvadias. Its main use is as an
+executable/interpretable intermediate representation for compilation frameworks
+(compilers, high-level synthesis tools, etc).</p>
+<p>NAC statements are either labels, n-address instructions or procedure calls.</p>
+<p>A label is formatted as follows:</p>
+<ul class="simple">
+<li>label:</li>
+</ul>
+<p>An n-address instruction is actually the specification of a mapping from
+a set of n ordered inputs to a set of m ordered outputs. An n-address
+instruction (or else termed as an {m, n}-NAC) is formatted as follows:</p>
+<ul class="simple">
+<li><tt class="docutils literal">outp1, <span class="pre">...,</span> outpm &lt;= operation inp1, <span class="pre">...,</span> inpn;</tt></li>
+</ul>
+<p>where</p>
+<ul class="simple">
+<li><em>operation</em> is a mnemonic referring to an IR-level instruction</li>
+<li><em>outp1</em>, ..., <em>outpm</em> are the m outputs of the instruction</li>
+<li><em>inp1</em>, ..., <em>inpn</em> are the n inputs of the instruction</li>
+</ul>
+<p>Similarly, a procedure call, which is a non-atomic operation is formatted
+as follows, in order to distinguished from an atomic operation:</p>
+<ul class="simple">
+<li><tt class="docutils literal">(outp1, <span class="pre">...,</span> outpm) &lt;= <span class="pre">procedure-name</span> (inp1, <span class="pre">...,</span> inpn);</tt></li>
+</ul>
+<p>where</p>
+<ul class="simple">
+<li><em>procedure-name</em> is the name of called procedure.</li>
+</ul>
+<p>For a procedure without input and output arguments, the following notation
+is used to distinguish it from an atomic operation with no arguments:</p>
+<ul class="simple">
+<li><tt class="docutils literal">() &lt;= <span class="pre">procedure-name</span> ();</tt></li>
+</ul>
+<p>NAC is a typed language. Data type specifications are essentially strings that
+can be easily decoded by a regular expression scanner. All declared objects
+(global variables, constants, local variables, input and output procedure
+arguments) have a type specification. Data types in NAC are classified in the
+following categories:</p>
+<ul class="simple">
+<li>UNSIGNED_INTEGER denoted as U&lt;num&gt;: [Uu][0-9]+</li>
+<li>SIGNED_INTEGER denoted as S&lt;num&gt;: [Ss][0-9]+</li>
+<li>Fixed-point numbers are denoted as Q&lt;ipart&gt;.F&lt;ipart&gt;[S|U]: Q[0-9]+.[0-9]+[S|U],
+with ipart being the integer part and fpart the fractional part of the number.
+SIGNED_FIXED_POINT uses the <cite>S</cite> suffix, whereas UNSIGNED_FIXED_POINT uses the
+<cite>U</cite> suffix, correspondingly</li>
+<li>FLOATING_POINT denoted as F&lt;spart&gt;.&lt;epart&gt;.&lt;mpart&gt;: F[0|1].[0-9]+.[0-9]+,
+with spart being the sign, epart the exponent and mpart the mantissa of the
+number</li>
+<li>RATIONAL (no consistent format yet)</li>
+<li>CONTINUED_FRACTION (no consistent format yet)</li>
+</ul>
+<p>As of 2010-11-29, there is initial support for the SIGNED_FIXED_POINT and
+UNSIGNED_FIXED_POINT data types. As of 2012-02-23 there is also initial
+support (for the C backend) for the FLOATING_POINT data types, especially
+the IEEE-754 compliant &quot;single&quot; and &quot;double&quot;. Support for UNSIGNED_INTEGER
+and SIGNED_INTEGER data types is considered mature.</p>
+<p>In NAC parlance, the following keywords are used:</p>
+<dl class="docutils">
+<dt><tt class="docutils literal">globalvar</tt></dt>
+<dd>a global scalar or single-dimensional array variable. An array
+variable is permitted to have an optional numerical initialization. A scalar
+variable is assumed to be initialized to zero.</dd>
+<dt><tt class="docutils literal">localvar</tt></dt>
+<dd>a local scalar or single-dimensional array variable. This variable
+is only visible within the procedure. Again, an array variable is permitted to
+have an optional numerical initialization. A scalar variable is assumed to be
+initialized to zero.</dd>
+<dt><tt class="docutils literal">in</tt></dt>
+<dd>an input argument to the given procedure.</dd>
+<dt><tt class="docutils literal">out</tt></dt>
+<dd>an output argument to the given procedure.</dd>
+</dl>
+<p>Please note that the use of <tt class="docutils literal">constant</tt> (declaration of a globally-visible
+constant value) has been discontinued and will not be supported in the
+future.</p>
+</div>
+<div class="section" id="nac-instructions">
+<h2><a class="toc-backref" href="#id30">4.2&nbsp;&nbsp;&nbsp;NAC instructions</a></h2>
+<p>The NAC programming language is extensible, meaning that the grammar accepts
+user-specific instruction mnemonics.</p>
+<p>A common set of NAC instructions is listed below, along with the corresponding
+format and description.</p>
+<p>No-operation: <tt class="docutils literal">nop</tt></p>
+<blockquote>
+<p><tt class="docutils literal">nop;</tt></p>
+<p>Performs no action at all.</p>
+</blockquote>
+<p>Move operand: <tt class="docutils literal">mov</tt></p>
+<blockquote>
+<p><tt class="docutils literal">dst1 &lt;= mov src1;</tt></p>
+<p>Copy the contents of operand src1 to dst1.</p>
+</blockquote>
+<p>Load constant: <tt class="docutils literal">ldc</tt></p>
+<blockquote>
+<p><tt class="docutils literal">dst1 &lt;= ldc cnst1;</tt></p>
+<p>Copy the value of cnst1 to operand dst1.</p>
+</blockquote>
+<p>Unconditional jump: <tt class="docutils literal">jmpun</tt></p>
+<blockquote>
+<p><tt class="docutils literal">S_dst1 &lt;= jmpun;</tt></p>
+<p>Jump to label <tt class="docutils literal">S_dst1</tt>.</p>
+</blockquote>
+<p>Conditional jump: <tt class="docutils literal">jmpeq</tt>, jmpne``, <tt class="docutils literal">jmplt</tt>, jmple``, <tt class="docutils literal">jmpgt</tt>, jmpge``</p>
+<blockquote>
+<p><tt class="docutils literal">S_TRGT, S_TRGF &lt;= jmpzz src1, src2;</tt></p>
+<p>where:</p>
+<ul class="simple">
+<li><tt class="docutils literal">zz</tt> can be one of the following:<ul>
+<li>eq: jump if equal</li>
+<li>ne: jump if not equal</li>
+<li>lt: jump if less than</li>
+<li>le: jump if less than or equal</li>
+<li>gt: jump if greater than</li>
+<li>ge: jump if greater than or equal</li>
+</ul>
+</li>
+<li>src1, src2 are the instruction source operands</li>
+<li>S_TRGT, S_TRGF, are the target addresses for a true and false condition,
+respectively</li>
+</ul>
+</blockquote>
+<p>Binary logical instructions: <tt class="docutils literal">and</tt>, <tt class="docutils literal">ior</tt>, <tt class="docutils literal">xor</tt>, <tt class="docutils literal">nand</tt>, <tt class="docutils literal">nor</tt>, <tt class="docutils literal">xnor</tt></p>
+<blockquote>
+<p><tt class="docutils literal">dst1 &lt;= &lt;mnemonic&gt; src1, src2;</tt></p>
+<p>where:</p>
+<ul class="simple">
+<li>mnemonic can be one of the following:<ul>
+<li>and: Logical AND</li>
+<li>ior: Logical inclusive-OR</li>
+<li>xor: Logical exclusive-OR</li>
+<li>nand: Logical NAND</li>
+<li>nor: Logical NOR</li>
+<li>xnor: Logical XNOR</li>
+</ul>
+</li>
+<li>src1, src2 are the source operands</li>
+<li>dst1 is the destination operand</li>
+</ul>
+</blockquote>
+<p>Unary logical instruction: <tt class="docutils literal">not</tt></p>
+<blockquote>
+<p><tt class="docutils literal">dst1 &lt;= not src1;</tt></p>
+<p>Copy the 1's-complement of operand src1 to dst1.</p>
+</blockquote>
+<p>Binary arithmetic instructions: <tt class="docutils literal">add</tt>, <tt class="docutils literal">sub</tt></p>
+<blockquote>
+<p><tt class="docutils literal">dst1 &lt;= mnemonic src1, src2;</tt></p>
+<p>where:</p>
+<ul class="simple">
+<li>mnemonic can be one of the following:<ul>
+<li>add: 2's-complement addition</li>
+<li>sub: 2's-complement subtraction</li>
+</ul>
+</li>
+<li>src1, src2 are the source operands</li>
+<li>dst1 is the destination operand</li>
+</ul>
+</blockquote>
+<p>Unary arithmetic instructions: <tt class="docutils literal">neg</tt></p>
+<blockquote>
+<p><tt class="docutils literal">dst1 &lt;= neg src1;</tt></p>
+<p>Copies the negated version of src1 to dst1.</p>
+</blockquote>
+<p>Quaternary multiplexing instruction: <tt class="docutils literal">mux</tt></p>
+<blockquote>
+<p><tt class="docutils literal">dst1 &lt;= muxzz src1, src2, src3, src4;</tt></p>
+<p>where:</p>
+<ul class="simple">
+<li>zz can be one of the following:<ul>
+<li>eq: jump if equal</li>
+<li>ne: jump if not equal</li>
+<li>lt: jump if less than</li>
+<li>le: jump if less than or equal</li>
+<li>gt: jump if greater than</li>
+<li>ge: jump if greater than or equal</li>
+</ul>
+</li>
+<li>src1, src2, are the source operands compared: <tt class="docutils literal">if (src1 zz src2)</tt></li>
+<li>src3 is the copy operand when the comparison evaluates to TRUE</li>
+<li>src4 is the copy operand when the comparison evaluates to FALSE</li>
+<li>dst1 is the destination operand</li>
+<li>NOTE: A <tt class="docutils literal">muxzz</tt> is equivalent to the following C code:</li>
+</ul>
+</blockquote>
+<pre class="literal-block">
+if (src1 zz src2) { // zz: &quot;==&quot;, &quot;!=&quot;, &quot;&lt;&quot;, &quot;&lt;=&quot;, &quot;&gt;&quot;, or &quot;&gt;=&quot;
+  dst1 = src3;
+} else {
+  dst1 = src4;
+}
+</pre>
+<p>Set on comparison instruction: <tt class="docutils literal">set</tt></p>
+<blockquote>
+<p><tt class="docutils literal">dst1 &lt;= setzz src1, src2;</tt></p>
+<p>where:</p>
+<ul class="simple">
+<li>zz can be one of the following:<ul>
+<li>eq: jump if equal</li>
+<li>ne: jump if not equal</li>
+<li>lt: jump if less than</li>
+<li>le: jump if less than or equal</li>
+<li>gt: jump if greater than</li>
+<li>ge: jump if greater than or equal</li>
+</ul>
+</li>
+<li>src1, src2, are the source operands compared: <tt class="docutils literal">src1 zz src2</tt></li>
+<li>src3 is the copy operand when the comparison evaluates to TRUE</li>
+<li>src4 is the copy operand when the comparison evaluates to FALSE</li>
+<li>dst1 is the destination operand (gets a value either 0 or 1).</li>
+<li>NOTE: A <tt class="docutils literal">setzz</tt> is equivalent to the following C code:</li>
+</ul>
+</blockquote>
+<pre class="literal-block">
+``dst1 = (src1 zz src2); // zz: &quot;==&quot;, &quot;!=&quot;, &quot;&lt;&quot;, &quot;&lt;=&quot;, &quot;&gt;&quot;, or &quot;&gt;=&quot;
+</pre>
+<p>Complex unary arithmetic instructions: <tt class="docutils literal">abs</tt></p>
+<blockquote>
+<p><tt class="docutils literal">dst1 &lt;= abs src1;</tt></p>
+<p>Copies the absolute value of src1 to dst1.</p>
+</blockquote>
+<p>Complex binary arithmetic instructions: <tt class="docutils literal">max</tt>, <tt class="docutils literal">min</tt></p>
+<blockquote>
+<p><tt class="docutils literal">dst1 &lt;= mnemonic src1, src2;</tt></p>
+<p>where:</p>
+<ul class="simple">
+<li>mnemonic can be one of the following:<ul>
+<li>max: Assign the maximum of src1 and src2 to dst1</li>
+<li>min: Assign the minimum of src1 and src2 to dst1</li>
+</ul>
+</li>
+<li>src1, src2 are the source operands</li>
+<li>dst1 is the destination operand</li>
+</ul>
+</blockquote>
+<p>Shift instructions: <tt class="docutils literal">shl</tt>, <tt class="docutils literal">shr</tt></p>
+<blockquote>
+<p><tt class="docutils literal">dst1 &lt;= mnemonic src1, src2;</tt></p>
+<p>where:</p>
+<ul class="simple">
+<li>mnemonic can be one of the following:<ul>
+<li>shl: Logical left shift of src1 by the amount stored in src2, with
+the result copied to dst1</li>
+<li>shr: Either logical or arithmetic (depending on the operand data types)
+shift of src1 by the amount stored in src2, with the result copied to
+dst1</li>
+</ul>
+</li>
+<li>src1, src2 are the source operands</li>
+<li>dst1 is the destination operand</li>
+</ul>
+</blockquote>
+<p>Rotate instructions: <tt class="docutils literal">rotl</tt>, <tt class="docutils literal">rotr</tt></p>
+<blockquote>
+<p><tt class="docutils literal">dst1 &lt;= mnemonic src1, src2;</tt></p>
+<p>where:</p>
+<ul class="simple">
+<li>mnemonic can be one of the following:<ul>
+<li>rotl: Left rotation of the value of src1 by the amount stored in src2,
+with the result copied to dst1</li>
+<li>rotr: Right rotation of the value of src1 by the amount stored in src2,
+with the result copied to dst1</li>
+</ul>
+</li>
+<li>src1, src2 are the source operands</li>
+<li>dst1 is the destination operand</li>
+</ul>
+</blockquote>
+<p>Multiplication instructions: <tt class="docutils literal">mul</tt></p>
+<blockquote>
+<p><tt class="docutils literal">dst1 &lt;= mul src1, src2;</tt></p>
+<p>Multiplies the contents of src1 and src2 and copies the (possibly truncated)
+result to dst1.</p>
+</blockquote>
+<p>Combined division-modulus instructions: <tt class="docutils literal">divrem</tt></p>
+<blockquote>
+<p><tt class="docutils literal">dst1, dst2 &lt;= divrem src1, src2;</tt></p>
+<p>Divides the contents of src1 and src2 and copies the quotient to dst1 and
+the remainder to dst2.</p>
+</blockquote>
+<p>Division instructions: <tt class="docutils literal">div</tt>, <tt class="docutils literal">rem</tt></p>
+<blockquote>
+<p><tt class="docutils literal">dst1 &lt;= mnemonic src1, src2;</tt></p>
+<p>where:</p>
+<ul class="simple">
+<li>mnemonic can be one of the following:<ul>
+<li>div: Divides the contents of src1 and src2 and copies the quotient to
+dst1</li>
+<li>rem: Divides the contents of src1 and src2 and copies the remainder to
+dst1</li>
+</ul>
+</li>
+<li>src1, src2 are the source operands</li>
+<li>dst1 is the destination operand</li>
+</ul>
+</blockquote>
+<p>Data type/bitwidth conversion instructions: <tt class="docutils literal">zxt</tt>, <tt class="docutils literal">sxt</tt>, <tt class="docutils literal">trunc</tt></p>
+<blockquote>
+<p><tt class="docutils literal">dst1 &lt;= mnemonic src1;</tt></p>
+<p>where:</p>
+<ul class="simple">
+<li>mnemonic can be one of the following:<ul>
+<li>zxt: Zero-extends src1 to the (larger) bitwidth of dst1</li>
+<li>sxt: Sign-extends src1 to the (larger) bitwidth of dst1</li>
+<li>trunc: Truncates src1 to the (smaller) bitwidth of dst1</li>
+</ul>
+</li>
+<li>src1 is the source operand</li>
+<li>dst1 is the destination operand</li>
+</ul>
+</blockquote>
+<p>Bit manipulation instructions: <tt class="docutils literal">bitins</tt>, <tt class="docutils literal">bitext</tt></p>
+<blockquote>
+<p><tt class="docutils literal">dst1 &lt;= mnemonic src1, src2, src3;</tt></p>
+<p>where:</p>
+<ul class="simple">
+<li>mnemonic can be one of the following:<ul>
+<li>bitins: Insert a bitvector denoted by the downto range [src2..src3] of src1
+to dst1</li>
+<li>bitext: Extract a bitvector denoted by the downto range [src2..src3] from
+src1 and assign it to dst1</li>
+</ul>
+</li>
+<li>src1 is the source operand</li>
+<li>src2 are two source operands (constant or variables) that denote the downto
+range. The runtime numerical value of src2 must be larger or equal to src3,
+and within the range of dst1</li>
+<li>dst1 is the destination operand</li>
+</ul>
+<p>These instructions define bitfield insertion and extraction primitives. They
+can also be defined for fixed-point operands given additional constraints.</p>
+</blockquote>
+<p>Load variable from array: <tt class="docutils literal">load</tt></p>
+<blockquote>
+<p><tt class="docutils literal">dst1 &lt;= load src1, src2;</tt></p>
+<p>Loads the contents of array src1 from the absolute address src2 to the
+variable dst1.</p>
+</blockquote>
+<p>Store variable to array: <tt class="docutils literal">store</tt></p>
+<blockquote>
+<p><tt class="docutils literal">dst1 &lt;= store src1, src2;</tt></p>
+<p>Stores the value of variable src1 to address src2 of array dst1.</p>
+</blockquote>
+<div class="section" id="fixed-point-operators">
+<h3><a class="toc-backref" href="#id31">4.2.1&nbsp;&nbsp;&nbsp;Fixed-point operators</a></h3>
+<p>The use of fixed-point arithmetic provides an inexpensive means for improved
+numerical dynamic range, when artifacts due to quantization and overflow effects
+can be tolerated. Rounding operators are used for controlling the numerical
+precision involved in a series of computations; they are defined for
+inexact arithmetic representations such as fixed- and floating-point.
+Proposed and in-use specifications for fixed-point arithmetic of
+related practice include C99 and the Mentor ACDT (Algorithmic C Data Types).</p>
+<p>Fixed-point arithmetic is a variant of the typical integral representation
+(2's-complement signed or unsigned) where a binary point is defined, purely
+as a notational artifact to signify integer powers of 2 with a negative exponent.
+Assuming an integer part of width <tt class="docutils literal">IW &gt; 0</tt> and a fractional part with
+<tt class="docutils literal"><span class="pre">-FW</span> &lt; 0</tt>, the VHDL-2008 <tt class="docutils literal">sfixed</tt> data type has a range of
+<tt class="docutils literal"><span class="pre">2^{IW-1}-2^{|FW|}</span></tt> to <tt class="docutils literal"><span class="pre">-2^{IW-1}</span></tt> with a representable quantum of
+<tt class="docutils literal"><span class="pre">2^|FW|</span></tt>. The corresponding <tt class="docutils literal">ufixed</tt> type has the following range:
+<tt class="docutils literal"><span class="pre">2^{IW}-2^{|FW|}</span></tt> to <tt class="docutils literal">0</tt>. Both are defined properly given a <tt class="docutils literal"><span class="pre">[IW-1:-FW]</span></tt>
+vector range.</p>
+<p>This is a proposed list of extension operators for use with
+fixed-point variables support in the NAC programming language.</p>
+<p>Conversion from integer to fixed-point format: <tt class="docutils literal">i2ufx</tt>, <tt class="docutils literal">i2sfx</tt></p>
+<blockquote>
+<p><tt class="docutils literal">dst1 &lt;= i2zfx src1;</tt></p>
+<p>where:</p>
+<ul class="simple">
+<li><tt class="docutils literal">z</tt> can be one of the following:<ul>
+<li>u: conversion to the ufixed (UNSIGNED_FIXED_POINT) format</li>
+<li>s: conversion to the sfixed (SIGNED_FIXED_POINT) format</li>
+</ul>
+</li>
+<li>src1 is the source operand</li>
+<li>dst1 is the destination operand</li>
+</ul>
+<p>Converts an integer to a fixed-point number without loss of precision.</p>
+</blockquote>
+<p>Conversion from fixed-point to integer format: <tt class="docutils literal">ufx2i</tt>, <tt class="docutils literal">sfx2i</tt></p>
+<blockquote>
+<p><tt class="docutils literal">dst1 &lt;= zfx2i src1;</tt></p>
+<p>where:</p>
+<ul class="simple">
+<li><tt class="docutils literal">z</tt> can be one of the following:<ul>
+<li>u: conversion to the ufixed (UNSIGNED_FIXED_POINT) format</li>
+<li>s: conversion to the sfixed (SIGNED_FIXED_POINT) format</li>
+</ul>
+</li>
+<li>src1 is the source operand</li>
+<li>dst1 is the destination operand</li>
+</ul>
+<p>Converts a fixed-point number to an integer. In case of a non-zero fractional part
+of the fixed-number, truncation occurs. The type of the integer result (UNSIGNED_INTEGER
+or SIGNED_INTEGER) must be compatible to the type of the fixed-point input argument
+to assure a proper conversion.</p>
+</blockquote>
+<p>Resize instruction: <tt class="docutils literal">resize</tt></p>
+<blockquote>
+<p><tt class="docutils literal">dst1 &lt;= resize src1, src2, src3;</tt></p>
+<p>where:</p>
+<ul class="simple">
+<li>src1 is the source fixed-point operand</li>
+<li>src2, src3 are numerical values (integers) that denote the new size (high-to-low range)
+of the resulting fixed-point operand</li>
+<li>dst1 is the destination fixed-point operand</li>
+</ul>
+</blockquote>
+<p>Fixed-point rounding instructions: <tt class="docutils literal">ceil</tt>, <tt class="docutils literal">fix</tt>, <tt class="docutils literal">floor</tt>, <tt class="docutils literal">round</tt>, <tt class="docutils literal">nearest</tt>, <tt class="docutils literal">convergent</tt></p>
+<blockquote>
+<p><tt class="docutils literal">dst1 &lt;= mnemonic src1;</tt></p>
+<p>where:</p>
+<ul class="simple">
+<li>src1 is the source operand</li>
+<li>dst1 is the destination operand</li>
+</ul>
+<p>These operations are used to performing rounding of fixed-point operands with
+different criteria. They emulate the behavior of corresponding MATLAB intrinsic
+functions. Rounding behavior is summarized as follows:</p>
+<ul class="simple">
+<li>ceil: round towards plus infinity.</li>
+<li>fix: round towards zero.</li>
+<li>floor: round towards minus infinity.</li>
+<li>round: round to nearest; ties to greatest absolute value.</li>
+<li>nearest: round to nearest; ties to plus infinity.</li>
+<li>convergent: round to nearest; ties to closest even.</li>
+</ul>
+</blockquote>
+</div>
+</div>
+<div class="section" id="macroinsructions">
+<h2><a class="toc-backref" href="#id32">4.3&nbsp;&nbsp;&nbsp;Macroinsructions</a></h2>
+<p>For simplifying programming in the NAC language, a set of macroinstructions
+are available:</p>
+<p>A) Automatic replacement of incomplete conditional jumps:
+The pattern</p>
+<blockquote>
+<div class="line-block">
+<div class="line"><tt class="docutils literal">S_TRUE &lt;= jmpxx opnd1, opnd2;</tt></div>
+</div>
+</blockquote>
+<p>is replaced by:</p>
+<blockquote>
+<div class="line-block">
+<div class="line"><tt class="docutils literal">S_TRUE, S_FALSE &lt;= jmpxx opnd1, opnd2;</tt></div>
+<div class="line"><tt class="docutils literal">S_FALSE:</tt></div>
+</div>
+</blockquote>
+<p>Label <tt class="docutils literal">S_FALSE</tt> is generated only if it doesn't already exist.</p>
+<p>B) Addition of &quot;forgotten&quot; unconditional jumps. The pattern:</p>
+<blockquote>
+<div class="line-block">
+<div class="line-block">
+<div class="line"><tt class="docutils literal"><span class="pre">no-jump-instruction;</span></tt></div>
+</div>
+<div class="line"><tt class="docutils literal">LABEL:</tt></div>
+</div>
+</blockquote>
+<p>is replaced by:</p>
+<blockquote>
+<div class="line-block">
+<div class="line-block">
+<div class="line"><tt class="docutils literal"><span class="pre">no-jump-instruction;</span></tt></div>
+<div class="line"><tt class="docutils literal">LABEL &lt;= jmpun;</tt></div>
+</div>
+<div class="line"><tt class="docutils literal">LABEL:</tt></div>
+</div>
+</blockquote>
+</div>
+<div class="section" id="structure-of-a-nac-program">
+<h2><a class="toc-backref" href="#id33">4.4&nbsp;&nbsp;&nbsp;Structure of a NAC program</a></h2>
+<p>A NAC program can be specified in a single source file that can contain
+global variable definitions and their initializations, and a list of
+procedures. Each procedure is comprised of the following:
+- the procedure name
+- a list of ordered input arguments
+- a list of ordered output arguments
+- a list of localvar declarations
+- a list of statements (the main NAC subprogram)
+- basic block labels</p>
+<p>Label items point to basic block (BB) entry points and are defined as
+<tt class="docutils literal">name, bb, addr</tt> 3-tuples, where <tt class="docutils literal">name</tt> is the corresponding identifier,
+<tt class="docutils literal">bb</tt> the basic block enumeration, and <tt class="docutils literal">addr</tt> the absolute address of the
+statement succeeding the label.</p>
+<p>Statements are organized in the form of a <tt class="docutils literal">C struct</tt> or equivalently a record
+(in other programming languages) as follows:</p>
+<pre class="literal-block">
+typedef struct {
+  char *mnemonic;  /* Designates the statement type. */
+  NodeType ntype;  /* OPERATION or PROCEDURE_CALL. */
+  List opnds_in;   /* Collects all input operands. */
+  List opnds_out;  /* Collects all output operands. */
+  int  bb;         /* Basic block number. */
+  int  addr;       /* Absolute statement address. */
+} _Statement;
+typedef _Statement *Statement;
+
+C-style record for encoding a BASIL statement.
+</pre>
+<p>The Statement ADT therefore can be used to model an (n,m)-operation. The input
+and output operand lists collect operand items, as defined in the OperandItem
+data structure definition:</p>
+<pre class="literal-block">
+typedef struct {
+  char *name;         /* Identifier name. */
+  char *dataspec;     /* Data type string spec. */
+  OperandType otype;  /* Operand type representation. */
+  int  ix;            /* Absolute operand item index. */
+} _OperandItem;
+typedef _OperandItem *OperandItem;
+
+C-style record for encoding an OperandItem.
+</pre>
+<p>The OperandItem data structure is used for representing input arguments
+(INVAR), output arguments (OUTVAR), local (LOCALVAR) and global (GLOBALVAR)
+variables and constants (CONSTANT). If using a graph-based intermediate
+representation, arguments and constants could use node and incoming or
+outgoing edge representations, while it is meaningful to represent variables as
+edges as long as their storage sites are not considered.</p>
+<p>The typical NAC program is structured as follows:</p>
+<pre class="literal-block">
+&lt;Global variable declarations&gt;
+
+procedure &lt;name-1&gt; (
+  &lt;comma-separated input arguments&gt;,
+  &lt;comma-separated output arguments&gt;
+)
+{
+  &lt;Local variable declarations&gt;
+  &lt;NAC labels, instructions and procedure calls&gt;
+}
+...
+procedure &lt;name-n&gt; (
+  &lt;comma-separated input arguments&gt;,
+  &lt;comma-separated output arguments&gt;
+)
+{
+  &lt;Local variable declarations&gt;
+  &lt;NAC labels, instructions and procedure calls&gt;
+}
+</pre>
+</div>
+<div class="section" id="data-type-inference-rules">
+<h2><a class="toc-backref" href="#id34">4.5&nbsp;&nbsp;&nbsp;Data type inference rules</a></h2>
+<p>Since version 0.0.3 of the standalone manual for the NAC programming
+language, the need for declaring <tt class="docutils literal">constant</tt> items has been eliminated,
+and for this reason constant items are recognized by scanning through the
+NAC program prior any actual further manipulations (e.g. code generation).
+A small set of simple rules are used for data type inference of constant
+values:</p>
+<p>1. When a constant appears in an &quot;ldc&quot; or &quot;store&quot; operation, it obtains
+the type of the result operand.</p>
+<p>2. When a constant appears in any other operation, then it obtains the
+type of the first input operand. This assumes that the constant appears
+only as the second, third or fourth input operand for this operation.</p>
+</div>
+<div class="section" id="nac-grammar">
+<h2><a class="toc-backref" href="#id35">4.6&nbsp;&nbsp;&nbsp;NAC grammar</a></h2>
+<p>Here follows the BNF-style grammar specification for the NAC programming
+language.</p>
+<div class="section" id="yacc-bison-grammar">
+<h3><a class="toc-backref" href="#id36">4.6.1&nbsp;&nbsp;&nbsp;YACC/bison grammar</a></h3>
+<p>This grammar uses the notation of the YACC/Bison parser generators.</p>
+<pre class="literal-block">
+%token T_LPAREN T_RPAREN T_LBRACE T_RBRACE T_LBRACKET T_RBRACKET
+%token T_COMMA T_COLON T_SEMI T_ASSIGN T_EQUAL
+%token T_PROCEDURE T_LOCALVAR T_GLOBALVAR T_CONSTANT T_IN T_OUT
+%token T_ID
+
+%start nac_top
+
+%%
+
+nac_top : procedure_list
+  | globalvar_def procedure_list
+  ;
+
+globalvar_def : globalvar_prefix id_list T_SEMI
+  | globalvar_def globalvar_prefix id_list T_SEMI
+  ;
+
+globalvar_prefix : T_GLOBALVAR type_spec
+  ;
+
+procedure_def : procedure_prefix T_LPAREN arg_list T_RPAREN
+    T_LBRACE stmt_list T_RBRACE
+  | procedure_prefix T_LPAREN arg_list T_RPAREN
+    T_LBRACE localvar_list stmt_list T_RBRACE
+  ;
+
+procedure_list : procedure_def
+  | procedure_list procedure_def
+  ;
+
+procedure_prefix : T_PROCEDURE id
+  ;
+
+localvar_list : localvar_prefix id_list T_SEMI
+  | localvar_list localvar_prefix id_list T_SEMI
+  ;
+
+localvar_prefix : T_LOCALVAR type_spec
+  ;
+
+stmt_list : /* empty */
+  | stmt_list
+  stmt
+  ;
+
+stmt : nac
+  | pcall
+  | label
+  ;
+
+nac :  opnd_out_list assign_op id opnd_in_list T_SEMI
+  | opnd_out_list assign_op id T_SEMI
+  | id opnd_in_list T_SEMI
+  | id T_SEMI
+  ;
+
+pcall :  T_LPAREN opnd_out_list T_RPAREN assign_op id
+    T_LPAREN opnd_in_list T_RPAREN T_SEMI
+  | T_LPAREN opnd_out_list T_RPAREN assign_op id T_SEMI
+  | id T_LPAREN opnd_in_list T_RPAREN T_SEMI
+  | T_LPAREN T_RPAREN assign_op id T_LPAREN T_RPAREN T_SEMI
+  ;
+
+assign_op : T_ASSIGN
+  ;
+
+label :  id T_COLON
+  ;
+
+opnd_out_list : id_list
+  ;
+
+opnd_in_list : id_list
+  ;
+
+arg_list : /* empty */
+  | arg_in
+  | arg_out
+  | arg_list T_COMMA arg_in
+  | arg_list T_COMMA arg_out
+  ;
+
+arg_in : T_IN type_spec id
+  ;
+
+arg_out : T_OUT type_spec id
+  ;
+
+id_list : id
+  | id_list T_COMMA id
+  ;
+
+id : T_ID
+  ;
+
+type_spec : T_ID
+  ;
+</pre>
+</div>
+<div class="section" id="ebnf-grammar">
+<h3><a class="toc-backref" href="#id37">4.6.2&nbsp;&nbsp;&nbsp;EBNF grammar</a></h3>
+<p>This grammar follows the EBNF notation as used by N. Wirth.</p>
+<pre class="literal-block">
+nac_top = {gvar_def} {proc_def}.
+gvar_def = &quot;globalvar&quot; anum decl_item_list &quot;;&quot;.
+proc_def = &quot;procedure&quot; [anum] &quot;(&quot; [arg_list] &quot;)&quot;
+           &quot;{&quot; [{lvar_decl}] [{stmt}] &quot;}&quot;.
+stmt = nac | pcall | id &quot;:&quot;.
+nac = [id_list &quot;&lt;=&quot;] anum [id_list] &quot;;&quot;.
+pcall = [&quot;(&quot; id_list &quot;)&quot; &quot;&lt;=&quot;] anum [&quot;(&quot; id_list &quot;)&quot;] &quot;;&quot;.
+id_list = id {&quot;,&quot; id}.
+decl_item_list = decl_item {&quot;,&quot; decl_item}.
+decl_item = (anum | uninitarr | initarr).
+arg_list = arg_decl {&quot;,&quot; arg_decl}.
+arg_decl = (&quot;in&quot; | &quot;out&quot;) anum (anum | uninitarr).
+lvar_decl = &quot;localvar&quot; anum decl_item_list &quot;;&quot;.
+initarr = anum &quot;[&quot; id &quot;]&quot; &quot;=&quot; &quot;{&quot; numer {&quot;,&quot; numer} &quot;}&quot;.
+uninitarr = anum &quot;[&quot; [id] &quot;]&quot;.
+anum = (letter | &quot;_&quot;) {letter | digit}.
+id = anum | [&quot;-&quot;] numeric.
+numeric = (integer | fxpnum).
+fxpnum = [integer] &quot;.&quot; integer.
+integer = digit {digit}.
+</pre>
+</div>
+</div>
+<div class="section" id="examples">
+<h2><a class="toc-backref" href="#id38">4.7&nbsp;&nbsp;&nbsp;Examples</a></h2>
+<div class="section" id="d-euclidean-distance-approximation-eda-nac">
+<h3><a class="toc-backref" href="#id39">4.7.1&nbsp;&nbsp;&nbsp;2D Euclidean distance approximation (eda.nac)</a></h3>
+<p><tt class="docutils literal">eda.nac</tt> is the N-address code (NAC) implementation for a 2D Euclidean
+distance approximation algorithm given by the equation:
+<tt class="docutils literal">eda = MAX(0.875*x+0.5*y, x) where x = <span class="pre">MAX(|a|,|b|),</span> y = <span class="pre">MIN(|a|,|b|)</span></tt>.</p>
+<pre class="literal-block">
+procedure eda (in s16 in1, in s16 in2, out u16 out1)
+{
+  localvar u16 x, y, t1, t2, t3, t4, t5, t6, t7;
+  localvar s16 a, b;
+
+S_1:
+  a &lt;= mov in1;
+  b &lt;= mov in2;
+  t1 &lt;= abs a;
+  t2 &lt;= abs b;
+  x &lt;= max t1, t2;
+  y &lt;= min t1, t2;
+  t3 &lt;= shr x, 3;
+  t4 &lt;= shr y, 1;
+  t5 &lt;= sub x, t3;
+  t6 &lt;= add t4, t5;
+  t7 &lt;= max t6, x;
+  out1 &lt;= mov t7;
+}
+</pre>
+</div>
+<div class="section" id="iterative-algorithm-for-the-fibonacci-sequence-fibo-nac">
+<h3><a class="toc-backref" href="#id40">4.7.2&nbsp;&nbsp;&nbsp;Iterative algorithm for the Fibonacci sequence (fibo.nac)</a></h3>
+<p><tt class="docutils literal">fibo.nac</tt> is the N-address code (NAC) implementation for the iterative
+version of Fibonacci series computation.</p>
+<pre class="literal-block">
+procedure fibo(in u31 n, out u31 outp)
+{
+  localvar u31 res, x;
+  localvar u31 f0, f1, f, k;
+
+  LL0:
+    x &lt;= mov n;
+    f0 &lt;= ldc 0;
+    f1 &lt;= ldc 1;
+    res &lt;= mov f0;
+    S_EXIT, LL1 &lt;= jmple x, 0;
+
+  LL1:
+    res &lt;= mov f1;
+    S_EXIT, LL2 &lt;= jmpeq x, 1;
+
+  LL2:
+    k &lt;= ldc 2;
+    LL3 &lt;= jmpun;
+
+  LL3:
+    f &lt;= add f1, f0;
+    f0 &lt;= mov f1;
+    f1 &lt;= mov f;
+    res &lt;= mov f;
+    k &lt;= add k, 1;
+    LL3, S_EXIT &lt;= jmple k, x;
+
+  S_EXIT:
+    outp &lt;= mov res;
+}
+</pre>
+</div>
+<div class="section" id="sum-of-array-elements-arraysum-nac">
+<h3><a class="toc-backref" href="#id41">4.7.3&nbsp;&nbsp;&nbsp;Sum of array elements (arraysum.nac)</a></h3>
+<p>The following computes the sum of the elements of array arr[10], that is the
+sum of the first ten primes.</p>
+<pre class="literal-block">
+globalvar s32 arr[10]={2,3,5,7,11,13,17,19,23,27};
+
+procedure main (in s32 in1, out s32 out1)
+{
+  localvar s32 D_1963;
+  localvar s32 i;
+  localvar s32 sum;
+
+L0001:
+  sum &lt;= ldc 0;
+  i &lt;= ldc 0;
+  D_1221 &lt;= jmpun;
+D_1220:
+  i0 &lt;= mov i;
+  D_1963 &lt;= load arr, i;
+  sum &lt;= add sum, D_1963;
+  i &lt;= add i, 1;
+  D_1221 &lt;= jmpun;
+D_1221:
+  D_1220, D_1222 &lt;= jmplt i, in1;
+D_1222:
+  out1 &lt;= mov sum;
+}
+</pre>
+</div>
+</div>
+<div class="section" id="suggested-coding-style-limitations">
+<h2><a class="toc-backref" href="#id42">4.8&nbsp;&nbsp;&nbsp;Suggested coding style - Limitations</a></h2>
+<p>Here follows a list of suggestions for easier programming and code generation in
+NAC.</p>
+<ol class="arabic simple">
+<li>At each time, a single translation unit (one NAC-file) can be provided as
+input.</li>
+<li>Non-root procedures cannot have &quot;streaming&quot; outputs (outputs producing a
+sequence of values over time).</li>
+<li>Streaming inputs are syntactically possible but have not yet been thoroughly
+tested.</li>
+<li>Global variables are arrays. Scalar globals can be emulated as arrays of
+size 1.</li>
+<li>It is probable that a <tt class="docutils literal">record</tt> type will be added in order to support
+high-level programming features, such as ANSI C structs, in a future revision
+of NAC.</li>
+<li>Use labels prefixed by <tt class="docutils literal">S_</tt> such as: <tt class="docutils literal">S_1</tt>, <tt class="docutils literal">S_2</tt>, <tt class="docutils literal">S_EXIT</tt>. This is
+not mandatory, just preferred coding style.</li>
+</ol>
+<p>And some notes clarifying some issues for potential hardware implementations.</p>
+<ol class="arabic simple">
+<li>An array can be implemented either as a distributed LUT RAM (asynchronous
+read) or as an embedded memory (synchronous read).</li>
+<li>The initialization of local array variables of a callee function can only
+take effect in a potential hardware implementation when applied by an
+addressing-store NAC operation sequence. This means that, initialization
+at declaration site, should not be used for localvar arrays for a non-root
+procedure.</li>
+<li>Array input and output arguments of procedures donnot map to embedded
+memories (block RAMs). This also applies for globalvar and localvar arrays
+that are passed to/from procedures.</li>
+<li>Global variables should be accessed (read or written) only from within the
+top-level procedure (root procedure of the program call tree). This is not
+a permanent limitation since it is possible to establish access from any
+procedure to global variables given that a proper interconnect is available.
+Such interconnect could be a multiplexer-based bus. Each procedure would be
+assigned a unique ID in order to control the corresponding multiplexers (for
+input data, output data and address ports) interfacing to the global storage.
+This applies much more easily to single-threaded implementations of NAC
+programs.</li>
+</ol>
+</div>
+</div>
+<div class="section" id="c-coding-style">
+<h1><a class="toc-backref" href="#id43">5&nbsp;&nbsp;&nbsp;C coding style</a></h1>
+<p>HercuLeS expects that the user resorts to a synthesis-friendly coding style
+with the following basic rules:</p>
+<ul class="simple">
+<li>The <tt class="docutils literal">main()</tt> function should not be included.</li>
+<li>Only single-dimensional fixed-size arrays are allowed.</li>
+<li>Output arguments of a function are declared as pointers.</li>
+<li>Non-root functions can have arrays as arguments but the root (top-level)
+procedure can't.</li>
+<li>Due to limitations with GIMPLE dumps, global arrays should be declared as
+static within the root procedure.</li>
+<li>Non-root procedures should not access global arrays.</li>
+<li>All functions return <tt class="docutils literal">void</tt>.</li>
+<li><tt class="docutils literal">goto</tt> is not supported.</li>
+<li>Structs, unions and all forms of compound data types (except single-
+dimensional arrays) are not supported.</li>
+</ul>
+</div>
+<div class="section" id="limitations-of-the-free-web-interface">
+<h1><a class="toc-backref" href="#id44">6&nbsp;&nbsp;&nbsp;Limitations of the free web interface</a></h1>
+<p>This version comes with certain intentional limitations. Here is a quick list:</p>
+<ul class="simple">
+<li>The number of NAC code lines are limited to 25. This may not be easily
+visible when passing an ANSI C source file to HercuLeS. The examples pack
+(<tt class="docutils literal"><span class="pre">small-examples.zip_</span></tt>) provides sample sources that respect this limitation.</li>
+<li>The ANSI C backend is not accessible.</li>
+<li>Fixed-point arithmetic is not accessible.</li>
+<li>Use of a very slow (combinational) divider.</li>
+<li>No third-party/user IP integration.</li>
+<li>Synthesis script is not generated.</li>
+<li>The RTL VHDL code is generated according to the <tt class="docutils literal">IEEE</tt> standard packages.
+The <tt class="docutils literal">synopsys</tt> de facto packages (<tt class="docutils literal">ieee.std_logic_arith</tt> instead of
+<tt class="docutils literal">ieee.numeric_std</tt>) are not used.</li>
+<li>No streaming outputs.</li>
+<li>No constant multiplication/division optimizations.</li>
+<li>Also, a lot of other optimizations are kept unused.</li>
+</ul>
+</div>
+<div class="section" id="fsmds">
+<h1><a class="toc-backref" href="#id45">7&nbsp;&nbsp;&nbsp;FSMDs</a></h1>
+<p>The FSMD (Finite-State Machine with Datapath) is a model of computation model
+which is universal, well-defined and suitable for either data- or control-
+dominated applications. The generated hardware architectures from HercuLeS follow
+an extended FSMD model as presented in this section.</p>
+<p>This section deals with aspects of specification and design of FSMDs, especially
+their interface, architecture and organization, as well as communication and
+integration issues. The section is wrapped-up with realistic examples of CDFG
+mappings to FSMDs, alongside their performance investigation with the help of HDL
+simulations.</p>
+<div class="section" id="fsmd-overview">
+<h2><a class="toc-backref" href="#id46">7.1&nbsp;&nbsp;&nbsp;FSMD overview</a></h2>
+<p>An FSMD specification is an upgraded version of the well-known FSM
+representation providing the same information as the equivalent CDFG. The main
+difference is the introduction of embedded actions within the next state
+generation logic. An FSMD specification is timing-aware since it must be decided
+that each state is executed within a certain amount of machine cycles. Also the
+precise RTL semantics of operations taking place within these cycles must be
+determined. In this way, an FSMD can provide an accurate model of an RTL
+design's performance as well as serve as a synthesizable manifestation of the
+designer's intent. Depending on the RT-level specification (usually VHDL or
+Verilog) it can convey sufficient details for hardware synthesis to a specific
+target platform, e.g. <a class="reference external" href="http://www.xilinx.com">Xilinx</a> FPGA devices.</p>
+<div class="section" id="extended-fsmds">
+<h3><a class="toc-backref" href="#id47">7.1.1&nbsp;&nbsp;&nbsp;Extended FSMDs</a></h3>
+<p>HercuLeS FSMDs follow the established scheme of a Mealy FSM with computational
+actions embedded within state logic. In this work, the extended FSMD MoC
+describing the hardware architectures supports the following features, the most
+relevant of which will be sufficiently described and supported by short
+examples:</p>
+<blockquote>
+<ul class="simple">
+<li>Support of scalar and array input and output ports.</li>
+<li>Support of streaming inputs and outputs and allowing mixed types of input
+and output ports in the same design block.</li>
+<li>Communication with embedded block and distributed LUT memories.</li>
+<li>Design of a latency-insensitive local interface of the FSMD units to master
+FSMDs, assuming the FSMD is a locally-interfaced slave.</li>
+<li>Design of memory interconnects for the FSMD units.</li>
+</ul>
+</blockquote>
+</div>
+<div class="section" id="interface">
+<h3><a class="toc-backref" href="#id48">7.1.2&nbsp;&nbsp;&nbsp;Interface</a></h3>
+<p>The FSMDs of our approach use fully-synchronous conventions and register all
+their outputs. The control interface is rather simple, yet can service all
+possible designs:</p>
+<blockquote>
+<ul>
+<li><p class="first"><tt class="docutils literal">clk</tt>: signal from external clocking source</p>
+</li>
+<li><dl class="first docutils">
+<dt><tt class="docutils literal">reset</tt> (<tt class="docutils literal">rst</tt> or <tt class="docutils literal">arst</tt>): synchronous or asynchronous reset,</dt>
+<dd><p class="first last">depending on target specification</p>
+</dd>
+</dl>
+</li>
+<li><p class="first"><tt class="docutils literal">ready</tt>: the block is ready to accept new input</p>
+</li>
+<li><p class="first"><tt class="docutils literal">valid</tt>: asserted when a certain data output port is streamed-out from the
+block (generally it is a vector)</p>
+</li>
+<li><p class="first"><tt class="docutils literal">done</tt>: end of computation for the block</p>
+</li>
+</ul>
+</blockquote>
+<p><tt class="docutils literal">ready</tt> signifies only the ability to accept new input (non-streamed) and does
+not address the status of an output (streaming or not).</p>
+<div class="figure">
+<img alt="fsmd-interface.png" src="fsmd-interface.png" />
+<p class="caption">FSMD I/O interface.</p>
+</div>
+<p>Multi-dimensional data ports are feasible based on their equivalent single-
+dimensional flattened array type definition. Then, port selection is a matter of
+bitfield extraction. For instance, data input <tt class="docutils literal">din</tt> is defined as
+<tt class="docutils literal">din: in <span class="pre">std_logic_vector(M*N-1</span> downto 0);</tt>, where <tt class="docutils literal">M</tt>,``N`` are generics.
+The flattened vector defines <tt class="docutils literal">M</tt> input ports of width <tt class="docutils literal">N</tt>. A selection of
+the form <tt class="docutils literal"><span class="pre">din((i+1)*N-1</span> downto i*N)</tt> is typical for a <tt class="docutils literal"><span class="pre">for-generate</span></tt> loop in
+order to synthesize iterative structures.</p>
+<p>The following example illustrates an element-wise copy of array <tt class="docutils literal">b</tt> to <tt class="docutils literal">c</tt>
+without the use of a local array resource. Each interface array consists of 10
+elements. It should be assumed that the physical content of both arrays lies in
+distributed LUT RAM, from which custom connections can be implemented.</p>
+<p>Fig. <a class="reference internal" href="#fsmd-arrif-nac">fsmd-arrif-nac</a> illustrates the corresponding function <tt class="docutils literal">func1</tt>.
+The VHDL interface of <tt class="docutils literal">func1</tt> is shown in Fig. <a class="reference internal" href="#fsmd-arrif-vhdl">fsmd-arrif-vhdl</a> where the
+the derived array types <tt class="docutils literal">b_type</tt> and <tt class="docutils literal">c_type</tt> are used for <tt class="docutils literal">b, c</tt>,
+respectively. The definitions of these types can be easily devised as aliases
+to a basic type denoted as:
+<tt class="docutils literal">type cdt_type is array (9 downto 0) of std_logic_vector(31 downto 0);</tt>.
+Then, the alias for <tt class="docutils literal">b</tt> is: <tt class="docutils literal">alias b_type is cdt_type;</tt></p>
+<p id="fsmd-arrif-nac">Array-to-array copy without intermediate storage (NAC).</p>
+<pre class="literal-block">
+procedure func1 (in s32 b[10],
+                 out s32 c[10]) {
+  localvar s32 i, t;
+S_1:
+  i &lt;= ldc 0;
+  S_2 &lt;= jmpun;
+S_2:
+  S_3, S_EXIT &lt;= jmplt i, 10;
+S_3:
+  t &lt;= load b, i;
+  c &lt;= store t, i;
+  i &lt;= add i, 1;
+  S_2 &lt;= jmpun;
+S_EXIT:
+  nop;
+}
+</pre>
+<p id="fsmd-arrif-vhdl">Array-to-array copy without intermediate storage (VHDL interface).</p>
+<pre class="literal-block">
+entity func1 is
+  port (
+    clk   : in  std_logic;
+    reset : in  std_logic;
+    start : in  std_logic;
+    b     : in  b_type;
+    c     : out c_type;
+    done  : out std_logic;
+    ready : out std_logic
+  );
+end func1;
+</pre>
+</div>
+</div>
+<div class="section" id="architecture-and-organization">
+<h2><a class="toc-backref" href="#id49">7.2&nbsp;&nbsp;&nbsp;Architecture and organization</a></h2>
+<p>The FSMDs are organized as computations allocated into n+2 states, where n is
+the number of required control steps as derived by an operation scheduler. The
+two overhead states are the entry (<tt class="docutils literal">S_ENTRY</tt>) and the exit (<tt class="docutils literal">S_EXIT</tt>) states
+which correspond to the source and sink nodes of the CDFG of the given
+procedure, respectively.</p>
+<p>Fig. <a class="reference internal" href="#fsmd-minimal">fsmd-minimal</a> shows the absolute minimal example of a compliant FSMD
+written in VHDL. The FSMD is described in a two-process style using one process
+for the current state logic and another process for a combined description of
+the next state and output logic. This code will serve as a running example for
+better explaining the basic concepts of the FSMD paradigm.</p>
+<p>The example of Fig. <a class="reference internal" href="#fsmd-minimal-vhdl">fsmd-minimal-vhdl</a> implements the computation of assigning
+a constant value to the output port of the FSMD: <tt class="docutils literal">outp &lt;= ldc 42;</tt>. Thus,
+lines 5--14 declare the interface (entity) for the hardware block, assuming that
+<tt class="docutils literal">outp</tt> is a 16-bit quantity. The FSMD requires three states. In line 17, a
+state type enumeration is defined consisting of types <tt class="docutils literal">S_ENTRY, S_EXIT</tt> and
+<tt class="docutils literal">S_1</tt>. Line 18 defines the signal 2-tuple for maintaining the state register,
+while in lines 19--20 the output register is defined. The current state logic
+(lines 25--34) performs asynchonous reset to all storage resources and assigns
+new contents to both the state and output registers. Next state and output logic
+(lines 37--57) decode <tt class="docutils literal">current_state</tt> in order to determine the necessary
+actions for the computational states of the FSMD. State <tt class="docutils literal">S_ENTRY</tt> is the idle
+state of the FSMD. When the FSMD is driven to this state, it is assumed ready to
+accept new input, thus the corresponding status output is raised. When a start
+prompt is given externally, the FSMD is activated and in the next cycle, state
+<tt class="docutils literal">S_1</tt> is reached. In <tt class="docutils literal">S_1</tt> the action of assigning <tt class="docutils literal">CNST_42</tt> to <tt class="docutils literal">outp</tt>
+is performed. Finally, when state <tt class="docutils literal">S_EXIT</tt> is reached, the FSMD declares the
+end of all computations via <tt class="docutils literal">done</tt> and returns to its idle state.</p>
+<p>It should be noted that this design approach is a rather conservative one. One
+possible optimization that can occur in certain cases is the merging of
+computational states that immediately prediate the sink state (<tt class="docutils literal">S_EXIT</tt>) with
+it.</p>
+<p>Fig. <a class="reference internal" href="#fsmd-minimal-timediag">fsmd-minimal-timediag</a> shows the timing diagram for the <tt class="docutils literal">minimal</tt> design.
+As expected, the overall latency for computing a sample is three machine cycles.</p>
+<p id="fsmd-minimal">Minimal FSMD implementation.</p>
+<p id="fsmd-minimal-vhdl">Minimal FSMD implementation in VHDL.</p>
+<pre class="literal-block">
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
+
+entity minimal is
+  port (
+    clk   : in  std_logic;
+    reset : in  std_logic;
+    start : in  std_logic;
+    outp  : out std_logic_vector(15 downto 0);
+    done  : out std_logic;
+    ready : out std_logic
+  );
+end minimal;
+
+architecture fsmd of minimal is
+  type state_type is (S_ENTRY, S_EXIT, S_1);
+  signal current_state, next_state: state_type;
+  signal outp_next: std_logic_vector(15 downto 0);
+  signal outp_reg: std_logic_vector(15 downto 0);
+  constant CNST_42: std_logic_vector(15 downto 0) :=
+    &quot;0000000000101010&quot;;
+begin
+  -- current state logic
+  process (clk, reset)
+  begin
+    if (reset = '1') then
+      current_state &lt;= S_ENTRY;
+      outp_reg &lt;= (others =&gt; '0');
+    elsif (clk = '1' and clk'EVENT) then
+      current_state &lt;= next_state;
+      outp_reg &lt;= outp_next;
+    end if;
+  end process;
+
+  -- next state and output logic
+  process (current_state, start, outp_reg)
+  begin
+    done &lt;= '0';
+    ready &lt;= '0';
+    outp_next &lt;= outp_reg;
+    case current_state is
+    when S_ENTRY =&gt;
+      ready &lt;= '1';
+      if (start = '1') then
+        next_state &lt;= S_1;
+      else
+        next_state &lt;= S_ENTRY;
+      end if;
+      when S_1 =&gt;
+        outp_next &lt;= CNST_42;
+        next_state &lt;= S_EXIT;
+      when S_EXIT =&gt;
+        done &lt;= '1';
+        next_state &lt;= S_ENTRY;
+    end case;
+  end process;
+  outp &lt;= outp_reg;
+end fsmd;
+</pre>
+<div class="figure" id="fsmd-minimal-timediag">
+<img alt="minimal-timediag.png" src="minimal-timediag.png" />
+<p class="caption">Timing diagram for the minimal FSMD.</p>
+</div>
+<p>In certain cases, input registering might be desired. This intent can be made
+explicit by copying input port data to an internal register. For the case of the
+<em>eda</em> algorithm, a new localvar, <tt class="docutils literal">a</tt> would be introduced to perform the copy
+as <tt class="docutils literal">a &lt;= mov in1;</tt>. The VHDL counterpart is given as <tt class="docutils literal">a_1_next &lt;= in1;</tt>,
+making this data available through register <tt class="docutils literal">a_1_reg</tt> in the following cycle.
+For register <tt class="docutils literal">r</tt>, signal <tt class="docutils literal">r_next</tt> represents the value that is available at
+the register input, and <tt class="docutils literal">r_reg</tt> the stored data in the register.</p>
+<div class="section" id="communication-with-embedded-memories">
+<h3><a class="toc-backref" href="#id50">7.2.1&nbsp;&nbsp;&nbsp;Communication with embedded memories</a></h3>
+<p>Array objects can be synthesized to block RAMs in contemporary FPGAs. These
+embedded memories support fully synchronous read and write operations. A
+requirement for asynchronous read mandates the use of memory residing in
+distributed LUT storage.</p>
+<p>In BASIL, the <tt class="docutils literal">load</tt> and <tt class="docutils literal">store</tt> primitives are used for describing read and
+write memory access. We will assume a RAM memory model with write enable, and
+separate data input (<tt class="docutils literal">din</tt>) and output (<tt class="docutils literal">dout</tt>) sharing a common address
+port (<tt class="docutils literal">rwaddr</tt>). To control access to such block, a set of four non-trivial
+signals is needed: <tt class="docutils literal">mem_we</tt>, a write enable signal, and the corresponding
+signals for addressing, data input and output.</p>
+<p><tt class="docutils literal">store</tt> is the simpler operation of the two. It requires raising <tt class="docutils literal">mem_we</tt>
+in a given single-cycle state so that data are stored in memory and made
+available in the subsequent state/machine cycle.</p>
+<p>Synchronous <tt class="docutils literal">load</tt> requires the introduction of a <tt class="docutils literal">waitstate</tt> register.
+This register assists in devising a dual-cycle state for performing the load.
+Fig. <a class="reference internal" href="#fsmd-loadstore-vhdl">fsmd-loadstore-vhdl</a> illustrates the implementation of a load operation.
+During the first cycle of <tt class="docutils literal">STATE_1</tt> the memory block is addressed. In the
+second cycle, the requested data are made available through <tt class="docutils literal">mem_dout</tt> and
+are assigned to register <tt class="docutils literal">mysignal</tt>. This data can be read from
+<tt class="docutils literal">mysignal_reg</tt> during <tt class="docutils literal">STATE_2</tt>.</p>
+<p id="fsmd-loadstore-vhdl">Wait-state-based communication for loading data from a block RAM.</p>
+<pre class="literal-block">
+when STATE_1 =&gt;
+  mem_addr &lt;= index;
+  waitstate_next &lt;= not (waitstate_reg);
+  if (waitstate_reg = '1') then
+    mysignal_next &lt;= mem_dout;
+    next_state &lt;= STATE_2;
+  else
+    next_state &lt;= STATE_1;
+  end if;
+when STATE_2 =&gt;
+  ...
+</pre>
+</div>
+<div class="section" id="hierarchical-fsmds">
+<h3><a class="toc-backref" href="#id51">7.2.2&nbsp;&nbsp;&nbsp;Hierarchical FSMDs</a></h3>
+<p>Our extended FSMD concept allows for hierarchical FSMDs defining entire systems
+with calling and callee CDFGs. A two-state protocol can be used to describe
+a proper communication between such FSMDs. The first state is considered
+as the <em>preparation</em> state for the communication, while the latter state
+actually comprises an <em>evaluation</em> superstate where the entire computation
+applied by the callee FSMD is effectively hidden.</p>
+<p>The calling FSMD performs computations where new values are assigned
+to <tt class="docutils literal">*_next</tt> signals and registered values are read from <tt class="docutils literal">*_reg</tt> signals. To
+avoid the problem of multiple signal drivers, callee procedure instances produce
+<tt class="docutils literal">*_eval</tt> data outputs that can then be connected to register inputs by
+hardwiring to the <tt class="docutils literal">*_next</tt> signal.</p>
+<p>Fig. <a class="reference internal" href="#fsmd-pcall-vhdl">fsmd-pcall-vhdl</a> illustrates a procedure call to an integer square root
+evaluation procedure. This procedure uses one input and one output
+<tt class="docutils literal">std_logic_vector</tt> operands, both considered to represent integer values.
+Thus, a procedure call of the form <tt class="docutils literal">(m) &lt;= isqrt(x);</tt> is implemented by
+the given code segment.</p>
+<p id="fsmd-pcall-vhdl">State-superstate-based communication of a caller and callee procedure instance
+in VHDL.</p>
+<pre class="literal-block">
+when STATE_1 =&gt;
+  isqrt_start &lt;= '1';
+  next_state &lt;= SUPERSTATE_2;
+when SUPERSTATE_2 =&gt;
+  if ((isqrt_ready = '1') and (isqrt_start = '0')) then
+    m_next &lt;= m_eval;
+    next_state &lt;= STATE_3;
+  else
+    next_state &lt;= SUPERSTATE_2;
+  end if;
+when STATE_3 =&gt;
+...
+isqrt_0 : entity WORK.isqrt(fsmd)
+  port map (
+    clk, reset,
+    isqrt_start, x_reg, m_eval,
+    isqrt_done, isqrt_ready
+  );
+</pre>
+<p><tt class="docutils literal">STATE_1</tt> sets up the callee instance. The following state is a superstate
+where control is transferred to the component instance of the callee. When
+the callee instance terminates its computation, the <tt class="docutils literal">ready</tt> signal is raised.
+Since the <tt class="docutils literal">start</tt> signal of the callee is kept low, the generated output data
+can be transferred to the <em>m</em> register via its <tt class="docutils literal">m_next</tt> input port. Control
+then is handed over to state <tt class="docutils literal">STATE_3</tt>.</p>
+<p>The callee instance follows the established FSMD interface, reading <tt class="docutils literal">x_reg</tt>
+data and producing an exact integer square root in <tt class="docutils literal">m_eval</tt>. Multiple copies
+of a given callee are supported by versioning of the component instances.</p>
+</div>
+<div class="section" id="steaming-ports">
+<h3><a class="toc-backref" href="#id52">7.2.3&nbsp;&nbsp;&nbsp;Steaming ports</a></h3>
+<p>ANSI C is the archetypical example of a general-purpose imperative language that
+does not support streaming primitives, i.e. it is not possible for someone to
+express and process streams solely based on the semantics of such language.</p>
+<p>Streaming suits applications with absence of control flow. In a prime
+factorization algorithm (<em>pfactor</em>), a streaming output can be used, <tt class="docutils literal">outp</tt>,
+to produce successive factors. The streaming port is accessed based on
+<tt class="docutils literal">valid</tt>. Thus, <tt class="docutils literal">outp</tt> is accessed periodically in context of basic block
+<tt class="docutils literal">BB4</tt> as shown in <a class="reference internal" href="#fsmd-pfactor-nac">fsmd-pfactor-nac</a>.</p>
+<p id="fsmd-pfactor-nac">NAC code for a prime factorization algorithm involving output streaming.</p>
+<pre class="literal-block">
+procedure pfactor (in u16 x, out u16 outp) {
+  localvar u16 i, n, t0;
+BB1:
+  n &lt;= mov x;
+  i &lt;= ldc 2;
+  BB2 &lt;= jmpun;
+BB2:
+  BB3, BB_EXIT &lt;= jmple i, n;
+BB3:
+  t0 &lt;= rem n, i;
+  BB4, BB5 &lt;= jmpeq t0, 0;
+BB4:
+  n &lt;= div n, i;
+  outp &lt;= mov i;
+  BB3 &lt;= jmpun;
+BB5:
+  i &lt;= add i, 1;
+  BB2 &lt;= jmpun;
+BB_EXIT:
+  nop;
+}
+</pre>
+</div>
+<div class="section" id="operation-chaining">
+<h3><a class="toc-backref" href="#id53">7.2.4&nbsp;&nbsp;&nbsp;Operation chaining</a></h3>
+<p>Operation chaining assigns dependent SSA operations to a single control step.
+Simple means for selective operation chaining involve merging successive ASAP
+states. In successive states, intermediate registers are eliminated by wiring
+assignments to <tt class="docutils literal">*_next</tt> signals and reusing them in the subsequent chained
+computation, instead of reading from the stored <tt class="docutils literal">*_reg</tt> value. To avoid
+excessive critical paths, a heuristic is defined for disallowing flow-dependent
+multiple occurrences of expensive operators in the same newly defined state.</p>
+<p>In Fig. <a class="reference internal" href="#fsmd-eda-chaining">fsmd-eda-chaining</a> states <tt class="docutils literal">S_1_3</tt> to <tt class="docutils literal">S_1_5</tt> comprise intermediate
+computations in a merged <tt class="docutils literal">S_1_1</tt> state.</p>
+<p id="fsmd-eda-nochaining">2D euclidean distance approximation algorithm (<em>eda</em>) without chained
+computations.</p>
+<pre class="literal-block">
+...
+when S_1_3 =&gt;
+  t3_next &lt;= &quot;000&quot;&amp;x_reg(15 downto 3);
+  t4_next &lt;= &quot;0&quot;&amp;y_reg(15 downto 1);
+  next_state &lt;= S_1_4;
+when S_1_4 =&gt;
+  t5_next &lt;= x_reg - t3_reg;
+  next_state &lt;= S_1_5;
+when S_1_5 =&gt;
+  t6_next &lt;= t4_reg + t5_reg;
+  next_state &lt;= S_1_6;
+</pre>
+<p id="fsmd-eda-chaining">2D euclidean distance approximation algorithm (<em>eda</em>) with chained computations.</p>
+<pre class="literal-block">
+when S_1_1 =&gt;
+  ...
+  t3_next &lt;= &quot;000&quot;&amp;x_next(15 downto 3);
+  t4_next &lt;= &quot;0&quot;&amp;y_next(15 downto 1);
+  t5_next &lt;= x_next - t3_next;
+  t6_next &lt;= t4_next + t5_next;
+  ...
+</pre>
+</div>
+</div>
+</div>
+<div class="section" id="the-hercules-gui">
+<h1><a class="toc-backref" href="#id54">8&nbsp;&nbsp;&nbsp;The HercuLeS GUI</a></h1>
+<div class="section" id="id3">
+<h2><a class="toc-backref" href="#id55">8.1&nbsp;&nbsp;&nbsp;Introduction</a></h2>
+<p>The <a class="reference external" href="http://www.ajaxcompilers.com/technology/hercules-high-level-synthesis">HercuLeS</a> 1.0 (2013a) distribution includes a graphical user interface (GUI) for allowing user-friendly access to HercuLeS HLS without the burden of coping with command-line syntax. The main purpose of the GUI is for the user to control code generation, simulation and synthesis options via an intuitive scheme. The user
+sets various options for the overall process from within the GUI (by interacting with checkbuttons, radiobuttons, entries, text widgets etc) in order for a shell script to be generated which will steer these tasks transparently. For running the generated script, a minimal Unix bash script environment is expected. On Windows, the <a class="reference external" href="http://www.mingw.org">MinGW</a> and msys distributions are suggested. On Linux, the required facilities are natively supported in almost any distributions, including Ubuntu Linux 12.04 LTS.</p>
+<p>To summarize, the HercuLeS GUI performs the following tasks:</p>
+<ul class="simple">
+<li>Allow the user to set various options and to load a C or NAC program file for processing</li>
+<li>Optionally, load a configuration file (which automatically sets all necessary options)</li>
+<li>Generate the HercuLeS run script</li>
+<li>Execute the HercuLeS run script</li>
+<li>View results from within an included results browser.</li>
+</ul>
+<p>The HercuLeS GUI can be accessed by double-clicking on the icon of the <tt class="docutils literal">hercules.exe</tt> executable, or by command-line invocation as follows:</p>
+<div class="line-block">
+<div class="line"><cite>./gui/hercules.exe</cite></div>
+</div>
+<p>from within the top-level directory of your HercuLeS installation.</p>
+<p>The HercuLeS GUI executable is available on both 32-bit Windows and 32-bit Linux.</p>
+</div>
+<div class="section" id="id4">
+<h2><a class="toc-backref" href="#id56">8.2&nbsp;&nbsp;&nbsp;Overview</a></h2>
+<p>When executing <tt class="docutils literal">hercules.exe</tt>, a splashscreen appears for a few seconds, as shown in Fig. <a class="reference internal" href="#hercules-gui-splashscreen">hercules-gui-splashscreen</a>.</p>
+<div class="figure" id="hercules-gui-splashscreen">
+<img alt="hercules-gui-splashscreen.png" src="hercules-gui-splashscreen.png" />
+<p class="caption">The HercuLeS GUI splashscreen.</p>
+</div>
+<p>After the lapse of a few seconds, the basic configuration screen of HercuLeS is visible. A nominal view of the GUI is shown in Fig. <a class="reference internal" href="#hercules-gui-basicscreen">hercules-gui-basicscreen</a>.
+The GUI consists of the following:</p>
+<ul class="simple">
+<li>a dropdown menu with the <tt class="docutils literal">File</tt>, <tt class="docutils literal">General</tt>, <tt class="docutils literal">Action</tt>, <tt class="docutils literal">Configuration</tt>, <tt class="docutils literal">Theme</tt> (on the left side) and <tt class="docutils literal">Help</tt> (on the right side) submenus.</li>
+<li>A set of basic framed controls for setting the simulator (<tt class="docutils literal">Simulator</tt>), waveform generation settings (<tt class="docutils literal">Output waveform format</tt>), simulation and synthesis options (<tt class="docutils literal">Simulation and synthesis options</tt>) and miscellaneous options (<tt class="docutils literal">Miscellaneous options</tt>).</li>
+<li>A notebook for controlling high-level synthesis settings in detail, which consists of four tabs: <tt class="docutils literal">General</tt>, <tt class="docutils literal">Optimizations</tt>, <tt class="docutils literal">Operation scheduling</tt> and <tt class="docutils literal">Code generation</tt>.</li>
+<li>The read-only console where the standard output is logged in real-time in order to examine the progress of the current run.</li>
+<li>A set of buttons: <tt class="docutils literal">Run HercuLeS</tt>, <tt class="docutils literal">Results browser</tt>, <tt class="docutils literal">Clear generated files</tt>, <tt class="docutils literal">Clear console</tt> (on the left), and <tt class="docutils literal">Exit</tt> (on the right). Except <tt class="docutils literal">Run HercuLeS</tt>, all other buttons are disabled at startup.</li>
+</ul>
+<div class="figure" id="hercules-gui-basicscreen">
+<img alt="hercules-gui-basicscreen.png" src="hercules-gui-basicscreen.png" />
+<p class="caption">The initial HercuLeS GUI screen immediately after invocation.</p>
+</div>
+<p>A major element of the HercuLeS GUI which is not readily visible is the <tt class="docutils literal">Results browser</tt>. This element is activated after a successful run of generating and executing a HercuLeS run script for a specific C or NAC translation unit.</p>
+<p>It should be noted that context-specific balloon help is available for most visible controls. This kind of help of accessible simply by mouse hovering over the corresponding GUI element.</p>
+</div>
+<div class="section" id="quick-start-guide">
+<h2><a class="toc-backref" href="#id57">8.3&nbsp;&nbsp;&nbsp;Quick-start guide</a></h2>
+<p>The fastest and simplest way to use the HercuLeS GUI is a four-step process. Using this process, the user is able to perform C simulation, VHDL simulation and logic synthesis on the generated C and VHDL representation of a specified C or NAC program file.</p>
+<p>The process is as follows:</p>
+<ol class="arabic simple">
+<li>From the <tt class="docutils literal">File</tt> menu either load a C application (<tt class="docutils literal">Load C program file</tt>) or a NAC application (<tt class="docutils literal">Load NAC program file</tt>).</li>
+<li>From the <tt class="docutils literal">File</tt> menu, press <tt class="docutils literal">Load HercuLeS configuration</tt> and choose <tt class="docutils literal">default.config</tt>.</li>
+<li>From the <tt class="docutils literal">Action</tt> menu, press <tt class="docutils literal">Run HercuLeS</tt> (or press the always visible <tt class="docutils literal">Run HercuLeS</tt> button near the bottom-left corner of the basic screen layout.</li>
+<li>When enabled, press <tt class="docutils literal">Results browser</tt> from the bottom-left corner of the basic screen layout. This will invoke the results browser.</li>
+</ol>
+<p>Fig. <a class="reference internal" href="#hercules-gui-quickstart">hercules-gui-quickstart</a> depicts graphically the proposed four-step process for quickly setting up and processing a program file with HercuLeS.</p>
+<div class="figure" id="hercules-gui-quickstart">
+<img alt="hercules-gui-quickstart.png" src="hercules-gui-quickstart.png" />
+<p class="caption">The four-step quick-start process for using the HercuLeS GUI.</p>
+</div>
+</div>
+<div class="section" id="the-gui-in-detail">
+<h2><a class="toc-backref" href="#id58">8.4&nbsp;&nbsp;&nbsp;The GUI in detail</a></h2>
+<div class="section" id="dropdown-menus">
+<h3><a class="toc-backref" href="#id59">8.4.1&nbsp;&nbsp;&nbsp;Dropdown menus</a></h3>
+<div class="section" id="file-submenu">
+<h4><a class="toc-backref" href="#id60">8.4.1.1&nbsp;&nbsp;&nbsp;File submenu</a></h4>
+<p>From left to right, the first dropdown menu is <tt class="docutils literal">File</tt> which covers basic file opening/loading, viewing and editing operations. It is shown in Fig. <a class="reference internal" href="#hercules-gui-ddmenu-file">hercules-gui-ddmenu-file</a>.</p>
+<div class="figure" id="hercules-gui-ddmenu-file">
+<img alt="hercules-gui-ddmenu-file.png" src="hercules-gui-ddmenu-file.png" />
+<p class="caption">Dropdown menu for file loading, viewing and editing.</p>
+</div>
+<p>HercuLeS can process either C or NAC single-translation-unit programs. The first set of options deal with handling C program files. <tt class="docutils literal">Load C file</tt> allows for loading a C file for processing with a <tt class="docutils literal">.c</tt> extension. To view and optionally edit the file, the selection <tt class="docutils literal">View/edit current C file</tt> is used. To view or edit a C file, the C file should be already loaded, otherwise a relevant popup message box will appear to prompt for loading a C file.</p>
+<p>The builtin editor/viewer for C files (the same goes for NAC and configuration files) allows to save your changes but not to rename the loaded file. Fig. <a class="reference internal" href="#hercules-gui-fileviewer">hercules-gui-fileviewer</a> shows a C program file in the file editor/viewer.</p>
+<div class="figure" id="hercules-gui-fileviewer">
+<img alt="hercules-gui-fileviewer.png" src="hercules-gui-fileviewer.png" />
+<p class="caption">C file editor/viewer in the HercuLeS GUI.</p>
+</div>
+<p>In order to load NAC files, <tt class="docutils literal">Load NAC file</tt> is used. NAC files are expected to have either an <tt class="docutils literal">.nac</tt>, <tt class="docutils literal">.asm</tt>, or <tt class="docutils literal">.s</tt> extensions, since NAC (N-Address Code) programs are essentially written in a form of typed-assembly language. Upon selection, the corresponding NAC file is automatically loaded for processing.To view and optionally edit the file, the selection <tt class="docutils literal">View/edit current NAC file</tt> is used. To view or edit a NAC file, the NAC file should be already loaded, otherwise a relevant popup message box will appear to prompt for loading a NAC file.</p>
+<p>The builtin editor/viewer for NAC files is similar to the one used for editing and viewing ANSI/ISO C program files.</p>
+<p>HercuLeS configuration files allow the user to supply a full set of configuration options to HercuLeS without interfering with the GUI elements. As a result, loading a translation unit for processing and configuring HercuLeS has a much smaller turnaround time. Configuration files have the <tt class="docutils literal">.config</tt> suffix; their format is explained in the corresponding section. The option <tt class="docutils literal">Load HercuLeS configuration</tt> allows for loading a configuration file. The HercuLeS distribution comes with at least one predefined configuration file, named <tt class="docutils literal">default.config</tt>.</p>
+<p>Configuration files can be saved under different names. This is a useful feature for the user, and enables the backup and storage of an existing configuration, e.g. one setup interactively by the user. <tt class="docutils literal">Save HercuLeS configuration</tt> popups the corresponding dialog for storing the current configuration as a configuration file.</p>
+<p>To clear the loaded configuration, <tt class="docutils literal">Clear HercuLeS configuration</tt> is used. The result is that only minimal settings will be loaded, for instance no HDL simulation and logic synthesis will be enabled on this setting.</p>
+<p>To view and optionally edit the configuration file, the selection <tt class="docutils literal">View/edit HercuLeS configuration file</tt> is used. To view or edit a configuration file, the configuration file should be already loaded, otherwise a relevant popup message box will appear to prompt for loading a configuration file.</p>
+<p>The options <tt class="docutils literal">Stop</tt> and <tt class="docutils literal">Quit</tt> allow for ending the current run of HercuLeS abruptly, and to exit the environment, correspondingly. These options are equivalent to pressing <tt class="docutils literal"><span class="pre">&lt;Control-C&gt;</span></tt> and <tt class="docutils literal"><span class="pre">&lt;Control-Q&gt;</span></tt> from the keyboard during a HercuLeS session.</p>
+</div>
+<div class="section" id="general-submenu">
+<h4><a class="toc-backref" href="#id61">8.4.1.2&nbsp;&nbsp;&nbsp;General submenu</a></h4>
+<p>The second dropdown menu is <tt class="docutils literal">General</tt> which is a placeholder for options that can be applied in general to all tools that are invoked by HercuLeS. Specifically, the <tt class="docutils literal">nac2cdfg</tt> translator from NAC to Graphviz CDFGs and the <tt class="docutils literal">cdfg2hdl</tt> backend (HDL code generator from <a class="reference external" href="http://www.graphviz.org">Graphviz</a> CDFGs) are affected by the options of this dropdown menu.
+This menu is shown in Fig. <a class="reference internal" href="#hercules-gui-ddmenu-general">hercules-gui-ddmenu-general</a>.</p>
+<div class="figure" id="hercules-gui-ddmenu-general">
+<img alt="hercules-gui-ddmenu-general.png" src="hercules-gui-ddmenu-general.png" />
+<p class="caption">Dropdown menu for general options.</p>
+</div>
+<p><tt class="docutils literal">Debug output</tt> enables the emission of additional diagnostic information to the standard output during a HercuLeS script run. This includes printouts of the contents of various internal data structures of both <tt class="docutils literal">nac2cdfg</tt> and <tt class="docutils literal">cdfg2hdl</tt>.</p>
+<p><tt class="docutils literal">Quiet mode</tt> disables the emission to the standard output of both any additional diagnostic information as well as other informative messages during a HercuLeS script run. When enabling this mode, only indications of the start and end of a HercuLeS script run are generated and depicted in the read-only console.</p>
+</div>
+<div class="section" id="action-submenu">
+<h4><a class="toc-backref" href="#id62">8.4.1.3&nbsp;&nbsp;&nbsp;Action submenu</a></h4>
+<p>The third dropdown menu is <tt class="docutils literal">Action</tt> which provides several controls for generating and executing a HercuLeS run script, as well as displaying the generated result files in a custom browser, optimized for this purpose.</p>
+<p>Fig. <a class="reference internal" href="#hercules-gui-ddmenu-action">hercules-gui-ddmenu-action</a> illustrates the corresponding submenu.</p>
+<div class="figure" id="hercules-gui-ddmenu-action">
+<img alt="hercules-gui-ddmenu-action.png" src="hercules-gui-ddmenu-action.png" />
+<p class="caption">Dropdown menu for script action options.</p>
+</div>
+<p><tt class="docutils literal">Generate HLS script</tt> should be used when the user has already setup either a C or NAC program file and has loaded or interactively specified a configuration. By clicking this menubutton, the HercuLeS script for the specified application is generated. The generated script is a bash shell script which follows the naminb convention <tt class="docutils literal"><span class="pre">hercules-app.sh</span></tt>, where <tt class="docutils literal">app</tt> is the name of the C or NAC program file. <tt class="docutils literal">app</tt> should be the same to the name of the top-level procedure in the specified translation unit.</p>
+<p><tt class="docutils literal">Execute HLS script</tt> can be used for forcing the execution of the generated HercuLeS run script. All actions that are performed by the HercuLeS run script (or HLS script) are logged in real-time to the read-only console. Script execution start is indicated by the following message:</p>
+<div class="line-block">
+<div class="line"><tt class="docutils literal">### HERCULES RUN: STARTED ###</tt></div>
+</div>
+<p>while when script execution completes, the following message is generated to wrap up the contents of standard output:</p>
+<div class="line-block">
+<div class="line"><tt class="docutils literal">### HERCULES RUN: ENDED ###</tt></div>
+</div>
+<p>Following the completion of HercuLeS run script execution, <tt class="docutils literal">Display results</tt> can be used to load the results browser. The results browser provides a tree-view of each generated item (file) and allows for easy viewing of the contents of this file, when applicable in graphical form.</p>
+<p>The <tt class="docutils literal">Run HercuLeS</tt> menubutton when selected applies all the three previous actions in sequence:</p>
+<ul class="simple">
+<li>Generate HLS script</li>
+<li>Execute HLS script</li>
+<li>Display results</li>
+</ul>
+<p>No further user intervention is required for generating the script for driving the high-level synthesis process, executing the script, invoking all necessary external tools (such as the host C compiler, HDL simulators and the <a class="reference external" href="http://www.xilinx.com">Xilinx</a> ISE/XST logic synthesis tool), and loading the results browser when HLS has completed.</p>
+</div>
+<div class="section" id="configuration-submenu">
+<h4><a class="toc-backref" href="#id63">8.4.1.4&nbsp;&nbsp;&nbsp;Configuration submenu</a></h4>
+<p>The fourth dropdown menu is <tt class="docutils literal">Configuration</tt> which provides layouts with entries and choices for configuring external tools and to provide information on the host system setup.</p>
+<p>Fig. <a class="reference internal" href="#hercules-gui-ddmenu-config">hercules-gui-ddmenu-config</a> illustrates the corresponding submenu.</p>
+<div class="figure" id="hercules-gui-ddmenu-config">
+<img alt="hercules-gui-ddmenu-config.png" src="hercules-gui-ddmenu-config.png" />
+<p class="caption">Dropdown menu for environment and external tool configuration options.</p>
+</div>
+<p><tt class="docutils literal">HercuLeS environment and tools</tt> provides access to <tt class="docutils literal">Environment configuration</tt> options for the HercuLeS setup (HercuLeS installation path), host compiler options, HercuLeS frontend options and source optimizer options. Fig. <a class="reference internal" href="#hercules-gui-ddmenu-config-env">hercules-gui-ddmenu-config-env</a> shows the default environment configuration options.</p>
+<div class="figure" id="hercules-gui-ddmenu-config-env">
+<img alt="hercules-gui-ddmenu-config-env.png" src="hercules-gui-ddmenu-config-env.png" />
+<p class="caption">Layout for specifying environment configuration options.</p>
+</div>
+<p>As the host compiler, either <tt class="docutils literal">gcc</tt> or <tt class="docutils literal">llvm</tt> can be used. This choice affects the host compiler (either <a class="reference external" href="http://gcc.gnu.org">GCC</a> or <a class="reference external" href="http://llvm.org">LLVM</a>) used for test data generation and backend C code simulation. Within the same set of options, the path to the <tt class="docutils literal">/bin</tt> directory of the host compiler can be set (currently this is left unused; the host compiler is assumed to be in the system <tt class="docutils literal">PATH</tt> environmental variable). Further, a string specifying the compilation options passed to the host compiler is specified in <tt class="docutils literal">Compilation options</tt>, however this is only used with the <tt class="docutils literal">gimple2nac</tt> HercuLeS frontend, since it affects only this case.</p>
+<p><tt class="docutils literal">Frontend options</tt> provide a choice among to distinct ANSI C frontends, <tt class="docutils literal">gimple2nac</tt> which uses GIMPLE intermediate dumps generated by <tt class="docutils literal">gcc</tt> in order to extract the corresponding NAC representation of the application, and <tt class="docutils literal">irc2nac</tt> which uses a custom translator from IR-C (a low-level C subset, generated by a port of the LANCE compiler) to NAC. The <tt class="docutils literal">Frontend path</tt> entry should direct to the directory where the executable of the corresponding frontend is placed.</p>
+<p><tt class="docutils literal">Source optimizer options</tt> specifies the top-level directory of the included C-to-C source optimizer provided with the HercuLeS distribution. This optimizer is named <tt class="docutils literal">txlcopt</tt> and is nominally placed in the <tt class="docutils literal">/txlcopt</tt> subdirectory of the HercuLeS distribution.</p>
+<p>At the bottom of the <tt class="docutils literal">Environment configuration</tt> layout, several buttons are located. The <tt class="docutils literal">OK</tt> button is used to close this dialog without further changes. <tt class="docutils literal">Apply</tt> stores the current settings of the environment configuration. <tt class="docutils literal">Clear</tt> removes all user-specified settings. <tt class="docutils literal">Load default</tt> reinstantiates the predefined defaults which are specified in the <tt class="docutils literal">hercules.ini</tt> initialization file. <tt class="docutils literal">Cancel</tt> allows to cancel the current operation.</p>
+<p>This five-button configuration is used for all configuration layouts that are accessible through the <tt class="docutils literal">Configuration</tt> dropdown menu.</p>
+<p><tt class="docutils literal">Xilinx XST/ISE environment</tt> provides access to <tt class="docutils literal">Xilinx XST/ISE configuration</tt> options for the the Xilinx XST/ISE external logic synthesis tool. Fig. <a class="reference internal" href="#hercules-gui-ddmenu-config-xst">hercules-gui-ddmenu-config-xst</a> shows the default Xilinx XST/ISE configuration options.</p>
+<div class="figure" id="hercules-gui-ddmenu-config-xst">
+<img alt="hercules-gui-ddmenu-config-xst.png" src="hercules-gui-ddmenu-config-xst.png" />
+<p class="caption">Layout for specifying Xilinx XST/ISE configuration options.</p>
+</div>
+<p><tt class="docutils literal">Path to Xilinx ISE</tt> is an entry for setting the path to the <tt class="docutils literal">ISE</tt> directory of the user's Xilinx ISE/XST installation. A specific FPGA architecture and device should be specified in order to be picked up by the synthesis process. Thus, the user should specify a meaningful combination of an FPGA architecture (<tt class="docutils literal">Choose FPGA device family</tt>) and FPGA device (<tt class="docutils literal">Choose FPGA device part</tt>). The following combinations are the ones that are supported in HercuLeS v1.0.0 (2013a):</p>
+<ul class="simple">
+<li>spartan3 with xc3s200-ft256-4</li>
+<li>virtex4 with xc4vlx25-ff668-10</li>
+<li>virtex6 with xc6vlx75t-ff484-1</li>
+</ul>
+<p>The corresponding dropdown widget elements allow for the user to add other choices as well. The dropdown lists can be updated to show all entries by selecting <tt class="docutils literal">Load default</tt>. This issue appears to be as a bug in the <a class="reference external" href="http://www.satisoft.com/tcltk/gridplus2/">GRIDPLUS</a> widget set which is used for the configuration layouts.</p>
+<p><tt class="docutils literal">External tools</tt> provides access to <tt class="docutils literal">External tools configuration</tt> options for third-party external tools e.g. for image visualization. An example of a default layout for these options is shown in Fig. <a class="reference internal" href="#hercules-gui-ddmenu-config-xtools">hercules-gui-ddmenu-config-xtools</a>.</p>
+<div class="figure" id="hercules-gui-ddmenu-config-xtools">
+<img alt="hercules-gui-ddmenu-config-xtools.png" src="hercules-gui-ddmenu-config-xtools.png" />
+<p class="caption">Layout for specifying third-party tool configuration options.</p>
+</div>
+<p>Currently, these options specify the path and name of the image viewer. In addition, the path to the Graphviz distribution (which should be installed in the user's machine) as well as the name of the Graphviz processor (<tt class="docutils literal">dot</tt>) and the preferred Graphviz file viewer (one option is <tt class="docutils literal">dotty</tt>, which is bundled with all Graphviz distributions; other choices are also offered by other third parties).</p>
+<p>HercuLeS comes on Windows with a free for-commercial-use image viewer named <a class="reference external" href="http://www.nyam.pe.kr/">Imagine</a>. The proper local path to <tt class="docutils literal">Imagine</tt> is thus automatically specified. However, the user can bypass this setting by providing the details for the image viewer of preference.</p>
+</div>
+<div class="section" id="theme-submenu">
+<h4><a class="toc-backref" href="#id64">8.4.1.5&nbsp;&nbsp;&nbsp;Theme submenu</a></h4>
+<p>The fifth dropdown menu is <tt class="docutils literal">Theme</tt> which provides simple access to all available themes of the host execution platform. Fig. <a class="reference internal" href="#hercules-gui-ddmenu-theme">hercules-gui-ddmenu-theme</a> illustrates the corresponding submenu as it appears in a typical Windows XP installation using <a class="reference external" href="http://www.activestate.com/activetcl">ActiveTcl</a> 8.5.14.</p>
+<div class="figure" id="hercules-gui-ddmenu-theme">
+<img alt="hercules-gui-ddmenu-theme.png" src="hercules-gui-ddmenu-theme.png" />
+<p class="caption">Dropdown menu for changing the GUI theme.</p>
+</div>
+<p>In this example, the following themes are accessible:</p>
+<ul class="simple">
+<li><tt class="docutils literal">xpnative</tt></li>
+<li><tt class="docutils literal">clam</tt></li>
+<li><tt class="docutils literal">alt</tt></li>
+<li><tt class="docutils literal">classic</tt></li>
+<li><tt class="docutils literal">default</tt></li>
+<li><tt class="docutils literal">winnative</tt>.</li>
+</ul>
+<p>For a Linux installation, the available set of themes could be possibly much different. In all cases, all available themes will be accessible through this dropdown submenu.</p>
+<p>The following set of figures illustrate the appearance of the basic GUI screen using the different themes on Windows.</p>
+<div class="figure" id="hercules-gui-basicscreen-xpnative">
+<img alt="hercules-gui-basicscreen-xpnative.png" src="hercules-gui-basicscreen-xpnative.png" />
+<p class="caption">Basic GUI screen using the <tt class="docutils literal">xpnative</tt> theme on Windows.</p>
+</div>
+<div class="figure" id="hercules-gui-basicscreen-clam">
+<img alt="hercules-gui-basicscreen-clam.png" src="hercules-gui-basicscreen-clam.png" />
+<p class="caption">Basic GUI screen using the <tt class="docutils literal">clam</tt> theme on Windows.</p>
+</div>
+<div class="figure" id="hercules-gui-basicscreen-alt">
+<img alt="hercules-gui-basicscreen-alt.png" src="hercules-gui-basicscreen-alt.png" />
+<p class="caption">Basic GUI screen using the <tt class="docutils literal">alt</tt> theme on Windows.</p>
+</div>
+<div class="figure" id="hercules-gui-basicscreen-classic">
+<img alt="hercules-gui-basicscreen-classic.png" src="hercules-gui-basicscreen-classic.png" />
+<p class="caption">Basic GUI screen using the <tt class="docutils literal">classic</tt> theme on Windows.</p>
+</div>
+<div class="figure" id="hercules-gui-basicscreen-default">
+<img alt="hercules-gui-basicscreen-default.png" src="hercules-gui-basicscreen-default.png" />
+<p class="caption">Basic GUI screen using the <tt class="docutils literal">default</tt> theme on Windows.</p>
+</div>
+<div class="figure" id="hercules-gui-basicscreen-winnative">
+<img alt="hercules-gui-basicscreen-winnative.png" src="hercules-gui-basicscreen-winnative.png" />
+<p class="caption">Basic GUI screen using the <tt class="docutils literal">winnative</tt> theme on Windows.</p>
+</div>
+</div>
+<div class="section" id="help-submenu">
+<h4><a class="toc-backref" href="#id65">8.4.1.6&nbsp;&nbsp;&nbsp;Help submenu</a></h4>
+<p>The sixth and last dropdown menu is <tt class="docutils literal">Help</tt> from which the PDF and HTML version of the HercuLeS reference manual can be accessed, by pressing the <tt class="docutils literal">HTML manual</tt> and <tt class="docutils literal">PDF manual</tt> menubuttons respectively. When invoked, an external HTML browser and PDF viewer (based on the default settings of the host system) will be called for viewing. When <tt class="docutils literal">About</tt> is pressed the following message is generated, for version 1.0.0 (2013a) of the HercuLeS distribution.</p>
+<pre class="literal-block">
+HercuLeS
+Ajax Compilers &lt;info&#64;ajaxcompilers.com&gt;
+Developed by Nikolaos Kavvadias
+&lt;nkavvadias&#64;ajaxcompilers.com&gt;
+Version 1.0.0 (29-Jun-2013)}
+</pre>
+<p>Fig. <a class="reference internal" href="#hercules-gui-ddmenu-help">hercules-gui-ddmenu-help</a> illustrates the corresponding submenu.</p>
+<div class="figure" id="hercules-gui-ddmenu-help">
+<img alt="hercules-gui-ddmenu-help.png" src="hercules-gui-ddmenu-help.png" />
+<p class="caption">Dropdown menu for accessing help and about information.</p>
+</div>
+</div>
+</div>
+<div class="section" id="framed-controls">
+<h3><a class="toc-backref" href="#id66">8.4.2&nbsp;&nbsp;&nbsp;Framed controls</a></h3>
+<p>A set of basic controls are always visible as part of the basic screen layout of the HercuLeS GUI. Fig. <a class="reference internal" href="#hercules-gui-framedcontrols">hercules-gui-framedcontrols</a> illustrates all the available basic framed controls.</p>
+<div class="figure" id="hercules-gui-framedcontrols">
+<img alt="hercules-gui-framedcontrols.png" src="hercules-gui-framedcontrols.png" />
+<p class="caption">Controls always visible in the basic screen layout.</p>
+</div>
+<div class="section" id="simulator-control">
+<h4><a class="toc-backref" href="#id67">8.4.2.1&nbsp;&nbsp;&nbsp;Simulator control</a></h4>
+<p>The <tt class="docutils literal">Simulator</tt> control provides a choice between different HDL simulators. Currently, only VHDL simulation is needed since only VHDL RTL code is generated as a result of the high-level synthesis process. The available choices for simulators are <tt class="docutils literal">GHDL</tt> (for the <a class="reference external" href="http://ghdl.free.fr">GHDL</a> simulator) and <tt class="docutils literal">Modelsim</tt> (for Mentor <a class="reference external" href="http://www.model.com">Modelsim</a>). It is expected that both of these simulators (or at least the one that is intended for use) is already installed on the host system and its executables directory is declared within the <tt class="docutils literal">PATH</tt> environmental variable.</p>
+</div>
+<div class="section" id="output-waveform-format-control">
+<h4><a class="toc-backref" href="#id68">8.4.2.2&nbsp;&nbsp;&nbsp;Output waveform format control</a></h4>
+<p>The <tt class="docutils literal">Output waveform format</tt> control allows to choose between three choices for generating or not waveform data from the HDL simulation:</p>
+<ul class="simple">
+<li><tt class="docutils literal">None</tt>: do not generate any kind of waveform data</li>
+<li><tt class="docutils literal">VCD</tt>: generate waveform as Value Change Dump (VCD)</li>
+<li><tt class="docutils literal">GHW</tt>: generate GHDL Waveform (GHW) data</li>
+</ul>
+<p><tt class="docutils literal">VCD</tt> and <tt class="docutils literal">GHW</tt> are both supported by recent versions of the <a class="reference external" href="http://sourceforge.net/projects/gtkwave">GTKwave</a> waveform viewer.</p>
+</div>
+<div class="section" id="simulation-and-synthesis-options-control">
+<h4><a class="toc-backref" href="#id69">8.4.2.3&nbsp;&nbsp;&nbsp;Simulation and synthesis options control</a></h4>
+<p>The <tt class="docutils literal">Simulation and synthesis options</tt> control is a set of checkbuttons to enable or disable the generation of corresponding entries in the HercuLeS run script for the following:</p>
+<ul class="simple">
+<li>running a C simulation using the C backend files generated by a NAC-to-C decompilation process (<tt class="docutils literal">C simulation</tt>)</li>
+<li>running an HDL simulation using either specified simulator (<tt class="docutils literal">VHDL simulation</tt>)</li>
+<li>invoke the Xilinx ISE/XST logic synthesis tool (<tt class="docutils literal">Logic synthesis</tt>)</li>
+</ul>
+</div>
+<div class="section" id="miscellaneous-options">
+<h4><a class="toc-backref" href="#id70">8.4.2.4&nbsp;&nbsp;&nbsp;Miscellaneous options</a></h4>
+<p>The <tt class="docutils literal">Miscellaneous options</tt> control groups all remaining controls. Currently only <tt class="docutils literal">Generate test data</tt> is available. When enabled, this checkbutton enables using the host C compiler for generating reference test input/output data for the application under processing.</p>
+</div>
+</div>
+<div class="section" id="notebook-controls">
+<h3><a class="toc-backref" href="#id71">8.4.3&nbsp;&nbsp;&nbsp;Notebook controls</a></h3>
+<p>In order to control in detail the available high-level synthesis settings, a notebook (currently consisting of four tabs) is always accessible from the basic screen layout of the HercuLeS GUI.</p>
+<p>These tabs organize <tt class="docutils literal">General</tt>, <tt class="docutils literal">Optimizations</tt>, <tt class="docutils literal">Operation scheduling</tt> and <tt class="docutils literal">Code generation</tt> controls into corresponding categories.</p>
+<div class="section" id="general-tab">
+<h4><a class="toc-backref" href="#id72">8.4.3.1&nbsp;&nbsp;&nbsp;General tab</a></h4>
+<p>From left to right, the first notebook tab is <tt class="docutils literal">General</tt> which covers general file emission options. It is shown in Fig. <a class="reference internal" href="#hercules-gui-nb-general">hercules-gui-nb-general</a> and consists of three option groups.</p>
+<div class="figure" id="hercules-gui-nb-general">
+<img alt="hercules-gui-nb-general.png" src="hercules-gui-nb-general.png" />
+<p class="caption">Notebook tab for general high-level synthesis settings.</p>
+</div>
+<p>The first option group, <tt class="docutils literal">Generate intermediate NAC files</tt>, can be used to enable intermediate dumps after various stages of the HLS compilation process. Currently on printing intermediate NAC files for each procedure following register allocation can be specified.</p>
+<p>The second option group, <tt class="docutils literal">Graphical information</tt>, can be used for enabling and disabling of the emission of graphical information at the <tt class="docutils literal">CDFG</tt> (Control-Data Flow Graph), <tt class="docutils literal">CFG</tt> (Control-Flow Graph) and <tt class="docutils literal">Call graph</tt> level. A CDFG illustates control and data dependencies between the statements in a NAC procedure. A CFG illustrates only the control dependencies at basic block granularity in a procedure. A call graph depicts the call graph structure of the entire translation unit.</p>
+<p>The third option group, <tt class="docutils literal"><span class="pre">Floating-point</span> arithmetic</tt>, provides control settings for the support of floating-point arithmetic (<tt class="docutils literal"><span class="pre">Floating-point</span> arithmetic support</tt>). Another checkbutton, <tt class="docutils literal"><span class="pre">Floating-point</span> builtin algorithmic functions</tt> enables the rewriting of NAC programs so that transcendental standard C library functions (such as calls to <tt class="docutils literal">sin()</tt> and <tt class="docutils literal">atan()</tt>) to be replaced by non-synthesizable implementations provided by proposed extensions to the VHDL-2008 floating-point arithmetic package.</p>
+</div>
+<div class="section" id="optimizations-tab">
+<h4><a class="toc-backref" href="#id73">8.4.3.2&nbsp;&nbsp;&nbsp;Optimizations tab</a></h4>
+<p>The second notebook tab is <tt class="docutils literal">Optimizations</tt> which covers optimization-specific options. All depicted optimizations regard external optimizers that are bundled within the HercuLeS distributions for transforming C, NAC, or Graphviz representations. The notebook view is shown in Fig. <a class="reference internal" href="#hercules-gui-nb-opt">hercules-gui-nb-opt</a> and consists of three option groups.</p>
+<div class="figure" id="hercules-gui-nb-opt">
+<img alt="hercules-gui-nb-opt.png" src="hercules-gui-nb-opt.png" />
+<p class="caption">Notebook tab for optimization settings.</p>
+</div>
+<p>This tab basically groups a set of checkbuttons for enabling or disabling specific optimizations. The first checkbutton, <tt class="docutils literal">Enable optimizations</tt>, enables or disables the entire group of the following checkbuttons. The supported optimizations are as follows:</p>
+<ul class="simple">
+<li>Source-to-source optimizer:
+The <tt class="docutils literal">txlcopt</tt> optimizer which is a collection of C-to-C transformation passes developed in the TXL functional programming language. <tt class="docutils literal">txlcopt</tt> supports arithmetic-oriented, loop-based and generic restructuring transformations.</li>
+<li>Simple NAC-level optimizations:
+TXL transformations written for NAC programs.</li>
+<li>Text-based peephole optimizations
+A collection of optimizations on NAC code applied with the help of the <tt class="docutils literal">copt</tt> text-based peephole optimizer.</li>
+<li>NAC-level if-conversion:
+If conversion transformation applied on NAC programs. This transformation cannot be guaranteed to always produce valid code since it is purely syntax-driven and should only be used with care.</li>
+<li>Single constant multiplication optimization:
+Automatic replacement of single constant multiplications by optimized multiplierless routines at the NAC level.</li>
+<li>Single constant division optimization:
+Automatic replacement of single constant divisions by optimized divisionless routines at the NAC level.</li>
+<li>Graph-based restructurings:
+A set of <tt class="docutils literal">gvpr</tt> transformations for use on Graphviz graphs. <tt class="docutils literal">gvpr</tt> provides a scripting language interface for manipulating graphs expressed in the Graphviz language similar to <tt class="docutils literal">awk</tt>.</li>
+<li>Automatic library IP integration:
+This option enables the automatic replacement the uses of specific VHDL operators (e.g. variable multiplications and divisions) by optimized library IP. HercuLeS takes care of all the required integration and interconnection effort associated with this task.</li>
+</ul>
+</div>
+<div class="section" id="operation-scheduling-tab">
+<h4><a class="toc-backref" href="#id74">8.4.3.3&nbsp;&nbsp;&nbsp;Operation scheduling tab</a></h4>
+<p>The third notebook tab is <tt class="docutils literal">Operation scheduling</tt> which covers operation scheduling and memory synthesis options. Overall, this tab is dedicated for the setting of options that control aspects of the generated HDL architectures. A typical tab view is shown in Fig. <a class="reference internal" href="#hercules-gui-nb-arch">hercules-gui-nb-arch</a> and consists of two option groups.</p>
+<div class="figure" id="hercules-gui-nb-arch">
+<img alt="hercules-gui-nb-arch.png" src="hercules-gui-nb-arch.png" />
+<p class="caption">Notebook tab for architecture-specific high-level synthesis settings.</p>
+</div>
+<p>The first option group, <tt class="docutils literal">Operation scheduling method</tt>, can be used for selecting one of the provided schedulers for the task of operation scheduling. Currently <tt class="docutils literal">Sequential</tt> and <tt class="docutils literal">ASAP</tt> scheduling are supported. <tt class="docutils literal">Sequential</tt> schedules one operation per FSMD state. <tt class="docutils literal">ASAP</tt> is a form of unconstrained scheduling and allows for mutually-independent operations to be bundled within the same FSMD control step (state).</p>
+<p>The <tt class="docutils literal">Operation chaining</tt> checkbutton enables a heuristic that allows to collapse multiple dependent operations within the same FSMD control step. In some cases, this technique leads to overcontention of specific FSMD states and subsequently to lower performance (e.g. reduced clock period due to larger combinational path). <tt class="docutils literal">Basic block partitioning</tt> contributes a heuristic so that existing basic blocks are split into smaller ones in order to alleviate for this problem.</p>
+<p>The second option group is named <tt class="docutils literal">Memory synthesis options</tt> and is used for controlling the generation of RAM description that support automatic block RAM inference. This mandates the use of synchronous read descriptions. Xilinx block RAM support different read schemes. The corresponding combobox, <tt class="docutils literal">Block RAM generation</tt> enables the user to select among two different schemes, <tt class="docutils literal"><span class="pre">Read-first</span></tt> and <tt class="docutils literal"><span class="pre">Read-through</span></tt>. Both schemes are explained in the Xilinx <a class="reference external" href="http://www.xilinx.com/support/documentation/application_notes/xapp463.pdf">XAPP463</a> application note on block RAM usage.</p>
+</div>
+<div class="section" id="code-generation-tab">
+<h4><a class="toc-backref" href="#id75">8.4.3.4&nbsp;&nbsp;&nbsp;Code generation tab</a></h4>
+<p>The fourth and last notebook tab is <tt class="docutils literal">Code generation</tt> which covers options that affect code generation in HercuLeS. A view of this tab is shown in Fig. <a class="reference internal" href="#hercules-gui-nb-cgen">hercules-gui-nb-cgen</a> and consists of three option groups regarding backend code generation, SSA (Static Single Assignment) and register allocation.</p>
+<div class="figure" id="hercules-gui-nb-cgen">
+<img alt="hercules-gui-nb-cgen.png" src="hercules-gui-nb-cgen.png" />
+<p class="caption">Notebook tab for code generation settings.</p>
+</div>
+<p>The first option group, <tt class="docutils literal">NAC, C and VHDL code generation</tt>, provides checkbuttons for controlling the emission of NAC, backend ANSI C and RTL VHDL code. NAC and ANSI C backend code are generated by the <tt class="docutils literal">nac2cdfg</tt> tool, while RTL VHDL is generated by the graph-based <tt class="docutils literal">cdfg2hdl</tt> backend tool of HercuLeS.</p>
+<p>This is followed by <tt class="docutils literal">SSA construction options</tt>, a control set for fine-tuning the generated intermediate representation form by <tt class="docutils literal">nac2cdfg</tt>. Generating SSA form is mandatory for non-sequential operation scheduling like the <tt class="docutils literal">ASAP</tt> scheme. Apart from the <tt class="docutils literal">Enable SSA construction</tt> checkbutton, a combobox permits to choose among two different methods for IR construction, classic minimal SSA which can be generated by using the <tt class="docutils literal"><span class="pre">Aycock-Horspool</span></tt> technique and <tt class="docutils literal">Pseudo SSA</tt> which is a form of intrablock variable numbering. The latter is much faster than the former, however not a true SSA scheme, since the single definition point property of SSA form is not sustained at interblock scope. Another checkbutton, <tt class="docutils literal">Hardware implementation of PHI functions</tt> allows for a direct mapping of <a class="reference external" href="http://en.wikipedia.org/wiki/Static_single_assignment_form">SSA</a> form (which involves so-called PHI functions which are join points for variable definitions from different control paths) to hardware. The default choice is to first convert SSA form out-of-SSA. In this case, PHI functions are removed and move operations must be placed to construct all necessary variable copies.</p>
+<p><tt class="docutils literal">Register allocation options</tt> is a set of controls for setting whether register allocation is to be applied. When register allocation is disabled, simply its temporary variable is translated to a hardware register. To perform register allocation the <tt class="docutils literal">Enable register allocation</tt> checkbutton must be selected. Currently only linear-scan register allocation (<tt class="docutils literal">Linear scan</tt>) can be selected from the corresponding register allocation method combobox.</p>
+</div>
+</div>
+<div class="section" id="action-buttons">
+<h3><a class="toc-backref" href="#id76">8.4.4&nbsp;&nbsp;&nbsp;Action buttons</a></h3>
+<p>A set of five action buttons, <tt class="docutils literal">Run HercuLeS</tt>, <tt class="docutils literal">Results browser</tt>, <tt class="docutils literal">Clear generated files</tt>, <tt class="docutils literal">Clear console</tt> (on the left), and <tt class="docutils literal">Exit</tt> (on the right) is visible near the bottom of the basic screen layout. Fig. <a class="reference internal" href="#hercules-gui-basicscreen-actions">hercules-gui-basicscreen-actions</a> illustrates the corresponding controls.</p>
+<div class="figure" id="hercules-gui-basicscreen-actions">
+<img alt="hercules-gui-basicscreen-actions.png" src="hercules-gui-basicscreen-actions.png" />
+<p class="caption">Action buttons situated near the bottom of the basic screen layout.</p>
+</div>
+<p>The actions performed by <tt class="docutils literal">Run HercuLeS</tt> and <tt class="docutils literal">Results browser</tt> have been already described. <tt class="docutils literal">Clear generated files</tt> deletes all generated result files from the working directory of the loaded C or NAC program file. <tt class="docutils literal">Clear console</tt> deletes all  information that has been emitted in the read-only console. <tt class="docutils literal">Exit</tt> forces the HercuLeS GUI to close. It should be noted that <tt class="docutils literal">Results browser</tt>, <tt class="docutils literal">Clear generated files</tt> and <tt class="docutils literal">Clear console</tt> are only enabled following the execution of a HercuLeS script.</p>
+</div>
+<div class="section" id="results-browser">
+<h3><a class="toc-backref" href="#id77">8.4.5&nbsp;&nbsp;&nbsp;Results browser</a></h3>
+<p>The HercuLeS GUI comes with a results browser which is invoked after the execution of a HercuLeS run script has completed. Fig. <a class="reference internal" href="#hercules-gui-resbrowser">hercules-gui-resbrowser</a> illustrates an example view of the results browser layout.</p>
+<div class="figure" id="hercules-gui-resbrowser">
+<img alt="hercules-gui-resbrowser.png" src="hercules-gui-resbrowser.png" />
+<p class="caption">The HercuLeS GUI results browser.</p>
+</div>
+<p>On the left side, the results browser uses a tree viewing GUI element. This tree viewer loads a file named <tt class="docutils literal">hlsrestree.tcl</tt> from the application's current (working) directory. This file provides an automatically-generated GRIDPLUS tree widget to enable browsing of generated files from the high-level synthesis process.</p>
+<p>An example <tt class="docutils literal">hlsrestree.tcl</tt> automatically generated for a Fibonacci series (<tt class="docutils literal">fibo</tt>) computation application is shown below:</p>
+<pre class="literal-block">
+gpset .treebrowser.hlstree {
+  {/PRGM + &quot;Program: fibo&quot; :folder_blue-22}
+  {/PRGM/RPTS + &quot;Reports&quot; :folder_graph_white-22}
+  {/PRGM/RPTS/RESANSIC &quot;ANSI C simulation results&quot; :txt-22}
+  {/PRGM/RPTS/RESVHDL &quot;VHDL simulation results&quot; :txt-22}
+  {/PRGM/RPTS/RESXST &quot;XST/ISE synthesis report&quot; :txt-22}
+  {/PRGM/PROC0 + &quot;Procedure: fibo&quot; :folder_grey-22}
+  {/PRGM/PROC0/CDFG + &quot;CDFG: fibo&quot; :folder_red-22}
+  {/PRGM/PROC0/CDFG/DOT &quot;Graphviz dot&quot; :dot-22}
+  {/PRGM/PROC0/CDFG/PNG &quot;PNG image&quot; :png-22}
+  {/PRGM/PROC0/CFG + &quot;CFG: fibo&quot; :folder_orange-22}
+  {/PRGM/PROC0/CFG/DOT &quot;Graphviz dot&quot; :dot-22}
+  {/PRGM/PROC0/CFG/PNG &quot;PNG image&quot; :png-22}
+  {/PRGM/PROC0/NAC + &quot;NAC representation&quot; :folder_green-22}
+  {/PRGM/PROC0/NAC/FINAL &quot;Optimized NAC : fibo.nac&quot; :nac-22}
+  {/PRGM/PROC0/NAC/POSTFE &quot;NAC: fibo_ssa.nac&quot; :nac-22}
+  {/PRGM/PROC0/ANSIC + &quot;ANSI C representation&quot; :folder_olive-22}
+  {/PRGM/PROC0/ANSIC/FINAL &quot;C backend code for fibo: fibo_nac.c&quot; :ansic-22}
+  {/PRGM/PROC0/VHDL + &quot;Generated VHDL files for fibo&quot; :folder_magenta-22}
+  {/PRGM/PROC0/VHDL/RTL &quot;RTL design for fibo&quot; :vhdl-22}
+  {/PRGM/PROC0/VHDL/CDTPKG &quot;Compound data structures package for fibo&quot; :vhdl-22}
+  {/PRGM/CG + &quot;Call graph: fibo&quot; :folder_yellow-22}
+  {/PRGM/CG/DOT &quot;Graphviz dot&quot; :dot-22}
+  {/PRGM/CG/PNG &quot;PNG image&quot; :png-22}
+  {/PRGM/GLOBAL + &quot;Global miscellaneous files for fibo&quot; :folder_white-22}
+  {/PRGM/GLOBAL/HERCSH &quot;Generated HercuLeS bash script for fibo&quot; :bash-22}
+  {/PRGM/GLOBAL/PROCNMS &quot;Procedure names in fibo&quot; :txt-22}
+  {/PRGM/GLOBAL/BUILTINS &quot;Black box procedures in fibo&quot; :txt-22}
+  {/PRGM/GLOBAL/TESTDATA &quot;Reference I/O data for fibo&quot; :txt-22}
+  {/PRGM/GLOBAL/MAINC &quot;C driver code for fibo: main.c&quot; :ansic-22}
+  {/PRGM/GLOBAL/MAINH &quot;C header code for fibo: main.h&quot; :ansic_header-22}
+  {/PRGM/GLOBAL/MK &quot;Makefile for builting C backend code: ansic.mk&quot; :makefile-22}
+  {/PRGM/GLOBAL/RSIMDO &quot;.do script for VHDL simulation using Modelsim&quot; :txt-22}
+  {/PRGM/GLOBAL/RSIMSH &quot;Bash script for running the VHDL simulation&quot; :bash-22}
+  {/PRGM/GLOBAL/XSTSH &quot;Bash script for running logic synthesis with Xilinx XST/ISE&quot; :bash-22}
+  {/PRGM/VHDL + &quot;Global VHDL files for fibo&quot; :folder_cyan-22}
+  {/PRGM/VHDL/PKG &quot;Global package for fibo&quot; :vhdl-22}
+  {/PRGM/VHDL/TB &quot;Testbench for fibo&quot; :vhdl-22}
+}
+</pre>
+<p>On the right side, the user can view either a textual or a graphical representation (the latter when appropriate) of the requested information. Currently, the <tt class="docutils literal">Graphical view</tt> and <tt class="docutils literal">Statistics</tt> views are left unused. It should be noted that when requesting a PNG visualization of a graph (e.g. a CDFG, CFG or call graph), an external image viewer is accessed, the name of and the path to which can be defined via means of the initialization file or the external tools configuration layout.</p>
+<p>The following table summarizes all automatically generated files that are accessible from the results browser environment. The name of the current application is <tt class="docutils literal">app</tt>.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="34%" />
+<col width="66%" />
+</colgroup>
+<tbody valign="top">
+<tr><td>Path to tree widget</td>
+<td>Description</td>
+</tr>
+<tr><td>/PRGM</td>
+<td>Top-level folder for <tt class="docutils literal">app</tt>.</td>
+</tr>
+<tr><td>/PRGM/REPORTS</td>
+<td>Reports folder.</td>
+</tr>
+<tr><td><p class="first">/PRGM/REPORTS/DEBUG</p>
+<p>/PRGM/REPORTS/RESANSIC</p>
+<p>/PRGM/REPORTS/RESVHDL</p>
+<p class="last">/PRGM/REPORTS/RESXST</p>
+</td>
+<td><p class="first">Debug dump.</p>
+<p>ANSI C simulation results.</p>
+<p>VHDL simulation results.</p>
+<p class="last">XST/ISE synthesis report.</p>
+</td>
+</tr>
+<tr><td>/PRGM/PROC$i</td>
+<td>Top-level folder for procedure <tt class="docutils literal">proc</tt>.</td>
+</tr>
+<tr><td>/PRGM/PROC$i/CDFG</td>
+<td>CDFG folder for <tt class="docutils literal">proc</tt>.</td>
+</tr>
+<tr><td><p class="first">/PRGM/PROC$i/CDFG/DOT</p>
+<p class="last">/PRGM/PROC$i/CDFG/PNG</p>
+</td>
+<td><p class="first">Graphviz dot representation for the CDFG.</p>
+<p class="last">PNG image visualization of the Graphviz CDFG.</p>
+</td>
+</tr>
+<tr><td>/PRGM/PROC$i/CFG</td>
+<td>CFG folder for <tt class="docutils literal">proc</tt>.</td>
+</tr>
+<tr><td><p class="first">/PRGM/PROC$i/CFG/DOT</p>
+<p class="last">/PRGM/PROC$i/CFG/PNG</p>
+</td>
+<td><p class="first">Graphviz dot representation for the CFG.</p>
+<p class="last">PNG image visualization for the CFG.</p>
+</td>
+</tr>
+<tr><td>/PRGM/PROC$i/NAC</td>
+<td>Folder for the NAC representation of <tt class="docutils literal">proc</tt>.</td>
+</tr>
+<tr><td><p class="first">/PRGM/PROC$i/NAC/FINAL</p>
+<p>/PRGM/PROC$i/NAC/POSTFE</p>
+<p class="last">/PRGM/PROC$i/NAC/RA</p>
+</td>
+<td><p class="first">Optimized NAC for <tt class="docutils literal">proc</tt>.</p>
+<p>NAC following frontend processing for <tt class="docutils literal">proc</tt>.</p>
+<p class="last">NAC following register allocation for <tt class="docutils literal">proc</tt>.</p>
+</td>
+</tr>
+<tr><td>/PRGM/PROC$i/ANSIC</td>
+<td>Folder for the ANSI C representation of <tt class="docutils literal">proc</tt>.</td>
+</tr>
+<tr><td>/PRGM/PROC$i/ANSIC/FINAL</td>
+<td>C backend code for <tt class="docutils literal">proc</tt>.</td>
+</tr>
+<tr><td>/PRGM/PROC$i/VHDL</td>
+<td>Folder for generated VHDL files of <tt class="docutils literal">proc</tt>.</td>
+</tr>
+<tr><td><p class="first">/PRGM/PROC$i/VHDL/RTL</p>
+<p class="last">/PRGM/PROC$i/VHDL/CDTPKG</p>
+</td>
+<td><p class="first">RTL design for <tt class="docutils literal">proc</tt>.</p>
+<p class="last">Compound data structures package for <tt class="docutils literal">proc</tt>.</p>
+</td>
+</tr>
+<tr><td>/PRGM/CG</td>
+<td>Call graph for <tt class="docutils literal">app</tt>.</td>
+</tr>
+<tr><td><p class="first">/PRGM/CG/DOT</p>
+<p class="last">/PRGM/CG/PNG</p>
+</td>
+<td><p class="first">Graphviz dot representation for the call graph.</p>
+<p class="last">PNG image visualization for the call graph.</p>
+</td>
+</tr>
+<tr><td>/PRGM/GLOBAL</td>
+<td>Global miscellaneous files for <tt class="docutils literal">app</tt>.</td>
+</tr>
+<tr><td><p class="first">/PRGM/GLOBAL/HERCSH</p>
+<p>/PRGM/GLOBAL/PROCNMS</p>
+<p>/PRGM/GLOBAL/BUILTINS</p>
+<p>/PRGM/GLOBAL/TESTDATA</p>
+<p>/PRGM/GLOBAL/MAINC</p>
+<p>/PRGM/GLOBAL/MAINH</p>
+<p>/PRGM/GLOBAL/MK</p>
+<p>/PRGM/GLOBAL/RSIMMK</p>
+<p>/PRGM/GLOBAL/RSIMDO</p>
+<p>/PRGM/GLOBAL/RSIMSH</p>
+<p class="last">/PRGM/GLOBAL/XSTSH</p>
+</td>
+<td><p class="first">Generated HercuLeS bash script for <tt class="docutils literal">app</tt>.</p>
+<p>Procedure names in <tt class="docutils literal">app</tt>.</p>
+<p>Black box procedures in <tt class="docutils literal">app</tt>.</p>
+<p>Reference I/O data for <tt class="docutils literal">app</tt>.</p>
+<p>C driver code for <tt class="docutils literal">app</tt>.</p>
+<p>C header code for <tt class="docutils literal">app</tt>.</p>
+<p>Makefile for builting C backend code.</p>
+<p>Makefile for VHDL simulation using GHDL.</p>
+<p><tt class="docutils literal">.do</tt> script for VHDL simulation using Modelsim.</p>
+<p>Bash script for running the VHDL simulation.</p>
+<p class="last">Bash script for running logic synthesis.</p>
+</td>
+</tr>
+<tr><td>/PRGM/VHDL</td>
+<td>Folder for global VHDL files of <tt class="docutils literal">app</tt>.</td>
+</tr>
+<tr><td><p class="first">/PRGM/VHDL/PKG</p>
+<p class="last">/PRGM/VHDL/TB</p>
+</td>
+<td><p class="first">Global package for <tt class="docutils literal">app</tt>.</p>
+<p class="last">Testbench for <tt class="docutils literal">app</tt>.</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="configuration-files">
+<h2><a class="toc-backref" href="#id78">8.5&nbsp;&nbsp;&nbsp;Configuration files</a></h2>
+<p>HercuLeS supports user-defined configuration files for fast loading of high-level synthesis settings. A configuration file is expected to have the <tt class="docutils literal">.config</tt> suffix. The supplied options are organized into four distinct categories, <tt class="docutils literal">common</tt> (options that are common across all tools), <tt class="docutils literal">nac2cdfg</tt> (passed to the HercuLeS <tt class="docutils literal">nac2cdfg</tt> tool), <tt class="docutils literal">cdfg2hdl</tt> (passed to the HercuLeS <tt class="docutils literal">cdfg2hdl</tt> tool) and <tt class="docutils literal">more</tt> where all miscellaneous options are defined. For the first three categories, these options represent command-line switches. The last category, <tt class="docutils literal">more</tt>, defines options that are intentionally similar to command-line switches but are however passed to the HercuLeS GUI directly for controlling HercuLeS run script generation.</p>
+<p>The general structure of a configuration file is shown below:</p>
+<pre class="literal-block">
+start-common
+&lt;options&gt;
+end-common
+
+start-nac2cdfg
+&lt;options&gt;
+end-nac2cdfg
+
+start-cdfg2hdl
+&lt;options&gt;
+end-cdfg2hdl
+
+start-more
+&lt;options&gt;
+end-more
+</pre>
+<p>An example of a typical configuration file invoking C backend file simulation, VHDL simulation and XST/ISE synthesis is shown below:</p>
+<pre class="literal-block">
+start-common
+end-common
+
+start-nac2cdfg
+-force-data-types
+-ssa
+-pseudo-ssa
+-emit-nac
+-emit-ansic
+-emit-cfg
+-emit-cg
+end-nac2cdfg
+
+start-cdfg2hdl
+-sched-asap
+-ieee
+-vhd2vl
+-mpint
+-mti
+end-cdfg2hdl
+
+start-more
+-optimizations
+-nacsopt
+-nacpeep
+-chain
+-rsim
+-csim
+-datagen
+-synth
+-emit-cdfg
+end-more
+</pre>
+<p>The list of command-line switches that are passed to the HercuLeS GUI is as follows:</p>
+<dl class="docutils">
+<dt>-optimizations:</dt>
+<dd>Enable optimizations.</dd>
+<dt>-srcopt:</dt>
+<dd>Source-to-source optimizer.</dd>
+<dt>-nacsopt:</dt>
+<dd>Simple NAC-level optimizations.</dd>
+<dt>-nacpeep:</dt>
+<dd>Text-based peephole optimizations.</dd>
+<dt>-txlpeep:</dt>
+<dd>TXL-based peephole optimizations.</dd>
+<dt>-nacifconv:</dt>
+<dd>NAC-level if-conversion.</dd>
+<dt>-kmul:</dt>
+<dd>Single constant multiplication optimization.</dd>
+<dt>-kdiv:</dt>
+<dd>Single constant division optimization.</dd>
+<dt>-gvpropt:</dt>
+<dd>Graph-based restructurings applied on Graphviz CDFG graphs.</dd>
+<dt>-ipopt:</dt>
+<dd>Automatic library IP integration.</dd>
+<dt>-bbpart:</dt>
+<dd>Enable basic block partitioning.</dd>
+<dt>-emit-vhdl:</dt>
+<dd>Emit RTL VHDL code.</dd>
+<dt>-xst-script:</dt>
+<dd>Generate a script for driving Xilinx XST/ISE logic synthesis.</dd>
+<dt>-rsim:</dt>
+<dd>Enable VHDL simulation.</dd>
+<dt>-csim:</dt>
+<dd>Enable backend C code simulation.</dd>
+<dt>-datagen:</dt>
+<dd>Generate reference input/output data for the loaded application.</dd>
+<dt>-emit-cdfg:</dt>
+<dd>Generate Graphviz CDFGs and their PNG visualizations for the application.</dd>
+<dt>-synth:</dt>
+<dd>Enable logic synthesis.</dd>
+</dl>
+</div>
+<div class="section" id="initialization-file">
+<h2><a class="toc-backref" href="#id79">8.6&nbsp;&nbsp;&nbsp;Initialization file</a></h2>
+<p>During startup, the HercuLeS GUI automatically loads a predefined initialization file, named <tt class="docutils literal">hercules.ini</tt>. This <tt class="docutils literal">.ini</tt> file assigns all required environmental and internal variables for the proper setup of HercuLeS.</p>
+<p>The initialization file is an ASCII text file comprising of a set of entries of the following form:</p>
+<div class="line-block">
+<div class="line"><tt class="docutils literal"><span class="pre">variable=&quot;rhs-string&quot;</span></tt></div>
+</div>
+<p>where <tt class="docutils literal">variable</tt> is the name of the environmental or internal use variable to be set and <tt class="docutils literal"><span class="pre">rhs-string</span></tt> is the string value that is assigned to it.</p>
+<p>The following table provides a brief summary of the variables that can be defined in initialization files.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="27%" />
+<col width="73%" />
+</colgroup>
+<tbody valign="top">
+<tr><td>Name</td>
+<td>Description</td>
+</tr>
+<tr><td>hlstop</td>
+<td>Top-level installation directory for HercuLeS.</td>
+</tr>
+<tr><td>compiler_name</td>
+<td>Name of the host C compiler.</td>
+</tr>
+<tr><td>compiler_path</td>
+<td>Path to the executables' directory of the host C
+compiler.</td>
+</tr>
+<tr><td>compiler_opts</td>
+<td>Command-line options to pass to the host C compiler for
+generating GIMPLE dumps (only for <tt class="docutils literal">gcc</tt> and
+<tt class="docutils literal">gimple2nac</tt>).</td>
+</tr>
+<tr><td>cfe_name</td>
+<td>Name of the C frontend for compiling to NAC.</td>
+</tr>
+<tr><td>cfe_path</td>
+<td>Path to the C frontend executable.</td>
+</tr>
+<tr><td>srcopt_path</td>
+<td>Path to the C-to-C optimizer.</td>
+</tr>
+<tr><td>xilinx_ise_path</td>
+<td>Path to the Xilinx ISE directory.</td>
+</tr>
+<tr><td>fpga_arch</td>
+<td>FPGA architecture to be used for logic synthesis.</td>
+</tr>
+<tr><td>fpga_part</td>
+<td>FPGA device to be used for logic synthesis.</td>
+</tr>
+<tr><td>graphviz_path</td>
+<td>Path to the Graphviz installation.</td>
+</tr>
+<tr><td>dotproc_name</td>
+<td>Name of the Graphviz dot processor (default: <tt class="docutils literal">dot</tt>).</td>
+</tr>
+<tr><td>dotviewer_name</td>
+<td>Name of the Graphviz file viewer (default: <tt class="docutils literal">dotty</tt>).</td>
+</tr>
+<tr><td>imgviewer_name</td>
+<td>Name of the image viewer executable.</td>
+</tr>
+<tr><td>imgviewer_path</td>
+<td>Path to the image viewer executables' directory.</td>
+</tr>
+<tr><td>pdfviewer_name</td>
+<td>Name of the PDF viewer executable.</td>
+</tr>
+<tr><td>pdfviewer_path</td>
+<td>Path to the PDF viewer executables' directory.</td>
+</tr>
+<tr><td>htmlviewer_name</td>
+<td>Name of the HTML viewer executable.</td>
+</tr>
+<tr><td>htmlviewer_path</td>
+<td>Path to the HTML viewer executables' directory.</td>
+</tr>
+</tbody>
+</table>
+<p>An example initialization file is shown below:</p>
+<pre class="literal-block">
+hlstop=&quot;g:/hercules&quot;
+compiler_name=&quot;gcc&quot;
+compiler_path=&quot;/usr/local/bin/gcc-4.7.0-install/bin&quot;
+compiler_opts=&quot;-Wall -O2 -fdump-tree-gimple-raw&quot;
+cfe_name=&quot;gimple2nac&quot;
+cfe_path=&quot;g:/hercules/gimple2nac&quot;
+srcopt_path=&quot;g:/hercules/txlcopt&quot;
+xilinx_ise_path=&quot;c:/Xilinx/12.3/ISE_DS/ISE&quot;
+fpga_arch=&quot;virtex6&quot;
+fpga_part=&quot;xc6vlx75t-ff484-1&quot;
+graphviz_path=&quot;c:/CompSci/Graphviz2.28&quot;
+imgviewer_path=&quot;g:/hercules/thirdparty/Imagine&quot;
+imgviewer_name=&quot;Imagine&quot;
+dotproc_name=&quot;dot&quot;
+dotviewer_name=&quot;dotty&quot;
+pdfviewer_path=&quot;c:/Program\ Files/Adobe/Reader\ 10.0/Reader&quot;
+pdfviewer_name=&quot;AcroRd32&quot;
+htmlviewer_path=&quot;c:/Documents\ and\ Settings/nkavvadias/Local\ Settings/Application\ Data/Google/Chrome/Application&quot;
+htmlviewer_name=&quot;chrome&quot;
+</pre>
+<!-- Local Variables:
+mode: indented-text
+indent-tabs-mode: nil
+sentence-end-double-space: t
+fill-column: 72
+End: -->
+</div>
+</div>
+</div>
+</body>
+</html>

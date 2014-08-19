@@ -1,0 +1,25 @@
+procedure popcount (in s32 inp_2, out s32 retarg)
+{
+localvar s32 data_4;
+localvar s32 count_5;
+localvar s32 t1;
+localvar s32 t5;
+localvar s32 t2;
+localvar s32 t3;
+localvar s32 t4;
+data_4 <= mov inp_2;
+count_5 <= ldc 0;
+LL3:
+t1 <= setne data_4, 0;
+t5 <= seteq t1, 0;
+LL1 <= jmpne t5, 0;
+t2 <= and data_4, 1;
+t3 <= add count_5, t2;
+count_5 <= mov t3;
+t4 <= shr data_4, 1;
+data_4 <= mov t4;
+LL2:
+LL3 <= jmpun;
+LL1:
+ret count_5;
+}

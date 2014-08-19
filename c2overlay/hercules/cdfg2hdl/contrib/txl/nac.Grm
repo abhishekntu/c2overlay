@@ -1,0 +1,141 @@
+% NAC grammar for N-Address Code (NAC) Intermediate Language
+% Nikolaos Kavvadias, February 2011, April 2012, August 2013
+
+#pragma -idchars "."
+
+% From the spec, it is not clear if NAC should be priority expression parsed or not,
+% so this grammar provides both, controlled by this switch
+% #define PRIORITY
+
+keys
+    in out localvar globalvar procedure
+    mpz\_init mpz\_set\_ui mpz\_mul\_ui mpz\_add\_ui mpz\_printh 
+    mpz\_set mpz\_add mpz\_mul
+end keys
+
+compounds
+    <=
+end compounds
+
+comments
+    //
+end comments
+
+tokens
+    id            "\u[$\i]*"
+    integer      "\d+[LUlu]*"
+%    float       "\d+(.)\d+([eE][+-]?\d+)?"    
+    dotfloat	  "[+-]?.\d+([eE][+-]?\d+)?[FLfl]?"
+    float		  "[+-]?\d+.\d*([eE][+-]?\d+)?[FLfl]?"
+           	    | "[+-]?\d+(.\d*)?[eE][+-]?\d+[FLfl]?"
+           	    | "[+-]?\d+(.\d*)?([eE][+-]?\d+)?[FLfl]"
+end tokens
+
+% Direct TXL encoding of the NAC specification grammar -
+% I don't think any explanations are needed from here on.
+% [NL], [IN] and [EX] on the right are optional pretty-printing cues.
+
+define program
+    [globalvar_def*] [procedure_def*]
+end define
+
+define globalvar_def
+      globalvar [id] [ident_list] ;           [NL]
+    | globalvar [id] [initializedarray,+] ;   [NL]
+    | globalvar [id] [uninitializedarray,+] ; [NL]
+end define
+
+define procedure_def
+    procedure [ident] '( [arg_list] ') [NL] '{ [IN_2] [NL] [localvar_stmt_list] [EX_2] '} [NL]
+end define
+
+define arg_list
+    [arg_decl,]
+end define
+
+define arg_decl
+      in [id] [id]
+    | in [id] [uninitializedarray]
+    | out [id] [id]
+    | out [id] [uninitializedarray]
+end define
+
+define localvar_decl
+      localvar [id] [decl_item,+] '; [NL]
+end define
+
+define localvar_stmt
+      [localvar_decl]
+    | [stmt]
+end define
+
+define localvar_stmt_list
+       [localvar_stmt*]
+end define
+
+%define localvar_stmt
+define stmt
+      [nac]                    [NL]
+    | [vector_nac]             [NL]
+    | [pcall]                  [NL]
+    | [vector_pcall]           [NL]    
+    | [EX_2] [ident] :                [IN_2] [NL]
+end define
+
+define vector_nac
+       '{ [repeat nac] '}
+end define
+
+define nac
+      [id_list] [SP] '<= [SP] [id] [ident_list] ';     
+    | [id] [ident_list] ';     
+end define
+
+define vector_pcall
+      '{ [pcall] '}
+end define
+
+define pcall
+      '( [id_list] ') [SP] '<= [SP] [id] '( [ident_list] ') ';     
+    | [id] '( [ident_list] ') ';     
+end define
+       
+define ident_list
+    [ident,]
+end define
+
+define id_list
+    [id,]
+end define
+
+define decl_item
+      [id]
+    | [initializedarray]
+    | [uninitializedarray]
+end define
+
+define initializedarray
+      [id] '[ [ident] '] '= '{ [numeric,] '}
+end define
+
+define uninitializedarray
+      [id] '[ [ident] '] 
+    | [id] '[ ']
+end define
+
+define ident
+      [id]
+    | [numeric]
+end define
+
+define integernum
+      '- [integer]
+    | [integer]
+end define    
+
+define numeric
+      [integernum]
+%    | '- [float]
+    | [dotfloat]
+    | [float]
+end define

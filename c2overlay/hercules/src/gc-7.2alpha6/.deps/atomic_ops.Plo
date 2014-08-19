@@ -1,0 +1,3 @@
+atomic_ops.lo: libatomic_ops/src/atomic_ops.c libatomic_ops/src/config.h
+
+libatomic_ops/src/config.h:

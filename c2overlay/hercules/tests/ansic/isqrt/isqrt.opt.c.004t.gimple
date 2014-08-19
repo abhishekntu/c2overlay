@@ -1,0 +1,27 @@
+isqrt (unsigned int x, unsigned int * outp)
+gimple_bind <
+  unsigned int m;
+  unsigned int y;
+  unsigned int b;
+  unsigned int x0;
+
+  gimple_assign <integer_cst, m, 1073741824, NULL>
+  gimple_assign <integer_cst, y, 0, NULL>
+  gimple_assign <parm_decl, x0, x, NULL>
+  gimple_goto <<D.1368>>
+  gimple_label <<D.1367>>
+  gimple_assign <bit_ior_expr, b, y, m>
+  gimple_assign <rshift_expr, y, y, 1>
+  gimple_cond <ge_expr, x0, b, <D.1371>, <D.1372>>
+  gimple_label <<D.1371>>
+  gimple_assign <minus_expr, x0, x0, b>
+  gimple_assign <bit_ior_expr, y, y, m>
+  gimple_label <<D.1372>>
+  gimple_assign <rshift_expr, m, m, 2>
+  gimple_label <<D.1368>>
+  gimple_cond <ne_expr, m, 0, <D.1367>, <D.1369>>
+  gimple_label <<D.1369>>
+  gimple_assign <var_decl, *outp, y, NULL>
+>
+
+

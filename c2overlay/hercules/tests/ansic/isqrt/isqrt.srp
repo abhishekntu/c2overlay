@@ -1,0 +1,563 @@
+Release 14.6 - xst P.68d (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "isqrt.work"
+Input Format                       : mixed
+
+---- Target Parameters
+Output File Name                   : "isqrt.ngc"
+Output Format                      : NGC
+Target Device                      : xc6vlx75t-ff484-1
+
+---- Source Options
+Top Module Name                    : isqrt
+
+---- Target Options
+Add IO Buffers                     : no
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "c:/hercules/cdfg2hdl/contrib/vhdl/std_logic_1164_tinyadditions.vhd" into library work
+Parsing package <std_logic_1164_tinyadditions>.
+Parsing package body <std_logic_1164_tinyadditions>.
+Parsing VHDL file "c:/hercules/cdfg2hdl/contrib/vhdl/operpack_ieee.vhd" into library work
+Parsing package <operpack>.
+Parsing package body <operpack>.
+Parsing VHDL file "C:\hercules\tests\ansic\isqrt\isqrt_cdt_pkg.vhd" into library work
+Parsing package <isqrt_cdt_pkg>.
+Parsing VHDL file "C:\hercules\tests\ansic\isqrt\isqrt.vhd" into library work
+Parsing entity <isqrt>.
+Parsing architecture <fsmd> of entity <isqrt>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <isqrt> (architecture <fsmd>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <isqrt>.
+    Related source file is "C:\hercules\tests\ansic\isqrt\isqrt.vhd".
+    Found 32-bit register for signal <y_31_reg>.
+    Found 32-bit register for signal <b_21_reg>.
+    Found 32-bit register for signal <m_11_reg>.
+    Found 32-bit register for signal <y_11_reg>.
+    Found 32-bit register for signal <b_reg>.
+    Found 32-bit register for signal <y_reg>.
+    Found 32-bit register for signal <x0_reg>.
+    Found 32-bit register for signal <m_reg>.
+    Found 32-bit register for signal <x0_11_reg>.
+    Found 32-bit register for signal <m_41_reg>.
+    Found 32-bit register for signal <y_21_reg>.
+    Found 32-bit register for signal <x0_31_reg>.
+    Found 32-bit register for signal <outp>.
+    Found 5-bit register for signal <current_state>.
+INFO:Xst:1799 - State s_001_002 is never reached in FSM <current_state>.
+INFO:Xst:1799 - State s_001_003 is never reached in FSM <current_state>.
+INFO:Xst:1799 - State s_002_002 is never reached in FSM <current_state>.
+INFO:Xst:1799 - State s_002_003 is never reached in FSM <current_state>.
+INFO:Xst:1799 - State s_003_002 is never reached in FSM <current_state>.
+INFO:Xst:1799 - State s_003_003 is never reached in FSM <current_state>.
+INFO:Xst:1799 - State s_004_002 is never reached in FSM <current_state>.
+INFO:Xst:1799 - State s_004_003 is never reached in FSM <current_state>.
+INFO:Xst:1799 - State s_006_002 is never reached in FSM <current_state>.
+    Found finite state machine <FSM_0> for signal <current_state>.
+    -----------------------------------------------------------------------
+    | States             | 18                                             |
+    | Transitions        | 12                                             |
+    | Inputs             | 3                                              |
+    | Outputs            | 7                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | reset (positive)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | s_entry                                        |
+    | Power Up State     | s_entry                                        |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 32-bit subtractor for signal <GND_8_o_GND_8_o_sub_20_OUT<31:0>> created at line 170.
+    Found 32-bit comparator greater for signal <n0014> created at line 163
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred 416 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred  12 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <isqrt> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 32-bit subtractor                                     : 1
+# Registers                                            : 13
+ 32-bit register                                       : 13
+# Comparators                                          : 1
+ 32-bit comparator greater                             : 1
+# Multiplexers                                         : 12
+ 32-bit 2-to-1 multiplexer                             : 12
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 1
+ 32-bit subtractor                                     : 1
+# Registers                                            : 416
+ Flip-Flops                                            : 416
+# Comparators                                          : 1
+ 32-bit comparator greater                             : 1
+# Multiplexers                                         : 12
+ 32-bit 2-to-1 multiplexer                             : 12
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <current_state[1:4]> with gray encoding.
+-----------------------
+ State     | Encoding
+-----------------------
+ s_entry   | 0000
+ s_exit    | 1100
+ s_001_001 | 0001
+ s_001_002 | unreached
+ s_001_003 | unreached
+ s_002_001 | 0101
+ s_002_002 | unreached
+ s_002_003 | unreached
+ s_003_001 | 0110
+ s_003_002 | unreached
+ s_003_003 | unreached
+ s_004_001 | 0010
+ s_004_002 | unreached
+ s_004_003 | unreached
+ s_005_001 | 0011
+ s_006_001 | 0111
+ s_006_002 | unreached
+ s_007_001 | 0100
+-----------------------
+WARNING:Xst:1710 - FF/Latch <y_11_reg_2> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <y_11_reg_3> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <y_11_reg_4> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <y_11_reg_5> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <y_11_reg_6> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <y_11_reg_7> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <y_11_reg_8> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <y_11_reg_9> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <y_11_reg_10> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <y_11_reg_11> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <y_11_reg_12> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <y_11_reg_13> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <y_11_reg_14> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <y_11_reg_15> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <y_11_reg_16> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <y_11_reg_17> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <y_21_reg_31> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m_41_reg_31> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m_41_reg_30> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <y_11_reg_31> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <y_11_reg_30> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <y_11_reg_29> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <y_11_reg_28> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <y_11_reg_27> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <y_11_reg_26> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <y_11_reg_25> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <y_11_reg_24> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <y_11_reg_23> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <y_11_reg_22> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <y_11_reg_21> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <y_11_reg_20> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <y_11_reg_19> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <y_11_reg_18> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m_11_reg_0> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m_11_reg_1> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m_11_reg_2> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m_11_reg_3> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m_11_reg_4> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m_11_reg_5> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m_11_reg_6> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m_11_reg_7> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m_11_reg_8> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m_11_reg_9> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m_11_reg_10> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m_11_reg_11> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m_11_reg_12> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m_11_reg_13> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m_11_reg_14> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m_11_reg_15> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <y_11_reg_1> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <y_11_reg_0> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m_11_reg_31> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m_11_reg_29> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m_11_reg_28> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m_11_reg_27> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m_11_reg_26> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m_11_reg_25> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m_11_reg_24> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m_11_reg_23> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m_11_reg_22> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m_11_reg_21> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m_11_reg_20> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m_11_reg_19> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m_11_reg_18> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m_11_reg_17> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m_11_reg_16> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <m_reg_31> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <m_reg_29> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m_41_reg_29> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <m_reg_27> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m_41_reg_27> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <m_reg_25> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m_41_reg_25> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <m_reg_23> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m_41_reg_23> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <m_reg_21> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m_41_reg_21> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <m_reg_19> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m_41_reg_19> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <m_reg_17> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m_41_reg_17> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <m_reg_15> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m_41_reg_15> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <m_reg_13> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m_41_reg_13> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <m_reg_11> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m_41_reg_11> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <m_reg_9> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m_41_reg_9> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <m_reg_7> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m_41_reg_7> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <m_reg_5> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m_41_reg_5> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <m_reg_3> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m_41_reg_3> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <m_reg_1> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <m_41_reg_1> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <isqrt> ...
+WARNING:Xst:1710 - FF/Latch <y_31_reg_31> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b_21_reg_31> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <b_reg_31> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <y_reg_31> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <y_21_reg_30> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <outp_reg_31> (without init value) has a constant value of 0 in block <isqrt>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <b_reg_10> in Unit <isqrt> is equivalent to the following FF/Latch, which will be removed : <b_21_reg_10> 
+INFO:Xst:2261 - The FF/Latch <b_reg_11> in Unit <isqrt> is equivalent to the following 2 FFs/Latches, which will be removed : <b_21_reg_11> <y_21_reg_10> 
+INFO:Xst:2261 - The FF/Latch <b_reg_12> in Unit <isqrt> is equivalent to the following FF/Latch, which will be removed : <b_21_reg_12> 
+INFO:Xst:2261 - The FF/Latch <b_reg_13> in Unit <isqrt> is equivalent to the following 2 FFs/Latches, which will be removed : <b_21_reg_13> <y_21_reg_12> 
+INFO:Xst:2261 - The FF/Latch <b_reg_14> in Unit <isqrt> is equivalent to the following FF/Latch, which will be removed : <b_21_reg_14> 
+INFO:Xst:2261 - The FF/Latch <b_reg_15> in Unit <isqrt> is equivalent to the following 2 FFs/Latches, which will be removed : <b_21_reg_15> <y_21_reg_14> 
+INFO:Xst:2261 - The FF/Latch <b_reg_20> in Unit <isqrt> is equivalent to the following FF/Latch, which will be removed : <b_21_reg_20> 
+INFO:Xst:2261 - The FF/Latch <b_reg_16> in Unit <isqrt> is equivalent to the following FF/Latch, which will be removed : <b_21_reg_16> 
+INFO:Xst:2261 - The FF/Latch <b_reg_21> in Unit <isqrt> is equivalent to the following 2 FFs/Latches, which will be removed : <b_21_reg_21> <y_21_reg_20> 
+INFO:Xst:2261 - The FF/Latch <b_reg_17> in Unit <isqrt> is equivalent to the following 2 FFs/Latches, which will be removed : <b_21_reg_17> <y_21_reg_16> 
+INFO:Xst:2261 - The FF/Latch <b_reg_22> in Unit <isqrt> is equivalent to the following FF/Latch, which will be removed : <b_21_reg_22> 
+INFO:Xst:2261 - The FF/Latch <b_reg_18> in Unit <isqrt> is equivalent to the following FF/Latch, which will be removed : <b_21_reg_18> 
+INFO:Xst:2261 - The FF/Latch <b_reg_23> in Unit <isqrt> is equivalent to the following 2 FFs/Latches, which will be removed : <b_21_reg_23> <y_21_reg_22> 
+INFO:Xst:2261 - The FF/Latch <b_reg_19> in Unit <isqrt> is equivalent to the following 2 FFs/Latches, which will be removed : <b_21_reg_19> <y_21_reg_18> 
+INFO:Xst:2261 - The FF/Latch <b_reg_24> in Unit <isqrt> is equivalent to the following FF/Latch, which will be removed : <b_21_reg_24> 
+INFO:Xst:2261 - The FF/Latch <b_reg_25> in Unit <isqrt> is equivalent to the following 2 FFs/Latches, which will be removed : <b_21_reg_25> <y_21_reg_24> 
+INFO:Xst:2261 - The FF/Latch <b_reg_30> in Unit <isqrt> is equivalent to the following FF/Latch, which will be removed : <b_21_reg_30> 
+INFO:Xst:2261 - The FF/Latch <b_reg_26> in Unit <isqrt> is equivalent to the following FF/Latch, which will be removed : <b_21_reg_26> 
+INFO:Xst:2261 - The FF/Latch <b_reg_27> in Unit <isqrt> is equivalent to the following 2 FFs/Latches, which will be removed : <b_21_reg_27> <y_21_reg_26> 
+INFO:Xst:2261 - The FF/Latch <b_reg_28> in Unit <isqrt> is equivalent to the following FF/Latch, which will be removed : <b_21_reg_28> 
+INFO:Xst:2261 - The FF/Latch <b_reg_29> in Unit <isqrt> is equivalent to the following 2 FFs/Latches, which will be removed : <b_21_reg_29> <y_21_reg_28> 
+INFO:Xst:2261 - The FF/Latch <b_reg_0> in Unit <isqrt> is equivalent to the following FF/Latch, which will be removed : <b_21_reg_0> 
+INFO:Xst:2261 - The FF/Latch <b_reg_1> in Unit <isqrt> is equivalent to the following 2 FFs/Latches, which will be removed : <b_21_reg_1> <y_21_reg_0> 
+INFO:Xst:2261 - The FF/Latch <b_reg_2> in Unit <isqrt> is equivalent to the following FF/Latch, which will be removed : <b_21_reg_2> 
+INFO:Xst:2261 - The FF/Latch <b_reg_3> in Unit <isqrt> is equivalent to the following 2 FFs/Latches, which will be removed : <b_21_reg_3> <y_21_reg_2> 
+INFO:Xst:2261 - The FF/Latch <b_reg_4> in Unit <isqrt> is equivalent to the following FF/Latch, which will be removed : <b_21_reg_4> 
+INFO:Xst:2261 - The FF/Latch <b_reg_5> in Unit <isqrt> is equivalent to the following 2 FFs/Latches, which will be removed : <b_21_reg_5> <y_21_reg_4> 
+INFO:Xst:2261 - The FF/Latch <b_reg_6> in Unit <isqrt> is equivalent to the following FF/Latch, which will be removed : <b_21_reg_6> 
+INFO:Xst:2261 - The FF/Latch <b_reg_7> in Unit <isqrt> is equivalent to the following 2 FFs/Latches, which will be removed : <b_21_reg_7> <y_21_reg_6> 
+INFO:Xst:2261 - The FF/Latch <b_reg_8> in Unit <isqrt> is equivalent to the following FF/Latch, which will be removed : <b_21_reg_8> 
+INFO:Xst:2261 - The FF/Latch <b_reg_9> in Unit <isqrt> is equivalent to the following 2 FFs/Latches, which will be removed : <b_21_reg_9> <y_21_reg_8> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 0) on block isqrt, actual ratio is 0.
+WARNING:Xst:2677 - Node <y_21_reg_1> of sequential type is unconnected in block <isqrt>.
+WARNING:Xst:2677 - Node <y_21_reg_3> of sequential type is unconnected in block <isqrt>.
+WARNING:Xst:2677 - Node <y_21_reg_5> of sequential type is unconnected in block <isqrt>.
+WARNING:Xst:2677 - Node <y_21_reg_7> of sequential type is unconnected in block <isqrt>.
+WARNING:Xst:2677 - Node <y_21_reg_9> of sequential type is unconnected in block <isqrt>.
+WARNING:Xst:2677 - Node <y_21_reg_11> of sequential type is unconnected in block <isqrt>.
+WARNING:Xst:2677 - Node <y_21_reg_13> of sequential type is unconnected in block <isqrt>.
+WARNING:Xst:2677 - Node <y_21_reg_15> of sequential type is unconnected in block <isqrt>.
+WARNING:Xst:2677 - Node <y_21_reg_17> of sequential type is unconnected in block <isqrt>.
+WARNING:Xst:2677 - Node <y_21_reg_19> of sequential type is unconnected in block <isqrt>.
+WARNING:Xst:2677 - Node <y_21_reg_21> of sequential type is unconnected in block <isqrt>.
+WARNING:Xst:2677 - Node <y_21_reg_23> of sequential type is unconnected in block <isqrt>.
+WARNING:Xst:2677 - Node <y_21_reg_25> of sequential type is unconnected in block <isqrt>.
+WARNING:Xst:2677 - Node <y_21_reg_27> of sequential type is unconnected in block <isqrt>.
+WARNING:Xst:2677 - Node <y_21_reg_29> of sequential type is unconnected in block <isqrt>.
+FlipFlop current_state_FSM_FFd4 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 257
+ Flip-Flops                                            : 257
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : isqrt.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 383
+#      GND                         : 1
+#      INV                         : 1
+#      LUT2                        : 32
+#      LUT3                        : 2
+#      LUT4                        : 56
+#      LUT5                        : 112
+#      LUT6                        : 97
+#      MUXCY                       : 49
+#      VCC                         : 1
+#      XORCY                       : 32
+# FlipFlops/Latches                : 257
+#      FDC                         : 116
+#      FDCE                        : 141
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6vlx75tff484-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             257  out of  93120     0%  
+ Number of Slice LUTs:                  300  out of  46560     0%  
+    Number used as Logic:               300  out of  46560     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    330
+   Number with an unused Flip Flop:      73  out of    330    22%  
+   Number with an unused LUT:            30  out of    330     9%  
+   Number of fully used LUT-FF pairs:   227  out of    330    68%  
+   Number of unique control sets:         6
+
+IO Utilization: 
+ Number of IOs:                          69
+ Number of bonded IOBs:                   0  out of    240     0%  
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | NONE(x0_11_reg_0)      | 257   |
+-----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 2.664ns (Maximum Frequency: 375.446MHz)
+   Minimum input arrival time before clock: 0.752ns
+   Maximum output required time after clock: 1.208ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 2.664ns (frequency: 375.446MHz)
+  Total number of paths / destination ports: 5635 / 398
+-------------------------------------------------------------------------
+Delay:               2.664ns (Levels of Logic = 20)
+  Source:            y_reg_0 (FF)
+  Destination:       current_state_FSM_FFd2 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: y_reg_0 to current_state_FSM_FFd2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             3   0.375   0.789  y_reg_0 (y_reg_0)
+     LUT6:I1->O            3   0.068   0.652  Mmux_b_21_next11 (b_21_next<0>)
+     LUT4:I0->O            1   0.068   0.000  Mcompar_n0014_lut<0> (Mcompar_n0014_lut<0>)
+     MUXCY:S->O            1   0.290   0.000  Mcompar_n0014_cy<0> (Mcompar_n0014_cy<0>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_n0014_cy<1> (Mcompar_n0014_cy<1>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_n0014_cy<2> (Mcompar_n0014_cy<2>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_n0014_cy<3> (Mcompar_n0014_cy<3>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_n0014_cy<4> (Mcompar_n0014_cy<4>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_n0014_cy<5> (Mcompar_n0014_cy<5>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_n0014_cy<6> (Mcompar_n0014_cy<6>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_n0014_cy<7> (Mcompar_n0014_cy<7>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_n0014_cy<8> (Mcompar_n0014_cy<8>)
+     MUXCY:CI->O           1   0.019   0.000  Mcompar_n0014_cy<9> (Mcompar_n0014_cy<9>)
+     MUXCY:CI->O           1   0.020   0.000  Mcompar_n0014_cy<10> (Mcompar_n0014_cy<10>)
+     MUXCY:CI->O           1   0.020   0.000  Mcompar_n0014_cy<11> (Mcompar_n0014_cy<11>)
+     MUXCY:CI->O           1   0.020   0.000  Mcompar_n0014_cy<12> (Mcompar_n0014_cy<12>)
+     MUXCY:CI->O           1   0.020   0.000  Mcompar_n0014_cy<13> (Mcompar_n0014_cy<13>)
+     MUXCY:CI->O           1   0.020   0.000  Mcompar_n0014_cy<14> (Mcompar_n0014_cy<14>)
+     MUXCY:CI->O           1   0.020   0.000  Mcompar_n0014_cy<15> (Mcompar_n0014_cy<15>)
+     MUXCY:CI->O           1   0.020   0.000  current_state_FSM_FFd2-In1_cy (Mcompar_n0014_cy<15>_l1)
+     MUXCY:CI->O           1   0.099   0.000  current_state_FSM_FFd2-In1_cy1 (current_state_FSM_FFd2-In)
+     FDC:D                     0.011          current_state_FSM_FFd2
+    ----------------------------------------
+    Total                      2.664ns (1.223ns logic, 1.441ns route)
+                                       (45.9% logic, 54.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 323 / 323
+-------------------------------------------------------------------------
+Offset:              0.752ns (Levels of Logic = 2)
+  Source:            x<14> (PAD)
+  Destination:       x0_reg_14 (FF)
+  Destination Clock: clk rising
+
+  Data Path: x<14> to x0_reg_14
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LUT6:I5->O            2   0.068   0.587  Mmux_x0_11_next61 (x0_11_next<14>)
+     LUT5:I2->O            1   0.068   0.000  Mmux__n018961 (_n0189<14>)
+     FDCE:D                    0.011          x0_reg_14
+    ----------------------------------------
+    Total                      0.752ns (0.165ns logic, 0.587ns route)
+                                       (21.9% logic, 78.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 35 / 33
+-------------------------------------------------------------------------
+Offset:              1.208ns (Levels of Logic = 1)
+  Source:            current_state_FSM_FFd4 (FF)
+  Destination:       ready (PAD)
+  Source Clock:      clk rising
+
+  Data Path: current_state_FSM_FFd4 to ready
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q            175   0.375   0.765  current_state_FSM_FFd4 (current_state_FSM_FFd4)
+     LUT3:I0->O            0   0.068   0.000  current_state__n0274<0>1 (ready)
+    ----------------------------------------
+    Total                      1.208ns (0.443ns logic, 0.765ns route)
+                                       (36.7% logic, 63.3% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    2.664|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 6.84 secs
+ 
+--> 
+
+Total memory usage is 230992 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  118 (   0 filtered)
+Number of infos    :   41 (   0 filtered)
+

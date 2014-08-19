@@ -1,0 +1,28 @@
+procedure gcd ( in u16 a , in u16 b , out u16 outp ) 
+{ 
+localvar u16 x , y , res ; 
+localvar u16 t1 , t2 , t3 ; 
+S_1 : 
+x <= mov a ; 
+y <= mov b ; 
+t1 <= setne x , 0 ; 
+t2 <= setne y , 0 ; 
+t3 <= and t1 , t2 ; 
+res <= ldc 0 ; 
+S_EXIT , S_2 <= jmpne t3 , 1 ; 
+S_2 : 
+S_5 , S_3 <= jmpgt x , y ; 
+S_3 : 
+S_6 , S_4 <= jmplt x , y ; 
+S_4 : 
+res <= mov x ; 
+S_EXIT <= jmpun ; 
+S_5 : 
+x <= sub x , y ; 
+S_2 <= jmpun ; 
+S_6 : 
+y <= sub y , x ; 
+S_2 <= jmpun ; 
+S_EXIT : 
+outp <= mov res ; 
+} 

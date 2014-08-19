@@ -1,0 +1,29 @@
+eda (int in1, int in2, int * out1)
+gimple_bind <
+  int t1;
+  int t2;
+  int t3;
+  int t4;
+  int t5;
+  int t6;
+  int t7;
+  int a;
+  int b;
+  int x;
+  int y;
+
+  gimple_assign <parm_decl, a, in1, NULL>
+  gimple_assign <parm_decl, b, in2, NULL>
+  gimple_assign <abs_expr, t1, a, NULL>
+  gimple_assign <abs_expr, t2, b, NULL>
+  gimple_assign <max_expr, x, t2, t1>
+  gimple_assign <min_expr, y, t2, t1>
+  gimple_assign <rshift_expr, t3, x, 3>
+  gimple_assign <rshift_expr, t4, y, 1>
+  gimple_assign <minus_expr, t5, x, t3>
+  gimple_assign <plus_expr, t6, t4, t5>
+  gimple_assign <max_expr, t7, x, t6>
+  gimple_assign <var_decl, *out1, t7, NULL>
+>
+
+

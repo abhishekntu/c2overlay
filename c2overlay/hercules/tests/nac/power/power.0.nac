@@ -1,0 +1,50 @@
+//
+// Filename: power.0.nac
+// Purpose : N-address code (NAC) implementation of a powering function with 
+//           some optimizations.
+// Author  : Nikolaos Kavvadias (C) 2011, 2012, 2013
+// Date    : 19-Apr-2011
+// Revision: 0.3.0 (19/04/11)
+//           Initial version.
+//
+
+procedure power(in s32 base, in s32 exponent, out s32 result)
+{
+  localvar s32 r, b, e;
+  localvar s32 t0, t1, t2, t3;
+S_1:
+  b <= mov base;
+  e <= mov exponent;
+  S_2, S_3 <= jmpeq e, 0;
+S_2:
+  r <= ldc 1;
+  S_EXIT <= jmpun;
+S_3:
+  S_4, S_5 <= jmpeq e, 1;
+S_4:
+  r <= mov b;
+  S_EXIT <= jmpun;  
+S_5:
+  S_6, S_7 <= jmpeq b, 2;
+S_6:
+  t0 <= sub e, 1;
+  r <= shl b, t0;
+  S_EXIT <= jmpun;
+S_7:
+  r <= ldc 1;
+  S_8 <= jmpun;
+S_8:
+  S_9, S_EXIT <= jmpgt e, 0;
+S_9:
+  t1 <= rem e, 2;
+  S_10, S_11 <= jmpeq t1, 1;
+S_10:
+  r <= mul r, b;
+  S_11 <= jmpun;
+S_11:
+  b <= sqr b;
+  e <= div e, 2;
+  S_8 <= jmpun;
+S_EXIT:
+  result <= mov r;
+}  

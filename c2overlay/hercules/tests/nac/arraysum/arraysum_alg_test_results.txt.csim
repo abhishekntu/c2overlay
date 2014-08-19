@@ -1,0 +1,11 @@
+sum = 00000000
+sum = 00000002
+sum = 00000005
+sum = 0000000a
+sum = 00000011
+sum = 0000001c
+sum = 00000029
+sum = 0000003a
+sum = 0000004d
+sum = 00000064
+arraysum passed all tests.

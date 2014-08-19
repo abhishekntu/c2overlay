@@ -1,0 +1,35 @@
+### HERCULES RUN: STARTED ###
+NAC file: fibo.nac
+Generating VHDL package file: fibo_pkg.vhd
+Generating VHDL compound data types package file: fibo_cdt_pkg.vhd
+Generating NAC export file for procedure fibo: fibo_ssa.nac
+Generating dot file for the CDFG of procedure fibo: fibo.dot
+Generating the dot representation of the CFG for procedure fibo: fibo_cfg.dot
+Generating dot file for call-graph: fibo_cg.dot
+Generating a plain graph for the CDFG of the current procedure: fibo_cdfg.txt
+Generating the dot representation of the current procedure CFG: fibo_cfg.dot
+Generating RTL VHDL for the current procedure: fibo.vhd
+Generating the VHDL testbench for the root procedure: fibo_tb.vhd
+Generating the Makefile for GHDL simulation: fibo.mk
+Generating the shell script for VHDL simulation: fibo.sh
+Generating the shell script for XST synthesis: fibo-syn.sh
+rm -rf *.o *.ghdl work
+mkdir work
+ghdl -i --ieee=standard -fexplicit --workdir=work ../../../cdfg2hdl/contrib/vhdl/std_logic_1164_tinyadditions.vhd
+ghdl -i --ieee=standard -fexplicit --workdir=work ../../../cdfg2hdl/contrib/vhdl/std_logic_textio.vhd
+ghdl -i --ieee=standard -fexplicit --workdir=work ../../../cdfg2hdl/contrib/vhdl/operpack_ieee.vhd
+ghdl -i --ieee=standard -fexplicit --workdir=work fibo_cdt_pkg.vhd
+ghdl -i --ieee=standard -fexplicit --workdir=work fibo.vhd
+ghdl -i --ieee=standard -fexplicit --workdir=work fibo_tb.vhd
+ghdl -m --ieee=standard -fexplicit --workdir=work -o fibo.ghdl fibo_tb
+analyze ../../../cdfg2hdl/contrib/vhdl/std_logic_textio.vhd
+analyze fibo_cdt_pkg.vhd
+analyze ../../../cdfg2hdl/contrib/vhdl/std_logic_1164_tinyadditions.vhd
+analyze fibo_tb.vhd
+analyze ../../../cdfg2hdl/contrib/vhdl/operpack_ieee.vhd
+analyze fibo.vhd
+elaborate fibo_tb
+./fibo.ghdl --stop-time=2147483647ns
+This script has been running for 1 second.
+### HERCULES RUN: ENDED ###
+

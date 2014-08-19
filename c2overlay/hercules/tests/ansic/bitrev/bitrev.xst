@@ -1,0 +1,1 @@
+run -ifn bitrev.work -ifmt mixed -top bitrev -ofn bitrev.ngc -ofmt NGC -p xc6vlx75t-ff484-1 -iobuf no -opt_mode Speed -opt_level 1

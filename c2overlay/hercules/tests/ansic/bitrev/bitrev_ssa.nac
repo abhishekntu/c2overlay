@@ -1,0 +1,49 @@
+procedure bitrev (
+in u8 inp, out u8 D_1377)
+{
+  localvar u8 i;
+  localvar u8 temp;
+  localvar u8 temp$11;
+  localvar u8 i$11;
+  localvar s32 D_1368$21;
+  localvar s32 D_1369$21;
+  localvar s32 D_1370$21;
+  localvar s32 D_1371$21;
+  localvar s32 D_1369$22;
+  localvar s32 D_1372$21;
+  localvar s32 D_1372$22;
+  localvar s32 D_1373$21;
+  localvar s8 D_1374$21;
+  localvar s8 temp_0$21;
+  localvar s8 D_1376$21;
+  localvar u8 temp$21;
+  localvar u8 i$21;
+
+L0005:
+  temp$11 <= ldc 0;
+  i$11 <= ldc 0;
+  i <= mov i$11;
+  temp <= mov temp$11;
+  D_1365 <= jmpun;
+D_1364:
+  D_1368$21 <= sxt inp;
+  D_1369$21 <= sxt i;
+  D_1370$21 <= shr D_1368$21, D_1369$21;
+  D_1371$21 <= and D_1370$21, 1;
+  D_1369$22 <= sxt i;
+  D_1372$21 <= ldc 7;
+  D_1372$22 <= sub D_1372$21, D_1369$22;
+  D_1373$21 <= shl D_1371$21, D_1372$22;
+  D_1374$21 <= trunc D_1373$21;
+  temp_0$21 <= sxt temp;
+  D_1376$21 <= ior D_1374$21, temp_0$21;
+  temp$21 <= zxt D_1376$21;
+  i$21 <= add i, 1;
+  i <= mov i$21;
+  temp <= mov temp$21;
+  D_1365 <= jmpun;
+D_1365:
+  D_1364, D_1366 <= jmple i, 7;
+D_1366:
+  D_1377 <= mov temp;
+}

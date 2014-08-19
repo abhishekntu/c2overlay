@@ -1,0 +1,83 @@
+procedure eda (in s32 in1_2, in s32 in2_3, out s32 out1_4)
+{
+localvar s32 t1_6;
+localvar s32 t2_7;
+localvar s32 t3_8;
+localvar s32 t4_9;
+localvar s32 t5_10;
+localvar s32 t6_11;
+localvar s32 t7_12;
+localvar s32 a_13;
+localvar s32 b_14;
+localvar s32 x_15;
+localvar s32 y_16;
+localvar s32 t8;
+localvar s32 t9;
+localvar s32 t10;
+localvar s32 t11;
+localvar s32 t12;
+localvar s32 t13;
+localvar s32 t14;
+localvar s32 t15;
+localvar s32 t16;
+localvar s32 t17;
+localvar s32 t18;
+localvar s32 t19;
+localvar s32 t20;
+localvar s32 t21;
+localvar s32 t22;
+localvar s32 t23;
+a_13 <= mov in1_2;
+b_14 <= mov in2_3;
+t8 <= setgt a_13, 0;
+LL1 <= jmpne t8, 0;
+t9 <= neg a_13;
+t10 <= mov t9;
+LL2 <= jmpun;
+LL1:
+t10 <= mov a_13;
+LL2:
+t1_6 <= mov t10;
+t11 <= setgt b_14, 0;
+LL3 <= jmpne t11, 0;
+t12 <= neg b_14;
+t13 <= mov t12;
+LL4 <= jmpun;
+LL3:
+t13 <= mov b_14;
+LL4:
+t2_7 <= mov t13;
+t14 <= setgt t1_6, t2_7;
+LL5 <= jmpne t14, 0;
+t15 <= mov t2_7;
+LL6 <= jmpun;
+LL5:
+t15 <= mov t1_6;
+LL6:
+x_15 <= mov t15;
+t16 <= setlt t1_6, t2_7;
+LL7 <= jmpne t16, 0;
+t17 <= mov t2_7;
+LL8 <= jmpun;
+LL7:
+t17 <= mov t1_6;
+LL8:
+y_16 <= mov t17;
+t18 <= shr x_15, 3;
+t3_8 <= mov t18;
+t19 <= shr y_16, 1;
+t4_9 <= mov t19;
+t20 <= sub x_15, t3_8;
+t5_10 <= mov t20;
+t21 <= add t4_9, t5_10;
+t6_11 <= mov t21;
+t22 <= setgt t6_11, x_15;
+LL9 <= jmpne t22, 0;
+t23 <= mov x_15;
+LL10 <= jmpun;
+LL9:
+t23 <= mov t6_11;
+LL10:
+t7_12 <= mov t23;
+out1_4 <= storei t7_12;
+}

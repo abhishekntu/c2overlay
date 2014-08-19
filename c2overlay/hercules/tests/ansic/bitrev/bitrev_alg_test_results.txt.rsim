@@ -1,0 +1,513 @@
+ inp=00 D_1377=00 D_1377_ref=00
+BITREV OK: Number of cycles=20
+ inp=01 D_1377=80 D_1377_ref=80
+BITREV OK: Number of cycles=20
+ inp=02 D_1377=40 D_1377_ref=40
+BITREV OK: Number of cycles=20
+ inp=03 D_1377=C0 D_1377_ref=C0
+BITREV OK: Number of cycles=20
+ inp=04 D_1377=20 D_1377_ref=20
+BITREV OK: Number of cycles=20
+ inp=05 D_1377=A0 D_1377_ref=A0
+BITREV OK: Number of cycles=20
+ inp=06 D_1377=60 D_1377_ref=60
+BITREV OK: Number of cycles=20
+ inp=07 D_1377=E0 D_1377_ref=E0
+BITREV OK: Number of cycles=20
+ inp=08 D_1377=10 D_1377_ref=10
+BITREV OK: Number of cycles=20
+ inp=09 D_1377=90 D_1377_ref=90
+BITREV OK: Number of cycles=20
+ inp=0A D_1377=50 D_1377_ref=50
+BITREV OK: Number of cycles=20
+ inp=0B D_1377=D0 D_1377_ref=D0
+BITREV OK: Number of cycles=20
+ inp=0C D_1377=30 D_1377_ref=30
+BITREV OK: Number of cycles=20
+ inp=0D D_1377=B0 D_1377_ref=B0
+BITREV OK: Number of cycles=20
+ inp=0E D_1377=70 D_1377_ref=70
+BITREV OK: Number of cycles=20
+ inp=0F D_1377=F0 D_1377_ref=F0
+BITREV OK: Number of cycles=20
+ inp=10 D_1377=08 D_1377_ref=08
+BITREV OK: Number of cycles=20
+ inp=11 D_1377=88 D_1377_ref=88
+BITREV OK: Number of cycles=20
+ inp=12 D_1377=48 D_1377_ref=48
+BITREV OK: Number of cycles=20
+ inp=13 D_1377=C8 D_1377_ref=C8
+BITREV OK: Number of cycles=20
+ inp=14 D_1377=28 D_1377_ref=28
+BITREV OK: Number of cycles=20
+ inp=15 D_1377=A8 D_1377_ref=A8
+BITREV OK: Number of cycles=20
+ inp=16 D_1377=68 D_1377_ref=68
+BITREV OK: Number of cycles=20
+ inp=17 D_1377=E8 D_1377_ref=E8
+BITREV OK: Number of cycles=20
+ inp=18 D_1377=18 D_1377_ref=18
+BITREV OK: Number of cycles=20
+ inp=19 D_1377=98 D_1377_ref=98
+BITREV OK: Number of cycles=20
+ inp=1A D_1377=58 D_1377_ref=58
+BITREV OK: Number of cycles=20
+ inp=1B D_1377=D8 D_1377_ref=D8
+BITREV OK: Number of cycles=20
+ inp=1C D_1377=38 D_1377_ref=38
+BITREV OK: Number of cycles=20
+ inp=1D D_1377=B8 D_1377_ref=B8
+BITREV OK: Number of cycles=20
+ inp=1E D_1377=78 D_1377_ref=78
+BITREV OK: Number of cycles=20
+ inp=1F D_1377=F8 D_1377_ref=F8
+BITREV OK: Number of cycles=20
+ inp=20 D_1377=04 D_1377_ref=04
+BITREV OK: Number of cycles=20
+ inp=21 D_1377=84 D_1377_ref=84
+BITREV OK: Number of cycles=20
+ inp=22 D_1377=44 D_1377_ref=44
+BITREV OK: Number of cycles=20
+ inp=23 D_1377=C4 D_1377_ref=C4
+BITREV OK: Number of cycles=20
+ inp=24 D_1377=24 D_1377_ref=24
+BITREV OK: Number of cycles=20
+ inp=25 D_1377=A4 D_1377_ref=A4
+BITREV OK: Number of cycles=20
+ inp=26 D_1377=64 D_1377_ref=64
+BITREV OK: Number of cycles=20
+ inp=27 D_1377=E4 D_1377_ref=E4
+BITREV OK: Number of cycles=20
+ inp=28 D_1377=14 D_1377_ref=14
+BITREV OK: Number of cycles=20
+ inp=29 D_1377=94 D_1377_ref=94
+BITREV OK: Number of cycles=20
+ inp=2A D_1377=54 D_1377_ref=54
+BITREV OK: Number of cycles=20
+ inp=2B D_1377=D4 D_1377_ref=D4
+BITREV OK: Number of cycles=20
+ inp=2C D_1377=34 D_1377_ref=34
+BITREV OK: Number of cycles=20
+ inp=2D D_1377=B4 D_1377_ref=B4
+BITREV OK: Number of cycles=20
+ inp=2E D_1377=74 D_1377_ref=74
+BITREV OK: Number of cycles=20
+ inp=2F D_1377=F4 D_1377_ref=F4
+BITREV OK: Number of cycles=20
+ inp=30 D_1377=0C D_1377_ref=0C
+BITREV OK: Number of cycles=20
+ inp=31 D_1377=8C D_1377_ref=8C
+BITREV OK: Number of cycles=20
+ inp=32 D_1377=4C D_1377_ref=4C
+BITREV OK: Number of cycles=20
+ inp=33 D_1377=CC D_1377_ref=CC
+BITREV OK: Number of cycles=20
+ inp=34 D_1377=2C D_1377_ref=2C
+BITREV OK: Number of cycles=20
+ inp=35 D_1377=AC D_1377_ref=AC
+BITREV OK: Number of cycles=20
+ inp=36 D_1377=6C D_1377_ref=6C
+BITREV OK: Number of cycles=20
+ inp=37 D_1377=EC D_1377_ref=EC
+BITREV OK: Number of cycles=20
+ inp=38 D_1377=1C D_1377_ref=1C
+BITREV OK: Number of cycles=20
+ inp=39 D_1377=9C D_1377_ref=9C
+BITREV OK: Number of cycles=20
+ inp=3A D_1377=5C D_1377_ref=5C
+BITREV OK: Number of cycles=20
+ inp=3B D_1377=DC D_1377_ref=DC
+BITREV OK: Number of cycles=20
+ inp=3C D_1377=3C D_1377_ref=3C
+BITREV OK: Number of cycles=20
+ inp=3D D_1377=BC D_1377_ref=BC
+BITREV OK: Number of cycles=20
+ inp=3E D_1377=7C D_1377_ref=7C
+BITREV OK: Number of cycles=20
+ inp=3F D_1377=FC D_1377_ref=FC
+BITREV OK: Number of cycles=20
+ inp=40 D_1377=02 D_1377_ref=02
+BITREV OK: Number of cycles=20
+ inp=41 D_1377=82 D_1377_ref=82
+BITREV OK: Number of cycles=20
+ inp=42 D_1377=42 D_1377_ref=42
+BITREV OK: Number of cycles=20
+ inp=43 D_1377=C2 D_1377_ref=C2
+BITREV OK: Number of cycles=20
+ inp=44 D_1377=22 D_1377_ref=22
+BITREV OK: Number of cycles=20
+ inp=45 D_1377=A2 D_1377_ref=A2
+BITREV OK: Number of cycles=20
+ inp=46 D_1377=62 D_1377_ref=62
+BITREV OK: Number of cycles=20
+ inp=47 D_1377=E2 D_1377_ref=E2
+BITREV OK: Number of cycles=20
+ inp=48 D_1377=12 D_1377_ref=12
+BITREV OK: Number of cycles=20
+ inp=49 D_1377=92 D_1377_ref=92
+BITREV OK: Number of cycles=20
+ inp=4A D_1377=52 D_1377_ref=52
+BITREV OK: Number of cycles=20
+ inp=4B D_1377=D2 D_1377_ref=D2
+BITREV OK: Number of cycles=20
+ inp=4C D_1377=32 D_1377_ref=32
+BITREV OK: Number of cycles=20
+ inp=4D D_1377=B2 D_1377_ref=B2
+BITREV OK: Number of cycles=20
+ inp=4E D_1377=72 D_1377_ref=72
+BITREV OK: Number of cycles=20
+ inp=4F D_1377=F2 D_1377_ref=F2
+BITREV OK: Number of cycles=20
+ inp=50 D_1377=0A D_1377_ref=0A
+BITREV OK: Number of cycles=20
+ inp=51 D_1377=8A D_1377_ref=8A
+BITREV OK: Number of cycles=20
+ inp=52 D_1377=4A D_1377_ref=4A
+BITREV OK: Number of cycles=20
+ inp=53 D_1377=CA D_1377_ref=CA
+BITREV OK: Number of cycles=20
+ inp=54 D_1377=2A D_1377_ref=2A
+BITREV OK: Number of cycles=20
+ inp=55 D_1377=AA D_1377_ref=AA
+BITREV OK: Number of cycles=20
+ inp=56 D_1377=6A D_1377_ref=6A
+BITREV OK: Number of cycles=20
+ inp=57 D_1377=EA D_1377_ref=EA
+BITREV OK: Number of cycles=20
+ inp=58 D_1377=1A D_1377_ref=1A
+BITREV OK: Number of cycles=20
+ inp=59 D_1377=9A D_1377_ref=9A
+BITREV OK: Number of cycles=20
+ inp=5A D_1377=5A D_1377_ref=5A
+BITREV OK: Number of cycles=20
+ inp=5B D_1377=DA D_1377_ref=DA
+BITREV OK: Number of cycles=20
+ inp=5C D_1377=3A D_1377_ref=3A
+BITREV OK: Number of cycles=20
+ inp=5D D_1377=BA D_1377_ref=BA
+BITREV OK: Number of cycles=20
+ inp=5E D_1377=7A D_1377_ref=7A
+BITREV OK: Number of cycles=20
+ inp=5F D_1377=FA D_1377_ref=FA
+BITREV OK: Number of cycles=20
+ inp=60 D_1377=06 D_1377_ref=06
+BITREV OK: Number of cycles=20
+ inp=61 D_1377=86 D_1377_ref=86
+BITREV OK: Number of cycles=20
+ inp=62 D_1377=46 D_1377_ref=46
+BITREV OK: Number of cycles=20
+ inp=63 D_1377=C6 D_1377_ref=C6
+BITREV OK: Number of cycles=20
+ inp=64 D_1377=26 D_1377_ref=26
+BITREV OK: Number of cycles=20
+ inp=65 D_1377=A6 D_1377_ref=A6
+BITREV OK: Number of cycles=20
+ inp=66 D_1377=66 D_1377_ref=66
+BITREV OK: Number of cycles=20
+ inp=67 D_1377=E6 D_1377_ref=E6
+BITREV OK: Number of cycles=20
+ inp=68 D_1377=16 D_1377_ref=16
+BITREV OK: Number of cycles=20
+ inp=69 D_1377=96 D_1377_ref=96
+BITREV OK: Number of cycles=20
+ inp=6A D_1377=56 D_1377_ref=56
+BITREV OK: Number of cycles=20
+ inp=6B D_1377=D6 D_1377_ref=D6
+BITREV OK: Number of cycles=20
+ inp=6C D_1377=36 D_1377_ref=36
+BITREV OK: Number of cycles=20
+ inp=6D D_1377=B6 D_1377_ref=B6
+BITREV OK: Number of cycles=20
+ inp=6E D_1377=76 D_1377_ref=76
+BITREV OK: Number of cycles=20
+ inp=6F D_1377=F6 D_1377_ref=F6
+BITREV OK: Number of cycles=20
+ inp=70 D_1377=0E D_1377_ref=0E
+BITREV OK: Number of cycles=20
+ inp=71 D_1377=8E D_1377_ref=8E
+BITREV OK: Number of cycles=20
+ inp=72 D_1377=4E D_1377_ref=4E
+BITREV OK: Number of cycles=20
+ inp=73 D_1377=CE D_1377_ref=CE
+BITREV OK: Number of cycles=20
+ inp=74 D_1377=2E D_1377_ref=2E
+BITREV OK: Number of cycles=20
+ inp=75 D_1377=AE D_1377_ref=AE
+BITREV OK: Number of cycles=20
+ inp=76 D_1377=6E D_1377_ref=6E
+BITREV OK: Number of cycles=20
+ inp=77 D_1377=EE D_1377_ref=EE
+BITREV OK: Number of cycles=20
+ inp=78 D_1377=1E D_1377_ref=1E
+BITREV OK: Number of cycles=20
+ inp=79 D_1377=9E D_1377_ref=9E
+BITREV OK: Number of cycles=20
+ inp=7A D_1377=5E D_1377_ref=5E
+BITREV OK: Number of cycles=20
+ inp=7B D_1377=DE D_1377_ref=DE
+BITREV OK: Number of cycles=20
+ inp=7C D_1377=3E D_1377_ref=3E
+BITREV OK: Number of cycles=20
+ inp=7D D_1377=BE D_1377_ref=BE
+BITREV OK: Number of cycles=20
+ inp=7E D_1377=7E D_1377_ref=7E
+BITREV OK: Number of cycles=20
+ inp=7F D_1377=FE D_1377_ref=FE
+BITREV OK: Number of cycles=20
+ inp=80 D_1377=01 D_1377_ref=01
+BITREV OK: Number of cycles=20
+ inp=81 D_1377=81 D_1377_ref=81
+BITREV OK: Number of cycles=20
+ inp=82 D_1377=41 D_1377_ref=41
+BITREV OK: Number of cycles=20
+ inp=83 D_1377=C1 D_1377_ref=C1
+BITREV OK: Number of cycles=20
+ inp=84 D_1377=21 D_1377_ref=21
+BITREV OK: Number of cycles=20
+ inp=85 D_1377=A1 D_1377_ref=A1
+BITREV OK: Number of cycles=20
+ inp=86 D_1377=61 D_1377_ref=61
+BITREV OK: Number of cycles=20
+ inp=87 D_1377=E1 D_1377_ref=E1
+BITREV OK: Number of cycles=20
+ inp=88 D_1377=11 D_1377_ref=11
+BITREV OK: Number of cycles=20
+ inp=89 D_1377=91 D_1377_ref=91
+BITREV OK: Number of cycles=20
+ inp=8A D_1377=51 D_1377_ref=51
+BITREV OK: Number of cycles=20
+ inp=8B D_1377=D1 D_1377_ref=D1
+BITREV OK: Number of cycles=20
+ inp=8C D_1377=31 D_1377_ref=31
+BITREV OK: Number of cycles=20
+ inp=8D D_1377=B1 D_1377_ref=B1
+BITREV OK: Number of cycles=20
+ inp=8E D_1377=71 D_1377_ref=71
+BITREV OK: Number of cycles=20
+ inp=8F D_1377=F1 D_1377_ref=F1
+BITREV OK: Number of cycles=20
+ inp=90 D_1377=09 D_1377_ref=09
+BITREV OK: Number of cycles=20
+ inp=91 D_1377=89 D_1377_ref=89
+BITREV OK: Number of cycles=20
+ inp=92 D_1377=49 D_1377_ref=49
+BITREV OK: Number of cycles=20
+ inp=93 D_1377=C9 D_1377_ref=C9
+BITREV OK: Number of cycles=20
+ inp=94 D_1377=29 D_1377_ref=29
+BITREV OK: Number of cycles=20
+ inp=95 D_1377=A9 D_1377_ref=A9
+BITREV OK: Number of cycles=20
+ inp=96 D_1377=69 D_1377_ref=69
+BITREV OK: Number of cycles=20
+ inp=97 D_1377=E9 D_1377_ref=E9
+BITREV OK: Number of cycles=20
+ inp=98 D_1377=19 D_1377_ref=19
+BITREV OK: Number of cycles=20
+ inp=99 D_1377=99 D_1377_ref=99
+BITREV OK: Number of cycles=20
+ inp=9A D_1377=59 D_1377_ref=59
+BITREV OK: Number of cycles=20
+ inp=9B D_1377=D9 D_1377_ref=D9
+BITREV OK: Number of cycles=20
+ inp=9C D_1377=39 D_1377_ref=39
+BITREV OK: Number of cycles=20
+ inp=9D D_1377=B9 D_1377_ref=B9
+BITREV OK: Number of cycles=20
+ inp=9E D_1377=79 D_1377_ref=79
+BITREV OK: Number of cycles=20
+ inp=9F D_1377=F9 D_1377_ref=F9
+BITREV OK: Number of cycles=20
+ inp=A0 D_1377=05 D_1377_ref=05
+BITREV OK: Number of cycles=20
+ inp=A1 D_1377=85 D_1377_ref=85
+BITREV OK: Number of cycles=20
+ inp=A2 D_1377=45 D_1377_ref=45
+BITREV OK: Number of cycles=20
+ inp=A3 D_1377=C5 D_1377_ref=C5
+BITREV OK: Number of cycles=20
+ inp=A4 D_1377=25 D_1377_ref=25
+BITREV OK: Number of cycles=20
+ inp=A5 D_1377=A5 D_1377_ref=A5
+BITREV OK: Number of cycles=20
+ inp=A6 D_1377=65 D_1377_ref=65
+BITREV OK: Number of cycles=20
+ inp=A7 D_1377=E5 D_1377_ref=E5
+BITREV OK: Number of cycles=20
+ inp=A8 D_1377=15 D_1377_ref=15
+BITREV OK: Number of cycles=20
+ inp=A9 D_1377=95 D_1377_ref=95
+BITREV OK: Number of cycles=20
+ inp=AA D_1377=55 D_1377_ref=55
+BITREV OK: Number of cycles=20
+ inp=AB D_1377=D5 D_1377_ref=D5
+BITREV OK: Number of cycles=20
+ inp=AC D_1377=35 D_1377_ref=35
+BITREV OK: Number of cycles=20
+ inp=AD D_1377=B5 D_1377_ref=B5
+BITREV OK: Number of cycles=20
+ inp=AE D_1377=75 D_1377_ref=75
+BITREV OK: Number of cycles=20
+ inp=AF D_1377=F5 D_1377_ref=F5
+BITREV OK: Number of cycles=20
+ inp=B0 D_1377=0D D_1377_ref=0D
+BITREV OK: Number of cycles=20
+ inp=B1 D_1377=8D D_1377_ref=8D
+BITREV OK: Number of cycles=20
+ inp=B2 D_1377=4D D_1377_ref=4D
+BITREV OK: Number of cycles=20
+ inp=B3 D_1377=CD D_1377_ref=CD
+BITREV OK: Number of cycles=20
+ inp=B4 D_1377=2D D_1377_ref=2D
+BITREV OK: Number of cycles=20
+ inp=B5 D_1377=AD D_1377_ref=AD
+BITREV OK: Number of cycles=20
+ inp=B6 D_1377=6D D_1377_ref=6D
+BITREV OK: Number of cycles=20
+ inp=B7 D_1377=ED D_1377_ref=ED
+BITREV OK: Number of cycles=20
+ inp=B8 D_1377=1D D_1377_ref=1D
+BITREV OK: Number of cycles=20
+ inp=B9 D_1377=9D D_1377_ref=9D
+BITREV OK: Number of cycles=20
+ inp=BA D_1377=5D D_1377_ref=5D
+BITREV OK: Number of cycles=20
+ inp=BB D_1377=DD D_1377_ref=DD
+BITREV OK: Number of cycles=20
+ inp=BC D_1377=3D D_1377_ref=3D
+BITREV OK: Number of cycles=20
+ inp=BD D_1377=BD D_1377_ref=BD
+BITREV OK: Number of cycles=20
+ inp=BE D_1377=7D D_1377_ref=7D
+BITREV OK: Number of cycles=20
+ inp=BF D_1377=FD D_1377_ref=FD
+BITREV OK: Number of cycles=20
+ inp=C0 D_1377=03 D_1377_ref=03
+BITREV OK: Number of cycles=20
+ inp=C1 D_1377=83 D_1377_ref=83
+BITREV OK: Number of cycles=20
+ inp=C2 D_1377=43 D_1377_ref=43
+BITREV OK: Number of cycles=20
+ inp=C3 D_1377=C3 D_1377_ref=C3
+BITREV OK: Number of cycles=20
+ inp=C4 D_1377=23 D_1377_ref=23
+BITREV OK: Number of cycles=20
+ inp=C5 D_1377=A3 D_1377_ref=A3
+BITREV OK: Number of cycles=20
+ inp=C6 D_1377=63 D_1377_ref=63
+BITREV OK: Number of cycles=20
+ inp=C7 D_1377=E3 D_1377_ref=E3
+BITREV OK: Number of cycles=20
+ inp=C8 D_1377=13 D_1377_ref=13
+BITREV OK: Number of cycles=20
+ inp=C9 D_1377=93 D_1377_ref=93
+BITREV OK: Number of cycles=20
+ inp=CA D_1377=53 D_1377_ref=53
+BITREV OK: Number of cycles=20
+ inp=CB D_1377=D3 D_1377_ref=D3
+BITREV OK: Number of cycles=20
+ inp=CC D_1377=33 D_1377_ref=33
+BITREV OK: Number of cycles=20
+ inp=CD D_1377=B3 D_1377_ref=B3
+BITREV OK: Number of cycles=20
+ inp=CE D_1377=73 D_1377_ref=73
+BITREV OK: Number of cycles=20
+ inp=CF D_1377=F3 D_1377_ref=F3
+BITREV OK: Number of cycles=20
+ inp=D0 D_1377=0B D_1377_ref=0B
+BITREV OK: Number of cycles=20
+ inp=D1 D_1377=8B D_1377_ref=8B
+BITREV OK: Number of cycles=20
+ inp=D2 D_1377=4B D_1377_ref=4B
+BITREV OK: Number of cycles=20
+ inp=D3 D_1377=CB D_1377_ref=CB
+BITREV OK: Number of cycles=20
+ inp=D4 D_1377=2B D_1377_ref=2B
+BITREV OK: Number of cycles=20
+ inp=D5 D_1377=AB D_1377_ref=AB
+BITREV OK: Number of cycles=20
+ inp=D6 D_1377=6B D_1377_ref=6B
+BITREV OK: Number of cycles=20
+ inp=D7 D_1377=EB D_1377_ref=EB
+BITREV OK: Number of cycles=20
+ inp=D8 D_1377=1B D_1377_ref=1B
+BITREV OK: Number of cycles=20
+ inp=D9 D_1377=9B D_1377_ref=9B
+BITREV OK: Number of cycles=20
+ inp=DA D_1377=5B D_1377_ref=5B
+BITREV OK: Number of cycles=20
+ inp=DB D_1377=DB D_1377_ref=DB
+BITREV OK: Number of cycles=20
+ inp=DC D_1377=3B D_1377_ref=3B
+BITREV OK: Number of cycles=20
+ inp=DD D_1377=BB D_1377_ref=BB
+BITREV OK: Number of cycles=20
+ inp=DE D_1377=7B D_1377_ref=7B
+BITREV OK: Number of cycles=20
+ inp=DF D_1377=FB D_1377_ref=FB
+BITREV OK: Number of cycles=20
+ inp=E0 D_1377=07 D_1377_ref=07
+BITREV OK: Number of cycles=20
+ inp=E1 D_1377=87 D_1377_ref=87
+BITREV OK: Number of cycles=20
+ inp=E2 D_1377=47 D_1377_ref=47
+BITREV OK: Number of cycles=20
+ inp=E3 D_1377=C7 D_1377_ref=C7
+BITREV OK: Number of cycles=20
+ inp=E4 D_1377=27 D_1377_ref=27
+BITREV OK: Number of cycles=20
+ inp=E5 D_1377=A7 D_1377_ref=A7
+BITREV OK: Number of cycles=20
+ inp=E6 D_1377=67 D_1377_ref=67
+BITREV OK: Number of cycles=20
+ inp=E7 D_1377=E7 D_1377_ref=E7
+BITREV OK: Number of cycles=20
+ inp=E8 D_1377=17 D_1377_ref=17
+BITREV OK: Number of cycles=20
+ inp=E9 D_1377=97 D_1377_ref=97
+BITREV OK: Number of cycles=20
+ inp=EA D_1377=57 D_1377_ref=57
+BITREV OK: Number of cycles=20
+ inp=EB D_1377=D7 D_1377_ref=D7
+BITREV OK: Number of cycles=20
+ inp=EC D_1377=37 D_1377_ref=37
+BITREV OK: Number of cycles=20
+ inp=ED D_1377=B7 D_1377_ref=B7
+BITREV OK: Number of cycles=20
+ inp=EE D_1377=77 D_1377_ref=77
+BITREV OK: Number of cycles=20
+ inp=EF D_1377=F7 D_1377_ref=F7
+BITREV OK: Number of cycles=20
+ inp=F0 D_1377=0F D_1377_ref=0F
+BITREV OK: Number of cycles=20
+ inp=F1 D_1377=8F D_1377_ref=8F
+BITREV OK: Number of cycles=20
+ inp=F2 D_1377=4F D_1377_ref=4F
+BITREV OK: Number of cycles=20
+ inp=F3 D_1377=CF D_1377_ref=CF
+BITREV OK: Number of cycles=20
+ inp=F4 D_1377=2F D_1377_ref=2F
+BITREV OK: Number of cycles=20
+ inp=F5 D_1377=AF D_1377_ref=AF
+BITREV OK: Number of cycles=20
+ inp=F6 D_1377=6F D_1377_ref=6F
+BITREV OK: Number of cycles=20
+ inp=F7 D_1377=EF D_1377_ref=EF
+BITREV OK: Number of cycles=20
+ inp=F8 D_1377=1F D_1377_ref=1F
+BITREV OK: Number of cycles=20
+ inp=F9 D_1377=9F D_1377_ref=9F
+BITREV OK: Number of cycles=20
+ inp=FA D_1377=5F D_1377_ref=5F
+BITREV OK: Number of cycles=20
+ inp=FB D_1377=DF D_1377_ref=DF
+BITREV OK: Number of cycles=20
+ inp=FC D_1377=3F D_1377_ref=3F
+BITREV OK: Number of cycles=20
+ inp=FD D_1377=BF D_1377_ref=BF
+BITREV OK: Number of cycles=20
+ inp=FE D_1377=7F D_1377_ref=7F
+BITREV OK: Number of cycles=20
+ inp=FF D_1377=FF D_1377_ref=FF
+BITREV OK: Number of cycles=20
+BITREV algorithm test has passed

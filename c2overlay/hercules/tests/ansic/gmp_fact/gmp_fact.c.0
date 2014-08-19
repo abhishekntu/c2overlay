@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include "fgmp.h"
+
+
+#define  MAXARG      100
+
+#ifdef ALGO
+//#define print(s,k)  k = 0 ; do { putchar(s[k++]);} while (s[k] != 0);
+
+int gmp_fact(unsigned int n)
+{
+  MP_INT prod;
+  int i, k;
+
+  mpz_init(&prod);
+  mpz_set_ui(&prod, 1);
+  for (i = 2; i <= n; i++) {
+    mpz_mul_ui(&prod, &prod, i);
+    fputc(115, stderr);
+    fputc(61, stderr);
+    mpz_printh(&prod);
+    fputc(10, stderr);
+  }
+  return 0;
+}
+#endif
+
+#ifdef TEST
+int main(void)
+{
+  int result;
+  result = gmp_fact(MAXARG);
+  printf("%08x\n", result);
+  return 0;
+}
+#endif

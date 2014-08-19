@@ -1,0 +1,51 @@
+procedure gmp_fibo (
+in u32 n, out s32 D_2845)
+{
+  localvar mpz f0;
+  localvar mpz f1;
+  localvar s32 i;
+  localvar u32 k;
+  localvar u32 t$11;
+  localvar u32 u$11;
+  localvar mpz f0$11;
+  localvar mpz f1$11;
+  localvar mpz f0$12;
+  localvar mpz f1$12;
+  localvar u32 k$11;
+  localvar u32 k$21;
+  localvar mpz f$21;
+  localvar mpz f0$21;
+  localvar mpz f1$21;
+
+L0005:
+  t$11 <= ldc 0;
+  u$11 <= ldc 1;
+  f0$11 <= mpz_init;
+  f1$11 <= mpz_init;
+  f0$12 <= mpz_set_ui f0$11, t$11;
+  mpz_printh f0$12;
+  f1$12 <= mpz_set_ui f1$11, u$11;
+  mpz_printh f1$12;
+  k$11 <= ldc 2;
+  f0 <= mov f0$12;
+  f1 <= mov f1$12;
+  k <= mov k$11;
+  D_2842 <= jmpun;
+D_2842:
+  k$21 <= add k, 1;
+  f$21 <= mpz_add f1, f0;
+  f0$21 <= mpz_set f0, f1;
+  f1$21 <= mpz_set f1, f$21;
+  mpz_printh f$21;
+  f0 <= mov f0$21;
+  f1 <= mov f1$21;
+  k <= mov k$21;
+  D_2842, D_2843 <= jmple k$21, n;
+D_2843:
+  D_2845 <= ldc 0;
+  L_EXIT <= jmpun;
+SC_00000:
+  L_EXIT <= jmpun;
+L_EXIT:
+  nop;
+}

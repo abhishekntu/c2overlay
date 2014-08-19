@@ -1,0 +1,31 @@
+gmp_fact (unsigned int n)
+gimple_bind <
+  long unsigned int i.0;
+  unsigned int i.1;
+  struct MP_INT prod;
+  int i;
+
+  gimple_try <GIMPLE_TRY_FINALLY,
+    EVAL <
+      gimple_call <mpz_init, NULL, &prod>
+      gimple_call <mpz_set_si, NULL, &prod, 1>
+      gimple_assign <integer_cst, i, 2, NULL>
+      gimple_goto <<D.2735>>
+      gimple_label <<D.2734>>
+      gimple_assign <nop_expr, i.0, i, NULL>
+      gimple_call <mpz_mul_ui, NULL, &prod, &prod, i.0>
+      gimple_assign <plus_expr, i, i, 1>
+      gimple_label <<D.2735>>
+      gimple_assign <nop_expr, i.1, i, NULL>
+      gimple_cond <le_expr, i.1, n, <D.2734>, <D.2736>>
+      gimple_label <<D.2736>>
+      gimple_assign <var_decl, <retval>, prod, NULL>
+      gimple_return <<retval>>
+    >
+    CLEANUP <
+      gimple_assign <constructor, prod, {CLOBBER}, NULL>
+    >
+  >
+>
+
+

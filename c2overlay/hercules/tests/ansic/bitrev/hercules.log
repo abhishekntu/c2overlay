@@ -1,0 +1,840 @@
+### HERCULES RUN: STARTED ###
+NAC file: bitrev.nac
+Generating VHDL package file: bitrev_pkg.vhd
+Generating VHDL compound data types package file: bitrev_cdt_pkg.vhd
+Generating main.c
+Generating main.h
+Generating ansic.mk Makefile
+Generating NAC export file for procedure bitrev: bitrev_ssa.nac
+Generating ANSI C file for procedure bitrev: bitrev_nac.c
+Generating dot file for the CDFG of procedure bitrev: bitrev.dot
+Generating the dot representation of the CFG for procedure bitrev: bitrev_cfg.dot
+Generating dot file for call-graph: bitrev_cg.dot
+Generating a plain graph for the CDFG of the current procedure: bitrev_cdfg.txt
+Generating the dot representation of the current procedure CFG: bitrev_cfg.dot
+Generating RTL VHDL for the current procedure: bitrev.vhd
+Generating the VHDL testbench for the root procedure: bitrev_tb.vhd
+Generating the Makefile for Modelsim simulation: bitrev.do
+Generating the shell script for VHDL simulation: bitrev.sh
+Generating the shell script for XST synthesis: bitrev-syn.sh
+rm -rf *.o main main.exe
+gcc -O2 -o main main.c bitrev_nac.c 
+Running main() for benchmark bitrev
+Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+
+# 10.1d
+
+# do bitrev.do 
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package std_logic_1164_tinyadditions
+# -- Compiling package body std_logic_1164_tinyadditions
+# -- Loading package std_logic_1164_tinyadditions
+# ** Warning: [3] c:/hercules/cdfg2hdl/contrib/vhdl/std_logic_1164_tinyadditions.vhd(117): (vcom-1246) Range 2 to 1 is null.
+# 
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package STD_LOGIC_TEXTIO
+# -- Compiling package body STD_LOGIC_TEXTIO
+# -- Loading package STD_LOGIC_TEXTIO
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package operpack
+# -- Compiling package body operpack
+# -- Loading package operpack
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package bitrev_cdt_pkg
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package operpack
+# -- Loading package bitrev_cdt_pkg
+# -- Loading package std_logic_1164_tinyadditions
+# -- Compiling entity bitrev
+# -- Compiling architecture fsmd of bitrev
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package STD_LOGIC_TEXTIO
+# -- Loading package NUMERIC_STD
+# -- Loading package bitrev_cdt_pkg
+# -- Loading package std_logic_1164_tinyadditions
+# -- Compiling entity bitrev_tb
+# -- Compiling architecture tb_arch of bitrev_tb
+# vsim bitrev_tb 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.std_logic_textio(body)
+# Loading ieee.numeric_std(body)
+# Loading work.bitrev_cdt_pkg
+# Loading work.std_logic_1164_tinyadditions(body)
+# Loading work.bitrev_tb(tb_arch)
+# Loading work.operpack(body)
+# Loading work.bitrev(fsmd)
+# ** Failure: NONE. End simulation time reached
+#    Time: 53760 ns  Iteration: 2  Process: /bitrev_tb/BITREV_BENCH File: bitrev_tb.vhd
+# Break in Process BITREV_BENCH at bitrev_tb.vhd line 138
+This script has been running for 5 seconds.
+rm -f *.work *.xst
+rm -f *.ngc *.ngd *.bld *.srp *.lso *.prj
+rm -f *.map.mrp *.map.ncd *.map.ngm *.mcs *.par.ncd *.par.pad
+rm -f *.pcf *.prm *.bgn *.drc
+rm -f *.par_pad.csv *.par_pad.txt *.par.par *.par.xpi
+rm -f *.bit
+rm -f *.vcd *.vvp
+rm -f verilog.dump verilog.log
+rm -rf _ngo/
+rm -rf xst/
+> bitrev.work
+for a in c:/hercules/cdfg2hdl/contrib/vhdl/std_logic_1164_tinyadditions.vhd c:/hercules/cdfg2hdl/contrib/vhdl/operpack_ieee.vhd bitrev_cdt_pkg.vhd bitrev.vhd; do echo "vhdl work $a" >> bitrev.work; done
+> bitrev.xst
+echo -n "run -ifn bitrev.work -ifmt mixed -top bitrev -ofn bitrev.ngc" >> bitrev.xst
+echo " -ofmt NGC -p xc6vlx75t-ff484-1 -iobuf no -opt_mode Speed -opt_level 1" >> bitrev.xst
+c:/XilinxISE/14.6/ISE_DS/ISE/bin/nt/xst -ifn bitrev.xst
+Release 14.6 - xst P.68d (nt)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> 
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "bitrev.work"
+Input Format                       : mixed
+
+---- Target Parameters
+Output File Name                   : "bitrev.ngc"
+Output Format                      : NGC
+Target Device                      : xc6vlx75t-ff484-1
+
+---- Source Options
+Top Module Name                    : bitrev
+
+---- Target Options
+Add IO Buffers                     : no
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "c:/hercules/cdfg2hdl/contrib/vhdl/std_logic_1164_tinyadditions.vhd" into library work
+Parsing package <std_logic_1164_tinyadditions>.
+Parsing package body <std_logic_1164_tinyadditions>.
+Parsing VHDL file "c:/hercules/cdfg2hdl/contrib/vhdl/operpack_ieee.vhd" into library work
+Parsing package <operpack>.
+Parsing package body <operpack>.
+Parsing VHDL file "C:\hercules\tests\ansic\bitrev\bitrev_cdt_pkg.vhd" into library work
+Parsing package <bitrev_cdt_pkg>.
+Parsing VHDL file "C:\hercules\tests\ansic\bitrev\bitrev.vhd" into library work
+Parsing entity <bitrev>.
+Parsing architecture <fsmd> of entity <bitrev>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <bitrev> (architecture <fsmd>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <bitrev>.
+    Related source file is "C:\hercules\tests\ansic\bitrev\bitrev.vhd".
+    Found 8-bit register for signal <i_21_reg>.
+    Found 8-bit register for signal <D_1376_21_reg>.
+    Found 8-bit register for signal <temp_11_reg>.
+    Found 8-bit register for signal <i_11_reg>.
+    Found 8-bit register for signal <i_reg>.
+    Found 8-bit register for signal <temp_reg>.
+    Found 8-bit register for signal <temp_0_21_reg>.
+    Found 8-bit register for signal <D_1374_21_reg>.
+    Found 8-bit register for signal <temp_21_reg>.
+    Found 8-bit register for signal <D_1377>.
+    Found 32-bit register for signal <D_1371_21_reg>.
+    Found 32-bit register for signal <D_1372_21_reg>.
+    Found 32-bit register for signal <D_1373_21_reg>.
+    Found 32-bit register for signal <D_1370_21_reg>.
+    Found 32-bit register for signal <D_1372_22_reg>.
+    Found 32-bit register for signal <D_1368_21_reg>.
+    Found 32-bit register for signal <D_1369_21_reg>.
+    Found 32-bit register for signal <D_1369_22_reg>.
+    Found 4-bit register for signal <current_state>.
+INFO:Xst:1799 - State s_001_002 is never reached in FSM <current_state>.
+INFO:Xst:1799 - State s_001_003 is never reached in FSM <current_state>.
+INFO:Xst:1799 - State s_002_002 is never reached in FSM <current_state>.
+INFO:Xst:1799 - State s_002_003 is never reached in FSM <current_state>.
+INFO:Xst:1799 - State s_002_004 is never reached in FSM <current_state>.
+INFO:Xst:1799 - State s_002_005 is never reached in FSM <current_state>.
+INFO:Xst:1799 - State s_002_006 is never reached in FSM <current_state>.
+INFO:Xst:1799 - State s_002_007 is never reached in FSM <current_state>.
+INFO:Xst:1799 - State s_002_008 is never reached in FSM <current_state>.
+INFO:Xst:1799 - State s_002_009 is never reached in FSM <current_state>.
+    Found finite state machine <FSM_0> for signal <current_state>.
+    -----------------------------------------------------------------------
+    | States             | 16                                             |
+    | Transitions        | 8                                              |
+    | Inputs             | 2                                              |
+    | Outputs            | 6                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | reset (positive)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | s_entry                                        |
+    | Power Up State     | s_entry                                        |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 8-bit adder for signal <i_reg[7]_GND_8_o_add_20_OUT> created at line 191.
+    Found 32-bit subtractor for signal <D_1372_21_next[31]_D_1369_22_next[31]_sub_28_OUT<31:0>> created at line 202.
+    Found 8-bit comparator greater for signal <n0034> created at line 211
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred 336 D-type flip-flop(s).
+	inferred   1 Comparator(s).
+	inferred  27 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <bitrev> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 32-bit subtractor                                     : 1
+ 8-bit adder                                           : 1
+# Registers                                            : 18
+ 32-bit register                                       : 8
+ 8-bit register                                        : 10
+# Comparators                                          : 1
+ 8-bit comparator greater                              : 1
+# Multiplexers                                         : 27
+ 32-bit 2-to-1 multiplexer                             : 18
+ 8-bit 2-to-1 multiplexer                              : 9
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 32-bit subtractor                                     : 1
+ 8-bit adder                                           : 1
+# Registers                                            : 336
+ Flip-Flops                                            : 336
+# Comparators                                          : 1
+ 8-bit comparator greater                              : 1
+# Multiplexers                                         : 34
+ 1-bit 2-to-1 multiplexer                              : 8
+ 32-bit 2-to-1 multiplexer                             : 18
+ 8-bit 2-to-1 multiplexer                              : 8
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <current_state[1:4]> with user encoding.
+-----------------------
+ State     | Encoding
+-----------------------
+ s_entry   | 0000
+ s_exit    | 0001
+ s_001_001 | 0010
+ s_001_002 | unreached
+ s_001_003 | unreached
+ s_002_001 | 0101
+ s_002_002 | unreached
+ s_002_003 | unreached
+ s_002_004 | unreached
+ s_002_005 | unreached
+ s_002_006 | unreached
+ s_002_007 | unreached
+ s_002_008 | unreached
+ s_002_009 | unreached
+ s_003_001 | 1110
+ s_004_001 | 1111
+-----------------------
+WARNING:Xst:1710 - FF/Latch <temp_11_reg_7> (without init value) has a constant value of 0 in block <bitrev>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <temp_11_reg_6> (without init value) has a constant value of 0 in block <bitrev>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <temp_11_reg_5> (without init value) has a constant value of 0 in block <bitrev>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <temp_11_reg_4> (without init value) has a constant value of 0 in block <bitrev>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <temp_11_reg_3> (without init value) has a constant value of 0 in block <bitrev>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <temp_11_reg_2> (without init value) has a constant value of 0 in block <bitrev>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <temp_11_reg_1> (without init value) has a constant value of 0 in block <bitrev>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <temp_11_reg_0> (without init value) has a constant value of 0 in block <bitrev>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <D_1372_21_reg_4> (without init value) has a constant value of 0 in block <bitrev>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <D_1372_21_reg_3> (without init value) has a constant value of 0 in block <bitrev>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_11_reg_7> (without init value) has a constant value of 0 in block <bitrev>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_11_reg_6> (without init value) has a constant value of 0 in block <bitrev>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_11_reg_5> (without init value) has a constant value of 0 in block <bitrev>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_11_reg_4> (without init value) has a constant value of 0 in block <bitrev>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_11_reg_3> (without init value) has a constant value of 0 in block <bitrev>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_11_reg_2> (without init value) has a constant value of 0 in block <bitrev>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_11_reg_1> (without init value) has a constant value of 0 in block <bitrev>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_11_reg_0> (without init value) has a constant value of 0 in block <bitrev>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <D_1373_21_reg_0> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1373_21_reg_1> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1373_21_reg_2> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1373_21_reg_3> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1373_21_reg_4> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1373_21_reg_5> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1373_21_reg_6> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1373_21_reg_7> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1373_21_reg_8> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1373_21_reg_9> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1373_21_reg_10> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1373_21_reg_11> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1373_21_reg_12> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1373_21_reg_13> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1373_21_reg_14> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1373_21_reg_15> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1373_21_reg_16> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1373_21_reg_17> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1373_21_reg_18> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1373_21_reg_19> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1373_21_reg_20> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1373_21_reg_21> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1373_21_reg_22> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1373_21_reg_23> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1373_21_reg_24> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1373_21_reg_25> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1373_21_reg_26> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1373_21_reg_27> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1373_21_reg_28> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1373_21_reg_29> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1373_21_reg_30> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1373_21_reg_31> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1371_21_reg_0> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1371_21_reg_1> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1371_21_reg_2> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1371_21_reg_3> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1371_21_reg_4> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1371_21_reg_5> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1371_21_reg_6> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1371_21_reg_7> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1371_21_reg_8> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1371_21_reg_9> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1371_21_reg_10> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1371_21_reg_11> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1371_21_reg_12> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1371_21_reg_13> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1371_21_reg_14> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1371_21_reg_15> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1371_21_reg_16> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1371_21_reg_17> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1371_21_reg_18> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1371_21_reg_19> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1371_21_reg_20> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1371_21_reg_21> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1371_21_reg_22> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1371_21_reg_23> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1371_21_reg_24> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1371_21_reg_25> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1371_21_reg_26> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1371_21_reg_27> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1371_21_reg_28> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1371_21_reg_29> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1371_21_reg_30> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1371_21_reg_31> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1372_21_reg_5> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1372_21_reg_6> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1372_21_reg_7> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1372_21_reg_8> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1372_21_reg_9> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1372_21_reg_10> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1372_21_reg_11> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1372_21_reg_12> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1372_21_reg_13> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1372_21_reg_14> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1372_21_reg_15> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1372_21_reg_16> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1372_21_reg_17> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1372_21_reg_18> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1372_21_reg_19> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1372_21_reg_20> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1372_21_reg_21> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1372_21_reg_22> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1372_21_reg_23> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1372_21_reg_24> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1372_21_reg_25> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1372_21_reg_26> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1372_21_reg_27> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1372_21_reg_28> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1372_21_reg_29> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1372_21_reg_30> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1372_21_reg_31> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1368_21_reg_0> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1368_21_reg_1> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1368_21_reg_2> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1368_21_reg_3> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1368_21_reg_4> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1368_21_reg_5> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1368_21_reg_6> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1368_21_reg_7> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1368_21_reg_8> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1368_21_reg_9> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1368_21_reg_10> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1368_21_reg_11> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1368_21_reg_12> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1368_21_reg_13> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1368_21_reg_14> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1368_21_reg_15> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1368_21_reg_16> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1368_21_reg_17> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1368_21_reg_18> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1368_21_reg_19> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1368_21_reg_20> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1368_21_reg_21> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1368_21_reg_22> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1368_21_reg_23> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1368_21_reg_24> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1368_21_reg_25> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1368_21_reg_26> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1368_21_reg_27> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1368_21_reg_28> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1368_21_reg_29> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1368_21_reg_30> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1368_21_reg_31> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1370_21_reg_0> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1370_21_reg_1> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1370_21_reg_2> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1370_21_reg_3> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1370_21_reg_4> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1370_21_reg_5> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1370_21_reg_6> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1370_21_reg_7> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1370_21_reg_8> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1370_21_reg_9> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1370_21_reg_10> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1370_21_reg_11> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1370_21_reg_12> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1370_21_reg_13> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1370_21_reg_14> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1370_21_reg_15> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1370_21_reg_16> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1370_21_reg_17> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1370_21_reg_18> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1370_21_reg_19> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1370_21_reg_20> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1370_21_reg_21> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1370_21_reg_22> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1370_21_reg_23> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1370_21_reg_24> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1370_21_reg_25> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1370_21_reg_26> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1370_21_reg_27> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1370_21_reg_28> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1370_21_reg_29> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1370_21_reg_30> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1370_21_reg_31> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1372_22_reg_5> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1372_22_reg_6> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1372_22_reg_7> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1372_22_reg_8> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1372_22_reg_9> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1372_22_reg_10> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1372_22_reg_11> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1372_22_reg_12> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1372_22_reg_13> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1372_22_reg_14> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1372_22_reg_15> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1372_22_reg_16> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1372_22_reg_17> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1372_22_reg_18> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1372_22_reg_19> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1372_22_reg_20> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1372_22_reg_21> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1372_22_reg_22> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1372_22_reg_23> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1372_22_reg_24> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1372_22_reg_25> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1372_22_reg_26> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1372_22_reg_27> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1372_22_reg_28> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1372_22_reg_29> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1372_22_reg_30> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1372_22_reg_31> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1369_21_reg_5> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1369_21_reg_6> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1369_21_reg_7> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1369_21_reg_8> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1369_21_reg_9> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1369_21_reg_10> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1369_21_reg_11> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1369_21_reg_12> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1369_21_reg_13> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1369_21_reg_14> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1369_21_reg_15> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1369_21_reg_16> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1369_21_reg_17> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1369_21_reg_18> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1369_21_reg_19> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1369_21_reg_20> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1369_21_reg_21> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1369_21_reg_22> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1369_21_reg_23> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1369_21_reg_24> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1369_21_reg_25> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1369_21_reg_26> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1369_21_reg_27> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1369_21_reg_28> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1369_21_reg_29> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1369_21_reg_30> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1369_21_reg_31> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1369_22_reg_5> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1369_22_reg_6> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1369_22_reg_7> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1369_22_reg_8> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1369_22_reg_9> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1369_22_reg_10> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1369_22_reg_11> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1369_22_reg_12> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1369_22_reg_13> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1369_22_reg_14> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1369_22_reg_15> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1369_22_reg_16> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1369_22_reg_17> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1369_22_reg_18> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1369_22_reg_19> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1369_22_reg_20> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1369_22_reg_21> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1369_22_reg_22> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1369_22_reg_23> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1369_22_reg_24> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1369_22_reg_25> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1369_22_reg_26> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1369_22_reg_27> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1369_22_reg_28> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1369_22_reg_29> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1369_22_reg_30> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1369_22_reg_31> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1376_21_reg_0> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1376_21_reg_1> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1376_21_reg_2> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1376_21_reg_3> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1376_21_reg_4> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1376_21_reg_5> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1376_21_reg_6> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1376_21_reg_7> of sequential type is unconnected in block <bitrev>.
+
+Optimizing unit <bitrev> ...
+WARNING:Xst:2677 - Node <D_1372_22_reg_2> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1372_22_reg_3> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1372_22_reg_4> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <temp_0_21_reg_0> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <temp_0_21_reg_1> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <temp_0_21_reg_2> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <temp_0_21_reg_3> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <temp_0_21_reg_4> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <temp_0_21_reg_5> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <temp_0_21_reg_6> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <temp_0_21_reg_7> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1372_22_reg_0> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1372_22_reg_1> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1372_22_reg_2> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1372_22_reg_3> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1372_22_reg_4> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <temp_0_21_reg_0> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <temp_0_21_reg_1> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <temp_0_21_reg_2> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <temp_0_21_reg_3> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <temp_0_21_reg_4> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <temp_0_21_reg_5> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <temp_0_21_reg_6> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <temp_0_21_reg_7> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1374_21_reg_0> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1374_21_reg_1> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1374_21_reg_2> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1374_21_reg_3> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1374_21_reg_4> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1374_21_reg_5> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1374_21_reg_6> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1374_21_reg_7> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1369_21_reg_3> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:2677 - Node <D_1369_21_reg_4> of sequential type is unconnected in block <bitrev>.
+WARNING:Xst:1710 - FF/Latch <D_1369_21_reg_3> (without init value) has a constant value of 0 in block <bitrev>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <D_1369_21_reg_4> (without init value) has a constant value of 0 in block <bitrev>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <D_1369_22_reg_3> (without init value) has a constant value of 0 in block <bitrev>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <D_1369_22_reg_4> (without init value) has a constant value of 0 in block <bitrev>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_reg_4> (without init value) has a constant value of 0 in block <bitrev>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_reg_5> (without init value) has a constant value of 0 in block <bitrev>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_reg_6> (without init value) has a constant value of 0 in block <bitrev>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_reg_7> (without init value) has a constant value of 0 in block <bitrev>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_21_reg_4> (without init value) has a constant value of 0 in block <bitrev>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_21_reg_5> (without init value) has a constant value of 0 in block <bitrev>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_21_reg_6> (without init value) has a constant value of 0 in block <bitrev>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <i_21_reg_7> (without init value) has a constant value of 0 in block <bitrev>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <D_1369_22_reg_0> in Unit <bitrev> is equivalent to the following FF/Latch, which will be removed : <D_1369_21_reg_0> 
+INFO:Xst:2261 - The FF/Latch <D_1369_22_reg_1> in Unit <bitrev> is equivalent to the following FF/Latch, which will be removed : <D_1369_21_reg_1> 
+INFO:Xst:2261 - The FF/Latch <D_1369_22_reg_2> in Unit <bitrev> is equivalent to the following FF/Latch, which will be removed : <D_1369_21_reg_2> 
+INFO:Xst:2261 - The FF/Latch <D_1372_22_reg_0> in Unit <bitrev> is equivalent to the following FF/Latch, which will be removed : <i_21_reg_0> 
+INFO:Xst:2261 - The FF/Latch <D_1372_21_reg_0> in Unit <bitrev> is equivalent to the following FF/Latch, which will be removed : <D_1372_21_reg_1> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 0) on block bitrev, actual ratio is 0.
+WARNING:Xst:2677 - Node <D_1372_22_reg_1> of sequential type is unconnected in block <bitrev>.
+FlipFlop current_state_FSM_FFd1 has been replicated 2 time(s)
+FlipFlop current_state_FSM_FFd2 has been replicated 2 time(s)
+FlipFlop current_state_FSM_FFd3 has been replicated 2 time(s)
+FlipFlop current_state_FSM_FFd4 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 56
+ Flip-Flops                                            : 56
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : bitrev.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 114
+#      GND                         : 1
+#      LUT2                        : 3
+#      LUT3                        : 2
+#      LUT4                        : 17
+#      LUT5                        : 23
+#      LUT6                        : 58
+#      MUXCY                       : 4
+#      VCC                         : 1
+#      XORCY                       : 5
+# FlipFlops/Latches                : 56
+#      FDC                         : 36
+#      FDCE                        : 20
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6vlx75tff484-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              56  out of  93120     0%  
+ Number of Slice LUTs:                  103  out of  46560     0%  
+    Number used as Logic:               103  out of  46560     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    115
+   Number with an unused Flip Flop:      59  out of    115    51%  
+   Number with an unused LUT:            12  out of    115    10%  
+   Number of fully used LUT-FF pairs:    44  out of    115    38%  
+   Number of unique control sets:         3
+
+IO Utilization: 
+ Number of IOs:                          21
+ Number of bonded IOBs:                   0  out of    240     0%  
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | NONE(temp_21_reg_0)    | 56    |
+-----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 3.358ns (Maximum Frequency: 297.796MHz)
+   Minimum input arrival time before clock: 1.869ns
+   Maximum output required time after clock: 1.089ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 3.358ns (frequency: 297.796MHz)
+  Total number of paths / destination ports: 4664 / 76
+-------------------------------------------------------------------------
+Delay:               3.358ns (Levels of Logic = 6)
+  Source:            current_state_FSM_FFd3_1 (FF)
+  Destination:       temp_21_reg_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: current_state_FSM_FFd3_1 to temp_21_reg_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.375   0.644  current_state_FSM_FFd3_1 (current_state_FSM_FFd3_1)
+     LUT4:I0->O            3   0.068   0.431  _n0157<3>1_1 (_n0157<3>1)
+     LUT4:I3->O            1   0.068   0.000  Msub_D_1372_21_next[31]_D_1369_22_next[31]_sub_28_OUT<31:0>_lut<0> (Msub_D_1372_21_next[31]_D_1369_22_next[31]_sub_28_OUT<31:0>_lut<0>)
+     MUXCY:S->O            1   0.290   0.000  Msub_D_1372_21_next[31]_D_1369_22_next[31]_sub_28_OUT<31:0>_cy<0> (Msub_D_1372_21_next[31]_D_1369_22_next[31]_sub_28_OUT<31:0>_cy<0>)
+     XORCY:CI->O          16   0.239   0.679  Msub_D_1372_21_next[31]_D_1369_22_next[31]_sub_28_OUT<31:0>_xor<1> (D_1372_21_next[31]_D_1369_22_next[31]_sub_28_OUT<1>)
+     LUT6:I3->O            1   0.068   0.417  Mmux_D_1376_21_next111_SW0 (N92)
+     LUT6:I5->O            1   0.068   0.000  Mmux_D_1376_21_next111 (temp_21_next<0>)
+     FDC:D                     0.011          temp_21_reg_0
+    ----------------------------------------
+    Total                      3.358ns (1.187ns logic, 2.171ns route)
+                                       (35.3% logic, 64.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 251 / 83
+-------------------------------------------------------------------------
+Offset:              1.869ns (Levels of Logic = 3)
+  Source:            inp<1> (PAD)
+  Destination:       temp_reg_7 (FF)
+  Destination Clock: clk rising
+
+  Data Path: inp<1> to temp_reg_7
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LUT6:I0->O            1   0.068   0.491  D_1369_21_next<4>12 (D_1369_21_next<4>11)
+     LUT6:I4->O           24   0.068   0.784  D_1369_21_next<4>13 (D_1369_21_next<4>_mmx_out)
+     LUT5:I1->O            1   0.068   0.000  Mmux__n0248811 (_n0248<7>)
+     FDCE:D                    0.011          temp_reg_7
+    ----------------------------------------
+    Total                      1.869ns (0.594ns logic, 1.275ns route)
+                                       (31.8% logic, 68.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 12 / 10
+-------------------------------------------------------------------------
+Offset:              1.089ns (Levels of Logic = 1)
+  Source:            current_state_FSM_FFd4 (FF)
+  Destination:       done (PAD)
+  Source Clock:      clk rising
+
+  Data Path: current_state_FSM_FFd4 to done
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             41   0.375   0.646  current_state_FSM_FFd4 (current_state_FSM_FFd4)
+     LUT2:I0->O            0   0.068   0.000  current_state__n0282<1>1 (done)
+    ----------------------------------------
+    Total                      1.089ns (0.443ns logic, 0.646ns route)
+                                       (40.7% logic, 59.3% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    3.358|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 11.00 secs
+Total CPU time to Xst completion: 11.03 secs
+ 
+--> 
+
+Total memory usage is 230672 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  309 (   0 filtered)
+Number of infos    :   16 (   0 filtered)
+
+The XST synthesis script has been running for 14 seconds.
+### HERCULES RUN: ENDED ###
+

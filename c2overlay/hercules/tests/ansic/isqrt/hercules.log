@@ -1,0 +1,73 @@
+### HERCULES RUN: STARTED ###
+
+Processing isqrt with irc2nac
+
+ *** LANCE V2.0 - ANSI C frontend ***
+
+ * Preprocessing 'isqrt.i' -> 'isqrt.pp'
+ * Configuration 'e:/hercules/thirdparty/lance-devel/CONFIG/config.win2000' 
+ * WARNING: parameter 'AUTO_INLINE' not found, default is 0
+ * WARNING: parameter 'INLINE_THRESHOLD' not found, default is 50
+ * WARNING: parameter 'ALIGN_STRUCT' not found, default is 0
+ * Analyzing 'isqrt.pp'
+ * Function 'isqrt'
+ * Writing 'isqrt.ir.c'
+ * 30 IR statements
+ * OK
+
+voidisqrt(unsigned,unsigned*);voidisqrt(unsignedx_2,unsigned*outp_3){unsignedm_5;unsignedy_6;unsignedb_7;unsignedx0_8;intt1;intt2;unsignedt3;unsignedt4;unsignedt5;intt6;intt14;unsignedt7;unsignedt8;intt9;intt12;unsignedt13;unsignedt10;unsignedt11;t1=32-2
+                                                                                                                                                                                                                                                             ^
+                                                                                                                                                                                                                                                  syntax error
+This script has been running for 3 seconds.
+Ran all tests.
+NAC file: isqrt.nac
+Generating VHDL package file: isqrt_pkg.vhd
+Generating VHDL compound data types package file: isqrt_cdt_pkg.vhd
+Generating main.c
+Generating main.h
+Generating ansic.mk Makefile
+Reading C:/altera/13.0sp1/modelsim_ase/tcl/vsim/pref.tcl 
+
+# 10.1d
+
+# do isqrt.do 
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package std_logic_1164_tinyadditions
+# -- Compiling package body std_logic_1164_tinyadditions
+# -- Loading package std_logic_1164_tinyadditions
+# ** Warning: [3] c:/hercules/cdfg2hdl/contrib/vhdl/std_logic_1164_tinyadditions.vhd(117): (vcom-1246) Range 2 to 1 is null.
+# 
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package STD_LOGIC_TEXTIO
+# -- Compiling package body STD_LOGIC_TEXTIO
+# -- Loading package STD_LOGIC_TEXTIO
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package operpack
+# -- Compiling package body operpack
+# -- Loading package operpack
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# ** Error: isqrt_cdt_pkg.vhd(1): (vcom-1491) Empty source files.
+# 
+# ** Error: c:/altera/13.0sp1/modelsim_ase/win32aloem/vcom failed.
+# Error in macro ./isqrt.do line 9
+# c:/altera/13.0sp1/modelsim_ase/win32aloem/vcom failed.
+#     while executing
+# "vcom isqrt_cdt_pkg.vhd"
+ModelSim> # 
+# <EOF> 
+This script has been running for 3 seconds.
+### HERCULES RUN: ENDED ###
+

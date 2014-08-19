@@ -1,0 +1,25 @@
+
+gimple_call < mpz_init , NULL , &%0 >
+=
+gimple_call < mpz_init , NULL , %0 >
+
+gimple_call < mpz_set_ui , NULL , &%0 , %1 >
+=
+gimple_call < mpz_set_ui , NULL , %0 , %1 >
+
+gimple_call < mpz_mul_ui , NULL , &%0 , &%1 , %2 >
+=
+gimple_call < mpz_mul_ui , NULL , %0 , %1 , %2 >
+
+gimple_call < mpz_printh , NULL , &%0 >
+=
+gimple_call < mpz_printh , NULL , %0 >
+
+gimple_call < mpz_add , NULL , &%0 , &%1 , &%2 >
+=
+gimple_call < mpz_add , NULL , %0 , %1 , %2 >
+
+gimple_call < mpz_set , NULL , &%0 , &%1 >
+=
+gimple_call < mpz_add , NULL , %0 , %1 >
+

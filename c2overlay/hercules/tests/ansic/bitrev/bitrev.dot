@@ -1,0 +1,76 @@
+digraph bitrev
+{
+  graph [rankdir="TB", nodesep = "0.175"];
+  node [fontname="Courier", fontsize="12", style="filled"];
+  edge [fontname="Courier", fontsize="12"];
+
+  D_1377  [label="D_1377", ntype="outvar", argix="0", dataspec="u8", bb="-1", shape="triangle", fillcolor="cyan"];
+  add_17  [label="add", ntype="operation", argix="-1", dataspec="na", bb="2", shape="ellipse", fillcolor="yellow"];
+  and_8  [label="and", ntype="operation", argix="-1", dataspec="na", bb="2", shape="ellipse", fillcolor="yellow"];
+  cnst0  [label="0", ntype="constant", argix="-1", dataspec="u8", bb="-1", shape="diamond", fillcolor="magenta"];
+  cnst1  [label="1", ntype="constant", argix="-1", dataspec="s32", bb="-1", shape="diamond", fillcolor="magenta"];
+  cnst7  [label="7", ntype="constant", argix="-1", dataspec="s32", bb="-1", shape="diamond", fillcolor="magenta"];
+  inp  [label="inp", ntype="invar", argix="0", dataspec="u8", bb="-1", shape="invtriangle", fillcolor="green"];
+  ior_15  [label="ior", ntype="operation", argix="-1", dataspec="na", bb="2", shape="ellipse", fillcolor="yellow"];
+  jmple_21  [label="jmple", ntype="operation", argix="-1", dataspec="na", bb="3", shape="ellipse", fillcolor="yellow"];
+  jmpun_20  [label="jmpun", ntype="operation", argix="-1", dataspec="na", bb="2", shape="ellipse", fillcolor="yellow"];
+  jmpun_4  [label="jmpun", ntype="operation", argix="-1", dataspec="na", bb="1", shape="ellipse", fillcolor="yellow"];
+  ldc_0  [label="ldc", ntype="operation", argix="-1", dataspec="na", bb="1", shape="ellipse", fillcolor="yellow"];
+  ldc_1  [label="ldc", ntype="operation", argix="-1", dataspec="na", bb="1", shape="ellipse", fillcolor="yellow"];
+  ldc_10  [label="ldc", ntype="operation", argix="-1", dataspec="na", bb="2", shape="ellipse", fillcolor="yellow"];
+  mov_18  [label="mov", ntype="operation", argix="-1", dataspec="na", bb="2", shape="ellipse", fillcolor="yellow"];
+  mov_19  [label="mov", ntype="operation", argix="-1", dataspec="na", bb="2", shape="ellipse", fillcolor="yellow"];
+  mov_2  [label="mov", ntype="operation", argix="-1", dataspec="na", bb="1", shape="ellipse", fillcolor="yellow"];
+  mov_22  [label="mov", ntype="operation", argix="-1", dataspec="na", bb="4", shape="ellipse", fillcolor="yellow"];
+  mov_3  [label="mov", ntype="operation", argix="-1", dataspec="na", bb="1", shape="ellipse", fillcolor="yellow"];
+  shl_12  [label="shl", ntype="operation", argix="-1", dataspec="na", bb="2", shape="ellipse", fillcolor="yellow"];
+  shr_7  [label="shr", ntype="operation", argix="-1", dataspec="na", bb="2", shape="ellipse", fillcolor="yellow"];
+  sub_11  [label="sub", ntype="operation", argix="-1", dataspec="na", bb="2", shape="ellipse", fillcolor="yellow"];
+  sxt_14  [label="sxt", ntype="operation", argix="-1", dataspec="na", bb="2", shape="ellipse", fillcolor="yellow"];
+  sxt_5  [label="sxt", ntype="operation", argix="-1", dataspec="na", bb="2", shape="ellipse", fillcolor="yellow"];
+  sxt_6  [label="sxt", ntype="operation", argix="-1", dataspec="na", bb="2", shape="ellipse", fillcolor="yellow"];
+  sxt_9  [label="sxt", ntype="operation", argix="-1", dataspec="na", bb="2", shape="ellipse", fillcolor="yellow"];
+  trunc_13  [label="trunc", ntype="operation", argix="-1", dataspec="na", bb="2", shape="ellipse", fillcolor="yellow"];
+  zxt_16  [label="zxt", ntype="operation", argix="-1", dataspec="na", bb="2", shape="ellipse", fillcolor="yellow"];
+
+  add_17 -> mov_18  [label="i$21", etype="D", vtype="localvar", order="1", argix="-1", dataspec="u8"];
+  and_8 -> shl_12  [label="D_1371$21", etype="D", vtype="localvar", order="1", argix="-1", dataspec="s32"];
+  cnst0 -> ldc_0  [label="0", etype="D", vtype="globalvar", order="1", argix="-1", dataspec="u8"];
+  cnst0 -> ldc_1  [label="0", etype="D", vtype="globalvar", order="1", argix="-1", dataspec="u8"];
+  cnst1 -> add_17  [label="1", etype="D", vtype="globalvar", order="2", argix="-1", dataspec="s32"];
+  cnst1 -> and_8  [label="1", etype="D", vtype="globalvar", order="2", argix="-1", dataspec="s32"];
+  cnst7 -> jmple_21  [label="7", etype="D", vtype="globalvar", order="2", argix="-1", dataspec="s32"];
+  cnst7 -> ldc_10  [label="7", etype="D", vtype="globalvar", order="1", argix="-1", dataspec="s32"];
+  inp -> sxt_5  [label="inp", etype="D", vtype="inarg", order="1", argix="-1", dataspec="u8"];
+  ior_15 -> zxt_16  [label="D_1376$21", etype="D", vtype="localvar", order="1", argix="-1", dataspec="s8"];
+  jmple_21 -> mov_22  [label="F", etype="F", order="2", argix="-1", dataspec="u1"];
+  jmple_21 -> sxt_5  [label="T", etype="T", order="1", argix="-1", dataspec="u1"];
+  jmpun_20 -> jmple_21  [label="U", etype="U", order="1", argix="-1", dataspec="u1"];
+  jmpun_4 -> jmple_21  [label="U", etype="U", order="1", argix="-1", dataspec="u1"];
+  ldc_0 -> mov_3  [label="temp$11", etype="D", vtype="localvar", order="1", argix="-1", dataspec="u8"];
+  ldc_10 -> sub_11  [label="D_1372$21", etype="D", vtype="localvar", order="1", argix="-1", dataspec="s32"];
+  ldc_1 -> mov_2  [label="i$11", etype="D", vtype="localvar", order="1", argix="-1", dataspec="u8"];
+  mov_18 -> add_17  [label="i", etype="D", vtype="localvar", order="1", argix="-1", dataspec="u8"];
+  mov_18 -> jmple_21  [label="i", etype="D", vtype="localvar", order="1", argix="-1", dataspec="u8"];
+  mov_18 -> sxt_6  [label="i", etype="D", vtype="localvar", order="1", argix="-1", dataspec="u8"];
+  mov_18 -> sxt_9  [label="i", etype="D", vtype="localvar", order="1", argix="-1", dataspec="u8"];
+  mov_19 -> mov_22  [label="temp", etype="D", vtype="localvar", order="1", argix="-1", dataspec="u8"];
+  mov_19 -> sxt_14  [label="temp", etype="D", vtype="localvar", order="1", argix="-1", dataspec="u8"];
+  mov_22 -> D_1377  [label="D_1377", etype="D", vtype="outarg", order="1", argix="-1", dataspec="u8"];
+  mov_2 -> add_17  [label="i", etype="D", vtype="localvar", order="1", argix="-1", dataspec="u8"];
+  mov_2 -> jmple_21  [label="i", etype="D", vtype="localvar", order="1", argix="-1", dataspec="u8"];
+  mov_2 -> sxt_6  [label="i", etype="D", vtype="localvar", order="1", argix="-1", dataspec="u8"];
+  mov_2 -> sxt_9  [label="i", etype="D", vtype="localvar", order="1", argix="-1", dataspec="u8"];
+  mov_3 -> mov_22  [label="temp", etype="D", vtype="localvar", order="1", argix="-1", dataspec="u8"];
+  mov_3 -> sxt_14  [label="temp", etype="D", vtype="localvar", order="1", argix="-1", dataspec="u8"];
+  shl_12 -> trunc_13  [label="D_1373$21", etype="D", vtype="localvar", order="1", argix="-1", dataspec="s32"];
+  shr_7 -> and_8  [label="D_1370$21", etype="D", vtype="localvar", order="1", argix="-1", dataspec="s32"];
+  sub_11 -> shl_12  [label="D_1372$22", etype="D", vtype="localvar", order="2", argix="-1", dataspec="s32"];
+  sxt_14 -> ior_15  [label="temp_0$21", etype="D", vtype="localvar", order="2", argix="-1", dataspec="s8"];
+  sxt_5 -> shr_7  [label="D_1368$21", etype="D", vtype="localvar", order="1", argix="-1", dataspec="s32"];
+  sxt_6 -> shr_7  [label="D_1369$21", etype="D", vtype="localvar", order="2", argix="-1", dataspec="s32"];
+  sxt_9 -> sub_11  [label="D_1369$22", etype="D", vtype="localvar", order="2", argix="-1", dataspec="s32"];
+  trunc_13 -> ior_15  [label="D_1374$21", etype="D", vtype="localvar", order="1", argix="-1", dataspec="s8"];
+  zxt_16 -> mov_19  [label="temp$21", etype="D", vtype="localvar", order="1", argix="-1", dataspec="u8"];
+
+}

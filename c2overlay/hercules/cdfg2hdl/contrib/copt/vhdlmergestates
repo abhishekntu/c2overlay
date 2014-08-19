@@ -1,0 +1,23 @@
+        next_state <= S_EXIT;
+      when S_EXIT =>
+=
+        next_state <= S_EXIT; --
+      when S_EXIT =>        --
+
+        next_state <= S_%0_001;
+      when S_%0_001 =>
+=
+        next_state <= S_%0_001; --
+      when S_%0_001 =>        --
+
+        %0 <= '1';
+        next_state <= S_%1;
+      when S_%2 =>
+=
+        %0 <= '1';
+        next_state <= S_%1; --
+      when S_%2 =>        --
+
+        next_state <= S_%0;
+      when S_%0 =>
+=

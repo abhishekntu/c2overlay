@@ -1,0 +1,33 @@
+globalvar s32 arr[10]={2,3,5,7,11,13,17,19,23,27};
+procedure arraysum (
+in s32 in1, out s32 out1)
+{
+  localvar s32 sum$1;
+  localvar s32 i$1;
+  localvar s32 i$4;
+  localvar s32 D_1237$3;
+  localvar s32 sum$4;
+  localvar s32 sum$3;
+  localvar s32 i$3;
+
+L0005:
+  sum$1 <= ldc 0;
+  i$1 <= ldc 0;
+  i$4 <= mov i$1;
+  sum$4 <= mov sum$1;
+  D_1234 <= jmpun;
+D_1233:
+  D_1237$3 <= load arr, i$4;
+  sum$3 <= add D_1237$3, sum$4;
+  i$3 <= add i$4, 1;
+  i$4 <= mov i$3;
+  sum$4 <= mov sum$3;
+  D_1234 <= jmpun;
+D_1234:
+  D_1233, D_1235 <= jmplt i$4, in1;
+D_1235:
+  out1 <= mov sum$4;
+  L_EXIT <= jmpun;
+L_EXIT:
+  nop;
+}

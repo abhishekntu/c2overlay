@@ -1,0 +1,37 @@
+gmp_fibo (unsigned int n)
+gimple_bind <
+  int D.2744;
+  struct MP_INT f0;
+  struct MP_INT f1;
+  struct MP_INT f;
+  int i;
+  unsigned int k;
+
+  gimple_try <GIMPLE_TRY_FINALLY,
+    EVAL <
+      gimple_call <mpz_init, NULL, f0>
+      gimple_call <mpz_init, NULL, f1>
+      gimple_call <mpz_init, NULL, &f>
+      gimple_call <mpz_set_ui, NULL, f0, 0>
+      gimple_call <mpz_set_ui, NULL, f1, 1>
+      gimple_assign <integer_cst, k, 2, NULL>
+      gimple_label <<D.2741>>
+      gimple_assign <plus_expr, k, k, 1>
+      gimple_call <mpz_add, NULL, &f, f1, f0>
+      gimple_call <mpz_set, NULL, f0, f1>
+      gimple_call <mpz_set, NULL, f1, &f>
+      gimple_call <mpz_printh, NULL, &f>
+      gimple_cond <le_expr, k, n, <D.2741>, <D.2742>>
+      gimple_label <<D.2742>>
+      gimple_assign <integer_cst, D.2744, 0, NULL>
+      gimple_return <D.2744>
+    >
+    CLEANUP <
+      gimple_assign <constructor, f0, {CLOBBER}, NULL>
+      gimple_assign <constructor, f1, {CLOBBER}, NULL>
+      gimple_assign <constructor, f, {CLOBBER}, NULL>
+    >
+  >
+>
+
+

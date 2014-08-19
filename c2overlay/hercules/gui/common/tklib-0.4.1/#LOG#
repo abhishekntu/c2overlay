@@ -1,0 +1,39 @@
+                                                                                                                      
+autoscroll      Provides for a scrollbar to automatically mapped and unmapped as needed
+                                                                                                     
+ctext   Ctext    Ctext a text widget with highlighting support
+                                                              
+cursor      Procedures to handle CURSOR data
+                                                     
+datefield     Tk datefield widget
+                                                                       
+getstring      A string dialog
+                                                                                     
+history      Provides a history for Entry widgets
+                                                              
+ico   Windows ICO handling   
+                                                                 
+ipentry   An IP address entry widget   
+                                                            
+Plotchart   Plotchart   
+                    
+style               
+style::as           
+style::lobster      
+                                                                                                                                          
+swaplist   A dialog which allows a user to move options between two lists
+   
+  
+                                                                         
+tkpiechart   tkpiechart pie class   
+                                                  
+tipstack                                          
+tooltip    Tooltip management  
+                                                                
+widget                   Megawidget package   
+widget::dialog                                                  
+widget::panelframe                                              
+widget::ruler                                                   
+widget::screenruler                                             
+widget::scrolledwindow                                          
+widget::superframe                                              

@@ -1,0 +1,27 @@
+//
+// Filename: eda.0.nac
+// Purpose : N-address code (NAC) implementation for a 2D Euclidean distance 
+//           approximation algorithm.
+// Author  : Nikolaos Kavvadias (C) 2009, 2010, 2011, 2012, 2013
+// Date    : 14-Aug-2009
+// Revision: 0.1.0 (14/08/09)
+//           Initial version.
+//
+
+procedure eda (in s32 in1, in s32 in2, out u32 out1)
+{
+  localvar u32 x, y, t1, t2, t3, t4, t5, t6, t7;
+
+S_1:
+  t1 <= abs in1;
+  t2 <= abs in2;
+  x <= max t1, t2;
+  y <= min t1, t2;
+  t3 <= shr x, 3;
+  t4 <= shr y, 1;
+  t5 <= sub x, t3;
+  t6 <= add t4, t5;
+  t7 <= max t6, x;
+  
+  out1 <= mov t7;
+}

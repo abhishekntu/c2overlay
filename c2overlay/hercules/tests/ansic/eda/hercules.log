@@ -1,0 +1,24 @@
+### HERCULES RUN: STARTED ###
+NAC file: eda.nac
+Generating VHDL package file: eda_pkg.vhd
+Generating VHDL compound data types package file: eda_cdt_pkg.vhd
+Generating NAC export file for procedure eda: eda_ssa.nac
+Generating dot file for the CDFG of procedure eda: eda.dot
+Generating the dot representation of the CFG for procedure eda: eda_cfg.dot
+Generating dot file for call-graph: eda_cg.dot
+Generating a plain graph for the CDFG of the current procedure: eda_cdfg.txt
+Generating the dot representation of the current procedure CFG: eda_cfg.dot
+Generating RTL VHDL for the current procedure: eda.vhd
+rm -rf *.o *.ghdl work
+mkdir work
+ghdl -i --ieee=standard -fexplicit --workdir=work ../../../cdfg2hdl/contrib/vhdl/std_logic_1164_tinyadditions.vhd
+ghdl -i --ieee=standard -fexplicit --workdir=work ../../../cdfg2hdl/contrib/vhdl/std_logic_textio.vhd
+ghdl -i --ieee=standard -fexplicit --workdir=work ../../../cdfg2hdl/contrib/vhdl/operpack_ieee.vhd
+ghdl -i --ieee=standard -fexplicit --workdir=work eda_cdt_pkg.vhd
+ghdl -i --ieee=standard -fexplicit --workdir=work eda.vhd
+ghdl -i --ieee=standard -fexplicit --workdir=work eda_tb.vhd
+ghdl -m --ieee=standard -fexplicit --workdir=work -o eda.ghdl eda_tb
+./eda.ghdl --stop-time=2147483647ns
+This script has been running for 0 seconds.
+### HERCULES RUN: ENDED ###
+

@@ -1,0 +1,93 @@
+globalvar u32 h_Input[16]={1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16};
+globalvar u32 h_Output[16];
+procedure c2vwalsh (
+in u32 log2N, out u32 y)
+{
+  localvar u32 pos;
+  localvar u32 stride;
+  localvar u32 base;
+  localvar u32 j;
+  localvar u32 N;
+  localvar u32 k$11;
+  localvar s32 log2N_0$11;
+  localvar u32 N$11;
+  localvar u32 pos$11;
+  localvar u32 D_1389$21;
+  localvar u32 pos$21;
+  localvar u32 stride$41;
+  localvar u32 base$51;
+  localvar u32 j$61;
+  localvar u32 i0$71;
+  localvar u32 D_1390$71;
+  localvar u32 i1$71;
+  localvar u32 T1$71;
+  localvar u32 T2$71;
+  localvar u32 D_1391$71;
+  localvar u32 D_1392$71;
+  localvar u32 j$71;
+  localvar u32 D_1393$91;
+  localvar u32 base$91;
+  localvar u32 stride$111;
+
+L0005:
+  k$11 <= ldc 1;
+  log2N_0$11 <= sxt log2N;
+  N$11 <= shl k$11, log2N_0$11;
+  pos$11 <= ldc 0;
+  pos <= mov pos$11;
+  N <= mov N$11;
+  D_1376 <= jmpun;
+D_1375:
+  D_1389$21 <= load h_Input, pos;
+  h_Output <= store D_1389$21, pos;
+  pos$21 <= add pos, 1;
+  pos <= mov pos$21;
+  D_1376 <= jmpun;
+D_1376:
+  D_1375, D_1377 <= jmplt pos, N;
+D_1377:
+  stride$41 <= div N, 2;
+  stride <= mov stride$41;
+  D_1385 <= jmpun;
+D_1384:
+  base$51 <= ldc 0;
+  base <= mov base$51;
+  D_1382 <= jmpun;
+D_1381:
+  j$61 <= ldc 0;
+  j <= mov j$61;
+  D_1379 <= jmpun;
+D_1378:
+  i0$71 <= add base, j;
+  D_1390$71 <= add base, j;
+  i1$71 <= add D_1390$71, stride;
+  T1$71 <= load h_Output, i0$71;
+  T2$71 <= load h_Output, i1$71;
+  D_1391$71 <= sub T1$71, T2$71;
+  h_Output <= store D_1391$71, i1$71;
+  D_1392$71 <= add T1$71, T2$71;
+  h_Output <= store D_1392$71, i0$71;
+  j$71 <= add j, 1;
+  j <= mov j$71;
+  D_1379 <= jmpun;
+D_1379:
+  D_1378, D_1380 <= jmplt j, stride;
+D_1380:
+  D_1393$91 <= mul stride, 2;
+  base$91 <= add D_1393$91, base;
+  base <= mov base$91;
+  D_1382 <= jmpun;
+D_1382:
+  D_1381, D_1383 <= jmplt base, N;
+D_1383:
+  stride$111 <= shr stride, 1;
+  stride <= mov stride$111;
+  D_1385 <= jmpun;
+D_1385:
+  D_1384, D_1386 <= jmpne stride, 0;
+D_1386:
+  y <= ldc 1;
+  L_EXIT <= jmpun;
+L_EXIT:
+  nop;
+}

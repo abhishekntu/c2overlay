@@ -1,0 +1,3 @@
+ out1=00000304 out1_ref=00000304
+MANDEL OK: Number of cycles=674876
+MANDEL algorithm test has passed

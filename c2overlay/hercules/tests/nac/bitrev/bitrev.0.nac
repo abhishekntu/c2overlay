@@ -1,0 +1,32 @@
+//
+// Filename: bitrev.0.nac
+// Purpose : N-address code (NAC) implementation for the bit-reversal algorithm.
+// Author  : Nikolaos Kavvadias (C) 2009, 2010, 2011, 2012, 2013
+// Date    : 30-Sep-2009
+// Revision: 0.1.0 (30/09/09)
+//           Initial version.
+// 
+
+procedure bitrev (in u8 inp, out u8 outp)
+{
+  localvar u8 i, temp;
+  localvar u8 t0, t1, t2, t3, t4;
+  
+S_1:
+  i <= ldc 0;
+  temp <= ldc 0;
+  S_2 <= jmpun;
+
+S_2:
+  t4 <= sub i, 7;
+  t0 <= neg t4;
+  t1 <= shr inp, i;
+  t2 <= and t1, 1;
+  t3 <= shl t2, t0;
+  temp <= ior temp, t3;
+  i <= add i, 1;
+  S_2, S_3 <= jmplt i, 8;
+  
+S_3:
+  outp <= mov temp;
+}

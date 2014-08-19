@@ -1,0 +1,4 @@
+vhdl work c:/hercules/cdfg2hdl/contrib/vhdl/std_logic_1164_tinyadditions.vhd
+vhdl work c:/hercules/cdfg2hdl/contrib/vhdl/operpack_ieee.vhd
+vhdl work isqrt_cdt_pkg.vhd
+vhdl work isqrt.vhd

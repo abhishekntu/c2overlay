@@ -1,0 +1,39 @@
+fir (int * out1)
+gimple_bind <
+  int D.1376;
+  int D.1377;
+  int D.1378;
+  int D.1379;
+  int i;
+  int j;
+  static int v[10] = {0, 1, 0, 1, 2, 1, 0, 0, 1, 1};
+  static int a[8] = {1, 2, 0, 1, 0, 2, 1, 1};
+  int acc;
+
+  gimple_assign <integer_cst, acc, 0, NULL>
+  gimple_assign <integer_cst, i, 9, NULL>
+  gimple_goto <<D.1371>>
+  gimple_label <<D.1370>>
+  gimple_assign <integer_cst, j, 7, NULL>
+  gimple_goto <<D.1368>>
+  gimple_label <<D.1367>>
+  gimple_cond <le_expr, j, i, <D.1374>, <D.1375>>
+  gimple_label <<D.1374>>
+  gimple_assign <minus_expr, D.1376, i, j>
+  gimple_assign <array_ref, D.1377, v[D.1376], NULL>
+  gimple_assign <array_ref, D.1378, a[j], NULL>
+  gimple_assign <mult_expr, D.1379, D.1377, D.1378>
+  gimple_assign <plus_expr, acc, D.1379, acc>
+  gimple_label <<D.1375>>
+  gimple_assign <plus_expr, j, j, -1>
+  gimple_label <<D.1368>>
+  gimple_cond <ge_expr, j, 0, <D.1367>, <D.1369>>
+  gimple_label <<D.1369>>
+  gimple_assign <plus_expr, i, i, -1>
+  gimple_label <<D.1371>>
+  gimple_cond <ge_expr, i, 0, <D.1370>, <D.1372>>
+  gimple_label <<D.1372>>
+  gimple_assign <var_decl, *out1, acc, NULL>
+>
+
+

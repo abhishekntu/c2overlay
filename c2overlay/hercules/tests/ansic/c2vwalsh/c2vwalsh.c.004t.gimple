@@ -1,0 +1,68 @@
+c2vwalsh (unsigned int log2N, unsigned int * y)
+gimple_bind <
+  int log2N.0;
+  unsigned int D.1389;
+  unsigned int D.1390;
+  unsigned int D.1391;
+  unsigned int D.1392;
+  unsigned int D.1393;
+  static unsigned int h_Input[16] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16};
+  static unsigned int h_Output[16];
+  unsigned int pos;
+  unsigned int stride;
+  unsigned int base;
+  unsigned int j;
+  unsigned int i0;
+  unsigned int i1;
+  unsigned int T1;
+  unsigned int T2;
+  unsigned int k;
+  unsigned int N;
+
+  gimple_assign <integer_cst, k, 1, NULL>
+  gimple_assign <nop_expr, log2N.0, log2N, NULL>
+  gimple_assign <lshift_expr, N, k, log2N.0>
+  gimple_assign <integer_cst, pos, 0, NULL>
+  gimple_goto <<D.1376>>
+  gimple_label <<D.1375>>
+  gimple_assign <array_ref, D.1389, h_Input[pos], NULL>
+  gimple_assign <var_decl, h_Output[pos], D.1389, NULL>
+  gimple_assign <plus_expr, pos, pos, 1>
+  gimple_label <<D.1376>>
+  gimple_cond <lt_expr, pos, N, <D.1375>, <D.1377>>
+  gimple_label <<D.1377>>
+  gimple_assign <trunc_div_expr, stride, N, 2>
+  gimple_goto <<D.1385>>
+  gimple_label <<D.1384>>
+  gimple_assign <integer_cst, base, 0, NULL>
+  gimple_goto <<D.1382>>
+  gimple_label <<D.1381>>
+  gimple_assign <integer_cst, j, 0, NULL>
+  gimple_goto <<D.1379>>
+  gimple_label <<D.1378>>
+  gimple_assign <plus_expr, i0, base, j>
+  gimple_assign <plus_expr, D.1390, base, j>
+  gimple_assign <plus_expr, i1, D.1390, stride>
+  gimple_assign <array_ref, T1, h_Output[i0], NULL>
+  gimple_assign <array_ref, T2, h_Output[i1], NULL>
+  gimple_assign <minus_expr, D.1391, T1, T2>
+  gimple_assign <var_decl, h_Output[i1], D.1391, NULL>
+  gimple_assign <plus_expr, D.1392, T1, T2>
+  gimple_assign <var_decl, h_Output[i0], D.1392, NULL>
+  gimple_assign <plus_expr, j, j, 1>
+  gimple_label <<D.1379>>
+  gimple_cond <lt_expr, j, stride, <D.1378>, <D.1380>>
+  gimple_label <<D.1380>>
+  gimple_assign <mult_expr, D.1393, stride, 2>
+  gimple_assign <plus_expr, base, D.1393, base>
+  gimple_label <<D.1382>>
+  gimple_cond <lt_expr, base, N, <D.1381>, <D.1383>>
+  gimple_label <<D.1383>>
+  gimple_assign <rshift_expr, stride, stride, 1>
+  gimple_label <<D.1385>>
+  gimple_cond <ne_expr, stride, 0, <D.1384>, <D.1386>>
+  gimple_label <<D.1386>>
+  gimple_assign <integer_cst, *y, 1, NULL>
+>
+
+

@@ -1,0 +1,68 @@
+//
+// Filename: fastdivs.nac
+// Purpose : N-address code (NAC) implementation for signed integer division 
+//           based on a modified version of unsigned long division as found in 
+//           "Hacker's Delight" and Ian Kaplan's signed_divide routine.
+// Author  : Nikolaos Kavvadias (C) 2011
+// Date    : 21-Aug-2011
+// Revision: 0.3.0 (21/08/11)
+//           Initial version.
+
+procedure fastdivs (in s32 x, in s32 y, out s32 q, out s32 r)
+{
+  localvar u32 x0, y0, z, t1, t2, x1, y2, x3, y3, s, u;
+  localvar s32 i, t, t0, q0, r0, y1, y4;
+S_1: 
+  x0 <= ldc 0;
+  y0 <= abs x;
+  z <= abs y;
+  i <= ldc 0;
+  S_2 <= jmpun;  
+S_2:
+  t0 <= sxt x0;
+  t <= shr t0, 31;
+  x1 <= shl x0, 1;
+  y2 <= shr y0, 31;
+  x0 <= ior x1, y2;
+  y0 <= shl y0, 1;
+  x3 <= sub x0, z;
+  y3 <= add y0, 1;
+  t1 <= zxt t;
+  t2 <= ior x0, t1;
+  x0 <= muxge t2, z, x3, x0;
+  y0 <= muxge t2, z, y3, y0;
+  i <= add i, 1;
+  S_2, S_3 <= jmplt i, 32;
+S_3:
+  y1 <= neg y0;
+  y4 <= zxt y0;
+  s <= shr y, 31;
+  u <= shr x, 31;
+  S_4, S_5 <= jmpne u, 0;
+S_4:  
+  r0 <= neg x0;
+  q0 <= muxeq s, 0, y1, y4;
+  S_6 <= jmpun;
+S_5:
+  r0 <= mov x0;
+  q0 <= muxne s, 0, y1, y4;
+  S_6 <= jmpun;  
+S_6:
+  q <= mov q0;
+  r <= mov r0; 
+}
+//  if (x < 0) {
+//    r0 = -x0;
+//    if (y > 0)
+//      q0 = -y0;
+//    else
+//      q0 = y0;
+//  }
+//  else 
+//  { /* positive dividend */
+//    r0 = x0;
+//    if (y < 0)
+//      q0 = -y0;
+//    else
+//      q0 = y0;
+//  }  

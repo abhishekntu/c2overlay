@@ -1,0 +1,37 @@
+procedure bitrev(in u8 inp,out u8 D_1377)
+{
+  localvar s32 D_1368;
+  localvar s32 D_1369;
+  localvar s32 D_1370;
+  localvar s32 D_1371;
+  localvar s32 D_1372;
+  localvar s32 D_1373;
+  localvar s8 D_1374;
+  localvar s8 temp_0;
+  localvar s8 D_1376;
+  localvar u8 i;
+  localvar u8 temp;
+L0005:
+  temp <= ldc 0;
+  i <= ldc 0;
+  D_1365 <= jmpun;
+D_1364:
+  D_1368 <= sxt inp;
+  D_1369 <= sxt i;
+  D_1370 <= shr D_1368,D_1369;
+  D_1371 <= and D_1370,1;
+  D_1369 <= sxt i;
+  D_1372 <= ldc 7;
+  D_1372 <= sub D_1372,D_1369;
+  D_1373 <= shl D_1371,D_1372;
+  D_1374 <= trunc D_1373;
+  temp_0 <= sxt temp;
+  D_1376 <= ior D_1374,temp_0;
+  temp <= zxt D_1376;
+  i <= add i,1;
+  D_1365 <= jmpun;
+D_1365:
+  D_1364,D_1366 <= jmple i,7;
+D_1366:
+  D_1377 <= mov temp;
+}

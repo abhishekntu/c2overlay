@@ -1,0 +1,30 @@
+procedure eda ( in s32 in1 , in s32 in2 , out s32 out1 ) 
+{ 
+localvar s32 t1 ; 
+localvar s32 t2 ; 
+localvar s32 t3 ; 
+localvar s32 t4 ; 
+localvar s32 t5 ; 
+localvar s32 t6 ; 
+localvar s32 t7 ; 
+localvar s32 a ; 
+localvar s32 b ; 
+localvar s32 x ; 
+localvar s32 y ; 
+L0005 : 
+a <= mov in1 ; 
+b <= mov in2 ; 
+t1 <= abs a ; 
+t2 <= abs b ; 
+x <= max t2 , t1 ; 
+y <= min t2 , t1 ; 
+t3 <= shr x , 3 ; 
+t4 <= shr y , 1 ; 
+t5 <= sub x , t3 ; 
+t6 <= add t4 , t5 ; 
+t7 <= max x , t6 ; 
+out1 <= mov t7 ; 
+L_EXIT <= jmpun ;
+L_EXIT : 
+nop ; 
+} 

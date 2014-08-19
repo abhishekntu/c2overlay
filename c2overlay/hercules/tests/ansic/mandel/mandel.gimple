@@ -1,0 +1,102 @@
+mandel (int * out1)
+gimple_bind <
+  int on.0;
+  int x;
+  int y;
+  int on;
+  int cnt;
+
+  gimple_try <GIMPLE_TRY_FINALLY,
+    EVAL <
+      gimple_assign <integer_cst, cnt, 0, NULL>
+      gimple_assign <integer_cst, y, 950, NULL>
+      gimple_goto <<D.1383>>
+      gimple_label <<D.1382>>
+      gimple_assign <integer_cst, x, -2100, NULL>
+      gimple_goto <<D.1380>>
+      gimple_label <<D.1379>>
+      gimple_call <checkpixel, NULL, x, y, &on>
+      gimple_assign <var_decl, on.0, on, NULL>
+      gimple_cond <eq_expr, on.0, 1, <D.1387>, <D.1388>>
+      gimple_label <<D.1387>>
+      gimple_assign <plus_expr, cnt, cnt, 1>
+      gimple_label <<D.1388>>
+      gimple_assign <var_decl, on.0, on, NULL>
+      gimple_cond <eq_expr, on.0, 0, <D.1389>, <D.1390>>
+      gimple_label <<D.1389>>
+      gimple_label <<D.1390>>
+      gimple_assign <plus_expr, x, x, 40>
+      gimple_label <<D.1380>>
+      gimple_cond <le_expr, x, 999, <D.1379>, <D.1381>>
+      gimple_label <<D.1381>>
+      gimple_assign <plus_expr, y, y, -50>
+      gimple_label <<D.1383>>
+      gimple_cond <ge_expr, y, -949, <D.1382>, <D.1384>>
+      gimple_label <<D.1384>>
+      gimple_assign <var_decl, *out1, cnt, NULL>
+    >
+    CLEANUP <
+      gimple_assign <constructor, on, {CLOBBER}, NULL>
+    >
+  >
+>
+
+
+checkpixel (int x, int y, int * flag)
+gimple_bind <
+  int D.1391;
+  int D.1392;
+  int D.1393;
+  int D.1394;
+  int D.1395;
+  int D.1396;
+  int D.1397;
+  int D.1398;
+  int D.1399;
+  int D.1400;
+  int D.1401;
+  int D.1402;
+  int D.1403;
+  int D.1404;
+  int real;
+  int imag;
+  int temp;
+  int iter;
+  int f;
+
+  gimple_assign <integer_cst, f, 1, NULL>
+  gimple_assign <integer_cst, real, 0, NULL>
+  gimple_assign <integer_cst, imag, 0, NULL>
+  gimple_assign <integer_cst, iter, 0, NULL>
+  gimple_goto <<D.1371>>
+  gimple_label <<D.1370>>
+  gimple_assign <mult_expr, D.1391, real, real>
+  gimple_assign <plus_expr, D.1392, D.1391, 500>
+  gimple_assign <trunc_div_expr, D.1393, D.1392, 1000>
+  gimple_assign <mult_expr, D.1394, imag, imag>
+  gimple_assign <plus_expr, D.1395, D.1394, 500>
+  gimple_assign <trunc_div_expr, D.1396, D.1395, -1000>
+  gimple_assign <plus_expr, D.1397, D.1393, D.1396>
+  gimple_assign <plus_expr, temp, D.1397, x>
+  gimple_assign <mult_expr, D.1398, real, 2>
+  gimple_assign <mult_expr, D.1399, D.1398, imag>
+  gimple_assign <plus_expr, D.1400, D.1399, 500>
+  gimple_assign <trunc_div_expr, D.1401, D.1400, 1000>
+  gimple_assign <plus_expr, imag, D.1401, y>
+  gimple_assign <var_decl, real, temp, NULL>
+  gimple_assign <abs_expr, D.1402, real, NULL>
+  gimple_assign <abs_expr, D.1403, imag, NULL>
+  gimple_assign <plus_expr, D.1404, D.1402, D.1403>
+  gimple_cond <gt_expr, D.1404, 5000, <D.1405>, <D.1406>>
+  gimple_label <<D.1405>>
+  gimple_assign <integer_cst, f, 0, NULL>
+  gimple_goto <<D.1369>>
+  gimple_label <<D.1406>>
+  gimple_assign <plus_expr, iter, iter, 1>
+  gimple_label <<D.1371>>
+  gimple_cond <le_expr, iter, 254, <D.1370>, <D.1369>>
+  gimple_label <<D.1369>>
+  gimple_assign <var_decl, *flag, f, NULL>
+>
+
+

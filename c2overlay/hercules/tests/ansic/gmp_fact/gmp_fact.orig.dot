@@ -1,0 +1,65 @@
+digraph gmp_fact
+{
+  graph [rankdir="TB", nodesep = "0.175"];
+  node [fontname="Courier", fontsize="12", style="filled"];
+  edge [fontname="Courier", fontsize="12"];
+
+  D_2846  [label="D_2846", ntype="outvar", argix="0", dataspec="s32", bb="-1", shape="triangle", fillcolor="cyan"];
+  add_11  [label="add", ntype="operation", argix="-1", dataspec="na", bb="2", shape="ellipse", fillcolor="yellow"];
+  cnst0  [label="0", ntype="constant", argix="-1", dataspec="s32", bb="-1", shape="diamond", fillcolor="magenta"];
+  cnst1  [label="1", ntype="constant", argix="-1", dataspec="s32", bb="-1", shape="diamond", fillcolor="magenta"];
+  cnst2  [label="2", ntype="constant", argix="-1", dataspec="s32", bb="-1", shape="diamond", fillcolor="magenta"];
+  jmple_16  [label="jmple", ntype="operation", argix="-1", dataspec="na", bb="3", shape="ellipse", fillcolor="yellow"];
+  jmpun_14  [label="jmpun", ntype="operation", argix="-1", dataspec="na", bb="2", shape="ellipse", fillcolor="yellow"];
+  jmpun_18  [label="jmpun", ntype="operation", argix="-1", dataspec="na", bb="4", shape="ellipse", fillcolor="yellow"];
+  jmpun_19  [label="jmpun", ntype="operation", argix="-1", dataspec="na", bb="5", shape="ellipse", fillcolor="yellow"];
+  jmpun_7  [label="jmpun", ntype="operation", argix="-1", dataspec="na", bb="1", shape="ellipse", fillcolor="yellow"];
+  ldc_0  [label="ldc", ntype="operation", argix="-1", dataspec="na", bb="1", shape="ellipse", fillcolor="yellow"];
+  ldc_17  [label="ldc", ntype="operation", argix="-1", dataspec="na", bb="4", shape="ellipse", fillcolor="yellow"];
+  ldc_4  [label="ldc", ntype="operation", argix="-1", dataspec="na", bb="1", shape="ellipse", fillcolor="yellow"];
+  mov_12  [label="mov", ntype="operation", argix="-1", dataspec="na", bb="2", shape="ellipse", fillcolor="yellow"];
+  mov_13  [label="mov", ntype="operation", argix="-1", dataspec="na", bb="2", shape="ellipse", fillcolor="yellow"];
+  mov_5  [label="mov", ntype="operation", argix="-1", dataspec="na", bb="1", shape="ellipse", fillcolor="yellow"];
+  mov_6  [label="mov", ntype="operation", argix="-1", dataspec="na", bb="1", shape="ellipse", fillcolor="yellow"];
+  mpz_init_1  [label="mpz_init", ntype="operation", argix="-1", dataspec="na", bb="1", shape="ellipse", fillcolor="yellow"];
+  mpz_mul_ui_9  [label="mpz_mul_ui", ntype="operation", argix="-1", dataspec="na", bb="2", shape="ellipse", fillcolor="yellow"];
+  mpz_printh_10  [label="mpz_printh", ntype="operation", argix="-1", dataspec="na", bb="2", shape="ellipse", fillcolor="yellow"];
+  mpz_set_ui_3  [label="mpz_set_ui", ntype="operation", argix="-1", dataspec="na", bb="1", shape="ellipse", fillcolor="yellow"];
+  n  [label="n", ntype="invar", argix="0", dataspec="u32", bb="-1", shape="invtriangle", fillcolor="green"];
+  nop_20  [label="nop", ntype="operation", argix="-1", dataspec="na", bb="6", shape="ellipse", fillcolor="yellow"];
+  zxt_15  [label="zxt", ntype="operation", argix="-1", dataspec="na", bb="3", shape="ellipse", fillcolor="yellow"];
+  zxt_2  [label="zxt", ntype="operation", argix="-1", dataspec="na", bb="1", shape="ellipse", fillcolor="yellow"];
+  zxt_8  [label="zxt", ntype="operation", argix="-1", dataspec="na", bb="2", shape="ellipse", fillcolor="yellow"];
+
+  add_11 -> mov_13  [label="i$21", etype="D", vtype="localvar", order="1", argix="-1", dataspec="s32"];
+  cnst0 -> ldc_17  [label="0", etype="D", vtype="globalvar", order="1", argix="-1", dataspec="s32"];
+  cnst1 -> add_11  [label="1", etype="D", vtype="globalvar", order="2", argix="-1", dataspec="s32"];
+  cnst1 -> ldc_0  [label="1", etype="D", vtype="globalvar", order="1", argix="-1", dataspec="s32"];
+  cnst2 -> ldc_4  [label="2", etype="D", vtype="globalvar", order="1", argix="-1", dataspec="s32"];
+  jmple_16 -> ldc_17  [label="F", etype="F", order="2", argix="-1", dataspec="u1"];
+  jmple_16 -> zxt_8  [label="T", etype="T", order="1", argix="-1", dataspec="u1"];
+  jmpun_14 -> zxt_15  [label="U", etype="U", order="1", argix="-1", dataspec="u1"];
+  jmpun_18 -> nop_20  [label="U", etype="U", order="1", argix="-1", dataspec="u1"];
+  jmpun_19 -> nop_20  [label="U", etype="U", order="1", argix="-1", dataspec="u1"];
+  jmpun_7 -> zxt_15  [label="U", etype="U", order="1", argix="-1", dataspec="u1"];
+  ldc_0 -> zxt_2  [label="m$11", etype="D", vtype="localvar", order="1", argix="-1", dataspec="s32"];
+  ldc_17 -> D_2846  [label="D_2846", etype="D", vtype="outarg", order="1", argix="-1", dataspec="s32"];
+  ldc_4 -> mov_6  [label="i$11", etype="D", vtype="localvar", order="1", argix="-1", dataspec="s32"];
+  mov_12 -> mpz_mul_ui_9  [label="prod", etype="D", vtype="localvar", order="1", argix="-1", dataspec="mpz"];
+  mov_13 -> add_11  [label="i", etype="D", vtype="localvar", order="1", argix="-1", dataspec="s32"];
+  mov_13 -> zxt_15  [label="i", etype="D", vtype="localvar", order="1", argix="-1", dataspec="s32"];
+  mov_13 -> zxt_8  [label="i", etype="D", vtype="localvar", order="1", argix="-1", dataspec="s32"];
+  mov_5 -> mpz_mul_ui_9  [label="prod", etype="D", vtype="localvar", order="1", argix="-1", dataspec="mpz"];
+  mov_6 -> add_11  [label="i", etype="D", vtype="localvar", order="1", argix="-1", dataspec="s32"];
+  mov_6 -> zxt_15  [label="i", etype="D", vtype="localvar", order="1", argix="-1", dataspec="s32"];
+  mov_6 -> zxt_8  [label="i", etype="D", vtype="localvar", order="1", argix="-1", dataspec="s32"];
+  mpz_init_1 -> mpz_set_ui_3  [label="prod$11", etype="D", vtype="localvar", order="1", argix="-1", dataspec="mpz"];
+  mpz_mul_ui_9 -> mov_12  [label="prod$21", etype="D", vtype="localvar", order="1", argix="-1", dataspec="mpz"];
+  mpz_mul_ui_9 -> mpz_printh_10  [label="prod$21", etype="D", vtype="localvar", order="1", argix="-1", dataspec="mpz"];
+  mpz_set_ui_3 -> mov_5  [label="prod$12", etype="D", vtype="localvar", order="1", argix="-1", dataspec="mpz"];
+  n -> jmple_16  [label="n", etype="D", vtype="inarg", order="2", argix="-1", dataspec="u32"];
+  zxt_15 -> jmple_16  [label="i_2$31", etype="D", vtype="localvar", order="1", argix="-1", dataspec="u32"];
+  zxt_2 -> mpz_set_ui_3  [label="m_0$11", etype="D", vtype="localvar", order="2", argix="-1", dataspec="u32"];
+  zxt_8 -> mpz_mul_ui_9  [label="i_1$21", etype="D", vtype="localvar", order="2", argix="-1", dataspec="u32"];
+
+}

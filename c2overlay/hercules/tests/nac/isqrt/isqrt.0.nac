@@ -1,0 +1,42 @@
+//
+// Filename: isqrt.0.nac
+// Purpose : N-address code (NAC) implementation for an integer square root 
+//           approximation algorithm.
+// Author  : Nikolaos Kavvadias (C) 2009, 2010, 2011, 2012, 2013
+// Date    : 27-Oct-2009
+// Revision: 0.3.0 (27/10/09)
+//           Initial version.
+// 
+
+procedure isqrt (in u32 x, out u32 outp)
+{
+  localvar u32 m, y, a, b;
+  localvar u32 t0;
+  
+S_1:
+  a <= mov x;
+  m <= ldc 16384;
+  y <= ldc 0;
+  S_2 <= jmpun;
+
+S_2:
+  S_3, S_EXIT <= jmpne m, 0;
+
+S_3:
+  b <= ior y, m;
+  y <= shr y, 1;
+  t0 <= setge a, b;
+  S_4, S_5 <= jmpeq t0, 1;
+
+S_4:
+  a <= sub a, b; 
+  y <= ior y, m; 
+  S_5 <= jmpun;
+
+S_5:
+  m <= shr m, 2; 
+  S_2 <= jmpun;
+  
+S_EXIT:
+  outp <= mov y;
+}

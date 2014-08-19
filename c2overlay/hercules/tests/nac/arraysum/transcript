@@ -1,0 +1,81 @@
+# do arraysum.do 
+# Model Technology ModelSim XE III vcom 6.3c Compiler 2007.09 Sep 12 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package textio
+# -- Compiling package std_logic_1164_tinyadditions
+# -- Compiling package body std_logic_1164_tinyadditions
+# -- Loading package std_logic_1164_tinyadditions
+# ** Warning: [3] g:/hercules/cdfg2hdl/contrib/vhdl/std_logic_1164_tinyadditions.vhd(117): (vcom-1246) Range 2 to 1 is null.
+# Model Technology ModelSim XE III vcom 6.3c Compiler 2007.09 Sep 12 2007
+# -- Loading package standard
+# -- Loading package textio
+# -- Loading package std_logic_1164
+# -- Compiling package std_logic_textio
+# -- Compiling package body std_logic_textio
+# -- Loading package std_logic_textio
+# Model Technology ModelSim XE III vcom 6.3c Compiler 2007.09 Sep 12 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Compiling package operpack
+# -- Compiling package body operpack
+# -- Loading package operpack
+# Model Technology ModelSim XE III vcom 6.3c Compiler 2007.09 Sep 12 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling package arraysum_cdt_pkg
+# Model Technology ModelSim XE III vcom 6.3c Compiler 2007.09 Sep 12 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package operpack
+# -- Loading package arraysum_cdt_pkg
+# -- Loading package textio
+# -- Loading package std_logic_1164_tinyadditions
+# -- Compiling entity arraysum
+# -- Compiling architecture fsmd of arraysum
+# Model Technology ModelSim XE III vcom 6.3c Compiler 2007.09 Sep 12 2007
+# -- Loading package standard
+# -- Loading package textio
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package numeric_std
+# -- Loading package arraysum_cdt_pkg
+# -- Loading package std_logic_1164_tinyadditions
+# -- Compiling entity arraysum_tb
+# -- Compiling architecture tb_arch of arraysum_tb
+# vsim arraysum_tb 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.std_logic_textio(body)
+# Loading ieee.numeric_std(body)
+# Loading work.arraysum_cdt_pkg
+# Loading work.std_logic_1164_tinyadditions(body)
+# Loading work.arraysum_tb(tb_arch)
+# Loading work.operpack(body)
+# Loading work.arraysum(fsmd)
+# ** Note: sum_reg = 00000000
+#    Time: 40 ns  Iteration: 1  Instance: /arraysum_tb/uut
+# ** Note: sum_reg = 00000002
+#    Time: 110 ns  Iteration: 1  Instance: /arraysum_tb/uut
+# ** Note: sum_reg = 00000005
+#    Time: 200 ns  Iteration: 1  Instance: /arraysum_tb/uut
+# ** Note: sum_reg = 0000000A
+#    Time: 310 ns  Iteration: 1  Instance: /arraysum_tb/uut
+# ** Note: sum_reg = 00000011
+#    Time: 440 ns  Iteration: 1  Instance: /arraysum_tb/uut
+# ** Note: sum_reg = 0000001C
+#    Time: 590 ns  Iteration: 1  Instance: /arraysum_tb/uut
+# ** Note: sum_reg = 00000029
+#    Time: 760 ns  Iteration: 1  Instance: /arraysum_tb/uut
+# ** Note: sum_reg = 0000003A
+#    Time: 950 ns  Iteration: 1  Instance: /arraysum_tb/uut
+# ** Note: sum_reg = 0000004D
+#    Time: 1160 ns  Iteration: 1  Instance: /arraysum_tb/uut
+# ** Note: sum_reg = 00000064
+#    Time: 1390 ns  Iteration: 1  Instance: /arraysum_tb/uut
+# ** Failure: NONE. End simulation time reached
+#    Time: 1400 ns  Iteration: 2  Process: /arraysum_tb/arraysum_bench File: arraysum_tb.vhd
+# Break in Process arraysum_bench at arraysum_tb.vhd line 138

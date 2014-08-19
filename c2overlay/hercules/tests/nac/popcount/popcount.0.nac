@@ -1,0 +1,28 @@
+//
+// Filename: popcount.0.nac
+// Purpose : N-address code (NAC) implementation for the "ones' count" (also 
+//           known as population count) algorithm.
+// Author  : Nikolaos Kavvadias (C) 2009, 2010, 2011, 2012, 2013
+// Date    : 13-Aug-2009
+// Revision: 0.1.0 (13/08/09)
+//           Initial version.
+// 
+
+procedure popcount (in u32 inp, out u32 outp)
+{
+  localvar u32 data, count, temp;
+
+S_1:
+  data <= mov inp;
+  count <= ldc 0;
+  S_2 <= jmpun;
+
+S_2:
+  temp <= and data, 1;
+  count <= add count, temp;
+  data <= shr data, 1;
+  S_EXIT, S_2 <= jmpeq data, 0;
+    
+S_EXIT:
+  outp <= mov count;
+}

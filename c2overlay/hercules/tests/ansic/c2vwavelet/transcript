@@ -1,0 +1,66 @@
+# do c2vwavelet.do 
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package std_logic_1164_tinyadditions
+# -- Compiling package body std_logic_1164_tinyadditions
+# -- Loading package std_logic_1164_tinyadditions
+# ** Warning: [3] c:/hercules/cdfg2hdl/contrib/vhdl/std_logic_1164_tinyadditions.vhd(117): (vcom-1246) Range 2 to 1 is null.
+# 
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package STD_LOGIC_TEXTIO
+# -- Compiling package body STD_LOGIC_TEXTIO
+# -- Loading package STD_LOGIC_TEXTIO
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling package operpack
+# -- Compiling package body operpack
+# -- Loading package operpack
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package c2vwavelet_cdt_pkg
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package operpack
+# -- Loading package c2vwavelet_cdt_pkg
+# -- Loading package std_logic_1164_tinyadditions
+# -- Compiling entity c2vwavelet
+# -- Compiling architecture fsmd of c2vwavelet
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package STD_LOGIC_TEXTIO
+# -- Loading package NUMERIC_STD
+# -- Loading package c2vwavelet_cdt_pkg
+# -- Loading package std_logic_1164_tinyadditions
+# -- Compiling entity c2vwavelet_tb
+# -- Compiling architecture tb_arch of c2vwavelet_tb
+# vsim c2vwavelet_tb 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.std_logic_textio(body)
+# Loading ieee.numeric_std(body)
+# Loading work.c2vwavelet_cdt_pkg
+# Loading work.std_logic_1164_tinyadditions(body)
+# Loading work.c2vwavelet_tb(tb_arch)
+# Loading work.operpack(body)
+# Loading work.c2vwavelet(fsmd)
+# ** Failure: NONE. End simulation time reached
+#    Time: 460 ns  Iteration: 2  Process: /c2vwavelet_tb/C2VWAVELET_BENCH File: c2vwavelet_tb.vhd
+# Break in Process C2VWAVELET_BENCH at c2vwavelet_tb.vhd line 138

@@ -1,0 +1,11 @@
+make nac 	--- c2nac conversion
+make dot	--- nac2dot conversion
+make pdg 	--- dot2pdg conversion
+make netlist 	--- pdg2netlist conversion
+make par		--- PAR using VPR
+make clear	--- clean HLS files
+make clean	--- clean PAR files
+-------------------------------------------
+Firstly, create a c file "test.c".
+c benchmarks are in the folder "benchmarks/c".
+you can copy a 

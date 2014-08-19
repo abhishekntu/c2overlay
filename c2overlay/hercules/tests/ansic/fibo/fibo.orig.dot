@@ -1,0 +1,56 @@
+digraph fibo
+{
+  graph [rankdir="TB", nodesep = "0.175"];
+  node [fontname="Courier", fontsize="12", style="filled"];
+  edge [fontname="Courier", fontsize="12"];
+
+  D_1236  [label="D_1236", ntype="outvar", argix="0", dataspec="u32", bb="-1", shape="triangle", fillcolor="cyan"];
+  add_7  [label="add", ntype="operation", argix="-1", dataspec="na", bb="2", shape="ellipse", fillcolor="yellow"];
+  add_8  [label="add", ntype="operation", argix="-1", dataspec="na", bb="2", shape="ellipse", fillcolor="yellow"];
+  cnst0  [label="0", ntype="constant", argix="-1", dataspec="u32", bb="-1", shape="diamond", fillcolor="magenta"];
+  cnst1  [label="1", ntype="constant", argix="-1", dataspec="u32", bb="-1", shape="diamond", fillcolor="magenta"];
+  cnst2  [label="2", ntype="constant", argix="-1", dataspec="u32", bb="-1", shape="diamond", fillcolor="magenta"];
+  jmple_14  [label="jmple", ntype="operation", argix="-1", dataspec="na", bb="2", shape="ellipse", fillcolor="yellow"];
+  jmpun_6  [label="jmpun", ntype="operation", argix="-1", dataspec="na", bb="1", shape="ellipse", fillcolor="yellow"];
+  ldc_0  [label="ldc", ntype="operation", argix="-1", dataspec="na", bb="1", shape="ellipse", fillcolor="yellow"];
+  ldc_1  [label="ldc", ntype="operation", argix="-1", dataspec="na", bb="1", shape="ellipse", fillcolor="yellow"];
+  ldc_2  [label="ldc", ntype="operation", argix="-1", dataspec="na", bb="1", shape="ellipse", fillcolor="yellow"];
+  mov_10  [label="mov", ntype="operation", argix="-1", dataspec="na", bb="2", shape="ellipse", fillcolor="yellow"];
+  mov_11  [label="mov", ntype="operation", argix="-1", dataspec="na", bb="2", shape="ellipse", fillcolor="yellow"];
+  mov_12  [label="mov", ntype="operation", argix="-1", dataspec="na", bb="2", shape="ellipse", fillcolor="yellow"];
+  mov_13  [label="mov", ntype="operation", argix="-1", dataspec="na", bb="2", shape="ellipse", fillcolor="yellow"];
+  mov_15  [label="mov", ntype="operation", argix="-1", dataspec="na", bb="3", shape="ellipse", fillcolor="yellow"];
+  mov_3  [label="mov", ntype="operation", argix="-1", dataspec="na", bb="1", shape="ellipse", fillcolor="yellow"];
+  mov_4  [label="mov", ntype="operation", argix="-1", dataspec="na", bb="1", shape="ellipse", fillcolor="yellow"];
+  mov_5  [label="mov", ntype="operation", argix="-1", dataspec="na", bb="1", shape="ellipse", fillcolor="yellow"];
+  mov_9  [label="mov", ntype="operation", argix="-1", dataspec="na", bb="2", shape="ellipse", fillcolor="yellow"];
+  x  [label="x", ntype="invar", argix="0", dataspec="u32", bb="-1", shape="invtriangle", fillcolor="green"];
+
+  add_7 -> jmple_14  [label="k$3", etype="D", vtype="localvar", order="1", argix="-1", dataspec="u32"];
+  add_7 -> mov_13  [label="k$3", etype="D", vtype="localvar", order="1", argix="2", dataspec="u32"];
+  add_8 -> mov_10  [label="f$3", etype="D", vtype="localvar", order="1", argix="-1", dataspec="u32"];
+  add_8 -> mov_15  [label="f$3", etype="D", vtype="localvar", order="1", argix="-1", dataspec="u32"];
+  cnst0 -> ldc_0  [label="0", etype="D", vtype="globalvar", order="1", argix="-1", dataspec="u32"];
+  cnst1 -> add_7  [label="1", etype="D", vtype="globalvar", order="2", argix="-1", dataspec="u32"];
+  cnst1 -> ldc_1  [label="1", etype="D", vtype="globalvar", order="1", argix="-1", dataspec="u32"];
+  cnst2 -> ldc_2  [label="2", etype="D", vtype="globalvar", order="1", argix="-1", dataspec="u32"];
+  jmple_14 -> add_7  [label="T", etype="T", order="1", argix="-1", dataspec="u1"];
+  jmple_14 -> mov_15  [label="F", etype="F", order="2", argix="-1", dataspec="u1"];
+  jmpun_6 -> add_7  [label="U", etype="U", order="1", argix="-1", dataspec="u1"];
+  ldc_0 -> mov_3  [label="f0$1", etype="D", vtype="localvar", order="1", argix="1", dataspec="u32"];
+  ldc_1 -> mov_4  [label="f1$1", etype="D", vtype="localvar", order="1", argix="1", dataspec="u32"];
+  ldc_2 -> mov_5  [label="k$1", etype="D", vtype="localvar", order="1", argix="1", dataspec="u32"];
+  mov_10 -> mov_12  [label="f1$3", etype="D", vtype="localvar", order="1", argix="2", dataspec="u32"];
+  mov_11 -> add_8  [label="f0$2", etype="D", vtype="localvar", order="2", argix="-1", dataspec="u32"];
+  mov_12 -> add_8  [label="f1$2", etype="D", vtype="localvar", order="1", argix="-1", dataspec="u32"];
+  mov_12 -> mov_9  [label="f1$2", etype="D", vtype="localvar", order="1", argix="-1", dataspec="u32"];
+  mov_13 -> add_7  [label="k$2", etype="D", vtype="localvar", order="1", argix="-1", dataspec="u32"];
+  mov_15 -> D_1236  [label="D_1236", etype="D", vtype="outarg", order="1", argix="-1", dataspec="u32"];
+  mov_3 -> add_8  [label="f0$2", etype="D", vtype="localvar", order="2", argix="-1", dataspec="u32"];
+  mov_4 -> add_8  [label="f1$2", etype="D", vtype="localvar", order="1", argix="-1", dataspec="u32"];
+  mov_4 -> mov_9  [label="f1$2", etype="D", vtype="localvar", order="1", argix="-1", dataspec="u32"];
+  mov_5 -> add_7  [label="k$2", etype="D", vtype="localvar", order="1", argix="-1", dataspec="u32"];
+  mov_9 -> mov_11  [label="f0$3", etype="D", vtype="localvar", order="1", argix="2", dataspec="u32"];
+  x -> jmple_14  [label="x", etype="D", vtype="inarg", order="2", argix="-1", dataspec="u32"];
+
+}

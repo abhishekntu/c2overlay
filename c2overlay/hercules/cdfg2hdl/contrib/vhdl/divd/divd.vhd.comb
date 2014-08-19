@@ -1,0 +1,1401 @@
+--------------------------------------------------------------------------------
+--                                FPDiv_11_52
+-- This operator is part of the Infinite Virtual Library FloPoCoLib
+-- All rights reserved 
+-- Authors: 
+--------------------------------------------------------------------------------
+-- combinatorial
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_unsigned.all;
+library std;
+use std.textio.all;
+library work;
+
+entity FPDiv_11_52 is
+   port ( X : in  std_logic_vector(11+52+2 downto 0);
+          Y : in  std_logic_vector(11+52+2 downto 0);
+          R : out  std_logic_vector(11+52+2 downto 0)   );
+end entity;
+
+architecture arch of FPDiv_11_52 is
+signal fX :  std_logic_vector(52 downto 0);
+signal fY :  std_logic_vector(52 downto 0);
+signal expR0 :  std_logic_vector(12 downto 0);
+signal sR : std_logic;
+signal exnXY :  std_logic_vector(3 downto 0);
+signal exnR0 :  std_logic_vector(1 downto 0);
+signal fYTimes3 :  std_logic_vector(54 downto 0);
+signal w28 :  std_logic_vector(54 downto 0);
+signal sel28 :  std_logic_vector(4 downto 0);
+signal q28 :  std_logic_vector(2 downto 0);
+signal q28D :  std_logic_vector(55 downto 0);
+signal w28pad :  std_logic_vector(55 downto 0);
+signal w27full :  std_logic_vector(55 downto 0);
+signal w27 :  std_logic_vector(54 downto 0);
+signal sel27 :  std_logic_vector(4 downto 0);
+signal q27 :  std_logic_vector(2 downto 0);
+signal q27D :  std_logic_vector(55 downto 0);
+signal w27pad :  std_logic_vector(55 downto 0);
+signal w26full :  std_logic_vector(55 downto 0);
+signal w26 :  std_logic_vector(54 downto 0);
+signal sel26 :  std_logic_vector(4 downto 0);
+signal q26 :  std_logic_vector(2 downto 0);
+signal q26D :  std_logic_vector(55 downto 0);
+signal w26pad :  std_logic_vector(55 downto 0);
+signal w25full :  std_logic_vector(55 downto 0);
+signal w25 :  std_logic_vector(54 downto 0);
+signal sel25 :  std_logic_vector(4 downto 0);
+signal q25 :  std_logic_vector(2 downto 0);
+signal q25D :  std_logic_vector(55 downto 0);
+signal w25pad :  std_logic_vector(55 downto 0);
+signal w24full :  std_logic_vector(55 downto 0);
+signal w24 :  std_logic_vector(54 downto 0);
+signal sel24 :  std_logic_vector(4 downto 0);
+signal q24 :  std_logic_vector(2 downto 0);
+signal q24D :  std_logic_vector(55 downto 0);
+signal w24pad :  std_logic_vector(55 downto 0);
+signal w23full :  std_logic_vector(55 downto 0);
+signal w23 :  std_logic_vector(54 downto 0);
+signal sel23 :  std_logic_vector(4 downto 0);
+signal q23 :  std_logic_vector(2 downto 0);
+signal q23D :  std_logic_vector(55 downto 0);
+signal w23pad :  std_logic_vector(55 downto 0);
+signal w22full :  std_logic_vector(55 downto 0);
+signal w22 :  std_logic_vector(54 downto 0);
+signal sel22 :  std_logic_vector(4 downto 0);
+signal q22 :  std_logic_vector(2 downto 0);
+signal q22D :  std_logic_vector(55 downto 0);
+signal w22pad :  std_logic_vector(55 downto 0);
+signal w21full :  std_logic_vector(55 downto 0);
+signal w21 :  std_logic_vector(54 downto 0);
+signal sel21 :  std_logic_vector(4 downto 0);
+signal q21 :  std_logic_vector(2 downto 0);
+signal q21D :  std_logic_vector(55 downto 0);
+signal w21pad :  std_logic_vector(55 downto 0);
+signal w20full :  std_logic_vector(55 downto 0);
+signal w20 :  std_logic_vector(54 downto 0);
+signal sel20 :  std_logic_vector(4 downto 0);
+signal q20 :  std_logic_vector(2 downto 0);
+signal q20D :  std_logic_vector(55 downto 0);
+signal w20pad :  std_logic_vector(55 downto 0);
+signal w19full :  std_logic_vector(55 downto 0);
+signal w19 :  std_logic_vector(54 downto 0);
+signal sel19 :  std_logic_vector(4 downto 0);
+signal q19 :  std_logic_vector(2 downto 0);
+signal q19D :  std_logic_vector(55 downto 0);
+signal w19pad :  std_logic_vector(55 downto 0);
+signal w18full :  std_logic_vector(55 downto 0);
+signal w18 :  std_logic_vector(54 downto 0);
+signal sel18 :  std_logic_vector(4 downto 0);
+signal q18 :  std_logic_vector(2 downto 0);
+signal q18D :  std_logic_vector(55 downto 0);
+signal w18pad :  std_logic_vector(55 downto 0);
+signal w17full :  std_logic_vector(55 downto 0);
+signal w17 :  std_logic_vector(54 downto 0);
+signal sel17 :  std_logic_vector(4 downto 0);
+signal q17 :  std_logic_vector(2 downto 0);
+signal q17D :  std_logic_vector(55 downto 0);
+signal w17pad :  std_logic_vector(55 downto 0);
+signal w16full :  std_logic_vector(55 downto 0);
+signal w16 :  std_logic_vector(54 downto 0);
+signal sel16 :  std_logic_vector(4 downto 0);
+signal q16 :  std_logic_vector(2 downto 0);
+signal q16D :  std_logic_vector(55 downto 0);
+signal w16pad :  std_logic_vector(55 downto 0);
+signal w15full :  std_logic_vector(55 downto 0);
+signal w15 :  std_logic_vector(54 downto 0);
+signal sel15 :  std_logic_vector(4 downto 0);
+signal q15 :  std_logic_vector(2 downto 0);
+signal q15D :  std_logic_vector(55 downto 0);
+signal w15pad :  std_logic_vector(55 downto 0);
+signal w14full :  std_logic_vector(55 downto 0);
+signal w14 :  std_logic_vector(54 downto 0);
+signal sel14 :  std_logic_vector(4 downto 0);
+signal q14 :  std_logic_vector(2 downto 0);
+signal q14D :  std_logic_vector(55 downto 0);
+signal w14pad :  std_logic_vector(55 downto 0);
+signal w13full :  std_logic_vector(55 downto 0);
+signal w13 :  std_logic_vector(54 downto 0);
+signal sel13 :  std_logic_vector(4 downto 0);
+signal q13 :  std_logic_vector(2 downto 0);
+signal q13D :  std_logic_vector(55 downto 0);
+signal w13pad :  std_logic_vector(55 downto 0);
+signal w12full :  std_logic_vector(55 downto 0);
+signal w12 :  std_logic_vector(54 downto 0);
+signal sel12 :  std_logic_vector(4 downto 0);
+signal q12 :  std_logic_vector(2 downto 0);
+signal q12D :  std_logic_vector(55 downto 0);
+signal w12pad :  std_logic_vector(55 downto 0);
+signal w11full :  std_logic_vector(55 downto 0);
+signal w11 :  std_logic_vector(54 downto 0);
+signal sel11 :  std_logic_vector(4 downto 0);
+signal q11 :  std_logic_vector(2 downto 0);
+signal q11D :  std_logic_vector(55 downto 0);
+signal w11pad :  std_logic_vector(55 downto 0);
+signal w10full :  std_logic_vector(55 downto 0);
+signal w10 :  std_logic_vector(54 downto 0);
+signal sel10 :  std_logic_vector(4 downto 0);
+signal q10 :  std_logic_vector(2 downto 0);
+signal q10D :  std_logic_vector(55 downto 0);
+signal w10pad :  std_logic_vector(55 downto 0);
+signal w9full :  std_logic_vector(55 downto 0);
+signal w9 :  std_logic_vector(54 downto 0);
+signal sel9 :  std_logic_vector(4 downto 0);
+signal q9 :  std_logic_vector(2 downto 0);
+signal q9D :  std_logic_vector(55 downto 0);
+signal w9pad :  std_logic_vector(55 downto 0);
+signal w8full :  std_logic_vector(55 downto 0);
+signal w8 :  std_logic_vector(54 downto 0);
+signal sel8 :  std_logic_vector(4 downto 0);
+signal q8 :  std_logic_vector(2 downto 0);
+signal q8D :  std_logic_vector(55 downto 0);
+signal w8pad :  std_logic_vector(55 downto 0);
+signal w7full :  std_logic_vector(55 downto 0);
+signal w7 :  std_logic_vector(54 downto 0);
+signal sel7 :  std_logic_vector(4 downto 0);
+signal q7 :  std_logic_vector(2 downto 0);
+signal q7D :  std_logic_vector(55 downto 0);
+signal w7pad :  std_logic_vector(55 downto 0);
+signal w6full :  std_logic_vector(55 downto 0);
+signal w6 :  std_logic_vector(54 downto 0);
+signal sel6 :  std_logic_vector(4 downto 0);
+signal q6 :  std_logic_vector(2 downto 0);
+signal q6D :  std_logic_vector(55 downto 0);
+signal w6pad :  std_logic_vector(55 downto 0);
+signal w5full :  std_logic_vector(55 downto 0);
+signal w5 :  std_logic_vector(54 downto 0);
+signal sel5 :  std_logic_vector(4 downto 0);
+signal q5 :  std_logic_vector(2 downto 0);
+signal q5D :  std_logic_vector(55 downto 0);
+signal w5pad :  std_logic_vector(55 downto 0);
+signal w4full :  std_logic_vector(55 downto 0);
+signal w4 :  std_logic_vector(54 downto 0);
+signal sel4 :  std_logic_vector(4 downto 0);
+signal q4 :  std_logic_vector(2 downto 0);
+signal q4D :  std_logic_vector(55 downto 0);
+signal w4pad :  std_logic_vector(55 downto 0);
+signal w3full :  std_logic_vector(55 downto 0);
+signal w3 :  std_logic_vector(54 downto 0);
+signal sel3 :  std_logic_vector(4 downto 0);
+signal q3 :  std_logic_vector(2 downto 0);
+signal q3D :  std_logic_vector(55 downto 0);
+signal w3pad :  std_logic_vector(55 downto 0);
+signal w2full :  std_logic_vector(55 downto 0);
+signal w2 :  std_logic_vector(54 downto 0);
+signal sel2 :  std_logic_vector(4 downto 0);
+signal q2 :  std_logic_vector(2 downto 0);
+signal q2D :  std_logic_vector(55 downto 0);
+signal w2pad :  std_logic_vector(55 downto 0);
+signal w1full :  std_logic_vector(55 downto 0);
+signal w1 :  std_logic_vector(54 downto 0);
+signal sel1 :  std_logic_vector(4 downto 0);
+signal q1 :  std_logic_vector(2 downto 0);
+signal q1D :  std_logic_vector(55 downto 0);
+signal w1pad :  std_logic_vector(55 downto 0);
+signal w0full :  std_logic_vector(55 downto 0);
+signal w0 :  std_logic_vector(54 downto 0);
+signal q0 :  std_logic_vector(2 downto 0);
+signal qP28 :  std_logic_vector(1 downto 0);
+signal qM28 :  std_logic_vector(1 downto 0);
+signal qP27 :  std_logic_vector(1 downto 0);
+signal qM27 :  std_logic_vector(1 downto 0);
+signal qP26 :  std_logic_vector(1 downto 0);
+signal qM26 :  std_logic_vector(1 downto 0);
+signal qP25 :  std_logic_vector(1 downto 0);
+signal qM25 :  std_logic_vector(1 downto 0);
+signal qP24 :  std_logic_vector(1 downto 0);
+signal qM24 :  std_logic_vector(1 downto 0);
+signal qP23 :  std_logic_vector(1 downto 0);
+signal qM23 :  std_logic_vector(1 downto 0);
+signal qP22 :  std_logic_vector(1 downto 0);
+signal qM22 :  std_logic_vector(1 downto 0);
+signal qP21 :  std_logic_vector(1 downto 0);
+signal qM21 :  std_logic_vector(1 downto 0);
+signal qP20 :  std_logic_vector(1 downto 0);
+signal qM20 :  std_logic_vector(1 downto 0);
+signal qP19 :  std_logic_vector(1 downto 0);
+signal qM19 :  std_logic_vector(1 downto 0);
+signal qP18 :  std_logic_vector(1 downto 0);
+signal qM18 :  std_logic_vector(1 downto 0);
+signal qP17 :  std_logic_vector(1 downto 0);
+signal qM17 :  std_logic_vector(1 downto 0);
+signal qP16 :  std_logic_vector(1 downto 0);
+signal qM16 :  std_logic_vector(1 downto 0);
+signal qP15 :  std_logic_vector(1 downto 0);
+signal qM15 :  std_logic_vector(1 downto 0);
+signal qP14 :  std_logic_vector(1 downto 0);
+signal qM14 :  std_logic_vector(1 downto 0);
+signal qP13 :  std_logic_vector(1 downto 0);
+signal qM13 :  std_logic_vector(1 downto 0);
+signal qP12 :  std_logic_vector(1 downto 0);
+signal qM12 :  std_logic_vector(1 downto 0);
+signal qP11 :  std_logic_vector(1 downto 0);
+signal qM11 :  std_logic_vector(1 downto 0);
+signal qP10 :  std_logic_vector(1 downto 0);
+signal qM10 :  std_logic_vector(1 downto 0);
+signal qP9 :  std_logic_vector(1 downto 0);
+signal qM9 :  std_logic_vector(1 downto 0);
+signal qP8 :  std_logic_vector(1 downto 0);
+signal qM8 :  std_logic_vector(1 downto 0);
+signal qP7 :  std_logic_vector(1 downto 0);
+signal qM7 :  std_logic_vector(1 downto 0);
+signal qP6 :  std_logic_vector(1 downto 0);
+signal qM6 :  std_logic_vector(1 downto 0);
+signal qP5 :  std_logic_vector(1 downto 0);
+signal qM5 :  std_logic_vector(1 downto 0);
+signal qP4 :  std_logic_vector(1 downto 0);
+signal qM4 :  std_logic_vector(1 downto 0);
+signal qP3 :  std_logic_vector(1 downto 0);
+signal qM3 :  std_logic_vector(1 downto 0);
+signal qP2 :  std_logic_vector(1 downto 0);
+signal qM2 :  std_logic_vector(1 downto 0);
+signal qP1 :  std_logic_vector(1 downto 0);
+signal qM1 :  std_logic_vector(1 downto 0);
+signal qP0 :  std_logic_vector(1 downto 0);
+signal qM0 :  std_logic_vector(1 downto 0);
+signal qP :  std_logic_vector(57 downto 0);
+signal qM :  std_logic_vector(57 downto 0);
+signal fR0 :  std_logic_vector(57 downto 0);
+signal fR :  std_logic_vector(55 downto 0);
+signal fRn1 :  std_logic_vector(53 downto 0);
+signal expR1 :  std_logic_vector(12 downto 0);
+signal round : std_logic;
+signal expfrac :  std_logic_vector(64 downto 0);
+signal expfracR :  std_logic_vector(64 downto 0);
+signal exnR :  std_logic_vector(1 downto 0);
+signal exnRfinal :  std_logic_vector(1 downto 0);
+begin
+   fX <= "1" & X(51 downto 0);
+   fY <= "1" & Y(51 downto 0);
+   -- exponent difference, sign and exception combination computed early, to have less bits to pipeline
+   expR0 <= ("00" & X(62 downto 52)) - ("00" & Y(62 downto 52));
+   sR <= X(63) xor Y(63);
+   -- early exception handling 
+   exnXY <= X(65 downto 64) & Y(65 downto 64);
+   with exnXY select
+      exnR0 <= 
+         "01"  when "0101",                   -- normal
+         "00"  when "0001" | "0010" | "0110", -- zero
+         "10"  when "0100" | "1000" | "1001", -- overflow
+         "11"  when others;                   -- NaN
+    -- compute 3Y
+   fYTimes3 <= ("00" & fY) + ("0" & fY & "0");
+   w28 <=  "00" & fX;
+   sel28 <= w28(54 downto 51) & fY(51);
+   with sel28 select
+   q28 <= 
+      "001" when "00010" | "00011",
+      "010" when "00100" | "00101" | "00111",
+      "011" when "00110" | "01000" | "01001" | "01010" | "01011" | "01101" | "01111",
+      "101" when "11000" | "10110" | "10111" | "10100" | "10101" | "10011" | "10001",
+      "110" when "11010" | "11011" | "11001",
+      "111" when "11100" | "11101",
+      "000" when others;
+
+   with q28 select
+      q28D <= 
+         "000" & fY            when "001" | "111",
+         "00" & fY & "0"     when "010" | "110",
+         "0" & fYTimes3             when "011" | "101",
+         (55 downto 0 => '0') when others;
+
+   w28pad <= w28 & "0";
+   with q28(2) select
+   w27full<= w28pad - q28D when '0',
+         w28pad + q28D when others;
+
+   w27 <= w27full(53 downto 0) & "0";
+   sel27 <= w27(54 downto 51) & fY(51);
+   with sel27 select
+   q27 <= 
+      "001" when "00010" | "00011",
+      "010" when "00100" | "00101" | "00111",
+      "011" when "00110" | "01000" | "01001" | "01010" | "01011" | "01101" | "01111",
+      "101" when "11000" | "10110" | "10111" | "10100" | "10101" | "10011" | "10001",
+      "110" when "11010" | "11011" | "11001",
+      "111" when "11100" | "11101",
+      "000" when others;
+
+   with q27 select
+      q27D <= 
+         "000" & fY            when "001" | "111",
+         "00" & fY & "0"     when "010" | "110",
+         "0" & fYTimes3             when "011" | "101",
+         (55 downto 0 => '0') when others;
+
+   w27pad <= w27 & "0";
+   with q27(2) select
+   w26full<= w27pad - q27D when '0',
+         w27pad + q27D when others;
+
+   w26 <= w26full(53 downto 0) & "0";
+   sel26 <= w26(54 downto 51) & fY(51);
+   with sel26 select
+   q26 <= 
+      "001" when "00010" | "00011",
+      "010" when "00100" | "00101" | "00111",
+      "011" when "00110" | "01000" | "01001" | "01010" | "01011" | "01101" | "01111",
+      "101" when "11000" | "10110" | "10111" | "10100" | "10101" | "10011" | "10001",
+      "110" when "11010" | "11011" | "11001",
+      "111" when "11100" | "11101",
+      "000" when others;
+
+   with q26 select
+      q26D <= 
+         "000" & fY            when "001" | "111",
+         "00" & fY & "0"     when "010" | "110",
+         "0" & fYTimes3             when "011" | "101",
+         (55 downto 0 => '0') when others;
+
+   w26pad <= w26 & "0";
+   with q26(2) select
+   w25full<= w26pad - q26D when '0',
+         w26pad + q26D when others;
+
+   w25 <= w25full(53 downto 0) & "0";
+   sel25 <= w25(54 downto 51) & fY(51);
+   with sel25 select
+   q25 <= 
+      "001" when "00010" | "00011",
+      "010" when "00100" | "00101" | "00111",
+      "011" when "00110" | "01000" | "01001" | "01010" | "01011" | "01101" | "01111",
+      "101" when "11000" | "10110" | "10111" | "10100" | "10101" | "10011" | "10001",
+      "110" when "11010" | "11011" | "11001",
+      "111" when "11100" | "11101",
+      "000" when others;
+
+   with q25 select
+      q25D <= 
+         "000" & fY            when "001" | "111",
+         "00" & fY & "0"     when "010" | "110",
+         "0" & fYTimes3             when "011" | "101",
+         (55 downto 0 => '0') when others;
+
+   w25pad <= w25 & "0";
+   with q25(2) select
+   w24full<= w25pad - q25D when '0',
+         w25pad + q25D when others;
+
+   w24 <= w24full(53 downto 0) & "0";
+   sel24 <= w24(54 downto 51) & fY(51);
+   with sel24 select
+   q24 <= 
+      "001" when "00010" | "00011",
+      "010" when "00100" | "00101" | "00111",
+      "011" when "00110" | "01000" | "01001" | "01010" | "01011" | "01101" | "01111",
+      "101" when "11000" | "10110" | "10111" | "10100" | "10101" | "10011" | "10001",
+      "110" when "11010" | "11011" | "11001",
+      "111" when "11100" | "11101",
+      "000" when others;
+
+   with q24 select
+      q24D <= 
+         "000" & fY            when "001" | "111",
+         "00" & fY & "0"     when "010" | "110",
+         "0" & fYTimes3             when "011" | "101",
+         (55 downto 0 => '0') when others;
+
+   w24pad <= w24 & "0";
+   with q24(2) select
+   w23full<= w24pad - q24D when '0',
+         w24pad + q24D when others;
+
+   w23 <= w23full(53 downto 0) & "0";
+   sel23 <= w23(54 downto 51) & fY(51);
+   with sel23 select
+   q23 <= 
+      "001" when "00010" | "00011",
+      "010" when "00100" | "00101" | "00111",
+      "011" when "00110" | "01000" | "01001" | "01010" | "01011" | "01101" | "01111",
+      "101" when "11000" | "10110" | "10111" | "10100" | "10101" | "10011" | "10001",
+      "110" when "11010" | "11011" | "11001",
+      "111" when "11100" | "11101",
+      "000" when others;
+
+   with q23 select
+      q23D <= 
+         "000" & fY            when "001" | "111",
+         "00" & fY & "0"     when "010" | "110",
+         "0" & fYTimes3             when "011" | "101",
+         (55 downto 0 => '0') when others;
+
+   w23pad <= w23 & "0";
+   with q23(2) select
+   w22full<= w23pad - q23D when '0',
+         w23pad + q23D when others;
+
+   w22 <= w22full(53 downto 0) & "0";
+   sel22 <= w22(54 downto 51) & fY(51);
+   with sel22 select
+   q22 <= 
+      "001" when "00010" | "00011",
+      "010" when "00100" | "00101" | "00111",
+      "011" when "00110" | "01000" | "01001" | "01010" | "01011" | "01101" | "01111",
+      "101" when "11000" | "10110" | "10111" | "10100" | "10101" | "10011" | "10001",
+      "110" when "11010" | "11011" | "11001",
+      "111" when "11100" | "11101",
+      "000" when others;
+
+   with q22 select
+      q22D <= 
+         "000" & fY            when "001" | "111",
+         "00" & fY & "0"     when "010" | "110",
+         "0" & fYTimes3             when "011" | "101",
+         (55 downto 0 => '0') when others;
+
+   w22pad <= w22 & "0";
+   with q22(2) select
+   w21full<= w22pad - q22D when '0',
+         w22pad + q22D when others;
+
+   w21 <= w21full(53 downto 0) & "0";
+   sel21 <= w21(54 downto 51) & fY(51);
+   with sel21 select
+   q21 <= 
+      "001" when "00010" | "00011",
+      "010" when "00100" | "00101" | "00111",
+      "011" when "00110" | "01000" | "01001" | "01010" | "01011" | "01101" | "01111",
+      "101" when "11000" | "10110" | "10111" | "10100" | "10101" | "10011" | "10001",
+      "110" when "11010" | "11011" | "11001",
+      "111" when "11100" | "11101",
+      "000" when others;
+
+   with q21 select
+      q21D <= 
+         "000" & fY            when "001" | "111",
+         "00" & fY & "0"     when "010" | "110",
+         "0" & fYTimes3             when "011" | "101",
+         (55 downto 0 => '0') when others;
+
+   w21pad <= w21 & "0";
+   with q21(2) select
+   w20full<= w21pad - q21D when '0',
+         w21pad + q21D when others;
+
+   w20 <= w20full(53 downto 0) & "0";
+   sel20 <= w20(54 downto 51) & fY(51);
+   with sel20 select
+   q20 <= 
+      "001" when "00010" | "00011",
+      "010" when "00100" | "00101" | "00111",
+      "011" when "00110" | "01000" | "01001" | "01010" | "01011" | "01101" | "01111",
+      "101" when "11000" | "10110" | "10111" | "10100" | "10101" | "10011" | "10001",
+      "110" when "11010" | "11011" | "11001",
+      "111" when "11100" | "11101",
+      "000" when others;
+
+   with q20 select
+      q20D <= 
+         "000" & fY            when "001" | "111",
+         "00" & fY & "0"     when "010" | "110",
+         "0" & fYTimes3             when "011" | "101",
+         (55 downto 0 => '0') when others;
+
+   w20pad <= w20 & "0";
+   with q20(2) select
+   w19full<= w20pad - q20D when '0',
+         w20pad + q20D when others;
+
+   w19 <= w19full(53 downto 0) & "0";
+   sel19 <= w19(54 downto 51) & fY(51);
+   with sel19 select
+   q19 <= 
+      "001" when "00010" | "00011",
+      "010" when "00100" | "00101" | "00111",
+      "011" when "00110" | "01000" | "01001" | "01010" | "01011" | "01101" | "01111",
+      "101" when "11000" | "10110" | "10111" | "10100" | "10101" | "10011" | "10001",
+      "110" when "11010" | "11011" | "11001",
+      "111" when "11100" | "11101",
+      "000" when others;
+
+   with q19 select
+      q19D <= 
+         "000" & fY            when "001" | "111",
+         "00" & fY & "0"     when "010" | "110",
+         "0" & fYTimes3             when "011" | "101",
+         (55 downto 0 => '0') when others;
+
+   w19pad <= w19 & "0";
+   with q19(2) select
+   w18full<= w19pad - q19D when '0',
+         w19pad + q19D when others;
+
+   w18 <= w18full(53 downto 0) & "0";
+   sel18 <= w18(54 downto 51) & fY(51);
+   with sel18 select
+   q18 <= 
+      "001" when "00010" | "00011",
+      "010" when "00100" | "00101" | "00111",
+      "011" when "00110" | "01000" | "01001" | "01010" | "01011" | "01101" | "01111",
+      "101" when "11000" | "10110" | "10111" | "10100" | "10101" | "10011" | "10001",
+      "110" when "11010" | "11011" | "11001",
+      "111" when "11100" | "11101",
+      "000" when others;
+
+   with q18 select
+      q18D <= 
+         "000" & fY            when "001" | "111",
+         "00" & fY & "0"     when "010" | "110",
+         "0" & fYTimes3             when "011" | "101",
+         (55 downto 0 => '0') when others;
+
+   w18pad <= w18 & "0";
+   with q18(2) select
+   w17full<= w18pad - q18D when '0',
+         w18pad + q18D when others;
+
+   w17 <= w17full(53 downto 0) & "0";
+   sel17 <= w17(54 downto 51) & fY(51);
+   with sel17 select
+   q17 <= 
+      "001" when "00010" | "00011",
+      "010" when "00100" | "00101" | "00111",
+      "011" when "00110" | "01000" | "01001" | "01010" | "01011" | "01101" | "01111",
+      "101" when "11000" | "10110" | "10111" | "10100" | "10101" | "10011" | "10001",
+      "110" when "11010" | "11011" | "11001",
+      "111" when "11100" | "11101",
+      "000" when others;
+
+   with q17 select
+      q17D <= 
+         "000" & fY            when "001" | "111",
+         "00" & fY & "0"     when "010" | "110",
+         "0" & fYTimes3             when "011" | "101",
+         (55 downto 0 => '0') when others;
+
+   w17pad <= w17 & "0";
+   with q17(2) select
+   w16full<= w17pad - q17D when '0',
+         w17pad + q17D when others;
+
+   w16 <= w16full(53 downto 0) & "0";
+   sel16 <= w16(54 downto 51) & fY(51);
+   with sel16 select
+   q16 <= 
+      "001" when "00010" | "00011",
+      "010" when "00100" | "00101" | "00111",
+      "011" when "00110" | "01000" | "01001" | "01010" | "01011" | "01101" | "01111",
+      "101" when "11000" | "10110" | "10111" | "10100" | "10101" | "10011" | "10001",
+      "110" when "11010" | "11011" | "11001",
+      "111" when "11100" | "11101",
+      "000" when others;
+
+   with q16 select
+      q16D <= 
+         "000" & fY            when "001" | "111",
+         "00" & fY & "0"     when "010" | "110",
+         "0" & fYTimes3             when "011" | "101",
+         (55 downto 0 => '0') when others;
+
+   w16pad <= w16 & "0";
+   with q16(2) select
+   w15full<= w16pad - q16D when '0',
+         w16pad + q16D when others;
+
+   w15 <= w15full(53 downto 0) & "0";
+   sel15 <= w15(54 downto 51) & fY(51);
+   with sel15 select
+   q15 <= 
+      "001" when "00010" | "00011",
+      "010" when "00100" | "00101" | "00111",
+      "011" when "00110" | "01000" | "01001" | "01010" | "01011" | "01101" | "01111",
+      "101" when "11000" | "10110" | "10111" | "10100" | "10101" | "10011" | "10001",
+      "110" when "11010" | "11011" | "11001",
+      "111" when "11100" | "11101",
+      "000" when others;
+
+   with q15 select
+      q15D <= 
+         "000" & fY            when "001" | "111",
+         "00" & fY & "0"     when "010" | "110",
+         "0" & fYTimes3             when "011" | "101",
+         (55 downto 0 => '0') when others;
+
+   w15pad <= w15 & "0";
+   with q15(2) select
+   w14full<= w15pad - q15D when '0',
+         w15pad + q15D when others;
+
+   w14 <= w14full(53 downto 0) & "0";
+   sel14 <= w14(54 downto 51) & fY(51);
+   with sel14 select
+   q14 <= 
+      "001" when "00010" | "00011",
+      "010" when "00100" | "00101" | "00111",
+      "011" when "00110" | "01000" | "01001" | "01010" | "01011" | "01101" | "01111",
+      "101" when "11000" | "10110" | "10111" | "10100" | "10101" | "10011" | "10001",
+      "110" when "11010" | "11011" | "11001",
+      "111" when "11100" | "11101",
+      "000" when others;
+
+   with q14 select
+      q14D <= 
+         "000" & fY            when "001" | "111",
+         "00" & fY & "0"     when "010" | "110",
+         "0" & fYTimes3             when "011" | "101",
+         (55 downto 0 => '0') when others;
+
+   w14pad <= w14 & "0";
+   with q14(2) select
+   w13full<= w14pad - q14D when '0',
+         w14pad + q14D when others;
+
+   w13 <= w13full(53 downto 0) & "0";
+   sel13 <= w13(54 downto 51) & fY(51);
+   with sel13 select
+   q13 <= 
+      "001" when "00010" | "00011",
+      "010" when "00100" | "00101" | "00111",
+      "011" when "00110" | "01000" | "01001" | "01010" | "01011" | "01101" | "01111",
+      "101" when "11000" | "10110" | "10111" | "10100" | "10101" | "10011" | "10001",
+      "110" when "11010" | "11011" | "11001",
+      "111" when "11100" | "11101",
+      "000" when others;
+
+   with q13 select
+      q13D <= 
+         "000" & fY            when "001" | "111",
+         "00" & fY & "0"     when "010" | "110",
+         "0" & fYTimes3             when "011" | "101",
+         (55 downto 0 => '0') when others;
+
+   w13pad <= w13 & "0";
+   with q13(2) select
+   w12full<= w13pad - q13D when '0',
+         w13pad + q13D when others;
+
+   w12 <= w12full(53 downto 0) & "0";
+   sel12 <= w12(54 downto 51) & fY(51);
+   with sel12 select
+   q12 <= 
+      "001" when "00010" | "00011",
+      "010" when "00100" | "00101" | "00111",
+      "011" when "00110" | "01000" | "01001" | "01010" | "01011" | "01101" | "01111",
+      "101" when "11000" | "10110" | "10111" | "10100" | "10101" | "10011" | "10001",
+      "110" when "11010" | "11011" | "11001",
+      "111" when "11100" | "11101",
+      "000" when others;
+
+   with q12 select
+      q12D <= 
+         "000" & fY            when "001" | "111",
+         "00" & fY & "0"     when "010" | "110",
+         "0" & fYTimes3             when "011" | "101",
+         (55 downto 0 => '0') when others;
+
+   w12pad <= w12 & "0";
+   with q12(2) select
+   w11full<= w12pad - q12D when '0',
+         w12pad + q12D when others;
+
+   w11 <= w11full(53 downto 0) & "0";
+   sel11 <= w11(54 downto 51) & fY(51);
+   with sel11 select
+   q11 <= 
+      "001" when "00010" | "00011",
+      "010" when "00100" | "00101" | "00111",
+      "011" when "00110" | "01000" | "01001" | "01010" | "01011" | "01101" | "01111",
+      "101" when "11000" | "10110" | "10111" | "10100" | "10101" | "10011" | "10001",
+      "110" when "11010" | "11011" | "11001",
+      "111" when "11100" | "11101",
+      "000" when others;
+
+   with q11 select
+      q11D <= 
+         "000" & fY            when "001" | "111",
+         "00" & fY & "0"     when "010" | "110",
+         "0" & fYTimes3             when "011" | "101",
+         (55 downto 0 => '0') when others;
+
+   w11pad <= w11 & "0";
+   with q11(2) select
+   w10full<= w11pad - q11D when '0',
+         w11pad + q11D when others;
+
+   w10 <= w10full(53 downto 0) & "0";
+   sel10 <= w10(54 downto 51) & fY(51);
+   with sel10 select
+   q10 <= 
+      "001" when "00010" | "00011",
+      "010" when "00100" | "00101" | "00111",
+      "011" when "00110" | "01000" | "01001" | "01010" | "01011" | "01101" | "01111",
+      "101" when "11000" | "10110" | "10111" | "10100" | "10101" | "10011" | "10001",
+      "110" when "11010" | "11011" | "11001",
+      "111" when "11100" | "11101",
+      "000" when others;
+
+   with q10 select
+      q10D <= 
+         "000" & fY            when "001" | "111",
+         "00" & fY & "0"     when "010" | "110",
+         "0" & fYTimes3             when "011" | "101",
+         (55 downto 0 => '0') when others;
+
+   w10pad <= w10 & "0";
+   with q10(2) select
+   w9full<= w10pad - q10D when '0',
+         w10pad + q10D when others;
+
+   w9 <= w9full(53 downto 0) & "0";
+   sel9 <= w9(54 downto 51) & fY(51);
+   with sel9 select
+   q9 <= 
+      "001" when "00010" | "00011",
+      "010" when "00100" | "00101" | "00111",
+      "011" when "00110" | "01000" | "01001" | "01010" | "01011" | "01101" | "01111",
+      "101" when "11000" | "10110" | "10111" | "10100" | "10101" | "10011" | "10001",
+      "110" when "11010" | "11011" | "11001",
+      "111" when "11100" | "11101",
+      "000" when others;
+
+   with q9 select
+      q9D <= 
+         "000" & fY            when "001" | "111",
+         "00" & fY & "0"     when "010" | "110",
+         "0" & fYTimes3             when "011" | "101",
+         (55 downto 0 => '0') when others;
+
+   w9pad <= w9 & "0";
+   with q9(2) select
+   w8full<= w9pad - q9D when '0',
+         w9pad + q9D when others;
+
+   w8 <= w8full(53 downto 0) & "0";
+   sel8 <= w8(54 downto 51) & fY(51);
+   with sel8 select
+   q8 <= 
+      "001" when "00010" | "00011",
+      "010" when "00100" | "00101" | "00111",
+      "011" when "00110" | "01000" | "01001" | "01010" | "01011" | "01101" | "01111",
+      "101" when "11000" | "10110" | "10111" | "10100" | "10101" | "10011" | "10001",
+      "110" when "11010" | "11011" | "11001",
+      "111" when "11100" | "11101",
+      "000" when others;
+
+   with q8 select
+      q8D <= 
+         "000" & fY            when "001" | "111",
+         "00" & fY & "0"     when "010" | "110",
+         "0" & fYTimes3             when "011" | "101",
+         (55 downto 0 => '0') when others;
+
+   w8pad <= w8 & "0";
+   with q8(2) select
+   w7full<= w8pad - q8D when '0',
+         w8pad + q8D when others;
+
+   w7 <= w7full(53 downto 0) & "0";
+   sel7 <= w7(54 downto 51) & fY(51);
+   with sel7 select
+   q7 <= 
+      "001" when "00010" | "00011",
+      "010" when "00100" | "00101" | "00111",
+      "011" when "00110" | "01000" | "01001" | "01010" | "01011" | "01101" | "01111",
+      "101" when "11000" | "10110" | "10111" | "10100" | "10101" | "10011" | "10001",
+      "110" when "11010" | "11011" | "11001",
+      "111" when "11100" | "11101",
+      "000" when others;
+
+   with q7 select
+      q7D <= 
+         "000" & fY            when "001" | "111",
+         "00" & fY & "0"     when "010" | "110",
+         "0" & fYTimes3             when "011" | "101",
+         (55 downto 0 => '0') when others;
+
+   w7pad <= w7 & "0";
+   with q7(2) select
+   w6full<= w7pad - q7D when '0',
+         w7pad + q7D when others;
+
+   w6 <= w6full(53 downto 0) & "0";
+   sel6 <= w6(54 downto 51) & fY(51);
+   with sel6 select
+   q6 <= 
+      "001" when "00010" | "00011",
+      "010" when "00100" | "00101" | "00111",
+      "011" when "00110" | "01000" | "01001" | "01010" | "01011" | "01101" | "01111",
+      "101" when "11000" | "10110" | "10111" | "10100" | "10101" | "10011" | "10001",
+      "110" when "11010" | "11011" | "11001",
+      "111" when "11100" | "11101",
+      "000" when others;
+
+   with q6 select
+      q6D <= 
+         "000" & fY            when "001" | "111",
+         "00" & fY & "0"     when "010" | "110",
+         "0" & fYTimes3             when "011" | "101",
+         (55 downto 0 => '0') when others;
+
+   w6pad <= w6 & "0";
+   with q6(2) select
+   w5full<= w6pad - q6D when '0',
+         w6pad + q6D when others;
+
+   w5 <= w5full(53 downto 0) & "0";
+   sel5 <= w5(54 downto 51) & fY(51);
+   with sel5 select
+   q5 <= 
+      "001" when "00010" | "00011",
+      "010" when "00100" | "00101" | "00111",
+      "011" when "00110" | "01000" | "01001" | "01010" | "01011" | "01101" | "01111",
+      "101" when "11000" | "10110" | "10111" | "10100" | "10101" | "10011" | "10001",
+      "110" when "11010" | "11011" | "11001",
+      "111" when "11100" | "11101",
+      "000" when others;
+
+   with q5 select
+      q5D <= 
+         "000" & fY            when "001" | "111",
+         "00" & fY & "0"     when "010" | "110",
+         "0" & fYTimes3             when "011" | "101",
+         (55 downto 0 => '0') when others;
+
+   w5pad <= w5 & "0";
+   with q5(2) select
+   w4full<= w5pad - q5D when '0',
+         w5pad + q5D when others;
+
+   w4 <= w4full(53 downto 0) & "0";
+   sel4 <= w4(54 downto 51) & fY(51);
+   with sel4 select
+   q4 <= 
+      "001" when "00010" | "00011",
+      "010" when "00100" | "00101" | "00111",
+      "011" when "00110" | "01000" | "01001" | "01010" | "01011" | "01101" | "01111",
+      "101" when "11000" | "10110" | "10111" | "10100" | "10101" | "10011" | "10001",
+      "110" when "11010" | "11011" | "11001",
+      "111" when "11100" | "11101",
+      "000" when others;
+
+   with q4 select
+      q4D <= 
+         "000" & fY            when "001" | "111",
+         "00" & fY & "0"     when "010" | "110",
+         "0" & fYTimes3             when "011" | "101",
+         (55 downto 0 => '0') when others;
+
+   w4pad <= w4 & "0";
+   with q4(2) select
+   w3full<= w4pad - q4D when '0',
+         w4pad + q4D when others;
+
+   w3 <= w3full(53 downto 0) & "0";
+   sel3 <= w3(54 downto 51) & fY(51);
+   with sel3 select
+   q3 <= 
+      "001" when "00010" | "00011",
+      "010" when "00100" | "00101" | "00111",
+      "011" when "00110" | "01000" | "01001" | "01010" | "01011" | "01101" | "01111",
+      "101" when "11000" | "10110" | "10111" | "10100" | "10101" | "10011" | "10001",
+      "110" when "11010" | "11011" | "11001",
+      "111" when "11100" | "11101",
+      "000" when others;
+
+   with q3 select
+      q3D <= 
+         "000" & fY            when "001" | "111",
+         "00" & fY & "0"     when "010" | "110",
+         "0" & fYTimes3             when "011" | "101",
+         (55 downto 0 => '0') when others;
+
+   w3pad <= w3 & "0";
+   with q3(2) select
+   w2full<= w3pad - q3D when '0',
+         w3pad + q3D when others;
+
+   w2 <= w2full(53 downto 0) & "0";
+   sel2 <= w2(54 downto 51) & fY(51);
+   with sel2 select
+   q2 <= 
+      "001" when "00010" | "00011",
+      "010" when "00100" | "00101" | "00111",
+      "011" when "00110" | "01000" | "01001" | "01010" | "01011" | "01101" | "01111",
+      "101" when "11000" | "10110" | "10111" | "10100" | "10101" | "10011" | "10001",
+      "110" when "11010" | "11011" | "11001",
+      "111" when "11100" | "11101",
+      "000" when others;
+
+   with q2 select
+      q2D <= 
+         "000" & fY            when "001" | "111",
+         "00" & fY & "0"     when "010" | "110",
+         "0" & fYTimes3             when "011" | "101",
+         (55 downto 0 => '0') when others;
+
+   w2pad <= w2 & "0";
+   with q2(2) select
+   w1full<= w2pad - q2D when '0',
+         w2pad + q2D when others;
+
+   w1 <= w1full(53 downto 0) & "0";
+   sel1 <= w1(54 downto 51) & fY(51);
+   with sel1 select
+   q1 <= 
+      "001" when "00010" | "00011",
+      "010" when "00100" | "00101" | "00111",
+      "011" when "00110" | "01000" | "01001" | "01010" | "01011" | "01101" | "01111",
+      "101" when "11000" | "10110" | "10111" | "10100" | "10101" | "10011" | "10001",
+      "110" when "11010" | "11011" | "11001",
+      "111" when "11100" | "11101",
+      "000" when others;
+
+   with q1 select
+      q1D <= 
+         "000" & fY            when "001" | "111",
+         "00" & fY & "0"     when "010" | "110",
+         "0" & fYTimes3             when "011" | "101",
+         (55 downto 0 => '0') when others;
+
+   w1pad <= w1 & "0";
+   with q1(2) select
+   w0full<= w1pad - q1D when '0',
+         w1pad + q1D when others;
+
+   w0 <= w0full(53 downto 0) & "0";
+   q0(2 downto 0) <= "000" when  w0 = (54 downto 0 => '0')
+                else w0(54) & "10";
+   qP28 <=      q28(1 downto 0);
+   qM28 <=      q28(2) & "0";
+   qP27 <=      q27(1 downto 0);
+   qM27 <=      q27(2) & "0";
+   qP26 <=      q26(1 downto 0);
+   qM26 <=      q26(2) & "0";
+   qP25 <=      q25(1 downto 0);
+   qM25 <=      q25(2) & "0";
+   qP24 <=      q24(1 downto 0);
+   qM24 <=      q24(2) & "0";
+   qP23 <=      q23(1 downto 0);
+   qM23 <=      q23(2) & "0";
+   qP22 <=      q22(1 downto 0);
+   qM22 <=      q22(2) & "0";
+   qP21 <=      q21(1 downto 0);
+   qM21 <=      q21(2) & "0";
+   qP20 <=      q20(1 downto 0);
+   qM20 <=      q20(2) & "0";
+   qP19 <=      q19(1 downto 0);
+   qM19 <=      q19(2) & "0";
+   qP18 <=      q18(1 downto 0);
+   qM18 <=      q18(2) & "0";
+   qP17 <=      q17(1 downto 0);
+   qM17 <=      q17(2) & "0";
+   qP16 <=      q16(1 downto 0);
+   qM16 <=      q16(2) & "0";
+   qP15 <=      q15(1 downto 0);
+   qM15 <=      q15(2) & "0";
+   qP14 <=      q14(1 downto 0);
+   qM14 <=      q14(2) & "0";
+   qP13 <=      q13(1 downto 0);
+   qM13 <=      q13(2) & "0";
+   qP12 <=      q12(1 downto 0);
+   qM12 <=      q12(2) & "0";
+   qP11 <=      q11(1 downto 0);
+   qM11 <=      q11(2) & "0";
+   qP10 <=      q10(1 downto 0);
+   qM10 <=      q10(2) & "0";
+   qP9 <=      q9(1 downto 0);
+   qM9 <=      q9(2) & "0";
+   qP8 <=      q8(1 downto 0);
+   qM8 <=      q8(2) & "0";
+   qP7 <=      q7(1 downto 0);
+   qM7 <=      q7(2) & "0";
+   qP6 <=      q6(1 downto 0);
+   qM6 <=      q6(2) & "0";
+   qP5 <=      q5(1 downto 0);
+   qM5 <=      q5(2) & "0";
+   qP4 <=      q4(1 downto 0);
+   qM4 <=      q4(2) & "0";
+   qP3 <=      q3(1 downto 0);
+   qM3 <=      q3(2) & "0";
+   qP2 <=      q2(1 downto 0);
+   qM2 <=      q2(2) & "0";
+   qP1 <=      q1(1 downto 0);
+   qM1 <=      q1(2) & "0";
+   qP0 <= q0(1 downto 0);
+   qM0 <= q0(2)  & "0";
+   qP <= qP28 & qP27 & qP26 & qP25 & qP24 & qP23 & qP22 & qP21 & qP20 & qP19 & qP18 & qP17 & qP16 & qP15 & qP14 & qP13 & qP12 & qP11 & qP10 & qP9 & qP8 & qP7 & qP6 & qP5 & qP4 & qP3 & qP2 & qP1 & qP0;
+   qM <= qM28(0) & qM27 & qM26 & qM25 & qM24 & qM23 & qM22 & qM21 & qM20 & qM19 & qM18 & qM17 & qM16 & qM15 & qM14 & qM13 & qM12 & qM11 & qM10 & qM9 & qM8 & qM7 & qM6 & qM5 & qM4 & qM3 & qM2 & qM1 & qM0 & "0";
+   fR0 <= qP - qM;
+   fR <= fR0(57 downto 3)  & (fR0(2) or fR0(1));  -- even wF, fixing the round bit
+   -- normalisation
+   with fR(55) select
+      fRn1 <= fR(54 downto 2) & (fR(1) or fR(0)) when '1',
+              fR(53 downto 0)                    when others;
+   expR1 <= expR0 + ("000" & (9 downto 1 => '1') & fR(55)); -- add back bias
+   round <= fRn1(1) and (fRn1(2) or fRn1(0)); -- fRn1(0) is the sticky bit
+   -- final rounding
+   expfrac <= expR1 & fRn1(53 downto 2) ;
+   expfracR <= expfrac + ((64 downto 1 => '0') & round);
+   exnR <=      "00"  when expfracR(64) = '1'   -- underflow
+           else "10"  when  expfracR(64 downto 63) =  "01" -- overflow
+           else "01";      -- 00, normal case
+   with exnR0 select
+      exnRfinal <= 
+         exnR   when "01", -- normal
+         exnR0  when others;
+   R <= exnRfinal & sR & expfracR(62 downto 0);
+end architecture;
+
+--------------------------------------------------------------------------------
+--                            FPDiv_11_52_Wrapper
+-- This operator is part of the Infinite Virtual Library FloPoCoLib
+-- All rights reserved 
+-- Authors: Florent de Dinechin (2007)
+--------------------------------------------------------------------------------
+-- Pipeline depth: 2 cycles
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_unsigned.all;
+
+entity divd_internal is
+   port ( 
+     clk   : in  std_logic;
+     reset : in  std_logic;
+     start : in  std_logic;
+     X     : in  std_logic_vector(65 downto 0);
+     Y     : in  std_logic_vector(65 downto 0);
+     R     : out std_logic_vector(65 downto 0);
+     done  : out std_logic;
+     ready : out std_logic
+  );
+end entity divd_internal;
+
+architecture arch of divd_internal is
+  component FPDiv_11_52 is
+    port ( 
+      X   : in  std_logic_vector(11+52+2 downto 0);
+      Y   : in  std_logic_vector(11+52+2 downto 0);
+      R   : out std_logic_vector(11+52+2 downto 0)  
+    );
+  end component;
+  --   
+  type state_type is (S_ENTRY, S_EXIT, S_001_001, S_001_002);
+  signal current_state, next_state : state_type;
+  signal i_X, i_X_d1 : std_logic_vector(65 downto 0);
+  signal i_Y, i_Y_d1 : std_logic_vector(65 downto 0);
+  signal o_R, o_R_d1 : std_logic_vector(65 downto 0);
+begin
+
+  -- current state logic
+  process (clk, reset)
+  begin
+    if (reset = '1') then
+      current_state <= S_ENTRY;
+    elsif (clk = '1' and clk'EVENT) then
+      current_state <= next_state;
+      i_X_d1 <=  i_X;
+      i_Y_d1 <=  i_Y;
+      o_R_d1 <=  o_R;      
+    end if;
+  end process;
+  
+  i_X <= X;
+  i_Y <= Y;  
+
+  -- next state and output logic
+  process (current_state, start)
+  begin
+    done <= '0';
+    ready <= '0';
+    case current_state is
+      when S_ENTRY =>
+        ready <= '1';
+        if (start = '1') then
+          next_state <= S_001_001;
+        else
+          next_state <= S_ENTRY;
+        end if;
+      when S_001_001 =>
+        next_state <= S_001_002; 
+      when S_001_002 =>        
+        next_state <= S_EXIT; 
+      when S_EXIT =>
+        done <= '1';
+        next_state <= S_ENTRY;
+      when others =>
+        next_state <= S_ENTRY;
+    end case;
+  end process;
+
+   ----------------Synchro barrier, entering cycle 1----------------
+   test: FPDiv_11_52      -- pipelineDepth=1 maxInDelay=0
+      port map ( 
+        R   => o_R,
+        X   => i_X_d1,
+        Y   => i_Y_d1
+      );
+                 
+   ----------------Synchro barrier, entering cycle 2----------------
+   R <= o_R_d1;
+
+end architecture arch;
+
+--------------------------------------------------------------------------------
+--                          InputIEEE_11_52_to_11_52
+-- This operator is part of the Infinite Virtual Library FloPoCoLib
+-- All rights reserved 
+-- Authors: Florent de Dinechin (2008)
+--------------------------------------------------------------------------------
+-- Pipeline depth: 1 cycles
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_unsigned.all;
+--library std;
+--use std.textio.all;
+--library work;
+
+entity InputIEEE_11_52_to_11_52 is
+   port ( clk, rst : in std_logic;
+          X : in  std_logic_vector(63 downto 0);
+          R : out  std_logic_vector(11+52+2 downto 0)   );
+end entity;
+
+architecture arch of InputIEEE_11_52_to_11_52 is
+signal expX, expX_d1 :  std_logic_vector(10 downto 0);
+signal fracX :  std_logic_vector(51 downto 0);
+signal sX, sX_d1 : std_logic;
+signal expZero, expZero_d1 : std_logic;
+signal expInfty, expInfty_d1 : std_logic;
+signal fracZero, fracZero_d1 : std_logic;
+signal reprSubNormal, reprSubNormal_d1 : std_logic;
+signal sfracX, sfracX_d1 :  std_logic_vector(51 downto 0);
+signal fracR :  std_logic_vector(51 downto 0);
+signal expR :  std_logic_vector(10 downto 0);
+signal infinity : std_logic;
+signal zero : std_logic;
+signal NaN : std_logic;
+signal exnR :  std_logic_vector(1 downto 0);
+begin
+   process(clk)
+      begin
+         if clk'event and clk = '1' then
+            expX_d1 <=  expX;
+            sX_d1 <=  sX;
+            expZero_d1 <=  expZero;
+            expInfty_d1 <=  expInfty;
+            fracZero_d1 <=  fracZero;
+            reprSubNormal_d1 <=  reprSubNormal;
+            sfracX_d1 <=  sfracX;
+         end if;
+      end process;
+   expX  <= X(62 downto 52);
+   fracX  <= X(51 downto 0);
+   sX  <= X(63);
+   expZero  <= '1' when expX = (10 downto 0 => '0') else '0';
+   expInfty  <= '1' when expX = (10 downto 0 => '1') else '0';
+   fracZero <= '1' when fracX = (51 downto 0 => '0') else '0';
+   reprSubNormal <= fracX(51);
+   -- since we have one more exponent value than IEEE (field 0...0, value emin-1),
+   -- we can represent subnormal numbers whose mantissa field begins with a 1
+   sfracX <= fracX(50 downto 0) & '0' when (expZero='1' and reprSubNormal='1')    else fracX;
+   ----------------Synchro barrier, entering cycle 1----------------
+   fracR <= sfracX_d1;
+   -- copy exponent. This will be OK even for subnormals, zero and infty since in such cases the exn bits will prevail
+   expR <= expX_d1;
+   infinity <= expInfty_d1 and fracZero_d1;
+   zero <= expZero_d1 and not reprSubNormal_d1;
+   NaN <= expInfty_d1 and not fracZero_d1;
+   exnR <= 
+           "00" when zero='1' 
+      else "10" when infinity='1' 
+      else "11" when NaN='1' 
+      else "01" ;  -- normal number
+   R <= exnR & sX_d1 & expR & fracR; 
+end architecture arch;
+
+--------------------------------------------------------------------------------
+--                         OutputIEEE_11_52_to_11_52
+-- This operator is part of the Infinite Virtual Library FloPoCoLib
+-- All rights reserved 
+-- Authors: F. Ferrandi  (2009)
+--------------------------------------------------------------------------------
+-- Pipeline depth: 1 cycles
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_arith.all;
+use ieee.std_logic_unsigned.all;
+--library std;
+--use std.textio.all;
+--library work;
+
+entity OutputIEEE_11_52_to_11_52 is
+   port ( clk, rst : in std_logic;
+          X : in  std_logic_vector(11+52+2 downto 0);
+          R : out  std_logic_vector(63 downto 0)   );
+end entity;
+
+architecture arch of OutputIEEE_11_52_to_11_52 is
+signal expX, expX_d1 :  std_logic_vector(10 downto 0);
+signal fracX, fracX_d1 :  std_logic_vector(51 downto 0);
+signal sX, sX_d1 : std_logic;
+signal exnX, exnX_d1 :  std_logic_vector(1 downto 0);
+signal expZero, expZero_d1 : std_logic;
+signal sfracX :  std_logic_vector(51 downto 0);
+signal fracR :  std_logic_vector(51 downto 0);
+signal expR :  std_logic_vector(10 downto 0);
+begin
+   process(clk)
+      begin
+         if clk'event and clk = '1' then
+            expX_d1 <=  expX;
+            fracX_d1 <=  fracX;
+            sX_d1 <=  sX;
+            exnX_d1 <=  exnX;
+            expZero_d1 <=  expZero;
+         end if;
+      end process;
+   expX  <= X(62 downto 52);
+   fracX  <= X(51 downto 0);
+   sX  <= X(63);
+   exnX  <= X(65 downto 64);
+   expZero  <= '1' when expX = (10 downto 0 => '0') else '0';
+   -- since we have one more exponent value than IEEE (field 0...0, value emin-1),
+   -- we can represent subnormal numbers whose mantissa field begins with a 1
+   ----------------Synchro barrier, entering cycle 1----------------
+   sfracX <= 
+      (51 downto 0 => '0') when (exnX_d1 = "00") else
+      '1' & fracX_d1(51 downto 1) when (expZero_d1 = '1' and exnX_d1 = "01") else
+      fracX_d1 when (exnX_d1 = "01") else 
+      (51 downto 1 => '0') & exnX_d1(0);
+   fracR <= sfracX;
+   expR <=  
+      (10 downto 0 => '0') when (exnX_d1 = "00") else
+      expX_d1 when (exnX_d1 = "01") else 
+      (10 downto 0 => '1');
+   R <= sX_d1 & expR & fracR; 
+end architecture arch;
+
+library IEEE;
+use IEEE.std_logic_1164.all;
+use IEEE.numeric_std.all;
+use WORK.fixed_float_types.all;
+use WORK.fixed_pkg.all;
+use WORK.float_pkg.all;
+
+entity divd is
+  port (
+    clk   : in  std_logic;
+    reset : in  std_logic;
+    start : in  std_logic;
+    a     : in  float64;
+    b     : in  float64;
+    y     : out float64;
+    done  : out std_logic;
+    ready : out std_logic
+  );
+end divd;
+
+architecture fsmd of divd is
+  type state_type is (S_ENTRY, S_EXIT, S_001_001, S_001_002, S_001_003, S_001_004, S_002_001, S_002_002, S_002_003, S_003_001);
+  signal current_state, next_state: state_type;
+  signal a_flopoco : std_logic_vector(11+52+2 downto 0);
+  signal b_flopoco : std_logic_vector(11+52+2 downto 0);
+  signal y_flopoco : std_logic_vector(11+52+2 downto 0);
+  signal y_flopoco_eval : std_logic_vector(11+52+2 downto 0); 
+  signal a_ieee    : std_logic_vector(63 downto 0);
+  signal b_ieee    : std_logic_vector(63 downto 0);
+  signal y_ieee    : std_logic_vector(63 downto 0);
+  signal divd_0_start : std_logic;
+  signal divd_0_done  : std_logic;
+  signal divd_0_ready : std_logic;
+begin
+  -- current state logic
+  process (clk, reset)
+  begin
+    if (reset = '1') then
+      current_state <= S_ENTRY;
+    elsif (clk = '1' and clk'EVENT) then
+      current_state <= next_state;
+    end if;
+  end process;
+
+  -- next state and output logic
+  process (current_state, start,
+    a,
+    b,
+    divd_0_start, divd_0_ready, divd_0_done
+  )
+  begin
+    done <= '0';
+    ready <= '0';
+    divd_0_start <= '0';
+    case current_state is
+      when S_ENTRY =>
+        ready <= '1';
+        if (start = '1') then
+          a_ieee <= to_std_logic_vector(a);
+          b_ieee <= to_std_logic_vector(b);             
+          next_state <= S_001_001;
+        else
+          next_state <= S_ENTRY;
+        end if;
+      when S_001_001 =>
+        next_state <= S_001_002;
+      when S_001_002 =>
+        divd_0_start <= '1';
+        next_state <= S_001_003;
+      when S_001_003 =>
+        if ((divd_0_ready = '1') and (divd_0_start = '0')) then
+          y_flopoco <= y_flopoco_eval;
+          next_state <= S_001_004;
+        else
+          next_state <= S_001_003;
+        end if;
+      when S_001_004 =>
+        next_state <= S_002_001;         
+      when S_002_001 =>        
+        y <= to_float(y_ieee, 11, 52);
+        next_state <= S_EXIT; 
+      when S_EXIT =>        
+        done <= '1';
+        next_state <= S_ENTRY;
+      when others =>
+        next_state <= S_ENTRY;
+    end case;
+  end process;
+ 
+  a_ieee2flopoco_0 : entity WORK.InputIEEE_11_52_to_11_52(arch)
+    port map (
+      clk => clk,
+      rst => reset,
+      X   => a_ieee,
+      R   => a_flopoco
+    );
+
+  b_ieee2flopoco_0 : entity WORK.InputIEEE_11_52_to_11_52(arch)
+    port map (
+      clk => clk,
+      rst => reset,
+      X   => b_ieee,
+      R   => b_flopoco
+    );
+    
+  divd_internal_0 : entity WORK.divd_internal(arch)
+    port map (
+      clk,
+      reset,
+      divd_0_start,
+      a_flopoco,
+      b_flopoco,
+      y_flopoco_eval,
+      divd_0_done,
+      divd_0_ready
+    );
+    
+  y_flopoco2ieee_0 : entity WORK.OutputIEEE_11_52_to_11_52(arch)
+    port map (
+      clk => clk,
+      rst => reset,
+      X   => y_flopoco,
+      R   => y_ieee
+    );
+    
+end fsmd;

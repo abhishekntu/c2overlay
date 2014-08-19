@@ -1,0 +1,4099 @@
+ x=00000000 res=00000000 res_ref=00000000
+ICBRT OK: Number of cycles=38
+ x=00000001 res=00000001 res_ref=00000001
+ICBRT OK: Number of cycles=39
+ x=00000002 res=00000001 res_ref=00000001
+ICBRT OK: Number of cycles=39
+ x=00000003 res=00000001 res_ref=00000001
+ICBRT OK: Number of cycles=39
+ x=00000004 res=00000001 res_ref=00000001
+ICBRT OK: Number of cycles=39
+ x=00000005 res=00000001 res_ref=00000001
+ICBRT OK: Number of cycles=39
+ x=00000006 res=00000001 res_ref=00000001
+ICBRT OK: Number of cycles=39
+ x=00000007 res=00000001 res_ref=00000001
+ICBRT OK: Number of cycles=39
+ x=00000008 res=00000002 res_ref=00000002
+ICBRT OK: Number of cycles=39
+ x=00000009 res=00000002 res_ref=00000002
+ICBRT OK: Number of cycles=39
+ x=0000000A res=00000002 res_ref=00000002
+ICBRT OK: Number of cycles=39
+ x=0000000B res=00000002 res_ref=00000002
+ICBRT OK: Number of cycles=39
+ x=0000000C res=00000002 res_ref=00000002
+ICBRT OK: Number of cycles=39
+ x=0000000D res=00000002 res_ref=00000002
+ICBRT OK: Number of cycles=39
+ x=0000000E res=00000002 res_ref=00000002
+ICBRT OK: Number of cycles=39
+ x=0000000F res=00000002 res_ref=00000002
+ICBRT OK: Number of cycles=39
+ x=00000010 res=00000002 res_ref=00000002
+ICBRT OK: Number of cycles=39
+ x=00000011 res=00000002 res_ref=00000002
+ICBRT OK: Number of cycles=39
+ x=00000012 res=00000002 res_ref=00000002
+ICBRT OK: Number of cycles=39
+ x=00000013 res=00000002 res_ref=00000002
+ICBRT OK: Number of cycles=39
+ x=00000014 res=00000002 res_ref=00000002
+ICBRT OK: Number of cycles=39
+ x=00000015 res=00000002 res_ref=00000002
+ICBRT OK: Number of cycles=39
+ x=00000016 res=00000002 res_ref=00000002
+ICBRT OK: Number of cycles=39
+ x=00000017 res=00000002 res_ref=00000002
+ICBRT OK: Number of cycles=39
+ x=00000018 res=00000002 res_ref=00000002
+ICBRT OK: Number of cycles=39
+ x=00000019 res=00000002 res_ref=00000002
+ICBRT OK: Number of cycles=39
+ x=0000001A res=00000002 res_ref=00000002
+ICBRT OK: Number of cycles=39
+ x=0000001B res=00000003 res_ref=00000003
+ICBRT OK: Number of cycles=40
+ x=0000001C res=00000003 res_ref=00000003
+ICBRT OK: Number of cycles=40
+ x=0000001D res=00000003 res_ref=00000003
+ICBRT OK: Number of cycles=40
+ x=0000001E res=00000003 res_ref=00000003
+ICBRT OK: Number of cycles=40
+ x=0000001F res=00000003 res_ref=00000003
+ICBRT OK: Number of cycles=40
+ x=00000020 res=00000003 res_ref=00000003
+ICBRT OK: Number of cycles=40
+ x=00000021 res=00000003 res_ref=00000003
+ICBRT OK: Number of cycles=40
+ x=00000022 res=00000003 res_ref=00000003
+ICBRT OK: Number of cycles=40
+ x=00000023 res=00000003 res_ref=00000003
+ICBRT OK: Number of cycles=40
+ x=00000024 res=00000003 res_ref=00000003
+ICBRT OK: Number of cycles=40
+ x=00000025 res=00000003 res_ref=00000003
+ICBRT OK: Number of cycles=40
+ x=00000026 res=00000003 res_ref=00000003
+ICBRT OK: Number of cycles=40
+ x=00000027 res=00000003 res_ref=00000003
+ICBRT OK: Number of cycles=40
+ x=00000028 res=00000003 res_ref=00000003
+ICBRT OK: Number of cycles=40
+ x=00000029 res=00000003 res_ref=00000003
+ICBRT OK: Number of cycles=40
+ x=0000002A res=00000003 res_ref=00000003
+ICBRT OK: Number of cycles=40
+ x=0000002B res=00000003 res_ref=00000003
+ICBRT OK: Number of cycles=40
+ x=0000002C res=00000003 res_ref=00000003
+ICBRT OK: Number of cycles=40
+ x=0000002D res=00000003 res_ref=00000003
+ICBRT OK: Number of cycles=40
+ x=0000002E res=00000003 res_ref=00000003
+ICBRT OK: Number of cycles=40
+ x=0000002F res=00000003 res_ref=00000003
+ICBRT OK: Number of cycles=40
+ x=00000030 res=00000003 res_ref=00000003
+ICBRT OK: Number of cycles=40
+ x=00000031 res=00000003 res_ref=00000003
+ICBRT OK: Number of cycles=40
+ x=00000032 res=00000003 res_ref=00000003
+ICBRT OK: Number of cycles=40
+ x=00000033 res=00000003 res_ref=00000003
+ICBRT OK: Number of cycles=40
+ x=00000034 res=00000003 res_ref=00000003
+ICBRT OK: Number of cycles=40
+ x=00000035 res=00000003 res_ref=00000003
+ICBRT OK: Number of cycles=40
+ x=00000036 res=00000003 res_ref=00000003
+ICBRT OK: Number of cycles=40
+ x=00000037 res=00000003 res_ref=00000003
+ICBRT OK: Number of cycles=40
+ x=00000038 res=00000003 res_ref=00000003
+ICBRT OK: Number of cycles=40
+ x=00000039 res=00000003 res_ref=00000003
+ICBRT OK: Number of cycles=40
+ x=0000003A res=00000003 res_ref=00000003
+ICBRT OK: Number of cycles=40
+ x=0000003B res=00000003 res_ref=00000003
+ICBRT OK: Number of cycles=40
+ x=0000003C res=00000003 res_ref=00000003
+ICBRT OK: Number of cycles=40
+ x=0000003D res=00000003 res_ref=00000003
+ICBRT OK: Number of cycles=40
+ x=0000003E res=00000003 res_ref=00000003
+ICBRT OK: Number of cycles=40
+ x=0000003F res=00000003 res_ref=00000003
+ICBRT OK: Number of cycles=40
+ x=00000040 res=00000004 res_ref=00000004
+ICBRT OK: Number of cycles=39
+ x=00000041 res=00000004 res_ref=00000004
+ICBRT OK: Number of cycles=39
+ x=00000042 res=00000004 res_ref=00000004
+ICBRT OK: Number of cycles=39
+ x=00000043 res=00000004 res_ref=00000004
+ICBRT OK: Number of cycles=39
+ x=00000044 res=00000004 res_ref=00000004
+ICBRT OK: Number of cycles=39
+ x=00000045 res=00000004 res_ref=00000004
+ICBRT OK: Number of cycles=39
+ x=00000046 res=00000004 res_ref=00000004
+ICBRT OK: Number of cycles=39
+ x=00000047 res=00000004 res_ref=00000004
+ICBRT OK: Number of cycles=39
+ x=00000048 res=00000004 res_ref=00000004
+ICBRT OK: Number of cycles=39
+ x=00000049 res=00000004 res_ref=00000004
+ICBRT OK: Number of cycles=39
+ x=0000004A res=00000004 res_ref=00000004
+ICBRT OK: Number of cycles=39
+ x=0000004B res=00000004 res_ref=00000004
+ICBRT OK: Number of cycles=39
+ x=0000004C res=00000004 res_ref=00000004
+ICBRT OK: Number of cycles=39
+ x=0000004D res=00000004 res_ref=00000004
+ICBRT OK: Number of cycles=39
+ x=0000004E res=00000004 res_ref=00000004
+ICBRT OK: Number of cycles=39
+ x=0000004F res=00000004 res_ref=00000004
+ICBRT OK: Number of cycles=39
+ x=00000050 res=00000004 res_ref=00000004
+ICBRT OK: Number of cycles=39
+ x=00000051 res=00000004 res_ref=00000004
+ICBRT OK: Number of cycles=39
+ x=00000052 res=00000004 res_ref=00000004
+ICBRT OK: Number of cycles=39
+ x=00000053 res=00000004 res_ref=00000004
+ICBRT OK: Number of cycles=39
+ x=00000054 res=00000004 res_ref=00000004
+ICBRT OK: Number of cycles=39
+ x=00000055 res=00000004 res_ref=00000004
+ICBRT OK: Number of cycles=39
+ x=00000056 res=00000004 res_ref=00000004
+ICBRT OK: Number of cycles=39
+ x=00000057 res=00000004 res_ref=00000004
+ICBRT OK: Number of cycles=39
+ x=00000058 res=00000004 res_ref=00000004
+ICBRT OK: Number of cycles=39
+ x=00000059 res=00000004 res_ref=00000004
+ICBRT OK: Number of cycles=39
+ x=0000005A res=00000004 res_ref=00000004
+ICBRT OK: Number of cycles=39
+ x=0000005B res=00000004 res_ref=00000004
+ICBRT OK: Number of cycles=39
+ x=0000005C res=00000004 res_ref=00000004
+ICBRT OK: Number of cycles=39
+ x=0000005D res=00000004 res_ref=00000004
+ICBRT OK: Number of cycles=39
+ x=0000005E res=00000004 res_ref=00000004
+ICBRT OK: Number of cycles=39
+ x=0000005F res=00000004 res_ref=00000004
+ICBRT OK: Number of cycles=39
+ x=00000060 res=00000004 res_ref=00000004
+ICBRT OK: Number of cycles=39
+ x=00000061 res=00000004 res_ref=00000004
+ICBRT OK: Number of cycles=39
+ x=00000062 res=00000004 res_ref=00000004
+ICBRT OK: Number of cycles=39
+ x=00000063 res=00000004 res_ref=00000004
+ICBRT OK: Number of cycles=39
+ x=00000064 res=00000004 res_ref=00000004
+ICBRT OK: Number of cycles=39
+ x=00000065 res=00000004 res_ref=00000004
+ICBRT OK: Number of cycles=39
+ x=00000066 res=00000004 res_ref=00000004
+ICBRT OK: Number of cycles=39
+ x=00000067 res=00000004 res_ref=00000004
+ICBRT OK: Number of cycles=39
+ x=00000068 res=00000004 res_ref=00000004
+ICBRT OK: Number of cycles=39
+ x=00000069 res=00000004 res_ref=00000004
+ICBRT OK: Number of cycles=39
+ x=0000006A res=00000004 res_ref=00000004
+ICBRT OK: Number of cycles=39
+ x=0000006B res=00000004 res_ref=00000004
+ICBRT OK: Number of cycles=39
+ x=0000006C res=00000004 res_ref=00000004
+ICBRT OK: Number of cycles=39
+ x=0000006D res=00000004 res_ref=00000004
+ICBRT OK: Number of cycles=39
+ x=0000006E res=00000004 res_ref=00000004
+ICBRT OK: Number of cycles=39
+ x=0000006F res=00000004 res_ref=00000004
+ICBRT OK: Number of cycles=39
+ x=00000070 res=00000004 res_ref=00000004
+ICBRT OK: Number of cycles=39
+ x=00000071 res=00000004 res_ref=00000004
+ICBRT OK: Number of cycles=39
+ x=00000072 res=00000004 res_ref=00000004
+ICBRT OK: Number of cycles=39
+ x=00000073 res=00000004 res_ref=00000004
+ICBRT OK: Number of cycles=39
+ x=00000074 res=00000004 res_ref=00000004
+ICBRT OK: Number of cycles=39
+ x=00000075 res=00000004 res_ref=00000004
+ICBRT OK: Number of cycles=39
+ x=00000076 res=00000004 res_ref=00000004
+ICBRT OK: Number of cycles=39
+ x=00000077 res=00000004 res_ref=00000004
+ICBRT OK: Number of cycles=39
+ x=00000078 res=00000004 res_ref=00000004
+ICBRT OK: Number of cycles=39
+ x=00000079 res=00000004 res_ref=00000004
+ICBRT OK: Number of cycles=39
+ x=0000007A res=00000004 res_ref=00000004
+ICBRT OK: Number of cycles=39
+ x=0000007B res=00000004 res_ref=00000004
+ICBRT OK: Number of cycles=39
+ x=0000007C res=00000004 res_ref=00000004
+ICBRT OK: Number of cycles=39
+ x=0000007D res=00000005 res_ref=00000005
+ICBRT OK: Number of cycles=40
+ x=0000007E res=00000005 res_ref=00000005
+ICBRT OK: Number of cycles=40
+ x=0000007F res=00000005 res_ref=00000005
+ICBRT OK: Number of cycles=40
+ x=00000080 res=00000005 res_ref=00000005
+ICBRT OK: Number of cycles=40
+ x=00000081 res=00000005 res_ref=00000005
+ICBRT OK: Number of cycles=40
+ x=00000082 res=00000005 res_ref=00000005
+ICBRT OK: Number of cycles=40
+ x=00000083 res=00000005 res_ref=00000005
+ICBRT OK: Number of cycles=40
+ x=00000084 res=00000005 res_ref=00000005
+ICBRT OK: Number of cycles=40
+ x=00000085 res=00000005 res_ref=00000005
+ICBRT OK: Number of cycles=40
+ x=00000086 res=00000005 res_ref=00000005
+ICBRT OK: Number of cycles=40
+ x=00000087 res=00000005 res_ref=00000005
+ICBRT OK: Number of cycles=40
+ x=00000088 res=00000005 res_ref=00000005
+ICBRT OK: Number of cycles=40
+ x=00000089 res=00000005 res_ref=00000005
+ICBRT OK: Number of cycles=40
+ x=0000008A res=00000005 res_ref=00000005
+ICBRT OK: Number of cycles=40
+ x=0000008B res=00000005 res_ref=00000005
+ICBRT OK: Number of cycles=40
+ x=0000008C res=00000005 res_ref=00000005
+ICBRT OK: Number of cycles=40
+ x=0000008D res=00000005 res_ref=00000005
+ICBRT OK: Number of cycles=40
+ x=0000008E res=00000005 res_ref=00000005
+ICBRT OK: Number of cycles=40
+ x=0000008F res=00000005 res_ref=00000005
+ICBRT OK: Number of cycles=40
+ x=00000090 res=00000005 res_ref=00000005
+ICBRT OK: Number of cycles=40
+ x=00000091 res=00000005 res_ref=00000005
+ICBRT OK: Number of cycles=40
+ x=00000092 res=00000005 res_ref=00000005
+ICBRT OK: Number of cycles=40
+ x=00000093 res=00000005 res_ref=00000005
+ICBRT OK: Number of cycles=40
+ x=00000094 res=00000005 res_ref=00000005
+ICBRT OK: Number of cycles=40
+ x=00000095 res=00000005 res_ref=00000005
+ICBRT OK: Number of cycles=40
+ x=00000096 res=00000005 res_ref=00000005
+ICBRT OK: Number of cycles=40
+ x=00000097 res=00000005 res_ref=00000005
+ICBRT OK: Number of cycles=40
+ x=00000098 res=00000005 res_ref=00000005
+ICBRT OK: Number of cycles=40
+ x=00000099 res=00000005 res_ref=00000005
+ICBRT OK: Number of cycles=40
+ x=0000009A res=00000005 res_ref=00000005
+ICBRT OK: Number of cycles=40
+ x=0000009B res=00000005 res_ref=00000005
+ICBRT OK: Number of cycles=40
+ x=0000009C res=00000005 res_ref=00000005
+ICBRT OK: Number of cycles=40
+ x=0000009D res=00000005 res_ref=00000005
+ICBRT OK: Number of cycles=40
+ x=0000009E res=00000005 res_ref=00000005
+ICBRT OK: Number of cycles=40
+ x=0000009F res=00000005 res_ref=00000005
+ICBRT OK: Number of cycles=40
+ x=000000A0 res=00000005 res_ref=00000005
+ICBRT OK: Number of cycles=40
+ x=000000A1 res=00000005 res_ref=00000005
+ICBRT OK: Number of cycles=40
+ x=000000A2 res=00000005 res_ref=00000005
+ICBRT OK: Number of cycles=40
+ x=000000A3 res=00000005 res_ref=00000005
+ICBRT OK: Number of cycles=40
+ x=000000A4 res=00000005 res_ref=00000005
+ICBRT OK: Number of cycles=40
+ x=000000A5 res=00000005 res_ref=00000005
+ICBRT OK: Number of cycles=40
+ x=000000A6 res=00000005 res_ref=00000005
+ICBRT OK: Number of cycles=40
+ x=000000A7 res=00000005 res_ref=00000005
+ICBRT OK: Number of cycles=40
+ x=000000A8 res=00000005 res_ref=00000005
+ICBRT OK: Number of cycles=40
+ x=000000A9 res=00000005 res_ref=00000005
+ICBRT OK: Number of cycles=40
+ x=000000AA res=00000005 res_ref=00000005
+ICBRT OK: Number of cycles=40
+ x=000000AB res=00000005 res_ref=00000005
+ICBRT OK: Number of cycles=40
+ x=000000AC res=00000005 res_ref=00000005
+ICBRT OK: Number of cycles=40
+ x=000000AD res=00000005 res_ref=00000005
+ICBRT OK: Number of cycles=40
+ x=000000AE res=00000005 res_ref=00000005
+ICBRT OK: Number of cycles=40
+ x=000000AF res=00000005 res_ref=00000005
+ICBRT OK: Number of cycles=40
+ x=000000B0 res=00000005 res_ref=00000005
+ICBRT OK: Number of cycles=40
+ x=000000B1 res=00000005 res_ref=00000005
+ICBRT OK: Number of cycles=40
+ x=000000B2 res=00000005 res_ref=00000005
+ICBRT OK: Number of cycles=40
+ x=000000B3 res=00000005 res_ref=00000005
+ICBRT OK: Number of cycles=40
+ x=000000B4 res=00000005 res_ref=00000005
+ICBRT OK: Number of cycles=40
+ x=000000B5 res=00000005 res_ref=00000005
+ICBRT OK: Number of cycles=40
+ x=000000B6 res=00000005 res_ref=00000005
+ICBRT OK: Number of cycles=40
+ x=000000B7 res=00000005 res_ref=00000005
+ICBRT OK: Number of cycles=40
+ x=000000B8 res=00000005 res_ref=00000005
+ICBRT OK: Number of cycles=40
+ x=000000B9 res=00000005 res_ref=00000005
+ICBRT OK: Number of cycles=40
+ x=000000BA res=00000005 res_ref=00000005
+ICBRT OK: Number of cycles=40
+ x=000000BB res=00000005 res_ref=00000005
+ICBRT OK: Number of cycles=40
+ x=000000BC res=00000005 res_ref=00000005
+ICBRT OK: Number of cycles=40
+ x=000000BD res=00000005 res_ref=00000005
+ICBRT OK: Number of cycles=40
+ x=000000BE res=00000005 res_ref=00000005
+ICBRT OK: Number of cycles=40
+ x=000000BF res=00000005 res_ref=00000005
+ICBRT OK: Number of cycles=40
+ x=000000C0 res=00000005 res_ref=00000005
+ICBRT OK: Number of cycles=40
+ x=000000C1 res=00000005 res_ref=00000005
+ICBRT OK: Number of cycles=40
+ x=000000C2 res=00000005 res_ref=00000005
+ICBRT OK: Number of cycles=40
+ x=000000C3 res=00000005 res_ref=00000005
+ICBRT OK: Number of cycles=40
+ x=000000C4 res=00000005 res_ref=00000005
+ICBRT OK: Number of cycles=40
+ x=000000C5 res=00000005 res_ref=00000005
+ICBRT OK: Number of cycles=40
+ x=000000C6 res=00000005 res_ref=00000005
+ICBRT OK: Number of cycles=40
+ x=000000C7 res=00000005 res_ref=00000005
+ICBRT OK: Number of cycles=40
+ x=000000C8 res=00000005 res_ref=00000005
+ICBRT OK: Number of cycles=40
+ x=000000C9 res=00000005 res_ref=00000005
+ICBRT OK: Number of cycles=40
+ x=000000CA res=00000005 res_ref=00000005
+ICBRT OK: Number of cycles=40
+ x=000000CB res=00000005 res_ref=00000005
+ICBRT OK: Number of cycles=40
+ x=000000CC res=00000005 res_ref=00000005
+ICBRT OK: Number of cycles=40
+ x=000000CD res=00000005 res_ref=00000005
+ICBRT OK: Number of cycles=40
+ x=000000CE res=00000005 res_ref=00000005
+ICBRT OK: Number of cycles=40
+ x=000000CF res=00000005 res_ref=00000005
+ICBRT OK: Number of cycles=40
+ x=000000D0 res=00000005 res_ref=00000005
+ICBRT OK: Number of cycles=40
+ x=000000D1 res=00000005 res_ref=00000005
+ICBRT OK: Number of cycles=40
+ x=000000D2 res=00000005 res_ref=00000005
+ICBRT OK: Number of cycles=40
+ x=000000D3 res=00000005 res_ref=00000005
+ICBRT OK: Number of cycles=40
+ x=000000D4 res=00000005 res_ref=00000005
+ICBRT OK: Number of cycles=40
+ x=000000D5 res=00000005 res_ref=00000005
+ICBRT OK: Number of cycles=40
+ x=000000D6 res=00000005 res_ref=00000005
+ICBRT OK: Number of cycles=40
+ x=000000D7 res=00000005 res_ref=00000005
+ICBRT OK: Number of cycles=40
+ x=000000D8 res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=000000D9 res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=000000DA res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=000000DB res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=000000DC res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=000000DD res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=000000DE res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=000000DF res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=000000E0 res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=000000E1 res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=000000E2 res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=000000E3 res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=000000E4 res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=000000E5 res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=000000E6 res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=000000E7 res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=000000E8 res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=000000E9 res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=000000EA res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=000000EB res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=000000EC res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=000000ED res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=000000EE res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=000000EF res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=000000F0 res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=000000F1 res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=000000F2 res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=000000F3 res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=000000F4 res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=000000F5 res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=000000F6 res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=000000F7 res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=000000F8 res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=000000F9 res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=000000FA res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=000000FB res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=000000FC res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=000000FD res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=000000FE res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=000000FF res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=00000100 res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=00000101 res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=00000102 res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=00000103 res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=00000104 res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=00000105 res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=00000106 res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=00000107 res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=00000108 res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=00000109 res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=0000010A res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=0000010B res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=0000010C res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=0000010D res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=0000010E res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=0000010F res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=00000110 res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=00000111 res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=00000112 res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=00000113 res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=00000114 res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=00000115 res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=00000116 res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=00000117 res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=00000118 res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=00000119 res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=0000011A res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=0000011B res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=0000011C res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=0000011D res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=0000011E res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=0000011F res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=00000120 res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=00000121 res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=00000122 res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=00000123 res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=00000124 res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=00000125 res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=00000126 res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=00000127 res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=00000128 res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=00000129 res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=0000012A res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=0000012B res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=0000012C res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=0000012D res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=0000012E res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=0000012F res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=00000130 res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=00000131 res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=00000132 res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=00000133 res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=00000134 res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=00000135 res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=00000136 res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=00000137 res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=00000138 res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=00000139 res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=0000013A res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=0000013B res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=0000013C res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=0000013D res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=0000013E res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=0000013F res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=00000140 res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=00000141 res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=00000142 res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=00000143 res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=00000144 res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=00000145 res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=00000146 res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=00000147 res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=00000148 res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=00000149 res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=0000014A res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=0000014B res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=0000014C res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=0000014D res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=0000014E res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=0000014F res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=00000150 res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=00000151 res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=00000152 res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=00000153 res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=00000154 res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=00000155 res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=00000156 res=00000006 res_ref=00000006
+ICBRT OK: Number of cycles=40
+ x=00000157 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=00000158 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=00000159 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=0000015A res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=0000015B res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=0000015C res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=0000015D res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=0000015E res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=0000015F res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=00000160 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=00000161 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=00000162 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=00000163 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=00000164 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=00000165 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=00000166 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=00000167 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=00000168 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=00000169 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=0000016A res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=0000016B res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=0000016C res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=0000016D res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=0000016E res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=0000016F res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=00000170 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=00000171 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=00000172 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=00000173 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=00000174 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=00000175 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=00000176 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=00000177 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=00000178 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=00000179 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=0000017A res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=0000017B res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=0000017C res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=0000017D res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=0000017E res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=0000017F res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=00000180 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=00000181 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=00000182 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=00000183 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=00000184 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=00000185 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=00000186 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=00000187 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=00000188 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=00000189 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=0000018A res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=0000018B res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=0000018C res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=0000018D res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=0000018E res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=0000018F res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=00000190 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=00000191 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=00000192 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=00000193 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=00000194 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=00000195 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=00000196 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=00000197 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=00000198 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=00000199 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=0000019A res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=0000019B res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=0000019C res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=0000019D res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=0000019E res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=0000019F res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001A0 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001A1 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001A2 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001A3 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001A4 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001A5 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001A6 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001A7 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001A8 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001A9 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001AA res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001AB res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001AC res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001AD res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001AE res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001AF res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001B0 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001B1 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001B2 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001B3 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001B4 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001B5 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001B6 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001B7 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001B8 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001B9 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001BA res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001BB res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001BC res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001BD res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001BE res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001BF res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001C0 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001C1 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001C2 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001C3 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001C4 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001C5 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001C6 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001C7 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001C8 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001C9 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001CA res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001CB res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001CC res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001CD res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001CE res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001CF res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001D0 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001D1 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001D2 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001D3 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001D4 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001D5 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001D6 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001D7 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001D8 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001D9 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001DA res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001DB res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001DC res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001DD res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001DE res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001DF res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001E0 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001E1 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001E2 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001E3 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001E4 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001E5 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001E6 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001E7 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001E8 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001E9 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001EA res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001EB res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001EC res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001ED res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001EE res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001EF res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001F0 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001F1 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001F2 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001F3 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001F4 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001F5 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001F6 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001F7 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001F8 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001F9 res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001FA res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001FB res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001FC res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001FD res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001FE res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=000001FF res=00000007 res_ref=00000007
+ICBRT OK: Number of cycles=41
+ x=00000200 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000201 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000202 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000203 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000204 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000205 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000206 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000207 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000208 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000209 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=0000020A res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=0000020B res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=0000020C res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=0000020D res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=0000020E res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=0000020F res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000210 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000211 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000212 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000213 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000214 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000215 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000216 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000217 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000218 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000219 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=0000021A res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=0000021B res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=0000021C res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=0000021D res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=0000021E res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=0000021F res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000220 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000221 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000222 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000223 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000224 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000225 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000226 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000227 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000228 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000229 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=0000022A res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=0000022B res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=0000022C res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=0000022D res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=0000022E res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=0000022F res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000230 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000231 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000232 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000233 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000234 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000235 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000236 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000237 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000238 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000239 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=0000023A res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=0000023B res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=0000023C res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=0000023D res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=0000023E res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=0000023F res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000240 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000241 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000242 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000243 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000244 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000245 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000246 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000247 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000248 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000249 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=0000024A res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=0000024B res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=0000024C res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=0000024D res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=0000024E res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=0000024F res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000250 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000251 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000252 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000253 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000254 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000255 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000256 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000257 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000258 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000259 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=0000025A res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=0000025B res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=0000025C res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=0000025D res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=0000025E res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=0000025F res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000260 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000261 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000262 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000263 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000264 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000265 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000266 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000267 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000268 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000269 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=0000026A res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=0000026B res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=0000026C res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=0000026D res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=0000026E res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=0000026F res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000270 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000271 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000272 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000273 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000274 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000275 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000276 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000277 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000278 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000279 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=0000027A res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=0000027B res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=0000027C res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=0000027D res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=0000027E res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=0000027F res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000280 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000281 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000282 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000283 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000284 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000285 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000286 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000287 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000288 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000289 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=0000028A res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=0000028B res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=0000028C res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=0000028D res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=0000028E res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=0000028F res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000290 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000291 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000292 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000293 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000294 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000295 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000296 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000297 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000298 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=00000299 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=0000029A res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=0000029B res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=0000029C res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=0000029D res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=0000029E res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=0000029F res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=000002A0 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=000002A1 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=000002A2 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=000002A3 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=000002A4 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=000002A5 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=000002A6 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=000002A7 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=000002A8 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=000002A9 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=000002AA res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=000002AB res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=000002AC res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=000002AD res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=000002AE res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=000002AF res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=000002B0 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=000002B1 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=000002B2 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=000002B3 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=000002B4 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=000002B5 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=000002B6 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=000002B7 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=000002B8 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=000002B9 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=000002BA res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=000002BB res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=000002BC res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=000002BD res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=000002BE res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=000002BF res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=000002C0 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=000002C1 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=000002C2 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=000002C3 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=000002C4 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=000002C5 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=000002C6 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=000002C7 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=000002C8 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=000002C9 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=000002CA res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=000002CB res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=000002CC res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=000002CD res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=000002CE res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=000002CF res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=000002D0 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=000002D1 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=000002D2 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=000002D3 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=000002D4 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=000002D5 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=000002D6 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=000002D7 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=000002D8 res=00000008 res_ref=00000008
+ICBRT OK: Number of cycles=39
+ x=000002D9 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000002DA res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000002DB res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000002DC res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000002DD res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000002DE res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000002DF res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000002E0 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000002E1 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000002E2 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000002E3 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000002E4 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000002E5 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000002E6 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000002E7 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000002E8 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000002E9 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000002EA res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000002EB res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000002EC res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000002ED res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000002EE res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000002EF res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000002F0 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000002F1 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000002F2 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000002F3 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000002F4 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000002F5 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000002F6 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000002F7 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000002F8 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000002F9 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000002FA res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000002FB res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000002FC res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000002FD res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000002FE res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000002FF res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000300 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000301 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000302 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000303 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000304 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000305 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000306 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000307 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000308 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000309 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=0000030A res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=0000030B res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=0000030C res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=0000030D res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=0000030E res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=0000030F res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000310 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000311 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000312 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000313 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000314 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000315 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000316 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000317 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000318 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000319 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=0000031A res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=0000031B res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=0000031C res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=0000031D res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=0000031E res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=0000031F res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000320 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000321 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000322 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000323 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000324 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000325 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000326 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000327 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000328 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000329 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=0000032A res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=0000032B res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=0000032C res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=0000032D res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=0000032E res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=0000032F res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000330 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000331 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000332 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000333 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000334 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000335 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000336 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000337 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000338 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000339 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=0000033A res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=0000033B res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=0000033C res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=0000033D res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=0000033E res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=0000033F res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000340 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000341 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000342 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000343 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000344 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000345 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000346 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000347 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000348 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000349 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=0000034A res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=0000034B res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=0000034C res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=0000034D res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=0000034E res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=0000034F res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000350 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000351 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000352 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000353 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000354 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000355 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000356 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000357 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000358 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000359 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=0000035A res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=0000035B res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=0000035C res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=0000035D res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=0000035E res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=0000035F res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000360 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000361 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000362 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000363 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000364 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000365 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000366 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000367 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000368 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000369 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=0000036A res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=0000036B res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=0000036C res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=0000036D res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=0000036E res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=0000036F res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000370 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000371 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000372 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000373 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000374 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000375 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000376 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000377 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000378 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000379 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=0000037A res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=0000037B res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=0000037C res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=0000037D res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=0000037E res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=0000037F res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000380 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000381 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000382 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000383 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000384 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000385 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000386 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000387 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000388 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000389 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=0000038A res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=0000038B res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=0000038C res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=0000038D res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=0000038E res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=0000038F res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000390 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000391 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000392 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000393 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000394 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000395 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000396 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000397 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000398 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=00000399 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=0000039A res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=0000039B res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=0000039C res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=0000039D res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=0000039E res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=0000039F res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000003A0 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000003A1 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000003A2 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000003A3 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000003A4 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000003A5 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000003A6 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000003A7 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000003A8 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000003A9 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000003AA res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000003AB res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000003AC res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000003AD res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000003AE res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000003AF res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000003B0 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000003B1 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000003B2 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000003B3 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000003B4 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000003B5 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000003B6 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000003B7 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000003B8 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000003B9 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000003BA res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000003BB res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000003BC res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000003BD res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000003BE res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000003BF res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000003C0 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000003C1 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000003C2 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000003C3 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000003C4 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000003C5 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000003C6 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000003C7 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000003C8 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000003C9 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000003CA res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000003CB res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000003CC res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000003CD res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000003CE res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000003CF res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000003D0 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000003D1 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000003D2 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000003D3 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000003D4 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000003D5 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000003D6 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000003D7 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000003D8 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000003D9 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000003DA res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000003DB res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000003DC res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000003DD res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000003DE res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000003DF res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000003E0 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000003E1 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000003E2 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000003E3 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000003E4 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000003E5 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000003E6 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000003E7 res=00000009 res_ref=00000009
+ICBRT OK: Number of cycles=40
+ x=000003E8 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000003E9 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000003EA res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000003EB res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000003EC res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000003ED res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000003EE res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000003EF res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000003F0 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000003F1 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000003F2 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000003F3 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000003F4 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000003F5 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000003F6 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000003F7 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000003F8 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000003F9 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000003FA res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000003FB res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000003FC res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000003FD res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000003FE res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000003FF res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000400 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000401 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000402 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000403 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000404 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000405 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000406 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000407 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000408 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000409 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=0000040A res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=0000040B res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=0000040C res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=0000040D res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=0000040E res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=0000040F res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000410 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000411 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000412 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000413 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000414 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000415 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000416 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000417 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000418 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000419 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=0000041A res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=0000041B res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=0000041C res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=0000041D res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=0000041E res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=0000041F res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000420 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000421 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000422 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000423 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000424 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000425 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000426 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000427 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000428 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000429 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=0000042A res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=0000042B res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=0000042C res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=0000042D res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=0000042E res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=0000042F res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000430 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000431 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000432 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000433 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000434 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000435 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000436 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000437 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000438 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000439 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=0000043A res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=0000043B res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=0000043C res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=0000043D res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=0000043E res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=0000043F res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000440 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000441 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000442 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000443 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000444 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000445 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000446 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000447 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000448 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000449 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=0000044A res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=0000044B res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=0000044C res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=0000044D res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=0000044E res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=0000044F res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000450 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000451 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000452 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000453 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000454 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000455 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000456 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000457 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000458 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000459 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=0000045A res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=0000045B res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=0000045C res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=0000045D res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=0000045E res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=0000045F res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000460 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000461 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000462 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000463 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000464 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000465 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000466 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000467 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000468 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000469 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=0000046A res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=0000046B res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=0000046C res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=0000046D res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=0000046E res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=0000046F res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000470 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000471 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000472 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000473 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000474 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000475 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000476 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000477 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000478 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000479 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=0000047A res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=0000047B res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=0000047C res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=0000047D res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=0000047E res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=0000047F res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000480 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000481 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000482 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000483 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000484 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000485 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000486 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000487 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000488 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000489 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=0000048A res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=0000048B res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=0000048C res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=0000048D res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=0000048E res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=0000048F res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000490 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000491 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000492 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000493 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000494 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000495 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000496 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000497 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000498 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000499 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=0000049A res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=0000049B res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=0000049C res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=0000049D res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=0000049E res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=0000049F res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004A0 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004A1 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004A2 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004A3 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004A4 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004A5 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004A6 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004A7 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004A8 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004A9 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004AA res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004AB res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004AC res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004AD res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004AE res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004AF res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004B0 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004B1 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004B2 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004B3 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004B4 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004B5 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004B6 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004B7 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004B8 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004B9 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004BA res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004BB res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004BC res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004BD res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004BE res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004BF res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004C0 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004C1 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004C2 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004C3 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004C4 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004C5 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004C6 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004C7 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004C8 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004C9 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004CA res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004CB res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004CC res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004CD res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004CE res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004CF res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004D0 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004D1 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004D2 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004D3 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004D4 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004D5 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004D6 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004D7 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004D8 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004D9 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004DA res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004DB res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004DC res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004DD res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004DE res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004DF res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004E0 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004E1 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004E2 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004E3 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004E4 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004E5 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004E6 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004E7 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004E8 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004E9 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004EA res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004EB res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004EC res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004ED res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004EE res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004EF res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004F0 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004F1 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004F2 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004F3 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004F4 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004F5 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004F6 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004F7 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004F8 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004F9 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004FA res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004FB res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004FC res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004FD res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004FE res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=000004FF res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000500 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000501 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000502 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000503 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000504 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000505 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000506 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000507 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000508 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000509 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=0000050A res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=0000050B res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=0000050C res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=0000050D res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=0000050E res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=0000050F res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000510 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000511 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000512 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000513 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000514 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000515 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000516 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000517 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000518 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000519 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=0000051A res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=0000051B res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=0000051C res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=0000051D res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=0000051E res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=0000051F res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000520 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000521 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000522 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000523 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000524 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000525 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000526 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000527 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000528 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000529 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=0000052A res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=0000052B res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=0000052C res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=0000052D res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=0000052E res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=0000052F res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000530 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000531 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000532 res=0000000A res_ref=0000000A
+ICBRT OK: Number of cycles=40
+ x=00000533 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000534 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000535 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000536 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000537 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000538 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000539 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000053A res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000053B res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000053C res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000053D res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000053E res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000053F res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000540 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000541 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000542 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000543 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000544 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000545 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000546 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000547 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000548 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000549 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000054A res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000054B res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000054C res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000054D res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000054E res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000054F res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000550 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000551 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000552 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000553 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000554 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000555 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000556 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000557 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000558 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000559 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000055A res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000055B res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000055C res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000055D res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000055E res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000055F res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000560 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000561 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000562 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000563 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000564 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000565 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000566 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000567 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000568 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000569 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000056A res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000056B res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000056C res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000056D res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000056E res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000056F res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000570 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000571 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000572 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000573 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000574 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000575 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000576 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000577 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000578 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000579 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000057A res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000057B res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000057C res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000057D res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000057E res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000057F res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000580 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000581 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000582 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000583 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000584 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000585 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000586 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000587 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000588 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000589 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000058A res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000058B res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000058C res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000058D res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000058E res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000058F res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000590 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000591 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000592 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000593 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000594 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000595 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000596 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000597 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000598 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000599 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000059A res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000059B res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000059C res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000059D res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000059E res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000059F res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005A0 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005A1 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005A2 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005A3 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005A4 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005A5 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005A6 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005A7 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005A8 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005A9 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005AA res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005AB res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005AC res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005AD res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005AE res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005AF res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005B0 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005B1 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005B2 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005B3 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005B4 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005B5 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005B6 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005B7 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005B8 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005B9 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005BA res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005BB res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005BC res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005BD res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005BE res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005BF res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005C0 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005C1 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005C2 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005C3 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005C4 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005C5 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005C6 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005C7 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005C8 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005C9 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005CA res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005CB res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005CC res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005CD res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005CE res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005CF res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005D0 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005D1 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005D2 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005D3 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005D4 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005D5 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005D6 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005D7 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005D8 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005D9 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005DA res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005DB res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005DC res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005DD res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005DE res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005DF res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005E0 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005E1 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005E2 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005E3 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005E4 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005E5 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005E6 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005E7 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005E8 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005E9 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005EA res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005EB res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005EC res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005ED res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005EE res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005EF res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005F0 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005F1 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005F2 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005F3 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005F4 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005F5 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005F6 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005F7 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005F8 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005F9 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005FA res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005FB res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005FC res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005FD res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005FE res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000005FF res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000600 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000601 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000602 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000603 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000604 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000605 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000606 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000607 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000608 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000609 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000060A res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000060B res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000060C res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000060D res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000060E res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000060F res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000610 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000611 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000612 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000613 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000614 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000615 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000616 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000617 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000618 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000619 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000061A res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000061B res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000061C res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000061D res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000061E res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000061F res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000620 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000621 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000622 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000623 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000624 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000625 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000626 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000627 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000628 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000629 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000062A res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000062B res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000062C res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000062D res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000062E res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000062F res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000630 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000631 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000632 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000633 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000634 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000635 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000636 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000637 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000638 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000639 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000063A res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000063B res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000063C res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000063D res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000063E res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000063F res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000640 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000641 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000642 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000643 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000644 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000645 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000646 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000647 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000648 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000649 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000064A res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000064B res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000064C res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000064D res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000064E res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000064F res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000650 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000651 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000652 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000653 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000654 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000655 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000656 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000657 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000658 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000659 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000065A res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000065B res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000065C res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000065D res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000065E res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000065F res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000660 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000661 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000662 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000663 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000664 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000665 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000666 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000667 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000668 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000669 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000066A res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000066B res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000066C res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000066D res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000066E res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000066F res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000670 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000671 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000672 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000673 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000674 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000675 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000676 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000677 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000678 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000679 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000067A res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000067B res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000067C res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000067D res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000067E res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000067F res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000680 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000681 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000682 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000683 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000684 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000685 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000686 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000687 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000688 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000689 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000068A res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000068B res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000068C res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000068D res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000068E res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000068F res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000690 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000691 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000692 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000693 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000694 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000695 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000696 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000697 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000698 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=00000699 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000069A res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000069B res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000069C res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000069D res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000069E res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=0000069F res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000006A0 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000006A1 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000006A2 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000006A3 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000006A4 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000006A5 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000006A6 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000006A7 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000006A8 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000006A9 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000006AA res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000006AB res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000006AC res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000006AD res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000006AE res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000006AF res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000006B0 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000006B1 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000006B2 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000006B3 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000006B4 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000006B5 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000006B6 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000006B7 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000006B8 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000006B9 res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000006BA res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000006BB res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000006BC res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000006BD res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000006BE res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000006BF res=0000000B res_ref=0000000B
+ICBRT OK: Number of cycles=41
+ x=000006C0 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000006C1 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000006C2 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000006C3 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000006C4 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000006C5 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000006C6 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000006C7 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000006C8 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000006C9 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000006CA res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000006CB res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000006CC res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000006CD res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000006CE res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000006CF res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000006D0 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000006D1 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000006D2 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000006D3 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000006D4 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000006D5 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000006D6 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000006D7 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000006D8 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000006D9 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000006DA res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000006DB res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000006DC res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000006DD res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000006DE res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000006DF res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000006E0 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000006E1 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000006E2 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000006E3 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000006E4 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000006E5 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000006E6 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000006E7 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000006E8 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000006E9 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000006EA res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000006EB res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000006EC res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000006ED res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000006EE res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000006EF res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000006F0 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000006F1 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000006F2 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000006F3 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000006F4 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000006F5 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000006F6 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000006F7 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000006F8 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000006F9 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000006FA res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000006FB res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000006FC res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000006FD res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000006FE res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000006FF res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000700 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000701 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000702 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000703 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000704 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000705 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000706 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000707 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000708 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000709 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=0000070A res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=0000070B res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=0000070C res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=0000070D res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=0000070E res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=0000070F res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000710 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000711 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000712 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000713 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000714 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000715 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000716 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000717 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000718 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000719 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=0000071A res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=0000071B res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=0000071C res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=0000071D res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=0000071E res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=0000071F res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000720 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000721 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000722 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000723 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000724 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000725 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000726 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000727 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000728 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000729 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=0000072A res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=0000072B res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=0000072C res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=0000072D res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=0000072E res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=0000072F res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000730 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000731 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000732 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000733 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000734 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000735 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000736 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000737 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000738 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000739 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=0000073A res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=0000073B res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=0000073C res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=0000073D res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=0000073E res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=0000073F res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000740 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000741 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000742 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000743 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000744 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000745 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000746 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000747 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000748 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000749 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=0000074A res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=0000074B res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=0000074C res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=0000074D res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=0000074E res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=0000074F res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000750 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000751 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000752 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000753 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000754 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000755 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000756 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000757 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000758 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000759 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=0000075A res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=0000075B res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=0000075C res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=0000075D res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=0000075E res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=0000075F res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000760 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000761 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000762 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000763 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000764 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000765 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000766 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000767 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000768 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000769 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=0000076A res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=0000076B res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=0000076C res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=0000076D res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=0000076E res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=0000076F res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000770 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000771 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000772 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000773 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000774 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000775 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000776 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000777 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000778 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000779 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=0000077A res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=0000077B res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=0000077C res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=0000077D res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=0000077E res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=0000077F res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000780 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000781 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000782 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000783 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000784 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000785 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000786 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000787 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000788 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000789 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=0000078A res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=0000078B res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=0000078C res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=0000078D res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=0000078E res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=0000078F res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000790 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000791 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000792 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000793 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000794 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000795 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000796 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000797 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000798 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000799 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=0000079A res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=0000079B res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=0000079C res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=0000079D res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=0000079E res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=0000079F res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007A0 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007A1 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007A2 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007A3 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007A4 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007A5 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007A6 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007A7 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007A8 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007A9 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007AA res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007AB res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007AC res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007AD res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007AE res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007AF res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007B0 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007B1 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007B2 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007B3 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007B4 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007B5 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007B6 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007B7 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007B8 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007B9 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007BA res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007BB res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007BC res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007BD res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007BE res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007BF res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007C0 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007C1 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007C2 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007C3 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007C4 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007C5 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007C6 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007C7 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007C8 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007C9 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007CA res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007CB res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007CC res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007CD res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007CE res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007CF res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007D0 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007D1 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007D2 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007D3 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007D4 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007D5 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007D6 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007D7 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007D8 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007D9 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007DA res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007DB res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007DC res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007DD res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007DE res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007DF res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007E0 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007E1 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007E2 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007E3 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007E4 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007E5 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007E6 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007E7 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007E8 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007E9 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007EA res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007EB res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007EC res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007ED res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007EE res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007EF res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007F0 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007F1 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007F2 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007F3 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007F4 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007F5 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007F6 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007F7 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007F8 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007F9 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007FA res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007FB res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007FC res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007FD res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007FE res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=000007FF res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ x=00000800 res=0000000C res_ref=0000000C
+ICBRT OK: Number of cycles=40
+ICBRT algorithm test has passed

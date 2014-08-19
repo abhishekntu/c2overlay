@@ -1,0 +1,513 @@
+ inp=00000000 outp=00000000 outp_ref=00000000
+POPCOUNT OK: Number of cycles=4
+ inp=00000001 outp=00000001 outp_ref=00000001
+POPCOUNT OK: Number of cycles=4
+ inp=00000002 outp=00000001 outp_ref=00000001
+POPCOUNT OK: Number of cycles=5
+ inp=00000003 outp=00000002 outp_ref=00000002
+POPCOUNT OK: Number of cycles=5
+ inp=00000004 outp=00000001 outp_ref=00000001
+POPCOUNT OK: Number of cycles=6
+ inp=00000005 outp=00000002 outp_ref=00000002
+POPCOUNT OK: Number of cycles=6
+ inp=00000006 outp=00000002 outp_ref=00000002
+POPCOUNT OK: Number of cycles=6
+ inp=00000007 outp=00000003 outp_ref=00000003
+POPCOUNT OK: Number of cycles=6
+ inp=00000008 outp=00000001 outp_ref=00000001
+POPCOUNT OK: Number of cycles=7
+ inp=00000009 outp=00000002 outp_ref=00000002
+POPCOUNT OK: Number of cycles=7
+ inp=0000000A outp=00000002 outp_ref=00000002
+POPCOUNT OK: Number of cycles=7
+ inp=0000000B outp=00000003 outp_ref=00000003
+POPCOUNT OK: Number of cycles=7
+ inp=0000000C outp=00000002 outp_ref=00000002
+POPCOUNT OK: Number of cycles=7
+ inp=0000000D outp=00000003 outp_ref=00000003
+POPCOUNT OK: Number of cycles=7
+ inp=0000000E outp=00000003 outp_ref=00000003
+POPCOUNT OK: Number of cycles=7
+ inp=0000000F outp=00000004 outp_ref=00000004
+POPCOUNT OK: Number of cycles=7
+ inp=00000010 outp=00000001 outp_ref=00000001
+POPCOUNT OK: Number of cycles=8
+ inp=00000011 outp=00000002 outp_ref=00000002
+POPCOUNT OK: Number of cycles=8
+ inp=00000012 outp=00000002 outp_ref=00000002
+POPCOUNT OK: Number of cycles=8
+ inp=00000013 outp=00000003 outp_ref=00000003
+POPCOUNT OK: Number of cycles=8
+ inp=00000014 outp=00000002 outp_ref=00000002
+POPCOUNT OK: Number of cycles=8
+ inp=00000015 outp=00000003 outp_ref=00000003
+POPCOUNT OK: Number of cycles=8
+ inp=00000016 outp=00000003 outp_ref=00000003
+POPCOUNT OK: Number of cycles=8
+ inp=00000017 outp=00000004 outp_ref=00000004
+POPCOUNT OK: Number of cycles=8
+ inp=00000018 outp=00000002 outp_ref=00000002
+POPCOUNT OK: Number of cycles=8
+ inp=00000019 outp=00000003 outp_ref=00000003
+POPCOUNT OK: Number of cycles=8
+ inp=0000001A outp=00000003 outp_ref=00000003
+POPCOUNT OK: Number of cycles=8
+ inp=0000001B outp=00000004 outp_ref=00000004
+POPCOUNT OK: Number of cycles=8
+ inp=0000001C outp=00000003 outp_ref=00000003
+POPCOUNT OK: Number of cycles=8
+ inp=0000001D outp=00000004 outp_ref=00000004
+POPCOUNT OK: Number of cycles=8
+ inp=0000001E outp=00000004 outp_ref=00000004
+POPCOUNT OK: Number of cycles=8
+ inp=0000001F outp=00000005 outp_ref=00000005
+POPCOUNT OK: Number of cycles=8
+ inp=00000020 outp=00000001 outp_ref=00000001
+POPCOUNT OK: Number of cycles=9
+ inp=00000021 outp=00000002 outp_ref=00000002
+POPCOUNT OK: Number of cycles=9
+ inp=00000022 outp=00000002 outp_ref=00000002
+POPCOUNT OK: Number of cycles=9
+ inp=00000023 outp=00000003 outp_ref=00000003
+POPCOUNT OK: Number of cycles=9
+ inp=00000024 outp=00000002 outp_ref=00000002
+POPCOUNT OK: Number of cycles=9
+ inp=00000025 outp=00000003 outp_ref=00000003
+POPCOUNT OK: Number of cycles=9
+ inp=00000026 outp=00000003 outp_ref=00000003
+POPCOUNT OK: Number of cycles=9
+ inp=00000027 outp=00000004 outp_ref=00000004
+POPCOUNT OK: Number of cycles=9
+ inp=00000028 outp=00000002 outp_ref=00000002
+POPCOUNT OK: Number of cycles=9
+ inp=00000029 outp=00000003 outp_ref=00000003
+POPCOUNT OK: Number of cycles=9
+ inp=0000002A outp=00000003 outp_ref=00000003
+POPCOUNT OK: Number of cycles=9
+ inp=0000002B outp=00000004 outp_ref=00000004
+POPCOUNT OK: Number of cycles=9
+ inp=0000002C outp=00000003 outp_ref=00000003
+POPCOUNT OK: Number of cycles=9
+ inp=0000002D outp=00000004 outp_ref=00000004
+POPCOUNT OK: Number of cycles=9
+ inp=0000002E outp=00000004 outp_ref=00000004
+POPCOUNT OK: Number of cycles=9
+ inp=0000002F outp=00000005 outp_ref=00000005
+POPCOUNT OK: Number of cycles=9
+ inp=00000030 outp=00000002 outp_ref=00000002
+POPCOUNT OK: Number of cycles=9
+ inp=00000031 outp=00000003 outp_ref=00000003
+POPCOUNT OK: Number of cycles=9
+ inp=00000032 outp=00000003 outp_ref=00000003
+POPCOUNT OK: Number of cycles=9
+ inp=00000033 outp=00000004 outp_ref=00000004
+POPCOUNT OK: Number of cycles=9
+ inp=00000034 outp=00000003 outp_ref=00000003
+POPCOUNT OK: Number of cycles=9
+ inp=00000035 outp=00000004 outp_ref=00000004
+POPCOUNT OK: Number of cycles=9
+ inp=00000036 outp=00000004 outp_ref=00000004
+POPCOUNT OK: Number of cycles=9
+ inp=00000037 outp=00000005 outp_ref=00000005
+POPCOUNT OK: Number of cycles=9
+ inp=00000038 outp=00000003 outp_ref=00000003
+POPCOUNT OK: Number of cycles=9
+ inp=00000039 outp=00000004 outp_ref=00000004
+POPCOUNT OK: Number of cycles=9
+ inp=0000003A outp=00000004 outp_ref=00000004
+POPCOUNT OK: Number of cycles=9
+ inp=0000003B outp=00000005 outp_ref=00000005
+POPCOUNT OK: Number of cycles=9
+ inp=0000003C outp=00000004 outp_ref=00000004
+POPCOUNT OK: Number of cycles=9
+ inp=0000003D outp=00000005 outp_ref=00000005
+POPCOUNT OK: Number of cycles=9
+ inp=0000003E outp=00000005 outp_ref=00000005
+POPCOUNT OK: Number of cycles=9
+ inp=0000003F outp=00000006 outp_ref=00000006
+POPCOUNT OK: Number of cycles=9
+ inp=00000040 outp=00000001 outp_ref=00000001
+POPCOUNT OK: Number of cycles=10
+ inp=00000041 outp=00000002 outp_ref=00000002
+POPCOUNT OK: Number of cycles=10
+ inp=00000042 outp=00000002 outp_ref=00000002
+POPCOUNT OK: Number of cycles=10
+ inp=00000043 outp=00000003 outp_ref=00000003
+POPCOUNT OK: Number of cycles=10
+ inp=00000044 outp=00000002 outp_ref=00000002
+POPCOUNT OK: Number of cycles=10
+ inp=00000045 outp=00000003 outp_ref=00000003
+POPCOUNT OK: Number of cycles=10
+ inp=00000046 outp=00000003 outp_ref=00000003
+POPCOUNT OK: Number of cycles=10
+ inp=00000047 outp=00000004 outp_ref=00000004
+POPCOUNT OK: Number of cycles=10
+ inp=00000048 outp=00000002 outp_ref=00000002
+POPCOUNT OK: Number of cycles=10
+ inp=00000049 outp=00000003 outp_ref=00000003
+POPCOUNT OK: Number of cycles=10
+ inp=0000004A outp=00000003 outp_ref=00000003
+POPCOUNT OK: Number of cycles=10
+ inp=0000004B outp=00000004 outp_ref=00000004
+POPCOUNT OK: Number of cycles=10
+ inp=0000004C outp=00000003 outp_ref=00000003
+POPCOUNT OK: Number of cycles=10
+ inp=0000004D outp=00000004 outp_ref=00000004
+POPCOUNT OK: Number of cycles=10
+ inp=0000004E outp=00000004 outp_ref=00000004
+POPCOUNT OK: Number of cycles=10
+ inp=0000004F outp=00000005 outp_ref=00000005
+POPCOUNT OK: Number of cycles=10
+ inp=00000050 outp=00000002 outp_ref=00000002
+POPCOUNT OK: Number of cycles=10
+ inp=00000051 outp=00000003 outp_ref=00000003
+POPCOUNT OK: Number of cycles=10
+ inp=00000052 outp=00000003 outp_ref=00000003
+POPCOUNT OK: Number of cycles=10
+ inp=00000053 outp=00000004 outp_ref=00000004
+POPCOUNT OK: Number of cycles=10
+ inp=00000054 outp=00000003 outp_ref=00000003
+POPCOUNT OK: Number of cycles=10
+ inp=00000055 outp=00000004 outp_ref=00000004
+POPCOUNT OK: Number of cycles=10
+ inp=00000056 outp=00000004 outp_ref=00000004
+POPCOUNT OK: Number of cycles=10
+ inp=00000057 outp=00000005 outp_ref=00000005
+POPCOUNT OK: Number of cycles=10
+ inp=00000058 outp=00000003 outp_ref=00000003
+POPCOUNT OK: Number of cycles=10
+ inp=00000059 outp=00000004 outp_ref=00000004
+POPCOUNT OK: Number of cycles=10
+ inp=0000005A outp=00000004 outp_ref=00000004
+POPCOUNT OK: Number of cycles=10
+ inp=0000005B outp=00000005 outp_ref=00000005
+POPCOUNT OK: Number of cycles=10
+ inp=0000005C outp=00000004 outp_ref=00000004
+POPCOUNT OK: Number of cycles=10
+ inp=0000005D outp=00000005 outp_ref=00000005
+POPCOUNT OK: Number of cycles=10
+ inp=0000005E outp=00000005 outp_ref=00000005
+POPCOUNT OK: Number of cycles=10
+ inp=0000005F outp=00000006 outp_ref=00000006
+POPCOUNT OK: Number of cycles=10
+ inp=00000060 outp=00000002 outp_ref=00000002
+POPCOUNT OK: Number of cycles=10
+ inp=00000061 outp=00000003 outp_ref=00000003
+POPCOUNT OK: Number of cycles=10
+ inp=00000062 outp=00000003 outp_ref=00000003
+POPCOUNT OK: Number of cycles=10
+ inp=00000063 outp=00000004 outp_ref=00000004
+POPCOUNT OK: Number of cycles=10
+ inp=00000064 outp=00000003 outp_ref=00000003
+POPCOUNT OK: Number of cycles=10
+ inp=00000065 outp=00000004 outp_ref=00000004
+POPCOUNT OK: Number of cycles=10
+ inp=00000066 outp=00000004 outp_ref=00000004
+POPCOUNT OK: Number of cycles=10
+ inp=00000067 outp=00000005 outp_ref=00000005
+POPCOUNT OK: Number of cycles=10
+ inp=00000068 outp=00000003 outp_ref=00000003
+POPCOUNT OK: Number of cycles=10
+ inp=00000069 outp=00000004 outp_ref=00000004
+POPCOUNT OK: Number of cycles=10
+ inp=0000006A outp=00000004 outp_ref=00000004
+POPCOUNT OK: Number of cycles=10
+ inp=0000006B outp=00000005 outp_ref=00000005
+POPCOUNT OK: Number of cycles=10
+ inp=0000006C outp=00000004 outp_ref=00000004
+POPCOUNT OK: Number of cycles=10
+ inp=0000006D outp=00000005 outp_ref=00000005
+POPCOUNT OK: Number of cycles=10
+ inp=0000006E outp=00000005 outp_ref=00000005
+POPCOUNT OK: Number of cycles=10
+ inp=0000006F outp=00000006 outp_ref=00000006
+POPCOUNT OK: Number of cycles=10
+ inp=00000070 outp=00000003 outp_ref=00000003
+POPCOUNT OK: Number of cycles=10
+ inp=00000071 outp=00000004 outp_ref=00000004
+POPCOUNT OK: Number of cycles=10
+ inp=00000072 outp=00000004 outp_ref=00000004
+POPCOUNT OK: Number of cycles=10
+ inp=00000073 outp=00000005 outp_ref=00000005
+POPCOUNT OK: Number of cycles=10
+ inp=00000074 outp=00000004 outp_ref=00000004
+POPCOUNT OK: Number of cycles=10
+ inp=00000075 outp=00000005 outp_ref=00000005
+POPCOUNT OK: Number of cycles=10
+ inp=00000076 outp=00000005 outp_ref=00000005
+POPCOUNT OK: Number of cycles=10
+ inp=00000077 outp=00000006 outp_ref=00000006
+POPCOUNT OK: Number of cycles=10
+ inp=00000078 outp=00000004 outp_ref=00000004
+POPCOUNT OK: Number of cycles=10
+ inp=00000079 outp=00000005 outp_ref=00000005
+POPCOUNT OK: Number of cycles=10
+ inp=0000007A outp=00000005 outp_ref=00000005
+POPCOUNT OK: Number of cycles=10
+ inp=0000007B outp=00000006 outp_ref=00000006
+POPCOUNT OK: Number of cycles=10
+ inp=0000007C outp=00000005 outp_ref=00000005
+POPCOUNT OK: Number of cycles=10
+ inp=0000007D outp=00000006 outp_ref=00000006
+POPCOUNT OK: Number of cycles=10
+ inp=0000007E outp=00000006 outp_ref=00000006
+POPCOUNT OK: Number of cycles=10
+ inp=0000007F outp=00000007 outp_ref=00000007
+POPCOUNT OK: Number of cycles=10
+ inp=00000080 outp=00000001 outp_ref=00000001
+POPCOUNT OK: Number of cycles=11
+ inp=00000081 outp=00000002 outp_ref=00000002
+POPCOUNT OK: Number of cycles=11
+ inp=00000082 outp=00000002 outp_ref=00000002
+POPCOUNT OK: Number of cycles=11
+ inp=00000083 outp=00000003 outp_ref=00000003
+POPCOUNT OK: Number of cycles=11
+ inp=00000084 outp=00000002 outp_ref=00000002
+POPCOUNT OK: Number of cycles=11
+ inp=00000085 outp=00000003 outp_ref=00000003
+POPCOUNT OK: Number of cycles=11
+ inp=00000086 outp=00000003 outp_ref=00000003
+POPCOUNT OK: Number of cycles=11
+ inp=00000087 outp=00000004 outp_ref=00000004
+POPCOUNT OK: Number of cycles=11
+ inp=00000088 outp=00000002 outp_ref=00000002
+POPCOUNT OK: Number of cycles=11
+ inp=00000089 outp=00000003 outp_ref=00000003
+POPCOUNT OK: Number of cycles=11
+ inp=0000008A outp=00000003 outp_ref=00000003
+POPCOUNT OK: Number of cycles=11
+ inp=0000008B outp=00000004 outp_ref=00000004
+POPCOUNT OK: Number of cycles=11
+ inp=0000008C outp=00000003 outp_ref=00000003
+POPCOUNT OK: Number of cycles=11
+ inp=0000008D outp=00000004 outp_ref=00000004
+POPCOUNT OK: Number of cycles=11
+ inp=0000008E outp=00000004 outp_ref=00000004
+POPCOUNT OK: Number of cycles=11
+ inp=0000008F outp=00000005 outp_ref=00000005
+POPCOUNT OK: Number of cycles=11
+ inp=00000090 outp=00000002 outp_ref=00000002
+POPCOUNT OK: Number of cycles=11
+ inp=00000091 outp=00000003 outp_ref=00000003
+POPCOUNT OK: Number of cycles=11
+ inp=00000092 outp=00000003 outp_ref=00000003
+POPCOUNT OK: Number of cycles=11
+ inp=00000093 outp=00000004 outp_ref=00000004
+POPCOUNT OK: Number of cycles=11
+ inp=00000094 outp=00000003 outp_ref=00000003
+POPCOUNT OK: Number of cycles=11
+ inp=00000095 outp=00000004 outp_ref=00000004
+POPCOUNT OK: Number of cycles=11
+ inp=00000096 outp=00000004 outp_ref=00000004
+POPCOUNT OK: Number of cycles=11
+ inp=00000097 outp=00000005 outp_ref=00000005
+POPCOUNT OK: Number of cycles=11
+ inp=00000098 outp=00000003 outp_ref=00000003
+POPCOUNT OK: Number of cycles=11
+ inp=00000099 outp=00000004 outp_ref=00000004
+POPCOUNT OK: Number of cycles=11
+ inp=0000009A outp=00000004 outp_ref=00000004
+POPCOUNT OK: Number of cycles=11
+ inp=0000009B outp=00000005 outp_ref=00000005
+POPCOUNT OK: Number of cycles=11
+ inp=0000009C outp=00000004 outp_ref=00000004
+POPCOUNT OK: Number of cycles=11
+ inp=0000009D outp=00000005 outp_ref=00000005
+POPCOUNT OK: Number of cycles=11
+ inp=0000009E outp=00000005 outp_ref=00000005
+POPCOUNT OK: Number of cycles=11
+ inp=0000009F outp=00000006 outp_ref=00000006
+POPCOUNT OK: Number of cycles=11
+ inp=000000A0 outp=00000002 outp_ref=00000002
+POPCOUNT OK: Number of cycles=11
+ inp=000000A1 outp=00000003 outp_ref=00000003
+POPCOUNT OK: Number of cycles=11
+ inp=000000A2 outp=00000003 outp_ref=00000003
+POPCOUNT OK: Number of cycles=11
+ inp=000000A3 outp=00000004 outp_ref=00000004
+POPCOUNT OK: Number of cycles=11
+ inp=000000A4 outp=00000003 outp_ref=00000003
+POPCOUNT OK: Number of cycles=11
+ inp=000000A5 outp=00000004 outp_ref=00000004
+POPCOUNT OK: Number of cycles=11
+ inp=000000A6 outp=00000004 outp_ref=00000004
+POPCOUNT OK: Number of cycles=11
+ inp=000000A7 outp=00000005 outp_ref=00000005
+POPCOUNT OK: Number of cycles=11
+ inp=000000A8 outp=00000003 outp_ref=00000003
+POPCOUNT OK: Number of cycles=11
+ inp=000000A9 outp=00000004 outp_ref=00000004
+POPCOUNT OK: Number of cycles=11
+ inp=000000AA outp=00000004 outp_ref=00000004
+POPCOUNT OK: Number of cycles=11
+ inp=000000AB outp=00000005 outp_ref=00000005
+POPCOUNT OK: Number of cycles=11
+ inp=000000AC outp=00000004 outp_ref=00000004
+POPCOUNT OK: Number of cycles=11
+ inp=000000AD outp=00000005 outp_ref=00000005
+POPCOUNT OK: Number of cycles=11
+ inp=000000AE outp=00000005 outp_ref=00000005
+POPCOUNT OK: Number of cycles=11
+ inp=000000AF outp=00000006 outp_ref=00000006
+POPCOUNT OK: Number of cycles=11
+ inp=000000B0 outp=00000003 outp_ref=00000003
+POPCOUNT OK: Number of cycles=11
+ inp=000000B1 outp=00000004 outp_ref=00000004
+POPCOUNT OK: Number of cycles=11
+ inp=000000B2 outp=00000004 outp_ref=00000004
+POPCOUNT OK: Number of cycles=11
+ inp=000000B3 outp=00000005 outp_ref=00000005
+POPCOUNT OK: Number of cycles=11
+ inp=000000B4 outp=00000004 outp_ref=00000004
+POPCOUNT OK: Number of cycles=11
+ inp=000000B5 outp=00000005 outp_ref=00000005
+POPCOUNT OK: Number of cycles=11
+ inp=000000B6 outp=00000005 outp_ref=00000005
+POPCOUNT OK: Number of cycles=11
+ inp=000000B7 outp=00000006 outp_ref=00000006
+POPCOUNT OK: Number of cycles=11
+ inp=000000B8 outp=00000004 outp_ref=00000004
+POPCOUNT OK: Number of cycles=11
+ inp=000000B9 outp=00000005 outp_ref=00000005
+POPCOUNT OK: Number of cycles=11
+ inp=000000BA outp=00000005 outp_ref=00000005
+POPCOUNT OK: Number of cycles=11
+ inp=000000BB outp=00000006 outp_ref=00000006
+POPCOUNT OK: Number of cycles=11
+ inp=000000BC outp=00000005 outp_ref=00000005
+POPCOUNT OK: Number of cycles=11
+ inp=000000BD outp=00000006 outp_ref=00000006
+POPCOUNT OK: Number of cycles=11
+ inp=000000BE outp=00000006 outp_ref=00000006
+POPCOUNT OK: Number of cycles=11
+ inp=000000BF outp=00000007 outp_ref=00000007
+POPCOUNT OK: Number of cycles=11
+ inp=000000C0 outp=00000002 outp_ref=00000002
+POPCOUNT OK: Number of cycles=11
+ inp=000000C1 outp=00000003 outp_ref=00000003
+POPCOUNT OK: Number of cycles=11
+ inp=000000C2 outp=00000003 outp_ref=00000003
+POPCOUNT OK: Number of cycles=11
+ inp=000000C3 outp=00000004 outp_ref=00000004
+POPCOUNT OK: Number of cycles=11
+ inp=000000C4 outp=00000003 outp_ref=00000003
+POPCOUNT OK: Number of cycles=11
+ inp=000000C5 outp=00000004 outp_ref=00000004
+POPCOUNT OK: Number of cycles=11
+ inp=000000C6 outp=00000004 outp_ref=00000004
+POPCOUNT OK: Number of cycles=11
+ inp=000000C7 outp=00000005 outp_ref=00000005
+POPCOUNT OK: Number of cycles=11
+ inp=000000C8 outp=00000003 outp_ref=00000003
+POPCOUNT OK: Number of cycles=11
+ inp=000000C9 outp=00000004 outp_ref=00000004
+POPCOUNT OK: Number of cycles=11
+ inp=000000CA outp=00000004 outp_ref=00000004
+POPCOUNT OK: Number of cycles=11
+ inp=000000CB outp=00000005 outp_ref=00000005
+POPCOUNT OK: Number of cycles=11
+ inp=000000CC outp=00000004 outp_ref=00000004
+POPCOUNT OK: Number of cycles=11
+ inp=000000CD outp=00000005 outp_ref=00000005
+POPCOUNT OK: Number of cycles=11
+ inp=000000CE outp=00000005 outp_ref=00000005
+POPCOUNT OK: Number of cycles=11
+ inp=000000CF outp=00000006 outp_ref=00000006
+POPCOUNT OK: Number of cycles=11
+ inp=000000D0 outp=00000003 outp_ref=00000003
+POPCOUNT OK: Number of cycles=11
+ inp=000000D1 outp=00000004 outp_ref=00000004
+POPCOUNT OK: Number of cycles=11
+ inp=000000D2 outp=00000004 outp_ref=00000004
+POPCOUNT OK: Number of cycles=11
+ inp=000000D3 outp=00000005 outp_ref=00000005
+POPCOUNT OK: Number of cycles=11
+ inp=000000D4 outp=00000004 outp_ref=00000004
+POPCOUNT OK: Number of cycles=11
+ inp=000000D5 outp=00000005 outp_ref=00000005
+POPCOUNT OK: Number of cycles=11
+ inp=000000D6 outp=00000005 outp_ref=00000005
+POPCOUNT OK: Number of cycles=11
+ inp=000000D7 outp=00000006 outp_ref=00000006
+POPCOUNT OK: Number of cycles=11
+ inp=000000D8 outp=00000004 outp_ref=00000004
+POPCOUNT OK: Number of cycles=11
+ inp=000000D9 outp=00000005 outp_ref=00000005
+POPCOUNT OK: Number of cycles=11
+ inp=000000DA outp=00000005 outp_ref=00000005
+POPCOUNT OK: Number of cycles=11
+ inp=000000DB outp=00000006 outp_ref=00000006
+POPCOUNT OK: Number of cycles=11
+ inp=000000DC outp=00000005 outp_ref=00000005
+POPCOUNT OK: Number of cycles=11
+ inp=000000DD outp=00000006 outp_ref=00000006
+POPCOUNT OK: Number of cycles=11
+ inp=000000DE outp=00000006 outp_ref=00000006
+POPCOUNT OK: Number of cycles=11
+ inp=000000DF outp=00000007 outp_ref=00000007
+POPCOUNT OK: Number of cycles=11
+ inp=000000E0 outp=00000003 outp_ref=00000003
+POPCOUNT OK: Number of cycles=11
+ inp=000000E1 outp=00000004 outp_ref=00000004
+POPCOUNT OK: Number of cycles=11
+ inp=000000E2 outp=00000004 outp_ref=00000004
+POPCOUNT OK: Number of cycles=11
+ inp=000000E3 outp=00000005 outp_ref=00000005
+POPCOUNT OK: Number of cycles=11
+ inp=000000E4 outp=00000004 outp_ref=00000004
+POPCOUNT OK: Number of cycles=11
+ inp=000000E5 outp=00000005 outp_ref=00000005
+POPCOUNT OK: Number of cycles=11
+ inp=000000E6 outp=00000005 outp_ref=00000005
+POPCOUNT OK: Number of cycles=11
+ inp=000000E7 outp=00000006 outp_ref=00000006
+POPCOUNT OK: Number of cycles=11
+ inp=000000E8 outp=00000004 outp_ref=00000004
+POPCOUNT OK: Number of cycles=11
+ inp=000000E9 outp=00000005 outp_ref=00000005
+POPCOUNT OK: Number of cycles=11
+ inp=000000EA outp=00000005 outp_ref=00000005
+POPCOUNT OK: Number of cycles=11
+ inp=000000EB outp=00000006 outp_ref=00000006
+POPCOUNT OK: Number of cycles=11
+ inp=000000EC outp=00000005 outp_ref=00000005
+POPCOUNT OK: Number of cycles=11
+ inp=000000ED outp=00000006 outp_ref=00000006
+POPCOUNT OK: Number of cycles=11
+ inp=000000EE outp=00000006 outp_ref=00000006
+POPCOUNT OK: Number of cycles=11
+ inp=000000EF outp=00000007 outp_ref=00000007
+POPCOUNT OK: Number of cycles=11
+ inp=000000F0 outp=00000004 outp_ref=00000004
+POPCOUNT OK: Number of cycles=11
+ inp=000000F1 outp=00000005 outp_ref=00000005
+POPCOUNT OK: Number of cycles=11
+ inp=000000F2 outp=00000005 outp_ref=00000005
+POPCOUNT OK: Number of cycles=11
+ inp=000000F3 outp=00000006 outp_ref=00000006
+POPCOUNT OK: Number of cycles=11
+ inp=000000F4 outp=00000005 outp_ref=00000005
+POPCOUNT OK: Number of cycles=11
+ inp=000000F5 outp=00000006 outp_ref=00000006
+POPCOUNT OK: Number of cycles=11
+ inp=000000F6 outp=00000006 outp_ref=00000006
+POPCOUNT OK: Number of cycles=11
+ inp=000000F7 outp=00000007 outp_ref=00000007
+POPCOUNT OK: Number of cycles=11
+ inp=000000F8 outp=00000005 outp_ref=00000005
+POPCOUNT OK: Number of cycles=11
+ inp=000000F9 outp=00000006 outp_ref=00000006
+POPCOUNT OK: Number of cycles=11
+ inp=000000FA outp=00000006 outp_ref=00000006
+POPCOUNT OK: Number of cycles=11
+ inp=000000FB outp=00000007 outp_ref=00000007
+POPCOUNT OK: Number of cycles=11
+ inp=000000FC outp=00000006 outp_ref=00000006
+POPCOUNT OK: Number of cycles=11
+ inp=000000FD outp=00000007 outp_ref=00000007
+POPCOUNT OK: Number of cycles=11
+ inp=000000FE outp=00000007 outp_ref=00000007
+POPCOUNT OK: Number of cycles=11
+ inp=000000FF outp=00000008 outp_ref=00000008
+POPCOUNT OK: Number of cycles=11
+POPCOUNT algorithm test has passed

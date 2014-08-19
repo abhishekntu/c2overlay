@@ -1,0 +1,23 @@
+fibo (unsigned int x)
+gimple_bind <
+  unsigned int D.1236;
+  unsigned int f0;
+  unsigned int f1;
+  unsigned int k;
+  unsigned int f;
+
+  gimple_assign <integer_cst, f0, 0, NULL>
+  gimple_assign <integer_cst, f1, 1, NULL>
+  gimple_assign <integer_cst, k, 2, NULL>
+  gimple_label <<D.1233>>
+  gimple_assign <plus_expr, k, k, 1>
+  gimple_assign <plus_expr, f, f1, f0>
+  gimple_assign <var_decl, f0, f1, NULL>
+  gimple_assign <var_decl, f1, f, NULL>
+  gimple_cond <le_expr, k, x, <D.1233>, <D.1234>>
+  gimple_label <<D.1234>>
+  gimple_assign <var_decl, D.1236, f, NULL>
+  gimple_return <D.1236>
+>
+
+

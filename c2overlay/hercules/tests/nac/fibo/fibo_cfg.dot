@@ -1,0 +1,21 @@
+digraph fibo_cfg
+{
+  graph [rankdir="TB", nodesep = "0.175"];
+  node [fontname="Courier", fontsize="12", style="filled"];
+  edge [fontname="Courier", fontsize="12"];
+
+  bb00001  [label="bb00001", ntype="node", argix="-1", dataspec="na", bb="1", shape="parallelogram", fillcolor="orange"];
+  bb00002  [label="bb00002", ntype="node", argix="-1", dataspec="na", bb="2", shape="parallelogram", fillcolor="orange"];
+  bb00003  [label="bb00003", ntype="node", argix="-1", dataspec="na", bb="3", shape="parallelogram", fillcolor="orange"];
+  bb00004  [label="bb00004", ntype="node", argix="-1", dataspec="na", bb="4", shape="parallelogram", fillcolor="orange"];
+  bb00005  [label="bb00005", ntype="node", argix="-1", dataspec="na", bb="5", shape="parallelogram", fillcolor="orange"];
+
+  bb00001 -> bb00002  [label="F", etype="F", order="0", argix="-1", dataspec="u1"];
+  bb00001 -> bb00005  [label="T", etype="T", order="0", argix="-1", dataspec="u1"];
+  bb00002 -> bb00003  [label="F", etype="F", order="0", argix="-1", dataspec="u1"];
+  bb00002 -> bb00005  [label="T", etype="T", order="0", argix="-1", dataspec="u1"];
+  bb00003 -> bb00004  [label="U", etype="U", order="0", argix="-1", dataspec="u1"];
+  bb00004 -> bb00004  [label="T", etype="T", order="0", argix="-1", dataspec="u1"];
+  bb00004 -> bb00005  [label="F", etype="F", order="0", argix="-1", dataspec="u1"];
+
+}

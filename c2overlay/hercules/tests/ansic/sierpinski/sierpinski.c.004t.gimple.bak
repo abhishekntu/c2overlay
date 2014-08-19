@@ -1,0 +1,53 @@
+sierpinski (int * tot)
+gimple_bind <
+  int iftmp.0;
+  int D.1373;
+  int D.1374;
+  int D.1378;
+  int D.1379;
+  int col;
+  int row;
+  int table[1024];
+  int temp;
+  int sum;
+
+  gimple_try <GIMPLE_TRY_FINALLY,
+    EVAL <
+      gimple_assign <integer_cst, sum, 0, NULL>
+      gimple_assign <integer_cst, col, 0, NULL>
+      gimple_assign <integer_cst, row, 0, NULL>
+      gimple_label <<D.1367>>
+      gimple_cond <ge_expr, col, row, <D.1370>, <D.1371>>
+      gimple_label <<D.1370>>
+      gimple_assign <bit_not_expr, D.1373, col, NULL>
+      gimple_assign <bit_and_expr, D.1374, D.1373, row>
+      gimple_cond <ne_expr, D.1374, 0, <D.1375>, <D.1376>>
+      gimple_label <<D.1375>>
+      gimple_assign <integer_cst, iftmp.0, 46, NULL>
+      gimple_goto <<D.1377>>
+      gimple_label <<D.1376>>
+      gimple_assign <integer_cst, iftmp.0, 64, NULL>
+      gimple_label <<D.1377>>
+      gimple_assign <var_decl, temp, iftmp.0, NULL>
+      gimple_assign <mult_expr, D.1378, row, 32>
+      gimple_assign <plus_expr, D.1379, D.1378, col>
+      gimple_assign <var_decl, table[D.1379], temp, NULL>
+      gimple_assign <plus_expr, sum, sum, temp>
+      gimple_label <<D.1371>>
+      gimple_assign <plus_expr, col, col, 1>
+      gimple_cond <gt_expr, col, 31, <D.1380>, <D.1381>>
+      gimple_label <<D.1380>>
+      gimple_assign <integer_cst, col, 0, NULL>
+      gimple_assign <plus_expr, row, row, 1>
+      gimple_label <<D.1381>>
+      gimple_cond <ne_expr, row, 32, <D.1367>, <D.1368>>
+      gimple_label <<D.1368>>
+      gimple_assign <var_decl, *tot, sum, NULL>
+    >
+    CLEANUP <
+      gimple_assign <constructor, table, {CLOBBER}, NULL>
+    >
+  >
+>
+
+

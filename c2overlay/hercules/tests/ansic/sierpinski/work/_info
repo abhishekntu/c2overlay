@@ -1,0 +1,223 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\hercules\tests\ansic\sierpinski
+Poperpack
+Z1 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 w1342784126
+Z5 dC:\hercules\tests\ansic\sierpinski
+Z6 8c:/hercules/cdfg2hdl/contrib/vhdl/operpack_ieee.vhd
+Z7 Fc:/hercules/cdfg2hdl/contrib/vhdl/operpack_ieee.vhd
+l0
+L38
+Vif9WYQ[bJ@]6ZDVf<LO`10
+Z8 OV;C;10.1d;51
+32
+b1
+Z9 !s108 1381575634.547000
+Z10 !s90 c:/hercules/cdfg2hdl/contrib/vhdl/operpack_ieee.vhd|
+Z11 !s107 c:/hercules/cdfg2hdl/contrib/vhdl/operpack_ieee.vhd|
+o-O0
+Z12 tExplicit 1
+!s100 cbOzJN8Dn[o14E3>dAF<e3
+!i10b 1
+Bbody
+Z13 DPx4 work 8 operpack 0 22 if9WYQ[bJ@]6ZDVf<LO`10
+R1
+R2
+R3
+l0
+L79
+VmYNEdK@`UoVgHKh`j31I21
+R8
+32
+R9
+R10
+R11
+o-O0
+R12
+nbody
+!s100 lB=ASY3hPX6DcbKmF6RTS3
+!i10b 1
+Esierpinski
+Z14 w1381575630
+Z15 DPx4 work 28 std_logic_1164_tinyadditions 0 22 1gSiZ:HC5<:]LVb^5Q?7G1
+Z16 DPx4 work 18 sierpinski_cdt_pkg 0 22 Q9]j?oD6n4X:?Kk>[A9[>1
+R1
+R2
+R3
+R13
+R5
+Z17 8sierpinski.vhd
+Z18 Fsierpinski.vhd
+l0
+L14
+V6Bk6B?z=ORFdXB:zhmD_Y3
+R8
+32
+Z19 !s108 1381575635.228000
+Z20 !s90 sierpinski.vhd|
+Z21 !s107 sierpinski.vhd|
+o-O0
+R12
+!s100 0DZ]Q_NDS?UKADd;^S2I^3
+!i10b 1
+Afsmd
+R15
+R16
+R1
+R2
+R3
+R13
+DEx4 work 10 sierpinski 0 22 6Bk6B?z=ORFdXB:zhmD_Y3
+l94
+L25
+V3lFf^[olDG^1gJXY]QP5Y0
+!s100 >1l=SG[83aY4i_<@mdK:b3
+R8
+32
+R19
+R20
+R21
+o-O0
+R12
+!i10b 1
+Psierpinski_cdt_pkg
+R2
+R3
+w1381575624
+R5
+8sierpinski_cdt_pkg.vhd
+Fsierpinski_cdt_pkg.vhd
+l0
+L9
+VQ9]j?oD6n4X:?Kk>[A9[>1
+R8
+32
+o-O0
+R12
+!s100 m0TkO>IQ26;H;WfdAkjM;0
+!i10b 1
+!s108 1381575634.991000
+!s90 sierpinski_cdt_pkg.vhd|
+!s107 sierpinski_cdt_pkg.vhd|
+Esierpinski_tb
+Z22 w1381575629
+R15
+R16
+R1
+R3
+Z23 DPx4 work 16 std_logic_textio 0 22 L]9H9VM6MbXj6I1Ai5_0[3
+R2
+R5
+Z24 8sierpinski_tb.vhd
+Z25 Fsierpinski_tb.vhd
+l0
+L14
+VX=gbHSiEaQ46[2YJ?[58O2
+!s100 2HF]eOKGW6C5?1i;ggnbe1
+R8
+32
+!i10b 1
+Z26 !s108 1381575635.853000
+Z27 !s90 sierpinski_tb.vhd|
+Z28 !s107 sierpinski_tb.vhd|
+o-O0
+R12
+Atb_arch
+R15
+R16
+R1
+R3
+R23
+R2
+Z29 DEx4 work 13 sierpinski_tb 0 22 X=gbHSiEaQ46[2YJ?[58O2
+l41
+L17
+Z30 VcJY4`2KNlMf<c`XJKFD:A2
+Z31 !s100 <ZcmSId;lg:GM>OkE:7`W2
+R8
+32
+!i10b 1
+R26
+R27
+R28
+o-O0
+R12
+Pstd_logic_1164_tinyadditions
+R2
+R3
+Z32 w1313792724
+R5
+Z33 8c:/hercules/cdfg2hdl/contrib/vhdl/std_logic_1164_tinyadditions.vhd
+Z34 Fc:/hercules/cdfg2hdl/contrib/vhdl/std_logic_1164_tinyadditions.vhd
+l0
+L18
+V1gSiZ:HC5<:]LVb^5Q?7G1
+R8
+32
+b1
+Z35 !s108 1381575633.463000
+Z36 !s90 c:/hercules/cdfg2hdl/contrib/vhdl/std_logic_1164_tinyadditions.vhd|
+Z37 !s107 c:/hercules/cdfg2hdl/contrib/vhdl/std_logic_1164_tinyadditions.vhd|
+o-O0
+R12
+!s100 k=@0?WdGzPBU>ccnf7<FJ2
+!i10b 1
+Bbody
+R15
+R2
+R3
+l0
+L64
+V[KmiB3=dcPicEb:l:;]R`3
+R8
+32
+R35
+R36
+R37
+o-O0
+R12
+nbody
+!s100 3@z@9@I3D6PP;T5_iEz2V2
+!i10b 1
+Pstd_logic_textio
+R3
+R2
+Z38 w1275117750
+R5
+Z39 8c:/hercules/cdfg2hdl/contrib/vhdl/std_logic_textio.vhd
+Z40 Fc:/hercules/cdfg2hdl/contrib/vhdl/std_logic_textio.vhd
+l0
+L41
+VL]9H9VM6MbXj6I1Ai5_0[3
+R8
+32
+b1
+Z41 !s108 1381575633.878000
+Z42 !s90 c:/hercules/cdfg2hdl/contrib/vhdl/std_logic_textio.vhd|
+Z43 !s107 c:/hercules/cdfg2hdl/contrib/vhdl/std_logic_textio.vhd|
+o-O0
+R12
+!s100 0D0L6S]6hlML5KT?DJ4zT2
+!i10b 1
+Bbody
+R23
+R3
+R2
+l0
+L96
+VF9dP02TPJO3`1_0DgX78>0
+R8
+32
+R41
+R42
+R43
+o-O0
+R12
+nbody
+!s100 mmnUh6Jfb0E9IV:1ZD>hf0
+!i10b 1

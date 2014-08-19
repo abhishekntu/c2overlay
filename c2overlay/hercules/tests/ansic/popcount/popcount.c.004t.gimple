@@ -1,0 +1,22 @@
+popcount (int inp)
+gimple_bind <
+  int D.1235;
+  int D.1236;
+  int data;
+  int count;
+
+  gimple_assign <parm_decl, data, inp, NULL>
+  gimple_assign <integer_cst, count, 0, NULL>
+  gimple_goto <<D.1232>>
+  gimple_label <<D.1231>>
+  gimple_assign <bit_and_expr, D.1235, data, 1>
+  gimple_assign <plus_expr, count, D.1235, count>
+  gimple_assign <rshift_expr, data, data, 1>
+  gimple_label <<D.1232>>
+  gimple_cond <ne_expr, data, 0, <D.1231>, <D.1233>>
+  gimple_label <<D.1233>>
+  gimple_assign <var_decl, D.1236, count, NULL>
+  gimple_return <D.1236>
+>
+
+

@@ -1,0 +1,102 @@
+procedure mandel(out s32 out1)
+{
+  localvar s32 on_0;
+  localvar s32 x;
+  localvar s32 y;
+  localvar s32 on;
+  localvar s32 cnt;
+L0005:
+  cnt <= ldc 0;
+  y <= ldc 950;
+  D_1383 <= jmpun;
+D_1382:
+  x <= ldc-2100;
+  D_1380 <= jmpun;
+D_1379:
+  (on) <= checkpixel(x,y);
+  on_0 <= mov on;
+  D_1387,D_1388 <= jmpeq on_0,1;
+D_1387:
+  cnt <= add cnt,1;
+  D_1388 <= jmpun;
+D_1388:
+  on_0 <= mov on;
+  D_1389,D_1390 <= jmpeq on_0,0;
+D_1389:
+  D_1390 <= jmpun;
+D_1390:
+  x <= add x,40;
+  D_1380 <= jmpun;
+D_1380:
+  D_1379,D_1381 <= jmple x,999;
+D_1381:
+  y <= sub y,50;
+  D_1383 <= jmpun;
+D_1383:
+  D_1382,D_1384 <= jmpge y,-949;
+D_1384:
+  out1 <= mov cnt;
+  L_EXIT <= jmpun;
+L_EXIT:
+  nop;
+}
+procedure checkpixel(in s32 x,in s32 y,out s32 flag)
+{
+  localvar s32 D_1391;
+  localvar s32 D_1392;
+  localvar s32 D_1393;
+  localvar s32 D_1394;
+  localvar s32 D_1395;
+  localvar s32 D_1396;
+  localvar s32 D_1397;
+  localvar s32 D_1398;
+  localvar s32 D_1399;
+  localvar s32 D_1400;
+  localvar s32 D_1401;
+  localvar s32 D_1402;
+  localvar s32 D_1403;
+  localvar s32 D_1404;
+  localvar s32 real;
+  localvar s32 imag;
+  localvar s32 temp;
+  localvar s32 iter;
+  localvar s32 f;
+L0005:
+  f <= ldc 1;
+  real <= ldc 0;
+  imag <= ldc 0;
+  iter <= ldc 0;
+  D_1371 <= jmpun;
+D_1370:
+  D_1391 <= sqr real;
+  D_1392 <= add D_1391,500;
+  D_1393 <= div D_1392,1000;
+  D_1394 <= sqr imag;
+  D_1395 <= add D_1394,500;
+  D_1396 <= div D_1395,-1000;
+  D_1397 <= add D_1393,D_1396;
+  temp <= add D_1397,x;
+  D_1398 <= mul real,2;
+  D_1399 <= mul D_1398,imag;
+  D_1400 <= add D_1399,500;
+  D_1401 <= div D_1400,1000;
+  imag <= add D_1401,y;
+  real <= mov temp;
+  D_1402 <= abs real;
+  D_1403 <= abs imag;
+  D_1404 <= add D_1402,D_1403;
+  D_1405,D_1406 <= jmpgt D_1404,5000;
+D_1405:
+  f <= ldc 0;
+  D_1369 <= jmpun;
+D_1406:
+  iter <= add iter,1;
+  D_1371 <= jmpun;
+D_1371:
+  D_1370,D_1369 <= jmple iter,254;
+D_1369:
+  flag <= mov f;
+  L_EXIT <= jmpun;
+L_EXIT:
+  nop;
+}

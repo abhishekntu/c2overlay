@@ -1,0 +1,553 @@
+### HERCULES RUN: STARTED ###
+NAC file: gcd.nac
+Generating VHDL package file: gcd_pkg.vhd
+Generating VHDL compound data types package file: gcd_cdt_pkg.vhd
+Generating main.c
+Generating main.h
+Generating ansic.mk Makefile
+Generating NAC export file for procedure gcd: gcd_ssa.nac
+Generating ANSI C file for procedure gcd: gcd_nac.c
+Generating dot file for the CDFG of procedure gcd: gcd.dot
+Generating the dot representation of the CFG for procedure gcd: gcd_cfg.dot
+Generating dot file for call-graph: gcd_cg.dot
+Generating a plain graph for the CDFG of the current procedure: gcd_cdfg.txt
+Generating the dot representation of the current procedure CFG: gcd_cfg.dot
+Generating RTL VHDL for the current procedure: gcd.vhd
+Generating the VHDL testbench for the root procedure: gcd_tb.vhd
+Generating the Makefile for Modelsim simulation: gcd.do
+Generating the shell script for VHDL simulation: gcd.sh
+Generating the shell script for XST synthesis: gcd-syn.sh
+rm -rf *.o main main.exe
+gcc -O2 -o main main.c gcd_nac.c 
+Running main() for benchmark gcd
+Reading C:/Modeltech_xe_starter/tcl/vsim/pref.tcl 
+
+# 6.3c
+
+# do gcd.do 
+# Model Technology ModelSim XE III vcom 6.3c Compiler 2007.09 Sep 12 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package textio
+# -- Compiling package std_logic_1164_tinyadditions
+# -- Compiling package body std_logic_1164_tinyadditions
+# -- Loading package std_logic_1164_tinyadditions
+# ** Warning: [3] g:/hercules/cdfg2hdl/contrib/vhdl/std_logic_1164_tinyadditions.vhd(117): (vcom-1246) Range 2 to 1 is null.
+# Model Technology ModelSim XE III vcom 6.3c Compiler 2007.09 Sep 12 2007
+# -- Loading package standard
+# -- Loading package textio
+# -- Loading package std_logic_1164
+# -- Compiling package std_logic_textio
+# -- Compiling package body std_logic_textio
+# -- Loading package std_logic_textio
+# Model Technology ModelSim XE III vcom 6.3c Compiler 2007.09 Sep 12 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Compiling package operpack
+# -- Compiling package body operpack
+# -- Loading package operpack
+# Model Technology ModelSim XE III vcom 6.3c Compiler 2007.09 Sep 12 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling package gcd_cdt_pkg
+# Model Technology ModelSim XE III vcom 6.3c Compiler 2007.09 Sep 12 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package operpack
+# -- Loading package gcd_cdt_pkg
+# -- Loading package textio
+# -- Loading package std_logic_1164_tinyadditions
+# -- Compiling entity gcd
+# -- Compiling architecture fsmd of gcd
+# Model Technology ModelSim XE III vcom 6.3c Compiler 2007.09 Sep 12 2007
+# -- Loading package standard
+# -- Loading package textio
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package numeric_std
+# -- Loading package gcd_cdt_pkg
+# -- Loading package std_logic_1164_tinyadditions
+# -- Compiling entity gcd_tb
+# -- Compiling architecture tb_arch of gcd_tb
+# vsim gcd_tb 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.std_logic_textio(body)
+# Loading ieee.numeric_std(body)
+# Loading work.gcd_cdt_pkg
+# Loading work.std_logic_1164_tinyadditions(body)
+# Loading work.gcd_tb(tb_arch)
+# Loading work.operpack(body)
+# Loading work.gcd(fsmd)
+# ** Failure: NONE. End simulation time reached
+#    Time: 704870 ns  Iteration: 2  Process: /gcd_tb/gcd_bench File: gcd_tb.vhd
+# Break in Process gcd_bench at gcd_tb.vhd line 149
+This script has been running for 39 seconds.
+rm -f *.work *.xst
+rm -f *.ngc *.ngd *.bld *.srp *.lso *.prj
+rm -f *.map.mrp *.map.ncd *.map.ngm *.mcs *.par.ncd *.par.pad
+rm -f *.pcf *.prm *.bgn *.drc
+rm -f *.par_pad.csv *.par_pad.txt *.par.par *.par.xpi
+rm -f *.bit
+rm -f *.vcd *.vvp
+rm -f verilog.dump verilog.log
+rm -rf _ngo/
+rm -rf xst/
+> gcd.work
+for a in g:/hercules/cdfg2hdl/contrib/vhdl/std_logic_1164_tinyadditions.vhd g:/hercules/cdfg2hdl/contrib/vhdl/operpack_ieee.vhd gcd_cdt_pkg.vhd gcd.vhd; do echo "vhdl work $a" >> gcd.work; done
+> gcd.xst
+echo -n "run -ifn gcd.work -ifmt mixed -top gcd -ofn gcd.ngc" >> gcd.xst
+echo " -ofmt NGC -p xc6vlx75t-ff484-1 -iobuf no -opt_mode Speed -opt_level 1" >> gcd.xst
+c:/Xilinx/12.3/ISE_DS/ISE/bin/nt/xst -ifn gcd.xst
+Release 12.3 - xst M.70d (nt)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+--> 
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "gcd.work"
+Input Format                       : mixed
+
+---- Target Parameters
+Output File Name                   : "gcd.ngc"
+Output Format                      : NGC
+Target Device                      : xc6vlx75t-ff484-1
+
+---- Source Options
+Top Module Name                    : gcd
+
+---- Target Options
+Add IO Buffers                     : no
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "g:/hercules/cdfg2hdl/contrib/vhdl/std_logic_1164_tinyadditions.vhd" into library work
+Parsing package <std_logic_1164_tinyadditions>.
+Parsing package body <std_logic_1164_tinyadditions>.
+Parsing VHDL file "g:/hercules/cdfg2hdl/contrib/vhdl/operpack_ieee.vhd" into library work
+Parsing package <operpack>.
+Parsing package body <operpack>.
+Parsing VHDL file "\hercules\tests\nac\gcd\gcd_cdt_pkg.vhd" into library work
+Parsing package <gcd_cdt_pkg>.
+Parsing VHDL file "\hercules\tests\nac\gcd\gcd.vhd" into library work
+Parsing entity <gcd>.
+Parsing architecture <fsmd> of entity <gcd>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <gcd> (architecture <fsmd>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <gcd>.
+    Related source file is "/hercules/tests/nac/gcd/gcd.vhd".
+    Found 16-bit register for signal <t3_1_reg>.
+    Found 16-bit register for signal <res_1_reg>.
+    Found 16-bit register for signal <x_1_reg>.
+    Found 16-bit register for signal <res_reg>.
+    Found 16-bit register for signal <x_reg>.
+    Found 16-bit register for signal <y_reg>.
+    Found 16-bit register for signal <y_1_reg>.
+    Found 16-bit register for signal <t1_1_reg>.
+    Found 16-bit register for signal <t2_1_reg>.
+    Found 16-bit register for signal <outp>.
+    Found 5-bit register for signal <current_state>.
+INFO:Xst:1799 - State s_001_002 is never reached in FSM <current_state>.
+INFO:Xst:1799 - State s_001_003 is never reached in FSM <current_state>.
+INFO:Xst:1799 - State s_001_004 is never reached in FSM <current_state>.
+INFO:Xst:1799 - State s_004_002 is never reached in FSM <current_state>.
+INFO:Xst:1799 - State s_004_003 is never reached in FSM <current_state>.
+INFO:Xst:1799 - State s_005_002 is never reached in FSM <current_state>.
+INFO:Xst:1799 - State s_005_003 is never reached in FSM <current_state>.
+INFO:Xst:1799 - State s_006_002 is never reached in FSM <current_state>.
+INFO:Xst:1799 - State s_006_003 is never reached in FSM <current_state>.
+    Found finite state machine <FSM_0> for signal <current_state>.
+    -----------------------------------------------------------------------
+    | States             | 18                                             |
+    | Transitions        | 13                                             |
+    | Inputs             | 4                                              |
+    | Outputs            | 7                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | reset (positive)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | s_entry                                        |
+    | Power Up State     | s_entry                                        |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 16-bit subtractor for signal <GND_8_o_GND_8_o_sub_24_OUT<15:0>> created at line 169.
+    Found 16-bit subtractor for signal <GND_8_o_GND_8_o_sub_25_OUT<15:0>> created at line 173.
+    Found 16-bit comparator greater for signal <y_reg[15]_x_reg[15]_LessThan_20_o> created at line 153
+    Found 16-bit comparator greater for signal <x_reg[15]_y_reg[15]_LessThan_22_o> created at line 159
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred 160 D-type flip-flop(s).
+	inferred   2 Comparator(s).
+	inferred   9 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <gcd> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 16-bit subtractor                                     : 2
+# Registers                                            : 10
+ 16-bit register                                       : 10
+# Comparators                                          : 2
+ 16-bit comparator greater                             : 2
+# Multiplexers                                         : 9
+ 16-bit 2-to-1 multiplexer                             : 9
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 2
+ 16-bit subtractor                                     : 2
+# Registers                                            : 160
+ Flip-Flops                                            : 160
+# Comparators                                          : 2
+ 16-bit comparator greater                             : 2
+# Multiplexers                                         : 9
+ 16-bit 2-to-1 multiplexer                             : 9
+# FSMs                                                 : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <current_state[1:5]> with user encoding.
+-----------------------
+ State     | Encoding
+-----------------------
+ s_entry   | 00000
+ s_exit    | 00001
+ s_001_001 | 00010
+ s_001_002 | unreached
+ s_001_003 | unreached
+ s_001_004 | unreached
+ s_002_001 | 00110
+ s_003_001 | 00111
+ s_004_001 | 01000
+ s_004_002 | unreached
+ s_004_003 | unreached
+ s_005_001 | 01011
+ s_005_002 | unreached
+ s_005_003 | unreached
+ s_006_001 | 01110
+ s_006_002 | unreached
+ s_006_003 | unreached
+ s_007_001 | 10001
+-----------------------
+WARNING:Xst:1710 - FF/Latch <t2_1_reg_15> (without init value) has a constant value of 0 in block <gcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <t2_1_reg_14> (without init value) has a constant value of 0 in block <gcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <t2_1_reg_13> (without init value) has a constant value of 0 in block <gcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <t2_1_reg_12> (without init value) has a constant value of 0 in block <gcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <t2_1_reg_11> (without init value) has a constant value of 0 in block <gcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <t2_1_reg_10> (without init value) has a constant value of 0 in block <gcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <t2_1_reg_9> (without init value) has a constant value of 0 in block <gcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <t2_1_reg_8> (without init value) has a constant value of 0 in block <gcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <t2_1_reg_7> (without init value) has a constant value of 0 in block <gcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <t2_1_reg_6> (without init value) has a constant value of 0 in block <gcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <t2_1_reg_5> (without init value) has a constant value of 0 in block <gcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <t2_1_reg_4> (without init value) has a constant value of 0 in block <gcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <t2_1_reg_3> (without init value) has a constant value of 0 in block <gcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <t2_1_reg_2> (without init value) has a constant value of 0 in block <gcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <t2_1_reg_1> (without init value) has a constant value of 0 in block <gcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <t1_1_reg_15> (without init value) has a constant value of 0 in block <gcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <t1_1_reg_14> (without init value) has a constant value of 0 in block <gcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <t1_1_reg_13> (without init value) has a constant value of 0 in block <gcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <t1_1_reg_12> (without init value) has a constant value of 0 in block <gcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <t1_1_reg_11> (without init value) has a constant value of 0 in block <gcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <t1_1_reg_10> (without init value) has a constant value of 0 in block <gcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <t1_1_reg_9> (without init value) has a constant value of 0 in block <gcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <t1_1_reg_8> (without init value) has a constant value of 0 in block <gcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <t1_1_reg_7> (without init value) has a constant value of 0 in block <gcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <t1_1_reg_6> (without init value) has a constant value of 0 in block <gcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <t1_1_reg_5> (without init value) has a constant value of 0 in block <gcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <t1_1_reg_4> (without init value) has a constant value of 0 in block <gcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <t1_1_reg_3> (without init value) has a constant value of 0 in block <gcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <t1_1_reg_2> (without init value) has a constant value of 0 in block <gcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <t1_1_reg_1> (without init value) has a constant value of 0 in block <gcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <t3_1_reg_1> (without init value) has a constant value of 0 in block <gcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <t3_1_reg_2> (without init value) has a constant value of 0 in block <gcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <t3_1_reg_3> (without init value) has a constant value of 0 in block <gcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <t3_1_reg_4> (without init value) has a constant value of 0 in block <gcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <t3_1_reg_5> (without init value) has a constant value of 0 in block <gcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <t3_1_reg_6> (without init value) has a constant value of 0 in block <gcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <t3_1_reg_7> (without init value) has a constant value of 0 in block <gcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <t3_1_reg_8> (without init value) has a constant value of 0 in block <gcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <t3_1_reg_9> (without init value) has a constant value of 0 in block <gcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <t3_1_reg_10> (without init value) has a constant value of 0 in block <gcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <t3_1_reg_11> (without init value) has a constant value of 0 in block <gcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <t3_1_reg_12> (without init value) has a constant value of 0 in block <gcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <t3_1_reg_13> (without init value) has a constant value of 0 in block <gcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <t3_1_reg_14> (without init value) has a constant value of 0 in block <gcd>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <t3_1_reg_15> (without init value) has a constant value of 0 in block <gcd>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <gcd> ...
+WARNING:Xst:2677 - Node <t1_1_reg_0> of sequential type is unconnected in block <gcd>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 0) on block gcd, actual ratio is 0.
+WARNING:Xst:2677 - Node <t2_1_reg_0> of sequential type is unconnected in block <gcd>.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 118
+ Flip-Flops                                            : 118
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : gcd.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 228
+#      GND                         : 1
+#      LUT1                        : 1
+#      LUT2                        : 34
+#      LUT3                        : 3
+#      LUT4                        : 53
+#      LUT5                        : 13
+#      LUT6                        : 40
+#      MUXCY                       : 50
+#      VCC                         : 1
+#      XORCY                       : 32
+# FlipFlops/Latches                : 118
+#      FDC                         : 54
+#      FDCE                        : 64
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6vlx75tff484-1 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             118  out of  93120     0%  
+ Number of Slice LUTs:                  144  out of  46560     0%  
+    Number used as Logic:               144  out of  46560     0%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    203
+   Number with an unused Flip Flop:      85  out of    203    41%  
+   Number with an unused LUT:            59  out of    203    29%  
+   Number of fully used LUT-FF pairs:    59  out of    203    29%  
+   Number of unique control sets:         5
+
+IO Utilization: 
+ Number of IOs:                          53
+ Number of bonded IOBs:                   0  out of    240     0%  
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | NONE(y_1_reg_0)        | 118   |
+-----------------------------------+------------------------+-------+
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 2.673ns (Maximum Frequency: 374.112MHz)
+   Minimum input arrival time before clock: 2.833ns
+   Maximum output required time after clock: 1.154ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 2.673ns (frequency: 374.112MHz)
+  Total number of paths / destination ports: 3625 / 182
+-------------------------------------------------------------------------
+Delay:               2.673ns (Levels of Logic = 4)
+  Source:            current_state_FSM_FFd1 (FF)
+  Destination:       current_state_FSM_FFd4 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: current_state_FSM_FFd1 to current_state_FSM_FFd4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             14   0.375   0.860  current_state_FSM_FFd1 (current_state_FSM_FFd1)
+     LUT5:I0->O            1   0.068   0.417  Mmux_t3_1_next121_1 (Mmux_t3_1_next121)
+     LUT3:I2->O            4   0.068   0.437  Mmux_t3_1_next14 (t3_1_next<0>)
+     LUT6:I5->O            1   0.068   0.000  current_state_FSM_FFd4-In_lut (current_state_FSM_FFd4-In_lut)
+     MUXCY:S->O            1   0.369   0.000  current_state_FSM_FFd4-In_cy1 (current_state_FSM_FFd4-In)
+     FDC:D                     0.011          current_state_FSM_FFd4
+    ----------------------------------------
+    Total                      2.673ns (0.959ns logic, 1.714ns route)
+                                       (35.9% logic, 64.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 344 / 187
+-------------------------------------------------------------------------
+Offset:              2.833ns (Levels of Logic = 5)
+  Source:            a<4> (PAD)
+  Destination:       current_state_FSM_FFd4 (FF)
+  Destination Clock: clk rising
+
+  Data Path: a<4> to current_state_FSM_FFd4
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LUT6:I0->O            1   0.068   0.778  Mmux_t3_1_next13 (Mmux_t3_1_next12)
+     LUT6:I0->O            2   0.068   0.587  Mmux_t2_1_next14_SW0 (N26)
+     LUT3:I0->O            4   0.068   0.437  Mmux_t3_1_next14 (t3_1_next<0>)
+     LUT6:I5->O            1   0.068   0.000  current_state_FSM_FFd4-In_lut (current_state_FSM_FFd4-In_lut)
+     MUXCY:S->O            1   0.369   0.000  current_state_FSM_FFd4-In_cy1 (current_state_FSM_FFd4-In)
+     FDC:D                     0.011          current_state_FSM_FFd4
+    ----------------------------------------
+    Total                      2.833ns (1.031ns logic, 1.802ns route)
+                                       (36.4% logic, 63.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 22 / 18
+-------------------------------------------------------------------------
+Offset:              1.154ns (Levels of Logic = 1)
+  Source:            current_state_FSM_FFd5 (FF)
+  Destination:       done (PAD)
+  Source Clock:      clk rising
+
+  Data Path: current_state_FSM_FFd5 to done
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             21   0.375   0.711  current_state_FSM_FFd5 (current_state_FSM_FFd5)
+     LUT3:I0->O            0   0.068   0.000  current_state__n0184<1>1 (done)
+    ----------------------------------------
+    Total                      1.154ns (0.443ns logic, 0.711ns route)
+                                       (38.4% logic, 61.6% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    2.673|         |         |         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 24.00 secs
+Total CPU time to Xst completion: 24.23 secs
+ 
+--> 
+
+Total memory usage is 159780 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   47 (   0 filtered)
+Number of infos    :   10 (   0 filtered)
+
+The XST synthesis script has been running for 56 seconds.
+### HERCULES RUN: ENDED ###
+

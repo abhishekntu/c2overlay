@@ -1,0 +1,61 @@
+# do popcount.do 
+# Model Technology ModelSim XE III vcom 6.3c Compiler 2007.09 Sep 12 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package textio
+# -- Compiling package std_logic_1164_tinyadditions
+# -- Compiling package body std_logic_1164_tinyadditions
+# -- Loading package std_logic_1164_tinyadditions
+# ** Warning: [3] g:/hercules/cdfg2hdl/contrib/vhdl/std_logic_1164_tinyadditions.vhd(117): (vcom-1246) Range 2 to 1 is null.
+# Model Technology ModelSim XE III vcom 6.3c Compiler 2007.09 Sep 12 2007
+# -- Loading package standard
+# -- Loading package textio
+# -- Loading package std_logic_1164
+# -- Compiling package std_logic_textio
+# -- Compiling package body std_logic_textio
+# -- Loading package std_logic_textio
+# Model Technology ModelSim XE III vcom 6.3c Compiler 2007.09 Sep 12 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Compiling package operpack
+# -- Compiling package body operpack
+# -- Loading package operpack
+# Model Technology ModelSim XE III vcom 6.3c Compiler 2007.09 Sep 12 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Compiling package popcount_cdt_pkg
+# Model Technology ModelSim XE III vcom 6.3c Compiler 2007.09 Sep 12 2007
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package numeric_std
+# -- Loading package operpack
+# -- Loading package popcount_cdt_pkg
+# -- Loading package textio
+# -- Loading package std_logic_1164_tinyadditions
+# -- Compiling entity popcount
+# -- Compiling architecture fsmd of popcount
+# Model Technology ModelSim XE III vcom 6.3c Compiler 2007.09 Sep 12 2007
+# -- Loading package standard
+# -- Loading package textio
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_textio
+# -- Loading package numeric_std
+# -- Loading package popcount_cdt_pkg
+# -- Loading package std_logic_1164_tinyadditions
+# -- Compiling entity popcount_tb
+# -- Compiling architecture tb_arch of popcount_tb
+# vsim popcount_tb 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.std_logic_textio(body)
+# Loading ieee.numeric_std(body)
+# Loading work.popcount_cdt_pkg
+# Loading work.std_logic_1164_tinyadditions(body)
+# Loading work.popcount_tb(tb_arch)
+# Loading work.operpack(body)
+# Loading work.popcount(fsmd)
+# ** Failure: NONE. End simulation time reached
+#    Time: 28180 ns  Iteration: 2  Process: /popcount_tb/popcount_bench File: popcount_tb.vhd
+# Break in Process popcount_bench at popcount_tb.vhd line 138

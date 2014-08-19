@@ -1,0 +1,78 @@
+procedure checkpixel (
+in s32 x, in s32 y, out s32 flag)
+{
+  localvar s32 real;
+  localvar s32 imag;
+  localvar s32 iter;
+  localvar s32 f;
+  localvar s32 f$11;
+  localvar s32 real$11;
+  localvar s32 imag$11;
+  localvar s32 iter$11;
+  localvar s32 D_1391$21;
+  localvar s32 D_1392$21;
+  localvar s32 D_1393$21;
+  localvar s32 D_1394$21;
+  localvar s32 D_1395$21;
+  localvar s32 D_1396$21;
+  localvar s32 D_1397$21;
+  localvar s32 temp$21;
+  localvar s32 D_1398$21;
+  localvar s32 D_1399$21;
+  localvar s32 D_1400$21;
+  localvar s32 D_1401$21;
+  localvar s32 imag$21;
+  localvar s32 real$21;
+  localvar s32 D_1402$21;
+  localvar s32 D_1403$21;
+  localvar s32 D_1404$21;
+  localvar s32 f$31;
+  localvar s32 iter$41;
+
+L0005:
+  f$11 <= ldc 1;
+  real$11 <= ldc 0;
+  imag$11 <= ldc 0;
+  iter$11 <= ldc 0;
+  real <= mov real$11;
+  imag <= mov imag$11;
+  iter <= mov iter$11;
+  f <= mov f$11;
+  D_1371 <= jmpun;
+D_1370:
+  D_1391$21 <= sqr real;
+  D_1392$21 <= add D_1391$21, 500;
+  D_1393$21 <= div D_1392$21, 1000;
+  D_1394$21 <= sqr imag;
+  D_1395$21 <= add D_1394$21, 500;
+  D_1396$21 <= div D_1395$21, -1000;
+  D_1397$21 <= add D_1393$21, D_1396$21;
+  temp$21 <= add D_1397$21, x;
+  D_1398$21 <= mul real, 2;
+  D_1399$21 <= mul D_1398$21, imag;
+  D_1400$21 <= add D_1399$21, 500;
+  D_1401$21 <= div D_1400$21, 1000;
+  imag$21 <= add D_1401$21, y;
+  real$21 <= mov temp$21;
+  D_1402$21 <= abs real$21;
+  D_1403$21 <= abs imag$21;
+  D_1404$21 <= add D_1402$21, D_1403$21;
+  real <= mov real$21;
+  imag <= mov imag$21;
+  D_1405, D_1406 <= jmpgt D_1404$21, 5000;
+D_1405:
+  f$31 <= ldc 0;
+  f <= mov f$31;
+  D_1369 <= jmpun;
+D_1406:
+  iter$41 <= add iter, 1;
+  iter <= mov iter$41;
+  D_1371 <= jmpun;
+D_1371:
+  D_1370, D_1369 <= jmple iter, 254;
+D_1369:
+  flag <= mov f;
+  L_EXIT <= jmpun;
+L_EXIT:
+  nop;
+}

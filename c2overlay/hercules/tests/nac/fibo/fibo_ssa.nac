@@ -1,0 +1,52 @@
+procedure fibo (
+in u32 n, out u32 outp)
+{
+  localvar u32 res;
+  localvar u32 x;
+  localvar u32 f0;
+  localvar u32 f1;
+  localvar u32 k;
+  localvar u32 x$11;
+  localvar u32 f0$11;
+  localvar u32 f1$11;
+  localvar u32 res$11;
+  localvar u32 res$21;
+  localvar u32 k$31;
+  localvar u32 f$41;
+  localvar u32 f0$41;
+  localvar u32 f1$41;
+  localvar u32 res$41;
+  localvar u32 k$41;
+
+LL0:
+  x$11 <= mov n;
+  f0$11 <= ldc 0;
+  f1$11 <= ldc 1;
+  res$11 <= mov f0$11;
+  res <= mov res$11;
+  x <= mov x$11;
+  f0 <= mov f0$11;
+  f1 <= mov f1$11;
+  S_EXIT, LL1 <= jmple x$11, 0;
+LL1:
+  res$21 <= mov f1;
+  res <= mov res$21;
+  S_EXIT, LL2 <= jmpeq x, 1;
+LL2:
+  k$31 <= ldc 2;
+  k <= mov k$31;
+  LL3 <= jmpun;
+LL3:
+  f$41 <= add f1, f0;
+  f0$41 <= mov f1;
+  f1$41 <= mov f$41;
+  res$41 <= mov f$41;
+  k$41 <= add k, 1;
+  res <= mov res$41;
+  f0 <= mov f0$41;
+  f1 <= mov f1$41;
+  k <= mov k$41;
+  LL3, S_EXIT <= jmple k$41, x;
+S_EXIT:
+  outp <= mov res;
+}

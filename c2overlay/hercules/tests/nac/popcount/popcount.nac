@@ -1,0 +1,15 @@
+procedure popcount(in u32 inp,out u32 outp)
+{
+  localvar u32 data,count,temp;
+S_1:
+  data <= mov inp;
+  count <= ldc 0;
+  S_2 <= jmpun;
+S_2:
+  temp <= and data,1;
+  count <= add count,temp;
+  data <= shr data,1;
+  S_EXIT,S_2 <= jmpeq data,0;
+S_EXIT:
+  outp <= mov count;
+}

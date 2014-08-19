@@ -1,0 +1,73 @@
+globalvar u32 h_Input[16]={1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16};
+globalvar u32 h_Output[16];
+procedure c2vwalsh(in u32 log2N,out u32 y)
+{
+  localvar s32 log2N_0;
+  localvar u32 D_1389;
+  localvar u32 D_1390;
+  localvar u32 D_1391;
+  localvar u32 D_1392;
+  localvar u32 D_1393;
+  localvar u32 pos;
+  localvar u32 stride;
+  localvar u32 base;
+  localvar u32 j;
+  localvar u32 i0;
+  localvar u32 i1;
+  localvar u32 T1;
+  localvar u32 T2;
+  localvar u32 k;
+  localvar u32 N;
+L0005:
+  k <= ldc 1;
+  log2N_0 <= sxt log2N;
+  N <= shl k,log2N_0;
+  pos <= ldc 0;
+  D_1376 <= jmpun;
+D_1375:
+  D_1389 <= load h_Input,pos;
+  h_Output <= store D_1389,pos;
+  pos <= add pos,1;
+  D_1376 <= jmpun;
+D_1376:
+  D_1375,D_1377 <= jmplt pos,N;
+D_1377:
+  stride <= div N,2;
+  D_1385 <= jmpun;
+D_1384:
+  base <= ldc 0;
+  D_1382 <= jmpun;
+D_1381:
+  j <= ldc 0;
+  D_1379 <= jmpun;
+D_1378:
+  i0 <= add base,j;
+  D_1390 <= add base,j;
+  i1 <= add D_1390,stride;
+  T1 <= load h_Output,i0;
+  T2 <= load h_Output,i1;
+  D_1391 <= sub T1,T2;
+  h_Output <= store D_1391,i1;
+  D_1392 <= add T1,T2;
+  h_Output <= store D_1392,i0;
+  j <= add j,1;
+  D_1379 <= jmpun;
+D_1379:
+  D_1378,D_1380 <= jmplt j,stride;
+D_1380:
+  D_1393 <= mul stride,2;
+  base <= add D_1393,base;
+  D_1382 <= jmpun;
+D_1382:
+  D_1381,D_1383 <= jmplt base,N;
+D_1383:
+  stride <= shr stride,1;
+  D_1385 <= jmpun;
+D_1385:
+  D_1384,D_1386 <= jmpne stride,0;
+D_1386:
+  y <= ldc 1;
+  L_EXIT <= jmpun;
+L_EXIT:
+  nop;
+}

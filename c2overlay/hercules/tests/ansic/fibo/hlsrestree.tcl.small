@@ -1,0 +1,18 @@
+gpset .treebrowser.hlstree {
+  {/PRGM + "Program: fibo" :folder_blue-22}
+  {/PRGM/PROC0 + "Procedure: fibo" :folder_grey-22}
+  {/PRGM/PROC0/NAC + "NAC representation" :folder_green-22}
+  {/PRGM/PROC0/NAC/FINAL "Optimized NAC : fibo.nac" :nac-22}
+  {/PRGM/PROC0/NAC/POSTFE "NAC: fibo_nonssa.nac" :nac-22}
+  {/PRGM/PROC0/VHDL + "Generated VHDL files for fibo" :folder_magenta-22}
+  {/PRGM/PROC0/VHDL/RTL "RTL design for fibo" :vhdl-22}
+  {/PRGM/PROC0/VHDL/CDTPKG "Compound data structures package for fibo" :vhdl-22}
+  {/PRGM/GLOBAL + "Global miscellaneous files for fibo" :folder_white-22}
+  {/PRGM/GLOBAL/HERCSH "Generated HercuLeS bash script for fibo" :bash-22}
+  {/PRGM/GLOBAL/PROCNMS "Procedure names in fibo" :txt-22}
+  {/PRGM/GLOBAL/BUILTINS "Black box procedures in fibo" :txt-22}
+  {/PRGM/GLOBAL/TESTDATA "Reference I/O data for fibo" :txt-22}
+  {/PRGM/VHDL + "Global VHDL files for fibo" :folder_cyan-22}
+  {/PRGM/VHDL/PKG "Global package for fibo" :vhdl-22}
+  {/PRGM/VHDL/TB "Testbench for fibo" :vhdl-22}
+}

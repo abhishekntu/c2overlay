@@ -1,0 +1,144 @@
+AJAX COMPILERS
+==============
+
+HERCULES END USER LICENSE AGREEMENT
+-----------------------------------
+
+CAREFULLY READ THIS END USER LICENSE AGREEMENT ("LICENSE"). BY CLICKING THE 
+"ACCEPT" OR "AGREE" BUTTON, OR OTHERWISE ACCESSING, DOWNLOADING, INSTALLING OR 
+USING THE SOFTWARE, YOU AGREE ON BEHALF OF LICENSEE TO BE BOUND BY THIS 
+AGREEMENT.
+
+1. Definitions
+--------------
+1.1 "Software" or "Licensed Materials" shall mean all code, binary and data 
+files distributed within the "hercules-2013a-free.tar.bz2" archive.
+
+1.2 "Agreement" shall mean this document.
+
+1.3 "Licensor" shall mean Ajax Compilers.
+
+1.4 "Copyright holder" shall mean Ajax Compilers.
+
+1.5 "Licensee" or "You" shall mean the individual, corporation of other legal 
+entity who/which purchased and/or downloaded the Licensed Materials. Licensee is 
+assumed at the time of issue of this license, that is obtaining the Software, 
+subject to the terms and conditions of this Agreement.
+
+1.6 "User" means an individual who is authorized by Licensee to use the 
+applicable Software on behalf of Licensee.
+
+1.7 "Reference use" shall mean use of the Software within your company as a 
+reference, in read only form, for the sole purposes of debugging your products, 
+maintaining your products, or enhancing the interoperability of your products 
+with the Software, and specifically excludes the right to distribute the 
+Software outside of your company. You may report bugs, supply bug fixes, 
+and provide suggestions for future improvement to Licensor.
+
+1.8 "Design Files" shall mean source code of digital circuit hardware 
+descriptions such as, but not limited to, those written in the VHDL, Verilog HDL 
+and SystemVerilog hardware description languages. 
+
+1.9 "Commercial use" shall mean use of Design Files produced by using the 
+Software for any for-profit purpose without any royalties. 
+
+2. License Grants
+-----------------
+Subject to the terms and conditions of this Agreement, Ajax Compilers hereby 
+grants to Licensee a personal, non-exclusive, non-transferable, 
+non-sublicensable license (under Ajax Compilers' intellectual property rights as 
+embodied in the Licensed Materials) for royalty-free commercial and/or reference 
+use of the Licensed Materials.
+
+3. Restrictions
+---------------
+3.1 Licensee is allowed to use provided Design Files (as mentioned in the 
+exception of Section 1.9) in the Licensed Materials and generated Design Files 
+that are produced by the use of the Licensed Materials for commercial or 
+for-profit activity. 
+Licensee may use the Licensed Materials for performance evaluation with owned or 
+third-party Design Files. Performance evaluation results may be published as 
+part of scientific publications without reproduction of any part of the 
+Software. 
+
+3.2 Except only to the extent otherwise expressly allowed under Section 2 
+(License Grants) above (or under applicable laws notwithstanding these 
+restrictions), Licensee is not licensed to reverse engineer, decompile, or 
+disassemble the Licensed Materials.
+
+3.3 Licensee shall not distribute, rent, lend, loan, lease, sublease, assign, 
+transfer, license, or sublicense the Licensed Materials in whole or in part to a 
+third party without express written permission from Licensor.
+
+3.4 Licensee may make additional copies of the Licensed Materials solely for 
+backup or archival purposes.
+
+4. Confidentiality
+-----------------
+Licensee shall protect received Proprietary Information from disclosure to third 
+parties with at least the same degree of care (but no less than a reasonable 
+degree of care) as it uses to protect its own proprietary or confidential 
+information from unauthorized use or disclosure.
+Licensee shall limit the access to and dissemination of received Proprietary 
+Information only to those individuals who have a need for such information to 
+fulfill the Purpose stated herein and have been notified of and agree to the 
+obligations imposed by this Agreement.
+
+5. Intellectual Property Rights
+-------------------------------
+Licensee acknowledges that Ajax Compilers retains sole right, title, and 
+ownership of the Software and all intellectual property rights (including 
+patents, copyrights, trade secrets, trade names, trademarks and invention 
+disclosures) related to the Software, including, but not limited to, any and 
+all improvements, modifications or derivatives thereof. Nothing contained in 
+this Agreement shall be construed as conferring by implication, estoppel or 
+otherwise any license or other intellectual property rights except the 
+licenses and rights expressly granted to Licensee in Section 2 (License 
+Grants).  
+
+6. Termination
+--------------
+This License Agreement shall be effective until terminated in one of the 
+following cases:
+Licensee may terminate it at any time by destroying all copies of the Licensed 
+Materials.
+In the event Licensee fails to comply with any term of this License Agreement, 
+this License Agreement will terminate immediately. 
+Upon termination of this agreement for any reason, Licensee must destroy all 
+copies of the Licensed Materials.
+
+7. Critical Applications - Limitation of Liability
+--------------------------------------------------
+THE SOFTWARE IS NOT INTENDED TO BE FAIL-SAFE, OR FOR USE IN AN APPLICATION 
+REQUIRING FAIL-SAFE PERFORMANCE, SUCH AS LIFESUPPORT SYSTEMS, SAFETY DEVICES, 
+NUCLEAR FACILITIES, WEAPONS OR WEAPONS SYSTEMS, HAZARDOUS SUBSTANCE MANAGEMENT 
+OR MEANS OF MASS TRANSPORTATION. FURTHERMORE, LICENSOR SHALL NOT BE LIABLE FOR 
+ANY DAMAGES RESULTING FROM OR IN CONNECTION WITH THE USE OF THE SOFTWARE IN ANY 
+APPLICATION WHERE THE FAILURE OR INACCURACY OF THE SOFTWARE MIGHT RESULT IN 
+DEATH, PERSONAL INJURY, OR DAMAGE TO EITHER PROPERTY OR THE ENVIRONMENT. 
+LICENSEE AGREES TO INDEMNIFY AND HOLD HARMLESS LICENSOR FROM ANY CLAIMS, LOSSES, 
+COSTS, DAMAGES, EXPENSES OR LIABILITY, INCLUDING LEGAL FEES, ARISING OUT OF OR 
+IN CONNECTION WITH SUCH USE.
+
+8. Limited Warranty and Disclaimer
+----------------------------------
+EXCEPT AS EXPRESSLY STATED ABOVE, THE LICENSED MATERIALS ARE PROVIDED TO 
+LICENSEE "AS IS" WITHOUT WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, 
+INCLUDING, BUT NOT LIMITED TO, NONINFRINGEMENT, MERCHANTABILITY, OR FITNESS FOR 
+A PARTICULAR PURPOSE.
+LICENSOR DOES NOT WARRANT THAT THE SOFTWARE WILL MEET THE LICENSEE'S REQUIREMENTS 
+OR THAT THE OPERATION OF THE SOFTWARE WILL BE UNINTERRUPTED OR ERROR FREE. 
+FURTHERMORE, LICENSOR DOES NOT WARRANT OR MAKE ANY REPRESENTATIONS REGARDING USE 
+OR THE RESULTS OF THE USE OF THE SOFTWARE IN TERMS OF CORRECTNESS, ACCURACY, 
+RELIABILITY OR OTHERWISE.
+
+9. Governing Law
+-----------------
+9.1 This Agreement shall be governed by and construed under the laws of Greece 
+and the Greek courts shall have exclusive jurisdiction to hear all matters 
+arising out of this Agreement.
+
+9.2 If any provision of this Agreement is held by a court of competent 
+jurisdiction to be void, invalid, unenforceable or illegal, such provision shall 
+be severed from this Agreement and the remaining provisions will remain in full 
+force and effect.

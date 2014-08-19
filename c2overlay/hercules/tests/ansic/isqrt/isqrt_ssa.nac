@@ -1,0 +1,48 @@
+procedure isqrt (
+in u32 x, out u32 outp)
+{
+  localvar u32 m;
+  localvar u32 y;
+  localvar u32 b;
+  localvar u32 x0;
+  localvar u32 m$11;
+  localvar u32 y$11;
+  localvar u32 x0$11;
+  localvar u32 b$21;
+  localvar u32 y$21;
+  localvar u32 x0$31;
+  localvar u32 y$31;
+  localvar u32 m$41;
+
+L0005:
+  m$11 <= ldc 1073741824;
+  y$11 <= ldc 0;
+  x0$11 <= mov x;
+  m <= mov m$11;
+  y <= mov y$11;
+  x0 <= mov x0$11;
+  D_1368 <= jmpun;
+D_1367:
+  b$21 <= ior y, m;
+  y$21 <= shr y, 1;
+  y <= mov y$21;
+  b <= mov b$21;
+  D_1371, D_1372 <= jmpge x0, b$21;
+D_1371:
+  x0$31 <= sub x0, b;
+  y$31 <= ior y, m;
+  y <= mov y$31;
+  x0 <= mov x0$31;
+  D_1372 <= jmpun;
+D_1372:
+  m$41 <= shr m, 2;
+  m <= mov m$41;
+  D_1368 <= jmpun;
+D_1368:
+  D_1367, D_1369 <= jmpne m, 0;
+D_1369:
+  outp <= mov y;
+  L_EXIT <= jmpun;
+L_EXIT:
+  nop;
+}
