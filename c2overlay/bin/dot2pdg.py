@@ -92,18 +92,19 @@ for each in graph:
         if(ntype == '"constant"'):
                 #print graph.node_attributes(each)
                 #nodename = r'N%s' % (node_num);
-		Immopnode = graph.neighbors(each)[0]
-		nodename = dictionary[Immopnode]
-                #dictionary[each]=nodename;
-                #new_graph.add_node(nodename)
-                value = graph.node_attributes(each)[6][1];
-                print value
-		label = graph.node_attributes(Immopnode)[6][1];
-		print label
-                label_new = r'"%s_Imm_%s_%s"' % (label[1:len(label)-1], value[1:len(value)-1], nodename);
-                new_graph.add_node_attribute(nodename, (graph.node_attributes(each)[6][0], label_new));
-                #new_graph.add_node_attribute(nodename, ("parents", graph.incidents(each)));
-                node_num = node_num + 1;
+		for Immopnode in graph.neighbors(each):
+			#Immopnode = graph.neighbors(each)[0]
+			nodename = dictionary[Immopnode]
+	                #dictionary[each]=nodename;
+        	        #new_graph.add_node(nodename)
+                	value = graph.node_attributes(each)[6][1];
+	                print value
+			label = graph.node_attributes(Immopnode)[6][1];
+			print label
+	                label_new = r'"%s_Imm_%s_%s"' % (label[1:len(label)-1], value[1:len(value)-1], nodename);
+        	        new_graph.add_node_attribute(nodename, (graph.node_attributes(each)[6][0], label_new));
+                	#new_graph.add_node_attribute(nodename, ("parents", graph.incidents(each)));
+	                node_num = node_num + 1;
 
 print dictionary
 

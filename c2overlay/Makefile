@@ -29,7 +29,7 @@ VPR=$(BIN)/vpr5
 CFRONTEND_PATH="../hercules/gimple2nac"
 CDFG2HDL_PATH="../hercules/cdfg2hdl"
 
-.PHONY: clean flash verilog view netlist pdg dot nac clear par
+.PHONY: clean flash verilog view netlist pdg dot nac clear par show
 
 .SECONDARY:
 
@@ -62,6 +62,10 @@ clean:
 
 clear:
 	rm -rf *.png *.o *.txt *.gimple *.bak *.vhd *.exe *.nac *.dot *.net
+
+show:  
+	xdot test_dfg.dot &
+	xdot test_pdg.dot &
 
 #$(P).odin.blif: $(P).v
 #	$(ODIN) -V $< -o $(P).odin.blif 2> $(P).odin.log > $(P).odin.log
