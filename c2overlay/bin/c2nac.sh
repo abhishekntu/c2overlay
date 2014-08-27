@@ -14,7 +14,7 @@ app=$1
 #gcc -DALGO -DTEST -O2 -o ${app}.exe ${app}.c 
 #./${app}.exe >& ${app}_test_data.txt
 
-gcc -DALGO -O2 -fdump-tree-gimple-raw -c ${app}.c
+gcc -DALGO -O3 -funroll-loops -fdump-tree-gimple-raw -c ${app}.c
 mv -f ${app}.c.004t.gimple ${app}.gimple
 ${CFRONTEND_PATH}/gimple2nac.exe -q ${app}.gimple
 rm -rf ${app}.gimple
