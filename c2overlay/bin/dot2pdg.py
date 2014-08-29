@@ -28,6 +28,56 @@ graph = dot.read(data)
 print graph
 
 
+#cleaning graph: retaining only operation, invar and outvar nodes
+for each in graph:
+	if((each != "node") & (each != "graph") & (each != "edge")): 
+		ntype = graph.node_attributes(each)[4][1];
+		if((ntype != '"operation"') & (ntype != '"invar"') & (ntype != '"outvar"') & (ntype != '"constant"')):
+			graph.del_node(each)
+
+print graph
+
+#merging load and mov into one load
+for each in graph:
+        if((each != "node") & (each != "graph") & (each != "edge")):
+                ntype = graph.node_attributes(each)[6][1];
+                if((ntype == '"mov"')):
+			for each_neighbor in graph.neighbors(each):
+				print graph.incidents(each)[0]
+				print each_neighbor
+                        	graph.add_edge((graph.incidents(each)[0], each_neighbor))
+		#graph.del_node(each)
+				
+
+#removing mov node
+for each in graph:
+        if((each != "node") & (each != "graph") & (each != "edge")):
+                ntype = graph.node_attributes(each)[6][1];
+                if((ntype == '"mov"')):
+                        graph.del_node(each)
+
+#merging constant and ldc into one load
+for each in graph:
+        if((each != "node") & (each != "graph") & (each != "edge")):
+                ntype = graph.node_attributes(each)[6][1];
+                if((ntype == '"ldc"')):
+                        for each_neighbor in graph.neighbors(each):
+                                print graph.incidents(each)[0]
+                                print each_neighbor
+                                graph.add_edge((graph.incidents(each)[0], each_neighbor))
+                #graph.del_node(each)
+
+
+#removing mov node
+for each in graph:
+        if((each != "node") & (each != "graph") & (each != "edge")):
+                ntype = graph.node_attributes(each)[6][1];
+                if((ntype == '"ldc"') | (ntype == '"jmpun"') | (ntype == '"nop"')):
+                        graph.del_node(each)
+
+
+
+
 #making new graph by adding nodes
 new_graph = digraph()
 # Add the node number information to the attributes in the dot file
@@ -118,7 +168,7 @@ for each in graph:
 			#print src
 			#print dictionary[each_neighbor];
 			dst = dictionary[each_neighbor];
-			#print src
+			#print dst
 			new_graph.add_edge((src, dst));
 	
 

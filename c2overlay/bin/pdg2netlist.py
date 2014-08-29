@@ -22,8 +22,10 @@ def GenerateNetlist(graph, graphname):
     #pinlist: N6     
     filename = r'%s.net' % (graphname)   
     wr_file = open(filename, 'w')
+    inputcount = 0;	
     for each in graph:
             if graph.incidents(each) == []:
+		inputcount = inputcount+1;
                 line = r""".input %s
 """ % each
                 wr_file.write(line)
@@ -36,23 +38,30 @@ def GenerateNetlist(graph, graphname):
     #.output out:N6
     #pinlist: N6        
     # Note here assumption is that graph does have only single output which is "end_node"
+    end_node_list = [];
+    outputcount = 0;
     for each in graph:            
             if graph.neighbors(each) == []: 
+		outputcount = outputcount+1;
                 end_node = each
-                line = r""".output out:%s
+		end_node_list.append(end_node);
+		line = r""".output out:%s
 """ % each
                 wr_file.write(line)
                 line = r"""pinlist: %s
     
 """ % each
                 wr_file.write(line)
-                
+
+    print end_node_list                
     #Writing one block for each node in the graph. Format: 
     #.clb N8_blk
     #pinlist: N7 N6 open open N8 open open open open 
     #subblock: N8_blk 0 1 open open 4 open open open open  
+    blockcount = 0;
     for each in graph:            
             if graph.incidents(each) != [] and graph.neighbors(each) != [] :
+		blockcount = blockcount+1;
                 print 'for node', each, graph.incidents(each)
                 line = r""".clb %s_blk
 """ % each
@@ -65,8 +74,16 @@ def GenerateNetlist(graph, graphname):
                 for itera in range(0, 4-len(graph.incidents(each))):
                     line = r"""open """ 
                     wr_file.write(line)
-                
-                if(end_node in graph.neighbors(each)):
+		
+		each_neighbors = graph.neighbors(each)
+		endNodePrev = False
+		for each_neighbor in each_neighbors:
+			if (each_neighbor in end_node_list):
+				endNodePrev = True
+				end_node = each_neighbor
+				break
+
+                if(endNodePrev):
                     line = r"""%s """ % end_node
                 else:   
                     line = r"""%s """ % each
@@ -95,6 +112,9 @@ subblock: %s_blk """ % each
 """  
                     wr_file.write(line)               
                   
+    print inputcount
+    print outputcount
+    print blockcount
     wr_file.close()            
     #Netlist generated
 
