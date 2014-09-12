@@ -26,10 +26,11 @@ BIN?=$(FLOW)/bin
 #ABC=$(BIN)/abc-vtr
 #VPACK=$(BIN)/t-vpack
 VPR=$(BIN)/vpr5
+CGRACOMPILER=$(BIN)/cgracompiler
 CFRONTEND_PATH="../hercules/gimple2nac"
 CDFG2HDL_PATH="../hercules/cdfg2hdl"
 
-.PHONY: clean flash verilog view netlist pdg dot nac clear par show
+.PHONY: clean flash verilog view netlist pdg dot asm nac clear par show run
 
 .SECONDARY:
 
@@ -54,6 +55,15 @@ pdg:
 	cp test_new.dot test_pdg.dot	#test_pdg.dot is the processed dot file generated from dot2pdg.py
 	mv test_new.dot test.dot	#test.dot is the processed dot file which will be used to generate netlist using pdg2netlist.py
 
+asm:
+	python $(BIN)/pdg2asm.py test
+
+run:
+	mv test.s config/test.s
+	mv test.txt config/test.txt
+	$(CGRACOMPILER)
+	cat result/trace.txt
+
 netlist:
 	python $(BIN)/pdg2netlist.py test
 
@@ -61,7 +71,7 @@ clean:
 	rm -f gc.txt *.echo $(DIR)/abc.cmd $(P).*.log $(P).*.blif $(P).*.out $(P).done $(P).bit $(P).uart-tb.v *.png  
 
 clear:
-	rm -rf *.png *.o *.txt *.gimple *.bak *.vhd *.exe *.nac *.dot *.net
+	rm -rf *.png *.o *.txt *.gimple *.bak *.vhd *.exe *.nac *.dot *.net *.ps *.pdf
 
 show:  
 	xdot test_dfg.dot &
