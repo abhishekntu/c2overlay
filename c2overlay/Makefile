@@ -94,7 +94,7 @@ show:
 #	sed 's/#ROWS#/$(ROWS)/g' $< | sed 's/#COLS#/$(COLS)/g' > $@
 
 par: 
-	$(VPR) $(P).net $(P).arch.xml $(P).place.out $(P).route.out -nodisp -timing_analysis off -route_chan_width $(TRACKS) 
+	$(VPR) $(P).net $(P).arch.xml $(P).place.out $(P).route.out -nodisp -full_stats -timing_analysis off -route_chan_width $(TRACKS) #-router_algorithm breadth_first  
 #> $(P).vpr.log
 #-fix_pins $(PADS) -timing_analysis off
 #-route_chan_width $(TRACKS) > $(P).vpr.log

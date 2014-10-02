@@ -25,7 +25,7 @@ inputfile  = open(filepath, 'r')
 data = inputfile.read()
 inputfile.close()
 graph = dot.read(data)
-print graph
+#print graph
 
 
 #cleaning graph: retaining only operation, invar and outvar nodes
@@ -35,7 +35,7 @@ for each in graph:
 		if((ntype != '"operation"') & (ntype != '"invar"') & (ntype != '"outvar"') & (ntype != '"constant"')):
 			graph.del_node(each)
 
-print graph
+#print graph
 
 #merging load and mov into one load
 for each in graph:
@@ -43,8 +43,8 @@ for each in graph:
                 ntype = graph.node_attributes(each)[6][1];
                 if((ntype == '"mov"')):
 			for each_neighbor in graph.neighbors(each):
-				print graph.incidents(each)[0]
-				print each_neighbor
+				#print graph.incidents(each)[0]
+				#print each_neighbor
                         	graph.add_edge((graph.incidents(each)[0], each_neighbor))
 		#graph.del_node(each)
 				
@@ -62,8 +62,8 @@ for each in graph:
                 ntype = graph.node_attributes(each)[6][1];
                 if((ntype == '"ldc"')):
                         for each_neighbor in graph.neighbors(each):
-                                print graph.incidents(each)[0]
-                                print each_neighbor
+                                #print graph.incidents(each)[0]
+                                #print each_neighbor
                                 graph.add_edge((graph.incidents(each)[0], each_neighbor))
                 #graph.del_node(each)
 
@@ -92,12 +92,12 @@ for each in graph:
 	lable = graph.node_attributes(each)[6][1];
 #       print ntype
         if(ntype == '"invar"'):
-                print graph.node_attributes(each)
+                #print graph.node_attributes(each)
                 nodename = r'N%s' % (node_num);
                 dictionary[each]=nodename;
                 new_graph.add_node(nodename)
                 label = graph.node_attributes(each)[6][1];
-                print label
+                #print label
                 label_new = r'"I%s_%s"' % (input_num, nodename)
                 new_graph.add_node_attribute(nodename, (graph.node_attributes(each)[6][0], label_new));
                 new_graph.add_node_attribute(nodename, ("color", '"black"'));
@@ -112,12 +112,12 @@ for each in graph:
 #	print ntype
 	lable = graph.node_attributes(each)[6][1];
 	if((ntype == '"operation"') & (lable == '"load"')): 
-    		print graph.node_attributes(each)
+    		#print graph.node_attributes(each)
 		nodename = r'N%s' % (node_num);
 		dictionary[each]=nodename;
 	    	new_graph.add_node(nodename)
 		label = graph.node_attributes(each)[6][1];
-		print label
+		#print label
 		label_new = r'"%s_%s"' % (label[1:len(label)-1], nodename)
 	    	new_graph.add_node_attribute(nodename, (graph.node_attributes(each)[6][0], label_new));
 		new_graph.add_node_attribute(nodename, ("color", '"black"'));
@@ -130,12 +130,12 @@ for each in graph:
 #       print ntype
         lable = graph.node_attributes(each)[6][1];
         if((ntype == '"operation"') & (lable != '"load"') & (lable != '"store"')):
-                print graph.node_attributes(each)
+                #print graph.node_attributes(each)
                 nodename = r'N%s' % (node_num);
                 dictionary[each]=nodename;
                 new_graph.add_node(nodename)
                 label = graph.node_attributes(each)[6][1];
-                print label
+                #print label
                 label_new = r'"%s_%s"' % (label[1:len(label)-1], nodename)
                 new_graph.add_node_attribute(nodename, (graph.node_attributes(each)[6][0], label_new));
                 new_graph.add_node_attribute(nodename, ("color", '"black"'));
@@ -148,12 +148,12 @@ for each in graph:
 #       print ntype
         lable = graph.node_attributes(each)[6][1];
         if((ntype == '"operation"') & (lable == '"store"')):
-                print graph.node_attributes(each)
+                #print graph.node_attributes(each)
                 nodename = r'N%s' % (node_num);
                 dictionary[each]=nodename;
                 new_graph.add_node(nodename)
                 label = graph.node_attributes(each)[6][1];
-                print label
+                #print label
                 label_new = r'"%s_%s"' % (label[1:len(label)-1], nodename)
                 new_graph.add_node_attribute(nodename, (graph.node_attributes(each)[6][0], label_new));
                 new_graph.add_node_attribute(nodename, ("color", '"black"'));
@@ -166,12 +166,12 @@ for each in graph:
         ntype = graph.node_attributes(each)[4][1];
 #       print ntype
         if(ntype == '"outvar"'):
-                print graph.node_attributes(each)
+                #print graph.node_attributes(each)
                 nodename = r'N%s' % (node_num);
                 dictionary[each]=nodename;
                 new_graph.add_node(nodename)
                 label = graph.node_attributes(each)[6][1];
-                print label
+                #print label
                 label_new = r'"O%s_%s"' % (output_num, nodename)
                 new_graph.add_node_attribute(nodename, (graph.node_attributes(each)[6][0], label_new));
 		new_graph.add_node_attribute(nodename, ("color", '"black"'));

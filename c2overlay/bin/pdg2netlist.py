@@ -71,7 +71,7 @@ def GenerateNetlist(graph, graphname):
                 for node in graph.incidents(each):                                
                     line = r"""%s """ % node
                     wr_file.write(line) 
-                for itera in range(0, 4-len(graph.incidents(each))):
+                for itera in range(0, 4-len(graph.incidents(each))): #previously it was 4 
                     line = r"""open """ 
                     wr_file.write(line)
 		
@@ -89,7 +89,7 @@ def GenerateNetlist(graph, graphname):
                     line = r"""%s """ % each
                  
                 wr_file.write(line)     
-                for itera in range(0, 4):  
+                for itera in range(0, 4):  #previously it was 4  
                     line = r"""open """ 
                     wr_file.write(line)  
                 
@@ -97,15 +97,16 @@ def GenerateNetlist(graph, graphname):
 subblock: %s_blk """ % each 
                 wr_file.write(line) 
                 if len(graph.incidents(each)) == 1:
-                    line = r"""0 open open open 4 open open open open
-                    
-"""  
+		    line = r"""0 open open open 4 open open open open
+
+"""
                     wr_file.write(line)
                 elif len(graph.incidents(each)) == 2:
-                    line = r"""0 1 open open 4 open open open open
-    
-"""  
-                    wr_file.write(line)
+		    line = r"""0 1 open open 4 open open open open
+
+"""
+		    wr_file.write(line)
+
                 elif len(graph.incidents(each)) == 3:
                     line = r"""0 1 2 open 4 open open open open
     
