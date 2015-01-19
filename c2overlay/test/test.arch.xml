@@ -1,10 +1,10 @@
 <architecture>
-	<layout auto="1.0" />
-<!--	<layout width="9" height="9" />  -->
+	<layout auto="1.0" />   
+<!--	<layout width="9" height="9" /> -->
 	<device>
 		<sizing R_minW_nmos="5726.870117" R_minW_pmos="15491.700195" ipin_mux_trans_size="1.000000"/>
-		<timing C_ipin_cblock="1.191000e-14" T_ipin_cblock="1.482000e-10"/>
-		<area grid_logic_tile_area="30000.000000"/>
+		<!--<timing C_ipin_cblock="1.191000e-14" T_ipin_cblock="1.482000e-10"/> -->
+		<area grid_logic_tile_area="30000.000000"/> 
 		<chan_width_distr>
 			<io width="1.000000"/>
 			<x distr="uniform" peak="1.000000"/>
@@ -23,7 +23,7 @@
 		</segment>
 	</segmentlist>
 	<typelist>
-		<io capacity="2" t_inpad="7.734000e-11" t_outpad="4.395000e-11">
+		<io capacity="1"> <!-- t_inpad="7.734000e-11" t_outpad="4.395000e-11"> -->
 			<fc_in type="frac">1.0000</fc_in>
 			<fc_out type="frac">1.000000</fc_out>
 		</io>
@@ -63,12 +63,12 @@
 			</pinlocations>
 			<gridlocations>
 				<loc type="fill" priority="1"/>
-			</gridlocations>
-			<timing>
+			</gridlocations> 
+			<!-- <timing>
 				<tedge type="T_sblk_opin_to_sblk_ipin">1.042000e-10</tedge>
 				<tedge type="T_fb_ipin_to_sblk_ipin">9.955000e-11</tedge>
 				<tedge type="T_sblk_opin_to_fb_opin">0.000000e+00</tedge>
-			</timing>
+			</timing>  -->
 		</type>
 	</typelist>
 </architecture>

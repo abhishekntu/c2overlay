@@ -28,6 +28,40 @@ graph = dot.read(data)
 #print graph
 
 
+#making a dictionary of load and its incidents
+loadlist = {}
+for each in graph:
+        if((each != "node") & (each != "graph") & (each != "edge")):
+                ntype = graph.node_attributes(each)[4][1];
+#               print ntype
+                lable = graph.node_attributes(each)[6][1];
+                if((ntype == '"operation"') & (lable == '"load"')):
+                        loadlist[each] = graph.incidents(each)
+
+for loads in loadlist:
+	loadlist[loads].sort();
+#print lodelist
+for loads in loadlist:
+	loadlist[loads] = loadlist[loads][0] + loadlist[loads][1]
+
+constlist = {};
+for k, v in loadlist.iteritems():
+	constlist[v] = constlist.get(v, [])
+	constlist[v].append(k)
+#print "Here is the constlist:"
+#print constlist.values()
+
+for myloadlist in constlist.values():
+	myload = myloadlist.pop();
+	#print myload	
+	for each in myloadlist:
+		for each_next in graph.neighbors(each):
+			graph.add_edge((myload, each_next));
+		graph.del_node(each)	
+
+
+
+
 #cleaning graph: retaining only operation, invar and outvar nodes
 for each in graph:
 	if((each != "node") & (each != "graph") & (each != "edge")): 
@@ -75,7 +109,19 @@ for each in graph:
                 if((ntype == '"ldc"') | (ntype == '"jmpun"') | (ntype == '"nop"')):
                         graph.del_node(each)
 
+#making a dictionary of load and its incidents
+'''lodelist = {}
+for each in graph:
+	if((each != "node") & (each != "graph") & (each != "edge")):
+		ntype = graph.node_attributes(each)[4][1];
+#       	print ntype
+        	lable = graph.node_attributes(each)[6][1];
+        	if((ntype == '"operation"') & (lable == '"load"')):
+			lodelist[each] = graph.incidents(each)
 
+print lodelist
+
+'''
 
 
 #making new graph by adding nodes
@@ -87,7 +133,7 @@ output_num=0;
 dictionary = {};
 for each in graph:
     if((each != "node") & (each != "graph") & (each != "edge")):
-#       print graph.node_attributes(each)[4][1]
+#       print graph.node_attributes(each)
         ntype = graph.node_attributes(each)[4][1];
 	lable = graph.node_attributes(each)[6][1];
 #       print ntype
@@ -101,6 +147,7 @@ for each in graph:
                 label_new = r'"I%s_%s"' % (input_num, nodename)
                 new_graph.add_node_attribute(nodename, (graph.node_attributes(each)[6][0], label_new));
                 new_graph.add_node_attribute(nodename, ("color", '"black"'));
+		new_graph.add_node_attribute(nodename, (graph.node_attributes(each)[4][0], graph.node_attributes(each)[4][1]))
                 #new_graph.add_node_attribute(nodename, ("parents", graph.incidents(each)));
                 node_num = node_num + 1;
                 input_num = input_num + 1;
@@ -121,6 +168,7 @@ for each in graph:
 		label_new = r'"%s_%s"' % (label[1:len(label)-1], nodename)
 	    	new_graph.add_node_attribute(nodename, (graph.node_attributes(each)[6][0], label_new));
 		new_graph.add_node_attribute(nodename, ("color", '"black"'));
+		new_graph.add_node_attribute(nodename, (graph.node_attributes(each)[4][0], graph.node_attributes(each)[4][1]))
     		node_num = node_num + 1;
 
 for each in graph:
@@ -139,6 +187,7 @@ for each in graph:
                 label_new = r'"%s_%s"' % (label[1:len(label)-1], nodename)
                 new_graph.add_node_attribute(nodename, (graph.node_attributes(each)[6][0], label_new));
                 new_graph.add_node_attribute(nodename, ("color", '"black"'));
+		new_graph.add_node_attribute(nodename, (graph.node_attributes(each)[4][0], graph.node_attributes(each)[4][1]))
                 node_num = node_num + 1;
 
 for each in graph:
@@ -157,6 +206,7 @@ for each in graph:
                 label_new = r'"%s_%s"' % (label[1:len(label)-1], nodename)
                 new_graph.add_node_attribute(nodename, (graph.node_attributes(each)[6][0], label_new));
                 new_graph.add_node_attribute(nodename, ("color", '"black"'));
+		new_graph.add_node_attribute(nodename, (graph.node_attributes(each)[4][0], graph.node_attributes(each)[4][1]))
                 node_num = node_num + 1;
 
 
@@ -175,6 +225,7 @@ for each in graph:
                 label_new = r'"O%s_%s"' % (output_num, nodename)
                 new_graph.add_node_attribute(nodename, (graph.node_attributes(each)[6][0], label_new));
 		new_graph.add_node_attribute(nodename, ("color", '"black"'));
+		new_graph.add_node_attribute(nodename, (graph.node_attributes(each)[4][0], graph.node_attributes(each)[4][1]))
                 #new_graph.add_node_attribute(nodename, ("parents", graph.incidents(each)));
                 node_num = node_num + 1;
 		output_num = output_num + 1;
@@ -202,6 +253,7 @@ for each in graph:
 			print label
 	                label_new = r'"%s_Imm_%s_%s"' % (label[1:len(label)-1], value[1:len(value)-1], nodename);
         	        new_graph.add_node_attribute(nodename, (graph.node_attributes(each)[6][0], label_new));
+			new_graph.add_node_attribute(nodename, (graph.node_attributes(Immopnode)[4][0], graph.node_attributes(Immopnode)[4][1]))
                 	#new_graph.add_node_attribute(nodename, ("parents", graph.incidents(each)));
 	                node_num = node_num + 1;
 

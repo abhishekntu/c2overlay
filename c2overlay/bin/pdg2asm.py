@@ -42,7 +42,7 @@ outputfile_io   = open(outfilename_io, 'w')
 for each in graph:
 	if((graph.incidents(each)!=[]) & (graph.neighbors(each)!=[])):
 		num = each[1:len(each)]
-		optype = graph.node_attributes(each)[1][1][1:4]
+		optype = graph.node_attributes(each)[2][1][1:4]
 		#print op
 		print each, dict_map[optype]
 		parents = graph.incidents(each)
