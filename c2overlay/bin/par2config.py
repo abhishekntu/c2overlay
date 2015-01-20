@@ -190,7 +190,7 @@ def read_routing(filename ):
 			trace_type = nets[mynode].trace[traces].type;
 			trace_loc = r'%s,%s' % (nets[mynode].trace[traces].loc[0], nets[mynode].trace[traces].loc[1]);
 			trace_index = nets[mynode].trace[traces].index;
-			print 'Trace of %s:' %(mynode), trace_loc, trace_index, trace_type
+			#print 'Trace of %s:' %(mynode), trace_loc, trace_index, trace_type
 			if( (trace_type == 'X') | (trace_type == 'Y')):
 				nodename = r'%s,%s,%s' % (trace_loc,trace_index,trace_type)
 				nodeattr = ('nodetype', 'route')
@@ -199,7 +199,8 @@ def read_routing(filename ):
 				nodeattr = ('nodetype', 'logic')		
 			nets[mynode].trace[traces].nodename = nodename
 			if(rrgraph.has_node(nodename)):
-				print "node exists!!"
+				#print "node exists!!"
+				pass
 			else:
 				rrgraph.add_node(nodename)
 				rrgraph.add_node_attribute(nodename, nodeattr)
@@ -210,7 +211,8 @@ def read_routing(filename ):
 			next_nodename = nets[mynode].trace[traces+1].nodename 	
 			if(trace_type!='SINK'):
 				if(rrgraph.has_edge((nodename, next_nodename))):
-					print "edge exists!!"
+					#print "edge exists!!"
+					pass
 				else:
 					rrgraph.add_edge((nodename, next_nodename))
 			
@@ -293,11 +295,11 @@ def read_routing(filename ):
 				if(label != -1):
 					while(rrgraph.neighbors(next_eachnode)!=[]):
 						for nextnext_eachnode in rrgraph.neighbors(next_eachnode):
-							print next_eachnode, nextnext_eachnode, label+1;
+							#print next_eachnode, nextnext_eachnode, label+1;
 							labellist=[];
 							for prevnode in rrgraph.incidents(next_eachnode):
 								labellist.append(rrgraph.edge_label((prevnode, next_eachnode)));
-							print "labellist:", labellist
+							#print "labellist:", labellist
 							label = max(labellist)
 							del labellist;
 							if(rrgraph.node_attributes(next_eachnode)[0][1] == 'logic'):
@@ -306,7 +308,7 @@ def read_routing(filename ):
                                                                 label_level = label+1;
                                                                 
 							rrgraph.set_edge_label((next_eachnode, nextnext_eachnode), label_level);
-							print nodelist
+							#print nodelist
 							#nodelist.append((nextnext_eachnode, label+1))
 							'''if(nextnext_eachnode in nodelist):
 								if(nodelist[nextnext_eachnode]>label+1):
@@ -316,7 +318,7 @@ def read_routing(filename ):
 							else:'''
 							nodelist[nextnext_eachnode] = label_level;
 							
-							print nodelist
+							#print nodelist
 						next_eachnode = nextnext_eachnode
 						#nodelist.remove((nextnext_eachnode, label+1))
 						label = nodelist[nextnext_eachnode];
@@ -325,21 +327,21 @@ def read_routing(filename ):
 					
 					#next_eachnode = nodelist[0][0];
 					#label = nodelist[0][1]
-					print "start emptying nodelist"	
+					#print "start emptying nodelist"	
 					while(nodelist!={}):
-						print nodelist
+						#print nodelist
 						#(next_eachnode, label) = nodelist.pop();
 						next_eachnode = nodelist.keys()[0];
 						label = nodelist[nodelist.keys()[0]];
 						del nodelist[next_eachnode];
-						print  (next_eachnode, label)
+						#print  (next_eachnode, label)
 						while(rrgraph.neighbors(next_eachnode)!=[]):
                 		                	for nextnext_eachnode in rrgraph.neighbors(next_eachnode):
-								print next_eachnode, nextnext_eachnode
+								#print next_eachnode, nextnext_eachnode
 								labellist=[];
 	                                                        for prevnode in rrgraph.incidents(next_eachnode):
         	                                                        labellist.append(rrgraph.edge_label((prevnode, next_eachnode)));
-                	                                        print "labellist:", labellist
+                	                                        #print "labellist:", labellist
 								label = max(labellist);
 								del labellist
                         		                	if(rrgraph.node_attributes(next_eachnode)[0][1] == 'logic'):
@@ -347,7 +349,7 @@ def read_routing(filename ):
 								else:	
 									label_level = label+1;
 								rrgraph.set_edge_label((next_eachnode, nextnext_eachnode), label_level);
-								print nodelist
+								#print nodelist
                                 		                #nodelist.append((nextnext_eachnode, label_level))
 								#nodelist[nextnext_eachnode] = label_level;
 								'''if(nextnext_eachnode in nodelist):
@@ -357,14 +359,14 @@ def read_routing(filename ):
                                                                         	nodelist[nextnext_eachnode] = label_level;
                                                         	else:'''
                                                                 nodelist[nextnext_eachnode] = label_level;
-								print nodelist
+								#print nodelist
                                                 	next_eachnode = nextnext_eachnode
 							label = nodelist[nextnext_eachnode]
 	                                                #nodelist.remove((nextnext_eachnode, label_level))
 							del nodelist[nextnext_eachnode];
         	                                        #label = label_level
 
-	print nodelist
+	#print nodelist
 		
 	'''
 	#print rrgraph.edges()	
@@ -387,12 +389,12 @@ def read_routing(filename ):
 	                if(rrgraph.node_attributes(eachnode)[0][1] == 'logic'):
 				iatlist = [];
                 	        for prev_node in rrgraph.incidents(eachnode):
-                        	        print eachnode, rrgraph.edge_label((prev_node, eachnode))
+                        	        #print eachnode, rrgraph.edge_label((prev_node, eachnode))
 					iatlist.append(rrgraph.edge_label((prev_node, eachnode)));
 				compnodedict[eachnode] = max(iatlist) - min(iatlist);
 				del iatlist;
 
-	print compnodedict
+	#print compnodedict
 	print "Here is the MLI(max. latency imbalance:)"
 	print max(compnodedict.values());			
 	

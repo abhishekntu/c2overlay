@@ -248,16 +248,16 @@ for each in graph:
 	                #dictionary[each]=nodename;
         	        #new_graph.add_node(nodename)
                 	value = graph.node_attributes(each)[6][1];
-	                print value
+	                #print value
 			label = graph.node_attributes(Immopnode)[6][1];
-			print label
+			#print label
 	                label_new = r'"%s_Imm_%s_%s"' % (label[1:len(label)-1], value[1:len(value)-1], nodename);
         	        new_graph.add_node_attribute(nodename, (graph.node_attributes(each)[6][0], label_new));
 			new_graph.add_node_attribute(nodename, (graph.node_attributes(Immopnode)[4][0], graph.node_attributes(Immopnode)[4][1]))
                 	#new_graph.add_node_attribute(nodename, ("parents", graph.incidents(each)));
 	                node_num = node_num + 1;
 
-print dictionary
+#print dictionary
 
 # connecting edges between nodes of new_graph based on original graph
 for each in graph:
@@ -287,7 +287,7 @@ outputfile.write(dot.write(new_graph))
 outputfile.close()
 command = 'dot -Tpng %s_new.dot > %s_nodenumber.png' % (benchmark, benchmark);
 os.system(command)    
-print new_graph
+#print new_graph
 
 #generate VPR compatible netlist of the graph 
 #enerateNetlist(graph, benchmark);    

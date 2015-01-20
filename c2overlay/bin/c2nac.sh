@@ -1,5 +1,5 @@
 #!/bin/bash
-
+echo "-------------------------"
 echo "### C to NAC: STARTED ###"
 export HLSTOP="../hercules"
 export HLSTOP_WIN="../hercules"
@@ -63,5 +63,6 @@ rm -rf ${app}.pp.nac ${app}.o
 #rm -rf *.dot
 #mv ${app}.orig.txt ${app}.orig.dot
 echo "### C to NAC: ENDED ###"
+echo "-------------------------"
 #exit 0
 

@@ -1,5 +1,5 @@
 #!/bin/bash
-
+echo "---------------------------"
 echo "### NAC to DOT: STARTED ###"
 export HLSTOP="../hercules"
 export HLSTOP_WIN="../hercules"
@@ -36,5 +36,6 @@ rm -rf *.vhd *.png *.txt *.bak
 #rm -rf *.dot
 #mv ${app}.orig.txt ${app}.orig.dot
 echo "### NAC to DOT: ENDED ###"
+echo "---------------------------"
 #exit 0
 
