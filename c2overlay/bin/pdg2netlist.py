@@ -115,10 +115,12 @@ subblock: %s_blk """ % each
 """  
                     wr_file.write(line)               
                   
-    #print inputcount
-    #print outputcount
-    #print blockcount
-    wr_file.close()            
+#    print "Total nodes after tech-mapping:", blockcount+inputcount+outputcount	
+#    print "I/O nodes:", inputcount,"/",outputcount
+#    #print outputcount
+#    print "Final OP nodes:", blockcount
+    wr_file.close()          
+    return [inputcount, outputcount]  
     #Netlist generated
 
 
@@ -131,7 +133,9 @@ inputfile  = open(filepath, 'r')
 data = inputfile.read()
 inputfile.close()
 graph = dot.read(data)
+my_graph = dot.read(data)
 #print graph
+#print "Total nodes:", len(graph.nodes())
 
 for each in graph:
     graph.set_level(each, 0)
@@ -387,9 +391,20 @@ for each in graph:
             dst = dictionary[each_neighbor];
             #print dst
             new_digraph.add_edge((src, dst));    
-            
 
-GenerateNetlist(new_digraph, benchmark);    
+[input_num, output_num] = GenerateNetlist(new_digraph, benchmark);
+op_nodes = len(my_graph.nodes()) - (input_num+output_num);
+op_nodes_tech_mapped = len(new_digraph.nodes()) - (input_num+output_num);
+print "---------------------------------------"
+#print "Graph nodes:			", my_graph.nodes();
+#print "Mapped-Graph nodes:		", new_digraph.nodes();            
+print "Total nodes:       		", len(my_graph.nodes());
+print "I/O nodes:                  	", input_num, "/", output_num;
+print "OP nodes:			", op_nodes;
+print "OP nodes after tech-mapping:	", op_nodes_tech_mapped;
+print "% Savings:			", 100*(op_nodes - op_nodes_tech_mapped)/op_nodes, "%";
+print "---------------------------------------"
+#GenerateNetlist(new_digraph, benchmark);    
 
 
 

@@ -271,8 +271,9 @@ for each in graph:
 			dst = dictionary[each_neighbor];
 			#print dst
 			new_graph.add_edge((src, dst));
-	
 
+#print new_graph.nodes()	
+#print "Total nodes:", len(new_graph.nodes())
 
 
 
