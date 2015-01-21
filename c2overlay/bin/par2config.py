@@ -395,15 +395,18 @@ def read_routing(filename ):
 				del iatlist;
 
 	#print compnodedict
-	print "Here is the MLI(max. latency imbalance:)"
-	print max(compnodedict.values());			
+	print "MLI:                           ", max(compnodedict.values());			
 	
-	print "Here is the output node and latency value:"
+	#print "Here is the output node and latency value:"
+	latency_list = [];
 	for eachnode in rrgraph:
 		if(rrgraph.neighbors(eachnode)==[]):
 			if(rrgraph.node_attributes(eachnode)[0][1] == 'logic'):
 				for prev_node in rrgraph.incidents(eachnode):
-					print eachnode, rrgraph.edge_label((prev_node, eachnode))
+					latency_list.append(rrgraph.edge_label((prev_node, eachnode)));
+
+	print "Latency:                       ", max(latency_list)	
+					#print eachnode, rrgraph.edge_label((prev_node, eachnode))
 
 
 	#for eachnode in rrgraph:

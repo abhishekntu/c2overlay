@@ -1,0 +1,229 @@
+
+VPR FPGA Placement and Routing.
+Version: Version 5.0.2
+Compiled: Mar 10 2012.
+Original VPR by V. Betz.
+Timing-driven placement enhancements by A. Marquardt.
+Single-drivers enhancements by Andy Ye with additions by.
+Mark Fang, Jason Luu, Ted Campbell
+Heterogeneous stucture support by Jason Luu and Ted Campbell.
+This code is licensed only for non-commercial use.
+
+Auto-sizing FPGA, try x = 9 y = 9
+Auto-sizing FPGA, try x = 5 y = 5
+Auto-sizing FPGA, try x = 7 y = 7
+Auto-sizing FPGA, try x = 6 y = 6
+Auto-sizing FPGA, try x = 6 y = 6
+FPGA auto-sized to, x = 7 y = 7
+
+Resource Usage:
+Netlist      0	blocks of type <EMPTY>
+Architecture 4	blocks of type <EMPTY>
+Netlist      27	blocks of type .io
+Architecture 28	blocks of type .io
+Netlist      48	blocks of type .clb
+Architecture 49	blocks of type .clb
+
+Timing analysis: OFF
+
+Operation:  PLACE_AND_ROUTE
+
+PlacerOpts.place_freq:  PLACE_ONCE
+PlacerOpts.place_algorithm:  BOUNDING_BOX_PLACE
+PlacerOpts.place_cost_type:  LINEAR_CONG
+PlacerOpts.pad_loc_type:  FREE
+PlacerOpts.place_cost_exp:  1.000000
+PlacerOpts.place_chan_width:  100
+PlaceOpts.seed:  1
+AnnealSched.type:  AUTO_SCHED
+AnnealSched.inner_num:  10.000000
+
+RouterOpts.route_type:  DETAILED
+RouterOpts.router_algorithm:  DIRECTED_SEARCH
+RouterOpts.base_cost_type:  DEMAND_ONLY
+RouterOpts.fixed_channel_width:  4
+RouterOpts.acc_fac:  1.000000
+RouterOpts.bb_factor:  3
+RouterOpts.bend_cost:  0.000000
+RouterOpts.first_iter_pres_fac:  10000.000000
+RouterOpts.initial_pres_fac:  10000.000000
+RouterOpts.pres_fac_mult:  1.300000
+RouterOpts.max_router_iterations:  50
+
+RoutingArch.directionality:  UNI_DIRECTIONAL
+RoutingArch.switch_block_type:  SUBSET
+RoutingArch.Fs:  3
+
+The circuit will be mapped into a 7 x 7 array of clbs.
+
+Netlist num_nets:  66
+Netlist num_blocks:  75
+Netlist inputs pins:  18
+Netlist output pins:  9
+
+Initial Placement Cost: 5.44031 bb_cost: 5.44031 td_cost: 0 delay_cost: 0
+
+          T        Cost Av. BB Cost  Av. TD Cost   Av Tot Del  P to P Del        d_max   Ac Rate  Std Dev  R limit      Exp  Tot. Moves    Alpha
+   --------  ---------- -----------  -----------    ---------  ----------        -----   -------  -------  -------  -------  ----------    -----
+     2.7463     5.22629     5.22629            0            0           0           0    0.9902    0.173        7        0        3162      0.5
+     1.3731     5.26637     5.26637            0            0           0           0    0.9867    0.187        7        0        6324      0.5
+    0.68657     5.22189     5.22189            0            0           0           0      0.97    0.161        7        0        9486      0.5
+    0.34328     5.14443     5.14443            0            0           0           0    0.9349    0.154        7        0       12648      0.9
+    0.30896     5.15982     5.15982            0            0           0           0     0.926    0.164        7        0       15810      0.9
+    0.27806     5.15273     5.15273            0            0           0           0     0.925    0.166        7        0       18972      0.9
+    0.25025     5.12508     5.12508            0            0           0           0    0.9064    0.179        7        0       22134      0.9
+    0.22523     5.12471     5.12471            0            0           0           0    0.9168    0.164        7        0       25296      0.9
+    0.20271     5.10498     5.10498            0            0           0           0    0.8997    0.166        7        0       28458      0.9
+    0.18244     5.08961     5.08961            0            0           0           0     0.895    0.161        7        0       31620      0.9
+    0.16419     5.07015     5.07015            0            0           0           0    0.8722    0.171        7        0       34782      0.9
+    0.14777     5.07109     5.07109            0            0           0           0    0.8703    0.154        7        0       37944      0.9
+      0.133     5.01512     5.01512            0            0           0           0    0.8438    0.199        7        0       41106      0.9
+     0.1197     4.97949     4.97949            0            0           0           0    0.8403    0.186        7        0       44268      0.9
+    0.10773     4.96732     4.96732            0            0           0           0     0.809    0.171        7        0       47430      0.9
+   0.096954     4.94019     4.94019            0            0           0           0    0.7777    0.177        7        0       50592     0.95
+   0.092106     4.93487     4.93487            0            0           0           0    0.7827    0.162        7        0       53754     0.95
+   0.087501     4.93834     4.93834            0            0           0           0    0.7748    0.187        7        0       56916     0.95
+   0.083126     4.93939     4.93939            0            0           0           0      0.74    0.179        7        0       60078     0.95
+   0.078969     4.87214     4.87214            0            0           0           0     0.734    0.155        7        0       63240     0.95
+   0.075021     4.89681     4.89681            0            0           0           0    0.7359    0.192        7        0       66402     0.95
+    0.07127     4.83646     4.83646            0            0           0           0    0.7179    0.156        7        0       69564     0.95
+   0.067706     4.79146     4.79146            0            0           0           0    0.7071    0.172        7        0       72726     0.95
+   0.064321     4.78013     4.78013            0            0           0           0    0.6923    0.161        7        0       75888     0.95
+   0.061105      4.7446      4.7446            0            0           0           0     0.686    0.179        7        0       79050     0.95
+    0.05805     4.73686     4.73686            0            0           0           0    0.6743    0.179        7        0       82212     0.95
+   0.055147      4.6834      4.6834            0            0           0           0    0.6275    0.157        7        0       85374     0.95
+    0.05239      4.6676      4.6676            0            0           0           0    0.6414     0.15        7        0       88536     0.95
+    0.04977     4.65084     4.65084            0            0           0           0    0.6085    0.162        7        0       91698     0.95
+   0.047282     4.61341     4.61341            0            0           0           0    0.5873    0.191        7        0       94860     0.95
+   0.044918     4.53517     4.53517            0            0           0           0    0.5784    0.148        7        0       98022     0.95
+   0.042672     4.49232     4.49232            0            0           0           0    0.5342    0.156        7        0      101184     0.95
+   0.040538     4.50228     4.50228            0            0           0           0    0.5392    0.175        7        0      104346     0.95
+   0.038511     4.45597     4.45597            0            0           0           0    0.4984    0.153        7        0      107508     0.95
+   0.036586     4.47125     4.47125            0            0           0           0    0.5127    0.214        7        0      110670     0.95
+   0.034757     4.38691     4.38691            0            0           0           0    0.4744    0.133        7        0      113832     0.95
+   0.033019     4.36901     4.36901            0            0           0           0    0.4529    0.164        7        0      116994     0.95
+   0.031368     4.24658     4.24658            0            0           0           0    0.4238    0.168        7        0      120156     0.95
+   0.029799     4.21382     4.21382            0            0           0           0     0.463    0.186    6.886        0      123318     0.95
+   0.028309     4.25567     4.25567            0            0           0           0    0.3903     0.14        7        0      126480     0.95
+   0.026894     4.28896     4.28896            0            0           0           0    0.4456    0.156    6.652        0      129642     0.95
+   0.025549     4.16098     4.16098            0            0           0           0    0.4111    0.145    6.689        0      132804     0.95
+   0.024272     4.05936     4.05936            0            0           0           0    0.3722    0.144    6.496        0      135966     0.95
+   0.023058     4.04957     4.04957            0            0           0           0    0.4001    0.157    6.056        0      139128     0.95
+   0.021905     3.92888     3.92888            0            0           0           0    0.3688    0.132    5.814        0      142290     0.95
+    0.02081     3.81075     3.81075            0            0           0           0    0.3529    0.134      5.4        0      145452     0.95
+    0.01977      3.7132      3.7132            0            0           0           0    0.3444    0.106     4.93        0      148614     0.95
+   0.018781     3.77495     3.77495            0            0           0           0     0.365    0.149    4.458        0      151776     0.95
+   0.017842     3.81268     3.81268            0            0           0           0    0.3403    0.117    4.124        0      154938     0.95
+    0.01695     3.61562     3.61562            0            0           0           0    0.3773    0.114    3.713        0      158100     0.95
+   0.016102     3.54552     3.54552            0            0           0           0    0.3555    0.127     3.48        0      161262     0.95
+   0.015297     3.60032     3.60032            0            0           0           0    0.3397   0.0877    3.186        0      164424     0.95
+   0.014532     3.55912     3.55912            0            0           0           0    0.4333    0.117    2.866        0      167586     0.95
+   0.013806     3.45674     3.45674            0            0           0           0     0.389    0.127    2.847        0      170748     0.95
+   0.013116     3.26588     3.26588            0            0           0           0    0.3536   0.0578    2.702        0      173910     0.95
+    0.01246     3.38251     3.38251            0            0           0           0     0.371   0.0961    2.468        0      177072     0.95
+   0.011837     3.20042     3.20042            0            0           0           0    0.3156    0.084    2.298        0      180234     0.95
+   0.011245     3.23587     3.23587            0            0           0           0     0.309   0.0598    2.012        0      183396     0.95
+   0.010683     3.19039     3.19039            0            0           0           0    0.3997    0.111    1.748        0      186558     0.95
+   0.010149     3.04951     3.04951            0            0           0           0    0.3789   0.0758    1.678        0      189720     0.95
+  0.0096411     3.02199     3.02199            0            0           0           0    0.3441   0.0726    1.575        0      192882     0.95
+   0.009159     3.04237     3.04237            0            0           0           0    0.3814   0.0903    1.424        0      196044     0.95
+  0.0087011     2.98823     2.98823            0            0           0           0    0.3542   0.0591    1.341        0      199206     0.95
+   0.008266     2.91503     2.91503            0            0           0           0    0.3292   0.0539    1.226        0      202368     0.95
+  0.0078527     2.84065     2.84065            0            0           0           0    0.2872   0.0613     1.09        0      205530     0.95
+  0.0074601     2.90164     2.90164            0            0           0           0    0.3204   0.0532        1        0      208692     0.95
+  0.0070871      2.8616      2.8616            0            0           0           0    0.2884   0.0529        1        0      211854     0.95
+  0.0067327     2.77585     2.77585            0            0           0           0      0.26   0.0445        1        0      215016     0.95
+  0.0063961     2.79213     2.79213            0            0           0           0    0.2751    0.055        1        0      218178     0.95
+  0.0060763     2.74358     2.74358            0            0           0           0    0.2258   0.0306        1        0      221340     0.95
+  0.0057725     2.81023     2.81023            0            0           0           0    0.2258   0.0297        1        0      224502     0.95
+  0.0054839     2.74089     2.74089            0            0           0           0    0.2037   0.0224        1        0      227664     0.95
+  0.0052097     2.71102     2.71102            0            0           0           0     0.216   0.0224        1        0      230826     0.95
+  0.0049492     2.66907     2.66907            0            0           0           0    0.1686   0.0412        1        0      233988     0.95
+  0.0047017     2.67077     2.67077            0            0           0           0    0.1812   0.0308        1        0      237150     0.95
+  0.0044666     2.66049     2.66049            0            0           0           0    0.1736   0.0194        1        0      240312     0.95
+  0.0042433     2.62605     2.62605            0            0           0           0    0.1303   0.0156        1        0      243474      0.8
+  0.0033946     2.62276     2.62276            0            0           0           0    0.1328   0.0117        1        0      246636      0.8
+  0.0027157     2.60803     2.60803            0            0           0           0    0.1354    0.012        1        0      249798      0.8
+  0.0021726     2.59066     2.59066            0            0           0           0    0.1126  0.00421        1        0      252960      0.8
+  0.0017381     2.58842     2.58842            0            0           0           0   0.09962  0.00116        1        0      256122      0.8
+  0.0013904     2.58832     2.58832            0            0           0           0    0.1078   0.0011        1        0      259284      0.8
+  0.0011124     2.58824     2.58824            0            0           0           0   0.09804  0.00107        1        0      262446      0.8
+ 0.00088989     2.58828     2.58828            0            0           0           0   0.09203 0.000956        1        0      265608      0.8
+ 0.00071191      2.5878      2.5878            0            0           0           0    0.1006 0.000314        1        0      268770      0.8
+ 0.00056953      2.5878      2.5878            0            0           0           0    0.1101 0.000314        1        0      271932      0.8
+ 0.00045562      2.5878      2.5878            0            0           0           0    0.1015 0.000314        1        0      275094      0.8
+  0.0003645      2.5878      2.5878            0            0           0           0     0.111 0.000314        1        0      278256      0.8
+  0.0002916      2.5878      2.5878            0            0           0           0    0.1078 0.000314        1        0      281418      0.8
+ 0.00023328      2.5878      2.5878            0            0           0           0    0.1072 0.000314        1        0      284580      0.8
+          0      2.5878      2.5878            0            0           0           0   0.09646 0.000314        1        0      287742  
+
+BB estimate of min-dist (placement) wirelength is ;259
+bb_cost recomputed from scratch is 2.5878.
+
+Completed placement consistency check successfully.
+
+Placement. Cost: 2.5878  bb_cost: 2.5878  td_cost: 0  delay_cost: 0.
+Confirming Router Algorithm: DIRECTED_SEARCH.
+Successfully routed after 1 routing iterations by Directed Search.
+
+Checking to ensure routing is legal ...
+Completed routing consistency check successfully.
+
+Serial number (magic cookie) for the routing is: -4040525
+Circuit successfully routed with a channel width factor of 4.
+
+
+Average number of bends per net: 1.01515  Maximum # of bends: 8
+
+
+The number of routed nets (nonglobal): 66
+Wirelength results (all in units of 1 clb segments):
+	Total wirelength: 214   Average net length: 3.24242
+	Maximum net length: 18
+
+Wirelength results in terms of physical segments:
+	Total wiring segments used: 214   Av. wire segments per net: 3.24242
+	Maximum segments used by a net: 18
+
+
+X - Directed channels:
+
+j	max occ	av_occ		capacity
+0	3	1.42857  	4
+1	2	1.00000  	4
+2	4	2.71429  	4
+3	4	2.85714  	4
+4	3	2.42857  	4
+5	3	2.42857  	4
+6	3	1.71429  	4
+7	2	1.28571  	4
+
+Y - Directed channels:
+
+i	max occ	av_occ		capacity
+0	3	2.00000  	4
+1	3	1.71429  	4
+2	3	2.14286  	4
+3	3	1.57143  	4
+4	3	2.00000  	4
+5	2	1.71429  	4
+6	2	1.57143  	4
+7	4	2.00000  	4
+
+Total Tracks in X-direction: 32  in Y-direction: 32
+
+Logic Area (in minimum width transistor areas):
+Total Logic Area: 1.47e+06  Per 1x1 logic tile: 30000
+
+Routing area (in minimum width transistor areas):
+Total Routing Area: 51344.5  Per logic tile: 1047.85
+
+Segment usage by type (index):
+Segment type       Fractional utilization
+------------       ----------------------
+       0                  0.478
+
+Segment usage by length:
+Segment length       Fractional utilization
+--------------       ----------------------
+        1                   0.478

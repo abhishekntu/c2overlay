@@ -18,8 +18,8 @@ import os
 
 # Read the dot file and create a graph
 benchmark = sys.argv[1];
-command = 'dot -Tpng %s.dot > %s_original.png' % (benchmark, benchmark);
-os.system(command)    
+#command = 'dot -Tpng %s.dot > %s_original.png' % (benchmark, benchmark);
+#os.system(command)    
 filepath = r'%s.dot' % (benchmark)
 inputfile  = open(filepath, 'r')
 data = inputfile.read()
@@ -286,8 +286,8 @@ filepath = r'%s_new.dot' % (benchmark)
 outputfile  = open(filepath, 'w')
 outputfile.write(dot.write(new_graph))
 outputfile.close()
-command = 'dot -Tpng %s_new.dot > %s_nodenumber.png' % (benchmark, benchmark);
-os.system(command)    
+#command = 'dot -Tpng %s_new.dot > %s_nodenumber.png' % (benchmark, benchmark);
+#os.system(command)    
 #print new_graph
 
 #generate VPR compatible netlist of the graph 

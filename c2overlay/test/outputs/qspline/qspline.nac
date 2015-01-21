@@ -1,0 +1,55 @@
+procedure foo(in s32 a,in s32 b,in s32 q,in s32 u,in s32 v,in s32 w,in s32 z,out s32 D_2426)
+{
+  localvar s32 D_2423;
+  localvar s32 D_2424;
+  localvar s32 D_2425;
+  localvar s32 D_2427;
+  localvar s32 D_2428;
+  localvar s32 D_2429;
+  localvar s32 D_2430;
+  localvar s32 D_2431;
+  localvar s32 D_2432;
+  localvar s32 D_2433;
+  localvar s32 D_2434;
+  localvar s32 temp_1;
+  localvar s32 temp_2;
+  localvar s32 temp_3;
+  localvar s32 temp_4;
+  localvar s32 temp_5;
+  localvar s32 temp_6;
+  localvar s32 temp_7;
+  localvar s32 temp_8;
+  localvar s32 temp_9;
+  localvar s32 temp_10;
+  localvar s32 temp_11;
+  localvar s32 temp_12;
+  localvar s32 temp_13;
+  localvar s32 temp_14;
+L0005:
+  temp_1 <= mul z,u;
+  temp_2 <= mul temp_1,u;
+  temp_3 <= mul temp_2,u;
+  temp_4 <= mul q,v;
+  temp_5 <= mul temp_4,v;
+  temp_6 <= mul temp_5,v;
+  temp_7 <= mul u,v;
+  temp_8 <= mul v,u;
+  D_2423 <= mul a,4;
+  temp_9 <= mul D_2423,u;
+  temp_10 <= mul temp_9,u;
+  D_2424 <= mul v,temp_10;
+  temp_11 <= mul D_2424,u;
+  D_2425 <= mul w,4;
+  temp_12 <= mul D_2425,temp_7;
+  temp_13 <= mul temp_12,v;
+  temp_14 <= mul temp_13,v;
+  D_2427 <= mul u,temp_3;
+  D_2428 <= mul b,6;
+  D_2429 <= mul D_2428,temp_7;
+  D_2430 <= mul D_2429,temp_8;
+  D_2431 <= add D_2427,D_2430;
+  D_2432 <= add D_2431,temp_11;
+  D_2433 <= add D_2432,temp_14;
+  D_2434 <= mul v,temp_6;
+  D_2426 <= add D_2433,D_2434;
+}

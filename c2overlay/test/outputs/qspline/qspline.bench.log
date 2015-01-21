@@ -1,0 +1,8 @@
+---------------------------------------
+Total nodes:       		34
+I/O nodes:                  	7 / 1
+OP nodes:			26
+OP nodes after tech-mapping:	23
+% Savings:			11 %
+MLI:                            44
+Latency:                        68

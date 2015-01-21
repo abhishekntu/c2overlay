@@ -126,8 +126,8 @@ subblock: %s_blk """ % each
 
 # Read the dot file and create a graph
 benchmark = sys.argv[1];
-command = 'dot -Tpng %s.dot > %s_original.png' % (benchmark, benchmark);
-os.system(command)    
+#command = 'dot -Tpng %s.dot > %s_original.png' % (benchmark, benchmark);
+#os.system(command)    
 filepath = r'%s.dot' % (benchmark)
 inputfile  = open(filepath, 'r')
 data = inputfile.read()
@@ -232,7 +232,11 @@ for level in sequencing_graph[0:len(sequencing_graph)-1]:
                     new_graph.add_node(node);
 #                    print graph.node_attributes(node)[2][0]
 #                    print graph.node_attributes(each)[2][1] + node
-		    new_attr = node + successor + graph.node_attributes(node)[2][1] + graph.node_attributes(successor)[2][1];
+		    #new_attr = node + successor + graph.node_attributes(node)[2][1] + graph.node_attributes(successor)[2][1];
+		    label_node = graph.node_attributes(node)[2][1];
+		    label_succ = graph.node_attributes(successor)[2][1];
+		    #rint label_node, label_succ
+		    new_attr = r'"%s%s_%s_%s"' % (node, successor, label_node[1:len(label_node)-1], label_succ[1:len(label_succ)-1])
 		    #new_attr = ''.join([node, successor]);
 		    #print new_attr		   
                     new_graph.add_node_attribute(node, (graph.node_attributes(node)[2][0], new_attr))
@@ -302,14 +306,16 @@ for each in graph:
     if((each != "node") & (each != "graph") & (each != "edge")):       
         ntype = graph.node_attributes(each)[1][1];
         lable = graph.node_attributes(each)[2][1];# 
-#        print lable      
+        #print lable
         if(ntype == '"invar"'):                
                 nodename = r'N%s' % (node_num);
+		#print nodename
                 dictionary[each]=nodename;
                 new_digraph.add_node(nodename)
                 count = len(graph.node_attributes(each));                
                 label = graph.node_attributes(each)[count-1][1];
-                label_new = label + nodename
+		label_new = r'"%s_%s"' % (label[1:len(label)-1], nodename);
+                #label_new = label + nodename
                 new_digraph.add_node_attribute(nodename, (graph.node_attributes(each)[2][0], label_new));
                 new_digraph.add_node_attribute(nodename, ("color", '"black"'));
                 node_num = node_num + 1;
@@ -327,7 +333,8 @@ for each in graph:
                 new_digraph.add_node(nodename)
                 count = len(graph.node_attributes(each));                
                 label = graph.node_attributes(each)[count-1][1];
-                label_new = label + nodename
+		label_new = r'"%s_%s"' % (label[1:len(label)-1], nodename);
+#                label_new = label + nodename
                 new_digraph.add_node_attribute(nodename, (graph.node_attributes(each)[2][0], label_new));
                 new_digraph.add_node_attribute(nodename, ("color", '"black"'));
                 node_num = node_num + 1;
@@ -343,7 +350,8 @@ for each in graph:
                 new_digraph.add_node(nodename)
                 count = len(graph.node_attributes(each));                
                 label = graph.node_attributes(each)[count-1][1];
-                label_new = label + nodename
+		label_new = r'"%s_%s"' % (label[1:len(label)-1], nodename);	
+                #label_new = label + nodename
                 new_digraph.add_node_attribute(nodename, (graph.node_attributes(each)[2][0], label_new));
                 new_digraph.add_node_attribute(nodename, ("color", '"black"'));
                 node_num = node_num + 1;
@@ -359,7 +367,8 @@ for each in graph:
                 new_digraph.add_node(nodename)
                 count = len(graph.node_attributes(each));                
                 label = graph.node_attributes(each)[count-1][1];
-                label_new = label + nodename
+                label_new = r'"%s_%s"' % (label[1:len(label)-1], nodename);
+		#label_new = label + nodename
                 new_digraph.add_node_attribute(nodename, (graph.node_attributes(each)[2][0], label_new));
                 new_digraph.add_node_attribute(nodename, ("color", '"black"'));
                 node_num = node_num + 1;
@@ -375,7 +384,8 @@ for each in graph:
                 new_digraph.add_node(nodename)
                 count = len(graph.node_attributes(each));                
                 label = graph.node_attributes(each)[count-1][1];
-                label_new = label + nodename
+                label_new = r'"%s_%s"' % (label[1:len(label)-1], nodename);
+		#label_new = label + nodename
                 new_digraph.add_node_attribute(nodename, (graph.node_attributes(each)[2][0], label_new));
                 new_digraph.add_node_attribute(nodename, ("color", '"black"'));
                 node_num = node_num + 1;
@@ -392,6 +402,12 @@ for each in graph:
             #print dst
             new_digraph.add_edge((src, dst));    
 
+
+filepath = r'%s.dot' % (benchmark)
+outputfile  = open(filepath, 'w')
+outputfile.write(dot.write(new_digraph))
+outputfile.close()
+
 [input_num, output_num] = GenerateNetlist(new_digraph, benchmark);
 op_nodes = len(my_graph.nodes()) - (input_num+output_num);
 op_nodes_tech_mapped = len(new_digraph.nodes()) - (input_num+output_num);
@@ -403,7 +419,7 @@ print "I/O nodes:                  	", input_num, "/", output_num;
 print "OP nodes:			", op_nodes;
 print "OP nodes after tech-mapping:	", op_nodes_tech_mapped;
 print "% Savings:			", 100*(op_nodes - op_nodes_tech_mapped)/op_nodes, "%";
-print "---------------------------------------"
+#rint "---------------------------------------"
 #GenerateNetlist(new_digraph, benchmark);    
 
 

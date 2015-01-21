@@ -1,0 +1,97 @@
+Array size: 3 x 3 logic blocks.
+
+Routing:
+
+Net 0 (N1)
+
+SOURCE (3,4)  Pad: 1  
+  OPIN (3,4)  Pad: 1  
+ CHANX (3,3)  Track: 3  
+  IPIN (3,3)  Pin: 0  
+  SINK (3,3)  Class: 0  
+
+
+Net 1 (N2)
+
+SOURCE (4,2)  Pad: 1  
+  OPIN (4,2)  Pad: 1  
+ CHANY (3,2)  Track: 3  
+  IPIN (3,2)  Pin: 1  
+  SINK (3,2)  Class: 0  
+ CHANY (3,2)  Track: 3  
+ CHANY (3,1)  Track: 3  
+  IPIN (3,1)  Pin: 1  
+  SINK (3,1)  Class: 0  
+ CHANY (3,2)  Track: 3  
+ CHANX (3,1)  Track: 3  
+ CHANX (2,1)  Track: 3  
+  IPIN (2,1)  Pin: 0  
+  SINK (2,1)  Class: 0  
+
+
+Net 2 (N8)
+
+SOURCE (2,1)  Class: 1  
+  OPIN (2,1)  Pin: 7  
+ CHANY (1,1)  Track: 3  
+  IPIN (1,1)  Pin: 1  
+  SINK (1,1)  Class: 0  
+
+
+Net 3 (N9)
+
+SOURCE (3,2)  Class: 1  
+  OPIN (3,2)  Pin: 7  
+ CHANY (2,2)  Track: 3  
+  IPIN (2,2)  Pin: 1  
+  SINK (2,2)  Class: 0  
+
+
+Net 4 (N3)
+
+SOURCE (1,1)  Class: 1  
+  OPIN (1,1)  Pin: 4  
+ CHANX (1,1)  Track: 3  
+  IPIN (1,2)  Pin: 2  
+  SINK (1,2)  Class: 0  
+
+
+Net 5 (N4)
+
+SOURCE (3,1)  Class: 1  
+  OPIN (3,1)  Pin: 7  
+ CHANY (2,1)  Track: 3  
+  IPIN (2,1)  Pin: 1  
+  SINK (2,1)  Class: 0  
+
+
+Net 6 (N5)
+
+SOURCE (3,3)  Class: 1  
+  OPIN (3,3)  Pin: 7  
+ CHANY (2,3)  Track: 3  
+ CHANX (2,2)  Track: 3  
+  IPIN (2,2)  Pin: 0  
+  SINK (2,2)  Class: 0  
+ CHANX (2,2)  Track: 3  
+ CHANX (1,2)  Track: 3  
+  IPIN (1,2)  Pin: 0  
+  SINK (1,2)  Class: 0  
+
+
+Net 7 (N10)
+
+SOURCE (1,2)  Class: 1  
+  OPIN (1,2)  Pin: 7  
+ CHANY (0,2)  Track: 3  
+  IPIN (0,2)  Pad: 0  
+  SINK (0,2)  Pad: 0  
+
+
+Net 8 (N7)
+
+SOURCE (2,2)  Class: 1  
+  OPIN (2,2)  Pin: 7  
+ CHANY (1,2)  Track: 3  
+  IPIN (1,2)  Pin: 1  
+  SINK (1,2)  Class: 0  

@@ -8,6 +8,10 @@ I/O nodes:                  	1 / 1
 OP nodes:			7
 OP nodes after tech-mapping:	5
 % Savings:			28 %
+MLI:                            37
+Latency:                        50
+Required Overlay Size:          3x3
+
 ---------------------------------------
 sgfilter
 ---------------------------------------
@@ -16,6 +20,10 @@ I/O nodes:                  	2 / 1
 OP nodes:			18
 OP nodes after tech-mapping:	10
 % Savings:			44 %
+MLI:                            35
+Latency:                        62
+Required Overlay Size:          4x4
+
 ---------------------------------------
 mibench
 ---------------------------------------
@@ -24,6 +32,10 @@ I/O nodes:                  	3 / 1
 OP nodes:			13
 OP nodes after tech-mapping:	7
 % Savings:			46 %
+MLI:                            12
+Latency:                        33
+Required Overlay Size:          3x3
+
 ---------------------------------------
 qspline
 ---------------------------------------
@@ -32,6 +44,10 @@ I/O nodes:                  	7 / 1
 OP nodes:			26
 OP nodes after tech-mapping:	23
 % Savings:			11 %
+MLI:                            44
+Latency:                        68
+Required Overlay Size:          5x5
+
 ---------------------------------------
 poly1
 ---------------------------------------
@@ -40,6 +56,10 @@ I/O nodes:                  	2 / 1
 OP nodes:			9
 OP nodes after tech-mapping:	6
 % Savings:			33 %
+MLI:                            11
+Latency:                        32
+Required Overlay Size:          3x3
+
 ---------------------------------------
 poly2
 ---------------------------------------
@@ -48,6 +68,10 @@ I/O nodes:                  	2 / 1
 OP nodes:			9
 OP nodes after tech-mapping:	7
 % Savings:			22 %
+MLI:                            17
+Latency:                        39
+Required Overlay Size:          3x3
+
 ---------------------------------------
 poly3
 ---------------------------------------
@@ -56,14 +80,10 @@ I/O nodes:                  	6 / 1
 OP nodes:			11
 OP nodes after tech-mapping:	7
 % Savings:			36 %
----------------------------------------
-poly4
----------------------------------------
-Total nodes:       		12
-I/O nodes:                  	5 / 1
-OP nodes:			6
-OP nodes after tech-mapping:	3
-% Savings:			50 %
+MLI:                            1
+Latency:                        32
+Required Overlay Size:          3x3
+
 ---------------------------------------
 poly5
 ---------------------------------------
@@ -72,6 +92,10 @@ I/O nodes:                  	3 / 1
 OP nodes:			27
 OP nodes after tech-mapping:	17
 % Savings:			37 %
+MLI:                            61
+Latency:                        73
+Required Overlay Size:          5x5
+
 ---------------------------------------
 atax
 ---------------------------------------
@@ -80,6 +104,10 @@ I/O nodes:                  	12 / 3
 OP nodes:			60
 OP nodes after tech-mapping:	36
 % Savings:			40 %
+MLI:                            57
+Latency:                        71
+Required Overlay Size:          6x6
+
 ---------------------------------------
 bicg
 ---------------------------------------
@@ -88,6 +116,10 @@ I/O nodes:                  	15 / 6
 OP nodes:			30
 OP nodes after tech-mapping:	18
 % Savings:			40 %
+MLI:                            26
+Latency:                        43
+Required Overlay Size:          6x6
+
 ---------------------------------------
 gesummv
 ---------------------------------------
@@ -96,6 +128,10 @@ I/O nodes:                  	21 / 3
 OP nodes:			39
 OP nodes after tech-mapping:	24
 % Savings:			38 %
+MLI:                            25
+Latency:                        57
+Required Overlay Size:          6x6
+
 ---------------------------------------
 trmm
 ---------------------------------------
@@ -104,6 +140,10 @@ I/O nodes:                  	18 / 9
 OP nodes:			54
 OP nodes after tech-mapping:	36
 % Savings:			33 %
+MLI:                            30
+Latency:                        58
+Required Overlay Size:          7x7
+
 ---------------------------------------
 syrk
 ---------------------------------------
@@ -112,4 +152,8 @@ I/O nodes:                  	18 / 9
 OP nodes:			72
 OP nodes after tech-mapping:	48
 % Savings:			33 %
+MLI:                            31
+Latency:                        54
+Required Overlay Size:          7x7
+
 ---------------------------------------

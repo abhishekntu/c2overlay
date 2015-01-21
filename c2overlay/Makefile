@@ -43,7 +43,7 @@ all:
 	mv test_new.dot test.dot        #test.dot is the processed dot file which will be used to generate netlist using pdg2netlist.py
 	python $(BIN)/pdg2netlist.py test > $(P).bench.log
 	$(VPR) $(P).net $(P).arch.xml $(P).place.out $(P).route.out -nodisp -timing_analysis off -route_chan_width $(TRACKS) > $(P).vpr.log
-	python $(BIN)/par2config.py
+	python $(BIN)/par2config.py >> $(P).bench.log
 nac:
 	python $(BIN)/c2nac.py
 
