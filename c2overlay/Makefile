@@ -37,11 +37,11 @@ CDFG2HDL_PATH="../hercules/cdfg2hdl"
 all: 
 	python $(BIN)/c2nac.py
 	python $(BIN)/nac2dot.py
-	python $(BIN)/dot2pdg.py test
+	python $(BIN)/dot2pdg.py test > $(P).bench.log
 	mv test.dot test_dfg.dot        #test_dfg.dot is original dot generated from nac2cdfg.exe
 	cp test_new.dot test_pdg.dot    #test_pdg.dot is the processed dot file generated from dot2pdg.py
 	mv test_new.dot test.dot        #test.dot is the processed dot file which will be used to generate netlist using pdg2netlist.py
-	python $(BIN)/pdg2netlist.py test > $(P).bench.log
+	python $(BIN)/pdg2netlist.py test >> $(P).bench.log
 	$(VPR) $(P).net $(P).arch.xml $(P).place.out $(P).route.out -nodisp -timing_analysis off -route_chan_width $(TRACKS) > $(P).vpr.log
 	python $(BIN)/par2config.py >> $(P).bench.log
 nac:

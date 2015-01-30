@@ -259,6 +259,12 @@ list_of_edges = graph.edges();
 
 list_of_newnodes = new_graph.nodes();
 #print 'list'
+#print new_graph
+filepath = r'%s_patterns.dot' % (benchmark)
+outputfile  = open(filepath, 'w')
+outputfile.write(dot.write(new_graph))
+outputfile.close()
+
 
 #print list_of_newnodes
 

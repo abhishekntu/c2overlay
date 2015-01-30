@@ -2,10 +2,10 @@
 echo "---------------------------------------" > bench.log
 echo "Results:" >> bench.log
 echo "---------------------------------------" >> bench.log
-for bench in chebyshev sgfilter mibench qspline poly1 poly2 poly3 poly5 atax bicg gesummv trmm syrk
+for bench in chebyshev sgfilter mibench qspline poly1 poly2 poly3 poly5 poly6 poly7 poly8 atax bicg gemm gesummv mvt syr2k syrk trmm
 do
 	sed -i "s/\(TRACKS=\).*/\1$1/" Makefile
-	echo "Runing" $bench
+	echo "Running" $bench
 	cp benchmarks/c/$bench.c test.c
 	make > log.txt
 	echo $bench >> bench.log

@@ -276,10 +276,50 @@ for each in graph:
 #print "Total nodes:", len(new_graph.nodes())
 
 
+mydict = {}
+optypelist = ['mul', 'add' , 'sub', 'sqr', 'muladd', 'mulsub', 'addmul', 'submul', 'addadd', 'addsub', 'subadd', 'subsub', 'addmuladd', 'addmulsub', 'submuladd', 'submulsub', 'sqradd', 'sqrsub']
+for eachoptype in optypelist:
+	mydict[eachoptype]=0;
+
+'''mydict['mul']=0;
+mydict['add']=0;
+mydict['sub']=0;
+mydict['sqr']=0;
+mydict['muladd']=0;
+mydict['mulsub']=0;
+'''
 
 
 
+oplist = [];
+#print new_graph
+for each in new_graph:
+	optype = new_graph.node_attributes(each)[0][1][1:4];
+	if((optype[0] != 'I') & (optype[0] != 'O') & (optype != 'sto') & (optype != 'loa')): 
+#	print new_graph.node_attributes(each)[0][1][1:4]
+		oplist.append(new_graph.node_attributes(each)[0][1][1:4]);
+		if(optype in mydict):
+			mydict[optype] += 1;
 
+	for child in new_graph.neighbors(each):
+		optype_2 = optype + new_graph.node_attributes(child)[0][1][1:4];
+		#print optype_2
+		if(optype_2 in mydict):
+			mydict[optype_2] += 1;
+		for childofchild in new_graph.neighbors(child):
+			optype_3 = optype_2 + new_graph.node_attributes(childofchild)[0][1][1:4];
+			if(optype_3 in mydict):
+				mydict[optype_3] += 1;
+ 
+
+
+print mydict
+
+'''oplistset = set(oplist)
+while(oplistset != set()):
+	optype = oplistset.pop();
+	print optype, oplist.count(optype) 
+'''
 
 
 filepath = r'%s_new.dot' % (benchmark)    

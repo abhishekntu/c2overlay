@@ -1,3 +1,4 @@
+{'mulsub': 0, 'submulsub': 0, 'addmulsub': 0, 'sub': 0, 'subsub': 0, 'addmul': 3, 'sqr': 0, 'addmuladd': 3, 'submul': 0, 'submuladd': 0, 'add': 7, 'addadd': 4, 'subadd': 0, 'sqradd': 0, 'mul': 6, 'muladd': 6, 'addsub': 0, 'sqrsub': 0}
 ---------------------------------------
 Total nodes:       		17
 I/O nodes:                  	3 / 1
