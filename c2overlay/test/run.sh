@@ -1,8 +1,11 @@
-#!/bin/sh
+#/bin/sh
 echo "---------------------------------------" > bench.log
 echo "Results:" >> bench.log
 echo "---------------------------------------" >> bench.log
 for bench in chebyshev sgfilter mibench qspline poly1 poly2 poly3 poly5 poly6 poly7 poly8 atax bicg gemm gesummv mvt syr2k syrk trmm
+#fft kmeans mm stencil conv radar
+#mri spmv 
+#chebyshev sgfilter mibench qspline poly1 poly2 poly3 poly5 poly6 poly7 poly8 atax bicg gemm gesummv mvt syr2k syrk trmm
 do
 	sed -i "s/\(TRACKS=\).*/\1$1/" Makefile
 	echo "Running" $bench
@@ -21,6 +24,7 @@ do
 	mv test.c outputs/$bench/$bench.c
 	mv test.nac outputs/$bench/$bench.nac
 	mv test_dfg.dot outputs/$bench/"$bench"_dfg.dot
+	dot -Tpng test_pdg.dot > outputs/$bench/"$bench".png
 	mv test_pdg.dot outputs/$bench/"$bench"_pdg.dot
 	mv test.dot outputs/$bench/"$bench".dot
 	mv test.net outputs/$bench/"$bench".net
