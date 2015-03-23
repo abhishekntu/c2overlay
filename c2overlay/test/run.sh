@@ -2,7 +2,8 @@
 echo "---------------------------------------" > bench.log
 echo "Results:" >> bench.log
 echo "---------------------------------------" >> bench.log
-for bench in chebyshev sgfilter mibench qspline poly1 poly2 poly3 poly5 poly6 poly7 poly8 atax bicg gemm gesummv mvt syr2k syrk trmm
+for bench in chebyshev sgfilter mibench qspline poly1 poly2 poly3 poly4 #poly5 poly6 poly7 poly8 atax bicg gemm gesummv mvt syr2k syrk trmm
+#for bench in atax bicg gesummv trmm syrk
 #fft kmeans mm stencil conv radar
 #mri spmv 
 #chebyshev sgfilter mibench qspline poly1 poly2 poly3 poly5 poly6 poly7 poly8 atax bicg gemm gesummv mvt syr2k syrk trmm

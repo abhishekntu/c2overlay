@@ -1,9 +1,9 @@
 .input N1
 pinlist: N1
-    
+
 .output out:N7
 pinlist: N7
-    
+
 .clb N2_blk
 pinlist: N1 N6 open open N7 open open open open 
 subblock: N2_blk 0 1 open open 4 open open open open

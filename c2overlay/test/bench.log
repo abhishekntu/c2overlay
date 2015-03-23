@@ -4,247 +4,104 @@ Results:
 chebyshev
 {'mulsub': 1, 'submulsub': 0, 'addmulsub': 0, 'sub': 1, 'subsub': 0, 'addmul': 1, 'sqr': 0, 'addmuladd': 0, 'submul': 1, 'submuladd': 0, 'add': 1, 'addadd': 0, 'subadd': 0, 'sqradd': 0, 'mul': 5, 'muladd': 1, 'addsub': 0, 'sqrsub': 0}
 ---------------------------------------
-Total nodes:       		9
-I/O nodes:                  	1 / 1
-OP nodes:			7
-OP nodes after tech-mapping:	5
-% Savings:			28 %
-MLI:                            37
-Latency:                        50
-Required Overlay Size:          3x3
+Total nodes:                    9
+I/O nodes:                      1 / 1
+OP nodes:                       7
+OP nodes after tech-mapping:    5
+% Savings:                      28 %
+MLI:                            36
+Latency:                        49
+Required Overlay Size:          5x5
 
 ---------------------------------------
 sgfilter
 {'mulsub': 3, 'submulsub': 1, 'addmulsub': 0, 'sub': 4, 'subsub': 0, 'addmul': 2, 'sqr': 0, 'addmuladd': 2, 'submul': 3, 'submuladd': 2, 'add': 5, 'addadd': 2, 'subadd': 0, 'sqradd': 0, 'mul': 9, 'muladd': 6, 'addsub': 1, 'sqrsub': 0}
 ---------------------------------------
-Total nodes:       		21
-I/O nodes:                  	2 / 1
-OP nodes:			18
-OP nodes after tech-mapping:	10
-% Savings:			44 %
-MLI:                            35
-Latency:                        62
-Required Overlay Size:          4x4
+Total nodes:                    21
+I/O nodes:                      2 / 1
+OP nodes:                       18
+OP nodes after tech-mapping:    10
+% Savings:                      44 %
+MLI:                            31
+Latency:                        54
+Required Overlay Size:          5x5
 
 ---------------------------------------
 mibench
 {'mulsub': 0, 'submulsub': 0, 'addmulsub': 0, 'sub': 0, 'subsub': 0, 'addmul': 3, 'sqr': 0, 'addmuladd': 3, 'submul': 0, 'submuladd': 0, 'add': 7, 'addadd': 4, 'subadd': 0, 'sqradd': 0, 'mul': 6, 'muladd': 6, 'addsub': 0, 'sqrsub': 0}
 ---------------------------------------
-Total nodes:       		17
-I/O nodes:                  	3 / 1
-OP nodes:			13
-OP nodes after tech-mapping:	7
-% Savings:			46 %
-MLI:                            12
-Latency:                        33
-Required Overlay Size:          3x3
+Total nodes:                    17
+I/O nodes:                      3 / 1
+OP nodes:                       13
+OP nodes after tech-mapping:    6
+% Savings:                      53 %
+MLI:                            35
+Latency:                        47
+Required Overlay Size:          5x5
 
 ---------------------------------------
 qspline
 {'mulsub': 0, 'submulsub': 0, 'addmulsub': 0, 'sub': 0, 'subsub': 0, 'addmul': 0, 'sqr': 0, 'addmuladd': 0, 'submul': 0, 'submuladd': 0, 'add': 4, 'addadd': 3, 'subadd': 0, 'sqradd': 0, 'mul': 22, 'muladd': 5, 'addsub': 0, 'sqrsub': 0}
 ---------------------------------------
-Total nodes:       		34
-I/O nodes:                  	7 / 1
-OP nodes:			26
-OP nodes after tech-mapping:	23
-% Savings:			11 %
-MLI:                            44
-Latency:                        68
+Total nodes:                    34
+I/O nodes:                      7 / 1
+OP nodes:                       26
+OP nodes after tech-mapping:    22
+% Savings:                      15 %
+MLI:                            64
+Latency:                        76
 Required Overlay Size:          5x5
 
 ---------------------------------------
 poly1
 {'mulsub': 2, 'submulsub': 1, 'addmulsub': 1, 'sub': 3, 'subsub': 0, 'addmul': 1, 'sqr': 2, 'addmuladd': 0, 'submul': 1, 'submuladd': 0, 'add': 2, 'addadd': 0, 'subadd': 1, 'sqradd': 0, 'mul': 2, 'muladd': 0, 'addsub': 1, 'sqrsub': 0}
 ---------------------------------------
-Total nodes:       		12
-I/O nodes:                  	2 / 1
-OP nodes:			9
-OP nodes after tech-mapping:	6
-% Savings:			33 %
-MLI:                            11
-Latency:                        32
-Required Overlay Size:          3x3
+Total nodes:                    12
+I/O nodes:                      2 / 1
+OP nodes:                       9
+OP nodes after tech-mapping:    6
+% Savings:                      33 %
+MLI:                            22
+Latency:                        34
+Required Overlay Size:          5x5
 
 ---------------------------------------
 poly2
 {'mulsub': 2, 'submulsub': 0, 'addmulsub': 0, 'sub': 2, 'subsub': 0, 'addmul': 0, 'sqr': 2, 'addmuladd': 0, 'submul': 2, 'submuladd': 1, 'add': 1, 'addadd': 0, 'subadd': 0, 'sqradd': 1, 'mul': 4, 'muladd': 1, 'addsub': 0, 'sqrsub': 0}
 ---------------------------------------
-Total nodes:       		12
-I/O nodes:                  	2 / 1
-OP nodes:			9
-OP nodes after tech-mapping:	7
-% Savings:			22 %
-MLI:                            17
-Latency:                        39
-Required Overlay Size:          3x3
+Total nodes:                    12
+I/O nodes:                      2 / 1
+OP nodes:                       9
+OP nodes after tech-mapping:    6
+% Savings:                      33 %
+MLI:                            7
+Latency:                        29
+Required Overlay Size:          5x5
 
 ---------------------------------------
 poly3
 {'mulsub': 3, 'submulsub': 0, 'addmulsub': 0, 'sub': 2, 'subsub': 0, 'addmul': 0, 'sqr': 1, 'addmuladd': 0, 'submul': 1, 'submuladd': 1, 'add': 2, 'addadd': 0, 'subadd': 1, 'sqradd': 0, 'mul': 6, 'muladd': 2, 'addsub': 1, 'sqrsub': 0}
 ---------------------------------------
-Total nodes:       		18
-I/O nodes:                  	6 / 1
-OP nodes:			11
-OP nodes after tech-mapping:	7
-% Savings:			36 %
-MLI:                            1
-Latency:                        32
-Required Overlay Size:          3x3
-
----------------------------------------
-poly5
-{'mulsub': 5, 'submulsub': 1, 'addmulsub': 1, 'sub': 8, 'subsub': 0, 'addmul': 2, 'sqr': 0, 'addmuladd': 0, 'submul': 7, 'submuladd': 5, 'add': 6, 'addadd': 1, 'subadd': 1, 'sqradd': 0, 'mul': 13, 'muladd': 6, 'addsub': 3, 'sqrsub': 0}
----------------------------------------
-Total nodes:       		31
-I/O nodes:                  	3 / 1
-OP nodes:			27
-OP nodes after tech-mapping:	17
-% Savings:			37 %
-MLI:                            61
-Latency:                        73
+Total nodes:                    18
+I/O nodes:                      6 / 1
+OP nodes:                       11
+OP nodes after tech-mapping:    7
+% Savings:                      36 %
+MLI:                            11
+Latency:                        31
 Required Overlay Size:          5x5
 
 ---------------------------------------
-poly6
-{'mulsub': 11, 'submulsub': 5, 'addmulsub': 3, 'sub': 12, 'subsub': 1, 'addmul': 5, 'sqr': 0, 'addmuladd': 1, 'submul': 10, 'submuladd': 4, 'add': 7, 'addadd': 0, 'subadd': 0, 'sqradd': 0, 'mul': 25, 'muladd': 11, 'addsub': 2, 'sqrsub': 0}
+poly4
+{'mulsub': 0, 'submulsub': 0, 'addmulsub': 0, 'sub': 0, 'subsub': 0, 'addmul': 2, 'sqr': 0, 'addmuladd': 2, 'submul': 0, 'submuladd': 0, 'add': 3, 'addadd': 0, 'subadd': 0, 'sqradd': 0, 'mul': 3, 'muladd': 3, 'addsub': 0, 'sqrsub': 0}
 ---------------------------------------
-Total nodes:       		48
-I/O nodes:                  	3 / 1
-OP nodes:			44
-OP nodes after tech-mapping:	29
-% Savings:			34 %
-MLI:                            68
-Latency:                        84
-Required Overlay Size:          6x6
-
----------------------------------------
-poly7
-{'mulsub': 2, 'submulsub': 0, 'addmulsub': 0, 'sub': 4, 'subsub': 1, 'addmul': 10, 'sqr': 1, 'addmuladd': 8, 'submul': 3, 'submuladd': 3, 'add': 14, 'addadd': 2, 'subadd': 0, 'sqradd': 0, 'mul': 20, 'muladd': 15, 'addsub': 1, 'sqrsub': 0}
----------------------------------------
-Total nodes:       		43
-I/O nodes:                  	3 / 1
-OP nodes:			39
-OP nodes after tech-mapping:	24
-% Savings:			38 %
-MLI:                            74
-Latency:                        87
+Total nodes:                    12
+I/O nodes:                      5 / 1
+OP nodes:                       6
+OP nodes after tech-mapping:    3
+% Savings:                      50 %
+MLI:                            12
+Latency:                        24
 Required Overlay Size:          5x5
-
----------------------------------------
-poly8
-{'mulsub': 4, 'submulsub': 0, 'addmulsub': 1, 'sub': 6, 'subsub': 1, 'addmul': 5, 'sqr': 0, 'addmuladd': 3, 'submul': 5, 'submuladd': 5, 'add': 10, 'addadd': 4, 'subadd': 0, 'sqradd': 0, 'mul': 16, 'muladd': 11, 'addsub': 0, 'sqrsub': 0}
----------------------------------------
-Total nodes:       		36
-I/O nodes:                  	3 / 1
-OP nodes:			32
-OP nodes after tech-mapping:	18
-% Savings:			43 %
-MLI:                            53
-Latency:                        65
-Required Overlay Size:          5x5
-
----------------------------------------
-atax
-{'mulsub': 0, 'submulsub': 0, 'addmulsub': 0, 'sub': 0, 'subsub': 0, 'addmul': 9, 'sqr': 0, 'addmuladd': 9, 'submul': 0, 'submuladd': 0, 'add': 24, 'addadd': 12, 'subadd': 0, 'sqradd': 0, 'mul': 36, 'muladd': 36, 'addsub': 0, 'sqrsub': 0}
----------------------------------------
-Total nodes:       		75
-I/O nodes:                  	12 / 3
-OP nodes:			60
-OP nodes after tech-mapping:	36
-% Savings:			40 %
-MLI:                            57
-Latency:                        71
-Required Overlay Size:          6x6
-
----------------------------------------
-bicg
-{'mulsub': 0, 'submulsub': 0, 'addmulsub': 0, 'sub': 0, 'subsub': 0, 'addmul': 0, 'sqr': 0, 'addmuladd': 0, 'submul': 0, 'submuladd': 0, 'add': 12, 'addadd': 6, 'subadd': 0, 'sqradd': 0, 'mul': 18, 'muladd': 18, 'addsub': 0, 'sqrsub': 0}
----------------------------------------
-Total nodes:       		51
-I/O nodes:                  	15 / 6
-OP nodes:			30
-OP nodes after tech-mapping:	18
-% Savings:			40 %
-MLI:                            26
-Latency:                        43
-Required Overlay Size:          6x6
-
----------------------------------------
-gemm
-{'mulsub': 0, 'submulsub': 0, 'addmulsub': 0, 'sub': 0, 'subsub': 0, 'addmul': 9, 'sqr': 0, 'addmuladd': 9, 'submul': 0, 'submuladd': 0, 'add': 27, 'addadd': 9, 'subadd': 0, 'sqradd': 0, 'mul': 45, 'muladd': 45, 'addsub': 0, 'sqrsub': 0}
----------------------------------------
-Total nodes:       		108
-I/O nodes:                  	27 / 9
-OP nodes:			72
-OP nodes after tech-mapping:	45
-% Savings:			37 %
-MLI:                            31
-Latency:                        61
-Required Overlay Size:          9x9
-
----------------------------------------
-gesummv
-{'mulsub': 0, 'submulsub': 0, 'addmulsub': 0, 'sub': 0, 'subsub': 0, 'addmul': 6, 'sqr': 0, 'addmuladd': 6, 'submul': 0, 'submuladd': 0, 'add': 15, 'addadd': 6, 'subadd': 0, 'sqradd': 0, 'mul': 24, 'muladd': 24, 'addsub': 0, 'sqrsub': 0}
----------------------------------------
-Total nodes:       		63
-I/O nodes:                  	21 / 3
-OP nodes:			39
-OP nodes after tech-mapping:	24
-% Savings:			38 %
-MLI:                            25
-Latency:                        57
-Required Overlay Size:          6x6
-
----------------------------------------
-mvt
-{'mulsub': 0, 'submulsub': 0, 'addmulsub': 0, 'sub': 0, 'subsub': 0, 'addmul': 0, 'sqr': 0, 'addmuladd': 0, 'submul': 0, 'submuladd': 0, 'add': 12, 'addadd': 6, 'subadd': 0, 'sqradd': 0, 'mul': 18, 'muladd': 18, 'addsub': 0, 'sqrsub': 0}
----------------------------------------
-Total nodes:       		51
-I/O nodes:                  	15 / 6
-OP nodes:			30
-OP nodes after tech-mapping:	18
-% Savings:			40 %
-MLI:                            26
-Latency:                        43
-Required Overlay Size:          6x6
-
----------------------------------------
-syr2k
-{'mulsub': 0, 'submulsub': 0, 'addmulsub': 0, 'sub': 0, 'subsub': 0, 'addmul': 9, 'sqr': 0, 'addmuladd': 9, 'submul': 0, 'submuladd': 0, 'add': 54, 'addadd': 36, 'subadd': 0, 'sqradd': 0, 'mul': 72, 'muladd': 72, 'addsub': 0, 'sqrsub': 0}
----------------------------------------
-Total nodes:       		162
-I/O nodes:                  	27 / 9
-OP nodes:			126
-OP nodes after tech-mapping:	81
-% Savings:			35 %
-MLI:                            40
-Latency:                        61
-Required Overlay Size:          9x9
-
----------------------------------------
-syrk
-{'mulsub': 0, 'submulsub': 0, 'addmulsub': 0, 'sub': 0, 'subsub': 0, 'addmul': 9, 'sqr': 9, 'addmuladd': 9, 'submul': 0, 'submuladd': 0, 'add': 27, 'addadd': 9, 'subadd': 0, 'sqradd': 9, 'mul': 36, 'muladd': 36, 'addsub': 0, 'sqrsub': 0}
----------------------------------------
-Total nodes:       		99
-I/O nodes:                  	18 / 9
-OP nodes:			72
-OP nodes after tech-mapping:	48
-% Savings:			33 %
-MLI:                            31
-Latency:                        54
-Required Overlay Size:          7x7
-
----------------------------------------
-trmm
-{'mulsub': 0, 'submulsub': 0, 'addmulsub': 0, 'sub': 0, 'subsub': 0, 'addmul': 9, 'sqr': 0, 'addmuladd': 0, 'submul': 0, 'submuladd': 0, 'add': 18, 'addadd': 9, 'subadd': 0, 'sqradd': 0, 'mul': 36, 'muladd': 27, 'addsub': 0, 'sqrsub': 0}
----------------------------------------
-Total nodes:       		81
-I/O nodes:                  	18 / 9
-OP nodes:			54
-OP nodes after tech-mapping:	36
-% Savings:			33 %
-MLI:                            30
-Latency:                        58
-Required Overlay Size:          7x7
 
 ---------------------------------------

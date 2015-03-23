@@ -1,7 +1,7 @@
 FLOW=..
 DIR=.
 P=test
-TRACKS=4
+TRACKS=2
 ROWS=20
 COLS=20
 PADVERSION=noclk

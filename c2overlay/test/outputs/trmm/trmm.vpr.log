@@ -9,12 +9,6 @@ Mark Fang, Jason Luu, Ted Campbell
 Heterogeneous stucture support by Jason Luu and Ted Campbell.
 This code is licensed only for non-commercial use.
 
-Auto-sizing FPGA, try x = 8 y = 8
-Auto-sizing FPGA, try x = 4 y = 4
-Auto-sizing FPGA, try x = 6 y = 6
-Auto-sizing FPGA, try x = 7 y = 7
-Auto-sizing FPGA, try x = 6 y = 6
-FPGA auto-sized to, x = 7 y = 7
 
 Resource Usage:
 Netlist      0	blocks of type <EMPTY>

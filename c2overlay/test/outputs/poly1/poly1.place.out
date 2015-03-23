@@ -1,14 +1,14 @@
 Netlist file: test.net   Architecture file: test.arch.xml
-Array size: 3 x 3 logic blocks
+Array size: 5 x 5 logic blocks
 
 #block name	x	y	subblk	block number
 #----------	--	--	------	------------
-N1		1	0	0	#0
-N2		3	0	0	#1
-out:N9		4	1	0	#2
+N1		6	1	0	#0
+N2		2	0	0	#1
+out:N9		3	0	0	#2
 N8_blk		2	1	0	#3
-N3_blk		1	1	0	#4
-N4_blk		3	2	0	#5
-N5_blk		1	2	0	#6
-N6_blk		2	2	0	#7
+N3_blk		4	2	0	#4
+N4_blk		1	1	0	#5
+N5_blk		4	1	0	#6
+N6_blk		5	1	0	#7
 N7_blk		3	1	0	#8

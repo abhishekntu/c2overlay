@@ -1,6 +1,6 @@
 <architecture>
-	<layout auto="1.0" />   
-<!--	<layout width="7" height="7" /> -->
+<!--	<layout auto="1.0" />   -->
+	<layout width="5" height="5" /> 
 	<device>
 		<sizing R_minW_nmos="5726.870117" R_minW_pmos="15491.700195" ipin_mux_trans_size="1.000000"/>
 		<area grid_logic_tile_area="30000.000000"/> 

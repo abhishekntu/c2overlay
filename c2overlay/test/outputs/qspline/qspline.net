@@ -1,27 +1,27 @@
 .input N1
 pinlist: N1
-    
+
 .input N2
 pinlist: N2
-    
+
 .input N3
 pinlist: N3
-    
+
 .input N4
 pinlist: N4
-    
+
 .input N5
 pinlist: N5
-    
+
 .input N6
 pinlist: N6
-    
+
 .input N7
 pinlist: N7
-    
-.output out:N31
-pinlist: N31
-    
+
+.output out:N30
+pinlist: N30
+
 .clb N29_blk
 pinlist: N6 N25 open open N29 open open open open 
 subblock: N29_blk 0 1 open open 4 open open open open
@@ -73,7 +73,7 @@ subblock: N9_blk 0 1 open open 4 open open open open
 .clb N12_blk
 pinlist: N13 N15 N6 open N12 open open open open 
 subblock: N12_blk 0 1 2 open 4 open open open open
-    
+
 .clb N13_blk
 pinlist: N2 N29 open open N13 open open open open 
 subblock: N13_blk 0 1 open open 4 open open open open
@@ -87,8 +87,8 @@ pinlist: N1 open open open N11 open open open open
 subblock: N11_blk 0 open open open 4 open open open open
 
 .clb N16_blk
-pinlist: N17 N2 open open N16 open open open open 
-subblock: N16_blk 0 1 open open 4 open open open open
+pinlist: N12 N17 N2 open N16 open open open open 
+subblock: N16_blk 0 1 2 open 4 open open open open
 
 .clb N17_blk
 pinlist: N10 N2 open open N17 open open open open 
@@ -101,16 +101,12 @@ subblock: N14_blk 0 open open open 4 open open open open
 .clb N15_blk
 pinlist: N19 N6 N20 open N15 open open open open 
 subblock: N15_blk 0 1 2 open 4 open open open open
-    
+
 .clb N18_blk
-pinlist: N8 N2 open open N18 open open open open 
-subblock: N18_blk 0 1 open open 4 open open open open
+pinlist: N8 N16 N2 open N30 open open open open 
+subblock: N18_blk 0 1 2 open 4 open open open open
 
 .clb N19_blk
 pinlist: N9 N28 open open N19 open open open open 
 subblock: N19_blk 0 1 open open 4 open open open open
 
-.clb N30_blk
-pinlist: N12 N16 N18 open N31 open open open open 
-subblock: N30_blk 0 1 2 open 4 open open open open
-    

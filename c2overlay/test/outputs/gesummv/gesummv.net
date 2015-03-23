@@ -1,91 +1,91 @@
 .input N21
 pinlist: N21
-    
+
 .input N20
 pinlist: N20
-    
+
 .input N8
 pinlist: N8
-    
+
 .input N9
 pinlist: N9
-    
+
 .input N1
 pinlist: N1
-    
+
 .input N2
 pinlist: N2
-    
+
 .input N3
 pinlist: N3
-    
+
 .input N4
 pinlist: N4
-    
+
 .input N5
 pinlist: N5
-    
+
 .input N6
 pinlist: N6
-    
+
 .input N7
 pinlist: N7
-    
+
 .input N12
 pinlist: N12
-    
+
 .input N13
 pinlist: N13
-    
+
 .input N10
 pinlist: N10
-    
+
 .input N11
 pinlist: N11
-    
+
 .input N16
 pinlist: N16
-    
+
 .input N17
 pinlist: N17
-    
+
 .input N14
 pinlist: N14
-    
+
 .input N15
 pinlist: N15
-    
+
 .input N18
 pinlist: N18
-    
+
 .input N19
 pinlist: N19
-    
+
 .output out:N48
 pinlist: N48
-    
+
 .output out:N47
 pinlist: N47
-    
+
 .output out:N46
 pinlist: N46
-    
+
 .clb N41_blk
-pinlist: N9 N12 open open N41 open open open open 
+pinlist: N9 N21 open open N41 open open open open 
 subblock: N41_blk 0 1 open open 4 open open open open
 
 .clb N40_blk
-pinlist: N9 N21 open open N40 open open open open 
-subblock: N40_blk 0 1 open open 4 open open open open
+pinlist: N37 open open open N40 open open open open 
+subblock: N40_blk 0 open open open 4 open open open open
 
 .clb N43_blk
-pinlist: N42 open open open N43 open open open open 
-subblock: N43_blk 0 open open open 4 open open open open
+pinlist: N8 N11 open open N43 open open open open 
+subblock: N43_blk 0 1 open open 4 open open open open
 
 .clb N42_blk
-pinlist: N8 N11 N44 open N42 open open open open 
-subblock: N42_blk 0 1 2 open 4 open open open open
-    
+pinlist: N9 N12 open open N42 open open open open 
+subblock: N42_blk 0 1 open open 4 open open open open
+
 .clb N45_blk
 pinlist: N4 N18 open open N45 open open open open 
 subblock: N45_blk 0 1 open open 4 open open open open
@@ -93,22 +93,22 @@ subblock: N45_blk 0 1 open open 4 open open open open
 .clb N44_blk
 pinlist: N9 N19 N45 open N44 open open open open 
 subblock: N44_blk 0 1 2 open 4 open open open open
-    
+
 .clb N29_blk
 pinlist: N28 N11 N16 open N29 open open open open 
 subblock: N29_blk 0 1 2 open 4 open open open open
-    
+
 .clb N28_blk
 pinlist: N31 N4 N6 open N28 open open open open 
 subblock: N28_blk 0 1 2 open 4 open open open open
-    
+
 .clb N23_blk
 pinlist: N34 N4 N13 open N23 open open open open 
 subblock: N23_blk 0 1 2 open 4 open open open open
-    
+
 .clb N22_blk
-pinlist: N24 N30 open open N48 open open open open 
-subblock: N22_blk 0 1 open open 4 open open open open
+pinlist: N23 N39 N40 open N47 open open open open 
+subblock: N22_blk 0 1 2 open 4 open open open open
 
 .clb N27_blk
 pinlist: N2 N4 open open N27 open open open open 
@@ -117,22 +117,22 @@ subblock: N27_blk 0 1 open open 4 open open open open
 .clb N26_blk
 pinlist: N27 N9 N20 open N26 open open open open 
 subblock: N26_blk 0 1 2 open 4 open open open open
-    
+
 .clb N25_blk
-pinlist: N1 N4 N40 open N25 open open open open 
+pinlist: N1 N4 N41 open N25 open open open open 
 subblock: N25_blk 0 1 2 open 4 open open open open
-    
+
 .clb N24_blk
-pinlist: N25 N3 N11 open N24 open open open open 
-subblock: N24_blk 0 1 2 open 4 open open open open
-    
+pinlist: N3 N11 open open N24 open open open open 
+subblock: N24_blk 0 1 open open 4 open open open open
+
 .clb N38_blk
-pinlist: N37 N39 open open N47 open open open open 
-subblock: N38_blk 0 1 open open 4 open open open open
+pinlist: N24 N25 N30 open N48 open open open open 
+subblock: N38_blk 0 1 2 open 4 open open open open
 
 .clb N39_blk
-pinlist: N36 open open open N39 open open open open 
-subblock: N39_blk 0 open open open 4 open open open open
+pinlist: N11 N17 open open N39 open open open open 
+subblock: N39_blk 0 1 open open 4 open open open open
 
 .clb N30_blk
 pinlist: N29 open open open N30 open open open open 
@@ -143,26 +143,26 @@ pinlist: N9 N14 open open N31 open open open open
 subblock: N31_blk 0 1 open open 4 open open open open
 
 .clb N32_blk
-pinlist: N35 N7 N11 open N32 open open open open 
+pinlist: N36 N7 N11 open N32 open open open open 
 subblock: N32_blk 0 1 2 open 4 open open open open
-    
+
 .clb N33_blk
-pinlist: N32 N43 open open N46 open open open open 
-subblock: N33_blk 0 1 open open 4 open open open open
+pinlist: N32 open open open N33 open open open open 
+subblock: N33_blk 0 open open open 4 open open open open
 
 .clb N34_blk
 pinlist: N5 N9 open open N34 open open open open 
 subblock: N34_blk 0 1 open open 4 open open open open
 
 .clb N35_blk
-pinlist: N4 N10 N41 open N35 open open open open 
+pinlist: N33 N43 N44 open N46 open open open open 
 subblock: N35_blk 0 1 2 open 4 open open open open
-    
+
 .clb N36_blk
-pinlist: N26 N11 N15 open N36 open open open open 
+pinlist: N4 N10 N42 open N36 open open open open 
 subblock: N36_blk 0 1 2 open 4 open open open open
-    
+
 .clb N37_blk
-pinlist: N23 N11 N17 open N37 open open open open 
+pinlist: N26 N11 N15 open N37 open open open open 
 subblock: N37_blk 0 1 2 open 4 open open open open
-    
+

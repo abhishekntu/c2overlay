@@ -1,0 +1,9 @@
+{'mulsub': 0, 'submulsub': 0, 'addmulsub': 0, 'sub': 0, 'subsub': 0, 'addmul': 2, 'sqr': 0, 'addmuladd': 2, 'submul': 0, 'submuladd': 0, 'add': 3, 'addadd': 0, 'subadd': 0, 'sqradd': 0, 'mul': 3, 'muladd': 3, 'addsub': 0, 'sqrsub': 0}
+---------------------------------------
+Total nodes:                    12
+I/O nodes:                      5 / 1
+OP nodes:                       6
+OP nodes after tech-mapping:    3
+% Savings:                      50 %
+MLI:                            12
+Latency:                        24
