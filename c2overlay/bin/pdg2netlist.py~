@@ -714,7 +714,7 @@ for each in new_digraph:
 
 node_num = dsp_nodes + input_num + output_num;
 for each in fu_graph:
-    #print fu_graph.node_attributes(each)[0], fu_graph.node_attributes(each)[1], fu_graph.node_attributes(each)[2]
+    print fu_graph.node_attributes(each)[0], fu_graph.node_attributes(each)[1], fu_graph.node_attributes(each)[2]
     ntype = fu_graph.node_attributes(each)[2][1];
     if(ntype == '"invar"'):
         for each_child in fu_graph.neighbors(each):

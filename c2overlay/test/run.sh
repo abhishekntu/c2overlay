@@ -2,10 +2,15 @@
 echo "---------------------------------------" > bench.log
 echo "Results:" >> bench.log
 echo "---------------------------------------" >> bench.log
-for bench in chebyshev sgfilter mibench qspline poly1 poly2 poly3 poly4 #poly5 poly6 poly7 poly8 atax bicg gemm gesummv mvt syr2k syrk trmm
+#for bench in poly5 poly6 poly7 poly8 fft kmeans stencil conv radar mri spmv HornerBezier MotionVector SmoothTriangle
+for bench in chebyshev sgfilter mibench qspline poly1 poly2 poly3 poly4 poly5 poly6 poly7 poly8 fft kmeans stencil radar mri spmv HornerBezier #MotionVector SmoothTriangle
+#for bench in atax bicg trmm syrk
+#for bench in chebyshev sgfilter mibench qspline poly1 poly2 poly3 #poly4 #poly5 poly6 poly7 poly8 atax bicg gemm gesummv mvt syr2k syrk trmm
 #for bench in atax bicg gesummv trmm syrk
-#fft kmeans mm stencil conv radar
-#mri spmv 
+#for bench in poly5 poly7 poly8 #poly6
+#for bench in fft kmeans stencil conv radar mri spmv
+#for bench in arf ewf fir2 
+#for bench in HornerBezier MotionVector SmoothTriangle
 #chebyshev sgfilter mibench qspline poly1 poly2 poly3 poly5 poly6 poly7 poly8 atax bicg gemm gesummv mvt syr2k syrk trmm
 do
 	sed -i "s/\(TRACKS=\).*/\1$1/" Makefile
@@ -28,6 +33,8 @@ do
 	dot -Tpng test_pdg.dot > outputs/$bench/"$bench".png
 	mv test_pdg.dot outputs/$bench/"$bench"_pdg.dot
 	mv test.dot outputs/$bench/"$bench".dot
+	mv test_fu.dot outputs/$bench/"$bench"_fu.dot
+	mv test_fu.png outputs/$bench/"$bench"_fu.png
 	mv test.net outputs/$bench/"$bench".net
 	mv test.place.out outputs/$bench/"$bench".place.out
 	mv test.route.out outputs/$bench/"$bench".route.out
