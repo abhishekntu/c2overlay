@@ -11,6 +11,7 @@ P?=$(DIR)/$(DIR)
 
 # configuration variables
 TRACKS?=2
+MULTIPLE?=1
 ROWS?=2
 COLS?=2
 #PADVERSION?=clk
@@ -37,7 +38,7 @@ CDFG2HDL_PATH="../hercules/cdfg2hdl"
 all: 
 	python $(BIN)/c2nac.py
 	python $(BIN)/nac2dot.py
-	python $(BIN)/dot2pdg.py test > $(P).bench.log
+	python $(BIN)/dot2pdg.py test $(MULTIPLE) > $(P).bench.log
 	mv test.dot test_dfg.dot        #test_dfg.dot is original dot generated from nac2cdfg.exe
 	cp test_new.dot test_pdg.dot    #test_pdg.dot is the processed dot file generated from dot2pdg.py
 	mv test_new.dot test.dot        #test.dot is the processed dot file which will be used to generate netlist using pdg2netlist.py

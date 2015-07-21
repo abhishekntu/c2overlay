@@ -3,7 +3,7 @@ echo "---------------------------------------" > bench.log
 echo "Results:" >> bench.log
 echo "---------------------------------------" >> bench.log
 #for bench in poly5 poly6 poly7 poly8 fft kmeans stencil conv radar mri spmv HornerBezier MotionVector SmoothTriangle
-for bench in chebyshev sgfilter mibench qspline poly1 poly2 poly3 poly4 poly5 poly6 poly7 poly8 fft kmeans stencil radar mri spmv HornerBezier #MotionVector SmoothTriangle
+for bench in chebyshev #sgfilter mibench qspline poly1 poly2 poly3 poly4 poly5 poly6 poly7 poly8 fft kmeans stencil radar mri spmv HornerBezier #MotionVector SmoothTriangle
 #for bench in atax bicg trmm syrk
 #for bench in chebyshev sgfilter mibench qspline poly1 poly2 poly3 #poly4 #poly5 poly6 poly7 poly8 atax bicg gemm gesummv mvt syr2k syrk trmm
 #for bench in atax bicg gesummv trmm syrk
@@ -14,6 +14,7 @@ for bench in chebyshev sgfilter mibench qspline poly1 poly2 poly3 poly4 poly5 po
 #chebyshev sgfilter mibench qspline poly1 poly2 poly3 poly5 poly6 poly7 poly8 atax bicg gemm gesummv mvt syr2k syrk trmm
 do
 	sed -i "s/\(TRACKS=\).*/\1$1/" Makefile
+	sed -i "s/\(MULTIPLE=\).*/\1$2/" Makefile
 	echo "Running" $bench
 	cp benchmarks/c/$bench.c test.c
 	make > log.txt
