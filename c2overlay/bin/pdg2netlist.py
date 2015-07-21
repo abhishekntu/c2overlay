@@ -654,11 +654,11 @@ for each in graph:
             dst = dictionary[each_neighbor];
             #print dst
             new_digraph.add_edge((src, dst));
-
+'''
 print "-------fanin and fanout in DSP graph-------------"
 for each in new_digraph:
         print each, len(new_digraph.incidents(each)), len(new_digraph.neighbors(each))
-
+'''
 
 filepath = r'%s.dot' % (benchmark)
 outputfile  = open(filepath, 'w')
@@ -713,6 +713,11 @@ for each in new_digraph:
 
 
 node_num = dsp_nodes + input_num + output_num;
+dummynode_num = 0;
+for each in fu_graph:
+	if(len(fu_graph.neighbors(each))>1):
+		dummynode_num = dummynode_num + len(fu_graph.neighbors(each));
+'''
 for each in fu_graph:
     #print fu_graph.node_attributes(each)[0], fu_graph.node_attributes(each)[1], fu_graph.node_attributes(each)[2]
     ntype = fu_graph.node_attributes(each)[2][1];
@@ -728,13 +733,13 @@ for each in fu_graph:
 
         fu_graph.del_node(each)
 
+'''
 
-
-
+'''
 print "-------fanin and fanout in FU graph-------------"
 for each in fu_graph:
         print each, len(fu_graph.incidents(each)), len(fu_graph.neighbors(each))
-
+'''
 
 filepath = r'%s_fu.dot' % (benchmark)
 outputfile  = open(filepath, 'w')
@@ -760,6 +765,8 @@ print "FU nodes:                       ", fu_nodes;
 print "% FU Savings w/o DSP merging:   ", 100*(op_nodes - dsp_nodes)/op_nodes, "%";
 print "% FU Savings w DSP merging:     ", 100*(op_nodes - fu_nodes)/op_nodes, "%";
 print "New I/O nodes:                  ", new_input_num, "/", new_output_num;
+print "Dummy nodes:        	       ", dummynode_num;
+
 
 
 
